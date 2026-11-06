@@ -82,21 +82,33 @@ class Vocab:
                 errs.append(f"magnitude word {w!r} in reflected formula")
         return errs
 
-    _STOP = {"of", "per", "over", "the", "a", "an", "in", "through", "and", "by", "for", "to", "with", "is", "as", "its"}
+    _STOP = {"of", "per", "over", "the", "a", "an", "in", "through", "and", "by", "for", "to", "with", "is", "as", "its",
+             "no", "partner", "unmapped", "definition", "frozen", "product", "constant", "sum", "ratio", "none", "or", "not"}
+    _ALIASES = {"Movement", "Current", "M", "C", "E", "Attraction", "Vortex", "Convergence", "Culmination", "Idle", "Reflected"}
 
-    def new_words(self, formula: str) -> list[str]:
-        """Tokens of a reflected formula that are not frozen vocabulary, symbols or operators.
-
-        Unmapped physical quantities written in parentheses, e.g. '(work) = Frequency × Vibration',
-        are not NEW words; they are reported separately as unmapped terms.
+    def new_words(self, formula: str, known_physical: set[str] = frozenset()) -> list[str]:
+        """Capitalized tokens of a reflected formula that are not frozen vocabulary, not a physical term the
+        generator marked as unmapped, and not a symbol. This is the check for an invented TSR word
+        ('Desire-field'); physical symbols and bracketed unmapped markers are not NEW words.
         """
-        s = re.sub(r"\([^)]*\)", " ", formula)          # unmapped markers
-        for w in sorted(self.nonphysical_words(), key=len, reverse=True):
-            s = re.sub(rf"(?<![A-Za-z]){re.escape(w)}(?![A-Za-z])", " ", s)
-        s = re.sub(r"[×x*÷/=+−\-^²()]", " ", s)
+        s = re.sub(r"\[[^\]]*\]", " ", formula)         # [angular momentum: unmapped]
+        s = re.sub(r"\([^)]*\)", " ", s)                # (work)
         out = []
+        known = self.nonphysical_words() | self._ALIASES
+        for h in re.findall(r"[A-Za-z]+(?:-[A-Za-z]+)+", s):   # hyphenated compounds are one word
+            if h not in known and re.match(r"[A-Z]", h):
+                out.append(h)
+            s = s.replace(h, " ")
+        for w in sorted(self.nonphysical_words() | self._ALIASES, key=len, reverse=True):
+            s = re.sub(rf"(?<![A-Za-z]){re.escape(w)}(?![A-Za-z])", " ", s)
+        s = re.sub(r"[×x*÷/=+−\-^²()?:;,'\"]", " ", s)
+        phys = {t.lower() for name in known_physical for t in re.findall(r"[A-Za-z]+", name)}
         for t in s.split():
-            if t.lower() in self._STOP or re.fullmatch(r"[\d.,½¼¾√]+", t):
+            if t.lower() in self._STOP or t.lower() in phys:
+                continue
+            if not re.match(r"[A-Z][a-z]", t):           # TSR words are capitalized words; symbols and lowercase physics are not NEW
+                continue
+            if t in {"Boltzmann", "Planck", "Shannon", "Yukawa", "Poynting", "Reynolds", "Fourier", "Carnot", "Gibbs"}:
                 continue
             out.append(t)
         return out

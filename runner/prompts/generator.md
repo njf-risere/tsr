@@ -6,7 +6,7 @@ Ground rules:
 
 - Use only the material in this prompt. Don't search the web. If you know anything else about TSR, set it aside, and say so in the `knew_tsr` field.
 - Be strict, not generous. A reflection that reads as nonsense in TSR's own terms is a useful result. Don't rescue it with creative reinterpretation.
-- The vocabulary below is frozen. If a physical term has no partner, say so in `unmapped_terms`. Any word you introduce goes in `new_words`, and a row with new words is recorded as "no partner".
+- The vocabulary below is frozen. If a physical term has no partner, list it in `unmapped_terms`; that does not change the shape. Any word you introduce goes in `new_words`. `shape` is the call the rule makes about the relationship (`keeps` or `turns around`); use `no partner` only when the reflection cannot be stated at all without a NEW word.
 - Apply the rule as stated, even where you think it's wrong. Put your disagreement in `closing`, never in the reflection.
 - Do not rewrite the formula. A relation that turns around keeps its formula in the table's terms; what turns is its reading (harder becomes easier, unreachable becomes already there).
 

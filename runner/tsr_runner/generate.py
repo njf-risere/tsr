@@ -128,11 +128,36 @@ class RowResult:
     mock: bool = False
 
 
-def _check_output(o: dict, v: Vocab) -> tuple[list[str], list[str], list[str]]:
+def _check_output(o: dict, v: Vocab, rec: Relation | None = None) -> tuple[list[str], list[str], list[str]]:
     lint = v.lint_formula(o.get("reflected_formula", "") or "")
-    new = list(o.get("new_words") or []) + v.new_words(o.get("reflected_formula", "") or "")
+    known = {vv.name for vv in rec.variables} | {vv.quantity for vv in rec.variables} | set(o.get("unmapped_terms") or []) if rec else set(o.get("unmapped_terms") or [])
+    new = list(o.get("new_words") or []) + v.new_words(o.get("reflected_formula", "") or "", known)
     forb = v.forbidden_in((o.get("reflected_sentence", "") or "") + " " + (o.get("reflected_formula", "") or ""))
     return lint, sorted(set(new)), forb
+
+
+def _supported_claims(agreeing: list, min_support: int = 2) -> list[dict]:
+    """Monotone claims asserted (same rises/with/sign, normalized) by at least min_support agreeing generators."""
+    from collections import Counter
+    norm = lambda x: re.sub(r"\s+", " ", str(x or "")).strip().lower().replace("movement m", "movement").replace("the ", "")
+    count: Counter = Counter()
+    first: dict = {}
+    for g in agreeing:
+        seen = set()
+        for c in (g.output.get("monotone_claims") or []):
+            if not isinstance(c, dict) or not {"rises", "with", "sign"} <= set(c):
+                continue
+            try:
+                sign = 1 if float(c["sign"]) > 0 else -1 if float(c["sign"]) < 0 else 0
+            except (TypeError, ValueError):
+                continue
+            key = (norm(c["rises"]), norm(c["with"]), sign)
+            if key in seen:
+                continue
+            seen.add(key)
+            count[key] += 1
+            first.setdefault(key, {"rises": c["rises"], "with": c["with"], "sign": sign})
+    return [dict(first[k], support=n) for k, n in count.items() if n >= min_support]
 
 
 def run_row(rec: Relation, generators: list[LoggedModel], opponent: LoggedModel | None,
@@ -167,8 +192,8 @@ def run_row(rec: Relation, generators: list[LoggedModel], opponent: LoggedModel 
                     o["interpretation"] = o2.get("interpretation", o.get("interpretation"))
             except RuntimeError:
                 pass
-        lint, new, forb = _check_output(o, v)
-        if expected_image(rec, v)[1]:
+        lint, new, forb = _check_output(o, v, rec)
+        if expected_image(rec, v)[1] or not rec.physical_terms:
             lint = []  # the formula has unmapped physical terms: it is not a reflection, so there is nothing to lint
         gr = GenResult(g.spec.name, g.spec.vendor, o, lint=lint, new_words=new, forbidden=forb)
         if o.get("knew_tsr") is True:
@@ -188,27 +213,40 @@ def run_row(rec: Relation, generators: list[LoggedModel], opponent: LoggedModel 
     if majority_shape and dec.shape not in ("JUDGMENT",) and majority_shape != dec.shape:
         gate.append(f"generators' majority {majority_shape!r} differs from the procedure {dec.shape!r}")
     agreeing = [g for g in live if g.output["shape"] == majority_shape]
-    if any(g.new_words for g in agreeing):
-        gate.append("NEW words among agreeing generators: " + str(sorted({w for g in agreeing for w in g.new_words})))
-    if any(g.lint for g in agreeing):
-        gate.append("units crossed the mirror: " + str([g.lint for g in agreeing if g.lint]))
-    if any(g.forbidden for g in agreeing):
-        gate.append("forbidden physical words on the nonphysical side: " + str(sorted({w for g in agreeing for w in g.forbidden})))
+    # the consensus sentence comes from the highest-confidence agreeing generator whose words pass the
+    # frozen-vocabulary checks; a row is gated only if no agreeing generator passes
+    clean = [g for g in agreeing if not g.new_words and not g.lint and not g.forbidden]
+    if agreeing and not clean:
+        if any(g.new_words for g in agreeing):
+            gate.append("NEW words in every agreeing generator: " + str(sorted({w for g in agreeing for w in g.new_words})))
+        if any(g.lint for g in agreeing):
+            gate.append("units crossed the mirror in every agreeing generator: " + str([g.lint for g in agreeing if g.lint][0]))
+        if any(g.forbidden for g in agreeing):
+            gate.append("forbidden physical words on the nonphysical side in every agreeing generator: " + str(sorted({w for g in agreeing for w in g.forbidden})))
+    agreeing_for_consensus = clean or agreeing
 
     consensus = None
     if agreeing:
         # the consensus row: majority shape; formula from the procedure's image (never a rewrite); sentence from the
-        # highest-confidence agreeing generator
-        best = max(agreeing, key=lambda g: g.output.get("confidence", 0))
+        # highest-confidence clean agreeing generator
+        def _content(g):
+            sent = g.output.get("reflected_sentence", "") or ""
+            n = sum(1 for w in v.nonphysical_words() if len(w) > 2 and re.search(rf"(?<![A-Za-z]){re.escape(w)}(?![A-Za-z])", sent))
+            return (n, g.output.get("confidence", 0))
+        best = max(agreeing_for_consensus, key=_content)
         img, unmapped = expected_image(rec, v)
         consensus = {"record_id": rec.id, "shape": majority_shape, "reflected_formula": img or best.output.get("reflected_formula", ""),
                      "formula_reflected": bool(img) and not unmapped, "unmapped_terms": unmapped,
                      "reflected_sentence": best.output.get("reflected_sentence", ""),
                      "sentences": [g.output.get("reflected_sentence", "") for g in agreeing],
-                     "monotone_claims": [c for g in agreeing for c in (g.output.get("monotone_claims") or [])],
+                     "flags_by_model": {g.model: {"new_words": g.new_words, "lint": g.lint, "forbidden": g.forbidden} for g in agreeing if g.new_words or g.lint or g.forbidden},
+                     "monotone_claims": _supported_claims(agreeing, min_support=2),
+                     "monotone_claims_all": [c for g in agreeing for c in (g.output.get("monotone_claims") or [])],
                      "rule_trace": dec.rule_trace, "from_model": best.model}
 
     opp_out, flipped = None, False
+    if opponent is None and not is_mock and consensus is not None and not gate:
+        gate.append("opponent not run: candidate pending")
     if opponent is not None and consensus is not None and not gate:
         try:
             raw = opponent(opponent_prompt(rec, v, lexicon, consensus), role="opponent", temperature=0.0)

@@ -1,5 +1,7 @@
 results/*
 !results/.gitkeep
+!results/run1/
+results/run1/replay/
 __pycache__/
 *.pyc
 .pytest_cache/

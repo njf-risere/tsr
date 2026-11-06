@@ -88,7 +88,7 @@ def test_units_do_not_cross():
     v = Vocab()
     assert v.lint_formula("(kinetic energy) = ½ × Movement M × rise per Expansion") != []
     assert v.lint_formula("C² × M = E") == []
-    assert v.new_words("Frequency = Desire-field × Appreciation") == ["field"]
+    assert v.new_words("Frequency = Desire-field × Appreciation") == ["Desire-field"]
 
 
 def test_parity_formula_level():
