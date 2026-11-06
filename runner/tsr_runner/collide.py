@@ -183,7 +183,7 @@ class BookIndex:
             if s > 0:
                 scored.append((s, ch, pg, text))
         scored.sort(reverse=True)
-        return [{"score": round(s, 2), "chapter": ch, "page": pg, "text": t[:400]} for s, ch, pg, t in scored[:k]]
+        return [{"score": round(s, 2), "chapter": ch, "page": pg, "text": t[:2000]} for s, ch, pg, t in scored[:k]]
 
 
 def layer_c(cands: list[Collision], book: BookIndex, resolver: LoggedModel | None, v: Vocab) -> list[Collision]:

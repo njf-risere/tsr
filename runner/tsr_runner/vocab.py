@@ -113,6 +113,20 @@ class Vocab:
             out.append(t)
         return out
 
+    def sense_violations(self, sentence: str, formula: str = "") -> list[str]:
+        """C4: senses the frozen vocabulary fixes. 'the gap' is resistance's only appearance on the nonphysical
+        side; 'receptivity' is the flipped condition. Equating them, or using receptivity as a formula variable
+        standing for a resistance quantity, is a new sense."""
+        out = []
+        low = sentence.lower()
+        if re.search(r"gap\s*\(or\s+receptivity\)|receptivity\s*\(or\s+(the\s+)?gap\)|gap,?\s+or\s+receptivity|receptivity,?\s+or\s+the\s+gap", low):
+            out.append("equates the gap with receptivity (they run opposite: the gap is resistance's appearance, receptivity its flip)")
+        if re.search(r"(^|[=÷×/]\s*)receptivity(\s*[=÷×/]|$)", formula.strip()):
+            out.append("uses receptivity as a formula variable")
+        if re.search(r"receptivity\s+(is|stays)\s+(defined\s+as\s+)?the\s+ratio", low):
+            out.append("defines receptivity as a ratio of quantities (a condition, not a quantity)")
+        return out
+
     def forbidden_in(self, sentence: str) -> list[str]:
         """Deep-read traps: physical words that slipped onto the nonphysical side."""
         low = sentence.lower()

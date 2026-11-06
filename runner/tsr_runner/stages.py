@@ -419,3 +419,61 @@ def stage_finalize(run_id: str, rows: list[dict], layer_b: list[collide.Collisio
     (run_dir / "report.md").write_text(rep)
     return {"forced": len(forced), "collisions": len([c for c in cols if c.status not in ("informational",)]),
             "breaks": len([b for b in breaks if b["is_break"]]), "report": str(run_dir / "report.md")}
+
+
+# ---------------------------------------------------------------------------
+# Layer C, agent-driven: one prompt listing every candidate with its book passages
+# ---------------------------------------------------------------------------
+def stage_layer_c_prompt(run_id: str, cands: list[collide.Collision], book_path: Path) -> dict:
+    run_dir = RESULTS / run_id
+    book = collide.BookIndex(book_path)
+    items = []
+    for i, c in enumerate([c for c in cands if c.status == "candidate"], 1):
+        q = (c.detail.get("a", "") + " " + c.detail.get("b", "") + " " + " ".join(v.get("situation", "") for v in c.detail.get("verdicts", [])))[:800]
+        hits = book.search(q, k=5)
+        c.detail["book_hits"] = hits
+        c.detail["layer_c_id"] = f"X{i:02d}"
+        items.append((c, hits))
+    lines = ["ROLE: judge", "",
+             "Each item below is a pair of sentences in a framework's vocabulary that two independent judges found contradictory, "
+             "with the situation they named, followed by passages from the framework's book. For each item decide: does any passage "
+             "state a resolution that makes both sentences true at once (`resolves`), is one of the sentences itself the book's own claim "
+             "with the other contradicting it (`one_side`), or is the book silent (`silent`)? Quote the resolving passage if there is one. "
+             "Use only this prompt.", ""]
+    for c, hits in items:
+        lines.append(f"### {c.detail['layer_c_id']}")
+        lines.append(f"A: {c.detail.get('a','')}")
+        lines.append(f"B: {c.detail.get('b','')}")
+        lines.append("Situation named by the judges: " + " / ".join(v.get("situation", "") for v in c.detail.get("verdicts", [])))
+        lines.append("Passages:")
+        for h in hits:
+            lines.append(f"- [{h['chapter']}] {h['text']}")
+        lines.append("")
+    lines.append('## Report\n\nReturn ONE JSON object: {"items": [{"id": "X01", "verdict": "resolves | one_side | silent", "where": "chapter", "quote": "the resolving sentence or empty", "note": ""}]}')
+    lines.append(f"\nWrite it to `runner/results/{run_id}/raw/judges/<MODEL>-layer-c.json` and reply DONE. Do not read any other file, do not search the web, do not look at the repository.")
+    (run_dir / "prompts" / "layer-c.md").write_text("\n".join(lines))
+    return {"n_candidates": len(items)}
+
+
+def stage_layer_c_collect(run_id: str, cands: list[collide.Collision]) -> list[collide.Collision]:
+    run_dir = RESULTS / run_id
+    verdicts = {}
+    for p in sorted((run_dir / "raw" / "judges").glob("*-layer-c.json")):
+        o = generate.parse_json(p.read_text()) or {}
+        for it in o.get("items", []) or []:
+            verdicts.setdefault(it.get("id"), []).append({"judge": p.stem, **it})
+    for c in cands:
+        cid = c.detail.get("layer_c_id")
+        if not cid or c.status != "candidate":
+            continue
+        vs = verdicts.get(cid, [])
+        c.detail["layer_c"] = vs
+        if vs and all(v.get("verdict") == "resolves" for v in vs):
+            c.status = "book_resolves"
+            c.book_ref = "; ".join(f"{v.get('where','')}: {v.get('quote','')[:160]}" for v in vs)
+        elif not vs:
+            c.status = "stands (book text not available or silent)"
+        else:
+            c.status = "stands"
+            c.book_ref = "; ".join(f"{v['judge']}: {v.get('verdict')} {v.get('where','')}" for v in vs)
+    return cands

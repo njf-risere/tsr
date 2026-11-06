@@ -1,17 +1,21 @@
 # Status against the spec's phases
 
-5 November 2026. Criteria v1, lexicon R1 v1.
+6 November 2026. Criteria v1, lexicon R1 v1. **Run 1 complete: see `results/run1/report.md`.**
 
 | Phase | Acceptance in the spec | State |
 | --- | --- | --- |
 | 0 Harness | Port `tsr_formal.py`; record schema; extractor + procedure; reproduce 17/17 and the October rulings from records alone; no hand-coded rulings in the decision path | **Done.** 22/22 reproduced (17 book rows + friction, interference, work, kinetic-energy definition, damping). `tests/test_phase0.py` checks that `rule.py` never reads a ruling. |
 | 1 Close the joints | The five criteria, tested against all rulings; a list of joints that could not be closed; stop if R1 cannot be stated domain-independently | **Done.** `rule/criteria.yaml` v1. R1 is stated once and decides charge, temperature and entropy (all no) without reference to any domain. Joints that stay open: gravity_call (the book's), form_call, separation_call, reverse_cost, and five R1-undetermined quantities. Two of these (separation_call, reverse_cost) were not in the spec's list; they surfaced while entering the corpus. |
 | 2 Corpus | 82+ relations, second-pass physics review, no accidental nulls | **Entered, review pending.** 88 unreflected records across nine domains, at or above every minimum in the spec's table. Every record is schema-valid. All 88 carry `review: pending`; the second pass has not been done. |
-| 3 Mechanics remainder | Full pipeline with decoys; damping lands as turns around → culmination blind | **Pipeline ready; not run on models.** On the mock roster the pipeline produces every artifact and damping lands as turns around. A real run needs `models.yaml` and keys. |
-| 4 Unrun domains | Domain by domain, report before the next | **Not run.** The procedure's dry preview is in README (73 forced / 9 JUDGMENT / 6 open of 88). |
-| 5 Cross-domain | Layers A–C over all forced rows | **Implemented, mock-tested.** `collide --runs ...` over nine mock runs: 82 forced rows, 0 formal collisions, 6 informational reading-parity notes (expected: row-8 precedent). Layer B needs judges; Layer C needs the paperback text. |
+| 3 Mechanics remainder | Full pipeline with decoys; damping lands as turns around → culmination blind | **Run (run1).** Damping, friction and interference cancellation reproduced blind at 5/5. Mechanics decoy margin +2.56/+1.78, passed. |
+| 4 Unrun domains | Domain by domain, report before the next | **Run (run1), in parallel, deviation noted.** 91 rows, 68 forced after the opponent; per-domain decoy margin failed in five domains (EM, quantum, field theory, stat mech, information), whose rows are excluded as curated pending a better word-swap decoy. |
+| 5 Cross-domain | Layers A–C over all forced rows | **Run (run1).** Layer A: 0 collisions. Layer B: 2 confirmed pairs, Ohm dissolved by the C4 sense lint, energy–momentum × row 7 survived. Layer C on partial book text: resolvers split, pair stands. Recorded as open joint `rest_energy_call`. |
 
-## What a real run needs from the author
+## What run 2 needs from the author
+
+0. Rulings on `rest_energy_call` and `cost_count_call` (both surfaced by run 1), recorded as criteria; then the relativity and calibration domains rerun.
+
+## What a real run needs from the author (run 1 ran without items 1–2 via agent sessions; see report deviations)
 
 1. `models.yaml` (copy `models.example.yaml`) and the API keys in the environment. Five generators, three vendors, one open-weights, opponent from a non-majority vendor.
 2. A plain-text copy of the paperback for Layer C (`--book`), with `Chapter N` and `[p. N]` markers. Not committed.

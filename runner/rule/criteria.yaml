@@ -91,6 +91,23 @@ cost_forms: [equation, inequality, limit, statistical]
 
 # Joints that could not be closed by a criterion. These are findings.
 open_joints:
+  - id: rest_energy_call
+    criterion: C1
+    affects: [rel.row07_mass_energy_equivalence, rel.energy_momentum_relation]
+    note: >
+      Surfaced by run1 Layer B/C. Row 7 (E = C²M) read as the rest-energy row (Ch 17:
+      "Rest energy is the reflection of C²M") is consistent with the reflected
+      energy-momentum relation; read as the total-energy row for any Movement it
+      collides with it for nonzero momentum. The book states the first in prose
+      and never restricts the equation. Author's call; recorded, not resolved.
+  - id: cost_count_call
+    criterion: C0
+    affects: [all cost records]
+    note: >
+      Surfaced by run1 opponent. Odd-cost parity does not force a row unless the
+      number of costs is fixed by the record's cost block; the opponent split
+      friction's single cost into two parity-balanced costs and flipped the book's
+      own ruling. The rule text does not say how costs are counted.
   - id: gravity_call
     criterion: C2
     affects: [rel.row11_mass_energy_warps_spacetime, rel.row12_wells_and_lensing]

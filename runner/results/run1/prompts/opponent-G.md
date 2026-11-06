@@ -458,8 +458,8 @@ Majority reading:
 ```json
 {
   "shape": "keeps",
-  "reflected_formula": "f' = f × √((1 − rise per Expansion ÷ Current) ÷ (1 + rise per Expansion ÷ Current))",
-  "reflected_sentence": "The Current with rise per Expansion away is received at a lower rate, and with rise per Expansion toward, higher; only the relative rise per Expansion matters.",
+  "reflected_formula": "",
+  "reflected_sentence": "A received rate keeps changed with rise per Expansion against the Current, and that rate is not Frequency.",
   "rule_trace": [
     "C0"
   ]

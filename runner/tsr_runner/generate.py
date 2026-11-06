@@ -133,6 +133,7 @@ def _check_output(o: dict, v: Vocab, rec: Relation | None = None) -> tuple[list[
     known = {vv.name for vv in rec.variables} | {vv.quantity for vv in rec.variables} | set(o.get("unmapped_terms") or []) if rec else set(o.get("unmapped_terms") or [])
     new = list(o.get("new_words") or []) + v.new_words(o.get("reflected_formula", "") or "", known)
     forb = v.forbidden_in((o.get("reflected_sentence", "") or "") + " " + (o.get("reflected_formula", "") or ""))
+    forb += ["C4 sense: " + x for x in v.sense_violations(o.get("reflected_sentence", "") or "", o.get("reflected_formula", "") or "")]
     return lint, sorted(set(new)), forb
 
 

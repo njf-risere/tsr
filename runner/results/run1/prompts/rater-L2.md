@@ -49,63 +49,63 @@ LIST: L2
 
 ## Statements
 
-S58: Movement M arises from how receptivity Tunes to the underlying Current; Movement M is that Tune times that Vibration.
-S59: In Vibrational Reality, the Demand that Desire remain unchanged under every shift of imagination brings Frequency into being.
-S60: What is available remains what is held together with pressing minus how warm it is multiplied by Tune.
-S61: A imagination advances by one cycle per extent of Vibration, and its rise per Expansion is the ratio of rate in Expansion to inverse extent of Vibration.
-S62: E squared equals momentum times Current squared plus Vibrance times Current squared squared.
-S63: When resistant and collecting Movement come into alignment, the rate of Vibration per Expansion increases; when out of alignment, it decreases.
-S64: Movement M has conscious energy and Desire; what imagination Tunes to and what emotional evidence shows differ across the gap.
-S65: It is not the case that a weak Frequency treats two sides differently in Vibrational Reality: their combined reflection is not an exact equivalence.
-S66: Vortex approaches what is unchanged as the coldest is approached, and what cannot be reached remains unreached.
-S67: The spreads of Vibration and of momentum in any state cannot both be made small.
-S68: It is not the case that movement M arises from how receptivity Tunes to the underlying Vibration; Movement M is that Tune times that Vibration.
-S69: When receptive and collecting Movement come into alignment, the rate of Vibration per Expansion increases; when out of alignment, it decreases.
-S70: The relationship governing exchange of what is identical keeps its shape.
-S71: Once vibrations culminate they do not un-culminate: Culmination (provisional) grows or holds, and what has dispersed into the Vibration-Expansion is not gathered back without the gap opening.
-S72: Where two surfaces meet in resonance, keeping going becomes harder rather than harder as receptivity and alignment rise, with Frequency rising with resonance.
-S73: The whole opposition met by an alternating flow combines the gap with the opposition to change, and, read receptively, the whole receptivity combines the same way.
-S74: A body's rotational distribution of Frequency about an axis is the product of each Movement M element and the square of its Vibration from the axis.
-S75: It is not the case that at a [unmapped: continuous phase transition] the [unmapped: order parameter] vanishes and the [unmapped: correlation length ξ] becomes limitless as [unmapped: temperature T] approaches [unmapped: critical temperature T_c].
-S76: Instead of an opposing Frequency draining the extent of oscillation over Expansion, the oscillation is sustained more easily as receptivity and alignment rise.
-S77: Rotational momentum is the rotational distribution of Movement M times the rate of turning per Expansion, and is conserved when no turning Frequency acts.
-S78: At a [unmapped: continuous phase transition] the [unmapped: order parameter] vanishes and the [unmapped: correlation length ξ] becomes limitless as [unmapped: temperature T] approaches [unmapped: critical temperature T_c].
-S79: Vibration has conscious energy and Desire; what imagination Tunes to and what emotional evidence shows differ across the gap.
-S80: A change in the Idle makes the Reflected and a change in the Reflected makes the Idle; the pair regenerates itself as the Tune, set by the two medium constants.
-S81: Crossing the Point of Reflection into a different gap, the product of the gap and the angle of Tune remains the same on both sides.
-S82: Extending further in Vibration becomes harder and takes less Frequency as receptivity and alignment rise.
-S83: It is not the case that e has a partner, but the complete relation does not.
-S84: No complete reflected sentence is available from the frozen vocabulary.
-S85: If Z Tune-s to X only through Y, then the [unmapped: mutual information I] that Z holds with X is at most what Y holds with X.
-S86: It is not the case that the gap (or receptivity) is defined as the ratio of conscious energy per source across a path to the flow through it.
-S87: The Current (provisional) of a [unmapped: macrostate] is [unmapped: Boltzmann constant k] times the logarithm of the [unmapped: number of microstates W] in its realization.
-S88: Conservation keeps its shape: conscious energy is neither made nor lost, and what a vibration receives minus what it gives Out For is what its unnamed inner store gains.
-S89: E has a partner, but the complete relation does not.
-S90: Movement M arises from how receptivity Tunes to the underlying Vibration; Movement M is that Tune times that Vibration.
-S91: It is not the case that the identity keeps its shape: Movement M times the square of rise per Expansion stands equal to an unnamed constant times an unnamed hotness; those two have no partners.
-S92: The limit keeps its shape: nothing can make a second independent state out of an unknown one, because that limit does not come from the gap.
-S93: The conscious energy carried across Vibration and Culmination is the product of the Idle and Reflected co-creating partners over the medium constant.
-S94: What is defined remains what is held plus how strongly it presses multiplied by Appreciation.
-S95: In Vibrational Reality, the Demand that Tune remain unchanged under every shift of imagination brings Frequency into being.
-S96: The relationship allowing combinations of what is allowed keeps its shape.
-S97: Rise per Expansion varies with the extent of each Vibration, so a collection of many Vibrations spreads across Expansion.
-S98: What is available remains what is held together with pressing minus how warm it is multiplied by Culmination.
-S99: How likely a realization is stays tied in the same way to the strength of the state that leads to it.
-S100: What happens when a state is met keeps its shape: one realization appears and the state matches it, without the prior state fixing which one.
-S101: Once vibrations cancel they do not un-culminate: Culmination (provisional) grows or holds, and what has dispersed into the Vibration-Expansion is not gathered back without the gap opening.
-S102: Two Vibrations met in receptivity cancel together into the whole extent of Vibration.
-S103: It is not the case that e has a partner, but the complete relation does not.
-S104: If each is equally warm with another, they remain equally warm with each other.
-S105: It is not the case that a body's rotational distribution of Movement M about an axis is the product of each Movement M element and the square of its Vibration from the axis.
-S106: The symmetry involving Idle, Reflected and imagination keeps its shape, with the remaining partners unnamed.
-S107: The Culmination (provisional) of a [unmapped: macrostate] is [unmapped: Boltzmann constant k] times the logarithm of the [unmapped: number of microstates W] in its realization.
-S108: Along the Current the Vibration-Expansion interval vanishes: no Expansion of its own passes for the Current, and its E depends on whose emotional evidence meets it.
-S109: Two vibrations culminate less easily as the gap closes.
-S110: The definition keeps its shape: an unnamed holding-in of warmth is an unnamed gift of conscious energy per unnamed single rise in warmth.
-S111: It is not the case that vibration has conscious energy and Desire; what imagination Tunes to and what emotional evidence shows differ across the gap.
-S112: The cost turns around: what grew harder as an unnamed opposition to the flow grew, now eases as receptivity rises, and more conscious energy passes for the same difference in warmth.
-S113: The evening-out keeps its shape: two vibrations in contact pass conscious energy between them until their unnamed warmths agree and the passing stops.
-S114: The gap (or receptivity) is defined as the ratio of conscious energy per source across a path to the flow through it.
+S58: It is not the case that in Vibrational Reality, the Demand that Desire remain unchanged under every shift of imagination brings Frequency into being.
+S59: What is available remains what is held together with pressing minus how warm it is multiplied by Tune.
+S60: E has a partner, but the complete relation does not.
+S61: The whole opposition met by an alternating flow combines the gap with the opposition to change, and, read receptively, the whole receptivity combines the same way.
+S62: E squared equals momentum times Current squared plus Movement M times Current squared squared.
+S63: Two Vibrations met in receptivity culminate together into the whole extent of Vibration.
+S64: The way a system in [unmapped: equilibrium] meets a small Frequency is fixed by the [unmapped: spectrum] of its own [unmapped: spontaneous fluctuations]: resonance and [unmapped: thermal noise] are two faces of one quantity.
+S65: It is not the case that the Idle gathered over any closed surface equals the enclosed source over the medium constant.
+S66: It is not the case that a received rate keeps changed with rise per Expansion against the Current, and that rate is not Frequency.
+S67: In Vibrational Reality, the Demand that Desire remain unchanged under every shift of imagination brings Frequency into being.
+S68: For a given conscious energy per source, the flow that moves rises as receptivity and alignment rise (and as the gap narrows).
+S69: The limit keeps its shape: nothing can make a second independent state out of an unknown one, because that limit does not come from the gap.
+S70: Once vibrations culminate they do not un-culminate: Culmination (provisional) grows or holds, and what has dispersed into the Vibration-Expansion is not gathered back without the gap opening.
+S71: Where two surfaces meet in resonance, keeping going becomes harder rather than harder as receptivity and alignment rise, with Frequency rising with resonance.
+S72: For a given conscious energy per source, the flow that moves falls as receptivity and alignment rise (and as the gap narrows).
+S73: Vibration in Attraction equals Movement M, so in receptive alignment there is no gap from Attraction.
+S74: At a [unmapped: continuous phase transition] the [unmapped: order parameter] vanishes and the [unmapped: correlation length ξ] becomes limitless as [unmapped: temperature T] approaches [unmapped: critical temperature T_c].
+S75: Instead of an opposing Frequency draining the extent of oscillation over Expansion, the oscillation is sustained more easily as receptivity and alignment rise.
+S76: Rotational momentum is the rotational distribution of Movement M times the rate of turning per Expansion, and is conserved when no turning Frequency acts.
+S77: The relationship concerning conscious energy that remains keeps its shape.
+S78: How likely a realization is stays tied in the same way to the strength of the state that leads to it.
+S79: When receptive and collecting Movement come into alignment, the rate of Intuition per Expansion increases; when out of alignment, it decreases.
+S80: E squared equals momentum times Current squared plus Vibrance times Current squared squared.
+S81: Extending further in Vibration becomes harder and takes less Frequency as receptivity and alignment rise.
+S82: It is not the case that e has a partner, but the complete relation does not.
+S83: No complete reflected sentence is available from the frozen vocabulary.
+S84: If Z Tune-s to X only through Y, then the [unmapped: mutual information I] that Z holds with X is at most what Y holds with X.
+S85: For a given conscious energy per source, the flow that moves rises as receptivity and alignment rise (and as the gap narrows).
+S86: Conservation keeps its shape: conscious energy is neither made nor lost, and what a vibration receives minus what it gives Out For is what its unnamed inner store gains.
+S87: E has a partner, but the complete relation does not.
+S88: The overall rise per Expansion of a packet of Vibration is the change of Expansion with inverse Vibration, which is how conscious energy E moves.
+S89: It is not the case that the identity keeps its shape: Movement M times the square of rise per Expansion stands equal to an unnamed constant times an unnamed hotness; those two have no partners.
+S90: What happens when a state is met keeps its shape: one realization appears and the state matches it, without the prior state fixing which one.
+S91: The definition keeps its shape: momentum that belongs to the thing itself is still momentum, and what is not a turning in space is not a turning in Vortex.
+S92: What is defined remains what is held plus how strongly it presses multiplied by Appreciation.
+S93: It is not the case that a weak Frequency treats two sides differently in Vibrational Reality: their combined reflection is not an exact equivalence.
+S94: It is not the case that a change in the Idle makes the Reflected and a change in the Reflected makes the Idle; the pair regenerates itself as the Current, set by the two medium constants.
+S95: What is available remains what is held together with pressing minus how warm it is multiplied by Culmination.
+S96: The definition keeps its shape: momentum that belongs to the thing itself is still momentum, and what is not a turning in space is not a turning in Vibration.
+S97: A received rate keeps changed with rise per Expansion against the Current, and that rate is not Frequency.
+S98: Once vibrations cancel they do not un-culminate: Culmination (provisional) grows or holds, and what has dispersed into the Vibration-Expansion is not gathered back without the gap opening.
+S99: Crossing the Point of Reflection into a different gap, the product of the gap and the angle of Tune remains the same on both sides.
+S100: It is not the case that e has a partner, but the complete relation does not.
+S101: If each is equally warm with another, they remain equally warm with each other.
+S102: It is not the case that a body's rotational distribution of Movement M about an axis is the product of each Movement M element and the square of its Vibration from the axis.
+S103: An induced flow moves to receive the change that produced it, so changing a flow across Frequency gets easier as receptivity and alignment rise.
+S104: The Culmination (provisional) of a [unmapped: macrostate] is [unmapped: Boltzmann constant k] times the logarithm of the [unmapped: number of microstates W] in its realization.
+S105: The trade-off between telling two ways apart and seeing how they cancel together keeps its shape.
+S106: The definition keeps its shape: an unnamed holding-in of warmth is an unnamed gift of conscious energy per unnamed single rise in warmth.
+S107: Frequency depends on E: Idle and Reflected Frequency grows with E, while strong Frequency falls with E.
+S108: The cost turns around: what grew harder as an unnamed opposition to the flow grew, now eases as receptivity rises, and more conscious energy passes for the same difference in warmth.
+S109: The evening-out keeps its shape: two vibrations in contact pass conscious energy between them until their unnamed warmths agree and the passing stops.
+S110: The limitless collection of [unmapped: channel capacity C] equals [unmapped: bandwidth B] times the logarithm of one plus [unmapped: signal power S] divided by [unmapped: noise power N].
+S111: A changing flow across Expansion in one loop induces conscious energy per source in another loop in proportion to their shared coupling.
+S112: E has a partner, but the complete relation does not.
+S113: Along the Current the Desire-Expansion interval vanishes: no Expansion of its own passes for the Current, and its E depends on whose emotional evidence meets it.
+S114: It is not the case that rotational momentum is the rotational distribution of Movement M times the rate of turning per Expansion, and is conserved when no turning Frequency acts.
 
 ## Report
 
