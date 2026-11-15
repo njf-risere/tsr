@@ -1,0 +1,81 @@
+arm_id,item_id,stratum,overlaps_legacy_extension_test,claude_sonnet_4_6,gpt_5_4_fast,gemini_2_5_flash,mistral_medium_3_5,llama_4_maverick,majority_ruling,consensus_4_of_5,canonical_model,layer_a_passed,joint_layer_a_passed,layer_a_failures,m3b_verdict,m3b_attack_type,m3c_single_verdict_j1,m3c_single_verdict_j2,m3c_single_2_of_2_coherent,in_m4_item,in_m4_native_pair
+A0,E001,Core,False,no partner,keep,keep,keep,keep,keep,True,gpt-5.4-fast,False,False,A3_exponent_or_quotient_flip,uphold,none,incoherent,incoherent,False,True,True
+A0,E002,Core,False,keep,keep,keep,keep,keep,keep,True,claude-sonnet-4.6,False,False,A3_exponent_or_quotient_flip,uphold,none,incoherent,incoherent,False,True,True
+A0,E003,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E004,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E005,Core,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E006,Core,False,no partner,no partner,no partner,no partner,keep,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E007,Core,False,keep,keep,keep,keep,keep,keep,True,claude-sonnet-4.6,True,True,,uphold,none,coherent,coherent,True,True,True
+A0,E008,Core,False,invert,keep,keep,keep,invert,keep,False,,,,,,,,,,False,False
+A0,E009,Boundary,False,no partner,no partner,keep,no partner,invert,no partner,False,,,,,,,,,,False,False
+A0,E010,Core,False,no partner,no partner,keep,keep,keep,keep,False,,,,,,,,,,False,False
+A0,E011,Core,False,keep,keep,keep,keep,keep,keep,True,claude-sonnet-4.6,True,True,,uphold,none,coherent,incoherent,False,True,True
+A0,E012,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E013,Core,False,keep,keep,invert,no partner,invert,keep,False,,,,,,,,,,False,False
+A0,E014,Core,False,keep,keep,keep,keep,keep,keep,True,claude-sonnet-4.6,True,True,,uphold,none,incoherent,incoherent,False,True,True
+A0,E015,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E016,Core,False,keep,keep,keep,keep,keep,keep,True,claude-sonnet-4.6,True,True,,attack,polarity_flip,coherent,incoherent,False,True,True
+A0,E017,Core,False,no partner,no partner,no partner,no partner,SCHEMA_ERROR,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E018,Core,False,keep,keep,keep,keep,keep,keep,True,gpt-5.4-fast,True,True,,uphold,none,coherent,coherent,True,True,True
+A0,E019,Boundary,False,no partner,no partner,no partner,no partner,invert,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E020,Core,False,keep,invert,invert,no partner,invert,invert,False,,,,,,,,,,False,False
+A0,E021,Core,False,invert,invert,invert,invert,invert,invert,True,mistral-medium-3.5,True,True,,attack,formula_mismatch,incoherent,incoherent,False,True,True
+A0,E022,Core,False,keep,keep,keep,keep,keep,keep,True,claude-sonnet-4.6,True,True,,uphold,none,incoherent,incoherent,False,True,True
+A0,E023,Core,False,invert,invert,invert,invert,invert,invert,True,claude-sonnet-4.6,False,False,A2_formula_unknown_tokens,attack,dictionary_mismatch,incoherent,coherent,False,True,True
+A0,E024,Core,False,no partner,no partner,no partner,no partner,invert,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E025,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E026,Core,False,no partner,no partner,no partner,no partner,invert,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E027,Core,False,keep,keep,keep,keep,keep,keep,True,claude-sonnet-4.6,False,False,A2_formula_unknown_tokens,uphold,none,coherent,coherent,True,True,True
+A0,E028,Core,False,keep,no partner,keep,keep,keep,keep,True,gemini-2.5-flash,True,True,,uphold,none,incoherent,incoherent,False,True,True
+A0,E029,Boundary,False,no partner,no partner,no partner,no partner,invert,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E030,Core,False,keep,keep,keep,keep,keep,keep,True,gpt-5.4-fast,True,True,,uphold,none,coherent,incoherent,False,True,True
+A0,E031,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E032,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E033,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E034,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E035,Core,False,no partner,no partner,no partner,no partner,invert,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E036,Core,False,no partner,no partner,no partner,no partner,keep,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A0,E037,Core,True,keep,invert,invert,invert,invert,invert,True,gpt-5.4-fast,True,True,,uphold,none,incoherent,incoherent,False,True,True
+A0,E038,Core,False,keep,keep,keep,keep,keep,keep,True,gpt-5.4-fast,True,True,,uphold,none,incoherent,incoherent,False,True,True
+A0,E039,Core,False,keep,keep,keep,keep,keep,keep,True,claude-sonnet-4.6,True,True,,attack,polarity_flip,incoherent,incoherent,False,True,True
+A0,E040,Core,False,keep,no partner,keep,no partner,invert,keep,False,,,,,,,,,,False,False
+A3-1,E001,Core,False,keep,no partner,keep,keep,keep,keep,True,claude-sonnet-4.6,False,False,A1_cross_item_one_to_many(alpha);A1_invalid_target_token;A3_exponent_or_quotient_flip,uphold,none,incoherent,incoherent,False,False,True
+A3-1,E002,Core,False,keep,keep,keep,keep,keep,keep,True,claude-sonnet-4.6,True,False,A1_cross_item_one_to_many(alpha),attack,dictionary_mismatch,incoherent,incoherent,False,False,True
+A3-1,E003,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E004,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E005,Core,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E006,Core,False,no partner,no partner,no partner,no partner,keep,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E007,Core,False,keep,keep,keep,keep,keep,keep,True,claude-sonnet-4.6,True,True,,uphold,none,coherent,coherent,True,False,True
+A3-1,E008,Core,False,invert,keep,keep,keep,invert,keep,False,,,,,,,,,,False,False
+A3-1,E009,Boundary,False,no partner,no partner,keep,no partner,invert,no partner,False,,,,,,,,,,False,False
+A3-1,E010,Core,False,no partner,no partner,keep,keep,keep,keep,False,,,,,,,,,,False,False
+A3-1,E011,Core,False,keep,keep,keep,keep,SCHEMA_ERROR,keep,True,gpt-5.4-fast,True,True,,uphold,none,incoherent,incoherent,False,False,True
+A3-1,E012,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E013,Core,False,keep,invert,keep,keep,invert,keep,False,,,,,,,,,,False,False
+A3-1,E014,Core,False,keep,keep,keep,keep,keep,keep,True,claude-sonnet-4.6,True,True,,uphold,none,incoherent,incoherent,False,False,True
+A3-1,E015,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E016,Core,False,keep,keep,keep,keep,invert,keep,True,claude-sonnet-4.6,True,True,,uphold,none,coherent,incoherent,False,False,True
+A3-1,E017,Core,False,no partner,no partner,no partner,no partner,invert,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E018,Core,False,keep,keep,keep,keep,keep,keep,True,claude-sonnet-4.6,True,True,,uphold,none,incoherent,incoherent,False,False,True
+A3-1,E019,Boundary,False,no partner,no partner,no partner,no partner,invert,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E020,Core,False,keep,invert,keep,invert,invert,invert,False,,,,,,,,,,False,False
+A3-1,E021,Core,False,invert,keep,invert,invert,invert,invert,True,claude-sonnet-4.6,True,True,,uphold,none,incoherent,incoherent,False,False,True
+A3-1,E022,Core,False,keep,keep,keep,keep,keep,keep,True,gpt-5.4-fast,True,True,,uphold,none,coherent,incoherent,False,False,True
+A3-1,E023,Core,False,invert,invert,invert,invert,invert,invert,True,claude-sonnet-4.6,False,False,A2_formula_unknown_tokens,attack,formula_mismatch,coherent,incoherent,False,False,True
+A3-1,E024,Core,False,no partner,no partner,no partner,no partner,invert,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E025,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E026,Core,False,no partner,no partner,no partner,no partner,invert,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E027,Core,False,keep,keep,keep,keep,keep,keep,True,claude-sonnet-4.6,False,False,A2_formula_unknown_tokens,uphold,none,coherent,coherent,True,False,True
+A3-1,E028,Core,False,keep,no partner,keep,keep,keep,keep,True,gemini-2.5-flash,True,True,,uphold,none,incoherent,incoherent,False,False,True
+A3-1,E029,Boundary,False,no partner,no partner,no partner,no partner,invert,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E030,Core,False,keep,keep,keep,keep,keep,keep,True,claude-sonnet-4.6,True,True,,uphold,none,incoherent,coherent,False,False,True
+A3-1,E031,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E032,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E033,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E034,Boundary,False,no partner,no partner,no partner,no partner,no partner,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E035,Core,False,no partner,no partner,no partner,no partner,invert,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E036,Core,False,no partner,no partner,no partner,no partner,keep,no partner,True,claude-sonnet-4.6,,,,,,,,,False,False
+A3-1,E037,Core,True,invert,invert,invert,invert,invert,invert,True,gpt-5.4-fast,True,True,,uphold,none,incoherent,incoherent,False,False,True
+A3-1,E038,Core,False,keep,keep,keep,keep,keep,keep,True,gemini-2.5-flash,True,True,,uphold,none,incoherent,incoherent,False,False,True
+A3-1,E039,Core,False,keep,keep,keep,keep,keep,keep,True,claude-sonnet-4.6,True,True,,attack,polarity_flip,incoherent,incoherent,False,False,True
+A3-1,E040,Core,False,keep,no partner,keep,no partner,invert,keep,False,,,,,,,,,,False,False
