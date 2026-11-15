@@ -1,0 +1,33 @@
+arm_id,item_id,stratum,equation_latex,canonical_model,ruling,layer_a_v2_passed,layer_a_v2_collisions,layer_a_v2_joint_passes_all,layer_a_v3_passed,layer_a_v3_collisions,layer_a_v3_joint_passes_all,cross_item_collisions_v2,cross_item_collisions_v3,delta_v2_to_v3
+A0,E001,Core,a_{\text{CM}} = R \alpha,gpt-5.4-fast,keep,False,A3_exponent_or_quotient_flip,False,True,,True,,,FIXED_BY_V3
+A0,E002,Core,a_{\text{t}} = r \alpha,claude-sonnet-4.6,keep,False,A3_exponent_or_quotient_flip,False,True,,True,,,FIXED_BY_V3
+A0,E007,Core,\Delta x = x_{\text{f}} - x_{\text{i}},claude-sonnet-4.6,keep,True,,False,True,,True,,,PASSED_BOTH
+A0,E011,Core,\vec{a}_{\text{CM}} = \frac{d^{2}}{d t^{2}} (\frac{1}{M} \sum_{j = 1}^{N} m_{j} \vec{r}_{j}) = \frac{1}{M} \sum_{j = 1}^{N} m_{j} \vec{a}_{j},claude-sonnet-4.6,keep,True,,False,True,,True,,,PASSED_BOTH
+A0,E014,Core,\vec{w} = m \vec{g},claude-sonnet-4.6,keep,True,,False,True,,True,,,PASSED_BOTH
+A0,E016,Core,x'= \frac{x - v t}{\sqrt{1 - v^{2} / c^{2}}},claude-sonnet-4.6,keep,True,,False,True,,True,,,PASSED_BOTH
+A0,E018,Core,\bar{v} = \frac{v_{0} + v}{2},gpt-5.4-fast,keep,True,,False,True,,True,,,PASSED_BOTH
+A0,E021,Core,"W_{\text{grav,} A B} = - m g (y_{B} - y_{A})",mistral-medium-3.5,invert,True,,False,True,,True,,,PASSED_BOTH
+A0,E022,Core,\sum_{k} \vec{\tau}_{k} = \vec{0},claude-sonnet-4.6,keep,True,,False,True,,True,,,PASSED_BOTH
+A0,E023,Core,W_{A B} = \int_{\text{path} A B} \vec{F} \cdot d \vec{r},claude-sonnet-4.6,invert,False,A2_formula_unknown_tokens,False,True,,True,,,FIXED_BY_V3
+A0,E027,Core,\vec{a}_{P S} = \vec{a}_{P S'} + \vec{a}_{S' S},claude-sonnet-4.6,keep,False,A2_formula_unknown_tokens,False,True,,True,,,FIXED_BY_V3
+A0,E028,Core,L = I \omega,gemini-2.5-flash,keep,True,,False,True,,True,,,PASSED_BOTH
+A0,E030,Core,\Delta U = U (\vec{r}) - U (\vec{r}_{0}),gpt-5.4-fast,keep,True,,False,True,,True,,,PASSED_BOTH
+A0,E037,Core,f_{k} = \mu_{k} N,gpt-5.4-fast,invert,True,,False,True,,True,,,PASSED_BOTH
+A0,E038,Core,\vec{v}_{\text{CM}} = \frac{d}{d t} (\frac{1}{M} \sum_{j = 1}^{N} m_{j} \vec{r}_{j}) = \frac{1}{M} \sum_{j = 1}^{N} m_{j} \vec{v}_{j},gpt-5.4-fast,keep,True,,False,True,,True,,,PASSED_BOTH
+A0,E039,Core,N = m g,claude-sonnet-4.6,keep,True,,False,True,,True,,,PASSED_BOTH
+A3-1,E001,Core,a_{\text{CM}} = R \alpha,claude-sonnet-4.6,keep,False,A1_invalid_target_token;A3_exponent_or_quotient_flip,False,False,A1_invalid_target_token;A3_monomial_exponent_mismatch,False,A1_cross_item_one_to_many(alpha),A1_cross_item_one_to_many(alpha),STILL_FAILS
+A3-1,E002,Core,a_{\text{t}} = r \alpha,claude-sonnet-4.6,keep,True,,False,True,,False,A1_cross_item_one_to_many(alpha),A1_cross_item_one_to_many(alpha),PASSED_BOTH
+A3-1,E007,Core,\Delta x = x_{\text{f}} - x_{\text{i}},claude-sonnet-4.6,keep,True,,False,True,,False,,,PASSED_BOTH
+A3-1,E011,Core,\vec{a}_{\text{CM}} = \frac{d^{2}}{d t^{2}} (\frac{1}{M} \sum_{j = 1}^{N} m_{j} \vec{r}_{j}) = \frac{1}{M} \sum_{j = 1}^{N} m_{j} \vec{a}_{j},gpt-5.4-fast,keep,True,,False,True,,False,,,PASSED_BOTH
+A3-1,E014,Core,\vec{w} = m \vec{g},claude-sonnet-4.6,keep,True,,False,True,,False,,,PASSED_BOTH
+A3-1,E016,Core,x'= \frac{x - v t}{\sqrt{1 - v^{2} / c^{2}}},claude-sonnet-4.6,keep,True,,False,True,,False,,,PASSED_BOTH
+A3-1,E018,Core,\bar{v} = \frac{v_{0} + v}{2},claude-sonnet-4.6,keep,True,,False,True,,False,,,PASSED_BOTH
+A3-1,E021,Core,"W_{\text{grav,} A B} = - m g (y_{B} - y_{A})",claude-sonnet-4.6,invert,True,,False,True,,False,,,PASSED_BOTH
+A3-1,E022,Core,\sum_{k} \vec{\tau}_{k} = \vec{0},gpt-5.4-fast,keep,True,,False,True,,False,,,PASSED_BOTH
+A3-1,E023,Core,W_{A B} = \int_{\text{path} A B} \vec{F} \cdot d \vec{r},claude-sonnet-4.6,invert,False,A2_formula_unknown_tokens,False,True,,False,,,FIXED_BY_V3
+A3-1,E027,Core,\vec{a}_{P S} = \vec{a}_{P S'} + \vec{a}_{S' S},claude-sonnet-4.6,keep,False,A2_formula_unknown_tokens,False,True,,False,,,FIXED_BY_V3
+A3-1,E028,Core,L = I \omega,gemini-2.5-flash,keep,True,,False,True,,False,,,PASSED_BOTH
+A3-1,E030,Core,\Delta U = U (\vec{r}) - U (\vec{r}_{0}),claude-sonnet-4.6,keep,True,,False,True,,False,,,PASSED_BOTH
+A3-1,E037,Core,f_{k} = \mu_{k} N,gpt-5.4-fast,invert,True,,False,True,,False,,,PASSED_BOTH
+A3-1,E038,Core,\vec{v}_{\text{CM}} = \frac{d}{d t} (\frac{1}{M} \sum_{j = 1}^{N} m_{j} \vec{r}_{j}) = \frac{1}{M} \sum_{j = 1}^{N} m_{j} \vec{v}_{j},gemini-2.5-flash,keep,True,,False,True,,False,,,PASSED_BOTH
+A3-1,E039,Core,N = m g,claude-sonnet-4.6,keep,True,,False,True,,False,,,PASSED_BOTH
