@@ -1,0 +1,24 @@
+{
+  "stage1_m1_total_cal_items": 17,
+  "stage2_m2_total_heldout_items": 40,
+  "stage3_m3b_calls": 32,
+  "stage4_m3c_single_items": 32,
+  "stage4_m3c_pairs_total": 162,
+  "stage4_m3c_rule1_checks": 0,
+  "stage5_m4_item_count": 18,
+  "stage5_m4_native_pair_count": 16,
+  "stage5_m4_bundle_calls": 12,
+  "stage6_m5_calls": 60,
+  "schema_error_counts": {
+    "stage1_m1": 5,
+    "stage2_m2": 2,
+    "stage3_m3b": 0,
+    "stage4_m3c_single": 0,
+    "stage4_m3c_pairs": 0,
+    "stage4_m3c_rule1": 0,
+    "stage5_m4_item": 0,
+    "stage5_m4_native_pair": 0,
+    "stage5_m4_bundle": 0,
+    "stage6_m5": 0
+  }
+}

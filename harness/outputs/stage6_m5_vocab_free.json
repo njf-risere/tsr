@@ -1,0 +1,568 @@
+{
+  "slots": {
+    "mass": {
+      "claude-sonnet-4.6": {
+        "physical_slot": "mass",
+        "proposed_counterpart": "openness",
+        "alternate_candidates": [
+          "receptivity",
+          "willingness"
+        ],
+        "reason": "Mass in physics is the measure of resistance to change — inertia, the tendency of a body to resist acceleration and maintain its current state. On the nonphysical mirror side, this resistance-to-change flips into its opposite: the quality of being unresistingly open, yielding, and ready to shift. Where mass quantifies how much a physical object pushes back against any force applied to it, 'openness' quantifies how readily a nonphysical entity (a mind, a system, a relationship) yields and aligns without friction or inertia. Greater mass means greater resistance; greater openness means greater effortless responsiveness — a clean polarity reversal."
+      },
+      "gpt-5.4-fast": {
+        "physical_slot": "mass",
+        "proposed_counterpart": "lightness",
+        "alternate_candidates": [
+          "weightlessness",
+          "ease"
+        ],
+        "reason": "Mass is the ordinary physical notion of inertia: resistance to being accelerated or moved. Under the mirror polarity, that resistance reverses into unresisting, effortless responsiveness, and the most natural everyday counterpart is lightness."
+      },
+      "gemini-2.5-flash": {
+        "physical_slot": "mass",
+        "proposed_counterpart": "influence",
+        "alternate_candidates": [
+          "potency",
+          "significance"
+        ],
+        "reason": "Mass is a fundamental physical property that quantifies an object's resistance to acceleration (inertia) and its capacity to exert gravitational pull. Its nonphysical counterpart, 'influence,' mirrors these characteristics by representing a fundamental nonphysical property: instead of resisting change, it facilitates effortless alignment and propagation; instead of exerting physical pull, it exerts a nonphysical attraction or effect. Influence describes the capacity to affect or sway without physical force or resistance, often spreading simultaneously and unifying elements rather than being contained, aligning with the nonphysical polarity's emphasis on unresisting yielding, immediate unfolding, effortless alignment, and unified coherence."
+      },
+      "mistral-medium-3.5": {
+        "physical_slot": "mass",
+        "proposed_counterpart": "lightness",
+        "alternate_candidates": [
+          "weightlessness",
+          "freedom"
+        ],
+        "reason": "Mass embodies physical resistance, inertia, and bounded locality; its nonphysical mirror reverses these into effortless, unbounded yielding—captured by 'lightness' as the absence of weight or resistance. Alternatives like 'weightlessness' emphasize the lack of gravitational pull, while 'freedom' reflects the holistic, unobstructed alignment."
+      },
+      "llama-4-maverick": {
+        "physical_slot": "mass",
+        "proposed_counterpart": "significance",
+        "alternate_candidates": [
+          "importance",
+          "relevance"
+        ],
+        "reason": "Mass represents a measure of physical resistance and inertia. The nonphysical counterpart should represent a measure of 'resistance' or 'inertia' in a nonphysical context, such as the impact or influence of an idea or concept. Significance captures this idea, as it represents the importance or relevance of something in a nonphysical sense."
+      }
+    },
+    "density": {
+      "claude-sonnet-4.6": {
+        "physical_slot": "density",
+        "proposed_counterpart": "openness",
+        "alternate_candidates": [
+          "spaciousness",
+          "receptivity"
+        ],
+        "reason": "Physical density measures how tightly matter is packed within bounded space, resisting penetration and compressing boundaries. The nonphysical mirror reverses this: instead of packed, resistant, localized compaction, we get unbounded, unresisting openness — a quality of yielding, expansive availability with no crowding or obstruction. Openness captures the inversion of density's core features: where density closes and concentrates, openness spreads and welcomes without resistance."
+      },
+      "gpt-5.4-fast": {
+        "physical_slot": "density",
+        "proposed_counterpart": "openness",
+        "alternate_candidates": [
+          "spaciousness",
+          "expansiveness"
+        ],
+        "reason": "Density is the physical sense of packed, compact concentration within firm boundaries. Under the mirror polarity, the nonphysical counterpart naturally reverses that into unconfined, unresisting roominess and free yielding rather than compression, so 'openness' is the most ordinary-English fit."
+      },
+      "gemini-2.5-flash": {
+        "physical_slot": "density",
+        "proposed_counterpart": "pervasiveness",
+        "alternate_candidates": [
+          "diffusion",
+          "permeability"
+        ],
+        "reason": "Physical 'density' describes the concentration of mass within a volume, implying resistance, firm boundaries, and fragmented containment. Its nonphysical counterpart, following the mirror principles, should describe the opposite: the extent to which an influence, idea, or quality spreads throughout a domain without resistance, yielding to fill the space, and exhibiting unified, holistic coherence rather than fragmented containment. 'Pervasiveness' directly captures this concept of unresisted, widespread presence and influence, contrasting with the concentrated, resistant nature of physical density."
+      },
+      "mistral-medium-3.5": {
+        "physical_slot": "density",
+        "proposed_counterpart": "ubiquity",
+        "alternate_candidates": [
+          "permeation",
+          "omnipresence"
+        ],
+        "reason": "Density implies mass concentrated in a bounded space with resistance to penetration; its nonphysical mirror is unbounded, effortless presence everywhere at once—ubiquity—with no barriers or separation. Alternatives like permeation or omnipresence capture similar unbounded, simultaneous, and unresisting qualities."
+      },
+      "llama-4-maverick": {
+        "physical_slot": "density",
+        "proposed_counterpart": "intensity",
+        "alternate_candidates": [
+          "richness",
+          "saturation"
+        ],
+        "reason": "Density is a measure of how tightly packed physical entities are within a given space. The nonphysical counterpart should capture a similar notion of 'concentration' or 'degree of presence' in a nonphysical context. Intensity conveys the idea of a quality or feeling being strongly present or concentrated, mirroring the concept of density in the physical realm."
+      }
+    },
+    "volume": {
+      "claude-sonnet-4.6": {
+        "physical_slot": "volume",
+        "proposed_counterpart": "scope",
+        "alternate_candidates": [
+          "breadth",
+          "reach"
+        ],
+        "reason": "Physical volume measures bounded, localized spatial extent with firm containment. Its nonphysical mirror reverses bounded containment into unbounded, unresisting spread of influence or meaning — 'scope' captures this as the open, holistic range of what is encompassed without physical barriers or resistance, mirroring volume's quantitative extent but freed from spatial enclosure."
+      },
+      "gpt-5.4-fast": {
+        "physical_slot": "volume",
+        "proposed_counterpart": "presence",
+        "alternate_candidates": [
+          "spaciousness",
+          "scope"
+        ],
+        "reason": "Volume is bounded three-dimensional extent occupied by a separated physical object. Its nonphysical mirror is best captured by presence: an unbounded, directly felt 'extent' or fullness that does not depend on physical enclosure, distance, or resistant boundaries. 'Spaciousness' emphasizes unconfined roomlike openness, and 'scope' emphasizes the breadth of a nonphysical field or reach."
+      },
+      "gemini-2.5-flash": {
+        "physical_slot": "volume",
+        "proposed_counterpart": "pervasiveness",
+        "alternate_candidates": [
+          "reach",
+          "scope"
+        ],
+        "reason": "Physical `volume` denotes a bounded, localized, and measurable quantity of space occupied by a physical entity, implying containment and resistance. Its nonphysical counterpart, according to the framework, should reverse these characteristics into unboundedness, unified presence, and unresisting yielding. `Pervasiveness` precisely captures this: it describes the quality of being spread throughout, present everywhere, without physical boundaries or resistance, representing an unbounded, holistic, and effortlessly present 'extent' of influence or presence, directly mirroring the physical concept in reverse."
+      },
+      "mistral-medium-3.5": {
+        "physical_slot": "volume",
+        "proposed_counterpart": "presence",
+        "alternate_candidates": [
+          "essence",
+          "wholeness"
+        ],
+        "reason": "Volume as a physical measure of space occupied by a bounded object mirrors nonphysically into an unbounded, effortless 'presence' that pervades without resistance or containment. Alternatives like 'essence' capture the unified, intrinsic nature, while 'wholeness' emphasizes holistic coherence without fragmentation."
+      },
+      "llama-4-maverick": {
+        "physical_slot": "volume",
+        "proposed_counterpart": "scope",
+        "alternate_candidates": [
+          "extent",
+          "breadth"
+        ],
+        "reason": "The nonphysical counterpart of 'volume' should capture the idea of an unbounded, holistic, or comprehensive quality. 'Scope' conveys this sense, as it refers to the extent or range of something, often in a more abstract or intangible sense. 'Extent' and 'breadth' are alternative candidates that also convey a sense of expansiveness or comprehensiveness, but 'scope' is a more natural fit as it is often used in nonphysical contexts, such as the scope of a project or the scope of knowledge."
+      }
+    },
+    "space": {
+      "claude-sonnet-4.6": {
+        "physical_slot": "space",
+        "proposed_counterpart": "awareness",
+        "alternate_candidates": [
+          "consciousness",
+          "presence"
+        ],
+        "reason": "Physical space is the bounded, separated, measurable void that holds objects apart and enforces distance and locality. Its nonphysical mirror reverses these properties: instead of separation and bounded containment, we get unbounded, undivided awareness — a field of knowing that holds all content simultaneously without distance, barriers, or fragmentation. Awareness (or consciousness) is the classic nonphysical analogue: it has no edges, imposes no separation between its contents, and admits no travel-time or locality constraints, mirroring space's structure while inverting its resistance and boundedness."
+      },
+      "gpt-5.4-fast": {
+        "physical_slot": "space",
+        "proposed_counterpart": "unity",
+        "alternate_candidates": [
+          "oneness",
+          "wholeness"
+        ],
+        "reason": "Space implies separation, distance, and distinct locations. The mirrored nonphysical counterpart reverses separateness into undivided togetherness and simultaneous coherence, which ordinary English most naturally captures as unity."
+      },
+      "gemini-2.5-flash": {
+        "physical_slot": "space",
+        "proposed_counterpart": "consciousness",
+        "alternate_candidates": [
+          "unity",
+          "presence"
+        ],
+        "reason": "Physical 'space' defines separation, distance, and boundaries between entities, requiring sequential traversal and presenting barriers to simultaneity. Its nonphysical counterpart, 'consciousness', represents an unbounded, unified realm where nonphysical phenomena (thoughts, feelings, ideas) exist without spatial separation, allowing for immediate, simultaneous unfolding and effortless alignment, transcending physical distance and fragmentation into holistic coherence."
+      },
+      "mistral-medium-3.5": {
+        "physical_slot": "space",
+        "proposed_counterpart": "mind",
+        "alternate_candidates": [
+          "thought",
+          "consciousness"
+        ],
+        "reason": "Space embodies physical separation, boundaries, and sequential traversal; its nonphysical mirror is an unbounded, effortless, and simultaneous domain where no distance or resistance exists—'mind' (or 'thought'/'consciousness') captures this as a unified, holistic, and immediate realm."
+      },
+      "llama-4-maverick": {
+        "physical_slot": "space",
+        "proposed_counterpart": "unity",
+        "alternate_candidates": [
+          "oneness",
+          "field"
+        ],
+        "reason": "The nonphysical counterpart to 'space' as a separated, localized, and bounded physical entity is a term that represents unbounded, holistic, and unified coherence. 'Unity' captures this essence by signifying a state of being joined or combined into a single, undivided whole, mirroring the reversal of 'space' into a nonphysical context where separation and distance are transcended."
+      }
+    },
+    "time": {
+      "claude-sonnet-4.6": {
+        "physical_slot": "time",
+        "proposed_counterpart": "presence",
+        "alternate_candidates": [
+          "nowness",
+          "eternity"
+        ],
+        "reason": "Physical time is the sequential, separated unfolding of moments across intervals — each instant distinct, ordered, and inaccessible simultaneously. The nonphysical mirror reverses sequentiality into immediate, simultaneous wholeness: all moments collapsed into a single, unbounded, effortless 'presence' or 'now' with no separation between past, present, and future. 'Presence' captures this unified, unresisting, boundary-free counterpart most naturally in ordinary English."
+      },
+      "gpt-5.4-fast": {
+        "physical_slot": "time",
+        "proposed_counterpart": "timelessness",
+        "alternate_candidates": [
+          "the eternal present",
+          "simultaneity"
+        ],
+        "reason": "The physical side of time implies sequential before-and-after across separated intervals. Its mirrored nonphysical counterpart is the absence of succession: an immediate, all-at-once condition where events are not divided by temporal distance. 'Timelessness' is the most ordinary natural English term for that reversal."
+      },
+      "gemini-2.5-flash": {
+        "physical_slot": "time",
+        "proposed_counterpart": "Simultaneity",
+        "alternate_candidates": [
+          "Eternity",
+          "Timelessness"
+        ],
+        "reason": "The physical concept of 'time' is defined by sequentiality, separated intervals, and the inability for distant observers to share a common simultaneous present. The nonphysical mirror reverses this into 'immediate, simultaneous unfolding' and 'unified, holistic coherence,' where no separation obstructs direct translation and there is no 'distance-induced loss of simultaneity.' 'Simultaneity' directly captures this reversal, representing a state where all events unfold at once, without sequence or separation, and a common present is universally shared."
+      },
+      "mistral-medium-3.5": {
+        "physical_slot": "time",
+        "proposed_counterpart": "eternity",
+        "alternate_candidates": [
+          "now",
+          "presence"
+        ],
+        "reason": "Time embodies sequential, separated intervals with resistance to simultaneity; its nonphysical mirror is unbounded, effortless, and holistic—eternity captures this as a timeless, unified whole. Alternatives like 'now' or 'presence' emphasize immediate, simultaneous unfolding without sequential barriers."
+      },
+      "llama-4-maverick": {
+        "physical_slot": "time",
+        "proposed_counterpart": "eternity",
+        "alternate_candidates": [
+          "simultaneity",
+          "omnipresence"
+        ],
+        "reason": "The nonphysical counterpart to 'time' should reflect a concept that transcends sequentiality and fragmented containment, embodying immediate, simultaneous unfolding and unified coherence. 'Eternity' captures this by representing a timeless or endless state, while 'simultaneity' and 'omnipresence' also convey a sense of unity and absence of sequential separation."
+      }
+    },
+    "velocity": {
+      "claude-sonnet-4.6": {
+        "physical_slot": "velocity",
+        "proposed_counterpart": "momentum of thought",
+        "alternate_candidates": [
+          "flow of awareness",
+          "mental momentum"
+        ],
+        "reason": "Velocity in the physical domain measures directed rate of change through space over time, implying sequential traversal, inertia, and bounded locality. Its nonphysical mirror preserves the directed-rate-of-change structure but strips away spatial separation, temporal sequentiality, and inertial resistance — yielding something like 'momentum of thought': a sense of directed, effortless, unbounded cognitive or intentional flow that unfolds immediately without friction or distance-cost. The algebraic shape (directed magnitude of change) is kept; the physical barriers (space, time, inertia) are dissolved."
+      },
+      "gpt-5.4-fast": {
+        "physical_slot": "velocity",
+        "proposed_counterpart": "immediacy",
+        "alternate_candidates": [
+          "instantaneity",
+          "effortless flow"
+        ],
+        "reason": "Velocity is motion across separated space over time, so its nonphysical mirror is the absence of traversed separation: direct, simultaneous arrival without distance-cost or delay. 'Immediacy' is the most natural ordinary-English term for that."
+      },
+      "gemini-2.5-flash": {
+        "physical_slot": "velocity",
+        "proposed_counterpart": "synchronicity",
+        "alternate_candidates": [
+          "resonance",
+          "attunement"
+        ],
+        "reason": "Physical 'velocity' describes the rate of sequential, effortful movement of separated entities through space and time, encountering inertia and distance barriers. Its nonphysical counterpart, 'synchronicity', reverses these aspects: it represents the immediate, simultaneous unfolding and effortless alignment of events or concepts within a unified, holistic coherence. Unlike physical velocity which is limited by cost and distance, synchronicity implies an unhindered, instantaneous 'rate' of meaningful manifestation or alignment, effectively 'flipping the directional polarity' by bringing things together without traversal or effort."
+      },
+      "mistral-medium-3.5": {
+        "physical_slot": "velocity",
+        "proposed_counterpart": "synchrony",
+        "alternate_candidates": [
+          "instantaneity",
+          "ubiquity"
+        ],
+        "reason": "Velocity implies sequential motion through separated space over time with resistance (e.g., inertia). Its nonphysical mirror reverses this: synchrony captures immediate, simultaneous unfolding without resistance or separation, aligning with effortless, unified coherence. Alternatives like instantaneity emphasize timelessness, while ubiquity emphasizes unbounded presence."
+      },
+      "llama-4-maverick": {
+        "physical_slot": "velocity",
+        "proposed_counterpart": "rapidity",
+        "alternate_candidates": [
+          "swiftness",
+          "celerity"
+        ],
+        "reason": "Velocity is a measure of an object's rate of change of position with respect to time, embodying the physical concepts of sequential traversal and localized motion. The nonphysical counterpart should capture a similar notion but without the constraints of physical space and time. Rapidity, while still related to speed, can be interpreted in a more abstract or nonphysical sense, conveying a sense of swift or immediate progression or unfolding, aligning with the nonphysical polarity's characteristics of effortless alignment and unified coherence."
+      }
+    },
+    "acceleration": {
+      "claude-sonnet-4.6": {
+        "physical_slot": "acceleration",
+        "proposed_counterpart": "insight",
+        "alternate_candidates": [
+          "awakening",
+          "realization"
+        ],
+        "reason": "Physical acceleration involves effortful, inertia-resisting change in velocity across time — a sequential, costly buildup requiring force. Its nonphysical mirror reverses this: instead of gradual, friction-laden increase requiring sustained effort, there is an immediate, effortless shift in understanding or awareness. 'Insight' captures this — a sudden, unbounded leap in comprehension that requires no sequential accumulation, no resistance to overcome, arriving whole and simultaneous rather than incrementally forced."
+      },
+      "gpt-5.4-fast": {
+        "physical_slot": "acceleration",
+        "proposed_counterpart": "ease",
+        "alternate_candidates": [
+          "effortlessness",
+          "flow"
+        ],
+        "reason": "Acceleration on the physical side involves increasing motion against inertia and often greater force or resistance costs. The mirrored nonphysical counterpart is the absence of such resistance: movement or change happening without effort, drag, or buildup. 'Ease' is the most natural ordinary-English term for that unresisting, frictionless alignment."
+      },
+      "gemini-2.5-flash": {
+        "physical_slot": "acceleration",
+        "proposed_counterpart": "Instantaneous Alignment",
+        "alternate_candidates": [
+          "Synchronous Unfolding",
+          "Effortless Coherence"
+        ],
+        "reason": "Physical 'acceleration' describes a sequential process of changing velocity over time, requiring effort to overcome inertia and resistance. Its nonphysical counterpart reverses these aspects: 'Instantaneous Alignment' combines 'instantaneous' (reversing sequentiality and time into immediate, simultaneous unfolding) with 'alignment' (reversing effort, inertia, and resistance into unresisting yielding and effortless alignment, leading to unified coherence)."
+      },
+      "mistral-medium-3.5": {
+        "physical_slot": "acceleration",
+        "proposed_counterpart": "instant alignment",
+        "alternate_candidates": [
+          "effortless synchronization",
+          "unresisted attunement"
+        ],
+        "reason": "Acceleration in the physical realm involves overcoming inertia and resistance to change velocity over time. Its nonphysical counterpart reverses this by implying immediate, effortless, and simultaneous adjustment without resistance or delay, capturing the polarity of unbounded yielding and holistic coherence."
+      },
+      "llama-4-maverick": {
+        "physical_slot": "acceleration",
+        "proposed_counterpart": "attunement",
+        "alternate_candidates": [
+          "alignment",
+          "synchronization"
+        ],
+        "reason": "Acceleration involves a change in velocity over time, requiring effort and encountering inertia. In contrast, attunement implies an effortless alignment or harmonization, mirroring the nonphysical polarity's characteristics of unified coherence and resistance-free unfolding."
+      }
+    },
+    "force": {
+      "claude-sonnet-4.6": {
+        "physical_slot": "force",
+        "proposed_counterpart": "intention",
+        "alternate_candidates": [
+          "will",
+          "motivation"
+        ],
+        "reason": "Physical force is the localized, effortful push or pull that overcomes inertia and resistance to change the state of a bounded object. Its nonphysical mirror reverses effortful resistance into effortless, unresisting alignment: intention is the inner directive that orients action without mechanical friction or external barrier, unifying purpose and movement in a single, immediate act of will rather than an applied external push across a gap."
+      },
+      "gpt-5.4-fast": {
+        "physical_slot": "force",
+        "proposed_counterpart": "flow",
+        "alternate_candidates": [
+          "ease",
+          "yielding"
+        ],
+        "reason": "Force implies pushing against resistance to cause change in the physical domain. The mirrored nonphysical counterpart is the ordinary-English idea of unresisted, effortless movement or alignment without friction or inertia, which is most naturally captured by 'flow'."
+      },
+      "gemini-2.5-flash": {
+        "physical_slot": "force",
+        "proposed_counterpart": "influence",
+        "alternate_candidates": [
+          "attraction",
+          "resonance"
+        ],
+        "reason": "Physical 'force' overcomes resistance through effort to cause change or motion in localized entities. Its nonphysical counterpart, 'influence', operates by leveraging alignment, resonance, or inherent tendencies, causing change or coherence effortlessly and without direct resistance, thriving on yielding rather than overcoming."
+      },
+      "mistral-medium-3.5": {
+        "physical_slot": "force",
+        "proposed_counterpart": "will",
+        "alternate_candidates": [
+          "intention",
+          "harmony"
+        ],
+        "reason": "Force in the physical realm involves effortful resistance and localized push/pull; its nonphysical mirror is effortless, unbounded alignment—'will' captures this as an internal, unresisted drive that unifies action without inertia or barriers. Alternatives like 'intention' (directed but unobstructed) or 'harmony' (coherent, simultaneous alignment) also reflect the polarity."
+      },
+      "llama-4-maverick": {
+        "physical_slot": "force",
+        "proposed_counterpart": "influence",
+        "alternate_candidates": [
+          "impulse",
+          "motivation"
+        ],
+        "reason": "Force is a physical concept that involves effort or resistance. Its nonphysical counterpart should convey a similar idea without the physical connotation. 'Influence' captures the idea of having an effect without physical resistance or effort, aligning with the nonphysical polarity. 'Impulse' and 'motivation' are alternative candidates as they also convey a driving or initiating factor, albeit with slightly different connotations."
+      }
+    },
+    "speed of light": {
+      "claude-sonnet-4.6": {
+        "physical_slot": "speed of light",
+        "proposed_counterpart": "instant knowing",
+        "alternate_candidates": [
+          "immediate awareness",
+          "simultaneous understanding"
+        ],
+        "reason": "The speed of light is the ultimate physical limit on how fast information or causation can propagate across separated space, enforcing sequential, distance-bound delay. Its nonphysical mirror reverses this into the absence of any propagation delay — knowing or awareness that is immediate and simultaneous regardless of separation, requiring no traversal, no time, and no effort. 'Instant knowing' captures the unbounded, unresisting, holistic counterpart to light's finite, barrier-setting speed."
+      },
+      "gpt-5.4-fast": {
+        "physical_slot": "speed of light",
+        "proposed_counterpart": "instant presence",
+        "alternate_candidates": [
+          "immediacy",
+          "simultaneous presence"
+        ],
+        "reason": "'Speed of light' is the physical limit set by distance and delayed transmission between separated places. The mirrored nonphysical counterpart should reverse distance-bound travel into no-travel, no-delay availability across separation. 'Instant presence' most naturally captures that ordinary-English sense of immediate, simultaneous there-ness without transit or resistance."
+      },
+      "gemini-2.5-flash": {
+        "physical_slot": "speed of light",
+        "proposed_counterpart": "instantaneous knowing",
+        "alternate_candidates": [
+          "immediate resonance",
+          "universal awareness"
+        ],
+        "reason": "The 'speed of light' represents the finite, maximum rate of physical information transfer and causal propagation, inherently involving delay and separation across space and time. Its nonphysical counterpart, 'instantaneous knowing,' mirrors the conceptual polarity by embodying immediate, simultaneous unfolding and unified, holistic coherence. It signifies a direct, non-propagated apprehension of information or awareness, free from temporal or spatial barriers, aligning with the nonphysical reversal of sequentiality into simultaneity and fragmented containment into unity."
+      },
+      "mistral-medium-3.5": {
+        "physical_slot": "speed of light",
+        "proposed_counterpart": "instant knowing",
+        "alternate_candidates": [
+          "simultaneous awareness",
+          "unbounded presence"
+        ],
+        "reason": "The speed of light embodies physical limits: finite, sequential propagation with distance-induced delay. Its nonphysical mirror reverses this into effortless, barrier-free immediacy—where 'knowing' or 'awareness' occurs without traversal, resistance, or separation, aligning with the polarity of unbounded, simultaneous coherence."
+      },
+      "llama-4-maverick": {
+        "physical_slot": "speed of light",
+        "proposed_counterpart": "unity of awareness",
+        "alternate_candidates": [
+          "instant insight",
+          "omniscience"
+        ],
+        "reason": "The speed of light represents the maximum speed at which information can travel in the physical world, embodying the concept of a universal limit on sequential propagation. In contrast, 'unity of awareness' captures the nonphysical idea of immediate, undivided, and holistic understanding or perception, mirroring the simultaneity and effortless coherence characteristic of the nonphysical polarity."
+      }
+    },
+    "gravity": {
+      "claude-sonnet-4.6": {
+        "physical_slot": "gravity",
+        "proposed_counterpart": "attraction",
+        "alternate_candidates": [
+          "draw",
+          "affinity"
+        ],
+        "reason": "Physical gravity is a localized force that pulls masses together across distance with measurable resistance, curvature, and inertia — objects must traverse space and time to respond to it. The nonphysical mirror reverses the separating distance and effortful traversal into immediate, effortless drawing-together: 'attraction' captures this unbounded, unresisting pull between ideas, people, or qualities that requires no physical medium, no lag, and no inertia — alignment happens holistically and simultaneously rather than through sequential spatial approach."
+      },
+      "gpt-5.4-fast": {
+        "physical_slot": "gravity",
+        "proposed_counterpart": "grace",
+        "alternate_candidates": [
+          "levity",
+          "buoyancy"
+        ],
+        "reason": "Gravity is the physical pull that draws things downward through force, weight, and resistance. Its nonphysical mirror is most naturally grace: an effortless, unresisting, uplifting alignment that works without friction or strain. 'Levity' and 'buoyancy' also fit the opposite sense of lightness or lift, but 'grace' best captures the ordinary-English idea of ease, effortless support, and nonphysical elevation."
+      },
+      "gemini-2.5-flash": {
+        "physical_slot": "gravity",
+        "proposed_counterpart": "resonance",
+        "alternate_candidates": [
+          "coherence",
+          "affinity"
+        ],
+        "reason": "Gravity is a physical force that pulls distinct masses together, its strength diminishing with distance, requiring effort to overcome inertia. Its nonphysical mirror, 'resonance,' describes the effortless, immediate, and simultaneous alignment of nonphysical entities (like ideas, frequencies, or consciousness) into a unified, coherent state. Instead of distinct objects pulling each other, resonance implies a yielding to shared patterns, where conceptual 'distance' (dissimilarity) is overcome by an inherent tendency towards alignment and unity, flipping the directional polarity of distance's effect."
+      },
+      "mistral-medium-3.5": {
+        "physical_slot": "gravity",
+        "proposed_counterpart": "levity",
+        "alternate_candidates": [
+          "lightness",
+          "effortless ascent"
+        ],
+        "reason": "Gravity embodies physical resistance, downward pull, and effortful constraint; its nonphysical mirror reverses this into unbounded, effortless upward release or alignment, captured naturally by 'levity' (etymologically and conceptually the opposite of gravity). Alternatives like 'lightness' or 'effortless ascent' reflect the same polarity shift from weight to weightlessness and resistance to yielding."
+      },
+      "llama-4-maverick": {
+        "physical_slot": "gravity",
+        "proposed_counterpart": "levity",
+        "alternate_candidates": [
+          "buoyancy",
+          "weightlessness"
+        ],
+        "reason": "Gravity represents a physical force that pulls objects toward each other, embodying effortful resistance and localized attraction. Its nonphysical counterpart should reflect an effortless, unified, or holistic concept. 'Levity' captures a sense of lightness or ease, mirroring the reversal of gravity's pull, and aligns with the nonphysical polarity of effortless alignment and unified coherence."
+      }
+    },
+    "friction": {
+      "claude-sonnet-4.6": {
+        "physical_slot": "friction",
+        "proposed_counterpart": "flow",
+        "alternate_candidates": [
+          "ease",
+          "harmony"
+        ],
+        "reason": "Friction is the physical resistance that opposes motion, requiring extra effort and dissipating energy. Its nonphysical mirror reverses this into effortless, unresisted movement — 'flow' captures the state of frictionless, aligned, spontaneous progress where no drag or opposition impedes action. 'Ease' and 'harmony' similarly evoke the absence of resistance and the smooth alignment of forces without conflict."
+      },
+      "gpt-5.4-fast": {
+        "physical_slot": "friction",
+        "proposed_counterpart": "flow",
+        "alternate_candidates": [
+          "ease",
+          "effortlessness"
+        ],
+        "reason": "\"Friction\" is resistance, drag, and effortful opposition to motion; the most natural ordinary-English mirror is \"flow,\" which suggests unresisting movement, smooth alignment, and effortless passage."
+      },
+      "gemini-2.5-flash": {
+        "physical_slot": "friction",
+        "proposed_counterpart": "alignment",
+        "alternate_candidates": [
+          "flow",
+          "harmony"
+        ],
+        "reason": "The nonphysical polarity explicitly mirrors 'effortful friction or inertia' with 'effortless alignment'. Alignment signifies a state where elements move or interact seamlessly and without resistance, embodying the 'unresisting yielding' and 'unified, holistic coherence' described in the nonphysical domain, directly opposing the resistance and effort implied by friction."
+      },
+      "mistral-medium-3.5": {
+        "physical_slot": "friction",
+        "proposed_counterpart": "harmony",
+        "alternate_candidates": [
+          "flow",
+          "synchrony"
+        ],
+        "reason": "Friction embodies resistance, effort, and boundary conflict in the physical domain; its nonphysical mirror is effortless alignment and seamless coherence, naturally captured by 'harmony'. Alternatives like 'flow' (unimpeded movement) and 'synchrony' (simultaneous unity) also reflect the reversal of resistance into unresisted unity."
+      },
+      "llama-4-maverick": {
+        "physical_slot": "friction",
+        "proposed_counterpart": "harmony",
+        "alternate_candidates": [
+          "cooperation",
+          "alignment"
+        ],
+        "reason": "Friction represents a physical resistance or barrier to motion or change. In the nonphysical realm, harmony, cooperation, or alignment represent effortless, unresisting, and unified states that mirror the reversal of friction's obstructive nature."
+      }
+    },
+    "damping": {
+      "claude-sonnet-4.6": {
+        "physical_slot": "damping",
+        "proposed_counterpart": "amplification",
+        "alternate_candidates": [
+          "resonance",
+          "enhancement"
+        ],
+        "reason": "Damping in the physical domain represents the progressive dissipation of energy, the effortful resistance that reduces oscillation and motion over time through friction or drag. Its nonphysical mirror reverses this: instead of energy bleeding away against resistance, signal or meaning grows freely and effortlessly. 'Amplification' captures this polarity most directly — unbounded, unresisting growth of intensity rather than its decay — while 'resonance' and 'enhancement' offer related senses of effortless reinforcement and coherent buildup without dissipative loss."
+      },
+      "gpt-5.4-fast": {
+        "physical_slot": "damping",
+        "proposed_counterpart": "resonance",
+        "alternate_candidates": [
+          "free flow",
+          "attunement"
+        ],
+        "reason": "Damping is the physical reduction of motion through friction, drag, or dissipative resistance. The mirrored nonphysical counterpart is resonance: an effortless, amplifying alignment in which energy is not suppressed but carried and reinforced through coherent, unresisting fit."
+      },
+      "gemini-2.5-flash": {
+        "physical_slot": "damping",
+        "proposed_counterpart": "resonance",
+        "alternate_candidates": [
+          "amplification",
+          "energizing"
+        ],
+        "reason": "Physical 'damping' reduces oscillations and dissipates energy through resistance and friction. Its nonphysical counterpart, 'resonance', represents the amplification or enhancement of a pattern or flow through 'effortless alignment' and 'unresisting yielding', embodying the reversal of resistance into yielding and the transformation of energy dissipation into sympathetic amplification, leading to increased coherence and simultaneous unfolding without cost or barrier."
+      },
+      "mistral-medium-3.5": {
+        "physical_slot": "damping",
+        "proposed_counterpart": "resonance",
+        "alternate_candidates": [
+          "harmony",
+          "synchrony"
+        ],
+        "reason": "Damping in the physical realm describes resistance or dissipation of motion/energy over time, often through friction or drag. Its nonphysical counterpart should reflect effortless alignment, immediate coherence, and unbounded yielding—qualities embodied by resonance, where systems naturally align or amplify without resistance. Alternatives like harmony and synchrony also capture unified, simultaneous, and frictionless coordination."
+      },
+      "llama-4-maverick": {
+        "physical_slot": "damping",
+        "proposed_counterpart": "amplification",
+        "alternate_candidates": [
+          "resonance",
+          "harmonization"
+        ],
+        "reason": "Damping represents a physical process where energy is dissipated, leading to a decrease in amplitude or intensity over time due to resistance or friction. The nonphysical counterpart should reflect a concept where there's an effortless or unresisted increase or enhancement. Amplification fits as it represents an increase or enhancement without the connotation of physical resistance or effort, mirroring the reversal of damping's dissipative effect. Resonance and harmonization also suggest effortless alignment or coherence, though they lean more towards synchronization or tuning rather than a direct increase."
+      }
+    }
+  }
+}
