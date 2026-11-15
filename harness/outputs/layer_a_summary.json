@@ -1,0 +1,151 @@
+{
+  "A0": {
+    "arm_id": "A0",
+    "evaluated_items": 16,
+    "per_item_passed": 12,
+    "layer_a_collisions": [
+      {
+        "item_id": "E001",
+        "layer": "A3_exponent_or_quotient_flip",
+        "physical_vars": [
+          "R"
+        ],
+        "target_slot": "Vibration",
+        "equation_quot_signs": [
+          1
+        ],
+        "reflected_quot_signs": [
+          -1,
+          1
+        ],
+        "equation_overall_signs": [
+          1
+        ],
+        "reflected_overall_signs": [
+          -1,
+          1
+        ],
+        "equation_latex": "a_{\\text{CM}} = R \\alpha",
+        "reflected_formula": "Appreciation = Vibration * (Appreciation / Vibration)"
+      },
+      {
+        "item_id": "E002",
+        "layer": "A3_exponent_or_quotient_flip",
+        "physical_vars": [
+          "r"
+        ],
+        "target_slot": "Vibration",
+        "equation_quot_signs": [
+          1
+        ],
+        "reflected_quot_signs": [
+          -1,
+          1
+        ],
+        "equation_overall_signs": [
+          1
+        ],
+        "reflected_overall_signs": [
+          -1,
+          1
+        ],
+        "equation_latex": "a_{\\text{t}} = r \\alpha",
+        "reflected_formula": "Appreciation_tangential = Vibration * (Appreciation / Vibration)"
+      },
+      {
+        "item_id": "E023",
+        "layer": "A2_formula_unknown_tokens",
+        "reflected_formula": "conscious energy = integral over path of Frequency · d(Vibration)",
+        "unknowns": [
+          "integral",
+          "over",
+          "path",
+          "of"
+        ]
+      },
+      {
+        "item_id": "E027",
+        "layer": "A2_formula_unknown_tokens",
+        "reflected_formula": "Appreciation_PS = Appreciation_PS' + Appreciation_S'S",
+        "unknowns": [
+          "AppreciationS"
+        ]
+      }
+    ],
+    "layer_a_collisions_count": 4,
+    "passes_all": false
+  },
+  "A3-1": {
+    "arm_id": "A3-1",
+    "evaluated_items": 16,
+    "per_item_passed": 13,
+    "layer_a_collisions": [
+      {
+        "item_id": "E001",
+        "layer": "A1_invalid_target_token",
+        "physical": "alpha",
+        "target": "imagination (angular) = imagination / Appreciation",
+        "unknowns": [
+          "angular"
+        ]
+      },
+      {
+        "item_id": "E001",
+        "layer": "A3_exponent_or_quotient_flip",
+        "physical_vars": [
+          "R"
+        ],
+        "target_slot": "Appreciation",
+        "equation_quot_signs": [
+          1
+        ],
+        "reflected_quot_signs": [
+          -1,
+          1
+        ],
+        "equation_overall_signs": [
+          1
+        ],
+        "reflected_overall_signs": [
+          -1,
+          1
+        ],
+        "equation_latex": "a_{\\text{CM}} = R \\alpha",
+        "reflected_formula": "imagination = Appreciation * (imagination / Appreciation)"
+      },
+      {
+        "item_id": "E023",
+        "layer": "A2_formula_unknown_tokens",
+        "reflected_formula": "Movement_AB = integral over path of Movement · d(Appreciation)",
+        "unknowns": [
+          "integral",
+          "over",
+          "path",
+          "of"
+        ]
+      },
+      {
+        "item_id": "E027",
+        "layer": "A2_formula_unknown_tokens",
+        "reflected_formula": "imagination_PS = imagination_PS' + imagination_S'S",
+        "unknowns": [
+          "imaginationS"
+        ]
+      },
+      {
+        "layer": "A1_cross_item_one_to_many",
+        "physical": "alpha",
+        "variants": {
+          "imagination (angular) = imagination / Appreciation": [
+            "E001"
+          ],
+          "imagination": [
+            "E002"
+          ]
+        }
+      }
+    ],
+    "layer_a_collisions_count": 5,
+    "passes_all": false
+  }
+}

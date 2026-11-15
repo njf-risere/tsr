@@ -1,0 +1,226 @@
+{
+  "A0:E001": {
+    "item_id": "E001",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly maps a_CM to Appreciation, R to Vibration, and alpha to Appreciation ÷ Vibration, all consistent with the Partner Lookup Table. The reflected formula preserves the algebraic shape a_CM = R * alpha without inversion. The relation is a kinematic rolling constraint, not a cost/barrier/dissipation/separation law, so ruling='keep' and two_level=false are appropriate. No unmapped active variable or blocklisted quantity appears.",
+    "counterexample_situation": "No counterexample applies: the equation is a pure kinematic constraint for rolling without slipping, with no inertia, drag, dissipation, restoring barrier, or separation-induced loss of simultaneity."
+  },
+  "A0:E002": {
+    "item_id": "E002",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The record is in scope: tangential acceleration maps to Appreciation, radius r maps to Vibration, and angular acceleration alpha maps to Appreciation / Vibration, all matching the Partner Lookup Table. The reflected formula preserves the algebraic shape a_t = r * alpha without inverting or canceling terms. The relation is purely kinematic and contains no inertia/mass resistance, dissipation, contact barrier, or separation cost, so ruling=keep and two_level=false are correct. No unmapped blocklisted variable or dictionary mismatch is present.",
+    "counterexample_situation": "No counterexample; an invert ruling would require a cost/barrier/separation term such as mass, friction, drag, or a horizon condition, none of which appears in a_t = r * alpha."
+  },
+  "A0:E007": {
+    "item_id": "E007",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly treats spatial displacement as in scope: the Partner Lookup Table maps displacement, position, and coordinate to Vibration. The formula Δx = x_f - x_i preserves its algebraic subtraction shape as Vibration = Vibration_final - Vibration_initial. This is a cost-free definitional/perspective relation, so ruling 'keep' and two_level false are correct. No unmapped blocklisted quantity, dictionary mismatch, polarity flip, formula mismatch, or conceptual contradiction is present.",
+    "counterexample_situation": "None found. A particle at initial position x_i and final position x_f has displacement x_f - x_i; this is a direct difference of mapped Vibration quantities with no inertia, dissipation, barrier, or separation cost requiring inversion."
+  },
+  "A0:E011": {
+    "item_id": "E011",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "All active variables map correctly to the Partner Lookup Table: acceleration→Appreciation, mass→Movement, position→Vibration. The reflected formula preserves the mass-weighted average structure of the final equality. The relation is a cost-free kinematic definition, so ruling='keep' and two_level=false are correct. The omitted derivative form is algebraically equivalent to the retained final equality and does not introduce an unmapped term.",
+    "counterexample_situation": "None; no cost, barrier, dissipation, or separation is present in this center-of-mass acceleration definition."
+  },
+  "A0:E014": {
+    "item_id": "E014",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly maps weight to Movement × Attraction, mass to Movement, and gravitational acceleration to Attraction, all matching the Partner Lookup Table. The algebraic shape w = m g is preserved as Movement × Attraction = Movement * Attraction. Under Rule R Step 4, weight is a constitutive force/mass/weight law and is correctly ruled keep with two_level false. The vector notation is not a separate unmapped dynamical quantity, and no cost, dissipation, barrier, or separation condition is present to require inversion.",
+    "counterexample_situation": "No valid counterexample is available for this record. A scenario such as an object near Earth with weight w = m g still reflects as Movement × Attraction = Movement * Attraction without any dissipative or barrier-induced inversion."
+  },
+  "A0:E016": {
+    "item_id": "E016",
+    "verdict": "attack",
+    "attack_type": "polarity_flip",
+    "critique": "The candidate classifies the Lorentz transformation as a cost-free perspective transform (ruling 'keep'), but the formula contains the gamma factor 1/sqrt(1 - v^2/c^2), which diverges as v approaches c and encodes the finite speed of light as a speed barrier; the full Lorentz transformation also encodes distance-induced loss of simultaneity. Under Rule R Step 4, this is a speed-barrier/separation cost, so the ruling should be 'invert' (with two_level false), not 'keep'.",
+    "counterexample_situation": "Two events that are simultaneous in one inertial frame (t1=t2) at separated positions x1≠x2 are not simultaneous in a frame moving relative to it, because t' = γ(t - vx/c^2); the -vx/c^2 term is a distance-induced loss of simultaneity. Alternatively, as v→c, the denominator sqrt(1 - v^2/c^2) approaches zero, showing a speed barrier rather than a cost-free perspective."
+  },
+  "A0:E018": {
+    "item_id": "E018",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly treats average velocity as an in-scope kinematic relation, maps v_bar, v_0, and v to the table partner 'rise per Expansion', preserves the algebraic midpoint form, and applies 'keep' because the constant-acceleration average-velocity relation is a definitional/perspective kinematic identity with no inertia, dissipation, barrier, or separation cost.",
+    "counterexample_situation": "No counterexample found: for any constant-acceleration case, e.g. v_0 = 2 and v = 6, the average is 4, matching the reflected midpoint expression."
+  },
+  "A0:E021": {
+    "item_id": "E021",
+    "verdict": "attack",
+    "attack_type": "formula_mismatch",
+    "critique": "The reflected_formula correctly preserves the leading minus sign, but translation_t omits it, verbally stating W = m g (y_B - y_A) instead of W = -m g (y_B - y_A).",
+    "counterexample_situation": "If y_B > y_A (object raised from A to B), the original work done by gravity is negative, while the translation_t without the minus sign would imply positive work."
+  },
+  "A0:E022": {
+    "item_id": "E022",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly treats torque as mapped to Vibration × Frequency, preserves the algebraic summation-to-zero shape, and classifies the second equilibrium condition as a balance law with no cost, dissipation, barrier, or separation-induced inversion. No unmapped term, dictionary mismatch, formula distortion, or polarity error is present.",
+    "counterexample_situation": "No counterexample applies: sum_k tau_k = 0 is a static balance condition, not an effort/dissipation/barrier/separation law, so keep with two_level=false is consistent."
+  },
+  "A0:E023": {
+    "item_id": "E023",
+    "verdict": "attack",
+    "attack_type": "dictionary_mismatch",
+    "critique": "The candidate maps W_AB to 'conscious energy', but the Partner Lookup Table maps 'work' to 'Frequency × Vibration' and reserves 'conscious energy' for 'energy'. The reflected formula should therefore preserve W as Frequency × Vibration, e.g. Frequency × Vibration = ∫ Frequency · d(Vibration). The invert/two_level reading for work is otherwise consistent, but the variable map violates the table and conflates work with generic energy.",
+    "counterexample_situation": "A compressed spring has potential energy (conscious energy) before any work is done; work is the process of transferring energy, not the energy itself. Thus W_AB cannot be identified with conscious energy and must use the table's work partner Frequency × Vibration."
+  },
+  "A0:E027": {
+    "item_id": "E027",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly treats the relative acceleration equation as an in-scope kinematic frame transformation. Acceleration is mapped to Appreciation per the Partner Lookup Table, the vector addition structure is preserved, and the ruling 'keep' with two_level=false is appropriate because this is a pure perspective transform without inertia, dissipation, barrier, or separation cost. No unmapped blocklisted quantity appears.",
+    "counterexample_situation": "No valid counterexample: inverting this relation would incorrectly treat a pure relative-frame acceleration composition as a cost-bearing or dissipative law, contrary to Rule R Step 4."
+  },
+  "A0:E028": {
+    "item_id": "E028",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly maps angular momentum, moment of inertia, and angular velocity using the Partner Lookup Table. The reflected formula preserves the algebraic shape L = I * omega, since (Movement * Vibration^2) * (rise per Expansion / Vibration) simplifies to Vibration * Movement * rise per Expansion. Angular momentum is a rotational-dynamics law, so ruling 'keep' with two_level false is consistent with Rule R. No unmapped blocklisted terms or dictionary mismatches are present.",
+    "counterexample_situation": "No counterexample: the variable mappings, formula structure, and keep ruling are all consistent with the specified rules."
+  },
+  "A0:E030": {
+    "item_id": "E030",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly treats potential energy as mapped to conscious energy and position/reference position as Vibration. No blocklisted or unmapped active quantity appears. The reflected formula preserves the subtraction structure of ΔU = U(r) - U(r0). The relation is a definitional/perspective choice of potential-energy zero, not a cost, dissipation, barrier, or separation law, so ruling='keep' and two_level=false are correct.",
+    "counterexample_situation": "No counterexample: a potential-energy difference relative to a reference zero is a definitional gauge choice, not an effortful, dissipative, or separation-cost relation."
+  },
+  "A0:E037": {
+    "item_id": "E037",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly treats kinetic friction as in scope: f_k maps to resonance and N maps to Frequency, while the dimensionless coefficient μ_k is stripped per Rule R Step 1a. The algebraic shape f_k = μ_k N is preserved as resonance = Frequency. The ruling is correctly invert because kinetic friction is a dissipative cost, and two_level is correctly false because this is a pure dissipation law rather than a productive definition/derivation such as work or kinetic energy. The translation accurately states direct proportionality under sliding contact without introducing unmapped variables or reversing causality.",
+    "counterexample_situation": "No counterexample applies: any attempt to classify this as keep would ignore the dissipative cost of kinetic friction, and any attempt to mark two_level true would incorrectly treat a pure friction-loss law as a productive operational definition."
+  },
+  "A0:E038": {
+    "item_id": "E038",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "All active quantities are mapped consistently: v_CM and v_j to rise per Expansion, t to Expansion, M and m_j to Movement, and r_j to Vibration. The algebraic structure is preserved, including the derivative, weighted sum, and division by total Movement. The relation is a definitional center-of-mass velocity identity with no inertia/dissipation/barrier/separation cost, so ruling=keep and two_level=false are correct.",
+    "counterexample_situation": "No counterexample applies: this is a pure kinematic definition/weighted average, not a cost-bearing or separation-limited law."
+  },
+  "A0:E039": {
+    "item_id": "E039",
+    "verdict": "attack",
+    "attack_type": "polarity_flip",
+    "critique": "The variable mapping and algebraic shape are correct, but the ruling is wrong: normal force is a contact resistance barrier, so under Rule R Step 4(c) it should be classified as invert, not keep. Since N = mg is a pure contact/barrier relation rather than a productive definition like work or kinetic energy, two_level should remain false.",
+    "counterexample_situation": "A book resting on a table: the table's normal force is a contact barrier preventing the book from falling through. In the nonphysical mirror, that resistance should invert into receptive yielding, not be preserved as a keep relation."
+  },
+  "A3-1:E001": {
+    "item_id": "E001",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "All active quantities are correctly mapped: a_CM -> imagination, R -> Appreciation, and alpha -> imagination / Appreciation. The reflected formula preserves the algebraic product shape, and the rolling constraint a_CM = R alpha is a purely kinematic relation with no inertia, dissipation, contact-resistance cost, or separation barrier, so ruling=keep and two_level=false are correct.",
+    "counterexample_situation": ""
+  },
+  "A3-1:E002": {
+    "item_id": "E002",
+    "verdict": "attack",
+    "attack_type": "dictionary_mismatch",
+    "critique": "The candidate misuses the Partner Lookup Table for angular acceleration. The table maps angular acceleration alpha to 'imagination ÷ Appreciation', not to 'imagination (angular)'. Substituting correctly into a_t = r alpha gives imagination = Appreciation * (imagination ÷ Appreciation), preserving the algebraic shape. The candidate's reflected_formula 'imagination_tangential = Appreciation * imagination_angular' omits the required division by Appreciation, so it both uses a non-table partner and breaks the formula shape. The keep ruling and two_level=false are otherwise consistent for this kinematic definition.",
+    "counterexample_situation": "For a rotating body with radius r and angular acceleration alpha, the table-required substitution is a_t partner = Appreciation * (imagination ÷ Appreciation), which reduces to imagination. The candidate instead yields Appreciation * imagination_angular, predicting an extra Appreciation factor and omitting the inverse-Appreciation dependence from angular acceleration."
+  },
+  "A3-1:E007": {
+    "item_id": "E007",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "Displacement is explicitly mapped to Appreciation, and position/coordinate are also mapped to Appreciation. The reflected formula preserves the algebraic difference structure, and the ruling 'keep' is correct because displacement is a pure coordinate-difference definition with no inertia, dissipation, barrier, or separation cost.",
+    "counterexample_situation": "No counterexample: Δx = x_f - x_i is a definitional coordinate difference, so reflecting it as Appreciation = Appreciation_final - Appreciation_initial does not introduce an unmapped term, polarity inversion, or formula-shape error."
+  },
+  "A3-1:E011": {
+    "item_id": "E011",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly keeps the center-of-mass acceleration definition in scope. All active variables map to the Partner Lookup Table: acceleration to imagination, time to Vibrance, mass to Reflected, and position to Appreciation. The algebraic shape is preserved, including the second time derivative and mass-weighted sum. The ruling 'keep' is appropriate because this is a kinematic definition/perspective relation, not a cost, dissipation, barrier, or separation law. No unmapped blocklisted quantity appears.",
+    "counterexample_situation": "No valid counterexample: the equation is a definition of center-of-mass acceleration, and the candidate preserves its variables and algebraic structure without introducing a cost-based inversion."
+  },
+  "A3-1:E014": {
+    "item_id": "E014",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly maps weight to Reflected × Tune, mass to Reflected, and gravitational acceleration to Tune, matching the Partner Lookup Table. The equation w = m g preserves its multiplicative algebraic shape. Under Rule R Step 4, weight is a constitutive force/weight law and is explicitly a keep case with two_level false. No unmapped blocklisted variable, dictionary mismatch, formula inversion, or cost-based invert condition is present.",
+    "counterexample_situation": "No counterexample applies: w = m g contains only mapped quantities and is a constitutive weight law, so it should remain in_scope, formula_shape keeps, ruling keep, and two_level false."
+  },
+  "A3-1:E016": {
+    "item_id": "E016",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "All active variables (x', x, v, t, c) are mapped to the correct partners; the algebraic shape of the inverse Lorentz transformation is preserved, including the minus sign and denominator. The inverse Lorentz transformation is a pure perspective/coordinate transform, so ruling 'keep' with two_level false is consistent with Rule R. No unmapped blocklisted quantity, dictionary mismatch, formula mismatch, or polarity flip is present.",
+    "counterexample_situation": ""
+  },
+  "A3-1:E018": {
+    "item_id": "E018",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly treats average velocity as an in-scope kinematic relation, maps all velocity terms to Expansion per the Partner Lookup Table, preserves the algebraic form of the average, and applies ruling=keep with two_level=false. The equation is a pure kinematic identity for constant acceleration and does not encode inertia, drag, dissipation, a barrier, or separation-induced loss of simultaneity.",
+    "counterexample_situation": "No counterexample found: for constant acceleration with v0=0 and v=10, the average velocity is 5, and the candidate reflects this as average Expansion = (initial Expansion + final Expansion)/2 without algebraic or polarity error."
+  },
+  "A3-1:E021": {
+    "item_id": "E021",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "All active variables are mapped correctly: W_grav,AB -> Movement × Appreciation, m -> Reflected, g -> Tune, and y_A/y_B -> Appreciation. The reflected formula preserves the original algebraic shape, including the negative sign and height difference. Work is a productive mechanical-work definition, so ruling=invert with two_level=true is consistent with Rule R.",
+    "counterexample_situation": "No counterexample found; the translation remains valid for any A/B heights and mass because the mapping, formula shape, and cost reading all align with the lookup table and Rule R."
+  },
+  "A3-1:E022": {
+    "item_id": "E022",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly maps torque to the lookup-table partner 'Appreciation × Movement', preserves the algebraic shape of the zero-sum equilibrium condition, and classifies it as an in-scope keep ruling. The second equilibrium condition is a balance law (net torque zero), not a cost, dissipation, barrier, or separation law requiring inversion. No unmapped blocklisted quantity appears.",
+    "counterexample_situation": "No counterexample: a net-torque-zero equilibrium condition expresses balance rather than an effortful resistance or dissipative cost, so 'keep' with two_level=false is consistent."
+  },
+  "A3-1:E023": {
+    "item_id": "E023",
+    "verdict": "attack",
+    "attack_type": "formula_mismatch",
+    "critique": "The variable_map correctly maps W_AB to 'Movement × Appreciation', but the reflected_formula uses 'Movement_AB' on the left-hand side, dropping the Appreciation factor. This breaks the algebraic/dimensional shape: the integral of Movement · d(Appreciation) yields a product, not a bare Movement. The translation_t likewise says 'Total Movement' rather than the product. The formula should read 'Movement × Appreciation = ∫ Movement · d(Appreciation)' or equivalent.",
+    "counterexample_situation": "If Appreciation is doubled while Movement is fixed, the work integral doubles, but the candidate's LHS 'Movement_AB' does not carry the Appreciation factor and so cannot represent that scaling; it would conflate work with a pure movement quantity."
+  },
+  "A3-1:E027": {
+    "item_id": "E027",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly maps acceleration to imagination, preserves the additive algebraic shape of the relative acceleration equation, and classifies it as a pure kinematic perspective transform with no inertia, dissipation, barrier, or separation cost. The keep ruling and two_level=false are consistent with Rule R. No unmapped blocklisted terms, dictionary mismatch, formula inversion, or polarity flip is present.",
+    "counterexample_situation": "N/A"
+  },
+  "A3-1:E028": {
+    "item_id": "E028",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly treats angular momentum as an in-scope rotational quantity. L, I, and omega map exactly to the Partner Lookup Table entries: angular momentum -> Appreciation × Reflected × Expansion, moment of inertia -> Reflected × Appreciation², and angular velocity -> Expansion ÷ Appreciation. The reflected formula preserves the algebraic shape L = Iω, since (Reflected × Appreciation²) × (Expansion ÷ Appreciation) simplifies to Reflected × Appreciation × Expansion. As a rotational-dynamics definition/relation without an added cost, barrier, dissipation, or separation call, ruling = keep and two_level = false are consistent with Rule R. No unmapped blocklisted term, dictionary mismatch, polarity flip, formula mismatch, or conceptual contradiction is present.",
+    "counterexample_situation": "No counterexample applies: the equation is a direct rotational definition, and the mapped variables substitute algebraically without changing the formula structure or requiring an invert ruling."
+  },
+  "A3-1:E030": {
+    "item_id": "E030",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly maps potential energy to Vibration and position to Appreciation, both present in the Partner Lookup Table. The equation ΔU = U(r) - U(r0) is a definitional potential-energy difference relative to a reference zero, with no explicit inertia, dissipation, barrier, or separation cost, so ruling='keep' and two_level=false are appropriate. The algebraic subtraction shape is preserved, and no unmapped blocklisted quantity appears.",
+    "counterexample_situation": "No valid counterexample is available: treating this reference-zero definition as an invert would require reading a cost/barrier into a pure definitional difference, contrary to Rule R Step 4."
+  },
+  "A3-1:E037": {
+    "item_id": "E037",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "The candidate correctly treats kinetic friction as an in-scope dissipative phenomenon mapped to Convergence and normal force mapped to Movement. The coefficient mu_k is an allowed material constant and may be preserved cleanly. The algebraic shape f_k = mu_k N is preserved as Convergence = mu_k * Movement. Because kinetic friction is a pure dissipative cost, ruling='invert' with two_level=false is correct. No unmapped blocklisted variable, dictionary mismatch, formula mismatch, or conceptual contradiction is present.",
+    "counterexample_situation": "No counterexample found; the mapping and condition reading are consistent with the lookup table and Rule R."
+  },
+  "A3-1:E038": {
+    "item_id": "E038",
+    "verdict": "uphold",
+    "attack_type": "none",
+    "critique": "All active variables are mapped correctly: velocity→Expansion, mass→Reflected, position→Appreciation, time→Vibrance. The reflected formula preserves the algebraic shape of the final equality v_CM = (1/M)Σm_jv_j, and the derivative relation is described in translation_t. The law is a kinematic definition with no cost, barrier, dissipation, or separation condition, so ruling=keep and two_level=false are correct. No blocklisted terms, no mixed vocabulary, and no logical contradiction are present.",
+    "counterexample_situation": "None; a counterexample would require an unmapped blocklisted variable, a wrong partner mapping, an inverted ratio, or a cost/separation condition, none of which occur here."
+  },
+  "A3-1:E039": {
+    "item_id": "E039",
+    "verdict": "attack",
+    "attack_type": "polarity_flip",
+    "critique": "The variable mapping and algebraic shape are correct, but the condition reading is wrong. Normal force is a contact resistance barrier under Step 4(c), so the ruling should be \"invert\" with two_level=false, not \"keep\". The candidate treats a boundary-holding contact constraint as a cost-free constitutive relation.",
+    "counterexample_situation": "A book resting on a table: the table exerts a normal force that prevents the book from sinking through the surface. This is a contact resistance barrier, so in the nonphysical mirror it should invert into unresisting yielding rather than remain a keep relation."
+  }
+}
