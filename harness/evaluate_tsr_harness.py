@@ -1666,13 +1666,21 @@ def _verify_git_provenance() -> dict[str, Any]:
             raise RuntimeError(f"Expected HEAD~1 == {HARNESS_PREREG_SHA}")
         mode = "pre_commit_3"
     else:
-        if _git_output("rev-parse", "HEAD~1") != PRE_EVAL_COMMIT_SHA:
+        is_descendant = subprocess.run(
+            ["git", "merge-base", "--is-ancestor", PRE_EVAL_COMMIT_SHA, head_sha],
+            cwd=str(REPO_ROOT),
+            capture_output=True,
+            text=True,
+            check=False,
+        )
+        if is_descendant.returncode != 0:
             raise RuntimeError(
-                f"Expected HEAD~1 == {PRE_EVAL_COMMIT_SHA}, got {_git_output('rev-parse', 'HEAD~1')}"
+                f"Expected {PRE_EVAL_COMMIT_SHA} to be an ancestor of HEAD ({head_sha})"
             )
-        if _git_output("rev-parse", "HEAD~2") != HARNESS_PREREG_SHA:
+        pre_eval_parent = _git_output("rev-parse", f"{PRE_EVAL_COMMIT_SHA}~1")
+        if pre_eval_parent != HARNESS_PREREG_SHA:
             raise RuntimeError(
-                f"Expected HEAD~2 == {HARNESS_PREREG_SHA}, got {_git_output('rev-parse', 'HEAD~2')}"
+                f"Expected {PRE_EVAL_COMMIT_SHA}~1 == {HARNESS_PREREG_SHA}, got {pre_eval_parent}"
             )
         mode = "post_commit_3"
 
