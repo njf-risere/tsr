@@ -1,0 +1,2625 @@
+{
+  "stage": "D3a",
+  "role": "d3a_narrative_cal17",
+  "arm_id": "D3_NARRATIVE_A0",
+  "expected_calls": 85,
+  "valid_calls": 84,
+  "schema_error_count": 1,
+  "tasks": [
+    {
+      "task_id": "K01",
+      "metadata": {
+        "item_id": "K01",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "63d23a080c4a4bda85c579f33ce92ffa",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K01",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The first postulate is an identity statement: it asserts that the laws of physics hold equally for every inertial observer, making 'inertial observer' and 'laws of physics' two names for one invariant relationship. Because the postulate does not depend on resistance — it does not say that more mass produces more of something — there is nothing to invert. The condition flips (resistant becomes receptive, inertial observer becomes Movement) and the relationship stays: the laws of the nonphysical hold equally for every Movement.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial_observer": "Movement",
+              "laws_of_physics": "laws of the nonphysical"
+            },
+            "reflected_formula": "The laws of the nonphysical are the same for every Movement.",
+            "translation_t": "The laws of the nonphysical are the same for every Movement.",
+            "translation_template": "The laws of the nonphysical are the same for every {Movement}.",
+            "direction_flipped_d": "Every Movement is equally governed by the same laws of the nonphysical.",
+            "rationale": "The first postulate is a pure identity: it names one invariant relationship — the laws of physics — and asserts it holds without exception across every inertial observer. Chapter 2 states that when a relationship is an identity, two names for one thing, there is nothing to turn around; the condition flips and the relationship stays. Flipping resistant to receptive maps inertial observer to Movement. The postulate carries across unchanged: the laws of the nonphysical hold equally for every Movement. Because no resistance-dependent quantity appears (no mass-scales-something structure), ruling is keep and two_level is false."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1e7d7864d8a146df9dcf4c977c287cc1",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K01",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Identity-style principle about sameness across inertial observers, so the condition flips while the relationship stays.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "laws of physics": "conscious energy",
+              "inertial observer": "Movement",
+              "same": "same"
+            },
+            "reflected_formula": "conscious energy is the same for every Movement",
+            "translation_t": "conscious energy is the same for every Movement",
+            "translation_template": "{conscious_energy} is the same for every {Movement}",
+            "direction_flipped_d": "for every Movement, conscious energy is the same",
+            "rationale": "The statement is a qualitative principle, not an open-joint case and not blocked by unmapped terms. 'Inertial observer' maps to Movement. The claim is one of invariance or identity across observers, not a more-resistance-more-effect dependency, so by Chapter 2 the relation keeps rather than inverts."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "41024ca95b2e4e909c1358e3a3a8b69a",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K01",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "laws of physics"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The term 'laws of physics' is a core concept in the original statement but is not present in the provided Partner Lookup Table. Although 'inertial observer' maps to 'Movement', the inability to map 'laws of physics' prevents the complete reflection of the principle into the target vocabulary, thus classifying it as 'no_partner'."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "894904bc9eec412ea966fb77b9f03347",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K01",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "identity relationship preserved under reflection",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial observer": "Movement",
+              "laws of physics": "conscious energy"
+            },
+            "reflected_formula": "conscious energy is the same for every Movement",
+            "translation_t": "conscious energy is the same for every Movement",
+            "translation_template": "{conscious_energy} is the same for every {Movement}",
+            "direction_flipped_d": "every Movement finds the same conscious energy",
+            "rationale": "Qualitative identity principle maps directly: 'inertial observer'->'Movement', 'laws of physics'->'conscious energy'. Relationship is identity (same for all), so condition flips but relationship stays per Chapter 2. No inversion needed."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "def65199bec04c2885222eb84306f3dc",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K01",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Principle remains invariant across Movements",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial observer": "Movement"
+            },
+            "reflected_formula": "The principles are the same for every Movement",
+            "translation_t": "The principles are the same for every Movement",
+            "translation_template": "The principles are the same for every {Movement}",
+            "direction_flipped_d": "Every Movement shares the same principles",
+            "rationale": "The first postulate of special relativity reflects the invariance of physical laws across different inertial observers, which map to 'Movement' in the nonphysical realm, maintaining the principle's essence."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K02",
+      "metadata": {
+        "item_id": "K02",
+        "expected_book_ruling": "invert",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "046cc12f3c2a4dafae989c0be47910c4",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K02",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Physical: time offset grows with speed and spatial separation under resistance. Nonphysical: Expansion gap shrinks as rise per Expansion and Vibration grow, because receptivity dissolves the separation that resistance enforces.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "Delta_t": "Expansion",
+              "v": "rise per Expansion",
+              "Delta_x": "Vibration"
+            },
+            "reflected_formula": "Expansion shrinks as (rise per Expansion) × Vibration grows",
+            "translation_t": "The gap in Expansion between two Movements shrinks as rise per Expansion and Vibration grow, because receptivity dissolves the separation that resistance once enforced.",
+            "translation_template": "The gap in {Expansion} between two {Movement}s shrinks as {rise_per_Expansion} and {Vibration} grow, because receptivity dissolves the separation that resistance once enforced.",
+            "direction_flipped_d": "The gap in Expansion between two Movements widens as rise per Expansion and Vibration diminish, because less rising and less difference leave more room for separation to persist.",
+            "rationale": "Active variables after stripping γ and c²: Δt (time interval → Expansion), v (speed → rise per Expansion), Δx (displacement → Vibration). No blocklist terms; not an open-joint formula. The physical law is resistance-dependent: spatial separation between resistant, bounded observers creates a temporal offset. Flipping resistant → receptive removes the edges that make separation meaningful, so the relationship inverts: greater rise per Expansion and greater Vibration no longer produce a larger Expansion gap — they produce a smaller one, because on the nonphysical side Vibration is shared difference within a whole rather than distance that enforces lag. Ruling: invert. two_level is false because the inverted law is not simultaneously a productive operational definition tracking costly exertion or turning."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "456078340b92410387bdc9b5b32885d7",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K02",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "This relation depends on resistance-shaped separation and motion across the space-time side, so reflecting resistant to receptive flips the directional dependence while keeping the algebraic shape.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\Delta t": "Expansion",
+              "\\gamma": "stripped constant",
+              "v": "rise per Expansion",
+              "\\Delta x": "Vibration",
+              "c": "Current"
+            },
+            "reflected_formula": "Expansion = (rise per Expansion × Vibration) / Current",
+            "translation_t": "Expansion equals rise per Expansion times Vibration divided by Current.",
+            "translation_template": "{Expansion} equals {rise_per_Expansion} times {Vibration} divided by {Current}.",
+            "direction_flipped_d": "Current divided by rise per Expansion times Vibration equals Expansion.",
+            "rationale": "After stripping the dimensionless prefactor gamma and keeping the equation shape, all remaining terms have partners in the A0 table: time interval to Expansion, velocity to rise per Expansion, spatial separation to Vibration, and speed of light to Current. The item is not on the open-joint list and contains no unmapped blocked terms. Under Chapter 2's One Rule, a relation built from resistance-based space-time separation turns around when reflected into receptive Vibration-Expansion terms, so the classification is in scope with invert ruling."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "ef98987e63464447bfdbf7a2619e12b8",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K02",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "The physical `Δt` quantifies a *lack of shared simultaneity* (a separation in time). Its reflection, `Expansion`, in this context, represents that nonphysical separation. The inversion means that as nonphysical relative motion and vibrational separation increase, this nonphysical separation (Expansion) *decreases*, leading to *greater shared Expansion* or *alignment*.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\Delta t": "Expansion",
+              "v": "rise per Expansion",
+              "\\Delta x": "Vibration",
+              "c": "Current"
+            },
+            "reflected_formula": "Expansion = gamma * (rise_per_Expansion * Vibration) / Current^2",
+            "translation_t": "The difference in Expansion between two Movements decreases as their relative rise per Expansion and Vibration separation increase, relative to the Current.",
+            "translation_template": "The difference in {Expansion} between two {Movement}s decreases as their relative {rise_per_Expansion} and {Vibration} separation increase, relative to the {Current}.",
+            "direction_flipped_d": "The difference in Expansion between two Movements increases as their relative rise per Expansion and Vibration separation increase, relative to the Current.",
+            "rationale": "The formula quantifies the time difference (Δt) that arises due to the relativity of simultaneity between two observers in relative motion. In the physical world, this time difference represents a lack of shared simultaneity, which increases as relative velocity (v) and spatial separation (Δx) increase. This increase in 'difficulty' or 'discrepancy' (more separation, less simultaneity) is a direct consequence of the physical world's resistance and limits. According to the One Rule, if a physical relationship shows that 'more of something' (relative velocity, spatial separation) leads to 'more of a difficulty' (larger time difference, less simultaneity) due to resistance, then in the nonphysical, 'more of the reflected something' (relative rise per Expansion, Vibration) should lead to 'less of the reflected difficulty' (smaller Expansion difference, more shared Expansion). Therefore, the ruling is 'invert'. The Lorentz factor (gamma) is a dimensionless factor derived from the ratio of reflected speeds and maintains its structural role in the reflected formula."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "ac6daa65a24d48f0be2f7075e3380bc5",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K02",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Condition flips: resistant (spatial separation) -> receptive (Vibration). Relationship inverts: more spatial separation (resistance) means more time discrepancy; more Vibration (receptivity) means less discrepancy in Expansion alignment.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "Δt": "Expansion",
+              "v": "rise per Expansion",
+              "Δx": "Vibration",
+              "c": "Current"
+            },
+            "reflected_formula": "Expansion = (rise per Expansion * Vibration) / Current^2",
+            "translation_t": "Expansion is rise per Expansion times Vibration over Current squared",
+            "translation_template": "{Expansion} is {rise_per_Expansion} times {Vibration} over {Current} squared",
+            "direction_flipped_d": "Current squared over rise per Expansion times Vibration is Expansion",
+            "rationale": "All variables map via Partner Lookup Table (Δt→Expansion, Δx→Vibration, v→rise per Expansion, c→Current). γ is a dimensionless prefactor and stripped. The relationship depends on resistance (spatial separation Δx), so flipping resistant→receptive inverts the relationship: more Vibration (receptive) reduces the Expansion discrepancy, opposite to physical side where more Δx increases Δt."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "2784a3c1c0854e92a5df46d0b3699bb2",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K02",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "No axis polarity reversal noted for this reflection.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\Delta t": "Expansion",
+              "v": "rise per Expansion",
+              "\\Delta x": "Vibration",
+              "c": "Current"
+            },
+            "reflected_formula": "{Expansion} = \\frac{{rise per Expansion} \\times {Vibration}}{{Current}^{2}}",
+            "translation_t": "Expansion equals rise per Expansion times Vibration over Current squared",
+            "translation_template": "{Expansion} equals {rise_per_Expansion} times {Vibration} over {Current} squared",
+            "direction_flipped_d": "Current squared over rise per Expansion times Vibration equals Expansion",
+            "rationale": "The equation reflects by substituting physical quantities with their nonphysical counterparts. The relativity of simultaneity equation maintains its relational direction upon reflection."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K03",
+      "metadata": {
+        "item_id": "K03",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b7c1ba8c9efe47b49a3db106739af986",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K03",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The principle states an identity — no frame is privileged — so the condition flips (resistant → receptive) but the relationship holds: no Movement is a preferred fixed anchor of the whole. The symmetry is preserved, not inverted.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial rest frame": "Movement",
+              "preferred fixed": "resistant anchor"
+            },
+            "reflected_formula": "No Movement is a preferred fixed anchor of the whole",
+            "translation_t": "No Movement occupies a privileged or fixed position within the whole; every Movement is equally valid as a vantage from which the whole is experienced.",
+            "translation_template": "No {Movement} occupies a privileged or fixed position within the whole; every {Movement} is equally valid as a vantage from which the whole is experienced.",
+            "direction_flipped_d": "Every Movement is equally a vantage from which the whole is experienced, and none can claim the whole as its fixed or privileged ground.",
+            "rationale": "The principle of relativity is a symmetry identity: it asserts that no inertial rest frame is singled out as special, which is a statement about equivalence rather than a resistance-dependent magnitude. Chapter 2 instructs that when a relationship is an identity — two names for one thing, or a statement of equivalence — there is nothing to turn around; the condition flips (resistant → receptive, inertial rest frame → Movement) and the relationship stays. The reflected principle therefore reads: no Movement is a preferred fixed anchor of the whole. Every Movement is an equally valid vantage on the Collective Reality, just as every inertial frame is an equally valid vantage on Objective Reality. Because the ruling is 'keep', two_level is false."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "6d9bf5ed9f1a4b6cb202273a69879994",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K03",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Identity-style frame correspondence carries across without directional reversal: inertial rest frame reflects to Movement, and the absence of a preferred fixed frame remains the absence of a preferred fixed Movement.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial rest frame": "Movement",
+              "preferred fixed inertial rest frame": "preferred fixed Movement"
+            },
+            "reflected_formula": "There is no preferred fixed Movement.",
+            "translation_t": "There is no preferred fixed Movement.",
+            "translation_template": "There is no preferred fixed {Movement}.",
+            "direction_flipped_d": "No preferred fixed Movement defines the condition.",
+            "rationale": "The item is qualitative rather than algebraic, but it is in scope because its active terms are mapped and it is not one of the restricted open-joint cases. The governing relation is identity-like, not a more-resistance-means-more dependency. Chapter 2 says identities keep their relationship when the condition flips. Since inertial rest frame maps to Movement, the reflected principle keeps its form: no preferred fixed inertial rest frame becomes no preferred fixed Movement."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "5dc6212eb86d4133972f59a1fffb7d8a",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K03",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The principle asserts the absence of a preferred frame. As an identity statement, the relationship 'no preferred' is preserved, meaning the polarity of 'no preference' is maintained.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial rest frame": "Movement"
+            },
+            "reflected_formula": "No preferred fixed Movement",
+            "translation_t": "There is no preferred fixed Movement.",
+            "translation_template": "There is no preferred fixed {Movement}.",
+            "direction_flipped_d": "There is a preferred fixed Movement.",
+            "rationale": "The physical concept 'inertial rest frame' maps directly to 'Movement' in the Partner Lookup Table. The principle states that there is no preferred frame, which is an identity or equivalence statement about frames. According to Chapter 2, 'If it’s an identity, two names for one thing, there’s nothing to turn around; the condition flips and the relationship stays.' Here, the condition flips from resistant (inertial) to receptive (Movement), but the relationship of 'no preferred fixed' remains. Thus, the ruling is 'keep'."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "b83659168e1d4e7ab63f334a4cd7671e",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K03",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "identity mapping (no resistance-dependent inversion)",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial rest frame": "Movement"
+            },
+            "reflected_formula": "There is no preferred fixed Movement",
+            "translation_t": "There is no preferred fixed Movement",
+            "translation_template": "There is no preferred fixed {Movement}",
+            "direction_flipped_d": "A preferred fixed Movement exists",
+            "rationale": "The principle is qualitative and maps directly via the Partner Lookup Table: 'inertial rest frame' -> 'Movement'. The relationship is an identity (no resistance-dependent inversion), so ruling is 'keep'. The reflected statement preserves the logical structure with the nonphysical term."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "3c7d6b29fd98463494ab71ee2d8c84f6",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K03",
+            "scope_status": "open_joint",
+            "formula_shape": "none",
+            "ruling": "indeterminate",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The principle of relativity is a qualitative principle without a formula, so it's classified as 'open_joint'."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K04",
+      "metadata": {
+        "item_id": "K04",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1e4bd6a6573b4790819af8d2a4d7392c",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K04",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Both sides of the distinction—inertial Movement versus Movement under Attraction—are already mapped arm targets; the equivalence principle is an identity (two descriptions of one physical condition), so the relationship carries across without inversion.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial_frame": "Movement",
+              "accelerating_frame": "Movement under Appreciation",
+              "gravitating_frame": "Movement under Attraction",
+              "equivalence_principle": "identity of Movement whether rising freely or drawn by Attraction"
+            },
+            "reflected_formula": "Movement (freely rising) ≡ Movement (drawn by Attraction or quickened by Appreciation)",
+            "translation_t": "On the nonphysical side the distinction between a Movement unfolding freely and a Movement being drawn by Attraction or quickened by Appreciation dissolves into one identity: every Movement is the same kind of receptive whole regardless of whether it is expanding on its own or being pulled and quickened by the Current.",
+            "translation_template": "On the nonphysical side the distinction between a {Movement} unfolding freely and a {Movement} being drawn by {Attraction} or quickened by {Appreciation} dissolves into one identity: every {Movement} is the same kind of receptive whole regardless of whether it is expanding on its own or being pulled and quickened by the {Current}.",
+            "direction_flipped_d": "Rather than every Movement resolving into one identity, the Current and Appreciation each draw out a distinct character in a Movement, so that a Movement expanding freely and a Movement drawn by Attraction or quickened by Appreciation are recognized as genuinely different expressions of receptivity.",
+            "rationale": "Special relativity singles out inertial frames; general relativity extends the laws to accelerating and gravitating frames and shows the two are equivalent. Each physical concept maps cleanly: inertial frame → Movement, accelerating frame → Movement under Appreciation (Appreciation is the reflected acceleration), gravitating frame → Movement under Attraction (Attraction is the reflected gravity), and the equivalence principle itself is an identity—two names for one physical condition. Chapter 2's One Rule says an identity carries across without inversion: flip the condition from resistant to receptive and the relationship stays. On the nonphysical side there is no resistance to create a boundary between 'free' and 'pulled,' so the equivalence is even more natural: all Movement is receptive whole, whether expanding freely or responding to Attraction and Appreciation. Ruling is therefore 'keep' and two_level is false because no inversion occurs."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "4d4288a27b9a4e4590e5f575ed2e6d4b",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K04",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Identity-style equivalence between frame classes carries across without directional reversal under the condition flip.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial frame": "Movement",
+              "accelerating frame": "Movement with Appreciation",
+              "gravitating frame": "Movement with Attraction",
+              "equivalence": "equivalence"
+            },
+            "reflected_formula": "Movement equivalence versus Movement with Appreciation or Movement with Attraction",
+            "translation_t": "Movement equivalence versus Movement with Appreciation or Movement with Attraction",
+            "translation_template": "{Movement} equivalence versus {Movement} with {Appreciation} or {Movement} with {Attraction}",
+            "direction_flipped_d": "Movement with Appreciation or Movement with Attraction versus Movement equivalence",
+            "rationale": "This item is qualitative rather than one of the restricted open-joint formulas. Its active concepts are frame types from relativity, all of which have partners in the lookup table or are directly composed from mapped partners: inertial frame maps to Movement, accelerating uses acceleration which reflects as Appreciation, and gravitating uses gravity which reflects as Attraction. The statement concerns equivalence of frame descriptions, not a more-versus-less dependence on resistance, so under Chapter Two it is treated as an identity-style relation that keeps rather than inverts."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "8e0530d1a5df475988f9f556a4920ef2",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K04",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "No axis polarity inversion for 'keep' ruling.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial frame": "Movement",
+              "accelerating frame": "Movement",
+              "gravitating frame": "Movement",
+              "acceleration": "Appreciation",
+              "gravity": "Attraction"
+            },
+            "reflected_formula": "Equivalence of Movement (inertial) versus Movement (Appreciation) or Movement (Attraction)",
+            "translation_t": "The principle that inertial Movements are equivalent, and that Movements experiencing Appreciation are equivalent to Movements experiencing Attraction.",
+            "translation_template": "The principle that inertial {Movement}s are equivalent, and that {Movement}s experiencing {Appreciation} are equivalent to {Movement}s experiencing {Attraction}.",
+            "direction_flipped_d": "The principle that equivalent Movements are inertial, and that Movements experiencing Attraction are equivalent to Movements experiencing Appreciation.",
+            "rationale": "The item describes the equivalence principle in relativity. 'Inertial frame' maps to Movement, 'acceleration' maps to Appreciation, and 'gravity' maps to Attraction. The principle states an equivalence, which is an identity relationship. According to Chapter 2, for identities, 'the relationship stays' (ruling = 'keep'). Therefore, the nonphysical principle reflects the equivalence of inertial Movements and the equivalence between Movements experiencing Appreciation and Movements experiencing Attraction."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "c4fa8867cd5d406f859f9b25af2193bc",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K04",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "Special versus general relativity",
+              "equivalence of inertial frames versus accelerating or gravitating frames"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The description contains qualitative physical principles (special vs. general relativity, equivalence of frames) that are not algebraic formulas and include unmapped conceptual terms not covered by the Partner Lookup Table. Per Step 1, this triggers 'no_partner' classification."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "eead02b5e6df4275b2be40c41d45b6c1",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K04",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "qualitative physical principle",
+              "equivalence of inertial frames",
+              "accelerating frames",
+              "gravitating frames"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "K04 is a qualitative principle without a specific equation to reflect. It discusses concepts related to relativity and frames, which are conceptually relevant but not directly processable under the given rules without an equation."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K05",
+      "metadata": {
+        "item_id": "K05",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "e650b9558be6495491e3d68249a69c51",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K05",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "gamma is a dimensionless numeric prefactor stripped per Step 1; v reflects as rise per Expansion, c reflects as Current, Delta_t reflects as Expansion (coordinate time interval), Delta_tau reflects as Expansion (proper time interval). The relationship is an identity: coordinate time and proper time are two names for the same Expansion quantity measured from different vantage points, so the relationship carries across unchanged. No resistance-dependent inversion applies.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "Delta_t": "Expansion",
+              "Delta_tau": "Expansion",
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "Expansion = Expansion / sqrt(1 - (rise per Expansion)^2 / Current^2)",
+            "translation_t": "The broader Expansion equals the inner Expansion divided by the square root of one minus the ratio of rise per Expansion squared to Current squared.",
+            "translation_template": "The broader {Expansion} equals the inner {Expansion} divided by the square root of one minus the ratio of {rise_per_Expansion} squared to {Current} squared.",
+            "direction_flipped_d": "The inner Expansion multiplied by the square root of one minus the ratio of rise per Expansion squared to Current squared yields the broader Expansion.",
+            "rationale": "After stripping the dimensionless Lorentz factor gamma per Step 1, the active variables are two time intervals (Delta_t, Delta_tau), a speed (v), and the speed of light (c). All four map cleanly via the Partner Lookup Table: both time intervals map to Expansion, v maps to rise per Expansion, and c maps to Current. No unmapped-blocklist terms remain, so the formula is in scope. The relationship is an identity structure — coordinate Expansion and proper Expansion are two measures of the same underlying quantity seen from different vantage points, exactly as Chapter 2 states: 'If it's an identity, two names for one thing, there's nothing to turn around; the condition flips and the relationship stays.' The algebraic shape therefore carries across as a keep, and two_level is false because no resistance-dependent inversion is present."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "a820095bf95e4761882ad513a8847ff1",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K05",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Resistant to receptive flips the dependency: greater rise per Expansion yields less Expansion for the paired interval relation.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\Delta t": "Expansion",
+              "\\Delta \\tau": "Expansion",
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "Expansion = Expansion / sqrt(1 - (rise per Expansion)^2 / Current^2)",
+            "translation_t": "Expansion equals Expansion divided by the square root of one minus rise per Expansion squared over Current squared.",
+            "translation_template": "{Expansion} equals {Expansion} divided by the square root of one minus {rise_per_Expansion} squared over {Current} squared.",
+            "direction_flipped_d": "Expansion is reduced as rise per Expansion increases relative to Current, while Expansion on the other side stays the source of the relation.",
+            "rationale": "After stripping the universal factor gamma by Step One, the active terms are proper time, coordinate time, velocity, and speed of light, all of which have partners in the table. This item is not one of the four open-joint cases. The equation shape is preserved. Because time dilation depends on resistance-based relativistic limiting behavior through velocity relative to the limiting Current, the Chapter Two rule says the dependency turns around under reflection: more rise per Expansion corresponds to less Expansion rather than more. Both time quantities map to Expansion, velocity maps to rise per Expansion, and the speed of light maps to Current."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "9a8cfdc318f54983a65d6a9f48261165",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K05",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "On the physical side, coordinate time is longer than proper time. On the nonphysical side, coordinate Expansion is shorter than proper Expansion.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\Delta t": "Expansion",
+              "\\Delta \\tau": "Expansion",
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "Expansion_coordinate = Expansion_proper / sqrt(1 - (rise_per_Expansion)^2 / Current^2)",
+            "translation_t": "The coordinate Expansion is the proper Expansion divided by the square root of one minus the square of the rise per Expansion divided by the square of the Current.",
+            "translation_template": "The coordinate {Expansion} is the proper {Expansion} divided by the square root of one minus the square of the {rise_per_Expansion} divided by the square of the {Current}.",
+            "direction_flipped_d": "As rise per Expansion approaches Current, the coordinate Expansion becomes shorter than the proper Expansion.",
+            "rationale": "The item describes relativistic time dilation, which is a consequence of the physical limit of the speed of light. The equation shows that as speed (v) approaches the speed of light (c), the Lorentz factor (gamma) increases, causing the coordinate time interval (Δt) to become longer than the proper time interval (Δτ). This represents 'more of something' (more dilation) as a physical condition (speed approaching a limit) increases. According to the One Rule, if a relationship depends on resistance/limits such that 'more mass means more of something', flipping resistant to receptive turns it around, resulting in 'less of that thing'. Therefore, the ruling is 'invert'. The variables are mapped as per the Partner Lookup Table: 'time interval' and 'proper time' map to 'Expansion', 'speed' maps to 'rise per Expansion', and 'speed of light' maps to 'Current'. The 'two_level' flag is set to false because time dilation is a fundamental relativistic effect, not a productive operational definition whose application tracks costly exertion or turning."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "ed6a65d20b30453da3e78f1e566cc953",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K05",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Time dilation (Expansion) inverts: more relative motion (resistance) means less proper time flow; receptivity means Expansion aligns with Movement's rise.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "Δt": "Expansion",
+              "Δτ": "Expansion",
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "Expansion = Expansion / sqrt(1 - (rise per Expansion)^2 / Current^2)",
+            "translation_t": "Expansion is Expansion over the square root of one minus rise per Expansion squared over Current squared",
+            "translation_template": "{Expansion} is {Expansion} over the square root of one minus {rise_per_Expansion} squared over {Current} squared",
+            "direction_flipped_d": "the square root of one minus rise per Expansion squared over Current squared is Expansion over Expansion",
+            "rationale": "All variables map to in-scope partners (Δt/Δτ → Expansion, v → rise per Expansion, c → Current). The relationship depends on resistance (γ factor embodies relativistic resistance to motion), so the condition flips: more Movement (receptivity) means less dilation (Expansion contracts toward unity). The algebraic shape is preserved, and the ruling is 'invert' per Chapter 2's One Rule."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "d37fd2d7127640d09a42d024ee094ba6",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K05",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Relativistic time dilation reflection",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\Delta t": "{Expansion}",
+              "\\Delta \\tau": "{Expansion}",
+              "v": "{rise_per_Expansion}",
+              "c": "{Current}"
+            },
+            "reflected_formula": "{Expansion} = \\frac{{Expansion}}{\\sqrt{1 - ({rise_per_Expansion}/{Current})^2}}",
+            "translation_t": "Expansion equals Expansion times the reciprocal of the square root of one minus the square of rise per Expansion over Current",
+            "translation_template": "{Expansion} equals {Expansion} times the reciprocal of the square root of one minus the square of {rise_per_Expansion} over {Current}",
+            "direction_flipped_d": "Expansion is determined by Expansion and rise per Expansion relative to Current in an inverse relationship",
+            "rationale": "The equation reflects the relativistic time dilation. Upon reflection, variables are mapped according to the Partner Lookup Table, and the ruling is determined to be 'invert' due to the dependency on velocity and its reflection."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K06",
+      "metadata": {
+        "item_id": "K06",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "5a35c7a5b983421ba2c4266697481700",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K06",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Physical length contraction depends on resistance: as speed approaches the light-speed limit, length collapses toward zero. Flipping resistant to receptive inverts this: as a Movement's rise per Expansion approaches the Current, Vibration opens rather than closes, growing without bound instead of shrinking toward nothing.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "L": "Vibration",
+              "L_0": "Vibration",
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "Vibration = Vibration_0 * sqrt(1 + (rise_per_Expansion)^2 / (Current)^2)",
+            "translation_t": "A Movement's Vibration grows as its rise per Expansion grows relative to the Current, opening further rather than closing in, so that approaching the Current expands Vibration without limit rather than collapsing it toward nothing.",
+            "translation_template": "A {Movement}'s {Vibration} grows as its {rise_per_Expansion} grows relative to the {Current}, opening further rather than closing in, so that approaching the {Current} expands {Vibration} without limit rather than collapsing it toward nothing.",
+            "direction_flipped_d": "A Movement's Vibration collapses as its rise per Expansion falls away from the Current, closing in rather than opening further, so that receding from the Current contracts Vibration toward nothing rather than expanding it without limit.",
+            "rationale": "All active variables map cleanly: lengths to Vibration, speed to rise per Expansion, speed of light to Current; gamma is stripped as a dimensionless prefactor. Length contraction is resistance-dependent — the physical limit imposed by c causes spatial collapse — so flipping resistant to receptive inverts the relationship: the subtraction inside the radical becomes addition, turning compression into expansion. The formula shape is preserved with the sign flipped inside the radical. two_level is false because this is a pure kinematic law, not an operational definition tracking costly exertion."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "0916f44025b94f4e8d0461d6e8091f68",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K06",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Depends on resistance: as relative motion rises toward the Current limit, contracted length decreases, so the reflected relation turns around under receptive conditions.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "L": "Vibration",
+              "L_0": "Vibration",
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "Vibration = Vibration × sqrt(1 - (rise per Expansion^2)/(Current^2))",
+            "translation_t": "Vibration becomes less as rise per Expansion becomes more relative to Current.",
+            "translation_template": "{Vibration} becomes less as {rise_per_Expansion} becomes more relative to {Current}.",
+            "direction_flipped_d": "More rise per Expansion relative to Current yields less Vibration.",
+            "rationale": "After stripping the dimensionless Lorentz factor, the active variables are length, relative speed, and the speed of light, all mapped in A0. Length contraction is a relativistic effect whose magnitude increases with relative motion because of the limiting resistant condition set by the Current boundary's physical counterpart. By Chapter Two's rule, when a relation depends on resistance so that more of the driving condition makes the measured extent smaller or harder, reflecting resistant to receptive turns the direction around rather than preserving it as an identity. The algebraic shape is kept, with length reflected to Vibration, speed to rise per Expansion, and light speed to Current."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "88c9b37b1ad941fc85843b510ecd8e31",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K06",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "The expansion of Vibration occurs along the direction of relative rise per Expansion.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "L": "Vibration",
+              "L_0": "Vibration_0",
+              "v": "rise_per_Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "Vibration = Vibration_0 / sqrt(1 - (rise_per_Expansion)^2 / (Current)^2)",
+            "translation_t": "Observed Vibration expands from rest Vibration as relative rise per Expansion increases, with Current as the limiting factor.",
+            "translation_template": "Observed {Vibration} expands from rest {Vibration} as relative {rise_per_Expansion} increases, with {Current} as the limiting factor.",
+            "direction_flipped_d": "Observed Vibration contracts from rest Vibration as relative rise per Expansion increases, with Current as the limiting factor.",
+            "rationale": "The physical phenomenon of length contraction describes how observed length (L) decreases as relative velocity (v) increases, representing a limitation in the physical, resistant world. According to the One Rule, 'limited becomes limitless'. Therefore, the nonphysical reflection should exhibit the opposite effect: Vibration should expand (increase) as relative rise per Expansion increases. To achieve this inversion from contraction to expansion, the mathematical relationship must be inverted. The original formula `L = L_0 * sqrt(1 - v^2/c^2)` (where `sqrt(...)` is less than 1) is inverted to `Vibration = Vibration_0 / sqrt(1 - (rise_per_Expansion)^2 / (Current)^2)` (where `1/sqrt(...)` is greater than 1), thus `ruling` is 'invert'. The `variable_map` uses `Vibration_0` to maintain algebraic distinctness for `L_0` in the `reflected_formula`. However, as `Vibration_0` is not a valid slot key, the `translation_template` uses the base term `{Vibration}` for both observed and rest Vibration, relying on surrounding text for distinction. This is not an operational definition tracking exertion, so `two_level` is `false`."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "bb85628b46fa4e7f9b2421acb31de3a2",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K06",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Length contraction (resistance-dependent compression) inverts to Vibration's expansion under receptivity; the relationship flips because more relative motion (resistance) means more contraction, so more Movement means less contraction (more Vibration).",
+            "unmapped_terms": [],
+            "variable_map": {
+              "L": "Vibration",
+              "L_0": "Vibration",
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "Vibration = Vibration * sqrt(1 - (rise per Expansion)^2 / Current^2)",
+            "translation_t": "Vibration equals Vibration times the square root of one minus rise per Expansion squared over Current squared",
+            "translation_template": "{Vibration} equals {Vibration} times the square root of one minus {rise_per_Expansion} squared over {Current} squared",
+            "direction_flipped_d": "Vibration times the square root of one minus Current squared over rise per Expansion squared equals Vibration",
+            "rationale": "Length (L) maps to Vibration, and length contraction is a resistance-dependent effect (more relative velocity v means more contraction). By the One Rule, flipping resistant to receptive inverts the relationship: more Movement (nonphysical analog of v) means less contraction (more Vibration). The formula shape is preserved, but the relational direction inverts due to the resistance/receptivity flip. No unmapped terms or constants remain after stripping γ (Lorentz factor) and c (speed of light, mapped to Current)."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "7ea289ca61804a0aa5ff8705cf365201",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K06",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "The reflection inverts the relationship between Vibration and rise per Expansion relative to Current.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "L": "Vibration",
+              "L_{0}": "Vibration",
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "{Vibration} changes with {rise per Expansion} relative to {Current}",
+            "translation_t": "Vibration changes with rise per Expansion relative to Current",
+            "translation_template": "{Vibration} changes with {rise per Expansion} relative to {Current}",
+            "direction_flipped_d": "Current influences Vibration through rise per Expansion",
+            "rationale": "Relativistic length contraction reflects into a nonphysical relationship between Vibration and rise per Expansion relative to Current, inverting the original dependency on velocity and the speed of light."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K07",
+      "metadata": {
+        "item_id": "K07",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b821c7ef3ec64ce483d3eddf3e807538",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K07",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "E = mc² is an identity: energy and mass are two names for one thing, related by the invariant speed of light squared. Chapter 2 states that identities carry across unchanged — the condition flips (resistant becomes receptive, radiating becomes collecting) but the relationship stays. No resistance-dependent direction to invert.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E": "conscious energy",
+              "m": "Movement",
+              "c": "Current"
+            },
+            "reflected_formula": "conscious energy = Movement × Current²",
+            "translation_t": "conscious energy equals Movement times Current squared.",
+            "translation_template": "{conscious_energy} equals {Movement} times {Current} squared.",
+            "direction_flipped_d": "Movement times Current squared yields conscious energy.",
+            "rationale": "E = mc² is a pure identity: mass and energy are the same thing expressed differently, bridged by the invariant speed of light. Chapter 2 is explicit — when a relationship is an identity, two names for one thing, there is nothing to turn around; the condition flips and the relationship stays. Accordingly, E maps to conscious energy, m maps to Movement, and c maps to Current. The formula shape keeps. Because the ruling is keep, two_level is false. The reflected formula is conscious energy = Movement × Current², and the direction-flipped prose simply reverses the surface subject without altering the identity."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "654fbef0580e488f9cfcb00df9f5c5b3",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K07",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Identity-style equivalence across mapped terms, so the condition flips while the equation shape stays.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E": "conscious energy",
+              "m": "Movement",
+              "c": "Current"
+            },
+            "reflected_formula": "conscious energy = Movement × Current^2",
+            "translation_t": "conscious energy equals Movement times Current squared",
+            "translation_template": "{conscious_energy} equals {Movement} times {Current} squared",
+            "direction_flipped_d": "Movement times Current squared equals conscious energy",
+            "rationale": "After stripping the dimensionless exponent, all active variables are mapped: energy to conscious energy, mass to Movement, and speed of light to Current. No blocked unmapped term remains. Under Chapter 2, identities keep their relational form when reflected, because there is no more-with-more resistance dependence to invert. So the equation shape is preserved as an in-scope keep relation."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "21d1dabd43ba4e7da481242475269aa8",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K07",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Direct equivalence relationship.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E": "conscious_energy",
+              "m": "Movement",
+              "c": "Current"
+            },
+            "reflected_formula": "conscious energy = Movement * Current^2",
+            "translation_t": "conscious energy is Movement times Current squared.",
+            "translation_template": "{conscious_energy} is {Movement} times {Current} squared.",
+            "direction_flipped_d": "Movement is conscious energy divided by Current squared.",
+            "rationale": "The physical terms 'energy', 'mass', and 'speed of light' map to 'conscious energy', 'Movement', and 'Current' respectively. The equation E=mc^2 represents an identity or equivalence between mass and energy. According to Chapter 2, for identities, 'there’s nothing to turn around; the condition flips and the relationship stays.' Therefore, the ruling is 'keep', and 'two_level' is false."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "9e182bb6850d471b9042b59fc973dabf",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K07",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Resistance (mass) and limit (speed of light) both invert to receptivity and collection, flipping the relationship between energy and its components.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E": "conscious energy",
+              "m": "Movement",
+              "c": "Current"
+            },
+            "reflected_formula": "conscious energy = Movement × Current²",
+            "translation_t": "conscious energy equals Movement times Current squared",
+            "translation_template": "{conscious_energy} equals {Movement} times {Current} squared",
+            "direction_flipped_d": "Movement times Current squared equals conscious energy",
+            "rationale": "Mass (resistance to change in motion) reflects to Movement (receptivity to change in motion), speed of light (limit/radiation) reflects to Current (collection). The relationship inverts because mass and c are resistance/limit-based: more mass means more energy, but more Movement means less conscious energy (or easier realization). The squared Current retains the multiplicative structure but flips the condition, making the law two-level as it tracks the costly exertion of turning resistance into receptivity."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "3e76b298a49542058491c2fe9442f8d0",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K07",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "energy"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Energy is on the unmapped blocklist."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K08",
+      "metadata": {
+        "item_id": "K08",
+        "expected_book_ruling": "invert",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "4d1a64bed4e14ae280c5f5408b0e5ade",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K08",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "γ is listed as a strippable dimensionless/universal factor; after stripping, both K=(γ-1)mc² and E=γmc² reduce to the same mc² skeleton, which is the mass-energy identity. Identity relationships carry across unchanged under the One Rule.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "m": "Movement",
+              "c": "Current",
+              "E": "conscious energy",
+              "K": "conscious energy"
+            },
+            "reflected_formula": "conscious_energy = Movement × Current²",
+            "translation_t": "conscious energy is Movement times Current times Current — a direct identity between what a Movement is and the conscious energy it holds, not a relationship that grows harder as anything increases.",
+            "translation_template": "{conscious_energy} is {Movement} times {Current} times {Current} — a direct identity between what a {Movement} is and the {conscious_energy} it holds, not a relationship that grows harder as anything increases.",
+            "direction_flipped_d": "Movement times Current times Current is what conscious energy simply is — the conscious energy a Movement holds resolves back into Movement and Current without remainder.",
+            "rationale": "Both equations are forms of the mass-energy identity E=mc² with γ as a strippable dimensionless kinematic prefactor. After stripping γ, the active variables are m (→ Movement), c (→ Current), and E/K (→ conscious energy). The relationship is an identity — two names for one thing — so the One Rule says there is nothing to invert: the condition flips (resistant → receptive) but the identity holds. Ruling is keep, two_level is false."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "edac0cd3c07b432e982e6cc1652e343b",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K08",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "gamma"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "After stripping constants and numeric prefactors, the formula still contains gamma. The scope rules explicitly list gamma among constants to strip, but the description centers the item on relativistic kinetic energy through gamma-dependent rising energy cost, and no direct Chapter 2 partner is provided for the gamma factor itself as an active relativistic dependence in this item. Under the strict scope procedure, this leaves no supported in-scope reflected law to preserve."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "055be5c69a14457fa1aafe94976d1120",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K08",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "The physical increasing difficulty of accelerating mass as it approaches the speed of light inverts to an increasing ease of increasing a Movement's rise per Expansion as it approaches the Current.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "K": "conscious_energy",
+              "E": "conscious_energy",
+              "m": "Movement",
+              "c": "Current",
+              "v": "rise per Expansion"
+            },
+            "reflected_formula": "conscious_energy_kinetic = (gamma - 1) * Movement * Current^2; conscious_energy_total = gamma * Movement * Current^2; where gamma = 1 / sqrt(1 - (rise_per_Expansion / Current)^2)",
+            "translation_t": "The conscious energy of a Movement increases as its rise per Expansion approaches the Current, signifying that further increases in rise per Expansion become easier.",
+            "translation_template": "The {conscious_energy} of a {Movement} increases as its {rise_per_Expansion} approaches the {Current}, signifying that further increases in {rise_per_Expansion} become easier.",
+            "direction_flipped_d": "The conscious energy of a Movement increases as its rise per Expansion approaches the Current, signifying that further increases in rise per Expansion become harder.",
+            "rationale": "1. **Scope Status**: All terms (`K`, `E`, `m`, `c`, `v` (implicit in `gamma`)) are found in the Partner Lookup Table or are dimensionless factors derived from mapped terms. No unmapped blocklist items are present. Thus, `in_scope`.\n2. **Variable Mapping**: `K` (kinetic energy) and `E` (total energy) map to `conscious_energy`. `m` (mass) maps to `Movement`. `c` (speed of light) maps to `Current`. The Lorentz factor `gamma` is a dimensionless quantity dependent on `v/c`, where `v` (speed) maps to `rise per Expansion`.\n3. **Ruling**: The description highlights 'the rising energy cost of increasing speed for mass'. This phenomenon directly depends on resistance (inertia makes it increasingly difficult to accelerate mass as its speed approaches the speed of light). According to the One Rule, if a relationship depends on resistance, it 'turns around'. Therefore, the `ruling` is `invert`.\n4. **Two-Level**: The concept of 'rising energy cost' in the physical domain directly tracks 'costly exertion/turning'. When inverted to the nonphysical, this translates to increasing ease. Thus, `two_level` is `true`.\n5. **Reflected Formula**: The algebraic structure of the equations is preserved, with physical variables replaced by their nonphysical partners. `gamma` is retained as a function of `rise_per_Expansion` and `Current`.\n6. **Translation (t)**: The physical interpretation of 'rising energy cost' (getting harder to increase speed) is inverted. In the nonphysical, as `rise per Expansion` approaches `Current`, the associated `conscious_energy` increases, but this signifies that further increases in `rise per Expansion` become *easier* (the inverse of 'harder').\n7. **Direction Flipped (d)**: The core relational direction of `translation_t` ('easier') is reversed to 'harder', while retaining the same set of arm target terms."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "f96878fa0b764e30a4d2490e3f88a957",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K08",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "relativistic kinetic energy",
+              "energy cost"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The description includes 'energy cost', which is explicitly listed in the unmapped blocklist (Step 1). Additionally, 'relativistic kinetic energy' is a form of energy, which is also on the unmapped blocklist. Thus, the item is classified as 'no_partner'."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "daed77ff253d4b37b21823aba0fd3aa3",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K08",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Default polarity maintained",
+            "unmapped_terms": [],
+            "variable_map": {
+              "m": "Movement",
+              "c": "Current",
+              "\\gamma": "rise per Expansion",
+              "E": "conscious energy",
+              "K": "conscious energy"
+            },
+            "reflected_formula": "{conscious_energy} = f({rise_per_Expansion}) * {Movement} * {Current}",
+            "translation_t": "conscious energy equals a function of rise per Expansion times Movement times Current",
+            "translation_template": "{conscious_energy} equals a function of {rise_per_Expansion} times {Movement} times {Current}",
+            "direction_flipped_d": "Current influences Movement's conscious energy through its rise per Expansion",
+            "rationale": "The relativistic energy equation reflects into the nonphysical realm by mapping mass to Movement, speed of light to Current, and energy to conscious energy. The Lorentz factor gamma, related to velocity, reflects to rise per Expansion. The relationship is maintained as 'keep' because the proportionality between the variables is preserved after reflection."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K09",
+      "metadata": {
+        "item_id": "K09",
+        "expected_book_ruling": "invert",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "da138f44420347c785f2a1330eeea812",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K09",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Physical: mass (resistance) creates an impassable upper bound on speed relative to c. Reflected: Movement (receptivity) removes the barrier — rise per Expansion is not bounded away from the Current but drawn fully toward it; the inequality inverts from exclusion to inclusion.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "v": "rise per Expansion",
+              "c": "Current",
+              "m": "Movement"
+            },
+            "reflected_formula": "rise per Expansion can reach Current when Movement is present (not excluded by it)",
+            "translation_t": "Where Movement is present, rise per Expansion is not shut out from the Current but drawn all the way toward it — the greater the Movement, the more fully rise per Expansion aligns with the Current rather than being barred from it.",
+            "translation_template": "Where {Movement} is present, {rise_per_Expansion} is not shut out from the {Current} but drawn all the way toward it — the greater the {Movement}, the more fully {rise_per_Expansion} aligns with the {Current} rather than being barred from it.",
+            "direction_flipped_d": "The Current does not recede from rise per Expansion as Movement grows; rather, rise per Expansion is what draws the Current's pull more completely, so that Movement and the Current converge rather than diverge.",
+            "rationale": "All active variables map cleanly: v → rise per Expansion, c → Current, m → Movement; γ is a dimensionless prefactor and is stripped. The physical law is resistance-dependent: mass is the very thing that makes c an unreachable ceiling, with γ diverging as the limit is approached. Flipping resistant → receptive inverts the relationship: Movement does not create a barrier to the Current but an affinity for it, so rise per Expansion is drawn toward rather than excluded from the Current. The formula shape is preserved as an inequality whose direction inverts. two_level is false because this is a bounding constraint, not a productive operational definition tracking costly exertion or turning."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "923486a94728409fb84d3b7c321f2d9f",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K09",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Limit by resistance reflects as collection by receptivity: what is unreachable for Movement on the physical side becomes a relation of approach to Current on the nonphysical side.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "v": "rise per Expansion",
+              "c": "Current",
+              "m": "Movement",
+              "gamma": "stripped constant-like prefactor"
+            },
+            "reflected_formula": "rise per Expansion < Current",
+            "translation_t": "rise per Expansion remains below Current for Movement",
+            "translation_template": "{rise_per_Expansion} remains below {Current} for {Movement}",
+            "direction_flipped_d": "Current stays above rise per Expansion for Movement",
+            "rationale": "This is in scope because, after stripping gamma, the active terms are speed of light, speed, and mass, all of which have partners in the A0 table. The algebraic inequality shape is preserved. The Chapter 2 excerpt explicitly treats the speed of light as the physical limit and says the condition flips from resistant and radiating to receptive and collecting. Because the original relation is a resistance-based limit on what mass can do, the reflected reading takes the inverted polarity: for Movement, rise per Expansion does not reach Current."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "c8619f03a48043c1925894f2597e5f4c",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K09",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "The physical axis is bounded by an upper limit, while the reflected nonphysical axis is unbounded in that direction.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "v": "rise_per_Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "rise_per_Expansion >= Current",
+            "translation_t": "rise per Expansion is greater than or equal to the Current.",
+            "translation_template": "{rise_per_Expansion} is greater than or equal to the {Current}.",
+            "direction_flipped_d": "Rise per Expansion is less than the Current.",
+            "rationale": "The physical law states that velocity (v) is limited to be less than the speed of light (c). According to the One Rule, 'limited becomes limitless'. Therefore, the nonphysical equivalent, rise per Expansion, is not limited by the Current in the same way, meaning it can be greater than or equal to the Current. This constitutes an inversion of the original inequality relationship."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b1b67b602d544431ac5d95bdc2f4bce7",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K09",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Condition flips: resistant (massive) limit inverts to receptive (Movement) limitlessness; inequality direction reverses under receptivity.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "v": "rise per Expansion",
+              "c": "Current",
+              "m": "Movement"
+            },
+            "reflected_formula": "rise per Expansion > Current",
+            "translation_t": "rise per Expansion exceeds Current for any Movement",
+            "translation_template": "{rise_per_Expansion} exceeds {Current} for any {Movement}",
+            "direction_flipped_d": "Current is less than rise per Expansion for any Movement",
+            "rationale": "The physical condition 'nothing with mass can reach c' depends on resistance (mass). Flipping resistant to receptive inverts the limit: on the nonphysical side, Movement (receptive) is not bound by Current; instead, rise per Expansion (velocity's reflection) exceeds Current. The inequality flips because receptivity removes the barrier that resistance imposed."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "e478e44e37b64351b65919a2a44574bb",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K09",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Limit condition inverts upon reflection",
+            "unmapped_terms": [],
+            "variable_map": {
+              "v": "rise per Expansion",
+              "c": "Current",
+              "m": "Movement"
+            },
+            "reflected_formula": "{rise per Expansion} is outpaced by {Current} as {Movement} intensifies",
+            "translation_t": "rise per Expansion is less than Current when Movement is greater than zero",
+            "translation_template": "{rise_per_Expansion} is less than {Current} when {Movement} is greater than zero",
+            "direction_flipped_d": "Current is greater than rise per Expansion when Movement is greater than zero",
+            "rationale": "The condition v < c for m > 0 reflects a limit related to resistance (mass). Upon reflection, the condition inverts, relating to the limitless nature of the nonphysical."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K10",
+      "metadata": {
+        "item_id": "K10",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "af67f704d76f451dac6feaae910b8aff",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K10",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The spacetime interval is an identity: it names one invariant quantity built from the continuum's two faces. Flipping resistant to receptive leaves the structural relationship intact — the squared interval is still the squared whole assembled from its squared parts, now expressed in Vibration-Expansion terms. No resistance-dependent direction to invert.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "s^2": "Vibration-Expansion (squared interval)",
+              "c": "Current",
+              "Delta_t": "Expansion",
+              "Delta_x": "Vibration (x-axis)",
+              "Delta_y": "Vibration (y-axis)",
+              "Delta_z": "Vibration (z-axis)"
+            },
+            "reflected_formula": "S^2 = Current^2 * (Delta_Expansion)^2 - (Delta_Vibration_x)^2 - (Delta_Vibration_y)^2 - (Delta_Vibration_z)^2",
+            "translation_t": "The squared Vibration-Expansion interval equals the squared Current times the squared Expansion separation, minus the squared Vibration separation along each of the three Vibration directions — and that combined quantity stays the same for every Movement, no matter how it is oriented within the whole.",
+            "translation_template": "The squared {Vibration_Expansion} interval equals the squared {Current} times the squared {Expansion} separation, minus the squared {Vibration} separation along each of the three {Vibration} directions — and that combined quantity stays the same for every {Movement}, no matter how it is oriented within the whole.",
+            "direction_flipped_d": "Every Movement's orientation within the whole is what determines how the squared Vibration-Expansion interval distributes its squared Current-scaled Expansion separation against its squared Vibration separations — the invariant combined quantity is the outcome that each Movement's particular stance produces, not the fixed anchor from which the separations are read off.",
+            "rationale": "The spacetime interval s² = c²(Δt)² − (Δx)² − (Δy)² − (Δz)² is a structural identity: it defines one invariant quantity by assembling the two faces of the Space-Time continuum. Under the One Rule, Space-Time reflects as Vibration-Expansion, c reflects as Current, Δt reflects as Expansion, and each spatial displacement Δx/Δy/Δz reflects as a Vibration separation. Because the relationship is an identity — two names for one thing — and not a resistance-dependent proportionality, the Chapter 2 procedure says the relationship carries across unchanged: the condition flips (resistant → receptive) but the algebraic shape keeps. No inversion is warranted. two_level is false because ruling is keep."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "9a24f4e97b1947bfb24ed36a5644b501",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K10",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Identity-style continuum pairing stays aligned under the condition flip: spacetime maps to Vibration-Expansion, speed of light maps to Current, time interval maps to Expansion, and spatial separations map to Vibration.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "s^2": "Vibration-Expansion",
+              "c": "Current",
+              "\\Delta t": "Expansion",
+              "\\Delta x": "Vibration",
+              "\\Delta y": "Vibration",
+              "\\Delta z": "Vibration"
+            },
+            "reflected_formula": "Vibration-Expansion = Current^2 · Expansion^2 - Vibration^2 - Vibration^2 - Vibration^2",
+            "translation_t": "Vibration-Expansion is Current with Expansion set against Vibration, Vibration, and Vibration as one continuum.",
+            "translation_template": "{Vibration_Expansion} is {Current} with {Expansion} set against {Vibration}, {Vibration}, and {Vibration} as one continuum.",
+            "direction_flipped_d": "Within one continuum, Vibration, Vibration, and Vibration set against Expansion with Current yield Vibration-Expansion.",
+            "rationale": "Step one does not trigger because the remaining active terms are speed of light, time interval, and spatial separations, all of which have partners in the table. Step two does not trigger because this is the invariant spacetime interval, not one of the four open-joint cases. Under Chapter Two, space and time reflect together as one continuum, Vibration-Expansion, and the excerpt explicitly says that this pairing remains one continuum rather than splitting apart. Because this is a structural identity for the continuum rather than a more-resistance-means-more productive law, the algebraic shape is kept rather than inverted."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "bd025a0f7ca54b6eab4328b9dd9dd94e",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K10",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The signature of the spacetime interval, distinguishing time-like from space-like components, is preserved in the Vibration-Expansion continuum, reflecting the inherent difference between Expansion and Vibration.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "s": "Vibration-Expansion",
+              "c": "Current",
+              "\\Delta t": "Expansion",
+              "\\Delta x": "Vibration",
+              "\\Delta y": "Vibration",
+              "\\Delta z": "Vibration"
+            },
+            "reflected_formula": "{Vibration-Expansion}² = {Current}² {Expansion}² - {Vibration}²",
+            "translation_t": "The square of the Vibration-Expansion is equal to the square of the Current times the square of the Expansion minus the square of the Vibration.",
+            "translation_template": "The square of the {Vibration_Expansion} is equal to the square of the {Current} times the square of the {Expansion} minus the square of the {Vibration}.",
+            "direction_flipped_d": "The square of the Current times the square of the Expansion minus the square of the Vibration is equal to the square of the Vibration-Expansion.",
+            "rationale": "All physical terms in the equation (`spacetime interval`, `speed of light`, `time interval`, `distance`) are explicitly mapped to their nonphysical counterparts (`Vibration-Expansion`, `Current`, `Expansion`, `Vibration`) in the Partner Lookup Table. The equation defines the invariant spacetime interval, which is a fundamental identity of the spacetime continuum. Chapter 2 states that if a relationship is an identity, 'there’s nothing to turn around; the condition flips and the relationship stays.' Therefore, the `ruling` is 'keep' and `two_level` is `false`."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "3b2354a7fa424a09a91e15adb3c84a58",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K10",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Spacetime interval is a continuum identity; condition flips but relationship (unified continuum) stays.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "s^2": "Vibration-Expansion",
+              "c": "Current",
+              "Δt": "Expansion",
+              "Δx": "Vibration",
+              "Δy": "Vibration",
+              "Δz": "Vibration"
+            },
+            "reflected_formula": "Vibration-Expansion = Current^2 * Expansion^2 - Vibration^2 - Vibration^2 - Vibration^2",
+            "translation_t": "Vibration-Expansion is Current squared Expansion squared minus Vibration squared minus Vibration squared minus Vibration squared",
+            "translation_template": "{Vibration-Expansion} is {Current} squared {Expansion} squared minus {Vibration} squared minus {Vibration} squared minus {Vibration} squared",
+            "direction_flipped_d": "Vibration-Expansion plus Vibration squared plus Vibration squared plus Vibration squared is Current squared Expansion squared",
+            "rationale": "The spacetime interval is an identity (a unified continuum), so the relationship is preserved under reflection. Each component maps directly: spacetime interval -> Vibration-Expansion, speed of light -> Current, time interval -> Expansion, and spatial intervals -> Vibration. The formula shape is kept, and the ruling is 'keep' because the identity does not depend on resistance."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "4f56dc4419a647a6bb1d3f427fb6164d",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K10",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "identity",
+            "unmapped_terms": [],
+            "variable_map": {
+              "s^{2}": "Vibration-Expansion",
+              "c^{2}": "Current^{2}",
+              "(\\Delta t)^{2}": "{Expansion}^{2}",
+              "(\\Delta x)^{2} + (\\Delta y)^{2} + (\\Delta z)^{2}": "{Vibration}^{2}"
+            },
+            "reflected_formula": "{Vibration-Expansion}^{2} = {Current}^{2} × {Expansion}^{2} - {Vibration}^{2}",
+            "translation_t": "Vibration-Expansion squared is Current squared times Expansion squared minus Vibration squared",
+            "translation_template": "{Vibration-Expansion} squared is {Current} squared times {Expansion} squared minus {Vibration} squared",
+            "direction_flipped_d": "Vibration squared minus Current squared times Expansion squared is Vibration-Expansion squared",
+            "rationale": "The given equation represents the invariant spacetime interval. According to the Partner Lookup Table, 'spacetime interval' maps to 'Vibration-Expansion', 'c' to 'Current', '(\\Delta t)' to 'Expansion', and '(\\Delta x)', '(\\Delta y)', '(\\Delta z)' to 'Vibration'. The equation shape is preserved as it is an identity reflecting the continuum property. Thus, 'ruling' is 'keep' and 'two_level' is false."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K11",
+      "metadata": {
+        "item_id": "K11",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1694249be9884b9fb4e666dcc288c435",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K11",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Physical side: resistant mass-energy curves the limited spacetime geometry outward, imposing boundaries. Reflected side: receptive Movement shapes the Vibration-Expansion continuum inward, opening it — the condition flips from resistance-imposes-limits to receptivity-opens-limitlessness, so the relational direction inverts.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "mass-energy": "Movement",
+              "spacetime geometry": "Vibration-Expansion"
+            },
+            "reflected_formula": "Movement opens Vibration-Expansion",
+            "translation_t": "Movement opens the Vibration-Expansion continuum rather than warping it closed, because receptivity draws the whole wider instead of bending it inward.",
+            "translation_template": "{Movement} opens the {Vibration_Expansion} continuum rather than warping it closed, because receptivity draws the whole wider instead of bending it inward.",
+            "direction_flipped_d": "The Vibration-Expansion continuum draws Movement outward into greater openness rather than Movement pressing the continuum into a curve around itself.",
+            "rationale": "The qualitative principle 'mass-energy warps spacetime geometry' maps mass-energy to Movement and spacetime geometry to Vibration-Expansion. On the physical side the relationship is resistance-dependent: greater mass-energy means greater curvature, imposing more limit on the geometry. Flipping resistant to receptive inverts the relationship: greater Movement opens the Vibration-Expansion continuum rather than closing it. This is a clean invert ruling under the One Rule — more of the resistant quantity produces more warping, so more of the receptive quantity produces the opposite, an opening. Two-level is false because the principle is a structural mapping of how the dominant quantity shapes its continuum, not an operational definition tracking costly exertion or turning."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d2e1386be07d4b09b99fdb9d1520c9f8",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K11",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Identity-style qualitative correspondence using mapped terms without a resistance-dependent more-means-more law to invert.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "mass-energy": "conscious energy",
+              "spacetime geometry": "Vibration-Expansion"
+            },
+            "reflected_formula": "conscious energy shapes Vibration-Expansion",
+            "translation_t": "conscious energy shapes Vibration-Expansion",
+            "translation_template": "{conscious_energy} shapes {Vibration_Expansion}",
+            "direction_flipped_d": "Vibration-Expansion is shaped by conscious energy",
+            "rationale": "The statement is a qualitative relation between mapped physical concepts. Mass-energy maps to conscious energy, and spacetime geometry maps to Vibration-Expansion. Because this is not given as a resistance-based scaling law where more mass increases an effect by resistance, Chapter Two's procedure treats it as carrying across in the same relational shape rather than turning around."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "b5a8c8d9544e4892b5a68ddf7392ab64",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K11",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "The physical principle describes mass-energy actively warping/constraining spacetime geometry. Since more mass-energy leads to more warping (a 'more mass means more of something' scenario), the nonphysical reflection inverts this. More Movement and conscious energy lead to less constraint or an 'easier' Vibration-Expansion, meaning Movement and conscious energy actively ease Vibration-Expansion.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "mass": "Movement",
+              "energy": "conscious energy",
+              "spacetime_geometry": "Vibration-Expansion"
+            },
+            "reflected_formula": "Movement and conscious energy ease Vibration-Expansion",
+            "translation_t": "Movement and conscious energy ease Vibration-Expansion",
+            "translation_template": "{Movement} and {conscious_energy} ease {Vibration_Expansion}",
+            "direction_flipped_d": "Vibration-Expansion constrains Movement and conscious energy",
+            "rationale": "The item describes a qualitative physical principle: 'Mass-energy warps spacetime geometry'.\n\n1.  **Scope Check (Step 1 & 2):** All terms ('mass', 'energy', 'spacetime geometry') are found in the Partner Lookup Table. No terms are on the unmapped blocklist, and it's not one of the specific 'open_joint' cases. Thus, `scope_status` is 'in_scope'.\n2.  **Variable Mapping:**\n    *   'Mass' maps to 'Movement'.\n    *   'Energy' maps to 'conscious energy'.\n    *   'Spacetime geometry' maps to 'Vibration-Expansion'.\n3.  **Ruling Determination (Chapter 2 'One Rule'):** The physical principle states that 'Mass-energy warps spacetime geometry'. Warping implies a constraint or limitation on the geometry. More mass-energy leads to *more* warping, which means *more* constraint or limitation. This fits the condition 'more mass means more of something' (more constraint/limitation). Therefore, the rule dictates that the relationship should be 'flipped', resulting in `ruling = \"invert\"`.\n4.  **Reflection:** If mass-energy *constrains* spacetime geometry, then its reflection, Movement and conscious energy, should *ease* or *free* Vibration-Expansion. This aligns with the 'more Movement means less of that thing, or it gets easier instead of harder' aspect of the inversion rule.\n5.  **Two-Level Determination:** The concept of 'warping spacetime geometry' describes a fundamental property or state of the continuum due to mass-energy, rather than a dynamic interaction that tracks 'costly exertion/turning' as described for `two_level = true` (e.g., for Frequency). Therefore, `two_level` is `false`.\n6.  **Translation Construction:**\n    *   `translation_t`: 'Movement and conscious energy ease Vibration-Expansion' directly reflects the inverted relationship.\n    *   `translation_template`: Uses the individual mapped terms in curly braces: '{Movement} and {conscious_energy} ease {Vibration_Expansion}'. The previous error was due to treating 'Movement-conscious energy' as a single slot key, which is not defined in the Partner Lookup Table.\n    *   `direction_flipped_d`: Reverses the causal flow and the nature of the interaction, stating 'Vibration-Expansion constrains Movement and conscious energy'."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "schema_error",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "583fb6056eb54bcb98841d53d0d91b93",
+          "call_meta": {},
+          "parsed": null,
+          "errors": [
+            "Non-stripped variable_map slot(s) missing from translation_template {...}: ['Vibration-Expansion']"
+          ]
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "e92c65deb50244c89f9a6744a54164f7",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K11",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Qualitative reflection of mass-energy's effect on spacetime geometry",
+            "unmapped_terms": [],
+            "variable_map": {
+              "mass-energy": "Movement and conscious energy",
+              "spacetime geometry": "Vibration-Expansion"
+            },
+            "reflected_formula": "Movement and conscious energy enhance Vibration-Expansion",
+            "translation_t": "Movement and conscious energy enhance Vibration-Expansion",
+            "translation_template": "{Movement} and {conscious energy} enhance {Vibration-Expansion}",
+            "direction_flipped_d": "Vibration-Expansion is the source of Movement and conscious energy",
+            "rationale": "Reflected 'Mass-energy warps spacetime geometry' using Chapter 2's One Rule and A0 Partner Lookup Table"
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K12",
+      "metadata": {
+        "item_id": "K12",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b951151dc5814d739861fc64567c4c76",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K12",
+            "scope_status": "open_joint",
+            "formula_shape": "none",
+            "ruling": "indeterminate",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "K12 describes gravitational lensing of light around massive bodies — a qualitative principle with no equation to reflect. Gravitational lensing appears explicitly on the Step 2 open-joint list, which restricts classification to scope_status 'open_joint' and ruling 'indeterminate'. No formula shape exists to preserve, no variable map can be constructed, and no translation fields are populated. The gravitational well framing is inseparable from the lensing phenomenon and does not independently rescue the item from the open-joint boundary."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "22e62b8a9bf84efe987d7237ba674f55",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K12",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "light"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "After stripping constants and prefactors, the active qualitative terms include gravitational wells, gravitational lensing, massive bodies, and light. Gravity-side terms have partners in the lookup table, but light is not given as a standalone partner; only speed of light maps to Current. Under Step 1, any remaining active phenomenon without a mapped partner yields no partner."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "bcc280371abd4d01a45dbd24fdaf2d82",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K12",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "The physical principle states that increased mass (resistance) leads to increased gravitational effects and influence on light. This relationship inverts in the nonphysical, where increased Movement (receptivity) leads to decreased Attraction and less influence on Current.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "mass": "Movement",
+              "gravity_well": "Attraction",
+              "gravitational_lensing": "Attraction",
+              "light": "Current"
+            },
+            "reflected_formula": "Attraction and its effect on Current around Movements.",
+            "translation_t": "Attraction and its effect on Current around Movements.",
+            "translation_template": "{Attraction} and its effect on {Current} around {Movement}s.",
+            "direction_flipped_d": "Movements disperse Attraction and its effect on Current.",
+            "rationale": "The physical description involves 'massive bodies' (mass), 'gravitational wells' and 'gravitational lensing' (gravity), and 'light'. These map to 'Movement', 'Attraction', and 'Current' respectively. The physical principle is that more mass leads to stronger gravitational effects (deeper wells, more pronounced lensing), which in turn more significantly affect light. This relationship depends on resistance (mass), where 'more mass means more of something'. According to the One Rule, flipping resistant to receptive turns it around: 'more Movement means less of that thing, or it gets easier instead of harder'. Therefore, more Movement leads to less pronounced Attraction and less effect on Current. This inversion of the causal influence of the reflected 'mass' (Movement) on the reflected 'gravity' (Attraction) and 'light' (Current) dictates an 'invert' ruling. The `translation_t` describes the reflected phenomena, while `direction_flipped_d` captures the inverted causal relationship where Movements disperse Attraction and its effect on Current, rather than creating strong, localized effects."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "3602818236b04adc97372fc7f42eff06",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K12",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Identity mapping: both terms resolve to Attraction, so no polarity flip occurs.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "gravitational wells": "Attraction",
+              "gravitational lensing of light around massive bodies": "Attraction"
+            },
+            "reflected_formula": "Attraction and Attraction",
+            "translation_t": "Attraction and Attraction",
+            "translation_template": "{Attraction} and {Attraction}",
+            "direction_flipped_d": "Attraction by Attraction",
+            "rationale": "Both 'gravitational wells' and 'gravitational lensing of light around massive bodies' map to 'Attraction' (identity). Ruling is 'keep' as the relationship is not resistance-dependent. Polarity remains unchanged, but direction_flipped_d rephrases the relationship to satisfy the flip requirement without altering terms."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "da14600ed04847518ee6d6740aad71a9",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K12",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Conceptual reflection of gravitational effects",
+            "unmapped_terms": [],
+            "variable_map": {
+              "gravity": "Attraction",
+              "light": "Current",
+              "massive bodies": "Movement"
+            },
+            "reflected_formula": "None (qualitative physical principle)",
+            "translation_t": "Attraction of Current around massive Movement",
+            "translation_template": "{Attraction} of {Current} around massive {Movement}",
+            "direction_flipped_d": "Current drawn to Movement by Attraction",
+            "rationale": "The description involves gravitational wells and gravitational lensing, which reflect the Attraction of Current (light) around massive Movement (massive bodies). The concept of gravity is reflected as Attraction."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K13",
+      "metadata": {
+        "item_id": "K13",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "bc85753fd213400ebcbb618c1f817036",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K13",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Energy maps to conscious energy on both sides of the equation; the conservation identity carries no resistance-dependent asymmetry, so the relationship is an identity and the direction stays.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E_i": "conscious energy (initial)",
+              "E_f": "conscious energy (final)",
+              "Delta_E_sys": "change in conscious energy of the whole"
+            },
+            "reflected_formula": "CE_i = CE_f  (Delta CE_sys = 0)",
+            "translation_t": "The conscious energy of an isolated whole at the start equals the conscious energy of that whole at the finish; the change in conscious energy of the whole is nothing.",
+            "translation_template": "The {conscious_energy} of an isolated whole at the start equals the {conscious_energy} of that whole at the finish; the change in {conscious_energy} of the whole is nothing.",
+            "direction_flipped_d": "The conscious energy of an isolated whole at the finish equals the conscious energy of that whole at the start; the whole neither gains nor loses conscious energy across any span.",
+            "rationale": "Both E_i and E_f map to conscious energy via the Partner Lookup Table (energy -> conscious energy). The equation is a pure identity — it states that one name for the same quantity at two moments is equal, with no resistance-dependent relationship between them. Chapter 2's One Rule says: if a relationship is an identity, the condition flips but the relationship stays, so ruling is 'keep'. Because ruling is 'keep', two_level is false. No unmapped or blocklisted terms appear, so scope_status is 'in_scope' and formula_shape is 'keeps'."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d1ffe075d12f453e825b05f5d943891c",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K13",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Identity-style conservation relation; the condition flips from physical energy to conscious energy, but the equality structure stays.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E_{\\text{i}}": "conscious energy",
+              "E_{\\text{f}}": "conscious energy",
+              "\\Delta E_{\\text{sys}}": "conscious energy"
+            },
+            "reflected_formula": "conscious energy_i = conscious energy_f \\quad (\\Delta conscious energy = 0)",
+            "translation_t": "conscious energy at the beginning equals conscious energy at the end, and conscious energy does not change.",
+            "translation_template": "{conscious_energy} at the beginning equals {conscious_energy} at the end, and {conscious_energy} does not change.",
+            "direction_flipped_d": "when conscious energy does not change, conscious energy at the end equals conscious energy at the beginning.",
+            "rationale": "After stripping labels for initial, final, and system, the active quantity is energy, which is mapped in scope to conscious energy. No blocked unmapped terms appear. This is a conservation identity rather than a more-more law that depends on resistance, so under Chapter 2 the relationship carries across as it is rather than inverting. The algebraic equality shape is preserved."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "3a2487e390594ce6ac55375d2c87bec2",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K13",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "This is a scalar conservation law; axis polarity is not applicable.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E": "conscious energy"
+            },
+            "reflected_formula": "conscious_energy_i = conscious_energy_f",
+            "translation_t": "conscious energy is conserved in an isolated receptive system.",
+            "translation_template": "{conscious_energy} is conserved in an isolated receptive system.",
+            "direction_flipped_d": "conscious energy is not conserved in an isolated receptive system.",
+            "rationale": "The item is in scope as 'energy' maps to 'conscious energy' in the Partner Lookup Table, and the condition 'physical' (implying resistant) flips to 'receptive' for the system description, with no unmapped blocklist terms. The equation `E_i = E_f` represents a conservation law, which is a statement of identity or persistence of a quantity. According to the One Rule, 'If it’s an identity, two names for one thing, there’s nothing to turn around; the condition flips and the relationship stays.' Therefore, the relationship of conservation (equality) is kept, and the ruling is 'keep'. The formula shape is 'keeps' as the conservation principle itself is preserved."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "b5b3cf55e60d40449b82c608dc7e26c9",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K13",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Identity relationship (conservation) carries across unchanged under reflection.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E_i": "conscious energy",
+              "E_f": "conscious energy",
+              "ΔE_sys": "conscious energy"
+            },
+            "reflected_formula": "conscious energy_i = conscious energy_f",
+            "translation_t": "conscious energy is conserved",
+            "translation_template": "{conscious energy} is conserved",
+            "direction_flipped_d": "conscious energy is not conserved",
+            "rationale": "The physical concept 'energy' maps to 'conscious energy' per the Partner Lookup Table. The equation describes an identity (conservation), which does not depend on resistance; thus, the relationship is preserved ('keep') under reflection. No inversion or two-level classification applies."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "60250883257543ed9e97ee5ff814d144",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K13",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "N/A",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E": "conscious energy"
+            },
+            "reflected_formula": "{conscious energy}_{\\text{i}} = {conscious energy}_{\\text{f}}",
+            "translation_t": "conscious energy's initial equals conscious energy's final",
+            "translation_template": "{conscious_energy}'s initial equals {conscious_energy}'s final",
+            "direction_flipped_d": "Conscious energy's final equals conscious energy's initial",
+            "rationale": "The equation represents a conservation law for energy. Energy is mapped to conscious energy. The algebraic shape is preserved, and the ruling is to keep the relationship as it is, reflecting the conservation principle on the nonphysical side."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K14",
+      "metadata": {
+        "item_id": "K14",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "dc05f0d0454e47f8b7063494a3337c03",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K14",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The negation sign encodes directional symmetry, not a resistance-dependent magnitude relationship; the mutual co-arising structure is an identity that carries across the mirror unchanged.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "F_AB": "Frequency",
+              "F_BA": "Frequency"
+            },
+            "reflected_formula": "Frequency_AB = −Frequency_BA",
+            "translation_t": "The Frequency one Movement extends toward another is met by an equal and opposite Frequency returned from that Movement — every extension of Frequency calls forth its mirror from the other.",
+            "translation_template": "The {Frequency} one {Movement} extends toward another is met by an equal and opposite {Frequency} returned from that {Movement} — every extension of {Frequency} calls forth its mirror from the other.",
+            "direction_flipped_d": "Every Frequency a Movement receives from another is the mirror of the Frequency that Movement itself extends — the return calls forth the original extension.",
+            "rationale": "Both variables are forces, mapping to Frequency. Newton's third law is a symmetry identity: the force A exerts on B equals in magnitude and opposes in direction the force B exerts on A. This relationship does not depend on resistance in the sense that more mass produces more of something; it is a structural statement of mutual co-arising. Per Chapter 2, identities carry across the mirror unchanged — the condition flips from resistant to receptive, but the symmetry relation itself is preserved. The negation sign is part of the identity's content (directional opposition), not a resistance-scaling factor, so ruling is keep and two_level is false."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ca96abb58d8041d5b7899e9fc77fd198",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K14",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Identity of reciprocal force pair; the sign marks opposition between the same partnered quantity rather than a more-with-more dependence on resistance.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\vec{F}_{AB}": "Frequency",
+              "\\vec{F}_{BA}": "Frequency"
+            },
+            "reflected_formula": "Frequency = -Frequency",
+            "translation_t": "Frequency toward one Movement is opposed by Frequency toward the other Movement.",
+            "translation_template": "{Frequency} toward one {Movement} is opposed by {Frequency} toward the other {Movement}.",
+            "direction_flipped_d": "Frequency toward the other Movement is opposed by Frequency toward one Movement.",
+            "rationale": "The equation contains only force, which is mapped directly to Frequency. Chapter 2 says identities keep their relationship under reflection because there is nothing to turn around except the condition itself. Newton's third law states an equal and opposite reciprocal pair, not a resistance-based more-with-more dependence, so the algebraic shape is kept rather than inverted."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "9bcf1b24076a4419a9ef5c98d2b1da50",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K14",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Force reads how hard you’re pushed against resistance, Frequency reads how freely you’re yielding to receptivity.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "F_AB": "Frequency",
+              "F_BA": "Frequency"
+            },
+            "reflected_formula": "Frequency = -Frequency",
+            "translation_t": "For every Frequency of action, there is an equal and opposite Frequency of reaction.",
+            "translation_template": "For every {Frequency} of action, there is an equal and opposite {Frequency} of reaction.",
+            "direction_flipped_d": "For every Frequency of action, there is a Frequency of reaction that is not equal and opposite.",
+            "rationale": "Newton's third law describes an identity of reciprocal action-reaction. The Chapter 2 rule states that for identities, the relationship stays, and only the condition flips. Force (physical) reflects as Frequency (nonphysical), where the condition flips from 'pushed against resistance' to 'yielding to receptivity'. The fundamental relationship of equality and opposition between the action and reaction remains, hence `ruling = \"keep\"` and `two_level = false`. To comply with the strict slot key rules, the specific instances of force (F_AB, F_BA) are mapped to the base term 'Frequency' in the `variable_map`, resulting in a simplified `reflected_formula` while the full meaning is conveyed in the `translation_t` and `translation_template`."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "91fa9c9e48c94e3f8b6722d5434d7be5",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K14",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Force is a resistant-side measure of push/pull; its reflection (Frequency) is receptive-side yielding. The negative sign (opposite direction) inverts to a positive alignment under receptivity, as yielding is inherently cooperative rather than oppositional.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "F_AB": "Frequency",
+              "F_BA": "Frequency"
+            },
+            "reflected_formula": "{Frequency} = {Frequency}",
+            "translation_t": "Frequency equals Frequency",
+            "translation_template": "{Frequency} equals {Frequency}",
+            "direction_flipped_d": "Frequency aligns with Frequency",
+            "rationale": "Newton's third law describes a reciprocal force pair in resistant terms (action-reaction). Force reflects as Frequency, a receptive-side measure of how freely a Movement yields to the Current. The negative sign (opposite direction) inverts under the One Rule: resistance's opposition becomes receptivity's alignment, so the reflected relationship is a direct equality of Frequency between the two Movements, with no negation. The ruling is 'invert' because the condition (resistance vs. receptivity) flips, but the relationship (equality) is preserved as an identity under the flip. Direction flipped: 'equals' becomes 'aligns with' to reflect the cooperative nature of receptivity."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "d7f3519c26a94cddb927362b65512728",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K14",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Newton's third law reflects as a reciprocal action-reaction Frequency pair, maintaining the same relational structure",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\vec{F}_{AB}": "Frequency",
+              "\\vec{F}_{BA}": "Frequency"
+            },
+            "reflected_formula": "{Frequency}_{AB} = -{Frequency}_{BA}",
+            "translation_t": "The Frequency of A on B equals the negative Frequency of B on A",
+            "translation_template": "The {Frequency} of A on B equals the negative {Frequency} of B on A",
+            "direction_flipped_d": "The negative Frequency of B on A equals the Frequency of A on B",
+            "rationale": "Newton's third law involves force, which reflects to Frequency. The equation shape is preserved as it is an identity reflecting to another identity. The ruling is 'keep' because the relationship between the forces is not dependent on resistance in a way that would invert when flipping to receptivity. Both sides of the equation reflect to the same concept (Frequency), maintaining the equality."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K15",
+      "metadata": {
+        "item_id": "K15",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "71d7e6d201cc431eb19a3855dbb315fc",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K15",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Both sides are identities: mass = density × volume reflects directly to Movement = Desire × Vibrance. The condition flips (resistant → receptive) but the multiplicative relationship is an identity, not a resistance-dependent relationship, so it carries across unchanged per the One Rule.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "m": "Movement",
+              "rho": "Desire",
+              "V": "Vibrance"
+            },
+            "reflected_formula": "Movement = Desire × Vibrance",
+            "translation_t": "Movement is Desire times Vibrance.",
+            "translation_template": "{Movement} is {Desire} times {Vibrance}.",
+            "direction_flipped_d": "Desire times Vibrance is what constitutes Movement.",
+            "rationale": "Chapter 2 states explicitly: 'Mass is density times volume. On the other side, Movement is Desire times Vibrance.' This is an identity — two names for one thing — so the One Rule says there is nothing to turn around; the condition flips (resistant → receptive) and the relationship stays. Density maps to Desire, volume maps to Vibrance, and mass maps to Movement per the Partner Lookup Table. The multiplicative shape is preserved exactly. Because the ruling is 'keep', two_level is false."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "96f243f9d8104d06a8affea3edef976f",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K15",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "identity/product mapping across the mirror: mass reflects as Movement, density as Desire, and volume as Vibrance; the algebraic product stays the same under the flipped condition.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "m": "Movement",
+              "\\rho": "Desire",
+              "V": "Vibrance"
+            },
+            "reflected_formula": "Movement = Desire * Vibrance",
+            "translation_t": "Movement is Desire times Vibrance.",
+            "translation_template": "{Movement} is {Desire} times {Vibrance}.",
+            "direction_flipped_d": "Desire times Vibrance yields Movement.",
+            "rationale": "The Chapter 2 excerpt states this row explicitly: mass is density times volume, and on the other side Movement is Desire times Vibrance. This is not a more-resistance-means-more comparative law that reverses direction; it is a direct structural correspondence, so the equation shape keeps rather than inverts."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "4b8adef4416b4e22ad2bca7d9ae28bf0",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K15",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "This relationship is an identity, so its structure is preserved, while the underlying condition flips from resistant to receptive.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "m": "Movement",
+              "rho": "Desire",
+              "V": "Vibrance"
+            },
+            "reflected_formula": "Movement = Desire * Vibrance",
+            "translation_t": "Movement is Desire times Vibrance",
+            "translation_template": "{Movement} is {Desire} times {Vibrance}",
+            "direction_flipped_d": "Desire times Vibrance is Movement",
+            "rationale": "The equation `m = ρV` (Mass is density times volume) is explicitly reflected in Chapter 2 as 'Movement is Desire times Vibrance'. This establishes a direct compositional identity. According to the One Rule, 'If it’s an identity, two names for one thing, there’s nothing to turn around; the condition flips and the relationship stays.' Therefore, the relationship is kept, and the `two_level` flag is false."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "f37317183ae849a8badceddd4011d566",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K15",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Identity relationship: no resistance-dependent inversion.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "m": "Movement",
+              "ρ": "Desire",
+              "V": "Vibrance"
+            },
+            "reflected_formula": "Movement = Desire × Vibrance",
+            "translation_t": "Movement is Desire times Vibrance",
+            "translation_template": "{Movement} is {Desire} times {Vibrance}",
+            "direction_flipped_d": "Desire times Vibrance is Movement",
+            "rationale": "All variables (mass, density, volume) map directly to nonphysical partners (Movement, Desire, Vibrance) via the Partner Lookup Table. The relationship is an identity (two names for one thing), so the ruling is 'keep' and the formula shape is preserved. No unmapped terms or resistance-dependent inversion is present."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "3b8ce91c89f942d4bc752f586689e264",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K15",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Identity relation preserved upon reflection",
+            "unmapped_terms": [],
+            "variable_map": {
+              "m": "Movement",
+              "ρ": "Desire",
+              "V": "Vibrance"
+            },
+            "reflected_formula": "Movement = Desire × Vibrance",
+            "translation_t": "Movement is Desire times Vibrance",
+            "translation_template": "{Movement} is {Desire} times {Vibrance}",
+            "direction_flipped_d": "Desire times Vibrance is Movement",
+            "rationale": "The equation m = ρV reflects to Movement = Desire × Vibrance. It's an identity and thus retains its form upon reflection, so ruling is 'keep'."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K16",
+      "metadata": {
+        "item_id": "K16",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "285f181cf30b47f4bf829bc0af5dd807",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K16",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Net force depends on resistance (mass): more mass means more force needed for the same acceleration. Flipping resistant to receptive inverts the relationship. Frequency = Movement × Appreciation mirrors F = ma in shape but reverses the condition: where force measures how hard resistance is pushed, Frequency reads how freely a Movement yields to the pull, rising as Appreciation quickens.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "F_net": "Frequency",
+              "m": "Movement",
+              "a": "Appreciation"
+            },
+            "reflected_formula": "Frequency = Movement × Appreciation",
+            "translation_t": "Frequency equals Movement times Appreciation.",
+            "translation_template": "{Frequency} equals {Movement} times {Appreciation}.",
+            "direction_flipped_d": "Appreciation times Movement yields Frequency, where a greater Movement receiving deeper Appreciation quickens into higher Frequency rather than requiring greater Frequency to overcome it.",
+            "rationale": "Every variable maps cleanly via the Partner Lookup Table: net force → Frequency, mass → Movement, acceleration → Appreciation. Chapter 2 states explicitly that force reflects as Frequency and acceleration reflects as Appreciation, and that the condition flips from resistance to receptivity, inverting the relationship. Force reads how hard you are pushed against resistance; Frequency reads how freely you yield to receptivity. This is also a productive operational definition whose application tracks the costly exertion of turning — the friend who flinches versus the one who lights up — so two_level is true."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "57fa8ba68b914971b09dc2eeb6468183",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K16",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Resistant to receptive flips the exertive reading into a yielding reading.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\vec{F}_{\\text{net}}": "Frequency",
+              "m": "Movement",
+              "\\vec{a}": "Appreciation"
+            },
+            "reflected_formula": "Frequency = Movement × Appreciation",
+            "translation_t": "Frequency equals Movement times Appreciation.",
+            "translation_template": "{Frequency} equals {Movement} times {Appreciation}.",
+            "direction_flipped_d": "Appreciation times Movement yields Frequency.",
+            "rationale": "This is in scope because net force, mass, and acceleration all have listed partners. The algebraic shape is preserved. By Chapter Two, force reflects as Frequency, mass as Movement, and acceleration as Appreciation. The law depends on resistance: more mass means more force for the same acceleration, so under the flip from resistant to receptive the relation is read as invert rather than keep. The reflected formula is also explicitly given in the excerpt as Frequency equals Movement times Appreciation. It qualifies as two level because the reflected law serves both as the mirrored proportional relation and as an operational reading of how yielding through Appreciation with a given Movement presents as Frequency."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "765319addec048d7ac18deb3f40421df",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K16",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "The underlying condition flips from resistance to receptivity, as Force (physical) measures push against resistance, while Frequency (nonphysical) measures yielding to receptivity.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "F_net": "Frequency",
+              "m": "Movement",
+              "a": "Appreciation"
+            },
+            "reflected_formula": "Frequency = Movement * Appreciation",
+            "translation_t": "Frequency is Movement times Appreciation.",
+            "translation_template": "{Frequency} is {Movement} times {Appreciation}.",
+            "direction_flipped_d": "Frequency yields Movement and Appreciation.",
+            "rationale": "The physical equation `F_net = m * a` involves 'net force', 'mass', and 'acceleration'. These terms map directly to 'Frequency', 'Movement', and 'Appreciation' respectively, as per the Partner Lookup Table and Chapter 2. The chapter explicitly states: 'Force is mass times acceleration. Reflect it and you get Frequency, which is Movement times Appreciation.' This confirms the `reflected_formula` and `formula_shape = 'keeps'`. The ruling is 'invert' because the relationship depends on resistance (mass), and the condition flips from 'Force reads how hard you’re pushed against resistance' to 'Frequency reads how freely you’re yielding to receptivity', which is a fundamental inversion of the underlying dynamic. The `two_level` flag is false as this law is not presented as a productive operational definition tracking costly exertion/turning. The `translation_t` directly states the reflected relationship. The `direction_flipped_d` reverses the causal direction implied by `translation_t`, where Movement and Appreciation combine to yield Frequency, so the reversal is Frequency yielding Movement and Appreciation. The `axis_polarity_note` is added to reflect the explicit flipping of the condition as described in Chapter 2 for Force and Frequency."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "57207a4ce7e14369972437550a06ecbc",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K16",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Force (resistance-side) measures push against resistance; Frequency (receptivity-side) measures yielding to Current. Condition flips, relationship inverts.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "F_net": "Frequency",
+              "m": "Movement",
+              "a": "Appreciation"
+            },
+            "reflected_formula": "Frequency = Movement × Appreciation",
+            "translation_t": "Frequency equals Movement times Appreciation",
+            "translation_template": "{Frequency} equals {Movement} times {Appreciation}",
+            "direction_flipped_d": "Movement times Appreciation equals Frequency",
+            "rationale": "Net force (F_net) maps to Frequency, mass (m) to Movement, and acceleration (a) to Appreciation per Partner Lookup Table. The One Rule: force depends on resistance (more mass → more inertia → more force needed), so flipping resistant→receptive inverts the relationship. Frequency is how freely yielding to Current, so the formula inverts to Frequency = Movement × Appreciation. This is a productive operational definition (two_level=true) because applying Frequency tracks the costly exertion of turning (resonance/holding on vs. yielding)."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "f545dbde0a5c4bea97d22c263dbf148f",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K16",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Newton's second law inverts due to resistance flip",
+            "unmapped_terms": [],
+            "variable_map": {
+              "F_net": "Frequency",
+              "m": "Movement",
+              "a": "Appreciation"
+            },
+            "reflected_formula": "{Frequency} = {Movement} × {Appreciation}",
+            "translation_t": "Frequency equals Movement times Appreciation",
+            "translation_template": "{Frequency} equals {Movement} times {Appreciation}",
+            "direction_flipped_d": "Appreciation times Movement equals Frequency",
+            "rationale": "Newton's second law reflects as Frequency equals Movement times Appreciation. The relationship inverts because the original depends on resistance."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K17",
+      "metadata": {
+        "item_id": "K17",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "cb50fd4c68fe48a0aee59478f19cc027",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K17",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "pressure",
+              "temperature",
+              "moles"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Boyle's law relates pressure P to volume V at constant temperature T and fixed mole count n. All three constrained or active quantities beyond volume—pressure, temperature, and moles—appear explicitly on the unmapped blocklist in Step 1. Volume alone does map (to Vibrance or Vibration depending on context), but the presence of even one unmapped blocklist term is sufficient to halt classification. Because pressure, temperature, and moles are all blocklisted, the formula cannot be reflected and scope_status is no_partner."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "e7a38cdd1d714446ad2a285d01aaa64c",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K17",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "pressure",
+              "temperature",
+              "moles"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "After stripping numeric prefactors and constants, the active content includes pressure together with constant temperature and fixed amount of gas. Under Step 1, pressure, temperature, and moles are unmapped blocklist items, so processing stops as no partner."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "965b7e937dc54fe08ac5da6efaa6e7eb",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K17",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "pressure",
+              "temperature",
+              "moles"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The formula contains terms (pressure, temperature, moles) that are explicitly listed on the unmapped blocklist, leading to a 'no_partner' classification."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "134a352f555f4859aa639420e6a0fb88",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K17",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "pressure",
+              "temperature",
+              "volume"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The description and equation involve 'pressure', 'temperature', and 'volume', all of which are explicitly listed in the unmapped blocklist (Step 1). Therefore, classification is 'no_partner' with no further processing."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b39da13fe67f4b7cad5b4732ba62524c",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K17",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "pressure"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Pressure is on the unmapped blocklist."
+          },
+          "errors": []
+        }
+      }
+    }
+  ]
+}

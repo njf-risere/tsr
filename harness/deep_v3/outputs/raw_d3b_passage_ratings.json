@@ -1,0 +1,2050 @@
+{
+  "stage": "D3b",
+  "role": "d3b_passage_rating",
+  "arm_id": "D3b",
+  "expected_calls": 60,
+  "valid_calls": 60,
+  "schema_error_count": 0,
+  "tasks": [
+    {
+      "task_id": "P01",
+      "metadata": {
+        "passage_id": "P01",
+        "stratum": "structural_paragraphs",
+        "source_ref": "Ch. 2, idx=20 (pdf_page 21)"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ffa2cdc043634e4c8337c1cfc5bcf214",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A0",
+              "2": "V_Ssyn",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P01",
+            "scores": {
+              "1": 5,
+              "2": 2,
+              "3": 1
+            },
+            "best_variant": 1,
+            "worst_variant": 3,
+            "ranking": [
+              1,
+              2,
+              3
+            ],
+            "reason": "Variant 1 uses 'Movement,' which is the literal musical term for a symphony's self-contained sections, making the analogy a perfect etymological and structural explanation for the chosen name. The double meaning—physical motion (change in motion) and musical movement (self-contained section within a whole)—is exactly what the 'Why that choice of name?' question demands. Variants 2 and 3 ('responsiveness' and 'Reflected') have no connection to the symphony/sections analogy, leaving the explanatory bridge completely broken."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "65e92de482624f3288abe1961ea0e85d",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_Ssyn",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P01",
+            "scores": {
+              "1": 1,
+              "2": 2,
+              "3": 5
+            },
+            "best_variant": 3,
+            "worst_variant": 1,
+            "ranking": [
+              3,
+              2,
+              1
+            ],
+            "reason": "Variant 3 is the only one where the chosen term is directly justified by the musical explanation: a symphony contains distinct sections called movements, each with its own tempo, character, beginning, and end while remaining part of the whole. That makes the ordinary-English bridge exact and structurally apt for 'one self-contained member within the unified composition.' Variant 2 is not contradictory, but 'responsiveness' is an abstract quality, while the explanation is about discrete contained sections; the lexical and structural fit is therefore weak. Variant 1 is worst because 'Reflected' does not match the musical account at all: nothing in the explanation concerns reflection, and the term is a mismatched participial adjective where a named unit is needed."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "9d7200878ac84787b33d1be53d82fe4f",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P01",
+            "scores": {
+              "1": 3,
+              "2": 5,
+              "3": 2
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 ('Movement') is exceptionally strong. The term 'Movement' perfectly captures 'receptivity to a change in motion' (as movement is a change in motion, and receptivity implies the capacity for it). Crucially, it also aligns flawlessly with the subsequent explanation: in music, a 'movement' is precisely a 'self-contained member within the unified composition' (a symphony section). This makes the justification for the name choice seamless and deeply coherent.\n\nVariant 1 ('Reflected') is moderately coherent. While a section might 'reflect' the whole, the term 'reflected' doesn't strongly convey 'receptivity to a change in motion' in its primary sense. Its connection to 'self-contained member within a unified composition' is also indirect and less precise than 'movement' in the musical context. The justification feels somewhat stretched.\n\nVariant 3 ('responsiveness') is the weakest. While 'responsiveness' is a good synonym for 'receptivity to a change in motion,' the subsequent explanation for the name choice completely fails. The description of symphony sections as 'self-contained members within the unified composition' provides no logical or lexical reason for choosing the word 'responsiveness' as the label for such a concept. The bridge between the chosen term and its justification is broken, making it incoherent in that crucial part."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b277774e3213471ab9783b6340a2fa35",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A0",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P01",
+            "scores": {
+              "1": 5,
+              "2": 3,
+              "3": 2
+            },
+            "best_variant": 1,
+            "worst_variant": 3,
+            "ranking": [
+              1,
+              2,
+              3
+            ],
+            "reason": "Variant 1's 'responsiveness' logically mirrors 'resistance' (etymological and conceptual opposition) and aligns with the musical analogy of a self-contained yet integrated section. Variant 2's 'Movement' is lexically mismatched (resistance vs. movement lacks direct opposition) and breaks the structural coherence. Variant 3's 'Reflected' is etymologically and conceptually weak, as it does not meaningfully oppose 'mass' or align with the musical metaphor."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "6e65a3f8402a419ebafae9d006b8edac",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A3",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P01",
+            "scores": {
+              "1": 4,
+              "2": 1,
+              "3": 2
+            },
+            "best_variant": 1,
+            "worst_variant": 2,
+            "ranking": [
+              1,
+              3,
+              2
+            ],
+            "reason": "Variant 1 is the most coherent as 'responsiveness' logically connects to 'receptivity to a change in motion' and fits the musical analogy. Variant 2's 'Reflected' is not clearly connected to the concept, and Variant 3's 'Movement' contradicts the idea of receptivity as it implies action rather than receptiveness."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "P02",
+      "metadata": {
+        "passage_id": "P02",
+        "stratum": "structural_paragraphs",
+        "source_ref": "Ch. 2, idx=20 (pdf_page 21)"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "f730e3d8716a4119bf976e13c020f760",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A0",
+              "2": "V_A3",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P02",
+            "scores": {
+              "1": 3,
+              "2": 1,
+              "3": 5
+            },
+            "best_variant": 3,
+            "worst_variant": 2,
+            "ranking": [
+              3,
+              1,
+              2
+            ],
+            "reason": "Variant 3's terms 'pitch' and 'growth' do precise logical work: 'pitch' directly maps to the musical analogy (two notes in the same air differ by pitch, not location), capturing qualitative distinction without spatial separation; 'growth' exactly captures 'the whole becoming more than before' without decay. Variant 1's 'Vibration' and 'Expansion' have partial resonance but are less precise—vibration doesn't specifically mark qualitative distinction between notes, and expansion is generic. Variant 2's 'Appreciation' and 'Vibrance' fail entirely: 'Appreciation' has no logical connection to spatial separation or musical differentiation, and 'Vibrance' doesn't capture temporal accumulation or increase."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "101f031b844744d3887a10daadd67491",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P02",
+            "scores": {
+              "1": 2,
+              "2": 5,
+              "3": 3
+            },
+            "best_variant": 2,
+            "worst_variant": 1,
+            "ranking": [
+              2,
+              3,
+              1
+            ],
+            "reason": "Variant 2 is the most coherent throughout. The setup says that without resistance, spatial separation becomes qualitative differentiation within one shared medium; 'Vibration' fits that exactly, since different vibrations can coexist in the same air like the note analogy states. For time, the passage says before/after remain only because the whole becomes more than it was; 'Expansion' matches increase, unfolding, and a continuum joining state and process. Variant 3 is partly coherent in ordinary English: 'pitch' works with the note analogy and qualitative difference, and 'growth' roughly matches becoming more. But 'pitch' is too narrow and concrete relative to the abstract role space is said to reflect, and 'growth' does not as neatly capture the continuous joining of disturbed equilibrium with ongoing disturbing. Variant 1 is weakest because 'Appreciation' does not naturally arise from the argument about co-present qualitative differentiation in a shared medium; it breaks the lexical and conceptual bridge. 'Vibrance' has some loose relation to lively disturbance, but it is less exact than 'Expansion' for the claim that temporal difference comes from the whole becoming more than before."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "30e28511fc434fc8832430de2bf56fb9",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P02",
+            "scores": {
+              "1": 3,
+              "2": 5,
+              "3": 4
+            },
+            "best_variant": 2,
+            "worst_variant": 1,
+            "ranking": [
+              2,
+              3,
+              1
+            ],
+            "reason": "Variant 2 provides terms that most effectively capture the philosophical 'reflection' described. 'Vibration' for space aligns perfectly with 'qualitative modulation' and the 'notes' analogy, representing the underlying mechanism of differentiation when physical distance vanishes. 'Expansion' for time directly and broadly encompasses 'the whole becoming more than before' and the dynamic continuum of 'disturbed equilibrium and ongoing disturbing' as the essence of time without decay. Both terms are fundamental and abstract enough to serve as conceptual reflections. Variant 3 is also very strong, with 'pitch' directly linking to the 'notes' analogy and 'growth' directly linking to 'becoming more than before.' However, 'pitch' is a specific quality resulting from vibration, and 'growth' is a specific type of expansion. While fitting, they feel slightly less fundamental or general as 'reflections' compared to 'Vibration' and 'Expansion' in this philosophical context. Variant 1 is less coherent. 'Appreciation' for space is more of a subjective response to qualitative modulation rather than a reflection of space's role in creating it. 'Vibrance' for time is plausible but less precise than 'Expansion' or 'growth' in describing the process of 'the whole becoming more than before.'"
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "3a285e4a7b68414a8ba9511edb321e93",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A0",
+              "2": "V_Ssyn",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P02",
+            "scores": {
+              "1": 4,
+              "2": 5,
+              "3": 1
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 uses 'pitch' and 'growth' which are ordinary English terms that logically and metaphorically align with the context of qualitative modulation (pitch for space) and incremental change (growth for time). Variant 1's 'Vibration' and 'Expansion' are conceptually plausible but less precise in ordinary English for the described phenomena. Variant 3's 'Appreciation' and 'Vibrance' are category mismatches, breaking coherence with the physical and temporal context."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ea05b880d5b34916b8e92eff55847a5a",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_Ssyn",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P02",
+            "scores": {
+              "1": 4,
+              "2": 3,
+              "3": 5
+            },
+            "best_variant": 3,
+            "worst_variant": 2,
+            "ranking": [
+              3,
+              1,
+              2
+            ],
+            "reason": "Variant 3 is the most coherent, using 'Vibration' and 'Expansion' to reflect the concepts of space and time in a manner consistent with the passage's themes. Variant 1 is plausible but uses terms ('Appreciation', 'Vibrance') that are less directly related to the physical concepts discussed. Variant 2 is the least coherent, using 'pitch' and 'growth' in a way that doesn't align as closely with the passage's logical and etymological connections."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "P03",
+      "metadata": {
+        "passage_id": "P03",
+        "stratum": "structural_paragraphs",
+        "source_ref": "Ch. 2, idx=21 & idx=24 (pdf_page 22/25)"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "935119c9d8bc4749aabfbcddadb02e13",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A0",
+              "2": "V_A3",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P03",
+            "scores": {
+              "1": 3,
+              "2": 1,
+              "3": 3
+            },
+            "best_variant": 1,
+            "worst_variant": 2,
+            "ranking": [
+              1,
+              3,
+              2
+            ],
+            "reason": "Variant 1 scores best because 'Vibrance' genuinely captures 'actively alive and ringing' and 'Desire' fits 'focused wanting concentrated inward,' though 'Movement' as a receptive unit is slightly awkward. Variant 3 is comparable but 'capacity' poorly captures 'alive and ringing.' Variant 2 is worst: 'Reflected' is grammatically broken as a noun, 'conscious energy' mismatches 'focused wanting,' and 'Desire' fails to mean 'alive and ringing'—multiple simultaneous contradictions make it incoherent."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "4fc8253c43ee41e3be8ff9747fe2b77a",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P03",
+            "scores": {
+              "1": 2,
+              "2": 4,
+              "3": 1
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 is the most coherent: 'Desire' fits 'focused wanting is concentrated inward,' 'Vibrance' plausibly fits 'actively alive and ringing,' and 'Movement' can at least support the idea of something dynamically alive on the receptive side without immediate contradiction. Variant 1 is weaker because 'Reflected' is not a natural noun for an entity here; 'each Reflected' sounds grammatically and conceptually off, even though 'Desire' and 'conscious energy' partly match the explanatory clauses. Also, the second clause explains aliveness/ringing, which fits something like vibrance better than 'Desire,' so the pairing feels misassigned. Variant 3 is the least coherent: 'responsiveness' as the thing being measured is awkward with 'each responsiveness combines...'; 'longing' fits wanting, but 'capacity' does not naturally mean 'actively alive and ringing.' The lexical and ordinary-English bridge breaks most clearly there."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1a04ec8170694866ad057daa70d1c88d",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A0",
+              "2": "V_Ssyn",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P03",
+            "scores": {
+              "1": 4,
+              "2": 2,
+              "3": 1
+            },
+            "best_variant": 1,
+            "worst_variant": 3,
+            "ranking": [
+              1,
+              2,
+              3
+            ],
+            "reason": "Variant 1 provides the most coherent set of terms. 'Desire' perfectly captures 'focused wanting concentrated inward' (analogous to density). 'Vibrance' aptly describes 'actively alive and ringing,' and while its metaphorical connection to 'volume' (spatial room filled) is somewhat indirect, it implies the *extent* or *pervasiveness* of that aliveness, making it plausible. 'Movement' as the overall receptive phenomenon is the weakest link but not entirely contradictory. Variant 2 fails significantly because 'capacity' does not logically or semantically measure 'how much of that responsiveness is actively alive and ringing'; capacity refers to potential or limit, not active aliveness or resonance. Variant 3 is the least coherent. 'Reflected' is grammatically awkward and conceptually unclear as a noun for the overall phenomenon. 'Conscious energy' is a poor fit for 'focused wanting concentrated inward,' and 'Desire' completely fails to describe 'how much of that Reflected is actively alive and ringing,' as desire is the wanting itself, not the aliveness or resonance."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "771c3498cedb4d49ad6ef21d7af4e09c",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A0",
+              "2": "V_Ssyn",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P03",
+            "scores": {
+              "1": 4,
+              "2": 5,
+              "3": 2
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 uses 'responsiveness', 'longing', and 'capacity' which align logically and lexically with the analogy to mass/density/volume, maintaining structural coherence and ordinary-English meaning. Variant 1's 'Movement', 'Desire', and 'Vibrance' are evocative but less precise in mapping to the physical analogy. Variant 3's 'Reflected' and 'conscious energy' introduce category mismatches and break the parallelism, making it the least coherent."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "410f183e984e4451b62d7d4d6fa45883",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A3",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P03",
+            "scores": {
+              "1": 4,
+              "2": 3,
+              "3": 5
+            },
+            "best_variant": 3,
+            "worst_variant": 2,
+            "ranking": [
+              3,
+              1,
+              2
+            ],
+            "reason": "Variant 3 coherently connects the physical analogy to the conceptual description of receptiveness, using 'Desire' and 'Vibrance' in a manner consistent with the surrounding text. Variant 1 is clear but lacks the specific, potentially deeper, connections that 'Movement' and 'Vibrance' provide. Variant 2 is less coherent due to the capitalized 'Reflected' and 'Desire', which disrupts the flow and introduces ambiguity."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "P04",
+      "metadata": {
+        "passage_id": "P04",
+        "stratum": "structural_paragraphs",
+        "source_ref": "Ch. 2, idx=22 (pdf_page 23)"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "4cb5105f7734430e80a55b70e42c9b27",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A0",
+              "2": "V_Ssyn",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P04",
+            "scores": {
+              "1": 3,
+              "2": 2,
+              "3": 2
+            },
+            "best_variant": 1,
+            "worst_variant": 2,
+            "ranking": [
+              1,
+              3,
+              2
+            ],
+            "reason": "Variant 1 maintains the most internally consistent terminological structure: velocity = Vibration/Expansion (tonal state ascending as whole unfolds), Appreciation governs the receptive modulation, and Movement × Appreciation = Frequency, with Frequency serving as the ambient tone. The metaphors cohere reasonably well even if the physics analogy is loose. Variant 2 uses 'urgency' as the product of 'responsiveness × gratitude,' but 'urgency' as an 'ambient tone you feel' is semantically strained—urgency implies pressure/time-sensitivity, not a steady ambient quality. Also 'pitch divided by growth' is awkward. Variant 3 has the most structural problems: 'Appreciation divided by Vibrance' for velocity is reversed from what would make sense (Appreciation is typically receptive/passive, not a numerator for velocity), 'Reflected' as a standalone noun multiplied by imagination is word-salad, and Movement as the product being described as 'ambient tone' conflicts with Movement's kinetic connotations."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "3ee48f467ce946fb9c124860b6eeaa0d",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A0",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P04",
+            "scores": {
+              "1": 3,
+              "2": 5,
+              "3": 1
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 is the only one that stays structurally and semantically coherent throughout: acceleration as change in velocity is standard; vibration/expansion can plausibly yield a rate-like sense; appreciation governing receptive modulation under a current is ordinary-English coherent; and movement × appreciation leading to frequency supports the closing contrast between steady ambient tone and shifts/jolts. Variant 1 is partly coherent but weaker and less exact: 'pitch divided by growth' is a shakier analogue for velocity, gratitude is a less natural regulator of rate-change than appreciation, and 'urgency' clashes with the later description of ambient tone and receptive ease, since urgency ordinarily suggests pressure rather than a baseline tonal frequency. Variant 3 breaks badly: 'appreciation divided by vibrance' does not plausibly mirror velocity, 'imagination' governing rate-change under the pull of 'Frequency' is a category mismatch, 'Reflected' cannot naturally be multiplied as a quantity here, and deriving 'Movement' from that set does not fit the final language about ambient tone and jolting shifts."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "0fdba655e2a142c18499a084880064bc",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A3",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P04",
+            "scores": {
+              "1": 2,
+              "2": 1,
+              "3": 4
+            },
+            "best_variant": 3,
+            "worst_variant": 2,
+            "ranking": [
+              3,
+              1,
+              2
+            ],
+            "reason": "Variant 3 is the most coherent and internally consistent. In the first sentence, 'Vibration' directly relates to 'tonal state ascends,' and 'Expansion' works well as a denominator for how the 'whole unfolds.' In the second sentence, 'Appreciation' is a fitting receptive quality, and 'Current' naturally exerts an 'inward pull.' The third sentence's definition of 'Frequency' as 'felt ease of receptive yielding' is a plausible metaphorical extension, especially since 'steady Frequency' perfectly describes an 'ambient tone.'\n\nVariant 1 starts well, but its definition of 'urgency' as 'felt ease of receptive yielding' is a direct contradiction of the ordinary meaning of 'urgency,' which implies pressure or speed, not ease or yielding. This makes the final sentence incoherent.\n\nVariant 2 has several issues. 'Appreciation divided by Vibrance' is a weaker fit for 'how rapidly your tonal state ascends.' 'Frequency' as something that exerts an 'inward pull' is a category mismatch. Most critically, 'Multiply Reflected by imagination' is grammatically awkward and conceptually unclear, as 'Reflected' is an adjective/past participle, not a noun that can be multiplied. The definition of 'Movement' as 'felt ease of receptive yielding' is also a significant stretch."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "9272d04dcdd449c3bf4e5567b36d8356",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P04",
+            "scores": {
+              "1": 2,
+              "2": 3,
+              "3": 4
+            },
+            "best_variant": 3,
+            "worst_variant": 1,
+            "ranking": [
+              3,
+              2,
+              1
+            ],
+            "reason": "Variant 3 uses ordinary English terms ('pitch', 'growth', 'gratitude', 'stream', 'responsiveness', 'urgency') that maintain logical and lexical coherence, with no category mismatches or broken bridges. Variant 2 introduces abstract terms ('Vibration', 'Expansion', 'Current', 'Frequency') that strain ordinary English but still retain some structural consistency. Variant 1 suffers from the most incoherence, with terms like 'Appreciation', 'Vibrance', 'Reflected', and 'Movement' failing to align logically or lexically with the surrounding context, creating contradictions and word-salad effects."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ffbe551b36b14e84a97f589ed95709c7",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A3",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P04",
+            "scores": {
+              "1": 4,
+              "2": 3,
+              "3": 5
+            },
+            "best_variant": 3,
+            "worst_variant": 2,
+            "ranking": [
+              3,
+              1,
+              2
+            ],
+            "reason": "Variant 3 is the most coherent, with terms like 'Vibration', 'Expansion', 'Appreciation', 'Current', 'Movement', and 'Frequency' fitting well together in a conceptual framework that discusses dynamics and receptivity. Variant 1 is clear but uses more generic terms. Variant 2 is the least coherent due to unclear connections between 'Appreciation', 'Vibrance', 'imagination', 'Frequency', and 'Reflected'."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "P05",
+      "metadata": {
+        "passage_id": "P05",
+        "stratum": "structural_paragraphs",
+        "source_ref": "Ch. 2, idx=23 (pdf_page 24)"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "c6b977f387e544d4bdcfd2c0f0b2e1d9",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A0",
+              "2": "V_A3",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P05",
+            "scores": {
+              "1": 4,
+              "2": 2,
+              "3": 3
+            },
+            "best_variant": 1,
+            "worst_variant": 2,
+            "ranking": [
+              1,
+              3,
+              2
+            ],
+            "reason": "Variant 1 is the most coherent: 'Movement' within 'Current' has a natural containment logic (currents contain movements), 'Vibrance' sharing a structural root with 'Vibration' is etymologically plausible (both from Latin vibrare), 'Appreciation' tracking 'Expansion' works as second-order derivative (rate of growth), and 'Frequency' linking oscillatory tone to felt awareness is semantically apt. Variant 3 uses ordinary English words but the claimed structural relationships are weaker—'capacity' sharing a root with 'pitch' is a stretch, and 'urgency' linking oscillatory tone to felt awareness is loose. Variant 2 is the weakest: 'Reflected' belonging within 'Frequency' is category-mismatched, 'Desire' sharing a structural root with 'Appreciation' is etymologically false, and 'imagination' tracking 'Vibrance' as a second-order derivative is incoherent—the term assignments seem scrambled and break the logical claims made by the surrounding sentences."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "96d96a78544a4f3686cede4ddb304d41",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P05",
+            "scores": {
+              "1": 2,
+              "2": 5,
+              "3": 1
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 is the most coherent across all four claimed relationships. 'Movement' fitting within 'Current' works naturally in ordinary English and conceptually; 'Vibrance' and 'Vibration' clearly share a lexical root; 'Appreciation' can plausibly function as a second-order response that tracks a quickening curve of 'Expansion'; and 'Frequency' neatly links oscillatory tone to felt awareness. Variant 1 has some partial coherence, but key links are strained: 'Reflected' within 'Frequency' is category-misaligned, 'Desire' and 'Appreciation' do not share a structural/lexical root, and 'Movement' linking oscillatory tone to felt awareness is weaker than 'Frequency.' Variant 3 is largely broken: although 'responsiveness' within 'stream' is somewhat imaginable, 'capacity' and 'pitch' do not share any root or family, 'gratitude' tracking a curve of 'growth' is arbitrary, and 'urgency' linking oscillatory tone to felt awareness does not provide the needed ordinary-English bridge."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1ead4af777814593ba9e3797f761f88f",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P05",
+            "scores": {
+              "1": 2,
+              "2": 5,
+              "3": 1
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 is exceptionally strong. All its claimed relationships (logical, structural, etymological) hold true and make perfect sense in ordinary English. 'Movement belongs within Current' is accurate as a current is a type of movement. 'Vibrance shares its root with Vibration' is etymologically precise. 'Appreciation tracking Expansion' and 'Frequency linking oscillatory tone to felt awareness' are conceptually sound and coherent. Variant 1 fails significantly on the etymological claim between 'Desire' and 'Appreciation,' which do not share a structural root, and the connection between 'Reflected' and 'Frequency' is strained. Variant 3 also fails on a clear etymological claim between 'Capacity' and 'Pitch,' and the relationship between 'responsiveness' and 'stream' is weak and not clearly defined as 'belonging inseparably within.'"
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "dd36c07cfba74cfdb03fe149144f1137",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_Ssyn",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P05",
+            "scores": {
+              "1": 4,
+              "2": 2,
+              "3": 5
+            },
+            "best_variant": 3,
+            "worst_variant": 2,
+            "ranking": [
+              3,
+              1,
+              2
+            ],
+            "reason": "Variant 3's terms (Movement/Current, Vibrance/Vibration, Appreciation/Expansion, Frequency) form a tightly coherent lexical and conceptual family with clear etymological and structural links, while maintaining ordinary-English double meanings. Variant 1 is mostly coherent but some terms (Reflected/Frequency, Desire/Appreciation) feel less naturally paired. Variant 2 has the weakest coherence, with terms like 'responsiveness/stream', 'capacity/pitch', and 'gratitude/growth' lacking strong structural or etymological connections, and 'urgency' feeling disjointed from the rest."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "2c18eaf9d5ca44aebddf2becd023e487",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A0",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P05",
+            "scores": {
+              "1": 2,
+              "2": 5,
+              "3": 3
+            },
+            "best_variant": 2,
+            "worst_variant": 1,
+            "ranking": [
+              2,
+              3,
+              1
+            ],
+            "reason": "Variant 2 demonstrates a coherent and logical use of terms that fit the described relationships and concepts seamlessly. Variant 3 has some plausible connections but shows category mismatches and less coherence. Variant 1 is the least coherent due to its use of terms that either don't fit the context or create contradictions."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "P06",
+      "metadata": {
+        "passage_id": "P06",
+        "stratum": "structural_paragraphs",
+        "source_ref": "Ch. 16, idx=119-120 (pdf_page 120-121)"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "eef0d709aed74e56a4bc646a92068500",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_Ssyn",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P06",
+            "scores": {
+              "1": 2,
+              "2": 4,
+              "3": 3
+            },
+            "best_variant": 2,
+            "worst_variant": 1,
+            "ranking": [
+              2,
+              3,
+              1
+            ],
+            "reason": "Variant 2 uses natural English terms ('responsiveness', 'whirlpool basins', 'stream', 'affinity', 'gathering') that flow coherently as a gravitational analogy mapped onto a receptive/conceptual domain. The terms do genuine double-duty: 'whirlpool basins' echoes 'curved wells' from the gravity setup, 'stream' mirrors the flow of trajectories, and 'affinity/gathering' captures the focal convergence without invoking optical imagery. Variant 3 uses capitalized terms ('Movement', 'Vortex', 'Current', 'Attraction', 'Convergence') that are structurally plausible but feel mechanical and slightly redundant—'Vortex basins within the Current' is reasonable but 'Movement forms coherent Vortex basins' is an awkward subject-predicate pairing. Variant 1 is the weakest: 'Reflected forms coherent Attraction basins within the Frequency' is nearly incoherent—'Frequency' as a container for basins breaks the gravitational/flow analogy, and 'Tune works through Intuition' introduces audio/musical metaphors that clash with the spatial trajectory framing, while 'Reflected' as a noun-subject is grammatically strained."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "c3fc55e801b443f3864a349ccd5e3212",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A0",
+              "2": "V_Ssyn",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P06",
+            "scores": {
+              "1": 3,
+              "2": 5,
+              "3": 1
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 is the most coherent in ordinary English and preserves the passage’s logic: gravity/curved wells maps naturally to responsiveness forming whirlpool-like basins within a stream, and affinity working through gathering cleanly matches scattered pathways joining toward one outcome. Variant 1 is partly coherent but noticeably strained by heavy nominalized/capitalized abstractions: Movement forming Vortex basins within the Current is usable, and Attraction through Convergence fits, but the lexical relations feel imposed rather than natural. Variant 3 breaks badly: Reflected does not sensibly form Attraction basins within Frequency, and Tune working through Intuition does not match the described joining of scattered pathways; the terms mismatch grammar, category, and the physical-to-conceptual bridge."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "29e8df69c3064e709f4d61549a24c1a8",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A0",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P06",
+            "scores": {
+              "1": 3,
+              "2": 5,
+              "3": 1
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 is exceptionally coherent. 'Movement forms coherent Vortex basins within the Current' provides a strong, dynamic analogy for gravity's warping effect, with 'Vortex' and 'Current' fitting perfectly as both physical and conceptual metaphors. 'Attraction works through Convergence' is equally precise, directly mapping to the idea of pathways joining. All terms work together seamlessly and avoid optic imagery. Variant 1 is mostly coherent, but 'responsiveness forms' is a slightly weaker conceptual fit for an active force than 'Movement forms'. Variant 3 is largely incoherent: 'Reflected forms' is grammatically and logically flawed (an adjective/participle cannot be the subject forming something), 'basins within the Frequency' is a significant category mismatch, and 'Tune works through Intuition' is vague and poorly connected to the idea of pathways joining."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "2e6cf468b8784aca810483580b627abc",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A0",
+              "2": "V_A3",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P06",
+            "scores": {
+              "1": 3,
+              "2": 2,
+              "3": 5
+            },
+            "best_variant": 3,
+            "worst_variant": 2,
+            "ranking": [
+              3,
+              1,
+              2
+            ],
+            "reason": "Variant 3 uses ordinary English terms ('responsiveness', 'whirlpool', 'stream', 'affinity', 'gathering') that maintain logical and lexical coherence with the physical analogy of gravity and the abstract 'trajectories of realization'. Variant 1 introduces specialized or abstract terms ('Vortex', 'Current', 'Convergence') that strain ordinary English but remain somewhat coherent. Variant 2 includes terms ('Reflected', 'Attraction basins', 'Frequency', 'Tune', 'Intuition') that create category mismatches or word-salad, breaking coherence."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "da29fb762cce40c38259ad8155d6184d",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P06",
+            "scores": {
+              "1": 4,
+              "2": 4,
+              "3": 5
+            },
+            "best_variant": 3,
+            "worst_variant": 1,
+            "ranking": [
+              3,
+              2,
+              1
+            ],
+            "reason": "Variant 3 uses ordinary English words in a coherent and logical manner, maintaining the metaphor of gravity and fluid dynamics seamlessly. Variants 1 and 2 use more technical or less common terms that, while coherent, slightly disrupt the ordinary English flow and introduce potential category mismatches or less clear metaphors."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "P07",
+      "metadata": {
+        "passage_id": "P07",
+        "stratum": "polysemy_bridge_paragraphs",
+        "source_ref": "Ch. 2 idx=20, 23 & Ch. 16 idx=121 (pdf_page 21, 24, 121)"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b4907993a71f43c79cb70867696f0b9e",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_Ssyn",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P07",
+            "scores": {
+              "1": 2,
+              "2": 2,
+              "3": 4
+            },
+            "best_variant": 3,
+            "worst_variant": 1,
+            "ranking": [
+              3,
+              2,
+              1
+            ],
+            "reason": "Variant 3 works best: 'Idle' captures 'running steadily in neutral like a humming engine rather than dead halt' perfectly (an idle engine runs without moving, neither off nor in gear), and 'Reflected' captures 'turning inward symmetrically rather than broadcasting out' well (reflection reverses direction inward). Most importantly, 'Current' as the name of the medium locks two everyday English senses together seamlessly: a continuous directional flow (electrical/water current) and the live ongoing present moment ('current' meaning now/contemporary). Variant 2 fails because 'stillness' contradicts 'running steadily' (stillness implies no motion), 'echo' only weakly captures inward symmetry, and 'stream' does carry flux meaning but lacks the 'present moment' double meaning as strongly as 'current' does. Variant 1 fails badly: 'rise per Expansion' is word-salad that doesn't coherently describe running in neutral, 'Current' as an adjective meaning 'turning inward' is a category mismatch, and 'Frequency' does not lock 'continuous directional flux' and 'present moment' together in ordinary English."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d8dc5afc0bc74341a0134030c60d1784",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P07",
+            "scores": {
+              "1": 1,
+              "2": 4,
+              "3": 1
+            },
+            "best_variant": 2,
+            "worst_variant": 1,
+            "ranking": [
+              2,
+              3,
+              1
+            ],
+            "reason": "Variant 2 is the only one that mostly preserves the stated ordinary-English bridges. 'Idle' fits the gloss 'running steadily in neutral like a humming engine rather than dead halt' very well, and 'Current' plausibly joins the senses of directional flow and the present time. 'Reflected' is not perfect for 'turning inward symmetrically,' but it at least has a coherent relation to turning back rather than radiating outward. Variant 1 is badly mismatched: 'rise per Expansion' is ungrammatical and semantically broken, 'Current' is used as an adjective where the gloss does not fit naturally, and 'Frequency' does not support the claimed double meaning of flow plus present moment. Variant 3 is also poor: 'stillness' directly clashes with the gloss about active humming neutrality, 'echo' does not mean inward symmetric turning, and 'stream' can mean flow but not 'this live ongoing present moment.'"
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d5973df12237495d83fa2e6137712346",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P07",
+            "scores": {
+              "1": 1,
+              "2": 5,
+              "3": 1
+            },
+            "best_variant": 2,
+            "worst_variant": 1,
+            "ranking": [
+              2,
+              3,
+              1
+            ],
+            "reason": "Variant 2 is the only one where all chosen terms fit their descriptions and the required double meanings seamlessly. 'Idle' perfectly describes 'running steadily in neutral like a humming engine.' 'Reflected' accurately captures 'turning inward symmetrically rather than broadcasting out.' The term 'Current' for the medium successfully locks both 'continuous directional flux' (e.g., electric current, water current) and 'this live ongoing present moment' (e.g., current events, current time) in common English. Variant 1 fails because 'rise per Expansion' is not an adjective and 'Expansion' contradicts the inward nature of the medium, and 'Frequency' for the medium does not convey either required double meaning. Variant 3 fails because 'stillness' directly contradicts 'running steadily in neutral like a humming engine rather than dead halt,' and 'stream' for the medium does not convey 'this live ongoing present moment' in common English."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "0de7372573ad4c47a67908f0ac6b7f5f",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P07",
+            "scores": {
+              "1": 4,
+              "2": 3,
+              "3": 2
+            },
+            "best_variant": 1,
+            "worst_variant": 3,
+            "ranking": [
+              1,
+              2,
+              3
+            ],
+            "reason": "Variant 1's terms ('rise per Expansion', 'Current', 'Frequency') align best with the described directional flux and present-moment duality, though 'rise per Expansion' is slightly awkward. Variant 2's 'Idle' and 'Reflected' are less coherent with the context of continuous flux, and 'Current' as the medium name is redundant with the described flow. Variant 3's 'stillness' and 'echo' contradict the 'running steadily' and 'continuous directional flux' claims, and 'stream' is a weaker fit for the dual meaning."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "649f79394ee346e1a9373097fdb0b1f5",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A0",
+              "2": "V_A3",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P07",
+            "scores": {
+              "1": 4,
+              "2": 3,
+              "3": 2
+            },
+            "best_variant": 1,
+            "worst_variant": 3,
+            "ranking": [
+              1,
+              2,
+              3
+            ],
+            "reason": "Variant 1 coherently connects the concept of a nonphysical medium with the term 'Current', leveraging its dual meaning of continuous flux and the present moment. Variant 2 introduces 'rise per Expansion' and 'Frequency', which, while coherent, slightly disrupt the flow due to less direct connections. Variant 3 uses 'stillness' and 'echo', which contradict the notion of a 'live ongoing present moment' and 'continuous directional flux'."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "P08",
+      "metadata": {
+        "passage_id": "P08",
+        "stratum": "polysemy_bridge_paragraphs",
+        "source_ref": "Ch. 16, idx=121 (pdf_page 122)"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "c2640b5bc26a4a2fb10e1f2928434748",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P08",
+            "scores": {
+              "1": 2,
+              "2": 4,
+              "3": 2
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 succeeds because 'Appreciation' carries both the financial rate-of-change meaning (a house appreciates faster/slower) and the ordinary-English sense of warm thankfulness, making it do all the required double-duty work seamlessly. 'Expansion' plausibly covers first-order novelty addition. The only minor weakness is 'Frequency' as a perceptual feeling. Variants 1 and 3 both fail centrally: 'imagination' and 'gratitude' respectively lack the rate-of-change/acceleration meaning needed for the second-order role, and neither fits the house-value analogy, breaking the structural logic of the passage."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "79c74097c92f4ee4abc95a251dde46f4",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A0",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P08",
+            "scores": {
+              "1": 2,
+              "2": 4,
+              "3": 1
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 is the most coherent: 'Expansion' can plausibly name first-order increase, 'Appreciation' has both the financial sense of rising value and the ordinary sense of grateful regard, and the house-value analogy directly supports it. 'Current' also fits the stream metaphor. Its weak point is that 'Frequency' as 'what you perceptually feel' is not especially natural. Variant 1 is partly workable because 'growth' fits first-order increase, but 'gratitude' does not naturally mean increase speeding up or slowing down, nor does it fit the house-value analogy except by confusion with 'appreciation'; the thankfulness sense works, but the core second-order role does not. Variant 3 is largely broken: 'Vibrance' does not fit first-order addition of novelty, 'imagination' has no ordinary sense of thankfulness and no connection to house-value appreciation, and 'pull of the Frequency' is not idiomatic in the stream image."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "c72f61aa441c488b9d5c16c8ae45b371",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A0",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P08",
+            "scores": {
+              "1": 2,
+              "2": 5,
+              "3": 1
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 is exceptionally coherent. 'Expansion' accurately describes 'first-order addition of novelty.' 'Appreciation' perfectly fulfills its dual role: it represents 'increase gathering speed or slowing down' (as in value appreciation, directly supported by the house value example) and simultaneously holds the ordinary English sense of 'warm thankfulness.' 'Current' works well as a force exerting a pull. 'Frequency' as something perceptually felt and adjustable is plausible within the conceptual framework.\n\nVariant 1 is significantly weaker. While 'growth' works for the first-order concept, 'gratitude' fails to logically represent 'increase gathering speed or slowing down.' This creates a direct contradiction in its primary definition, even though it correctly captures the 'warm thankfulness' double-meaning.\n\nVariant 3 is largely incoherent. 'Vibrance' is a poor fit for 'first-order addition of novelty.' 'Imagination' completely fails on both counts: it does not represent 'increase gathering speed or slowing down,' nor does it possess an ordinary English sense of 'warm thankfulness,' making the passage contradictory and nonsensical. 'Frequency' as something with a 'pull' is also a weak conceptual link."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "0019dd3db74b4095a5f801caa62439da",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A3",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P08",
+            "scores": {
+              "1": 5,
+              "2": 2,
+              "3": 4
+            },
+            "best_variant": 1,
+            "worst_variant": 2,
+            "ranking": [
+              1,
+              3,
+              2
+            ],
+            "reason": "Variant 1 uses 'growth', 'acceleration', 'gratitude', and 'stream' in a way that is logically and etymologically coherent in ordinary English, with 'gratitude' naturally bridging urgency and adjustment. Variant 2 fails due to mismatches: 'Vibrance' and 'Frequency' are forced, 'imagination' does not ordinarily mean 'warm thankfulness', and 'Movement' is disconnected from the context. Variant 3 is mostly coherent but 'Appreciation' (while close to 'gratitude') and 'Current' are slightly less seamless than Variant 1's terms, and 'Frequency' as a bridge is weaker than 'urgency'."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "da3b5b7c403145beb760afb4e72467c5",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P08",
+            "scores": {
+              "1": 4,
+              "2": 5,
+              "3": 3
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 is the most coherent, with 'Expansion' logically tied to 'addition of novelty', 'Appreciation' fitting the context of 'warm thankfulness', and 'Current'/'Frequency' maintaining a consistent metaphorical framework. Variant 1 is close but 'Vibrance' is less directly related to 'addition of novelty' than 'Expansion'. Variant 3 uses more generic terms, and 'urgency' disrupts the coherence as it doesn't directly relate to 'perceptually feel' in the same way 'Frequency' or 'Current' do."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "P09",
+      "metadata": {
+        "passage_id": "P09",
+        "stratum": "polysemy_bridge_paragraphs",
+        "source_ref": "Ch. 16, idx=121 (pdf_page 122)"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "f1ec68073e5048bda0e8b78fbdb9596d",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A0",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P09",
+            "scores": {
+              "1": 3,
+              "2": 5,
+              "3": 2
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 is seamless: 'Tune' perfectly names the active operation of selective harmonic alignment (dialing, instrument-matching), 'Attraction' is coherently what gets left unguided without tuning, and 'conscious energy circulates' fits the receptive-multiplier framework. Variant 1 is plausible but 'focus' is more visual than harmonic, and 'affinity' is loosely connected. Variant 3 fails because 'resonance' is a passive result rather than an active operation, 'leave Tune unguided' is category-confused (Tune is an action, not a guidable thing), and 'Vibration circulates' reads as word-salad."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "e9c2a0c4d4a74f43af0b3e55878ff2fc",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A0",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P09",
+            "scores": {
+              "1": 3,
+              "2": 5,
+              "3": 2
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 is the most coherent throughout: 'Tune' naturally fits the receiver/instrument analogy, 'selective harmonic alignment' directly explains it, and 'Attraction' plus 'conscious energy circulates' remain intelligible in ordinary English. Variant 1 is partly workable, but 'focus' does not fully match the harmonic tuning imagery; it leans more toward concentration than alignment, so the receiver/instrument analogy feels somewhat forced, though still understandable. Variant 3 is the weakest because 'resonance' is more a resulting state than an operation of choice, 'leave Tune unguided' mixes levels awkwardly, and 'Vibration circulates' is an ordinary-English mismatch, making the passage less structurally and semantically coherent."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ed2d33961be14405b8f5ca6270bb603b",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A0",
+              "2": "V_A3",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P09",
+            "scores": {
+              "1": 5,
+              "2": 2,
+              "3": 3
+            },
+            "best_variant": 1,
+            "worst_variant": 2,
+            "ranking": [
+              1,
+              3,
+              2
+            ],
+            "reason": "Variant 1 is exceptionally coherent. The term 'Tune' perfectly embodies 'selective harmonic alignment' and is precisely illustrated by 'dialing a receiver or matching an instrument cleanly to one channel.' 'Attraction' is a suitable concept to be guided by personal agency, and 'conscious energy' flowing unimpeded is a logical outcome of proper tuning. Every element aligns seamlessly.\n\nVariant 3 is moderately coherent. 'Focus' works as an operation, and 'affinity' and 'awareness' fit their roles reasonably well. However, the description 'selective harmonic alignment' and the examples of 'dialing a receiver or matching an instrument' are a poor fit for 'focus,' which is more about directing attention than aligning frequencies or harmonies. This creates a significant conceptual disconnect in the core definition.\n\nVariant 2 is the least coherent. 'Resonance' is more of a state or phenomenon than an active 'operation' one performs, making 'the operation labeled resonance' awkward. Furthermore, the examples provided ('dialing a receiver or matching an instrument') describe actions of *tuning* to achieve resonance, not resonance itself. 'Tune' as something that would be 'unguided' also feels less natural than 'Attraction' or 'affinity,' making this variant conceptually weaker overall."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "f36edf2e37874738bd1b1e0ec0abc4b0",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A0",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P09",
+            "scores": {
+              "1": 4,
+              "2": 5,
+              "3": 3
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 uses 'Tune' and 'Attraction' which align well with the metaphor of 'dialing a receiver' and 'selective harmonic alignment,' maintaining lexical and conceptual coherence. Variant 1's 'focus' and 'affinity' are plausible but slightly less precise in the harmonic context. Variant 3's 'resonance' and 'Tune' create a circular reference ('Tune' is used as a term to be guided but also as a label), and 'Vibration' as the circulating element feels less integrated with the 'selective harmonic alignment' metaphor."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "e0a2c61bdd204e99a69b3b0f535466e5",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_Ssyn",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P09",
+            "scores": {
+              "1": 4,
+              "2": 4,
+              "3": 4
+            },
+            "best_variant": 1,
+            "worst_variant": 2,
+            "ranking": [
+              1,
+              3,
+              2
+            ],
+            "reason": "All variants are coherent and convey a similar philosophical idea. Variant 1 is slightly more consistent in its terminology, using 'Tune' and 'Vibration' in a way that aligns with the concept of 'resonance'. Variants 2 and 3 use different terms, but still maintain coherence. Variant 2's use of 'awareness' is clear, while Variant 3's 'conscious energy' is also plausible. However, Variant 1's 'Vibration' seems more directly related to 'resonance' than the other variants' alternatives."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "P10",
+      "metadata": {
+        "passage_id": "P10",
+        "stratum": "polysemy_bridge_paragraphs",
+        "source_ref": "Ch. 16, idx=120-121 (pdf_page 121-122)"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "023338553edc41e7a902db6d1b0cf5ae",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A0",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P10",
+            "scores": {
+              "1": 3,
+              "2": 4,
+              "3": 2
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 is most coherent: 'Expansion' logically contrasts with timeless changelessness (expansion implies novelty/temporal progression), and 'Vibration' as oscillatory medium naturally possesses 'Frequency' in ordinary science—the chain is clean. Variant 1 partially works (growth vs. changelessness is apt) but 'urgency' is not a recognized property of oscillatory media, breaking the scientific bridge. Variant 3 fails on both swaps: 'Vibrance' doesn't strongly imply temporal novelty needed for the first argument, and 'Movement' is too generic to be specifically tied to oscillatory media, making both logical bridges weak or broken."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "bb1085542e7f44ee9f1068ef5defd2a6",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A0",
+              "3": "V_A3"
+            }
+          },
+          "parsed": {
+            "passage_id": "P10",
+            "scores": {
+              "1": 3,
+              "2": 4,
+              "3": 1
+            },
+            "best_variant": 2,
+            "worst_variant": 3,
+            "ranking": [
+              2,
+              1,
+              3
+            ],
+            "reason": "Variant 2 is the most structurally coherent: 'Expansion' fits the first sentence's contrast with changelessness and supports the loss of frontier/progressive notions, while 'Vibration' and 'Frequency' belong to the same ordinary scientific register, so the claim that only an oscillatory medium possesses frequency works cleanly. Variant 1 is partly effective: 'growth' works reasonably in the first sentence, and 'pitch' has a real oscillatory link, but saying only an oscillatory medium possesses 'urgency' breaks the ordinary-English/scientific bridge, since urgency is not a property of a medium in that sense. Variant 3 is largely incoherent: 'Vibrance' is awkward against timeless changelessness, 'Appreciation' does not naturally contrast with a private mental box in the way required, and 'Movement' is too broad to be something only an oscillatory medium possesses; the lexical and logical relations collapse."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "c6693c1b69584f46bdc9d7750dcdf400",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A3",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P10",
+            "scores": {
+              "1": 2,
+              "2": 1,
+              "3": 5
+            },
+            "best_variant": 3,
+            "worst_variant": 2,
+            "ranking": [
+              3,
+              1,
+              2
+            ],
+            "reason": "Variant 3 is exceptionally coherent and seamless. In the first part, 'Expansion' logically contrasts with 'timeless changelessness,' directly leading to the stated consequences of indistinguishable 'before' and 'after' and the collapse of 'progressive frontier notions.' In the second part, 'Vibration' is the fundamental action of an 'oscillatory medium,' and 'Frequency' is its direct, measurable property. If 'Vibration' is confined to a 'private mental box' (i.e., not a shared, physical reality), then 'Frequency' (a property of shared, physical vibration) logically becomes 'homeless' in the shared world, perfectly aligning with the claim that 'only an oscillatory medium possesses Frequency' and that private compartments 'smuggle back the very separation the receptive side lacks.' Every term works precisely as intended, leveraging both scientific and ordinary English meanings without contradiction or incoherence.\n\nVariant 1's first part, using 'growth,' is strong and coherent. However, its second part fails significantly. While 'pitch' is a property related to an oscillatory medium, 'urgency' is not a property that an 'oscillatory medium possesses' in ordinary science or language; it's a human interpretation of a signal. This creates a category mismatch and breaks the logical bridge, making the claim 'only an oscillatory medium possesses urgency' incoherent.\n\nVariant 2 is the weakest. While 'Vibrance' in the first part is a plausible contrast to 'timeless changelessness,' the second part is fundamentally incoherent. 'Appreciation' is already a private mental state, making the swap 'for an enclosed private mental box' redundant and nonsensical. Furthermore, the connection between 'Appreciation' being privatized and 'Movement' becoming homeless is entirely absent, even though 'Movement' itself can be a property of an oscillatory medium. The setup for the second part is broken, leading to word-salad."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "e331dc18ca94403e91c027ed0e239491",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A0",
+              "2": "V_A3",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P10",
+            "scores": {
+              "1": 5,
+              "2": 2,
+              "3": 1
+            },
+            "best_variant": 1,
+            "worst_variant": 3,
+            "ranking": [
+              1,
+              2,
+              3
+            ],
+            "reason": "Variant 1 uses 'Expansion', 'Vibration', and 'Frequency'—terms that are lexically and conceptually coherent with oscillatory systems and the idea of a medium (e.g., physics of waves). The substitutions logically align with the argument about timelessness and separation. Variant 2's 'Vibrance' and 'Appreciation' are less precise, and 'Movement' is a stretch for an oscillatory medium's defining property. Variant 3's 'growth', 'pitch', and 'urgency' are either category mismatches ('growth' vs. timelessness) or nonsensical in the context ('urgency' as a property of an oscillatory medium)."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "8baaa79a6fec44dfadd5d75a7fbb0962",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_Ssyn",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P10",
+            "scores": {
+              "1": 4,
+              "2": 3,
+              "3": 5
+            },
+            "best_variant": 3,
+            "worst_variant": 2,
+            "ranking": [
+              3,
+              1,
+              2
+            ],
+            "reason": "Variant 3 is the most coherent, using terms like 'Expansion', 'Vibration', and 'Frequency' that fit well with the concept of an oscillatory medium and the discussed notions. Variant 1 is plausible but 'Vibrance' and 'Appreciation' are less directly related to the oscillatory medium concept. Variant 2 is the least coherent, as 'growth', 'pitch', and 'urgency' do not form a consistent or directly related set of terms in this context."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "P11",
+      "metadata": {
+        "passage_id": "P11",
+        "stratum": "polysemy_bridge_paragraphs",
+        "source_ref": "Ch. 16, idx=122 (pdf_page 123)"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d18a468f7db14bc2adbe3c7b6c001d70",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A0",
+              "2": "V_A3",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P11",
+            "scores": {
+              "1": 3,
+              "2": 2,
+              "3": 4
+            },
+            "best_variant": 3,
+            "worst_variant": 2,
+            "ranking": [
+              3,
+              1,
+              2
+            ],
+            "reason": "Variant 3 uses ordinary English terms (longing, stream, pitch) that carry genuine double meanings: 'longing' as desire/density-counterpart works etymologically; 'stream' as light's counterpart (flow/current), inward medium, and present moment ('stream of consciousness') all cohere in ordinary English; 'pitch' as space's counterpart (musical pitch relates to frequency/space), half a continuum, and oscillatory foundation connecting capacity and urgency works reasonably well. The terms feel grounded and their multiple roles are plausible in ordinary English. Variant 1 uses capitalized invented terms (Desire, Current, Vibration) that partially work—'Current' as present moment and light's counterpart is coherent, 'Vibration' as oscillatory foundation connecting Vibrance and Frequency is reasonable—but the overall framework feels more arbitrary and the connections less naturally motivated. Variant 2 is the weakest: 'conscious energy' as density's counterpart is vague, 'Reflected' as a constitutive factor is grammatically awkward, 'Future realization' breaks the 'flowing Out For' directional logic, and 'Appreciation' as space's counterpart with oscillatory foundation connecting Desire and Movement creates category mismatches that undermine coherence."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "06f185be8f44497398ce46c9df015060",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P11",
+            "scores": {
+              "1": 1,
+              "2": 4,
+              "3": 2
+            },
+            "best_variant": 2,
+            "worst_variant": 1,
+            "ranking": [
+              2,
+              3,
+              1
+            ],
+            "reason": "Variant 2 is the most coherent: Desire naturally fits 'what is wanted' and a directional aim, Current can plausibly bridge flow and presentness ('current' moment), and Vibration coheres with an oscillatory foundation, though 'Out For realization' is still awkward and some pairings remain abstract. Variant 3 has some ordinary-English sense in longing and stream, but 'pitch' as space's counterpart and as the foundation connecting capacity and urgency is semantically strained, and the set lacks clear lexical/family relations. Variant 1 is the weakest because several terms break ordinary-English and structural coherence: 'conscious energy' does not naturally mean 'what is wanted,' 'flowing Future realization' is grammatically and conceptually broken, and 'Appreciation' as space's counterpart and oscillatory foundation connecting Desire and Movement is a strong category mismatch."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "32d4877210664c22a71b167ac0bb9aef",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P11",
+            "scores": {
+              "1": 2,
+              "2": 5,
+              "3": 3
+            },
+            "best_variant": 2,
+            "worst_variant": 1,
+            "ranking": [
+              2,
+              3,
+              1
+            ],
+            "reason": "Variant 2 is exceptionally coherent. 'Desire' perfectly fits 'what is wanted' and as a driver of 'Movement'. 'Current' directly aligns with 'light's counterpart' (e.g., electric current, light as current) and literally means 'this ongoing present moment'. 'Vibration' naturally serves as an 'oscillatory foundation' connecting 'Vibrance' and 'Frequency', with strong lexical and conceptual ties. The terms leverage both their literal and metaphorical meanings seamlessly.\n\nVariant 3 starts strong with 'longing' but significantly weakens with 'pitch'. 'Pitch' has a very tenuous connection to 'space's counterpart' and struggles to logically connect 'capacity and urgency' as an oscillatory foundation. 'Stream' is acceptable but less precise than 'current' for 'present moment'.\n\nVariant 1 is the weakest. 'Conscious energy' is a poor fit for 'what is wanted'. 'Frequency' as an 'inward medium' or 'this ongoing present moment' is a conceptual stretch. 'Appreciation' as 'space's counterpart' or an 'oscillatory foundation' connecting 'Desire and Movement' is largely incoherent and lacks clear logical or lexical bridges in ordinary English."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b07e8c8a68804f4a8f96c9918149aa5e",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_Ssyn",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P11",
+            "scores": {
+              "1": 4,
+              "2": 2,
+              "3": 5
+            },
+            "best_variant": 3,
+            "worst_variant": 2,
+            "ranking": [
+              3,
+              1,
+              2
+            ],
+            "reason": "Variant 3 uses terms (Desire, Current, Vibration) that align logically and etymologically with their roles (e.g., Desire as 'what is wanted,' Current as a medium, Vibration as oscillatory). Variant 1 is coherent but less precise (e.g., 'conscious energy' and 'Frequency' are abstract but functional). Variant 2 fails due to mismatches (e.g., 'longing' as density's counterpart, 'pitch' as space's counterpart) and broken ordinary-English bridges (e.g., 'outward-seeking realization' is awkward)."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "24dff1b3defa46f992b6e7aa70aa3ee6",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_A0",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P11",
+            "scores": {
+              "1": 4,
+              "2": 4,
+              "3": 3
+            },
+            "best_variant": 1,
+            "worst_variant": 3,
+            "ranking": [
+              1,
+              2,
+              3
+            ],
+            "reason": "Variants 1 and 2 are coherent and mostly consistent in their use of terms, fitting the described roles fairly well. Variant 3 uses more generic terms that somewhat fit the roles but lack the specific coherence and resonance seen in Variants 1 and 2, particularly with less clear connections between 'pitch', 'capacity', and 'urgency'."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "P12",
+      "metadata": {
+        "passage_id": "P12",
+        "stratum": "polysemy_bridge_paragraphs",
+        "source_ref": "Ch. 2 idx=24 & Ch. 16 idx=119 (pdf_page 25, 120)"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1a60d837a611470e9ad7d70cf873c786",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A3",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P12",
+            "scores": {
+              "1": 3,
+              "2": 1,
+              "3": 5
+            },
+            "best_variant": 3,
+            "worst_variant": 2,
+            "ranking": [
+              3,
+              1,
+              2
+            ],
+            "reason": "Variant 3 uses 'Intuition' which perfectly fits 'immediate non-analytic apprehension arriving ahead of explicit reasoning,' 'Desire' fits 'directional wanting,' 'Expansion' fits 'progressive whole-system unfolding,' and 'Movement' as the overarching category for these responsiveness concepts is coherent and philosophically grounded. Variant 1 uses 'hunch' which partially fits the apprehension role but is weaker than 'Intuition,' while 'longing' and 'growth' are reasonable but less precise; 'responsiveness' as the category works adequately. Variant 2 uses 'Vortex' which has no semantic connection to non-analytic apprehension, 'conscious energy' is vague for directional wanting, 'Vibrance' doesn't mean progressive whole-system unfolding, and 'Reflected' as a category is incoherent—making this variant largely word-salad."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "fcc982e4250f48488f42f868554e8d35",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A3",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P12",
+            "scores": {
+              "1": 4,
+              "2": 1,
+              "3": 5
+            },
+            "best_variant": 3,
+            "worst_variant": 2,
+            "ranking": [
+              3,
+              1,
+              2
+            ],
+            "reason": "Variant 3 is the most coherent in ordinary English and conceptually: 'Intuition' naturally fits immediate non-analytic apprehension prior to explicit reasoning, while 'Desire' for directional wanting and 'Expansion' for unfolding are semantically plausible companions. 'Movement' is slightly abstract but still acceptable as a responsive process term. Variant 1 is mostly strong because 'hunch' does capture pre-reason apprehension and contrasts well with mere guesswork, but it is a bit too casual/register-mismatched for the elevated framing and pairs less smoothly with 'longing' and 'growth' as a tidy conceptual triad. Variant 2 is badly strained: 'Vortex' does not ordinarily mean non-analytic apprehension, 'conscious energy' is not a clean fit for directional wanting, 'Vibrance' is awkward for progressive unfolding, and 'each Reflected' is grammatically broken/category-mismatched. The lexical set feels arbitrary rather than structurally exact."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ab8ad9dca4d74f43bc94268b5212751d",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A0",
+              "2": "V_A3",
+              "3": "V_Ssyn"
+            }
+          },
+          "parsed": {
+            "passage_id": "P12",
+            "scores": {
+              "1": 5,
+              "2": 1,
+              "3": 4
+            },
+            "best_variant": 1,
+            "worst_variant": 2,
+            "ranking": [
+              1,
+              3,
+              2
+            ],
+            "reason": "Variant 1 is exceptionally coherent. 'Intuition' perfectly matches the description of 'immediate non-analytic apprehension.' 'Desire' and 'Expansion' are precise and natural fits for 'directional wanting' and 'progressive whole-system unfolding,' respectively. 'Movement' provides a clear and fitting overarching concept for the core being kept lucid. Every term works seamlessly with its surrounding context.\n\nVariant 3 is good but slightly less precise. 'Hunch' is a strong fit for the primary concept, and 'longing' and 'growth' also fit well. However, 'responsiveness' as the entity whose 'core' is kept lucid by a 'hunch' is a slightly less natural or direct conceptual pairing than 'Movement' in Variant 1, though still understandable.\n\nVariant 2 is largely incoherent. 'Vortex' is a category mismatch for 'immediate non-analytic apprehension'; a vortex is a physical phenomenon, not a cognitive process. 'Conscious energy' and 'Vibrance' are weaker fits for their descriptions. Most critically, 'Reflected' used as a noun in 'each Reflected' is grammatically awkward and conceptually nonsensical, making the final sentence word-salad."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "7c4a0e693f26471cb7a871d0365ef8f3",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_A3",
+              "2": "V_Ssyn",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P12",
+            "scores": {
+              "1": 2,
+              "2": 4,
+              "3": 5
+            },
+            "best_variant": 3,
+            "worst_variant": 1,
+            "ranking": [
+              3,
+              2,
+              1
+            ],
+            "reason": "Variant 1 uses 'Vortex', 'Vibrance', and 'Reflected' which feel forced or esoteric without clear etymological or ordinary-English coherence in context, leading to a disjointed read. Variant 2 improves with 'hunch', 'longing', and 'growth', which are more natural and logically aligned, though 'responsiveness' is slightly less precise. Variant 3 excels with 'Intuition', 'Desire', and 'Expansion', which are lexically consistent, etymologically grounded, and structurally seamless, fulfilling the passage's conceptual and linguistic demands without contradiction."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "95c057bb892e43ddad902a89a0c4f9e2",
+          "call_meta": {
+            "hidden_key": {
+              "1": "V_Ssyn",
+              "2": "V_A3",
+              "3": "V_A0"
+            }
+          },
+          "parsed": {
+            "passage_id": "P12",
+            "scores": {
+              "1": 4,
+              "2": 3,
+              "3": 5
+            },
+            "best_variant": 3,
+            "worst_variant": 2,
+            "ranking": [
+              3,
+              1,
+              2
+            ],
+            "reason": "Variant 3 uses terms that fit logically and semantically with the context, maintaining coherence. Variant 1 is coherent but 'hunch' might be slightly less fitting than 'Intuition' due to its more casual connotation. Variant 2 uses 'Vortex', 'conscious energy', 'Vibrance', and 'Reflected', which introduce some incoherence due to less direct connections and unusual capitalization."
+          },
+          "errors": []
+        }
+      }
+    }
+  ]
+}

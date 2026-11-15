@@ -1,0 +1,3648 @@
+{
+  "stage": "D1a",
+  "role": "d1a_web_rating",
+  "arm_id": "D1a",
+  "expected_calls": 85,
+  "valid_calls": 85,
+  "schema_error_count": 0,
+  "tasks": [
+    {
+      "task_id": "W01",
+      "metadata": {
+        "item_id": "W01",
+        "stratum": "Core_Web"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "bef756afa4a145799950207c131beb30",
+          "call_meta": {
+            "candidates": {
+              "1": "responsiveness",
+              "2": "Reflected",
+              "3": "soul",
+              "4": "Movement"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W01",
+            "scores": {
+              "1": 2,
+              "2": 1,
+              "3": 1,
+              "4": 4
+            },
+            "best_candidate": 4,
+            "worst_candidate": 2,
+            "ranking": [
+              4,
+              1,
+              3,
+              2
+            ],
+            "reason": "Candidate 4 (Movement) best satisfies all three roles: in physics, movement represents the receptive/kinetic counterpart to mass (resistance); structurally, a movement is one self-contained unit within a larger symphony without breaking free; and in everyday musical usage, each movement maintains its own tempo and dynamics within the unified composition. Candidates 2 and 3 fail all roles as they lack both the physics receptivity meaning and the musical structural unit meaning."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "2c90cd97b87a484abcadaed110857f00",
+          "call_meta": {
+            "candidates": {
+              "1": "responsiveness",
+              "2": "soul",
+              "3": "Movement",
+              "4": "Reflected"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_Chal",
+              "3": "W_A0",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "item_id": "W01",
+            "scores": {
+              "1": 4,
+              "2": 1,
+              "3": 1,
+              "4": 1
+            },
+            "best_candidate": 1,
+            "worst_candidate": 2,
+            "ranking": [
+              1,
+              3,
+              4,
+              2
+            ],
+            "reason": "Candidate 1 fits Role 1 best: 'responsiveness' naturally names receptivity to change in motion. But it fails Roles 2 and 3 because it is not an everyday term for a self-contained section of a multi-part musical work. Candidate 3 strongly fits Roles 2 and 3, since a 'movement' is exactly an individual section within a larger musical composition with its own tempo and dynamics, but it does not fit Role 1's receptive-counterpart meaning. Candidates 2 and 4 fail across the set: 'soul' does not match the motion-receptivity relation or the musical-section role, and 'reflected' is an adjective/participle that does not cleanly satisfy any role. 'Soul' is worst because it collides most strongly with all three constraints."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "b503bc19be6d4da88385ded157d241ee",
+          "call_meta": {
+            "candidates": {
+              "1": "Movement",
+              "2": "soul",
+              "3": "responsiveness",
+              "4": "Reflected"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Chal",
+              "3": "W_Ssyn",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "item_id": "W01",
+            "scores": {
+              "1": 4,
+              "2": 1,
+              "3": 1,
+              "4": 1
+            },
+            "best_candidate": 1,
+            "worst_candidate": 4,
+            "ranking": [
+              1,
+              3,
+              2,
+              4
+            ],
+            "reason": "Candidate 1 ('Movement') is the only word that consistently satisfies all three roles. Roles 2 and 3 strongly establish a musical context, describing a self-contained section of a multi-part musical work with its own tempo and dynamics, which perfectly matches the definition of a musical 'movement'. While its fit for Role 1 ('receptivity to a change in motion') is more metaphorical than literal, it can be interpreted as the manifestation or process that occurs when something is receptive to change in motion, making it conceptually plausible as the counterpart to resistance. Candidate 3 ('responsiveness') fits Role 1 perfectly but completely fails the structural and contextual requirements of Roles 2 and 3. Candidate 2 ('soul') fails all roles. Candidate 4 ('Reflected') fails all roles and is grammatically incorrect as a noun in Role 1, making it the worst fit overall."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d2cccfac1c1d4099a29398885537004a",
+          "call_meta": {
+            "candidates": {
+              "1": "Movement",
+              "2": "soul",
+              "3": "responsiveness",
+              "4": "Reflected"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Chal",
+              "3": "W_Ssyn",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "item_id": "W01",
+            "scores": {
+              "1": 5,
+              "2": 3,
+              "3": 4,
+              "4": 2
+            },
+            "best_candidate": 1,
+            "worst_candidate": 4,
+            "ranking": [
+              1,
+              3,
+              2,
+              4
+            ],
+            "reason": "Candidate 1 ('Movement') cleanly satisfies Role 1 (receptivity to change in motion as a counterpart to mass), fits Role 2 as a self-contained unit in a larger whole (e.g., a movement in a symphony), and excels in Role 3 (musical context with tempo/dynamics). Candidate 3 ('responsiveness') scores well for Role 1 but weaker for Role 2/3. Candidate 2 ('soul') is metaphorical and mismatches structural roles. Candidate 4 ('Reflected') fails all roles due to irrelevance."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "39744b4c4ec740a2877a7fbd10b7251a",
+          "call_meta": {
+            "candidates": {
+              "1": "responsiveness",
+              "2": "Reflected",
+              "3": "Movement",
+              "4": "soul"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A3",
+              "3": "W_A0",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W01",
+            "scores": {
+              "1": 4,
+              "2": 4,
+              "3": 3,
+              "4": 2
+            },
+            "best_candidate": 1,
+            "worst_candidate": 4,
+            "ranking": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "reason": "Candidate 1 'responsiveness' fits well in all roles, describing a counterpart to resistance, a self-contained unit, and a musical term. Candidate 2 'Reflected' doesn't fit Role 3. Candidate 3 'Movement' fits Roles 1 and 2 but is less clear in Role 3. Candidate 4 'soul' is too vague and doesn't fit well in any role."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W02",
+      "metadata": {
+        "item_id": "W02",
+        "stratum": "Core_Web"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b609176b84284be4934a6b240f4c3fe3",
+          "call_meta": {
+            "candidates": {
+              "1": "stream",
+              "2": "source",
+              "3": "Frequency",
+              "4": "Current"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_Chal",
+              "3": "W_A3",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W02",
+            "scores": {
+              "1": 3,
+              "2": 1,
+              "3": 1,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 2,
+            "ranking": [
+              4,
+              1,
+              3,
+              2
+            ],
+            "reason": "Current perfectly satisfies all three roles: it flows universally without being a localized emission point (Role 1), serves as the invariant universal medium carrying every unit as the shared present frontier (Role 2), and in everyday English 'current' simultaneously means a continuous directional flow AND 'right now/this moment,' making it alive in the unfolding present (Role 3). Source fails immediately as it is explicitly an emission origin, which Role 2 forbids."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "bcd67a78ff77475d82dc5336a687c36c",
+          "call_meta": {
+            "candidates": {
+              "1": "source",
+              "2": "stream",
+              "3": "Frequency",
+              "4": "Current"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_Ssyn",
+              "3": "W_A3",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W02",
+            "scores": {
+              "1": 1,
+              "2": 4,
+              "3": 2,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 1,
+            "ranking": [
+              4,
+              2,
+              3,
+              1
+            ],
+            "reason": "Current best fits all three roles at once: it is an everyday English word for flow that can carry units in a shared directional movement, and it naturally suggests the present ('current') for the shared living frontier. Stream partly fits the carrying-flow idea, but lacks the strong universal-present double duty. Frequency does not match inward collection or shared carrying medium well, despite being a real everyday term. Source directly clashes with the description because it implies an origin emitting outward rather than a universal medium collecting/carrying everything."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "c3bbaa976df34fc586cfdbe2c8718cb6",
+          "call_meta": {
+            "candidates": {
+              "1": "stream",
+              "2": "Frequency",
+              "3": "Current",
+              "4": "source"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A3",
+              "3": "W_A0",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W02",
+            "scores": {
+              "1": 2,
+              "2": 1,
+              "3": 4,
+              "4": 1
+            },
+            "best_candidate": 3,
+            "worst_candidate": 4,
+            "ranking": [
+              3,
+              1,
+              2,
+              4
+            ],
+            "reason": "Candidate 3, 'Current,' best satisfies all three roles. It perfectly aligns with Role 2 as an invariant universal medium that is not an emission origin and establishes a shared present frontier, and perfectly fits Role 3 as a continuous, shared, directional flow alive in the present moment. For Role 1, while 'collects inward' is less literal, 'Current' effectively contrasts with light's outward radiation by representing a pervasive, non-emitting flow that everything is part of, rather than originating from a point. Candidates 2 ('Frequency') and 4 ('source') fundamentally contradict the roles. 'Source' (4) is particularly contradictory to Role 2's negation of an 'emission origin,' making it the worst fit. Candidate 1 ('stream') fails Role 1's 'collects inward' and is less universal than 'Current' in the context provided."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1a5622ae53394caeb17b094b6913e0d8",
+          "call_meta": {
+            "candidates": {
+              "1": "Frequency",
+              "2": "stream",
+              "3": "Current",
+              "4": "source"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Ssyn",
+              "3": "W_A0",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W02",
+            "scores": {
+              "1": 2,
+              "2": 4,
+              "3": 5,
+              "4": 1
+            },
+            "best_candidate": 3,
+            "worst_candidate": 4,
+            "ranking": [
+              3,
+              2,
+              1,
+              4
+            ],
+            "reason": "Candidate 3 ('Current') best satisfies all roles: it collects inward (e.g., electrical current flows inward to ground), acts as a universal medium (e.g., ocean current carries all), and fits everyday English double duty (e.g., 'current events' or 'electric current'). Candidate 2 ('stream') scores well for Role 2 (universal medium) and Role 3 (continuous flow) but less for Role 1 (inward collection). Candidate 1 ('Frequency') fails Role 1 and 2 (not a medium or inward-collecting). Candidate 4 ('source') directly contradicts Role 1 (implies outward emission)."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "23bf69cb0ed547c184b2c9d71bd39e3b",
+          "call_meta": {
+            "candidates": {
+              "1": "Frequency",
+              "2": "source",
+              "3": "stream",
+              "4": "Current"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Chal",
+              "3": "W_Ssyn",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W02",
+            "scores": {
+              "1": 4,
+              "2": 4,
+              "3": 3,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 3,
+            "ranking": [
+              4,
+              1,
+              2,
+              3
+            ],
+            "reason": "Candidate 4 'Current' fits all roles best, describing a flow that collects inward and acts as a universal medium. It also has an everyday double duty in English. Candidate 1 'Frequency' and Candidate 2 'source' somewhat fit but not as perfectly as 'Current'. Candidate 3 'stream' is the weakest as it implies a more localized flow rather than a universal medium."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W03",
+      "metadata": {
+        "item_id": "W03",
+        "stratum": "Core_Web"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "b75fe54489f941cdae66784f2c6b6316",
+          "call_meta": {
+            "candidates": {
+              "1": "mind",
+              "2": "Vibration",
+              "3": "pitch",
+              "4": "Appreciation"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A0",
+              "3": "W_Ssyn",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "item_id": "W03",
+            "scores": {
+              "1": 2,
+              "2": 4,
+              "3": 3,
+              "4": 1
+            },
+            "best_candidate": 2,
+            "worst_candidate": 4,
+            "ranking": [
+              2,
+              3,
+              1,
+              4
+            ],
+            "reason": "Candidate 2 (Vibration) best fits all three roles: it names a non-spatial continuum defined by oscillatory state (Role 1), pairs naturally with temporality as an orthogonal dimension uniting qualitative tone and oscillatory extent (Role 2), and in everyday English describes the shared medium through which musical instruments harmonize—propagating felt tone and lively oscillatory breadth (Role 3). Candidate 3 (pitch) partially fits Role 3 (musical context) but is a specific property rather than a shared continuum, and doesn't cleanly satisfy Role 1's non-spatial separation by oscillatory state alone. Candidate 1 (mind) fits Role 2's contrast with 'private mental chamber' as a trap to avoid, making it a poor fit. Candidate 4 (Appreciation) fails all structural roles entirely."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "95dae86e9b974b6a993058059af20c52",
+          "call_meta": {
+            "candidates": {
+              "1": "Appreciation",
+              "2": "Vibration",
+              "3": "pitch",
+              "4": "mind"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W03",
+            "scores": {
+              "1": 1,
+              "2": 2,
+              "3": 5,
+              "4": 1
+            },
+            "best_candidate": 3,
+            "worst_candidate": 1,
+            "ranking": [
+              3,
+              2,
+              4,
+              1
+            ],
+            "reason": "Candidate 3 ('pitch') best fits all three roles together: it is an everyday English word, strongly tied to oscillatory state in sound, and in the music example two instruments can share or sustain a pitch across the same room. It also works better than the others for a non-spatial continuum linked to qualitative tone. Candidate 2 ('Vibration') partially fits the oscillatory aspect and propagation idea, but it is more the motion itself than the shared continuum or counterpart medium, so it blurs Role 2. Candidate 4 ('mind') collides with the explicit trap rejecting a private mental chamber. Candidate 1 ('Appreciation') misses the oscillatory and musical-structural requirements almost entirely."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "1d65a1bcdc0b45388a05d5de694c4bcb",
+          "call_meta": {
+            "candidates": {
+              "1": "Appreciation",
+              "2": "pitch",
+              "3": "mind",
+              "4": "Vibration"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Ssyn",
+              "3": "W_Chal",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W03",
+            "scores": {
+              "1": 1,
+              "2": 4,
+              "3": 1,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 1,
+            "ranking": [
+              4,
+              2,
+              3,
+              1
+            ],
+            "reason": "Candidate 4, 'Vibration,' perfectly satisfies all three structural roles. It names the non-spatial continuum where particulars differ by oscillatory state (Role 1), supplies the shared physical medium uniting tone and oscillatory extent (Role 2), and is the shared phenomenon sustained by harmonizing instruments that propagates felt tone and lively oscillatory breadth together. Candidate 2, 'pitch,' is a strong fit for roles related to oscillatory state and tone, but it describes an attribute or dimension rather than the 'shared medium' itself, and 'shared pitch' is slightly less precise in the context of harmonization than 'shared Vibration.' Candidates 1 ('Appreciation') and 3 ('mind') are entirely unsuitable, as they refer to mental states, directly contradicting the requirement for a non-mental, shared continuum and failing to connect with oscillatory phenomena."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "374360411b7c4a51b119af382d681e7b",
+          "call_meta": {
+            "candidates": {
+              "1": "pitch",
+              "2": "mind",
+              "3": "Appreciation",
+              "4": "Vibration"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_Chal",
+              "3": "W_A3",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W03",
+            "scores": {
+              "1": 4,
+              "2": 5,
+              "3": 3,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 3,
+            "ranking": [
+              4,
+              2,
+              1,
+              3
+            ],
+            "reason": "Candidate 4 (Vibration) best satisfies all roles: it fits Role 1 as a non-spatial oscillatory state, Role 2 as a shared medium for tone and extent, and Role 3 as a propagating harmonic context. Candidate 2 (mind) partially fits but fails Role 3's physical propagation. Candidate 1 (pitch) fits Role 3 but struggles with Role 2's shared medium. Candidate 3 (Appreciation) fails all roles due to subjective/non-physical nature."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "6e78342c08314834814710dbe1295bbc",
+          "call_meta": {
+            "candidates": {
+              "1": "Appreciation",
+              "2": "mind",
+              "3": "Vibration",
+              "4": "pitch"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Chal",
+              "3": "W_A0",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W03",
+            "scores": {
+              "1": 2,
+              "2": 2,
+              "3": 5,
+              "4": 3
+            },
+            "best_candidate": 3,
+            "worst_candidate": 1,
+            "ranking": [
+              3,
+              4,
+              2,
+              1
+            ],
+            "reason": "Candidate 3 'Vibration' fits all roles best as it relates to oscillatory state, serves as a shared medium for qualitative tone and oscillatory extent, and is used in the context of musical harmony. Candidate 4 'pitch' is plausible but less fitting for Role 2. Candidates 1 and 2 are less suitable."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W04",
+      "metadata": {
+        "item_id": "W04",
+        "stratum": "Core_Web"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "3a9d52599958416297a1fc2a6355caff",
+          "call_meta": {
+            "candidates": {
+              "1": "eternity",
+              "2": "Expansion",
+              "3": "Vibrance",
+              "4": "growth"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A0",
+              "3": "W_A3",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W04",
+            "scores": {
+              "1": 2,
+              "2": 3,
+              "3": 3,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 1,
+            "ranking": [
+              4,
+              2,
+              3,
+              1
+            ],
+            "reason": "Candidate 4 (growth) best satisfies all three roles: Role 1 describes an accumulative, irreversible process where novel states add to the whole without decay or separation—growth perfectly captures this receptive counterpart to physical time's decay/sequence. Role 2 requires a continuum frontier role paired with oscillatory distinction, pushing outward irreversibly without implying timelessness or second-order acceleration—growth denotes first-order unfolding accumulation, not mere rate change. Role 3 requires everyday English double duty where newly realized states join the totality and widen possibility establishing before/after—'continuous outward growth' is natural English. Candidate 2 (Expansion) is plausible but more spatial/physical and less tied to irreversible accumulation of states. Candidate 3 (Vibrance) fails Role 1 and 2 as it implies energy/liveliness not accumulative irreversibility. Candidate 1 (eternity) explicitly violates Role 2 by denoting timeless changelessness."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "a8dcd97bfb5e4e8a948ae5c7c9e548fc",
+          "call_meta": {
+            "candidates": {
+              "1": "Expansion",
+              "2": "eternity",
+              "3": "Vibrance",
+              "4": "growth"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Chal",
+              "3": "W_A3",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W04",
+            "scores": {
+              "1": 4,
+              "2": 1,
+              "3": 2,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 2,
+            "ranking": [
+              4,
+              1,
+              3,
+              2
+            ],
+            "reason": "Candidate 4 fits best: \"growth\" naturally names additive, irreversible increase without implying breakup, matches a frontier moving outward, and works in ordinary English for widening possibility and establishing before/after through unfolding. Candidate 1 is also strong because \"expansion\" captures outward extension and frontier advance, but it is slightly less natural for accumulated novel states joining a whole. Candidate 3 has some weak association with vividness or liveliness, but it does not clearly express irreversible additive unfolding or a continuum frontier. Candidate 2 fails most clearly because \"eternity\" suggests timelessness or changeless duration, which directly conflicts with ongoing novelty, outward frontier movement, and before-versus-after structure."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "cba9dd06f0124d8f933dd9181bf55050",
+          "call_meta": {
+            "candidates": {
+              "1": "Vibrance",
+              "2": "Expansion",
+              "3": "eternity",
+              "4": "growth"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Chal",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W04",
+            "scores": {
+              "1": 1,
+              "2": 5,
+              "3": 1,
+              "4": 4
+            },
+            "best_candidate": 2,
+            "worst_candidate": 3,
+            "ranking": [
+              2,
+              4,
+              1,
+              3
+            ],
+            "reason": "Candidate 2, 'Expansion,' perfectly satisfies all three structural roles. It accurately describes an irreversible, additive process where novel states join a totality, pushing an outward frontier, widening possibilities, and establishing progression (Role 1, 2, 3). It clearly acts as a counterpart to decay and avoids the trap of timeless changelessness (Role 1, 2). Candidate 4, 'growth,' is also a very strong fit, embodying many of the same characteristics, but 'Expansion' slightly better captures the abstract, universal, and outward-pushing 'frontier' aspect without implying specific biological or developmental connotations. Candidates 1 ('Vibrance') and 3 ('eternity') fail to meet the core requirements; 'Vibrance' is a quality rather than a process of accumulation, and 'eternity' directly contradicts the explicit exclusion of 'timeless changelessness' (Role 2), making 'eternity' the worst candidate."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ffd67092439a44029fe3d2e460d23533",
+          "call_meta": {
+            "candidates": {
+              "1": "Expansion",
+              "2": "Vibrance",
+              "3": "eternity",
+              "4": "growth"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W04",
+            "scores": {
+              "1": 4,
+              "2": 5,
+              "3": 3,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 3,
+            "ranking": [
+              4,
+              2,
+              1,
+              3
+            ],
+            "reason": "Candidate 4 ('growth') best satisfies all roles: it mirrors irreversible addition (Role 1), pushes a frontier without implying timelessness or rate confusion (Role 2), and aligns with everyday English for widening possibility (Role 3). Candidate 3 ('eternity') fails Role 2 (timeless changelessness) and Role 1 (no receptive counterpart). Candidate 2 ('vibrance') is less precise for Role 1 and Role 3. Candidate 1 ('expansion') is strong but slightly less natural in everyday double duty (Role 3)."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "e7750d0f9caf4b518752e729d4c75427",
+          "call_meta": {
+            "candidates": {
+              "1": "Expansion",
+              "2": "eternity",
+              "3": "Vibrance",
+              "4": "growth"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Chal",
+              "3": "W_A3",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W04",
+            "scores": {
+              "1": 4,
+              "2": 4,
+              "3": 3,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 3,
+            "ranking": [
+              4,
+              1,
+              2,
+              3
+            ],
+            "reason": "Candidate 4 (growth) fits all roles well, describing an irreversible process that adds to the whole without coming apart, pushes the frontier outward, and establishes a before-after sequence. Candidate 1 (Expansion) is a close second, fitting the roles but slightly less nuanced in Role 3. Candidate 2 (eternity) fails Role 2 by implying timelessness. Candidate 3 (Vibrance) doesn't fit Role 1 or Role 2 as it doesn't directly imply an irreversible continuum or a receptive counterpart to physical time."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W05",
+      "metadata": {
+        "item_id": "W05",
+        "stratum": "Core_Web"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "17581c10aa8b47519b45544a26f28d93",
+          "call_meta": {
+            "candidates": {
+              "1": "longing",
+              "2": "conscious energy",
+              "3": "Desire",
+              "4": "intensity"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A3",
+              "3": "W_A0",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W05",
+            "scores": {
+              "1": 3,
+              "2": 2,
+              "3": 3,
+              "4": 2
+            },
+            "best_candidate": 3,
+            "worst_candidate": 4,
+            "ranking": [
+              3,
+              1,
+              2,
+              4
+            ],
+            "reason": "Candidate 3 (Desire) best satisfies all three roles: it mirrors physical density as 'aimed wanting packed into a receptive unit' (Role 1), carries directional intent rather than generic amplitude (Role 2), and in everyday English 'desire' connotes active, directed wanting oriented toward realization rather than passive longing or mere intensity (Role 3). Candidate 1 (longing) is close but implies passive wistful ache, which Role 3 explicitly excludes. Candidate 2 (conscious energy) is a compound phrase that partially fits Role 2 but lacks the clean 'aimed wanting' sense of Role 1 and feels awkward in Role 3. Candidate 4 (intensity) is a generic scalar amplitude, which Role 2 explicitly contrasts against, making it the worst fit."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "0c750a9326ac442c86910c0514678d9f",
+          "call_meta": {
+            "candidates": {
+              "1": "intensity",
+              "2": "Desire",
+              "3": "conscious energy",
+              "4": "longing"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A0",
+              "3": "W_A3",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W05",
+            "scores": {
+              "1": 2,
+              "2": 5,
+              "3": 1,
+              "4": 3
+            },
+            "best_candidate": 2,
+            "worst_candidate": 3,
+            "ranking": [
+              2,
+              4,
+              1,
+              3
+            ],
+            "reason": "Candidate 2, \"Desire,\" best fits all three roles: it naturally means aimed wanting within a unit, can function directionally rather than as mere magnitude, and in everyday English it clearly refers to active wanting oriented toward realization. Candidate 4, \"longing,\" matches wanting but skews toward passive ache or wistfulness, weakening Role 2 and especially Role 3. Candidate 1, \"intensity,\" can express concentration or amplitude, but it does not inherently mean wanting or directional aim, so it collides with the scalar-amplitude trap. Candidate 3, \"conscious energy,\" suggests generic force or vitality rather than wanting, and it lacks strong everyday use as a direct name for aimed internal wanting."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "2918b4ab99a049e0a886bdd5f5525d6e",
+          "call_meta": {
+            "candidates": {
+              "1": "longing",
+              "2": "Desire",
+              "3": "conscious energy",
+              "4": "intensity"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A0",
+              "3": "W_A3",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W05",
+            "scores": {
+              "1": 1,
+              "2": 5,
+              "3": 2,
+              "4": 1
+            },
+            "best_candidate": 2,
+            "worst_candidate": 4,
+            "ranking": [
+              2,
+              3,
+              1,
+              4
+            ],
+            "reason": "Candidate 2, 'Desire,' perfectly satisfies all three roles. It functions as the measurable concentration of 'aimed wanting' (Role 1), acts as the active, outward-forging, directional force (Role 2), and represents an internal, goal-oriented drive distinct from passive yearning (Role 3). Candidate 3, 'conscious energy,' is too generic, describing a resource rather than the specific 'aimed wanting.' Candidates 1 ('longing') and 4 ('intensity') fail significantly. 'Longing' is explicitly contrasted by Role 3 as a 'passive wistful ache.' 'Intensity' is a property of wanting, not the wanting itself, failing to embody the core concept of 'concentrated wanting' or 'supplying active directional wanting' in Roles 2 and 3."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "053ff413d1964955985433f484d1fe0b",
+          "call_meta": {
+            "candidates": {
+              "1": "conscious energy",
+              "2": "longing",
+              "3": "intensity",
+              "4": "Desire"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Ssyn",
+              "3": "W_Chal",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W05",
+            "scores": {
+              "1": 3,
+              "2": 4,
+              "3": 5,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 1,
+            "ranking": [
+              4,
+              3,
+              2,
+              1
+            ],
+            "reason": "Candidate 4 ('Desire') cleanly satisfies all roles: it mirrors density as 'aimed wanting packed into a receptive unit' (Role 1), acts as directional intent (Role 2), and supplies active directional wanting pre-physical steps (Role 3). Candidate 3 ('intensity') scores well but lacks the directional nuance of 'Desire'. Candidate 2 ('longing') leans passive/wistful, failing Role 3. Candidate 1 ('conscious energy') is too generic/scalar, failing Role 2."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "8849ddae1b7242959259097c27b78e38",
+          "call_meta": {
+            "candidates": {
+              "1": "conscious energy",
+              "2": "Desire",
+              "3": "longing",
+              "4": "intensity"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W05",
+            "scores": {
+              "1": 4,
+              "2": 3,
+              "3": 2,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 3,
+            "ranking": [
+              4,
+              1,
+              2,
+              3
+            ],
+            "reason": "Candidate 4 ('intensity') best fits the roles by mirroring density, requiring directional intent, and supplying active wanting. It scores 5. Candidate 1 ('conscious energy') is a close fit, scoring 4, as it satisfies Role 1 and Role 3 well but is less precise in Role 2. Candidate 2 ('Desire') and Candidate 3 ('longing') score lower due to not fully capturing the directional and multiplicative aspects in Role 2, with 'longing' being the least suitable due to its passive connotation."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W06",
+      "metadata": {
+        "item_id": "W06",
+        "stratum": "Core_Web"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "6b1a6f8146a94e70b7507c1ca36ea151",
+          "call_meta": {
+            "candidates": {
+              "1": "Vibrance",
+              "2": "capacity",
+              "3": "openness",
+              "4": "Desire"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Ssyn",
+              "3": "W_Chal",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "item_id": "W06",
+            "scores": {
+              "1": 4,
+              "2": 3,
+              "3": 3,
+              "4": 2
+            },
+            "best_candidate": 1,
+            "worst_candidate": 4,
+            "ranking": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "reason": "Vibrance best mirrors physical volume as a measure of active, lively oscillatory presence across a non-spatial continuum (Role 1), fits as a multiplicative factor yielding presence while remaining distinct from inertia or empty volume (Role 2), and contrasts naturally with an inert container by radiating lively readiness (Role 3). Capacity collides with 'empty box volume' trap explicitly mentioned in Role 2. Openness is too passive and spatial. Desire maps to 'concentrated wanting' which Role 2 identifies as the other factor, not the term itself."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d6bb7b85832e48949452313cd81879a3",
+          "call_meta": {
+            "candidates": {
+              "1": "Desire",
+              "2": "openness",
+              "3": "capacity",
+              "4": "Vibrance"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Chal",
+              "3": "W_Ssyn",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W06",
+            "scores": {
+              "1": 2,
+              "2": 1,
+              "3": 1,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 2,
+            "ranking": [
+              4,
+              1,
+              3,
+              2
+            ],
+            "reason": "Candidate 4, \"Vibrance,\" best matches all three roles: it naturally suggests active aliveness, radiance, and oscillatory liveliness, works as an extent-like quality distinct from mere physical volume, and has authentic everyday English usage. Candidate 1, \"Desire,\" fits the concentrated wanting side more than the breadth/extent side, so it collides with an adjacent role rather than naming the resulting alive spread. Candidate 3, \"capacity,\" strongly suggests container room or holding amount, which conflicts with the explicit trap of inert box-like volume, though it weakly relates to extent. Candidate 2, \"openness,\" suggests receptivity or lack of closure rather than alive oscillatory breadth, and does not cleanly satisfy the multiplication/extent role."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "97f328aa23fa481ba6dfa64f303141f7",
+          "call_meta": {
+            "candidates": {
+              "1": "openness",
+              "2": "Desire",
+              "3": "capacity",
+              "4": "Vibrance"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A3",
+              "3": "W_Ssyn",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W06",
+            "scores": {
+              "1": 2,
+              "2": 1,
+              "3": 1,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 3,
+            "ranking": [
+              4,
+              1,
+              2,
+              3
+            ],
+            "reason": "Candidate 4 (Vibrance) perfectly aligns with all three roles. It effectively mirrors physical volume as a measure of active, living, and oscillatory extent (Role 1). It clearly quantifies 'alive oscillatory breadth' and is distinct from inert holding-on or empty volume (Role 2). Furthermore, it naturally describes an active field radiating 'lively oscillatory readiness,' contrasting with an inert container (Role 3). Candidates 2 (Desire) and 3 (capacity) fail significantly, with 'capacity' being the worst as it directly contradicts the distinctions established in Roles 2 and 3 (e.g., 'separate from empty box volume' or 'rather than acting as an inert bounding container'), which are precisely what 'capacity' often implies."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ddbdb09a74734099a2a1fef93eef4964",
+          "call_meta": {
+            "candidates": {
+              "1": "Desire",
+              "2": "openness",
+              "3": "capacity",
+              "4": "Vibrance"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Chal",
+              "3": "W_Ssyn",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W06",
+            "scores": {
+              "1": 2,
+              "2": 3,
+              "3": 4,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 1,
+            "ranking": [
+              4,
+              3,
+              2,
+              1
+            ],
+            "reason": "Candidate 4 (Vibrance) effortlessly satisfies all roles: it mirrors 'volume' as a non-spatial measure of lively activity (Role 1), quantifies oscillatory breadth without conflating with inertia or empty space (Role 2), and radiates as an active field of readiness (Role 3). Candidate 3 (capacity) partially fits but leans toward spatial/container connotations (Role 3 weakness). Candidate 2 (openness) fails Role 2 (separation from empty volume) and Role 3 (inert container risk). Candidate 1 (Desire) collides with Role 2 (conflates with 'wanting' as inertia) and lacks oscillatory coherence."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "39c196844aab4dcea994e6d57dd9b82a",
+          "call_meta": {
+            "candidates": {
+              "1": "capacity",
+              "2": "Vibrance",
+              "3": "Desire",
+              "4": "openness"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A0",
+              "3": "W_A3",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W06",
+            "scores": {
+              "1": 4,
+              "2": 3,
+              "3": 2,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 3,
+            "ranking": [
+              4,
+              1,
+              2,
+              3
+            ],
+            "reason": "Candidate 4 'openness' fits all roles best as it mirrors volume, quantifies oscillatory breadth, and signifies lively readiness. Candidate 1 'capacity' is a close second. Candidate 2 'Vibrance' and Candidate 3 'Desire' have issues with one or more roles."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W07",
+      "metadata": {
+        "item_id": "W07",
+        "stratum": "Core_Web"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "51a0ba6c8e1d492b8582211b199c9477",
+          "call_meta": {
+            "candidates": {
+              "1": "imagination",
+              "2": "gratitude",
+              "3": "Appreciation",
+              "4": "growth"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Ssyn",
+              "3": "W_A0",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W07",
+            "scores": {
+              "1": 2,
+              "2": 2,
+              "3": 5,
+              "4": 3
+            },
+            "best_candidate": 3,
+            "worst_candidate": 1,
+            "ranking": [
+              3,
+              4,
+              2,
+              1
+            ],
+            "reason": "Candidate 3 'Appreciation' uniquely satisfies all three roles simultaneously. In finance/economics, 'appreciation' means an asset increasing in value (second-order acceleration of value, not physical size—matching Role 2's house example perfectly). In music/acoustics, it can relate to tonal recognition. In everyday English (Role 3), 'appreciation' does double duty: an asset 'appreciating faster' without becoming physically larger, and 'quiet appreciation toward what is arriving' as felt gratitude/acknowledgment. Role 1 is satisfied by appreciation as a second-order measure of value quickening, mirroring physical acceleration. Candidate 4 'growth' is first-order increase itself, not acceleration of increase, failing Role 2. Candidates 1 and 2 ('imagination' and 'gratitude') lack the financial/compounding acceleration sense needed for Roles 1 and 2."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "4981141a1e094b6b97f6aa72b8640585",
+          "call_meta": {
+            "candidates": {
+              "1": "growth",
+              "2": "Appreciation",
+              "3": "gratitude",
+              "4": "imagination"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A0",
+              "3": "W_Ssyn",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "item_id": "W07",
+            "scores": {
+              "1": 1,
+              "2": 5,
+              "3": 3,
+              "4": 2
+            },
+            "best_candidate": 2,
+            "worst_candidate": 1,
+            "ranking": [
+              2,
+              3,
+              4,
+              1
+            ],
+            "reason": "Candidate 2 fits all three roles best: 'appreciation' cleanly names an increase in value that can itself speed up, and it also has an everyday inward/felt sense. Candidate 3 partly fits the inward emotional side but not the compounding structural increase role. Candidate 4 is weaker still, since it does not naturally express second-order increase or asset-market behavior. Candidate 1 is worst because 'growth' names the first-order increase itself, collapsing the hierarchy instead of distinguishing acceleration of increase."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "9c12930b0bf44e7e858bff9e7664d32f",
+          "call_meta": {
+            "candidates": {
+              "1": "imagination",
+              "2": "Appreciation",
+              "3": "growth",
+              "4": "gratitude"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Chal",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W07",
+            "scores": {
+              "1": 1,
+              "2": 4,
+              "3": 1,
+              "4": 1
+            },
+            "best_candidate": 2,
+            "worst_candidate": 1,
+            "ranking": [
+              2,
+              3,
+              4,
+              1
+            ],
+            "reason": "Candidate 2, 'Appreciation,' is the only word that consistently aligns with all three structural roles. Role 1's 'second-order quickening or slowing' is a metaphorical fit for the accelerating or decelerating rate of increasing value or understanding. Role 2, which defines [TERM] as the 'acceleration of increase rather than first-order increase itself,' is well-matched by 'Appreciation' when considering its usage in contexts like 'asset appreciation' where the *rate* of increase can itself accelerate (e.g., 'compounding faster'). Role 3 provides strong everyday examples: 'an asset undergoing faster Appreciation' is a precise economic term for accelerated increase in value, and 'quiet Appreciation toward what is arriving' fits the idea of a 'compounding quickening' with 'felt adjustment.' The other candidates (1: imagination, 3: growth, 4: gratitude) fundamentally fail to meet the core requirement of being an 'acceleration of increase' or a 'second-order quickening.' 'Growth' (Candidate 3) specifically contradicts Role 2 by being a first-order increase rather than the acceleration of an increase. Candidates 1 and 4 also fail to align with the core 'acceleration of increase' concept and the provided examples."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "4c32598d32a24e0f84ba0d93e1f9dbd2",
+          "call_meta": {
+            "candidates": {
+              "1": "imagination",
+              "2": "growth",
+              "3": "gratitude",
+              "4": "Appreciation"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Chal",
+              "3": "W_Ssyn",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W07",
+            "scores": {
+              "1": 1,
+              "2": 2,
+              "3": 1,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 1,
+            "ranking": [
+              4,
+              2,
+              3,
+              1
+            ],
+            "reason": "Candidate 4 ('Appreciation') uniquely satisfies all roles: (1) mirrors tonal climb acceleration (e.g., appreciation of value or tone), (2) distinguishes second-order change (e.g., accelerating growth in value) from first-order, and (3) fits everyday use (e.g., asset appreciation, quiet appreciation). Candidates 1, 2, and 3 fail to meet the structural or contextual precision."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1bd500d70ae742a18034dc06f0a42864",
+          "call_meta": {
+            "candidates": {
+              "1": "growth",
+              "2": "gratitude",
+              "3": "imagination",
+              "4": "Appreciation"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_Ssyn",
+              "3": "W_A3",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W07",
+            "scores": {
+              "1": 4,
+              "2": 4,
+              "3": 2,
+              "4": 3
+            },
+            "best_candidate": 1,
+            "worst_candidate": 3,
+            "ranking": [
+              1,
+              2,
+              4,
+              3
+            ],
+            "reason": "Candidate 1 'growth' fits well in Roles 1 and 2, describing a second-order change and maintaining hierarchical distinction. It also works in Role 3 for everyday contexts. Candidate 2 'gratitude' and Candidate 4 'Appreciation' don't fit Role 1 as they don't describe a rate of change. Candidate 3 'imagination' doesn't fit any role well."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W08",
+      "metadata": {
+        "item_id": "W08",
+        "stratum": "Core_Web"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "9b6f21a342254c26a59d032c1dbe608d",
+          "call_meta": {
+            "candidates": {
+              "1": "will",
+              "2": "Frequency",
+              "3": "urgency",
+              "4": "Movement"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A0",
+              "3": "W_Ssyn",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "item_id": "W08",
+            "scores": {
+              "1": 2,
+              "2": 3,
+              "3": 5,
+              "4": 2
+            },
+            "best_candidate": 3,
+            "worst_candidate": 1,
+            "ranking": [
+              3,
+              2,
+              4,
+              1
+            ],
+            "reason": "Role 1 mirrors 'force = mass × acceleration' with 'receptivity × accelerating tonal climb'—urgency fits as the perceptual analog of force felt under rising tonal pressure. Role 2 requires an oscillatory experiential term tied to yielding (receptivity) rather than pushing, capturing both sustained tone (like weight) and sudden shifts (like a jolt)—urgency captures this perceptual quality in the oscillatory/acoustic domain. Role 3 links repeating cycle tempo (frequency) to what an observer feels, and 'urgency' naturally bridges acoustic measurement and inner human experience. 'Frequency' (candidate 2) is too purely technical and doesn't carry the felt/perceptual dimension required by Role 1 and Role 2. 'Will' and 'Movement' fail to connect meaningfully to oscillatory/acoustic contexts or the force-analog structure."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "0d0a5564aec34f8ea48f4bf266ccfaec",
+          "call_meta": {
+            "candidates": {
+              "1": "Movement",
+              "2": "Frequency",
+              "3": "urgency",
+              "4": "will"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W08",
+            "scores": {
+              "1": 1,
+              "2": 5,
+              "3": 2,
+              "4": 1
+            },
+            "best_candidate": 2,
+            "worst_candidate": 1,
+            "ranking": [
+              2,
+              3,
+              4,
+              1
+            ],
+            "reason": "Candidate 2 fits best: frequency is natively oscillatory, connects directly to repeating cycle tempo, and in both acoustics and felt experience a steadier frequency can coherently map to a steadier perceived state. Candidate 3 has some everyday experiential plausibility but lacks the acoustic measurement double duty and the precise oscillatory role. Candidate 4 works as an inner human term in ordinary English but does not fit wave measurement or the structural counterpart constraints. Candidate 1 is too broad, collides with adjacent ideas like motion/hurry, and does not cleanly satisfy the oscillatory-acoustic plus experiential pairing."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "82003d7ee2c24cc6a29b23baf34e8198",
+          "call_meta": {
+            "candidates": {
+              "1": "will",
+              "2": "urgency",
+              "3": "Movement",
+              "4": "Frequency"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_Ssyn",
+              "3": "W_A3",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W08",
+            "scores": {
+              "1": 1,
+              "2": 2,
+              "3": 4,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 1,
+            "ranking": [
+              4,
+              3,
+              2,
+              1
+            ],
+            "reason": "Candidate 4, 'Frequency,' is the strongest fit. It perfectly aligns with the 'oscillatory domain' and 'acoustic wave measurement' specified in Roles 2 and 3, where it directly represents 'repeating cycle tempo' and underlies 'steady perceptual tone' and 'accelerating tonal climb.' While 'frequency' itself isn't a 'perceptual force' in the same way 'mass times acceleration' is, it is the fundamental property that *gives rise* to the perceptual feeling of tonal climb and steady tone, making it the underlying 'what you perceptually feel' in that context. Its 'double duty' across acoustic measurement and inner experience is seamless. Candidate 3, 'Movement,' is a good contender, especially for the oscillatory and contextual coherence roles, as movement is central to waves and cycles, but less precise for 'tonal climb' and 'cycle tempo.' Candidate 2, 'urgency,' captures the 'perceptual feel' but struggles with the 'oscillatory domain' and 'acoustic wave measurement.' Candidate 1, 'will,' fails on all accounts, being a volitional mental concept rather than a perceptual or physical phenomenon related to forces, oscillations, or acoustic measurement."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "6c18b8ff519045dba63d3c012aa3c257",
+          "call_meta": {
+            "candidates": {
+              "1": "urgency",
+              "2": "Frequency",
+              "3": "will",
+              "4": "Movement"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A0",
+              "3": "W_Chal",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "item_id": "W08",
+            "scores": {
+              "1": 2,
+              "2": 5,
+              "3": 4,
+              "4": 3
+            },
+            "best_candidate": 2,
+            "worst_candidate": 1,
+            "ranking": [
+              2,
+              3,
+              4,
+              1
+            ],
+            "reason": "Candidate 2 (Frequency) cleanly satisfies Role 1 (mirroring force via receptivity × tonal climb, analogous to mass × acceleration), Role 2 (oscillatory domain: steady tone and shifts map to frequency in waves/experience), and Role 3 (links cycle tempo to observer feeling in both acoustic and human contexts). Candidate 3 (will) partially fits Role 3 but fails Role 1/2. Candidate 4 (Movement) fits Role 2 weakly but lacks precision for Role 1/3. Candidate 1 (urgency) collides with traps (subjective, non-oscillatory) and fails all roles."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "461ca094f8af43e3bfdfd244a3ec9858",
+          "call_meta": {
+            "candidates": {
+              "1": "Frequency",
+              "2": "Movement",
+              "3": "will",
+              "4": "urgency"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W08",
+            "scores": {
+              "1": 4,
+              "2": 4,
+              "3": 1,
+              "4": 2
+            },
+            "best_candidate": 1,
+            "worst_candidate": 3,
+            "ranking": [
+              1,
+              2,
+              4,
+              3
+            ],
+            "reason": "Candidate 1 'Frequency' fits well with the roles, especially in relating to oscillatory experiences and linking cycle tempo to observer feelings. Candidate 2 'Movement' is plausible but less precise. Candidate 3 'will' doesn't fit the oscillatory or measurement contexts. Candidate 4 'urgency' somewhat fits Role 2 and Role 3 but not as cleanly as 'Frequency'."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W09",
+      "metadata": {
+        "item_id": "W09",
+        "stratum": "Core_Web"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "5af7fc63e7d2487ab3bca49d320c1e88",
+          "call_meta": {
+            "candidates": {
+              "1": "resonance",
+              "2": "Tune",
+              "3": "focus",
+              "4": "surrender"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W09",
+            "scores": {
+              "1": 3,
+              "2": 5,
+              "3": 4,
+              "4": 2
+            },
+            "best_candidate": 2,
+            "worst_candidate": 4,
+            "ranking": [
+              2,
+              3,
+              1,
+              4
+            ],
+            "reason": "Candidate 2 (Tune) best satisfies all three roles simultaneously. Role 1: tuning sits at the receptive hinge opposite forceful pushing—you tune a receiver rather than push signal through. Role 2: tuning requires deliberate selection of a specific frequency/harmonic state, not passive capitulation nor brute force, perfectly capturing the agency of non-forcing selection. Role 3: 'selective tuning like adjusting a receiver to one clear broadcast' is natural everyday English that contrasts straining (forcing) with giving up (surrender). Candidate 3 (focus) scores second as it captures deliberate attention but lacks the receiver/broadcast metaphor cleanly. Candidate 1 (resonance) describes a state rather than an active receptive process, fitting Role 1 partially but weakening Role 2's agency requirement. Candidate 4 (surrender) fails Role 2 critically—it implies passive capitulation, the exact trap the constraints warn against."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "819c60b751fa4892a6188a8c336147f9",
+          "call_meta": {
+            "candidates": {
+              "1": "resonance",
+              "2": "Tune",
+              "3": "surrender",
+              "4": "focus"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Chal",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W09",
+            "scores": {
+              "1": 4,
+              "2": 5,
+              "3": 1,
+              "4": 3
+            },
+            "best_candidate": 2,
+            "worst_candidate": 3,
+            "ranking": [
+              2,
+              1,
+              4,
+              3
+            ],
+            "reason": "Candidate 2, \"Tune,\" fits best because it expresses deliberate receptive alignment, selective non-forcing, and the everyday receiver-adjustment analogy directly. Candidate 1, \"resonance,\" matches harmonic alignment well but names more the condition or effect than the act of choosing alignment. Candidate 4, \"focus,\" captures selection and attentiveness but is less specifically receptive or receiver-like. Candidate 3, \"surrender,\" is weakest because it implies passive yielding rather than active selective alignment."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "84110eb9d4af4c8aa6ae7eabbcf05510",
+          "call_meta": {
+            "candidates": {
+              "1": "surrender",
+              "2": "focus",
+              "3": "Tune",
+              "4": "resonance"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_Ssyn",
+              "3": "W_A0",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "item_id": "W09",
+            "scores": {
+              "1": 1,
+              "2": 3,
+              "3": 5,
+              "4": 2
+            },
+            "best_candidate": 3,
+            "worst_candidate": 1,
+            "ranking": [
+              3,
+              2,
+              4,
+              1
+            ],
+            "reason": "Candidate 3, 'Tune,' perfectly satisfies all three structural roles. Role 1's 'governs receptive channel alignment' is the essence of tuning. Role 2's 'deliberate non-forcing selection' of a 'harmonic state' precisely describes the active yet gentle process of tuning, explicitly avoiding 'passive capitulation.' Role 3's analogy of 'adjusting a receiver smoothly to one clear broadcast' is the most direct and common everyday application of 'tune.' Candidate 2, 'focus,' fits the deliberate selection aspect but less precisely the 'channel alignment' and receiver adjustment. Candidate 4, 'resonance,' describes the *state* of alignment rather than the *active process* of governing or adjusting. Candidate 1, 'surrender,' directly conflicts with Role 2's distinction from 'passive capitulation' and does not imply active, deliberate adjustment."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "43175880d73543e481fb6471a2a13aa3",
+          "call_meta": {
+            "candidates": {
+              "1": "Tune",
+              "2": "surrender",
+              "3": "resonance",
+              "4": "focus"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Chal",
+              "3": "W_A3",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W09",
+            "scores": {
+              "1": 5,
+              "2": 2,
+              "3": 4,
+              "4": 3
+            },
+            "best_candidate": 1,
+            "worst_candidate": 2,
+            "ranking": [
+              1,
+              3,
+              4,
+              2
+            ],
+            "reason": "Candidate 1 ('Tune') perfectly fits all roles: receptive alignment (Role 1), deliberate selection (Role 2), and everyday usage (Role 3). Candidate 3 ('resonance') scores well but lacks explicit selection agency. Candidate 4 ('focus') partially fits but misses the receptive/hinge dynamic. Candidate 2 ('surrender') fails due to passivity and misalignment with all roles."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "809a9dd37f5e44ac9d5958a5931e0bba",
+          "call_meta": {
+            "candidates": {
+              "1": "resonance",
+              "2": "focus",
+              "3": "surrender",
+              "4": "Tune"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Ssyn",
+              "3": "W_Chal",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W09",
+            "scores": {
+              "1": 4,
+              "2": 4,
+              "3": 2,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 3,
+            "ranking": [
+              4,
+              1,
+              2,
+              3
+            ],
+            "reason": "Tune fits all roles well, resonance and focus are close but slightly less fitting, surrender fails due to implying passive capitulation rather than deliberate selection"
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W10",
+      "metadata": {
+        "item_id": "W10",
+        "stratum": "Core_Web"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "4ce06d74833b42b1961ed5b4a71975a5",
+          "call_meta": {
+            "candidates": {
+              "1": "rise per Expansion",
+              "2": "stillness",
+              "3": "rest",
+              "4": "Idle"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Ssyn",
+              "3": "W_Chal",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W10",
+            "scores": {
+              "1": 2,
+              "2": 2,
+              "3": 3,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 1,
+            "ranking": [
+              4,
+              3,
+              2,
+              1
+            ],
+            "reason": "Candidate 4 'Idle' perfectly satisfies all three roles: (1) it pairs as the relational counterpart to active/moving states - an engine idling operates continuously without external displacement; (2) it captures active readiness/live operation underneath without external locomotion - idling is the opposite of dead inactivity, it's continuous live operation; (3) in everyday English 'idle' means outwardly unmoved yet internally running continuously (e.g., an idling engine). Candidate 3 'rest' partially fits Role 3 but implies cessation rather than continuous internal operation. Candidate 2 'stillness' implies dead inactivity, failing Role 2. Candidate 1 'rise per Expansion' is incoherent and fails all roles."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d337f5981d45453ca7c97daea507f60c",
+          "call_meta": {
+            "candidates": {
+              "1": "rise per Expansion",
+              "2": "rest",
+              "3": "stillness",
+              "4": "Idle"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Chal",
+              "3": "W_Ssyn",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W10",
+            "scores": {
+              "1": 1,
+              "2": 2,
+              "3": 3,
+              "4": 4
+            },
+            "best_candidate": 4,
+            "worst_candidate": 1,
+            "ranking": [
+              4,
+              3,
+              2,
+              1
+            ],
+            "reason": "Candidate 4 fits best because everyday English allows 'idle' to mean not moving outwardly while still running or ready underneath, matching live non-displacement better than dead stoppage. Candidate 3 partially works for outward unmoved poise, but 'stillness' leans too passive and lifeless for continuous active operation. Candidate 2 mostly suggests mere rest or inactivity, colliding with the explicit rejection of inert halting. Candidate 1 fails strongly because 'rise' implies external displacement and does not match unmoved underlying operation."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "e426d2c7e9394b669724d0c025ca4d0d",
+          "call_meta": {
+            "candidates": {
+              "1": "rise per Expansion",
+              "2": "stillness",
+              "3": "Idle",
+              "4": "rest"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Ssyn",
+              "3": "W_A0",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W10",
+            "scores": {
+              "1": 1,
+              "2": 2,
+              "3": 5,
+              "4": 2
+            },
+            "best_candidate": 3,
+            "worst_candidate": 1,
+            "ranking": [
+              3,
+              2,
+              4,
+              1
+            ],
+            "reason": "Candidate 3, 'Idle,' perfectly satisfies all three roles by conveying a state of internal dynamic operation and live readiness without external displacement, directly contrasting with inertness or cessation. Candidate 1, 'rise per Expansion,' is a multi-word phrase that is grammatically awkward and semantically contradictory to the 'without external displacement' and 'unmoved' requirements. Candidates 2, 'stillness,' and 4, 'rest,' both fail to capture the crucial 'dynamically operates' and 'live readiness' aspects, leaning too close to the 'inert halting' or 'dead inactivity' that the roles explicitly reject, and also present grammatical awkwardness in some contexts."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b1500285050544939aba7474882b66bf",
+          "call_meta": {
+            "candidates": {
+              "1": "rest",
+              "2": "Idle",
+              "3": "rise per Expansion",
+              "4": "stillness"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A0",
+              "3": "W_A3",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W10",
+            "scores": {
+              "1": 2,
+              "2": 3,
+              "3": 4,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 1,
+            "ranking": [
+              4,
+              3,
+              2,
+              1
+            ],
+            "reason": "Candidate 4 ('stillness') best satisfies all roles: it implies a dynamic yet non-displaced state (Role 1), continuous readiness without inertness (Role 2), and contextual coherence of outward calm with underlying operation (Role 3). Candidate 3 ('rise per Expansion') is too active/displaced, Candidate 2 ('Idle') leans toward inactivity, and Candidate 1 ('rest') suggests cessation, failing Roles 2 and 3."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ad3aa90ab7bf4ee9a232ac966a189844",
+          "call_meta": {
+            "candidates": {
+              "1": "rest",
+              "2": "rise per Expansion",
+              "3": "stillness",
+              "4": "Idle"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A3",
+              "3": "W_Ssyn",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W10",
+            "scores": {
+              "1": 4,
+              "2": 3,
+              "3": 5,
+              "4": 4
+            },
+            "best_candidate": 3,
+            "worst_candidate": 2,
+            "ranking": [
+              3,
+              1,
+              4,
+              2
+            ],
+            "reason": "Candidate 3 ('stillness') fits well in all roles, describing a state of continuous operation without external displacement, live readiness, and remaining unmoved while operating underneath. Candidate 1 ('rest') and Candidate 4 ('Idle') also score well, but 'stillness' is more coherent across the roles. Candidate 2 ('rise per Expansion') is the worst fit as it implies movement or change rather than a state of being or operating."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W11",
+      "metadata": {
+        "item_id": "W11",
+        "stratum": "Core_Web"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "29644238a095472f8c7468027387011f",
+          "call_meta": {
+            "candidates": {
+              "1": "Current",
+              "2": "returning",
+              "3": "Reflected",
+              "4": "echo"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Chal",
+              "3": "W_A0",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W11",
+            "scores": {
+              "1": 3,
+              "2": 2,
+              "3": 3,
+              "4": 2
+            },
+            "best_candidate": 3,
+            "worst_candidate": 4,
+            "ranking": [
+              3,
+              1,
+              2,
+              4
+            ],
+            "reason": "Candidate 3 'Reflected' best satisfies all three roles: it mirrors the magnetic looping/inward symmetry concept (Role 1), it designates exact instantaneous mirror correspondence without traversal (Role 2 - unlike echo which is a delayed acoustic copy or 'returning' which implies spatial travel), and it works naturally in both optical geometry ('reflected symmetry') and introspection ('reflected contemplation') (Role 3). Candidate 4 'echo' is explicitly called out as a trap in Role 2 (delayed attenuated acoustic copy). Candidate 2 'returning' implies spatial travel back across distance, also flagged as a trap. Candidate 1 'Current' has some relevance to magnetic looping but fails the mirror symmetry and introspection coherence requirements."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "0c2fa20f9baa47d0aad7c63e1ff0b1af",
+          "call_meta": {
+            "candidates": {
+              "1": "Current",
+              "2": "echo",
+              "3": "returning",
+              "4": "Reflected"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Ssyn",
+              "3": "W_Chal",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W11",
+            "scores": {
+              "1": 1,
+              "2": 2,
+              "3": 1,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 1,
+            "ranking": [
+              4,
+              2,
+              3,
+              1
+            ],
+            "reason": "Candidate 4 fits all three roles best: 'reflected' naturally names exact mirror correspondence in optics and also extends to quiet introspection ('a reflected mood/thought'), matching inward symmetry and contemplation without implying travel across distance. Candidate 2, 'echo,' suggests a delayed copy that travels and attenuates, which Role 2 explicitly rejects, though it weakly retains a counterpart sense. Candidate 3, 'returning,' strongly implies motion back across space or boundaries, so it clashes with the non-traveling instantaneous mirror role despite a loose inward/backward association. Candidate 1, 'current,' points to flow/present movement rather than mirror symmetry or introspective correspondence, so it fails the slot most clearly."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "5d2c4a935a0b4fab98af057b038c663c",
+          "call_meta": {
+            "candidates": {
+              "1": "Current",
+              "2": "Reflected",
+              "3": "echo",
+              "4": "returning"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W11",
+            "scores": {
+              "1": 1,
+              "2": 1,
+              "3": 1,
+              "4": 1
+            },
+            "best_candidate": 1,
+            "worst_candidate": 4,
+            "ranking": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "reason": "All candidates fail to meet the criteria as per the strict scoring rubric. Candidate 1 ('Current') does not describe mirroring or symmetry. Candidate 2 ('Reflected') conceptually aligns with mirroring and introspection but is a participle, which is explicitly excluded by Role 2 as a 'trap'. Candidate 3 ('echo') is an acoustic copy, explicitly excluded by Role 2. Candidate 4 ('returning') is a participle implying spatial travel, explicitly excluded by Role 2. According to the scoring rule '1 (fails roles or collides with traps)', all candidates either fail to satisfy the core roles or directly collide with explicit traps, resulting in a score of 1 for each."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d030e80fa0334d6095881737969d7f0c",
+          "call_meta": {
+            "candidates": {
+              "1": "Reflected",
+              "2": "Current",
+              "3": "returning",
+              "4": "echo"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W11",
+            "scores": {
+              "1": 5,
+              "2": 3,
+              "3": 4,
+              "4": 2
+            },
+            "best_candidate": 1,
+            "worst_candidate": 4,
+            "ranking": [
+              1,
+              3,
+              2,
+              4
+            ],
+            "reason": "Candidate 1 ('Reflected') best satisfies Role 1 (inward-facing symmetry), Role 2 (non-traveling, instantaneous mirroring), and Role 3 (works in optical geometry and introspection). Candidate 4 ('echo') fails Role 2 (implies delayed/attenuated travel) and Role 3 (less coherent in optical geometry). Candidate 3 ('returning') struggles with Role 2 (implies spatial travel). Candidate 2 ('Current') is weak in Role 1 and Role 3."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ac53954a5c7a4a3aaecf17184bb095d5",
+          "call_meta": {
+            "candidates": {
+              "1": "Reflected",
+              "2": "returning",
+              "3": "Current",
+              "4": "echo"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Chal",
+              "3": "W_A3",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W11",
+            "scores": {
+              "1": 4,
+              "2": 3,
+              "3": 2,
+              "4": 3
+            },
+            "best_candidate": 1,
+            "worst_candidate": 3,
+            "ranking": [
+              1,
+              4,
+              2,
+              3
+            ],
+            "reason": "Candidate 1 'Reflected' fits well with the inward-facing symmetry and mirror correspondence described in Roles 1 and 2, and has a relevant everyday sense in both optical geometry and introspection (Role 3). Candidate 4 'echo' somewhat fits Role 1 but fails Role 2 due to implying travel. Candidate 2 'returning' implies travel, failing Role 2. Candidate 3 'Current' doesn't fit any role cleanly."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W12",
+      "metadata": {
+        "item_id": "W12",
+        "stratum": "Core_Web"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "69d5b507557a414990399cf5b3fcf32f",
+          "call_meta": {
+            "candidates": {
+              "1": "whirlpool",
+              "2": "well",
+              "3": "Attraction",
+              "4": "Vortex"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_Chal",
+              "3": "W_A3",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W12",
+            "scores": {
+              "1": 3,
+              "2": 2,
+              "3": 4,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 2,
+            "ranking": [
+              4,
+              3,
+              1,
+              2
+            ],
+            "reason": "Vortex (candidate 4) perfectly satisfies all three roles: it mirrors gravitational wells as a rotational basin in a continuous medium (Role 1), it is explicitly a self-organizing rotational circulation rather than a physical borehole or turbulent surface hazard (Role 2), and it coherently applies across fluid dynamics, field theory, and conceptual organization as a spiral circulation around an ordering center (Role 3). Attraction (candidate 3) captures the drawing-in quality and applies broadly across domains but lacks the structural rotational/spiral specificity. Whirlpool (candidate 1) captures the rotational basin idea but is too specifically tied to liquid surface phenomena, conflicting with Role 2's trap exclusion. Well (candidate 2) is the explicit trap mentioned in Role 2 (physical borehole excavated in earth) and fails most directly."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "eb91e3d4bb094ae4ac0ff1a298741b33",
+          "call_meta": {
+            "candidates": {
+              "1": "Vortex",
+              "2": "Attraction",
+              "3": "whirlpool",
+              "4": "well"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_A3",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W12",
+            "scores": {
+              "1": 5,
+              "2": 1,
+              "3": 3,
+              "4": 2
+            },
+            "best_candidate": 1,
+            "worst_candidate": 2,
+            "ranking": [
+              1,
+              3,
+              4,
+              2
+            ],
+            "reason": "Candidate 1 'Vortex' fits all three roles best: it names an organized swirling rotational basin/circulation, works across fluid and field-like conceptual contexts, and is distinct from the trap meanings of borehole or surface hazard. Candidate 2 'Attraction' captures drawing-toward but lacks the crucial swirling rotational basin structure. Candidate 3 'whirlpool' has the right swirl but collides with the forbidden turbulent liquid surface hazard sense and is less broadly applicable conceptually. Candidate 4 'well' matches the gravitational-depression mirror somewhat, but Role 2 explicitly excludes borehole and nearby trap senses, and it lacks the rotational circulation emphasis."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "91864f243f6a494db1b4bff07a2db2e5",
+          "call_meta": {
+            "candidates": {
+              "1": "Vortex",
+              "2": "well",
+              "3": "whirlpool",
+              "4": "Attraction"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Chal",
+              "3": "W_Ssyn",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "item_id": "W12",
+            "scores": {
+              "1": 5,
+              "2": 1,
+              "3": 2,
+              "4": 2
+            },
+            "best_candidate": 1,
+            "worst_candidate": 2,
+            "ranking": [
+              1,
+              3,
+              4,
+              2
+            ],
+            "reason": "Candidate 1 ('Vortex') perfectly satisfies all three roles: it is an 'organized swirling rotational basin' (Role 1), represents 'self-organizing rotational circulation' without being limited to a hazard or borehole (Role 2), and coherently applies across fluid dynamics, field theory, and conceptual organization for 'structured spiral circulation' (Role 3). Candidate 3 ('whirlpool') fits the rotational aspect but directly collides with the 'turbulent liquid surface hazard' trap in Role 2. Candidate 4 ('Attraction') fails to capture the essential 'swirling rotational' or 'spiral circulation' aspects. Candidate 2 ('well') is the worst, directly conflicting with the 'physical borehole' trap in Role 2 and lacking any rotational component."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "46f6d8226e19439ebad102a90527bb17",
+          "call_meta": {
+            "candidates": {
+              "1": "Attraction",
+              "2": "whirlpool",
+              "3": "well",
+              "4": "Vortex"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Ssyn",
+              "3": "W_Chal",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W12",
+            "scores": {
+              "1": 3,
+              "2": 5,
+              "3": 4,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 1,
+            "ranking": [
+              4,
+              2,
+              3,
+              1
+            ],
+            "reason": "Candidate 4 (Vortex) perfectly fits all roles: it mirrors the swirling rotational basin (Role 1), is a non-plumbing structure (Role 2), and is a coherent term across fluid dynamics and field theory (Role 3). Candidate 2 (whirlpool) also fits well but is more tied to liquid surfaces, slightly less universal. Candidate 3 (well) fails Role 2 (implies a physical borehole) and Role 3 (less coherent in field theory). Candidate 1 (Attraction) fails Role 1 and 2 (not a rotational basin or structure)."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "5f46f5a430254dc38b15a81a46540e09",
+          "call_meta": {
+            "candidates": {
+              "1": "Attraction",
+              "2": "well",
+              "3": "Vortex",
+              "4": "whirlpool"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Chal",
+              "3": "W_A0",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W12",
+            "scores": {
+              "1": 4,
+              "2": 3,
+              "3": 5,
+              "4": 5
+            },
+            "best_candidate": 3,
+            "worst_candidate": 2,
+            "ranking": [
+              3,
+              4,
+              1,
+              2
+            ],
+            "reason": "Candidate 3 (Vortex) and Candidate 4 (whirlpool) both score high as they fit the description of a rotational basin and circulation around an ordering center. Candidate 1 (Attraction) is plausible but less specific to rotational circulation. Candidate 2 (well) is the worst as it often refers to a physical borehole, conflicting with Role 2."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W13",
+      "metadata": {
+        "item_id": "W13",
+        "stratum": "Core_Web"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "205461206ac94b7481ac1a388d9f91c0",
+          "call_meta": {
+            "candidates": {
+              "1": "gathering",
+              "2": "lens",
+              "3": "Intuition",
+              "4": "Convergence"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_Chal",
+              "3": "W_A3",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W13",
+            "scores": {
+              "1": 3,
+              "2": 2,
+              "3": 4,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 2,
+            "ranking": [
+              4,
+              3,
+              1,
+              2
+            ],
+            "reason": "Convergence (4) perfectly satisfies all three roles: it names the process of distinct paths coming together (Role 1 mirror of gravitational lensing without material optics), it describes asymptotic joining without physical material traversal (Role 2 glass-free causal role), and it works naturally in both geometric/mathematical contexts (asymptotic rays converging) and inferential contexts (lines of evidence converging on a conclusion) (Role 3). Intuition (3) fits Role 3 loosely in inference contexts but fails Roles 1 and 2 entirely. Gathering (1) partially fits Role 1 and 3 but lacks the precise asymptotic/mathematical sense and doesn't cleanly replace optical hardware conceptually. Lens (2) is explicitly the trap—it names the physical optical hardware that Roles 1 and 2 explicitly exclude."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "9772dff31d6c44318f0bdcb3c1d9a53d",
+          "call_meta": {
+            "candidates": {
+              "1": "Convergence",
+              "2": "lens",
+              "3": "gathering",
+              "4": "Intuition"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Chal",
+              "3": "W_Ssyn",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "item_id": "W13",
+            "scores": {
+              "1": 5,
+              "2": 1,
+              "3": 3,
+              "4": 2
+            },
+            "best_candidate": 1,
+            "worst_candidate": 2,
+            "ranking": [
+              1,
+              3,
+              4,
+              2
+            ],
+            "reason": "Candidate 1 fits all three roles best: 'convergence' naturally names paths coming together, avoids material optics, and also works in everyday English for lines of evidence tending toward one conclusion. Candidate 2 fails because 'lens' is exactly the physical optical hardware the prompt excludes. Candidate 3 partially fits the coming-together idea, but is less precise for asymptotic path behavior and less clean as a geometry/inference double-duty term. Candidate 4 has some inference relevance, but it does not name paths joining or focalization structure in the geometric sense."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "6aa02f136f2540abbc74de147af519af",
+          "call_meta": {
+            "candidates": {
+              "1": "Intuition",
+              "2": "Convergence",
+              "3": "gathering",
+              "4": "lens"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W13",
+            "scores": {
+              "1": 1,
+              "2": 5,
+              "3": 3,
+              "4": 1
+            },
+            "best_candidate": 2,
+            "worst_candidate": 4,
+            "ranking": [
+              2,
+              3,
+              1,
+              4
+            ],
+            "reason": "Candidate 2 ('Convergence') flawlessly satisfies all three roles, precisely describing the non-material, asymptotic coming together of distinct paths in both geometric and abstract inferential contexts. Candidate 3 ('gathering') is too informal and lacks the specific precision for 'asymptotic joining' and 'asymptotic rays'. Candidates 1 ('Intuition') and 4 ('lens') fail significantly; 'lens' directly contradicts the explicit exclusion of 'material optics' and 'physical optical hardware' in Roles 1 and 2."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "5591e9578e0048c2bb84f05821c58e00",
+          "call_meta": {
+            "candidates": {
+              "1": "lens",
+              "2": "Intuition",
+              "3": "Convergence",
+              "4": "gathering"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A3",
+              "3": "W_A0",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "item_id": "W13",
+            "scores": {
+              "1": 2,
+              "2": 1,
+              "3": 5,
+              "4": 4
+            },
+            "best_candidate": 3,
+            "worst_candidate": 2,
+            "ranking": [
+              3,
+              4,
+              1,
+              2
+            ],
+            "reason": "Candidate 3 (Convergence) effortlessly satisfies all roles: it describes paths coming together (Role 1), implies no physical medium (Role 2), and works in both geometry and inference (Role 3). Candidate 4 (gathering) is strong but less precise for asymptotic rays. Candidate 1 (lens) fails Role 2 (requires material optics). Candidate 2 (Intuition) collides with all roles."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "9cf9f1a2417e49f0a7b03228869b35dc",
+          "call_meta": {
+            "candidates": {
+              "1": "Convergence",
+              "2": "gathering",
+              "3": "Intuition",
+              "4": "lens"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Ssyn",
+              "3": "W_A3",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W13",
+            "scores": {
+              "1": 5,
+              "2": 4,
+              "3": 2,
+              "4": 3
+            },
+            "best_candidate": 1,
+            "worst_candidate": 3,
+            "ranking": [
+              1,
+              2,
+              4,
+              3
+            ],
+            "reason": "Convergence fits well with the roles describing paths coming together and asymptotic joining, and is used in both geometric and inferential contexts. Gathering is similar but less precise in some technical contexts. Lens is a physical object and doesn't fit Role 2 well as it's not about asymptotic joining without material. Intuition doesn't fit the technical descriptions."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W14",
+      "metadata": {
+        "item_id": "W14",
+        "stratum": "Core_Web"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "add91d7d35d54955ba4afa4e1a977676",
+          "call_meta": {
+            "candidates": {
+              "1": "hunch",
+              "2": "Vortex",
+              "3": "expectation",
+              "4": "Intuition"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "item_id": "W14",
+            "scores": {
+              "1": 3,
+              "2": 2,
+              "3": 3,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 2,
+            "ranking": [
+              4,
+              1,
+              3,
+              2
+            ],
+            "reason": "Candidate 4 (Intuition) perfectly satisfies all three roles: it is the classic counterpart to deliberate reasoning (Role 1 mirror), it is explicitly not habit-bound forecasting or guesswork (Role 2 boundary), and it functions in both philosophical and practical contexts as immediate direct apprehension prior to deliberation (Role 3). Candidate 1 (hunch) is close but too informal and habit-adjacent, failing Role 2 cleanly. Candidate 3 (expectation) reduces to forward-projecting anticipation, violating Role 2. Candidate 2 (Vortex) is entirely irrelevant to the conceptual slot."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "2139f1ac98e845dfa79334479748b131",
+          "call_meta": {
+            "candidates": {
+              "1": "hunch",
+              "2": "Intuition",
+              "3": "expectation",
+              "4": "Vortex"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A0",
+              "3": "W_Chal",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "item_id": "W14",
+            "scores": {
+              "1": 2,
+              "2": 5,
+              "3": 1,
+              "4": 1
+            },
+            "best_candidate": 2,
+            "worst_candidate": 4,
+            "ranking": [
+              2,
+              1,
+              3,
+              4
+            ],
+            "reason": "Candidate 2, \"Intuition,\" best fits all three roles: it naturally names immediate receptive apprehension that can enter awareness prior to explicit deliberation, and it is distinct from habit-based prediction or mere guesswork. Candidate 1, \"hunch,\" has some overlap with immediate apprehension, but it leans too much toward casual guesswork, so it weakens Role 2 and is less clean in philosophical use. Candidate 3, \"expectation,\" strongly collides with the excluded forecasting/prediction sense in Role 2 and does not match direct receptive apprehension well. Candidate 4, \"Vortex,\" does not fit the epistemic role or everyday double duty at all."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "c662f3f16d224644b39f5aa083fa311f",
+          "call_meta": {
+            "candidates": {
+              "1": "hunch",
+              "2": "Intuition",
+              "3": "expectation",
+              "4": "Vortex"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A0",
+              "3": "W_Chal",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "item_id": "W14",
+            "scores": {
+              "1": 2,
+              "2": 5,
+              "3": 1,
+              "4": 1
+            },
+            "best_candidate": 2,
+            "worst_candidate": 4,
+            "ranking": [
+              2,
+              1,
+              3,
+              4
+            ],
+            "reason": "Candidate 2, 'Intuition', perfectly satisfies all three roles. It names a subtle, receptive apprehension opposite physical anticipation (Role 1), is inherently distinct from habit-bound forecasting or guesswork (Role 2), and describes immediate, pre-deliberative insight applicable to both philosophical reasoning and practical judgment (Role 3). Candidate 1, 'hunch', partially fits but struggles with Role 2 (can be guesswork) and Role 3 (less formal for philosophical reasoning). Candidate 3, 'expectation', directly contradicts Role 1 (it's anticipatory, not receptive) and Role 2 (it often *is* habit-bound forecasting). Candidate 4, 'Vortex', is entirely out of scope, being a physical phenomenon rather than a cognitive concept."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b33fbeba888248b896efb7dc98c471e1",
+          "call_meta": {
+            "candidates": {
+              "1": "Intuition",
+              "2": "hunch",
+              "3": "expectation",
+              "4": "Vortex"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Ssyn",
+              "3": "W_Chal",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "item_id": "W14",
+            "scores": {
+              "1": 5,
+              "2": 3,
+              "3": 4,
+              "4": 1
+            },
+            "best_candidate": 1,
+            "worst_candidate": 4,
+            "ranking": [
+              1,
+              3,
+              2,
+              4
+            ],
+            "reason": "Candidate 1 (Intuition) scores highest (5) for Role 1 (mirrors subtle receptive apprehension as a relational counterpart to anticipation), Role 2 (clearly distinct from habit/guesswork), and Role 3 (fits both philosophical and practical contexts). Candidate 4 (Vortex) fails all roles (1) due to irrelevance. Candidate 2 (hunch) is too casual for Role 2 (3) and lacks philosophical depth for Role 3 (3). Candidate 3 (expectation) collides with forward-projecting habit prediction (Role 2: 2) but scores moderately for Role 1 (4) and Role 3 (4)."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "080458dd24e4423f9a7ac56be709210b",
+          "call_meta": {
+            "candidates": {
+              "1": "Vortex",
+              "2": "hunch",
+              "3": "Intuition",
+              "4": "expectation"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Ssyn",
+              "3": "W_A0",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "item_id": "W14",
+            "scores": {
+              "1": 2,
+              "2": 3,
+              "3": 5,
+              "4": 3
+            },
+            "best_candidate": 3,
+            "worst_candidate": 1,
+            "ranking": [
+              3,
+              2,
+              4,
+              1
+            ],
+            "reason": "Intuition fits all roles well, describing a subtle receptive apprehension, distinct from habit or guesswork, and aligns with both philosophical and practical judgment. Hunch and expectation come close but have limitations in fully satisfying the roles."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "NC01",
+      "metadata": {
+        "item_id": "NC01",
+        "stratum": "Negative_Control"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "6b322e653857439e9310c784b42cd1d1",
+          "call_meta": {
+            "candidates": {
+              "1": "elasticity",
+              "2": "impulse",
+              "3": "inertia",
+              "4": "friction"
+            },
+            "hidden_key": {
+              "1": "spatial_error",
+              "2": "wrong_condition",
+              "3": "correct",
+              "4": "vague_generic"
+            }
+          },
+          "parsed": {
+            "item_id": "NC01",
+            "scores": {
+              "1": 1,
+              "2": 2,
+              "3": 5,
+              "4": 1
+            },
+            "best_candidate": 3,
+            "worst_candidate": 1,
+            "ranking": [
+              3,
+              2,
+              4,
+              1
+            ],
+            "reason": "Candidate 3 (inertia) perfectly satisfies all three roles: it denotes an object's resistance to change in velocity (Role 1), is proportional to mass and distinct from impulse, friction, and elasticity while anchoring Newton's first law (Role 2), and in everyday English naturally means both physical persistence and organizational/behavioral tendency to continue along an established path (Role 3). Candidate 2 (impulse) is explicitly listed as a trap in Role 2. Candidate 4 (friction) is also listed as a trap. Candidate 1 (elasticity) relates to spring deformation, another listed trap."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "fba0569acbc0420c87fd8e0d61f80270",
+          "call_meta": {
+            "candidates": {
+              "1": "inertia",
+              "2": "friction",
+              "3": "elasticity",
+              "4": "impulse"
+            },
+            "hidden_key": {
+              "1": "correct",
+              "2": "vague_generic",
+              "3": "spatial_error",
+              "4": "wrong_condition"
+            }
+          },
+          "parsed": {
+            "item_id": "NC01",
+            "scores": {
+              "1": 5,
+              "2": 1,
+              "3": 1,
+              "4": 1
+            },
+            "best_candidate": 1,
+            "worst_candidate": 2,
+            "ranking": [
+              1,
+              4,
+              3,
+              2
+            ],
+            "reason": "Candidate 1 fits all three roles cleanly: in mechanics, inertia is the property of resisting changes to uniform motion; it is proportional to mass and central to Newton's first law; and in everyday English it also means a tendency to keep going in the same direction or remain unchanged. Candidate 4 relates to collision momentum transfer over a short interval, which Role 2 explicitly excludes. Candidate 3 refers to reversible deformation, also explicitly excluded. Candidate 2 refers to surface contact drag, likewise explicitly excluded, and does not match the everyday continuation sense nearly as well."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "e1238f3d5e834cfe9a61a6b063538dfc",
+          "call_meta": {
+            "candidates": {
+              "1": "friction",
+              "2": "impulse",
+              "3": "elasticity",
+              "4": "inertia"
+            },
+            "hidden_key": {
+              "1": "vague_generic",
+              "2": "wrong_condition",
+              "3": "spatial_error",
+              "4": "correct"
+            }
+          },
+          "parsed": {
+            "item_id": "NC01",
+            "scores": {
+              "1": 1,
+              "2": 1,
+              "3": 1,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 3,
+            "ranking": [
+              4,
+              1,
+              2,
+              3
+            ],
+            "reason": "Candidate 4 ('inertia') perfectly satisfies all three roles. Role 1 is the definition of inertia. Role 2 correctly identifies inertia as proportional to mass and distinct from impulse, friction, and elasticity. Role 3 accurately describes the common double meaning of 'inertia' in both physics and general English (e.g., organizational inertia). Candidates 1, 2, and 3 all score 1 as they fail all roles and are explicitly excluded by the 'cleanly distinct from' clauses in Role 2. Candidate 3 is chosen as the 'worst_candidate' to align with its position as the last element in the ranking among the equally poor candidates."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "7c72498a56b640c093b650ae2f2f8f59",
+          "call_meta": {
+            "candidates": {
+              "1": "impulse",
+              "2": "friction",
+              "3": "elasticity",
+              "4": "inertia"
+            },
+            "hidden_key": {
+              "1": "wrong_condition",
+              "2": "vague_generic",
+              "3": "spatial_error",
+              "4": "correct"
+            }
+          },
+          "parsed": {
+            "item_id": "NC01",
+            "scores": {
+              "1": 2,
+              "2": 1,
+              "3": 1,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 2,
+            "ranking": [
+              4,
+              1,
+              3,
+              2
+            ],
+            "reason": "Candidate 4 (inertia) perfectly satisfies Role 1 (persistence of uniform velocity), Role 2 (distinct from momentum, drag, or elasticity; anchors Newton's first law), and Role 3 (everyday use for both dynamical persistence and behavioral tendency). Candidates 1 (impulse), 2 (friction), and 3 (elasticity) fail Role 1 and/or Role 2, with friction (2) being the worst due to direct collision with Role 2's exclusion of drag."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ba63559cf98f4bd5a614825486d9dc5b",
+          "call_meta": {
+            "candidates": {
+              "1": "inertia",
+              "2": "friction",
+              "3": "impulse",
+              "4": "elasticity"
+            },
+            "hidden_key": {
+              "1": "correct",
+              "2": "vague_generic",
+              "3": "wrong_condition",
+              "4": "spatial_error"
+            }
+          },
+          "parsed": {
+            "item_id": "NC01",
+            "scores": {
+              "1": 5,
+              "2": 5,
+              "3": 2,
+              "4": 1
+            },
+            "best_candidate": 1,
+            "worst_candidate": 4,
+            "ranking": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "reason": "inertia fits all roles perfectly, friction and impulse partially, elasticity fails"
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "NC02",
+      "metadata": {
+        "item_id": "NC02",
+        "stratum": "Negative_Control"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "84841c7a76894b99bbd39adcb6a6880b",
+          "call_meta": {
+            "candidates": {
+              "1": "torque",
+              "2": "entropy",
+              "3": "pressure",
+              "4": "power"
+            },
+            "hidden_key": {
+              "1": "correct",
+              "2": "vague_generic",
+              "3": "wrong_condition",
+              "4": "spatial_error"
+            }
+          },
+          "parsed": {
+            "item_id": "NC02",
+            "scores": {
+              "1": 5,
+              "2": 1,
+              "3": 2,
+              "4": 3
+            },
+            "best_candidate": 1,
+            "worst_candidate": 2,
+            "ranking": [
+              1,
+              4,
+              3,
+              2
+            ],
+            "reason": "Torque perfectly satisfies all three roles: it is the rotational counterpart of linear force (r × F), distinct from power (work/time), pressure (force/area), and entropy (thermodynamic dispersal), and in everyday English refers to twisting force applied via wrenches or drive shafts. Power partially fits role 3 but fails roles 1 and 2. Pressure is a scalar force per area with no rotational sense. Entropy is a thermodynamic state function entirely unrelated to rotational mechanics."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "c5bd1f69458b4486880aa251a7d42084",
+          "call_meta": {
+            "candidates": {
+              "1": "power",
+              "2": "pressure",
+              "3": "entropy",
+              "4": "torque"
+            },
+            "hidden_key": {
+              "1": "spatial_error",
+              "2": "wrong_condition",
+              "3": "vague_generic",
+              "4": "correct"
+            }
+          },
+          "parsed": {
+            "item_id": "NC02",
+            "scores": {
+              "1": 1,
+              "2": 1,
+              "3": 1,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 3,
+            "ranking": [
+              4,
+              1,
+              2,
+              3
+            ],
+            "reason": "Candidate 4 is the clear fit: torque is the rotational analogue of force, computed from lever arm and applied force about a pivot, carries an axial twist direction, and in ordinary English refers to twisting force on a wrench, axle, or shaft. Candidate 1 is power, which is rate of work; candidate 2 is pressure, force per area; candidate 3 is entropy, thermodynamic dispersal. All three are excluded by Role 2. With the three incorrect candidates tied at the minimum score, candidate 3 is placed last to satisfy the ranking/worst invariant."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "f37708a2353448bfbc169da516a1d1c6",
+          "call_meta": {
+            "candidates": {
+              "1": "power",
+              "2": "torque",
+              "3": "pressure",
+              "4": "entropy"
+            },
+            "hidden_key": {
+              "1": "spatial_error",
+              "2": "correct",
+              "3": "wrong_condition",
+              "4": "vague_generic"
+            }
+          },
+          "parsed": {
+            "item_id": "NC02",
+            "scores": {
+              "1": 1,
+              "2": 5,
+              "3": 1,
+              "4": 1
+            },
+            "best_candidate": 2,
+            "worst_candidate": 1,
+            "ranking": [
+              2,
+              3,
+              4,
+              1
+            ],
+            "reason": "Candidate 2, 'torque', perfectly satisfies all three structural roles. Role 1 precisely defines torque as the rotational counterpart of linear force, calculated as the cross product of lever arm and applied force, which changes rotational momentum. Role 2 correctly distinguishes it from power (work delivery rate), pressure (normal force per area), and entropy (thermodynamic state dispersal), while accurately noting its vector nature that preserves axial rotational twist direction. Role 3 captures its common, everyday usage in English to describe twisting rotational leverage applied via mechanical means like wrenches or drive shafts. Candidates 1, 3, and 4 (power, pressure, entropy) all score 1, failing to meet any of the roles and often directly contradicting the definitions or colliding with the specified 'traps' in Role 2. Candidate 1 is chosen as the 'worst_candidate' among the tied lowest scores, and thus appears last in the ranking."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "18c997196cde40378af0a034490c960e",
+          "call_meta": {
+            "candidates": {
+              "1": "pressure",
+              "2": "power",
+              "3": "entropy",
+              "4": "torque"
+            },
+            "hidden_key": {
+              "1": "wrong_condition",
+              "2": "spatial_error",
+              "3": "vague_generic",
+              "4": "correct"
+            }
+          },
+          "parsed": {
+            "item_id": "NC02",
+            "scores": {
+              "1": 1,
+              "2": 1,
+              "3": 1,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 1,
+            "ranking": [
+              4,
+              2,
+              3,
+              1
+            ],
+            "reason": "Candidate 4 (torque) perfectly satisfies Role 1 (rotational counterpart of linear force, cross product of lever arm and force), Role 2 (distinct from power, pressure, entropy; preserves axial direction), and Role 3 (everyday term for twisting force via tools like wrenches). Candidates 1 (pressure), 2 (power), and 3 (entropy) fail Role 1 and/or Role 3, with pressure and entropy also colliding with Role 2's exclusion criteria."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1432499095d346f78867d61627afedcf",
+          "call_meta": {
+            "candidates": {
+              "1": "entropy",
+              "2": "power",
+              "3": "torque",
+              "4": "pressure"
+            },
+            "hidden_key": {
+              "1": "vague_generic",
+              "2": "spatial_error",
+              "3": "correct",
+              "4": "wrong_condition"
+            }
+          },
+          "parsed": {
+            "item_id": "NC02",
+            "scores": {
+              "1": 1,
+              "2": 1,
+              "3": 5,
+              "4": 2
+            },
+            "best_candidate": 3,
+            "worst_candidate": 1,
+            "ranking": [
+              3,
+              4,
+              2,
+              1
+            ],
+            "reason": "Candidate 3 'torque' fits all roles perfectly: it's the rotational counterpart of linear force, distinct from work rate, pressure, or entropy, and is used in everyday English for twisting leverage. Candidate 1 'entropy' and Candidate 2 'power' fail multiple roles. Candidate 4 'pressure' somewhat fits Role 3 but fails Roles 1 and 2."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "NC03",
+      "metadata": {
+        "item_id": "NC03",
+        "stratum": "Negative_Control"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "006206f769f34914939d40bc3c0d909e",
+          "call_meta": {
+            "candidates": {
+              "1": "equilibrium",
+              "2": "acceleration",
+              "3": "amplitude",
+              "4": "viscosity"
+            },
+            "hidden_key": {
+              "1": "correct",
+              "2": "spatial_error",
+              "3": "vague_generic",
+              "4": "wrong_condition"
+            }
+          },
+          "parsed": {
+            "item_id": "NC03",
+            "scores": {
+              "1": 5,
+              "2": 3,
+              "3": 2,
+              "4": 1
+            },
+            "best_candidate": 1,
+            "worst_candidate": 4,
+            "ranking": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "reason": "Equilibrium perfectly satisfies all three roles: it identifies the balanced regime where opposing drives cancel (Role 1), is strictly distinct from viscosity/acceleration/amplitude (Role 2), and in everyday English means poised steadiness across physics, economics, and human balance (Role 3). Acceleration partially fits Role 1 in a loose sense but fundamentally describes change not balance, weakly satisfying the roles. Amplitude describes wave peak height and is explicitly excluded in Role 2, failing more roles. Viscosity describes fluid resistance/shear drag, explicitly excluded in Role 2, and fails all three roles most completely."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "74963edaf8054bf5915d991a1e6a64fa",
+          "call_meta": {
+            "candidates": {
+              "1": "equilibrium",
+              "2": "acceleration",
+              "3": "viscosity",
+              "4": "amplitude"
+            },
+            "hidden_key": {
+              "1": "correct",
+              "2": "spatial_error",
+              "3": "wrong_condition",
+              "4": "vague_generic"
+            }
+          },
+          "parsed": {
+            "item_id": "NC03",
+            "scores": {
+              "1": 5,
+              "2": 1,
+              "3": 1,
+              "4": 1
+            },
+            "best_candidate": 1,
+            "worst_candidate": 2,
+            "ranking": [
+              1,
+              3,
+              4,
+              2
+            ],
+            "reason": "Candidate 1, \"equilibrium,\" fits all three roles cleanly: it denotes a balanced state with no net drift, applies across mechanical, chemical, and thermal contexts, and also has an everyday meaning of balance or steadiness. Candidate 2, \"acceleration,\" is explicitly a trap because it is second-order temporal velocity change, not balance. Candidate 3, \"viscosity,\" is another trap tied to fluid shear resistance rather than general balance. Candidate 4, \"amplitude,\" is the wave-excursion trap and does not express systemic balance. Among the three wrong options, viscosity has the faintest everyday association with \"resistance\" but still misses the target badly; amplitude has essentially no balance sense here; acceleration is most directly contradicted by Role 2."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "d57b99798ca04d92b8a14390cc910e72",
+          "call_meta": {
+            "candidates": {
+              "1": "viscosity",
+              "2": "amplitude",
+              "3": "acceleration",
+              "4": "equilibrium"
+            },
+            "hidden_key": {
+              "1": "wrong_condition",
+              "2": "vague_generic",
+              "3": "spatial_error",
+              "4": "correct"
+            }
+          },
+          "parsed": {
+            "item_id": "NC03",
+            "scores": {
+              "1": 1,
+              "2": 1,
+              "3": 1,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 1,
+            "ranking": [
+              4,
+              2,
+              3,
+              1
+            ],
+            "reason": "Candidate 4 ('equilibrium') perfectly aligns with all three roles, describing a balanced state with zero net drift, being distinct from the specified traps, and having a common everyday meaning of poised steadiness. Candidates 1, 2, and 3 directly collide with the 'distinct from' traps in Role 2 and fail to meet the core conceptual requirements of Roles 1 and 3. Candidate 1 is chosen as the 'worst_candidate' among the tied lowest scores and placed last in the ranking."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "a847eff08c1c4bc59012744671422158",
+          "call_meta": {
+            "candidates": {
+              "1": "amplitude",
+              "2": "viscosity",
+              "3": "acceleration",
+              "4": "equilibrium"
+            },
+            "hidden_key": {
+              "1": "vague_generic",
+              "2": "wrong_condition",
+              "3": "spatial_error",
+              "4": "correct"
+            }
+          },
+          "parsed": {
+            "item_id": "NC03",
+            "scores": {
+              "1": 2,
+              "2": 1,
+              "3": 1,
+              "4": 5
+            },
+            "best_candidate": 4,
+            "worst_candidate": 2,
+            "ranking": [
+              4,
+              1,
+              3,
+              2
+            ],
+            "reason": "Candidate 4 (equilibrium) perfectly satisfies all roles: it describes a balanced regime with zero net drift (Role 1), is distinct from drag/acceleration/amplitude (Role 2), and has everyday double duty in physics/economics/human contexts (Role 3). Candidates 1-3 fail Role 1 (amplitude/wave peak, viscosity/drag, acceleration/second-order change) and lack the universal balance connotation."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "5e571f47a69e48a29d554da1a8b66455",
+          "call_meta": {
+            "candidates": {
+              "1": "viscosity",
+              "2": "acceleration",
+              "3": "equilibrium",
+              "4": "amplitude"
+            },
+            "hidden_key": {
+              "1": "wrong_condition",
+              "2": "spatial_error",
+              "3": "correct",
+              "4": "vague_generic"
+            }
+          },
+          "parsed": {
+            "item_id": "NC03",
+            "scores": {
+              "1": 2,
+              "2": 2,
+              "3": 5,
+              "4": 2
+            },
+            "best_candidate": 3,
+            "worst_candidate": 1,
+            "ranking": [
+              3,
+              2,
+              4,
+              1
+            ],
+            "reason": "Candidate 3 (equilibrium) fits all roles perfectly, describing a state of balance across various domains. It satisfies Role 1 by identifying a balanced regime, Role 2 by being distinct from other mechanical or physical quantities, and Role 3 by being used in everyday English to describe balance in different contexts. Other candidates either fail to satisfy one or more roles or are less fitting."
+          },
+          "errors": []
+        }
+      }
+    }
+  ]
+}
