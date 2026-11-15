@@ -1,0 +1,4373 @@
+{
+  "schema_version": "tsr_eval_summary_v2",
+  "provenance": {
+    "prereg_commit_sha": "51109f83f96a94dfe7587c08a9ea972387b64889",
+    "pre_eval_commit_sha": "932205b733b505028adb32712594cb853321fac9",
+    "raw_stage_file_sha256": {
+      "harness/logs/live_calls.jsonl": "809b62cce04b98ff04a22ffe379814a25c1d165fb2aeaa74293acce2d3bca4a9",
+      "harness/outputs/stage1_m1_calibration.json": "5dd91e885ff36192f5bcf3db2ef2196b1aa6f5277ae2bffd3db35a70c6ba9472",
+      "harness/outputs/stage2_m2_heldout.json": "1675d92fcee22084c79cdbe8e4c5ae6a22a6984ca6ddd47e3fa75dc4dd9f3e3d",
+      "harness/outputs/layer_a_summary.json": "454976591ea01189549940771ae58d750da744dc19cf06592615df6e784785f8",
+      "harness/outputs/stage3_m3b_opponent.json": "74bb79ddc852bed77ff24b1a1604adf72b8041b6c3b8b3a49a751b50fde94096",
+      "harness/outputs/stage4_m3c_layer_b.json": "76673fbc428f67e42bbadea5d29c1fb7224d49d27394140527879350559c0fe8",
+      "harness/outputs/stage5_m4_ratings.json": "3a8f09aeb43750f8fd584547ec37c800df5c6ce7a30ceffc0ed97041ef16b4c0",
+      "harness/outputs/stage6_m5_vocab_free.json": "ff96ed1785f990faf426854d1f1754d59cae64ee99e4070be00260e4242f2cb5",
+      "harness/outputs/summary_all_stages.json": "ef674cda3f87cf958747fe271c46674ec3c5608342cdd2154b9998b8f18c599d"
+    },
+    "live_calls_total": 907,
+    "unique_call_keys": 822,
+    "retry_calls_total": 85,
+    "calls_by_role": {
+      "stage1_m1_generator": 223,
+      "stage2_m2_generator": 429,
+      "stage3_m3b_opponent": 32,
+      "stage4_m3c_pairs": 56,
+      "stage4_m3c_single": 64,
+      "stage5_m4_bundle": 14,
+      "stage5_m4_item": 17,
+      "stage5_m4_native_pair": 12,
+      "stage6_m5_vocab_free": 60
+    },
+    "unique_calls_by_role": {
+      "stage1_m1_generator": 170,
+      "stage2_m2_generator": 400,
+      "stage3_m3b_opponent": 32,
+      "stage4_m3c_pairs": 56,
+      "stage4_m3c_single": 64,
+      "stage5_m4_bundle": 12,
+      "stage5_m4_item": 16,
+      "stage5_m4_native_pair": 12,
+      "stage6_m5_vocab_free": 60
+    },
+    "retry_calls_by_role": {
+      "stage1_m1_generator": 53,
+      "stage2_m2_generator": 29,
+      "stage3_m3b_opponent": 0,
+      "stage4_m3c_pairs": 0,
+      "stage4_m3c_single": 0,
+      "stage5_m4_bundle": 2,
+      "stage5_m4_item": 1,
+      "stage5_m4_native_pair": 0,
+      "stage6_m5_vocab_free": 0
+    },
+    "total_api_latency_ms": 5519264,
+    "total_api_latency_sec": 5519.264,
+    "latency_by_model": {
+      "claude-sonnet-4.6": {
+        "calls": 205,
+        "total_ms": 1800419,
+        "total_sec": 1800.419,
+        "mean_ms": 8782.53,
+        "median_ms": 7808.0,
+        "p95_ms": 14771.0,
+        "min_ms": 4247,
+        "max_ms": 23171
+      },
+      "deepseek-v4.1-flash-fast": {
+        "calls": 32,
+        "total_ms": 461904,
+        "total_sec": 461.904,
+        "mean_ms": 14434.5,
+        "median_ms": 7978.5,
+        "p95_ms": 35681.0,
+        "min_ms": 2080,
+        "max_ms": 38714
+      },
+      "gemini-2.5-flash": {
+        "calls": 145,
+        "total_ms": 1854616,
+        "total_sec": 1854.616,
+        "mean_ms": 12790.46,
+        "median_ms": 9101.0,
+        "p95_ms": 29377.0,
+        "min_ms": 2288,
+        "max_ms": 185765
+      },
+      "gpt-5.4-fast": {
+        "calls": 198,
+        "total_ms": 647735,
+        "total_sec": 647.735,
+        "mean_ms": 3271.39,
+        "median_ms": 2914.5,
+        "p95_ms": 5378.0,
+        "min_ms": 1644,
+        "max_ms": 6267
+      },
+      "llama-4-maverick": {
+        "calls": 181,
+        "total_ms": 364647,
+        "total_sec": 364.647,
+        "mean_ms": 2014.62,
+        "median_ms": 1964.0,
+        "p95_ms": 2588.0,
+        "min_ms": 1144,
+        "max_ms": 3973
+      },
+      "mistral-medium-3.5": {
+        "calls": 146,
+        "total_ms": 389943,
+        "total_sec": 389.943,
+        "mean_ms": 2670.84,
+        "median_ms": 2552.0,
+        "p95_ms": 3770.0,
+        "min_ms": 1554,
+        "max_ms": 4702
+      }
+    },
+    "schema_error_counts": {
+      "stage1_m1": 5,
+      "stage2_m2": 2,
+      "stage3_m3b": 0,
+      "stage4_m3c_single": 0,
+      "stage4_m3c_pairs": 0,
+      "stage4_m3c_rule1": 0,
+      "stage5_m4_item": 0,
+      "stage5_m4_native_pair": 0,
+      "stage5_m4_bundle": 0,
+      "stage6_m5": 0
+    },
+    "total_schema_errors": 7
+  },
+  "stage1_m1": {
+    "arms": {
+      "A0": {
+        "total_items": 17,
+        "consensus_4_of_5_count": 15,
+        "consensus_exact_match_count": 12,
+        "consensus_accuracy_all_17": 0.705882,
+        "schema_error_count": 2,
+        "per_model_schema_errors": {
+          "claude-sonnet-4.6": 0,
+          "gpt-5.4-fast": 0,
+          "gemini-2.5-flash": 0,
+          "mistral-medium-3.5": 0,
+          "llama-4-maverick": 2
+        },
+        "per_model_correct_all_17": {
+          "claude-sonnet-4.6": 13,
+          "gpt-5.4-fast": 11,
+          "gemini-2.5-flash": 14,
+          "mistral-medium-3.5": 15,
+          "llama-4-maverick": 9
+        },
+        "per_model_accuracy_all_17": {
+          "claude-sonnet-4.6": 0.764706,
+          "gpt-5.4-fast": 0.647059,
+          "gemini-2.5-flash": 0.823529,
+          "mistral-medium-3.5": 0.882353,
+          "llama-4-maverick": 0.529412
+        },
+        "k01_k16_subset": {
+          "total_items": 16,
+          "consensus_4_of_5_count": 14,
+          "consensus_exact_match_count": 12,
+          "consensus_accuracy": 0.75,
+          "per_model_correct": {
+            "claude-sonnet-4.6": 13,
+            "gpt-5.4-fast": 11,
+            "gemini-2.5-flash": 14,
+            "mistral-medium-3.5": 15,
+            "llama-4-maverick": 9
+          },
+          "per_model_accuracy": {
+            "claude-sonnet-4.6": 0.8125,
+            "gpt-5.4-fast": 0.6875,
+            "gemini-2.5-flash": 0.875,
+            "mistral-medium-3.5": 0.9375,
+            "llama-4-maverick": 0.5625
+          }
+        },
+        "k17_boyle_law": {
+          "item_id": "K17",
+          "description": "Boyle's law for an ideal gas (at constant temperature and fixed amount of gas, squeezing the volume raises the pressure)",
+          "expected_book_ruling": "keep",
+          "majority_ruling": "no partner",
+          "majority_count": 5,
+          "consensus_4_of_5": true,
+          "consensus_correct": false,
+          "votes": {
+            "claude-sonnet-4.6": "no partner",
+            "gpt-5.4-fast": "no partner",
+            "gemini-2.5-flash": "no partner",
+            "mistral-medium-3.5": "no partner",
+            "llama-4-maverick": "no partner"
+          }
+        },
+        "misses_and_schema_error_items": [
+          {
+            "item_id": "K05",
+            "description": "Relativistic time dilation between proper time and moving-frame coordinate time",
+            "expected_book_ruling": "keep",
+            "majority_ruling": "invert",
+            "majority_count": 4,
+            "consensus_4_of_5": true,
+            "consensus_correct": false,
+            "votes": {
+              "claude-sonnet-4.6": "invert",
+              "gpt-5.4-fast": "invert",
+              "gemini-2.5-flash": "invert",
+              "mistral-medium-3.5": "keep",
+              "llama-4-maverick": "invert"
+            },
+            "schema_errors": {}
+          },
+          {
+            "item_id": "K06",
+            "description": "Relativistic length contraction along the direction of relative motion",
+            "expected_book_ruling": "keep",
+            "majority_ruling": "invert",
+            "majority_count": 4,
+            "consensus_4_of_5": true,
+            "consensus_correct": false,
+            "votes": {
+              "claude-sonnet-4.6": "invert",
+              "gpt-5.4-fast": "invert",
+              "gemini-2.5-flash": "invert",
+              "mistral-medium-3.5": "keep",
+              "llama-4-maverick": "invert"
+            },
+            "schema_errors": {}
+          },
+          {
+            "item_id": "K08",
+            "description": "Relativistic kinetic energy and the rising energy cost of increasing speed for mass",
+            "expected_book_ruling": "invert",
+            "majority_ruling": "invert",
+            "majority_count": 4,
+            "consensus_4_of_5": true,
+            "consensus_correct": true,
+            "votes": {
+              "claude-sonnet-4.6": "invert",
+              "gpt-5.4-fast": "invert",
+              "gemini-2.5-flash": "invert",
+              "mistral-medium-3.5": "invert",
+              "llama-4-maverick": "SCHEMA_ERROR"
+            },
+            "schema_errors": {
+              "llama-4-maverick": [
+                "Invalid slot tokens for arm A0: ['Current squared', 'Current squared']",
+                "Digits/superscript digits forbidden in translation_template"
+              ]
+            }
+          },
+          {
+            "item_id": "K09",
+            "description": "Speed-of-light limit for massive particles (nothing with mass can reach the speed of light c)",
+            "expected_book_ruling": "invert",
+            "majority_ruling": "invert",
+            "majority_count": 4,
+            "consensus_4_of_5": true,
+            "consensus_correct": true,
+            "votes": {
+              "claude-sonnet-4.6": "invert",
+              "gpt-5.4-fast": "invert",
+              "gemini-2.5-flash": "invert",
+              "mistral-medium-3.5": "invert",
+              "llama-4-maverick": "SCHEMA_ERROR"
+            },
+            "schema_errors": {
+              "llama-4-maverick": [
+                "Unwrapped translation_template mismatch vs translation_t: 'rise per Expansion is less than Current (for Movement greater than)' != 'rise per Expansion is less than Current for nonzero Movement'"
+              ]
+            }
+          },
+          {
+            "item_id": "K12",
+            "description": "Gravitational wells and gravitational lensing of light around massive bodies",
+            "expected_book_ruling": "keep",
+            "majority_ruling": "keep",
+            "majority_count": 3,
+            "consensus_4_of_5": false,
+            "consensus_correct": false,
+            "votes": {
+              "claude-sonnet-4.6": "keep",
+              "gpt-5.4-fast": "invert",
+              "gemini-2.5-flash": "keep",
+              "mistral-medium-3.5": "keep",
+              "llama-4-maverick": "no partner"
+            },
+            "schema_errors": {}
+          },
+          {
+            "item_id": "K16",
+            "description": "Newton's second law of motion (net force equals mass times acceleration)",
+            "expected_book_ruling": "keep",
+            "majority_ruling": "keep",
+            "majority_count": 3,
+            "consensus_4_of_5": false,
+            "consensus_correct": false,
+            "votes": {
+              "claude-sonnet-4.6": "keep",
+              "gpt-5.4-fast": "keep",
+              "gemini-2.5-flash": "keep",
+              "mistral-medium-3.5": "invert",
+              "llama-4-maverick": "invert"
+            },
+            "schema_errors": {}
+          },
+          {
+            "item_id": "K17",
+            "description": "Boyle's law for an ideal gas (at constant temperature and fixed amount of gas, squeezing the volume raises the pressure)",
+            "expected_book_ruling": "keep",
+            "majority_ruling": "no partner",
+            "majority_count": 5,
+            "consensus_4_of_5": true,
+            "consensus_correct": false,
+            "votes": {
+              "claude-sonnet-4.6": "no partner",
+              "gpt-5.4-fast": "no partner",
+              "gemini-2.5-flash": "no partner",
+              "mistral-medium-3.5": "no partner",
+              "llama-4-maverick": "no partner"
+            },
+            "schema_errors": {}
+          }
+        ]
+      },
+      "A3-1": {
+        "total_items": 17,
+        "consensus_4_of_5_count": 14,
+        "consensus_exact_match_count": 12,
+        "consensus_accuracy_all_17": 0.705882,
+        "schema_error_count": 3,
+        "per_model_schema_errors": {
+          "claude-sonnet-4.6": 0,
+          "gpt-5.4-fast": 0,
+          "gemini-2.5-flash": 0,
+          "mistral-medium-3.5": 0,
+          "llama-4-maverick": 3
+        },
+        "per_model_correct_all_17": {
+          "claude-sonnet-4.6": 12,
+          "gpt-5.4-fast": 13,
+          "gemini-2.5-flash": 14,
+          "mistral-medium-3.5": 15,
+          "llama-4-maverick": 9
+        },
+        "per_model_accuracy_all_17": {
+          "claude-sonnet-4.6": 0.705882,
+          "gpt-5.4-fast": 0.764706,
+          "gemini-2.5-flash": 0.823529,
+          "mistral-medium-3.5": 0.882353,
+          "llama-4-maverick": 0.529412
+        },
+        "k01_k16_subset": {
+          "total_items": 16,
+          "consensus_4_of_5_count": 13,
+          "consensus_exact_match_count": 12,
+          "consensus_accuracy": 0.75,
+          "per_model_correct": {
+            "claude-sonnet-4.6": 12,
+            "gpt-5.4-fast": 13,
+            "gemini-2.5-flash": 14,
+            "mistral-medium-3.5": 15,
+            "llama-4-maverick": 9
+          },
+          "per_model_accuracy": {
+            "claude-sonnet-4.6": 0.75,
+            "gpt-5.4-fast": 0.8125,
+            "gemini-2.5-flash": 0.875,
+            "mistral-medium-3.5": 0.9375,
+            "llama-4-maverick": 0.5625
+          }
+        },
+        "k17_boyle_law": {
+          "item_id": "K17",
+          "description": "Boyle's law for an ideal gas (at constant temperature and fixed amount of gas, squeezing the volume raises the pressure)",
+          "expected_book_ruling": "keep",
+          "majority_ruling": "no partner",
+          "majority_count": 5,
+          "consensus_4_of_5": true,
+          "consensus_correct": false,
+          "votes": {
+            "claude-sonnet-4.6": "no partner",
+            "gpt-5.4-fast": "no partner",
+            "gemini-2.5-flash": "no partner",
+            "mistral-medium-3.5": "no partner",
+            "llama-4-maverick": "no partner"
+          }
+        },
+        "misses_and_schema_error_items": [
+          {
+            "item_id": "K04",
+            "description": "Special versus general relativity (equivalence of inertial frames versus accelerating or gravitating frames)",
+            "expected_book_ruling": "keep",
+            "majority_ruling": "keep",
+            "majority_count": 3,
+            "consensus_4_of_5": false,
+            "consensus_correct": false,
+            "votes": {
+              "claude-sonnet-4.6": "invert",
+              "gpt-5.4-fast": "keep",
+              "gemini-2.5-flash": "keep",
+              "mistral-medium-3.5": "keep",
+              "llama-4-maverick": "no partner"
+            },
+            "schema_errors": {}
+          },
+          {
+            "item_id": "K05",
+            "description": "Relativistic time dilation between proper time and moving-frame coordinate time",
+            "expected_book_ruling": "keep",
+            "majority_ruling": "invert",
+            "majority_count": 4,
+            "consensus_4_of_5": true,
+            "consensus_correct": false,
+            "votes": {
+              "claude-sonnet-4.6": "invert",
+              "gpt-5.4-fast": "invert",
+              "gemini-2.5-flash": "invert",
+              "mistral-medium-3.5": "keep",
+              "llama-4-maverick": "invert"
+            },
+            "schema_errors": {}
+          },
+          {
+            "item_id": "K06",
+            "description": "Relativistic length contraction along the direction of relative motion",
+            "expected_book_ruling": "keep",
+            "majority_ruling": "invert",
+            "majority_count": 3,
+            "consensus_4_of_5": false,
+            "consensus_correct": false,
+            "votes": {
+              "claude-sonnet-4.6": "invert",
+              "gpt-5.4-fast": "invert",
+              "gemini-2.5-flash": "invert",
+              "mistral-medium-3.5": "keep",
+              "llama-4-maverick": "SCHEMA_ERROR"
+            },
+            "schema_errors": {
+              "llama-4-maverick": [
+                "variable_map must be a dict mapping non-empty strings to non-empty strings"
+              ]
+            }
+          },
+          {
+            "item_id": "K07",
+            "description": "Mass-energy equivalence",
+            "expected_book_ruling": "keep",
+            "majority_ruling": "keep",
+            "majority_count": 4,
+            "consensus_4_of_5": true,
+            "consensus_correct": true,
+            "votes": {
+              "claude-sonnet-4.6": "keep",
+              "gpt-5.4-fast": "keep",
+              "gemini-2.5-flash": "keep",
+              "mistral-medium-3.5": "keep",
+              "llama-4-maverick": "SCHEMA_ERROR"
+            },
+            "schema_errors": {
+              "llama-4-maverick": [
+                "Unwrapped translation_template mismatch vs translation_t: 'Vibration = Reflected FrequencyFrequency' != 'Vibration equals Reflected times Frequency times Frequency'"
+              ]
+            }
+          },
+          {
+            "item_id": "K08",
+            "description": "Relativistic kinetic energy and the rising energy cost of increasing speed for mass",
+            "expected_book_ruling": "invert",
+            "majority_ruling": "invert",
+            "majority_count": 4,
+            "consensus_4_of_5": true,
+            "consensus_correct": true,
+            "votes": {
+              "claude-sonnet-4.6": "invert",
+              "gpt-5.4-fast": "invert",
+              "gemini-2.5-flash": "invert",
+              "mistral-medium-3.5": "invert",
+              "llama-4-maverick": "SCHEMA_ERROR"
+            },
+            "schema_errors": {
+              "llama-4-maverick": [
+                "Unwrapped translation_template mismatch vs translation_t: 'Vibration = (gamma - ) Reflected, \\\\quad Vibration = gamma Reflected' != 'Vibration and Vibration'",
+                "direction_flipped_d is identical to translation_t (no polarity flip)"
+              ]
+            }
+          },
+          {
+            "item_id": "K16",
+            "description": "Newton's second law of motion (net force equals mass times acceleration)",
+            "expected_book_ruling": "keep",
+            "majority_ruling": "keep",
+            "majority_count": 3,
+            "consensus_4_of_5": false,
+            "consensus_correct": false,
+            "votes": {
+              "claude-sonnet-4.6": "keep",
+              "gpt-5.4-fast": "keep",
+              "gemini-2.5-flash": "keep",
+              "mistral-medium-3.5": "invert",
+              "llama-4-maverick": "invert"
+            },
+            "schema_errors": {}
+          },
+          {
+            "item_id": "K17",
+            "description": "Boyle's law for an ideal gas (at constant temperature and fixed amount of gas, squeezing the volume raises the pressure)",
+            "expected_book_ruling": "keep",
+            "majority_ruling": "no partner",
+            "majority_count": 5,
+            "consensus_4_of_5": true,
+            "consensus_correct": false,
+            "votes": {
+              "claude-sonnet-4.6": "no partner",
+              "gpt-5.4-fast": "no partner",
+              "gemini-2.5-flash": "no partner",
+              "mistral-medium-3.5": "no partner",
+              "llama-4-maverick": "no partner"
+            },
+            "schema_errors": {}
+          }
+        ]
+      }
+    },
+    "a0_vs_a3_1_comparison": {
+      "all_17_mcnemar": {
+        "n_paired": 17,
+        "n11_both_true": 11,
+        "n10_first_only": 1,
+        "n01_second_only": 1,
+        "n00_both_false": 4,
+        "p_value": 1.0
+      },
+      "k01_k16_mcnemar": {
+        "n_paired": 16,
+        "n11_both_true": 11,
+        "n10_first_only": 1,
+        "n01_second_only": 1,
+        "n00_both_false": 3,
+        "p_value": 1.0
+      },
+      "all_17_fisher": 0.9999999999999999,
+      "k01_k16_fisher": 1.0,
+      "per_model_mcnemar_all_17": {
+        "claude-sonnet-4.6": {
+          "n_paired": 17,
+          "n11_both_true": 12,
+          "n10_first_only": 1,
+          "n01_second_only": 0,
+          "n00_both_false": 4,
+          "p_value": 1.0
+        },
+        "gpt-5.4-fast": {
+          "n_paired": 17,
+          "n11_both_true": 11,
+          "n10_first_only": 0,
+          "n01_second_only": 2,
+          "n00_both_false": 4,
+          "p_value": 0.5
+        },
+        "gemini-2.5-flash": {
+          "n_paired": 17,
+          "n11_both_true": 14,
+          "n10_first_only": 0,
+          "n01_second_only": 0,
+          "n00_both_false": 3,
+          "p_value": 1.0
+        },
+        "mistral-medium-3.5": {
+          "n_paired": 17,
+          "n11_both_true": 15,
+          "n10_first_only": 0,
+          "n01_second_only": 0,
+          "n00_both_false": 2,
+          "p_value": 1.0
+        },
+        "llama-4-maverick": {
+          "n_paired": 17,
+          "n11_both_true": 7,
+          "n10_first_only": 2,
+          "n01_second_only": 2,
+          "n00_both_false": 6,
+          "p_value": 1.0
+        }
+      }
+    }
+  },
+  "stage2_m2": {
+    "arms": {
+      "A0": {
+        "total_items": 40,
+        "consensus_4_of_5_total": 34,
+        "non_consensus_count": 6,
+        "non_consensus_items": [
+          "E008",
+          "E009",
+          "E010",
+          "E013",
+          "E020",
+          "E040"
+        ],
+        "ruling_distribution_consensus": {
+          "keep": 13,
+          "invert": 3,
+          "no partner": 18,
+          "indeterminate": 0
+        },
+        "ruling_distribution_with_no_consensus": {
+          "keep": 13,
+          "no partner": 18,
+          "no_consensus": 6,
+          "invert": 3
+        },
+        "consensus_keep_invert_count": 16,
+        "schema_error_count": 1,
+        "schema_error_items": [
+          {
+            "item_id": "E017",
+            "stratum": "Core",
+            "schema_errors": {
+              "llama-4-maverick": [
+                "Non-stripped variable_map slot(s) missing from translation_template {...}: ['Desire', 'Vibrance', 'Vibration']"
+              ]
+            }
+          }
+        ],
+        "stratified": {
+          "Core": {
+            "total_items": 28,
+            "consensus_4_of_5_count": 23,
+            "keep": 13,
+            "invert": 3,
+            "no_partner": 7,
+            "indeterminate": 0,
+            "no_consensus": 5,
+            "keep_invert_count": 16,
+            "keep_invert_rate_of_28": 0.571429,
+            "keep_invert_rate_of_consensus": 0.695652
+          },
+          "Boundary": {
+            "total_items": 12,
+            "consensus_4_of_5_count": 11,
+            "keep": 0,
+            "invert": 0,
+            "no_partner": 11,
+            "indeterminate": 0,
+            "no_consensus": 1,
+            "keep_invert_count": 0,
+            "exclusion_consensus_count": 11,
+            "exclusion_consensus_rate_of_12": 0.916667,
+            "false_inclusion_keep_invert_rate": 0.0
+          },
+          "core_vs_boundary_keep_invert_fisher_p": 0.0008987198282493709
+        },
+        "per_model_agreement_with_consensus_34": {
+          "claude-sonnet-4.6": {
+            "agree_count": 32,
+            "total_consensus": 34,
+            "rate": 0.941176
+          },
+          "gpt-5.4-fast": {
+            "agree_count": 33,
+            "total_consensus": 34,
+            "rate": 0.970588
+          },
+          "gemini-2.5-flash": {
+            "agree_count": 34,
+            "total_consensus": 34,
+            "rate": 1.0
+          },
+          "mistral-medium-3.5": {
+            "agree_count": 34,
+            "total_consensus": 34,
+            "rate": 1.0
+          },
+          "llama-4-maverick": {
+            "agree_count": 26,
+            "total_consensus": 34,
+            "rate": 0.764706
+          }
+        },
+        "per_model_agreement_with_majority_40": {
+          "claude-sonnet-4.6": {
+            "agree_count": 35,
+            "total_items": 40,
+            "rate": 0.875
+          },
+          "gpt-5.4-fast": {
+            "agree_count": 37,
+            "total_items": 40,
+            "rate": 0.925
+          },
+          "gemini-2.5-flash": {
+            "agree_count": 38,
+            "total_items": 40,
+            "rate": 0.95
+          },
+          "mistral-medium-3.5": {
+            "agree_count": 37,
+            "total_items": 40,
+            "rate": 0.925
+          },
+          "llama-4-maverick": {
+            "agree_count": 28,
+            "total_items": 40,
+            "rate": 0.7
+          }
+        },
+        "layer_a": {
+          "evaluated_items": 16,
+          "per_item_passed": 12,
+          "per_item_pass_rate": 0.75,
+          "joint_collisions_count": 4,
+          "passes_all": false,
+          "agreeing_voter_per_item_passes": 46,
+          "agreeing_voter_per_item_total": 77,
+          "collisions_by_layer": {
+            "A2_formula_unknown_tokens": 2,
+            "A3_exponent_or_quotient_flip": 2
+          },
+          "failure_item_ids": [
+            "E001",
+            "E002",
+            "E023",
+            "E027"
+          ],
+          "collisions": [
+            {
+              "item_id": "E001",
+              "layer": "A3_exponent_or_quotient_flip",
+              "physical_vars": [
+                "R"
+              ],
+              "target_slot": "Vibration",
+              "equation_quot_signs": [
+                1
+              ],
+              "reflected_quot_signs": [
+                -1,
+                1
+              ],
+              "equation_overall_signs": [
+                1
+              ],
+              "reflected_overall_signs": [
+                -1,
+                1
+              ],
+              "equation_latex": "a_{\\text{CM}} = R \\alpha",
+              "reflected_formula": "Appreciation = Vibration * (Appreciation / Vibration)"
+            },
+            {
+              "item_id": "E002",
+              "layer": "A3_exponent_or_quotient_flip",
+              "physical_vars": [
+                "r"
+              ],
+              "target_slot": "Vibration",
+              "equation_quot_signs": [
+                1
+              ],
+              "reflected_quot_signs": [
+                -1,
+                1
+              ],
+              "equation_overall_signs": [
+                1
+              ],
+              "reflected_overall_signs": [
+                -1,
+                1
+              ],
+              "equation_latex": "a_{\\text{t}} = r \\alpha",
+              "reflected_formula": "Appreciation_tangential = Vibration * (Appreciation / Vibration)"
+            },
+            {
+              "item_id": "E023",
+              "layer": "A2_formula_unknown_tokens",
+              "reflected_formula": "conscious energy = integral over path of Frequency · d(Vibration)",
+              "unknowns": [
+                "integral",
+                "over",
+                "path",
+                "of"
+              ]
+            },
+            {
+              "item_id": "E027",
+              "layer": "A2_formula_unknown_tokens",
+              "reflected_formula": "Appreciation_PS = Appreciation_PS' + Appreciation_S'S",
+              "unknowns": [
+                "AppreciationS"
+              ]
+            }
+          ]
+        }
+      },
+      "A3-1": {
+        "total_items": 40,
+        "consensus_4_of_5_total": 34,
+        "non_consensus_count": 6,
+        "non_consensus_items": [
+          "E008",
+          "E009",
+          "E010",
+          "E013",
+          "E020",
+          "E040"
+        ],
+        "ruling_distribution_consensus": {
+          "keep": 13,
+          "invert": 3,
+          "no partner": 18,
+          "indeterminate": 0
+        },
+        "ruling_distribution_with_no_consensus": {
+          "keep": 13,
+          "no partner": 18,
+          "no_consensus": 6,
+          "invert": 3
+        },
+        "consensus_keep_invert_count": 16,
+        "schema_error_count": 1,
+        "schema_error_items": [
+          {
+            "item_id": "E011",
+            "stratum": "Core",
+            "schema_errors": {
+              "llama-4-maverick": [
+                "direction_flipped_d target term set ['Reflected', 'imagination'] != translation_t target term set ['Appreciation', 'Reflected', 'imagination']"
+              ]
+            }
+          }
+        ],
+        "stratified": {
+          "Core": {
+            "total_items": 28,
+            "consensus_4_of_5_count": 23,
+            "keep": 13,
+            "invert": 3,
+            "no_partner": 7,
+            "indeterminate": 0,
+            "no_consensus": 5,
+            "keep_invert_count": 16,
+            "keep_invert_rate_of_28": 0.571429,
+            "keep_invert_rate_of_consensus": 0.695652
+          },
+          "Boundary": {
+            "total_items": 12,
+            "consensus_4_of_5_count": 11,
+            "keep": 0,
+            "invert": 0,
+            "no_partner": 11,
+            "indeterminate": 0,
+            "no_consensus": 1,
+            "keep_invert_count": 0,
+            "exclusion_consensus_count": 11,
+            "exclusion_consensus_rate_of_12": 0.916667,
+            "false_inclusion_keep_invert_rate": 0.0
+          },
+          "core_vs_boundary_keep_invert_fisher_p": 0.0008987198282493709
+        },
+        "per_model_agreement_with_consensus_34": {
+          "claude-sonnet-4.6": {
+            "agree_count": 34,
+            "total_consensus": 34,
+            "rate": 1.0
+          },
+          "gpt-5.4-fast": {
+            "agree_count": 31,
+            "total_consensus": 34,
+            "rate": 0.911765
+          },
+          "gemini-2.5-flash": {
+            "agree_count": 34,
+            "total_consensus": 34,
+            "rate": 1.0
+          },
+          "mistral-medium-3.5": {
+            "agree_count": 34,
+            "total_consensus": 34,
+            "rate": 1.0
+          },
+          "llama-4-maverick": {
+            "agree_count": 24,
+            "total_consensus": 34,
+            "rate": 0.705882
+          }
+        },
+        "per_model_agreement_with_majority_40": {
+          "claude-sonnet-4.6": {
+            "agree_count": 37,
+            "total_items": 40,
+            "rate": 0.925
+          },
+          "gpt-5.4-fast": {
+            "agree_count": 34,
+            "total_items": 40,
+            "rate": 0.85
+          },
+          "gemini-2.5-flash": {
+            "agree_count": 38,
+            "total_items": 40,
+            "rate": 0.95
+          },
+          "mistral-medium-3.5": {
+            "agree_count": 39,
+            "total_items": 40,
+            "rate": 0.975
+          },
+          "llama-4-maverick": {
+            "agree_count": 26,
+            "total_items": 40,
+            "rate": 0.65
+          }
+        },
+        "layer_a": {
+          "evaluated_items": 16,
+          "per_item_passed": 13,
+          "per_item_pass_rate": 0.8125,
+          "joint_collisions_count": 5,
+          "passes_all": false,
+          "agreeing_voter_per_item_passes": 48,
+          "agreeing_voter_per_item_total": 75,
+          "collisions_by_layer": {
+            "A1_cross_item_one_to_many": 1,
+            "A1_invalid_target_token": 1,
+            "A2_formula_unknown_tokens": 2,
+            "A3_exponent_or_quotient_flip": 1
+          },
+          "failure_item_ids": [
+            "E001",
+            "E023",
+            "E027"
+          ],
+          "collisions": [
+            {
+              "item_id": "E001",
+              "layer": "A1_invalid_target_token",
+              "physical": "alpha",
+              "target": "imagination (angular) = imagination / Appreciation",
+              "unknowns": [
+                "angular"
+              ]
+            },
+            {
+              "item_id": "E001",
+              "layer": "A3_exponent_or_quotient_flip",
+              "physical_vars": [
+                "R"
+              ],
+              "target_slot": "Appreciation",
+              "equation_quot_signs": [
+                1
+              ],
+              "reflected_quot_signs": [
+                -1,
+                1
+              ],
+              "equation_overall_signs": [
+                1
+              ],
+              "reflected_overall_signs": [
+                -1,
+                1
+              ],
+              "equation_latex": "a_{\\text{CM}} = R \\alpha",
+              "reflected_formula": "imagination = Appreciation * (imagination / Appreciation)"
+            },
+            {
+              "item_id": "E023",
+              "layer": "A2_formula_unknown_tokens",
+              "reflected_formula": "Movement_AB = integral over path of Movement · d(Appreciation)",
+              "unknowns": [
+                "integral",
+                "over",
+                "path",
+                "of"
+              ]
+            },
+            {
+              "item_id": "E027",
+              "layer": "A2_formula_unknown_tokens",
+              "reflected_formula": "imagination_PS = imagination_PS' + imagination_S'S",
+              "unknowns": [
+                "imaginationS"
+              ]
+            },
+            {
+              "layer": "A1_cross_item_one_to_many",
+              "physical": "alpha",
+              "variants": {
+                "imagination (angular) = imagination / Appreciation": [
+                  "E001"
+                ],
+                "imagination": [
+                  "E002"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    "a0_vs_a3_1_comparison": {
+      "consensus_ruling_diff_count": 0,
+      "consensus_ruling_diffs": [],
+      "keep_invert_shared_ids": [
+        "E001",
+        "E002",
+        "E007",
+        "E011",
+        "E014",
+        "E016",
+        "E018",
+        "E021",
+        "E022",
+        "E023",
+        "E027",
+        "E028",
+        "E030",
+        "E037",
+        "E038",
+        "E039"
+      ],
+      "keep_invert_mcnemar": {
+        "n_paired": 40,
+        "n11_both_true": 16,
+        "n10_first_only": 0,
+        "n01_second_only": 0,
+        "n00_both_false": 24,
+        "p_value": 1.0
+      },
+      "keep_invert_fisher_p": 1.0,
+      "layer_a_per_item_shared_mcnemar": {
+        "n_paired": 16,
+        "n11_both_true": 12,
+        "n10_first_only": 0,
+        "n01_second_only": 1,
+        "n00_both_false": 3,
+        "p_value": 1.0
+      },
+      "layer_a_per_item_fisher_p": 1.0
+    }
+  },
+  "stage3_m3b": {
+    "arms": {
+      "A0": {
+        "evaluated_items": 16,
+        "uphold_count": 12,
+        "attack_count": 4,
+        "uphold_rate": 0.75,
+        "attack_rate": 0.25,
+        "attack_type_counts": {
+          "dictionary_mismatch": 1,
+          "formula_mismatch": 1,
+          "polarity_flip": 2
+        },
+        "attacked_items": [
+          {
+            "item_id": "E016",
+            "attack_type": "polarity_flip",
+            "critique": "The candidate classifies the Lorentz transformation as a cost-free perspective transform (ruling 'keep'), but the formula contains the gamma factor 1/sqrt(1 - v^2/c^2), which diverges as v approaches c and encodes the finite speed of light as a speed barrier; the full Lorentz transformation also encodes distance-induced loss of simultaneity. Under Rule R Step 4, this is a speed-barrier/separation cost, so the ruling should be 'invert' (with two_level false), not 'keep'.",
+            "counterexample_situation": "Two events that are simultaneous in one inertial frame (t1=t2) at separated positions x1≠x2 are not simultaneous in a frame moving relative to it, because t' = γ(t - vx/c^2); the -vx/c^2 term is a distance-induced loss of simultaneity. Alternatively, as v→c, the denominator sqrt(1 - v^2/c^2) approaches zero, showing a speed barrier rather than a cost-free perspective."
+          },
+          {
+            "item_id": "E021",
+            "attack_type": "formula_mismatch",
+            "critique": "The reflected_formula correctly preserves the leading minus sign, but translation_t omits it, verbally stating W = m g (y_B - y_A) instead of W = -m g (y_B - y_A).",
+            "counterexample_situation": "If y_B > y_A (object raised from A to B), the original work done by gravity is negative, while the translation_t without the minus sign would imply positive work."
+          },
+          {
+            "item_id": "E023",
+            "attack_type": "dictionary_mismatch",
+            "critique": "The candidate maps W_AB to 'conscious energy', but the Partner Lookup Table maps 'work' to 'Frequency × Vibration' and reserves 'conscious energy' for 'energy'. The reflected formula should therefore preserve W as Frequency × Vibration, e.g. Frequency × Vibration = ∫ Frequency · d(Vibration). The invert/two_level reading for work is otherwise consistent, but the variable map violates the table and conflates work with generic energy.",
+            "counterexample_situation": "A compressed spring has potential energy (conscious energy) before any work is done; work is the process of transferring energy, not the energy itself. Thus W_AB cannot be identified with conscious energy and must use the table's work partner Frequency × Vibration."
+          },
+          {
+            "item_id": "E039",
+            "attack_type": "polarity_flip",
+            "critique": "The variable mapping and algebraic shape are correct, but the ruling is wrong: normal force is a contact resistance barrier, so under Rule R Step 4(c) it should be classified as invert, not keep. Since N = mg is a pure contact/barrier relation rather than a productive definition like work or kinetic energy, two_level should remain false.",
+            "counterexample_situation": "A book resting on a table: the table's normal force is a contact barrier preventing the book from falling through. In the nonphysical mirror, that resistance should invert into receptive yielding, not be preserved as a keep relation."
+          }
+        ]
+      },
+      "A3-1": {
+        "evaluated_items": 16,
+        "uphold_count": 13,
+        "attack_count": 3,
+        "uphold_rate": 0.8125,
+        "attack_rate": 0.1875,
+        "attack_type_counts": {
+          "dictionary_mismatch": 1,
+          "formula_mismatch": 1,
+          "polarity_flip": 1
+        },
+        "attacked_items": [
+          {
+            "item_id": "E002",
+            "attack_type": "dictionary_mismatch",
+            "critique": "The candidate misuses the Partner Lookup Table for angular acceleration. The table maps angular acceleration alpha to 'imagination ÷ Appreciation', not to 'imagination (angular)'. Substituting correctly into a_t = r alpha gives imagination = Appreciation * (imagination ÷ Appreciation), preserving the algebraic shape. The candidate's reflected_formula 'imagination_tangential = Appreciation * imagination_angular' omits the required division by Appreciation, so it both uses a non-table partner and breaks the formula shape. The keep ruling and two_level=false are otherwise consistent for this kinematic definition.",
+            "counterexample_situation": "For a rotating body with radius r and angular acceleration alpha, the table-required substitution is a_t partner = Appreciation * (imagination ÷ Appreciation), which reduces to imagination. The candidate instead yields Appreciation * imagination_angular, predicting an extra Appreciation factor and omitting the inverse-Appreciation dependence from angular acceleration."
+          },
+          {
+            "item_id": "E023",
+            "attack_type": "formula_mismatch",
+            "critique": "The variable_map correctly maps W_AB to 'Movement × Appreciation', but the reflected_formula uses 'Movement_AB' on the left-hand side, dropping the Appreciation factor. This breaks the algebraic/dimensional shape: the integral of Movement · d(Appreciation) yields a product, not a bare Movement. The translation_t likewise says 'Total Movement' rather than the product. The formula should read 'Movement × Appreciation = ∫ Movement · d(Appreciation)' or equivalent.",
+            "counterexample_situation": "If Appreciation is doubled while Movement is fixed, the work integral doubles, but the candidate's LHS 'Movement_AB' does not carry the Appreciation factor and so cannot represent that scaling; it would conflate work with a pure movement quantity."
+          },
+          {
+            "item_id": "E039",
+            "attack_type": "polarity_flip",
+            "critique": "The variable mapping and algebraic shape are correct, but the condition reading is wrong. Normal force is a contact resistance barrier under Step 4(c), so the ruling should be \"invert\" with two_level=false, not \"keep\". The candidate treats a boundary-holding contact constraint as a cost-free constitutive relation.",
+            "counterexample_situation": "A book resting on a table: the table exerts a normal force that prevents the book from sinking through the surface. This is a contact resistance barrier, so in the nonphysical mirror it should invert into unresisting yielding rather than remain a keep relation."
+          }
+        ]
+      }
+    },
+    "a0_vs_a3_1_comparison": {
+      "shared_items_count": 16,
+      "fisher_uphold_p": 1.0,
+      "mcnemar_uphold": {
+        "n_paired": 16,
+        "n11_both_true": 11,
+        "n10_first_only": 1,
+        "n01_second_only": 2,
+        "n00_both_false": 2,
+        "p_value": 1.0
+      }
+    }
+  },
+  "stage4_m3c": {
+    "vertical_single": {
+      "arms": {
+        "A0": {
+          "total_items": 16,
+          "both_coherent_2_of_2_count": 3,
+          "both_coherent_2_of_2_rate": 0.1875,
+          "at_least_1_coherent_count": 7,
+          "at_least_1_coherent_rate": 0.4375,
+          "coherent_2_of_2_items": [
+            "E007",
+            "E018",
+            "E027"
+          ],
+          "cohens_kappa_verdict": 0.428571,
+          "per_judge": {
+            "claude-sonnet-4.6": {
+              "coherent_count": 6,
+              "incoherent_count": 10,
+              "coherent_rate": 0.375,
+              "coherent_ordinary_english_count": 7,
+              "matches_physical_law_structure_count": 7,
+              "axis_polarity_consistent_count": 7,
+              "nonsensical_or_cipher_like_count": 10,
+              "coherent_ordinary_english_rate": 0.4375,
+              "matches_physical_law_structure_rate": 0.4375,
+              "axis_polarity_consistent_rate": 0.4375,
+              "nonsensical_or_cipher_like_rate": 0.625
+            },
+            "gpt-5.4-fast": {
+              "coherent_count": 4,
+              "incoherent_count": 12,
+              "coherent_rate": 0.25,
+              "coherent_ordinary_english_count": 14,
+              "matches_physical_law_structure_count": 4,
+              "axis_polarity_consistent_count": 10,
+              "nonsensical_or_cipher_like_count": 2,
+              "coherent_ordinary_english_rate": 0.875,
+              "matches_physical_law_structure_rate": 0.25,
+              "axis_polarity_consistent_rate": 0.625,
+              "nonsensical_or_cipher_like_rate": 0.125
+            }
+          },
+          "non_2_of_2_items": [
+            {
+              "item_id": "E001",
+              "eval_id": "EV_006",
+              "description": "Acceleration of center of mass of rolling object",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                }
+              }
+            },
+            {
+              "item_id": "E002",
+              "eval_id": "EV_017",
+              "description": "Tangential acceleration",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                }
+              }
+            },
+            {
+              "item_id": "E011",
+              "eval_id": "EV_022",
+              "description": "Acceleration of the center of mass",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "coherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": true,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E014",
+              "eval_id": "EV_002",
+              "description": "Definition of weight, vector form",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E016",
+              "eval_id": "EV_016",
+              "description": "Inverse Lorentz transformation",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "coherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": true,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E021",
+              "eval_id": "EV_024",
+              "description": "Work done going from A to B by Earth's gravity, near its surface",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E022",
+              "eval_id": "EV_005",
+              "description": "Second Equilibrium Condition",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E023",
+              "eval_id": "EV_001",
+              "description": "Work done by a force acting along a path from A to B",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "coherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": true,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E028",
+              "eval_id": "EV_023",
+              "description": "Angular momentum of a rotating rigid body",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E030",
+              "eval_id": "EV_030",
+              "description": "Potential energy with respect to zero of potential energy at \\vec{r}_{0}",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "coherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": true,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E037",
+              "eval_id": "EV_025",
+              "description": "Magnitude of kinetic friction",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E038",
+              "eval_id": "EV_028",
+              "description": "Velocity of the center of mass",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": true,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E039",
+              "eval_id": "EV_008",
+              "description": "Normal force on an object resting on a horizontal surface, scalar form",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            }
+          ]
+        },
+        "A3-1": {
+          "total_items": 16,
+          "both_coherent_2_of_2_count": 2,
+          "both_coherent_2_of_2_rate": 0.125,
+          "at_least_1_coherent_count": 6,
+          "at_least_1_coherent_rate": 0.375,
+          "coherent_2_of_2_items": [
+            "E007",
+            "E027"
+          ],
+          "cohens_kappa_verdict": 0.346939,
+          "per_judge": {
+            "claude-sonnet-4.6": {
+              "coherent_count": 5,
+              "incoherent_count": 11,
+              "coherent_rate": 0.3125,
+              "coherent_ordinary_english_count": 7,
+              "matches_physical_law_structure_count": 6,
+              "axis_polarity_consistent_count": 7,
+              "nonsensical_or_cipher_like_count": 9,
+              "coherent_ordinary_english_rate": 0.4375,
+              "matches_physical_law_structure_rate": 0.375,
+              "axis_polarity_consistent_rate": 0.4375,
+              "nonsensical_or_cipher_like_rate": 0.5625
+            },
+            "gpt-5.4-fast": {
+              "coherent_count": 3,
+              "incoherent_count": 13,
+              "coherent_rate": 0.1875,
+              "coherent_ordinary_english_count": 12,
+              "matches_physical_law_structure_count": 3,
+              "axis_polarity_consistent_count": 6,
+              "nonsensical_or_cipher_like_count": 4,
+              "coherent_ordinary_english_rate": 0.75,
+              "matches_physical_law_structure_rate": 0.1875,
+              "axis_polarity_consistent_rate": 0.375,
+              "nonsensical_or_cipher_like_rate": 0.25
+            }
+          },
+          "non_2_of_2_items": [
+            {
+              "item_id": "E001",
+              "eval_id": "EV_019",
+              "description": "Acceleration of center of mass of rolling object",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E002",
+              "eval_id": "EV_014",
+              "description": "Tangential acceleration",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E011",
+              "eval_id": "EV_013",
+              "description": "Acceleration of the center of mass",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                }
+              }
+            },
+            {
+              "item_id": "E014",
+              "eval_id": "EV_007",
+              "description": "Definition of weight, vector form",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E016",
+              "eval_id": "EV_026",
+              "description": "Inverse Lorentz transformation",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "coherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": true,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E018",
+              "eval_id": "EV_020",
+              "description": "Average velocity (for constant acceleration)",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E021",
+              "eval_id": "EV_018",
+              "description": "Work done going from A to B by Earth's gravity, near its surface",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                }
+              }
+            },
+            {
+              "item_id": "E022",
+              "eval_id": "EV_011",
+              "description": "Second Equilibrium Condition",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "coherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": true,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                }
+              }
+            },
+            {
+              "item_id": "E023",
+              "eval_id": "EV_027",
+              "description": "Work done by a force acting along a path from A to B",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "coherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": true,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E028",
+              "eval_id": "EV_003",
+              "description": "Angular momentum of a rotating rigid body",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E030",
+              "eval_id": "EV_012",
+              "description": "Potential energy with respect to zero of potential energy at \\vec{r}_{0}",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "coherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": true,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E037",
+              "eval_id": "EV_004",
+              "description": "Magnitude of kinetic friction",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": false
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E038",
+              "eval_id": "EV_010",
+              "description": "Velocity of the center of mass",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": true,
+                  "axis_polarity_consistent": true,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": true,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": false
+                }
+              }
+            },
+            {
+              "item_id": "E039",
+              "eval_id": "EV_029",
+              "description": "Normal force on an object resting on a horizontal surface, scalar form",
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "incoherent",
+                  "coherent_ordinary_english": false,
+                  "matches_physical_law_structure": false,
+                  "axis_polarity_consistent": false,
+                  "nonsensical_or_cipher_like": true
+                }
+              }
+            }
+          ]
+        }
+      },
+      "a0_vs_a3_1_comparison": {
+        "shared_items_count": 16,
+        "fisher_2_of_2_coherent_p": 1.0,
+        "mcnemar_2_of_2_coherent": {
+          "n_paired": 16,
+          "n11_both_true": 2,
+          "n10_first_only": 1,
+          "n01_second_only": 0,
+          "n00_both_false": 13,
+          "p_value": 1.0
+        },
+        "per_judge_comparison": {
+          "claude-sonnet-4.6": {
+            "fisher_p": 0.9999999999999999,
+            "mcnemar": {
+              "n_paired": 16,
+              "n11_both_true": 3,
+              "n10_first_only": 3,
+              "n01_second_only": 2,
+              "n00_both_false": 8,
+              "p_value": 1.0
+            }
+          },
+          "gpt-5.4-fast": {
+            "fisher_p": 1.0,
+            "mcnemar": {
+              "n_paired": 16,
+              "n11_both_true": 2,
+              "n10_first_only": 2,
+              "n01_second_only": 1,
+              "n00_both_false": 11,
+              "p_value": 1.0
+            }
+          }
+        }
+      }
+    },
+    "horizontal_pairs": {
+      "arms": {
+        "A0": {
+          "total_pairs": 81,
+          "any_1_of_2_contradiction_count": 2,
+          "any_1_of_2_contradiction_rate": 0.024691,
+          "two_of_2_contradiction_count": 0,
+          "rule1_same_situation_count": 0,
+          "confirmed_rule1_collision_count": 0,
+          "cohens_kappa_verdict": 0.0,
+          "per_judge": {
+            "claude-sonnet-4.6": {
+              "compatible_count": 79,
+              "contradiction_count": 2,
+              "contradiction_rate": 0.024691
+            },
+            "gpt-5.4-fast": {
+              "compatible_count": 81,
+              "contradiction_count": 0,
+              "contradiction_rate": 0.0
+            }
+          },
+          "flagged_any_contradiction_pairs": [
+            {
+              "pair_id": "PR_4438CB88",
+              "item_i": "E007",
+              "item_j": "E030",
+              "shared_terms": [
+                "Vibration"
+              ],
+              "two_of_two_contradiction": false,
+              "rule1_adjudication": null,
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "contradiction",
+                  "compatible": false,
+                  "reason": "In statement A, 'Vibration' is the quantity being differenced (the thing measured), while in statement B, 'Vibration' serves as an index or reference point at which energy is evaluated. These are different grammatical and conceptual roles that cannot be reconciled under a single ordinary-English sense."
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "compatible",
+                  "compatible": true,
+                  "reason": "Both statements can use 'Vibration' in the same ordinary sense of a reference state or level at which another quantity is evaluated. One speaks of change between initial and final Vibration, and the other of a difference between values taken at one Vibration and a reference Vibration. That is coherent without contradiction."
+                }
+              }
+            },
+            {
+              "pair_id": "PR_9947B9F1",
+              "item_i": "E023",
+              "item_j": "E028",
+              "shared_terms": [
+                "Vibration"
+              ],
+              "two_of_two_contradiction": false,
+              "rule1_adjudication": null,
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "contradiction",
+                  "compatible": false,
+                  "reason": "In statement A, 'Vibration' functions as a continuous experiential or temporal increment along a path (a qualitative unfolding). In statement B, 'Vibration' appears as a discrete algebraic quantity that can be squared and divided, implying a concrete numerical magnitude. These two senses — qualitative incremental unfolding vs. a squarable numeric variable — cannot be reconciled under a single ordinary-English meaning without contradiction."
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "compatible",
+                  "compatible": true,
+                  "reason": "Both statements can use 'Vibration' in a single coherent sense such as oscillation or shaking-like quantity. The first places vibration along a path in a more figurative sentence, and the second treats it algebraically, but there is no direct contradiction or category clash that prevents one shared ordinary sense."
+                }
+              }
+            }
+          ]
+        },
+        "A3-1": {
+          "total_pairs": 81,
+          "any_1_of_2_contradiction_count": 3,
+          "any_1_of_2_contradiction_rate": 0.037037,
+          "two_of_2_contradiction_count": 0,
+          "rule1_same_situation_count": 0,
+          "confirmed_rule1_collision_count": 0,
+          "cohens_kappa_verdict": 0.0,
+          "per_judge": {
+            "claude-sonnet-4.6": {
+              "compatible_count": 81,
+              "contradiction_count": 0,
+              "contradiction_rate": 0.0
+            },
+            "gpt-5.4-fast": {
+              "compatible_count": 78,
+              "contradiction_count": 3,
+              "contradiction_rate": 0.037037
+            }
+          },
+          "flagged_any_contradiction_pairs": [
+            {
+              "pair_id": "PR_20E84B63",
+              "item_i": "E014",
+              "item_j": "E027",
+              "shared_terms": [
+                "Reflected"
+              ],
+              "two_of_two_contradiction": false,
+              "rule1_adjudication": null,
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "compatible",
+                  "compatible": true,
+                  "reason": "In both statements 'Reflected' functions as a measurable quantity or entity label. Statement A treats it as a multiplicative factor; Statement B treats it as a domain over which imagination is summed. Both uses are consistent with 'Reflected' being a concrete countable or measurable thing, with no contradiction in ordinary English."
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "contradiction",
+                  "compatible": false,
+                  "reason": "The shared word 'Reflected' cannot keep one ordinary-English sense across both statements. In the first, it behaves like a numerical factor multiplied by 'Tune.' In the second, it behaves like a region, interval, or object that can contain imagination and stand in a relation 'between the two Reflected.' Those are different kinds of thing in ordinary English."
+                }
+              }
+            },
+            {
+              "pair_id": "PR_E16E6B26",
+              "item_i": "E021",
+              "item_j": "E027",
+              "shared_terms": [
+                "Reflected"
+              ],
+              "two_of_two_contradiction": false,
+              "rule1_adjudication": null,
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "compatible",
+                  "compatible": true,
+                  "reason": "'Reflected' appears in both statements as a noun referring to some entity or interval. In Statement A it is a multiplier in a formula; in Statement B it refers to two such entities whose imagination can be composed. Both uses treat 'Reflected' as a concrete noun of the same kind, which is consistent in ordinary English."
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "contradiction",
+                  "compatible": false,
+                  "reason": "The shared word 'Reflected' does not keep a single coherent ordinary-English sense. In the first statement it behaves like a multiplicative quantity or factor. In the second it names something like a boundary, interval marker, or object between which imagination is measured. Those are different categories."
+                }
+              }
+            },
+            {
+              "pair_id": "PR_F0D052C0",
+              "item_i": "E038",
+              "item_j": "E039",
+              "shared_terms": [
+                "Reflected"
+              ],
+              "two_of_two_contradiction": false,
+              "rule1_adjudication": null,
+              "judge_verdicts": {
+                "claude-sonnet-4.6": {
+                  "verdict": "compatible",
+                  "compatible": true,
+                  "reason": "'Reflected' in Statement A is used as a count or aggregate (total Reflected, individual Reflected), and in Statement B as a multiplicative factor. Both treat 'Reflected' as a numerical quantity or entity count, which is coherent in ordinary English without contradiction."
+                },
+                "gpt-5.4-fast": {
+                  "verdict": "contradiction",
+                  "compatible": false,
+                  "reason": "The shared word 'Reflected' shifts ordinary-English role between the statements. In the first, 'individual Reflected' and 'total Reflected' make it sound like countable entities or a total collection. In the second, 'Reflected multiplied by Tune' makes it sound like a scalar numerical factor. A single concrete sense does not hold cleanly across both."
+                }
+              }
+            }
+          ]
+        }
+      },
+      "a0_vs_a3_1_comparison": {
+        "fisher_confirmed_rule1_p": 1.0,
+        "fisher_any_1_of_2_contradiction_p": 1.0
+      }
+    }
+  },
+  "stage5_m4": {
+    "m4_item_core": {
+      "n_items": 16,
+      "n_raters": 4,
+      "n_ratings": 64,
+      "item_ids": [
+        "E001",
+        "E002",
+        "E007",
+        "E011",
+        "E014",
+        "E016",
+        "E018",
+        "E021",
+        "E022",
+        "E023",
+        "E027",
+        "E028",
+        "E030",
+        "E037",
+        "E038",
+        "E039"
+      ],
+      "variants": {
+        "T_A0": {
+          "mean_score": 4.515625,
+          "sd_score": 0.712523,
+          "median_score": 5.0,
+          "min_score": 2,
+          "max_score": 5,
+          "best_rank_1_count": 41,
+          "best_rank_1_share": 0.640625,
+          "best_rank_1_binom_gt_0_25_p": 4.950111163915767e-11,
+          "best_rank_1_binom_two_sided_0_25_p": 4.950111163915767e-11,
+          "worst_rank_4_count": 3,
+          "worst_rank_4_share": 0.046875,
+          "per_rater": {
+            "claude-sonnet-4.6": {
+              "mean_score": 4.5625,
+              "best_count": 15,
+              "worst_count": 0
+            },
+            "gpt-5.4-fast": {
+              "mean_score": 4.8125,
+              "best_count": 12,
+              "worst_count": 1
+            },
+            "gemini-2.5-flash": {
+              "mean_score": 4.5625,
+              "best_count": 5,
+              "worst_count": 1
+            },
+            "llama-4-maverick": {
+              "mean_score": 4.125,
+              "best_count": 9,
+              "worst_count": 1
+            }
+          }
+        },
+        "T_A3": {
+          "mean_score": 3.71875,
+          "sd_score": 0.916667,
+          "median_score": 4.0,
+          "min_score": 2,
+          "max_score": 5,
+          "best_rank_1_count": 7,
+          "best_rank_1_share": 0.109375,
+          "best_rank_1_binom_gt_0_25_p": 0.9985483969208224,
+          "best_rank_1_binom_two_sided_0_25_p": 0.008646927263741406,
+          "worst_rank_4_count": 8,
+          "worst_rank_4_share": 0.125,
+          "per_rater": {
+            "claude-sonnet-4.6": {
+              "mean_score": 3.1875,
+              "best_count": 0,
+              "worst_count": 3
+            },
+            "gpt-5.4-fast": {
+              "mean_score": 3.8125,
+              "best_count": 0,
+              "worst_count": 2
+            },
+            "gemini-2.5-flash": {
+              "mean_score": 4.6875,
+              "best_count": 6,
+              "worst_count": 1
+            },
+            "llama-4-maverick": {
+              "mean_score": 3.1875,
+              "best_count": 1,
+              "worst_count": 2
+            }
+          }
+        },
+        "S_syn": {
+          "mean_score": 4.296875,
+          "sd_score": 0.705527,
+          "median_score": 4.0,
+          "min_score": 3,
+          "max_score": 5,
+          "best_rank_1_count": 13,
+          "best_rank_1_share": 0.203125,
+          "best_rank_1_binom_gt_0_25_p": 0.8441554425830577,
+          "best_rank_1_binom_two_sided_0_25_p": 0.47075212706933256,
+          "worst_rank_4_count": 1,
+          "worst_rank_4_share": 0.015625,
+          "per_rater": {
+            "claude-sonnet-4.6": {
+              "mean_score": 3.875,
+              "best_count": 1,
+              "worst_count": 0
+            },
+            "gpt-5.4-fast": {
+              "mean_score": 4.625,
+              "best_count": 4,
+              "worst_count": 0
+            },
+            "gemini-2.5-flash": {
+              "mean_score": 4.75,
+              "best_count": 3,
+              "worst_count": 1
+            },
+            "llama-4-maverick": {
+              "mean_score": 3.9375,
+              "best_count": 5,
+              "worst_count": 0
+            }
+          }
+        },
+        "D_A0": {
+          "mean_score": 2.296875,
+          "sd_score": 1.150289,
+          "median_score": 2.0,
+          "min_score": 1,
+          "max_score": 5,
+          "best_rank_1_count": 3,
+          "best_rank_1_share": 0.046875,
+          "best_rank_1_binom_gt_0_25_p": 0.9999975143267378,
+          "best_rank_1_binom_two_sided_0_25_p": 3.262250079568797e-05,
+          "worst_rank_4_count": 52,
+          "worst_rank_4_share": 0.8125,
+          "per_rater": {
+            "claude-sonnet-4.6": {
+              "mean_score": 2.0625,
+              "best_count": 0,
+              "worst_count": 13
+            },
+            "gpt-5.4-fast": {
+              "mean_score": 2.5,
+              "best_count": 0,
+              "worst_count": 13
+            },
+            "gemini-2.5-flash": {
+              "mean_score": 2.25,
+              "best_count": 2,
+              "worst_count": 13
+            },
+            "llama-4-maverick": {
+              "mean_score": 2.375,
+              "best_count": 1,
+              "worst_count": 13
+            }
+          }
+        }
+      },
+      "inter_rater_agreement": {
+        "fleiss_kappa_best_variant": 0.063985,
+        "fleiss_kappa_worst_variant": 0.320182,
+        "fleiss_kappa_scores_by_variant": {
+          "T_A0": 0.125194,
+          "T_A3": -0.133144,
+          "S_syn": -0.091394,
+          "D_A0": -0.011987
+        }
+      },
+      "paired_comparisons_item_level": {
+        "T_A0_minus_T_A3": {
+          "sign_test": {
+            "wins": 16,
+            "losses": 0,
+            "ties": 0,
+            "n_non_tied": 16,
+            "p_value": 3.0517578125e-05
+          },
+          "paired_permutation_test": {
+            "n_items": 16,
+            "n_nonzero": 16,
+            "mean_diff": 0.796875,
+            "method": "exact_sign_flip",
+            "p_value": 3.0517578125e-05
+          }
+        },
+        "T_A0_minus_S_syn": {
+          "sign_test": {
+            "wins": 11,
+            "losses": 5,
+            "ties": 0,
+            "n_non_tied": 16,
+            "p_value": 0.210113525390625
+          },
+          "paired_permutation_test": {
+            "n_items": 16,
+            "n_nonzero": 16,
+            "mean_diff": 0.21875,
+            "method": "exact_sign_flip",
+            "p_value": 0.245269775390625
+          }
+        },
+        "T_A0_minus_D_A0": {
+          "sign_test": {
+            "wins": 15,
+            "losses": 1,
+            "ties": 0,
+            "n_non_tied": 16,
+            "p_value": 0.000518798828125
+          },
+          "paired_permutation_test": {
+            "n_items": 16,
+            "n_nonzero": 16,
+            "mean_diff": 2.21875,
+            "method": "exact_sign_flip",
+            "p_value": 6.103515625e-05
+          }
+        },
+        "S_syn_minus_T_A3": {
+          "sign_test": {
+            "wins": 13,
+            "losses": 0,
+            "ties": 3,
+            "n_non_tied": 13,
+            "p_value": 0.000244140625
+          },
+          "paired_permutation_test": {
+            "n_items": 16,
+            "n_nonzero": 13,
+            "mean_diff": 0.578125,
+            "method": "exact_sign_flip",
+            "p_value": 0.000244140625
+          }
+        },
+        "S_syn_minus_D_A0": {
+          "sign_test": {
+            "wins": 15,
+            "losses": 1,
+            "ties": 0,
+            "n_non_tied": 16,
+            "p_value": 0.000518798828125
+          },
+          "paired_permutation_test": {
+            "n_items": 16,
+            "n_nonzero": 16,
+            "mean_diff": 2.0,
+            "method": "exact_sign_flip",
+            "p_value": 6.103515625e-05
+          }
+        },
+        "T_A3_minus_D_A0": {
+          "sign_test": {
+            "wins": 14,
+            "losses": 1,
+            "ties": 1,
+            "n_non_tied": 15,
+            "p_value": 0.0009765625
+          },
+          "paired_permutation_test": {
+            "n_items": 16,
+            "n_nonzero": 15,
+            "mean_diff": 1.421875,
+            "method": "exact_sign_flip",
+            "p_value": 0.0003662109375
+          }
+        }
+      },
+      "paired_comparisons_rating_level": {
+        "T_A0_minus_T_A3": {
+          "sign_test": {
+            "wins": 39,
+            "losses": 3,
+            "ties": 22,
+            "n_non_tied": 42,
+            "p_value": 5.631591193377972e-09
+          },
+          "paired_permutation_test": {
+            "n_items": 64,
+            "n_nonzero": 42,
+            "mean_diff": 0.796875,
+            "method": "monte_carlo_100000_seed_20261115",
+            "p_value": 9.99990000099999e-06
+          }
+        },
+        "T_A0_minus_S_syn": {
+          "sign_test": {
+            "wins": 24,
+            "losses": 12,
+            "ties": 28,
+            "n_non_tied": 36,
+            "p_value": 0.06524533522315323
+          },
+          "paired_permutation_test": {
+            "n_items": 64,
+            "n_nonzero": 36,
+            "mean_diff": 0.21875,
+            "method": "monte_carlo_100000_seed_20261115",
+            "p_value": 0.0924390756092439
+          }
+        },
+        "T_A0_minus_D_A0": {
+          "sign_test": {
+            "wins": 55,
+            "losses": 4,
+            "ties": 5,
+            "n_non_tied": 59,
+            "p_value": 1.6979681549678105e-12
+          },
+          "paired_permutation_test": {
+            "n_items": 64,
+            "n_nonzero": 59,
+            "mean_diff": 2.21875,
+            "method": "monte_carlo_100000_seed_20261115",
+            "p_value": 9.99990000099999e-06
+          }
+        },
+        "S_syn_minus_T_A3": {
+          "sign_test": {
+            "wins": 29,
+            "losses": 1,
+            "ties": 34,
+            "n_non_tied": 30,
+            "p_value": 5.774199962615967e-08
+          },
+          "paired_permutation_test": {
+            "n_items": 64,
+            "n_nonzero": 30,
+            "mean_diff": 0.578125,
+            "method": "monte_carlo_100000_seed_20261115",
+            "p_value": 9.99990000099999e-06
+          }
+        },
+        "S_syn_minus_D_A0": {
+          "sign_test": {
+            "wins": 55,
+            "losses": 3,
+            "ties": 6,
+            "n_non_tied": 58,
+            "p_value": 2.2598589666245061e-13
+          },
+          "paired_permutation_test": {
+            "n_items": 64,
+            "n_nonzero": 58,
+            "mean_diff": 2.0,
+            "method": "monte_carlo_100000_seed_20261115",
+            "p_value": 9.99990000099999e-06
+          }
+        },
+        "T_A3_minus_D_A0": {
+          "sign_test": {
+            "wins": 48,
+            "losses": 5,
+            "ties": 11,
+            "n_non_tied": 53,
+            "p_value": 7.077378683106872e-10
+          },
+          "paired_permutation_test": {
+            "n_items": 64,
+            "n_nonzero": 53,
+            "mean_diff": 1.421875,
+            "method": "monte_carlo_100000_seed_20261115",
+            "p_value": 9.99990000099999e-06
+          }
+        }
+      }
+    },
+    "m4_item_controls": {
+      "combined": {
+        "n_items": 2,
+        "n_raters": 4,
+        "n_ratings": 8,
+        "item_ids": [
+          "R9",
+          "R10"
+        ],
+        "variants": {
+          "T_A0": {
+            "mean_score": 4.5,
+            "sd_score": 0.534522,
+            "median_score": 4.5,
+            "min_score": 4,
+            "max_score": 5,
+            "best_rank_1_count": 2,
+            "best_rank_1_share": 0.25,
+            "best_rank_1_binom_gt_0_25_p": 0.6329193115234375,
+            "best_rank_1_binom_two_sided_0_25_p": 1.0,
+            "worst_rank_4_count": 0,
+            "worst_rank_4_share": 0.0,
+            "per_rater": {
+              "claude-sonnet-4.6": {
+                "mean_score": 4.0,
+                "best_count": 0,
+                "worst_count": 0
+              },
+              "gpt-5.4-fast": {
+                "mean_score": 4.0,
+                "best_count": 0,
+                "worst_count": 0
+              },
+              "gemini-2.5-flash": {
+                "mean_score": 5.0,
+                "best_count": 0,
+                "worst_count": 0
+              },
+              "llama-4-maverick": {
+                "mean_score": 5.0,
+                "best_count": 2,
+                "worst_count": 0
+              }
+            }
+          },
+          "T_A3": {
+            "mean_score": 3.75,
+            "sd_score": 0.886405,
+            "median_score": 3.5,
+            "min_score": 3,
+            "max_score": 5,
+            "best_rank_1_count": 0,
+            "best_rank_1_share": 0.0,
+            "best_rank_1_binom_gt_0_25_p": 1.0,
+            "best_rank_1_binom_two_sided_0_25_p": 0.21392822265625,
+            "worst_rank_4_count": 0,
+            "worst_rank_4_share": 0.0,
+            "per_rater": {
+              "claude-sonnet-4.6": {
+                "mean_score": 3.0,
+                "best_count": 0,
+                "worst_count": 0
+              },
+              "gpt-5.4-fast": {
+                "mean_score": 3.0,
+                "best_count": 0,
+                "worst_count": 0
+              },
+              "gemini-2.5-flash": {
+                "mean_score": 5.0,
+                "best_count": 0,
+                "worst_count": 0
+              },
+              "llama-4-maverick": {
+                "mean_score": 4.0,
+                "best_count": 0,
+                "worst_count": 0
+              }
+            }
+          },
+          "S_syn": {
+            "mean_score": 4.875,
+            "sd_score": 0.353553,
+            "median_score": 5.0,
+            "min_score": 4,
+            "max_score": 5,
+            "best_rank_1_count": 6,
+            "best_rank_1_share": 0.75,
+            "best_rank_1_binom_gt_0_25_p": 0.0042266845703125,
+            "best_rank_1_binom_two_sided_0_25_p": 0.0042266845703125,
+            "worst_rank_4_count": 0,
+            "worst_rank_4_share": 0.0,
+            "per_rater": {
+              "claude-sonnet-4.6": {
+                "mean_score": 5.0,
+                "best_count": 2,
+                "worst_count": 0
+              },
+              "gpt-5.4-fast": {
+                "mean_score": 5.0,
+                "best_count": 2,
+                "worst_count": 0
+              },
+              "gemini-2.5-flash": {
+                "mean_score": 5.0,
+                "best_count": 2,
+                "worst_count": 0
+              },
+              "llama-4-maverick": {
+                "mean_score": 4.5,
+                "best_count": 0,
+                "worst_count": 0
+              }
+            }
+          },
+          "D_A0": {
+            "mean_score": 1.875,
+            "sd_score": 0.991031,
+            "median_score": 2.0,
+            "min_score": 1,
+            "max_score": 4,
+            "best_rank_1_count": 0,
+            "best_rank_1_share": 0.0,
+            "best_rank_1_binom_gt_0_25_p": 1.0,
+            "best_rank_1_binom_two_sided_0_25_p": 0.21392822265625,
+            "worst_rank_4_count": 8,
+            "worst_rank_4_share": 1.0,
+            "per_rater": {
+              "claude-sonnet-4.6": {
+                "mean_score": 1.0,
+                "best_count": 0,
+                "worst_count": 2
+              },
+              "gpt-5.4-fast": {
+                "mean_score": 2.0,
+                "best_count": 0,
+                "worst_count": 2
+              },
+              "gemini-2.5-flash": {
+                "mean_score": 2.5,
+                "best_count": 0,
+                "worst_count": 2
+              },
+              "llama-4-maverick": {
+                "mean_score": 2.0,
+                "best_count": 0,
+                "worst_count": 2
+              }
+            }
+          }
+        },
+        "inter_rater_agreement": {
+          "fleiss_kappa_best_variant": -0.333333,
+          "fleiss_kappa_worst_variant": 1.0,
+          "fleiss_kappa_scores_by_variant": {
+            "T_A0": -0.333333,
+            "T_A3": -0.333333,
+            "S_syn": -0.142857,
+            "D_A0": -0.263158
+          }
+        }
+      },
+      "by_item": {
+        "R9": {
+          "summary": {
+            "n_items": 1,
+            "n_raters": 4,
+            "n_ratings": 4,
+            "item_ids": [
+              "R9"
+            ],
+            "variants": {
+              "T_A0": {
+                "mean_score": 4.5,
+                "sd_score": 0.57735,
+                "median_score": 4.5,
+                "min_score": 4,
+                "max_score": 5,
+                "best_rank_1_count": 1,
+                "best_rank_1_share": 0.25,
+                "best_rank_1_binom_gt_0_25_p": 0.68359375,
+                "best_rank_1_binom_two_sided_0_25_p": 1.0,
+                "worst_rank_4_count": 0,
+                "worst_rank_4_share": 0.0,
+                "per_rater": {
+                  "claude-sonnet-4.6": {
+                    "mean_score": 4.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  },
+                  "gpt-5.4-fast": {
+                    "mean_score": 4.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  },
+                  "gemini-2.5-flash": {
+                    "mean_score": 5.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  },
+                  "llama-4-maverick": {
+                    "mean_score": 5.0,
+                    "best_count": 1,
+                    "worst_count": 0
+                  }
+                }
+              },
+              "T_A3": {
+                "mean_score": 3.75,
+                "sd_score": 0.957427,
+                "median_score": 3.5,
+                "min_score": 3,
+                "max_score": 5,
+                "best_rank_1_count": 0,
+                "best_rank_1_share": 0.0,
+                "best_rank_1_binom_gt_0_25_p": 1.0,
+                "best_rank_1_binom_two_sided_0_25_p": 0.578125,
+                "worst_rank_4_count": 0,
+                "worst_rank_4_share": 0.0,
+                "per_rater": {
+                  "claude-sonnet-4.6": {
+                    "mean_score": 3.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  },
+                  "gpt-5.4-fast": {
+                    "mean_score": 3.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  },
+                  "gemini-2.5-flash": {
+                    "mean_score": 5.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  },
+                  "llama-4-maverick": {
+                    "mean_score": 4.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  }
+                }
+              },
+              "S_syn": {
+                "mean_score": 4.75,
+                "sd_score": 0.5,
+                "median_score": 5.0,
+                "min_score": 4,
+                "max_score": 5,
+                "best_rank_1_count": 3,
+                "best_rank_1_share": 0.75,
+                "best_rank_1_binom_gt_0_25_p": 0.05078125,
+                "best_rank_1_binom_two_sided_0_25_p": 0.05078125,
+                "worst_rank_4_count": 0,
+                "worst_rank_4_share": 0.0,
+                "per_rater": {
+                  "claude-sonnet-4.6": {
+                    "mean_score": 5.0,
+                    "best_count": 1,
+                    "worst_count": 0
+                  },
+                  "gpt-5.4-fast": {
+                    "mean_score": 5.0,
+                    "best_count": 1,
+                    "worst_count": 0
+                  },
+                  "gemini-2.5-flash": {
+                    "mean_score": 5.0,
+                    "best_count": 1,
+                    "worst_count": 0
+                  },
+                  "llama-4-maverick": {
+                    "mean_score": 4.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  }
+                }
+              },
+              "D_A0": {
+                "mean_score": 1.5,
+                "sd_score": 0.57735,
+                "median_score": 1.5,
+                "min_score": 1,
+                "max_score": 2,
+                "best_rank_1_count": 0,
+                "best_rank_1_share": 0.0,
+                "best_rank_1_binom_gt_0_25_p": 1.0,
+                "best_rank_1_binom_two_sided_0_25_p": 0.578125,
+                "worst_rank_4_count": 4,
+                "worst_rank_4_share": 1.0,
+                "per_rater": {
+                  "claude-sonnet-4.6": {
+                    "mean_score": 1.0,
+                    "best_count": 0,
+                    "worst_count": 1
+                  },
+                  "gpt-5.4-fast": {
+                    "mean_score": 2.0,
+                    "best_count": 0,
+                    "worst_count": 1
+                  },
+                  "gemini-2.5-flash": {
+                    "mean_score": 1.0,
+                    "best_count": 0,
+                    "worst_count": 1
+                  },
+                  "llama-4-maverick": {
+                    "mean_score": 2.0,
+                    "best_count": 0,
+                    "worst_count": 1
+                  }
+                }
+              }
+            },
+            "inter_rater_agreement": {
+              "fleiss_kappa_best_variant": -0.333333,
+              "fleiss_kappa_worst_variant": 1.0,
+              "fleiss_kappa_scores_by_variant": {
+                "T_A0": -0.333333,
+                "T_A3": -0.333333,
+                "S_syn": -0.333333,
+                "D_A0": -0.333333
+              }
+            }
+          },
+          "per_rater_detail": {
+            "claude-sonnet-4.6": {
+              "scores_by_variant": {
+                "T_A0": 4,
+                "T_A3": 3,
+                "D_A0": 1,
+                "S_syn": 5
+              },
+              "best_variant": "S_syn",
+              "worst_variant": "D_A0"
+            },
+            "gpt-5.4-fast": {
+              "scores_by_variant": {
+                "T_A0": 4,
+                "T_A3": 3,
+                "D_A0": 2,
+                "S_syn": 5
+              },
+              "best_variant": "S_syn",
+              "worst_variant": "D_A0"
+            },
+            "gemini-2.5-flash": {
+              "scores_by_variant": {
+                "T_A0": 5,
+                "T_A3": 5,
+                "D_A0": 1,
+                "S_syn": 5
+              },
+              "best_variant": "S_syn",
+              "worst_variant": "D_A0"
+            },
+            "llama-4-maverick": {
+              "scores_by_variant": {
+                "T_A0": 5,
+                "T_A3": 4,
+                "D_A0": 2,
+                "S_syn": 4
+              },
+              "best_variant": "T_A0",
+              "worst_variant": "D_A0"
+            }
+          }
+        },
+        "R10": {
+          "summary": {
+            "n_items": 1,
+            "n_raters": 4,
+            "n_ratings": 4,
+            "item_ids": [
+              "R10"
+            ],
+            "variants": {
+              "T_A0": {
+                "mean_score": 4.5,
+                "sd_score": 0.57735,
+                "median_score": 4.5,
+                "min_score": 4,
+                "max_score": 5,
+                "best_rank_1_count": 1,
+                "best_rank_1_share": 0.25,
+                "best_rank_1_binom_gt_0_25_p": 0.68359375,
+                "best_rank_1_binom_two_sided_0_25_p": 1.0,
+                "worst_rank_4_count": 0,
+                "worst_rank_4_share": 0.0,
+                "per_rater": {
+                  "claude-sonnet-4.6": {
+                    "mean_score": 4.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  },
+                  "gpt-5.4-fast": {
+                    "mean_score": 4.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  },
+                  "gemini-2.5-flash": {
+                    "mean_score": 5.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  },
+                  "llama-4-maverick": {
+                    "mean_score": 5.0,
+                    "best_count": 1,
+                    "worst_count": 0
+                  }
+                }
+              },
+              "T_A3": {
+                "mean_score": 3.75,
+                "sd_score": 0.957427,
+                "median_score": 3.5,
+                "min_score": 3,
+                "max_score": 5,
+                "best_rank_1_count": 0,
+                "best_rank_1_share": 0.0,
+                "best_rank_1_binom_gt_0_25_p": 1.0,
+                "best_rank_1_binom_two_sided_0_25_p": 0.578125,
+                "worst_rank_4_count": 0,
+                "worst_rank_4_share": 0.0,
+                "per_rater": {
+                  "claude-sonnet-4.6": {
+                    "mean_score": 3.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  },
+                  "gpt-5.4-fast": {
+                    "mean_score": 3.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  },
+                  "gemini-2.5-flash": {
+                    "mean_score": 5.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  },
+                  "llama-4-maverick": {
+                    "mean_score": 4.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  }
+                }
+              },
+              "S_syn": {
+                "mean_score": 5.0,
+                "sd_score": 0.0,
+                "median_score": 5.0,
+                "min_score": 5,
+                "max_score": 5,
+                "best_rank_1_count": 3,
+                "best_rank_1_share": 0.75,
+                "best_rank_1_binom_gt_0_25_p": 0.05078125,
+                "best_rank_1_binom_two_sided_0_25_p": 0.05078125,
+                "worst_rank_4_count": 0,
+                "worst_rank_4_share": 0.0,
+                "per_rater": {
+                  "claude-sonnet-4.6": {
+                    "mean_score": 5.0,
+                    "best_count": 1,
+                    "worst_count": 0
+                  },
+                  "gpt-5.4-fast": {
+                    "mean_score": 5.0,
+                    "best_count": 1,
+                    "worst_count": 0
+                  },
+                  "gemini-2.5-flash": {
+                    "mean_score": 5.0,
+                    "best_count": 1,
+                    "worst_count": 0
+                  },
+                  "llama-4-maverick": {
+                    "mean_score": 5.0,
+                    "best_count": 0,
+                    "worst_count": 0
+                  }
+                }
+              },
+              "D_A0": {
+                "mean_score": 2.25,
+                "sd_score": 1.258306,
+                "median_score": 2.0,
+                "min_score": 1,
+                "max_score": 4,
+                "best_rank_1_count": 0,
+                "best_rank_1_share": 0.0,
+                "best_rank_1_binom_gt_0_25_p": 1.0,
+                "best_rank_1_binom_two_sided_0_25_p": 0.578125,
+                "worst_rank_4_count": 4,
+                "worst_rank_4_share": 1.0,
+                "per_rater": {
+                  "claude-sonnet-4.6": {
+                    "mean_score": 1.0,
+                    "best_count": 0,
+                    "worst_count": 1
+                  },
+                  "gpt-5.4-fast": {
+                    "mean_score": 2.0,
+                    "best_count": 0,
+                    "worst_count": 1
+                  },
+                  "gemini-2.5-flash": {
+                    "mean_score": 4.0,
+                    "best_count": 0,
+                    "worst_count": 1
+                  },
+                  "llama-4-maverick": {
+                    "mean_score": 2.0,
+                    "best_count": 0,
+                    "worst_count": 1
+                  }
+                }
+              }
+            },
+            "inter_rater_agreement": {
+              "fleiss_kappa_best_variant": -0.333333,
+              "fleiss_kappa_worst_variant": 1.0,
+              "fleiss_kappa_scores_by_variant": {
+                "T_A0": -0.333333,
+                "T_A3": -0.333333,
+                "S_syn": 1.0,
+                "D_A0": -0.333333
+              }
+            }
+          },
+          "per_rater_detail": {
+            "claude-sonnet-4.6": {
+              "scores_by_variant": {
+                "T_A3": 3,
+                "T_A0": 4,
+                "S_syn": 5,
+                "D_A0": 1
+              },
+              "best_variant": "S_syn",
+              "worst_variant": "D_A0"
+            },
+            "gpt-5.4-fast": {
+              "scores_by_variant": {
+                "T_A3": 3,
+                "T_A0": 4,
+                "S_syn": 5,
+                "D_A0": 2
+              },
+              "best_variant": "S_syn",
+              "worst_variant": "D_A0"
+            },
+            "gemini-2.5-flash": {
+              "scores_by_variant": {
+                "T_A3": 5,
+                "T_A0": 5,
+                "S_syn": 5,
+                "D_A0": 4
+              },
+              "best_variant": "S_syn",
+              "worst_variant": "D_A0"
+            },
+            "llama-4-maverick": {
+              "scores_by_variant": {
+                "T_A3": 4,
+                "T_A0": 5,
+                "S_syn": 5,
+                "D_A0": 2
+              },
+              "best_variant": "T_A0",
+              "worst_variant": "D_A0"
+            }
+          }
+        }
+      }
+    },
+    "m4_native_pair": {
+      "n_items": 16,
+      "n_raters": 4,
+      "n_ratings": 64,
+      "item_ids": [
+        "E001",
+        "E002",
+        "E007",
+        "E011",
+        "E014",
+        "E016",
+        "E018",
+        "E021",
+        "E022",
+        "E023",
+        "E027",
+        "E028",
+        "E030",
+        "E037",
+        "E038",
+        "E039"
+      ],
+      "a0_mean_score": 3.296875,
+      "a0_sd_score": 1.049258,
+      "a3_1_mean_score": 3.21875,
+      "a3_1_sd_score": 1.030776,
+      "fleiss_kappa_preference": 0.233839,
+      "rating_level": {
+        "a0_wins": 31,
+        "a3_1_wins": 23,
+        "ties": 10,
+        "sign_test": {
+          "wins": 31,
+          "losses": 23,
+          "ties": 10,
+          "n_non_tied": 54,
+          "p_value": 0.34089094122009733
+        },
+        "paired_permutation_test": {
+          "n_items": 64,
+          "n_nonzero": 54,
+          "mean_diff": 0.078125,
+          "method": "monte_carlo_100000_seed_20261115",
+          "p_value": 0.7425525744742553
+        }
+      },
+      "item_level": {
+        "a0_mean_wins": 10,
+        "a3_1_mean_wins": 6,
+        "ties": 0,
+        "sign_test": {
+          "wins": 10,
+          "losses": 6,
+          "ties": 0,
+          "n_non_tied": 16,
+          "p_value": 0.454498291015625
+        },
+        "paired_permutation_test": {
+          "n_items": 16,
+          "n_nonzero": 16,
+          "mean_diff": 0.078125,
+          "method": "exact_sign_flip",
+          "p_value": 0.826690673828125
+        }
+      },
+      "per_rater": {
+        "claude-sonnet-4.6": {
+          "a0_wins": 5,
+          "a3_1_wins": 6,
+          "ties": 5,
+          "a0_mean_score": 2.9375,
+          "a3_1_mean_score": 3.125
+        },
+        "gpt-5.4-fast": {
+          "a0_wins": 10,
+          "a3_1_wins": 5,
+          "ties": 1,
+          "a0_mean_score": 3.25,
+          "a3_1_mean_score": 3.0
+        },
+        "gemini-2.5-flash": {
+          "a0_wins": 8,
+          "a3_1_wins": 6,
+          "ties": 2,
+          "a0_mean_score": 3.6875,
+          "a3_1_mean_score": 3.375
+        },
+        "llama-4-maverick": {
+          "a0_wins": 8,
+          "a3_1_wins": 6,
+          "ties": 2,
+          "a0_mean_score": 3.3125,
+          "a3_1_mean_score": 3.375
+        }
+      }
+    },
+    "m4_bundle": {
+      "n_permutations": 3,
+      "n_raters": 4,
+      "n_calls": 12,
+      "systems": {
+        "T_A0": {
+          "mean_score": 3.5,
+          "sd_score": 1.243163,
+          "median_score": 4.0,
+          "mean_rank": 1.666667,
+          "best_system_count": 5,
+          "best_system_share": 0.416667,
+          "worst_system_count": 0,
+          "worst_system_share": 0.0,
+          "per_rater_mean_score": {
+            "claude-sonnet-4.6": 3.666667,
+            "gpt-5.4-fast": 4.666667,
+            "gemini-2.5-flash": 3.0,
+            "llama-4-maverick": 2.666667
+          }
+        },
+        "T_A3": {
+          "mean_score": 2.583333,
+          "sd_score": 0.900337,
+          "median_score": 2.5,
+          "mean_rank": 2.916667,
+          "best_system_count": 1,
+          "best_system_share": 0.083333,
+          "worst_system_count": 4,
+          "worst_system_share": 0.333333,
+          "per_rater_mean_score": {
+            "claude-sonnet-4.6": 2.666667,
+            "gpt-5.4-fast": 2.666667,
+            "gemini-2.5-flash": 2.333333,
+            "llama-4-maverick": 2.666667
+          }
+        },
+        "S_syn": {
+          "mean_score": 3.333333,
+          "sd_score": 1.302678,
+          "median_score": 4.0,
+          "mean_rank": 2.083333,
+          "best_system_count": 4,
+          "best_system_share": 0.333333,
+          "worst_system_count": 0,
+          "worst_system_share": 0.0,
+          "per_rater_mean_score": {
+            "claude-sonnet-4.6": 4.0,
+            "gpt-5.4-fast": 4.333333,
+            "gemini-2.5-flash": 2.333333,
+            "llama-4-maverick": 2.666667
+          }
+        },
+        "D_A0": {
+          "mean_score": 2.166667,
+          "sd_score": 1.193416,
+          "median_score": 2.0,
+          "mean_rank": 3.333333,
+          "best_system_count": 2,
+          "best_system_share": 0.166667,
+          "worst_system_count": 8,
+          "worst_system_share": 0.666667,
+          "per_rater_mean_score": {
+            "claude-sonnet-4.6": 2.333333,
+            "gpt-5.4-fast": 2.333333,
+            "gemini-2.5-flash": 3.0,
+            "llama-4-maverick": 1.0
+          }
+        }
+      },
+      "fleiss_kappa_best_system_across_perms": -0.22449,
+      "order_stability_by_perm": {
+        "perm_0": {
+          "mean_scores": {
+            "T_A0": 3.25,
+            "T_A3": 2.25,
+            "S_syn": 3.25,
+            "D_A0": 2.25
+          },
+          "best_counts": {
+            "T_A0": 1,
+            "T_A3": 1,
+            "S_syn": 1,
+            "D_A0": 1
+          },
+          "worst_counts": {
+            "T_A0": 0,
+            "T_A3": 2,
+            "S_syn": 0,
+            "D_A0": 2
+          },
+          "per_rater": {
+            "claude-sonnet-4.6": {
+              "scores": {
+                "T_A3": 2,
+                "T_A0": 4,
+                "S_syn": 5,
+                "D_A0": 3
+              },
+              "best_system": "S_syn",
+              "worst_system": "T_A3"
+            },
+            "gpt-5.4-fast": {
+              "scores": {
+                "T_A3": 3,
+                "T_A0": 5,
+                "S_syn": 4,
+                "D_A0": 2
+              },
+              "best_system": "T_A0",
+              "worst_system": "D_A0"
+            },
+            "gemini-2.5-flash": {
+              "scores": {
+                "T_A3": 2,
+                "T_A0": 2,
+                "S_syn": 2,
+                "D_A0": 3
+              },
+              "best_system": "D_A0",
+              "worst_system": "T_A3"
+            },
+            "llama-4-maverick": {
+              "scores": {
+                "T_A3": 2,
+                "T_A0": 2,
+                "S_syn": 2,
+                "D_A0": 1
+              },
+              "best_system": "T_A3",
+              "worst_system": "D_A0"
+            }
+          }
+        },
+        "perm_1": {
+          "mean_scores": {
+            "T_A0": 3.25,
+            "T_A3": 2.0,
+            "S_syn": 2.5,
+            "D_A0": 2.75
+          },
+          "best_counts": {
+            "T_A0": 2,
+            "T_A3": 0,
+            "S_syn": 1,
+            "D_A0": 1
+          },
+          "worst_counts": {
+            "T_A0": 0,
+            "T_A3": 2,
+            "S_syn": 0,
+            "D_A0": 2
+          },
+          "per_rater": {
+            "claude-sonnet-4.6": {
+              "scores": {
+                "S_syn": 3,
+                "T_A0": 4,
+                "D_A0": 2,
+                "T_A3": 3
+              },
+              "best_system": "T_A0",
+              "worst_system": "D_A0"
+            },
+            "gpt-5.4-fast": {
+              "scores": {
+                "S_syn": 4,
+                "T_A0": 5,
+                "D_A0": 3,
+                "T_A3": 2
+              },
+              "best_system": "T_A0",
+              "worst_system": "T_A3"
+            },
+            "gemini-2.5-flash": {
+              "scores": {
+                "S_syn": 1,
+                "T_A0": 2,
+                "D_A0": 5,
+                "T_A3": 1
+              },
+              "best_system": "D_A0",
+              "worst_system": "T_A3"
+            },
+            "llama-4-maverick": {
+              "scores": {
+                "S_syn": 2,
+                "T_A0": 2,
+                "D_A0": 1,
+                "T_A3": 2
+              },
+              "best_system": "S_syn",
+              "worst_system": "D_A0"
+            }
+          }
+        },
+        "perm_2": {
+          "mean_scores": {
+            "T_A0": 4.0,
+            "T_A3": 3.5,
+            "S_syn": 4.25,
+            "D_A0": 1.5
+          },
+          "best_counts": {
+            "T_A0": 2,
+            "T_A3": 0,
+            "S_syn": 2,
+            "D_A0": 0
+          },
+          "worst_counts": {
+            "T_A0": 0,
+            "T_A3": 0,
+            "S_syn": 0,
+            "D_A0": 4
+          },
+          "per_rater": {
+            "claude-sonnet-4.6": {
+              "scores": {
+                "T_A0": 3,
+                "T_A3": 3,
+                "S_syn": 4,
+                "D_A0": 2
+              },
+              "best_system": "S_syn",
+              "worst_system": "D_A0"
+            },
+            "gpt-5.4-fast": {
+              "scores": {
+                "T_A0": 4,
+                "T_A3": 3,
+                "S_syn": 5,
+                "D_A0": 2
+              },
+              "best_system": "S_syn",
+              "worst_system": "D_A0"
+            },
+            "gemini-2.5-flash": {
+              "scores": {
+                "T_A0": 5,
+                "T_A3": 4,
+                "S_syn": 4,
+                "D_A0": 1
+              },
+              "best_system": "T_A0",
+              "worst_system": "D_A0"
+            },
+            "llama-4-maverick": {
+              "scores": {
+                "T_A0": 4,
+                "T_A3": 4,
+                "S_syn": 4,
+                "D_A0": 1
+              },
+              "best_system": "T_A0",
+              "worst_system": "D_A0"
+            }
+          }
+        }
+      },
+      "per_rater_totals": {
+        "claude-sonnet-4.6": {
+          "best_counts": {
+            "T_A0": 1,
+            "T_A3": 0,
+            "S_syn": 2,
+            "D_A0": 0
+          },
+          "worst_counts": {
+            "T_A0": 0,
+            "T_A3": 1,
+            "S_syn": 0,
+            "D_A0": 2
+          },
+          "mean_scores": {
+            "T_A0": 3.666667,
+            "T_A3": 2.666667,
+            "S_syn": 4.0,
+            "D_A0": 2.333333
+          }
+        },
+        "gpt-5.4-fast": {
+          "best_counts": {
+            "T_A0": 2,
+            "T_A3": 0,
+            "S_syn": 1,
+            "D_A0": 0
+          },
+          "worst_counts": {
+            "T_A0": 0,
+            "T_A3": 1,
+            "S_syn": 0,
+            "D_A0": 2
+          },
+          "mean_scores": {
+            "T_A0": 4.666667,
+            "T_A3": 2.666667,
+            "S_syn": 4.333333,
+            "D_A0": 2.333333
+          }
+        },
+        "gemini-2.5-flash": {
+          "best_counts": {
+            "T_A0": 1,
+            "T_A3": 0,
+            "S_syn": 0,
+            "D_A0": 2
+          },
+          "worst_counts": {
+            "T_A0": 0,
+            "T_A3": 2,
+            "S_syn": 0,
+            "D_A0": 1
+          },
+          "mean_scores": {
+            "T_A0": 3.0,
+            "T_A3": 2.333333,
+            "S_syn": 2.333333,
+            "D_A0": 3.0
+          }
+        },
+        "llama-4-maverick": {
+          "best_counts": {
+            "T_A0": 1,
+            "T_A3": 1,
+            "S_syn": 1,
+            "D_A0": 0
+          },
+          "worst_counts": {
+            "T_A0": 0,
+            "T_A3": 0,
+            "S_syn": 0,
+            "D_A0": 3
+          },
+          "mean_scores": {
+            "T_A0": 2.666667,
+            "T_A3": 2.666667,
+            "S_syn": 2.666667,
+            "D_A0": 1.0
+          }
+        }
+      },
+      "paired_comparisons_call_level": {
+        "T_A0_minus_T_A3": {
+          "sign_test": {
+            "wins": 7,
+            "losses": 0,
+            "ties": 5,
+            "n_non_tied": 7,
+            "p_value": 0.015625
+          },
+          "paired_permutation_test": {
+            "n_items": 12,
+            "n_nonzero": 7,
+            "mean_diff": 0.9166666666666666,
+            "method": "exact_sign_flip",
+            "p_value": 0.015625
+          }
+        },
+        "T_A0_minus_S_syn": {
+          "sign_test": {
+            "wins": 5,
+            "losses": 3,
+            "ties": 4,
+            "n_non_tied": 8,
+            "p_value": 0.7265625
+          },
+          "paired_permutation_test": {
+            "n_items": 12,
+            "n_nonzero": 8,
+            "mean_diff": 0.16666666666666666,
+            "method": "exact_sign_flip",
+            "p_value": 0.7265625
+          }
+        },
+        "T_A0_minus_D_A0": {
+          "sign_test": {
+            "wins": 10,
+            "losses": 2,
+            "ties": 0,
+            "n_non_tied": 12,
+            "p_value": 0.03857421875
+          },
+          "paired_permutation_test": {
+            "n_items": 12,
+            "n_nonzero": 12,
+            "mean_diff": 1.3333333333333333,
+            "method": "exact_sign_flip",
+            "p_value": 0.04931640625
+          }
+        }
+      },
+      "paired_comparisons_rater_level": {
+        "T_A0_minus_T_A3": {
+          "sign_test": {
+            "wins": 3,
+            "losses": 0,
+            "ties": 1,
+            "n_non_tied": 3,
+            "p_value": 0.25
+          },
+          "paired_permutation_test": {
+            "n_items": 4,
+            "n_nonzero": 3,
+            "mean_diff": 0.9166666666666667,
+            "method": "exact_sign_flip",
+            "p_value": 0.25
+          }
+        },
+        "T_A0_minus_S_syn": {
+          "sign_test": {
+            "wins": 2,
+            "losses": 1,
+            "ties": 1,
+            "n_non_tied": 3,
+            "p_value": 1.0
+          },
+          "paired_permutation_test": {
+            "n_items": 4,
+            "n_nonzero": 3,
+            "mean_diff": 0.16666666666666674,
+            "method": "exact_sign_flip",
+            "p_value": 0.75
+          }
+        },
+        "T_A0_minus_D_A0": {
+          "sign_test": {
+            "wins": 3,
+            "losses": 0,
+            "ties": 1,
+            "n_non_tied": 3,
+            "p_value": 0.25
+          },
+          "paired_permutation_test": {
+            "n_items": 4,
+            "n_nonzero": 3,
+            "mean_diff": 1.3333333333333333,
+            "method": "exact_sign_flip",
+            "p_value": 0.25
+          }
+        }
+      }
+    }
+  },
+  "stage6_m5": {
+    "total_slots": 12,
+    "models_per_slot": 5,
+    "total_proposals": 60,
+    "exact_a0_primary_matches": 4,
+    "exact_a0_primary_match_rate": 0.066667,
+    "exact_a0_any_candidate_matches": 6,
+    "exact_a0_any_candidate_match_rate": 0.1,
+    "exact_s_syn_primary_matches": 2,
+    "exact_s_syn_primary_match_rate": 0.033333,
+    "mean_modal_agreement_share": 0.383333,
+    "slots_with_exact_a0_primary_match": [
+      "damping",
+      "gravity"
+    ],
+    "exact_primary_hits": [
+      {
+        "slot": "gravity",
+        "model_id": "claude-sonnet-4.6",
+        "proposed": "attraction",
+        "book_a0_partner": "Attraction"
+      },
+      {
+        "slot": "damping",
+        "model_id": "gpt-5.4-fast",
+        "proposed": "resonance",
+        "book_a0_partner": "resonance"
+      },
+      {
+        "slot": "damping",
+        "model_id": "gemini-2.5-flash",
+        "proposed": "resonance",
+        "book_a0_partner": "resonance"
+      },
+      {
+        "slot": "damping",
+        "model_id": "mistral-medium-3.5",
+        "proposed": "resonance",
+        "book_a0_partner": "resonance"
+      }
+    ],
+    "exact_alternate_only_hits": [
+      {
+        "slot": "damping",
+        "model_id": "claude-sonnet-4.6",
+        "proposed": "amplification",
+        "book_a0_partner": "resonance"
+      },
+      {
+        "slot": "damping",
+        "model_id": "llama-4-maverick",
+        "proposed": "amplification",
+        "book_a0_partner": "resonance"
+      }
+    ],
+    "per_slot": {
+      "mass": {
+        "book_a0_partner": "Movement",
+        "s_syn_partner": "responsiveness",
+        "exact_a0_primary_matches": 0,
+        "exact_a0_any_candidate_matches": 0,
+        "exact_s_syn_primary_matches": 0,
+        "unique_primary_proposals_count": 4,
+        "modal_word": "lightness",
+        "modal_tied_candidates": [
+          "lightness"
+        ],
+        "modal_count": 2,
+        "modal_share": 0.4,
+        "proposals": {
+          "claude-sonnet-4.6": {
+            "proposed_counterpart": "openness",
+            "alternate_candidates": [
+              "receptivity",
+              "willingness"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gpt-5.4-fast": {
+            "proposed_counterpart": "lightness",
+            "alternate_candidates": [
+              "weightlessness",
+              "ease"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gemini-2.5-flash": {
+            "proposed_counterpart": "influence",
+            "alternate_candidates": [
+              "potency",
+              "significance"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "mistral-medium-3.5": {
+            "proposed_counterpart": "lightness",
+            "alternate_candidates": [
+              "weightlessness",
+              "freedom"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "llama-4-maverick": {
+            "proposed_counterpart": "significance",
+            "alternate_candidates": [
+              "importance",
+              "relevance"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          }
+        }
+      },
+      "density": {
+        "book_a0_partner": "Desire",
+        "s_syn_partner": "longing",
+        "exact_a0_primary_matches": 0,
+        "exact_a0_any_candidate_matches": 0,
+        "exact_s_syn_primary_matches": 0,
+        "unique_primary_proposals_count": 4,
+        "modal_word": "openness",
+        "modal_tied_candidates": [
+          "openness"
+        ],
+        "modal_count": 2,
+        "modal_share": 0.4,
+        "proposals": {
+          "claude-sonnet-4.6": {
+            "proposed_counterpart": "openness",
+            "alternate_candidates": [
+              "spaciousness",
+              "receptivity"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gpt-5.4-fast": {
+            "proposed_counterpart": "openness",
+            "alternate_candidates": [
+              "spaciousness",
+              "expansiveness"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gemini-2.5-flash": {
+            "proposed_counterpart": "pervasiveness",
+            "alternate_candidates": [
+              "diffusion",
+              "permeability"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "mistral-medium-3.5": {
+            "proposed_counterpart": "ubiquity",
+            "alternate_candidates": [
+              "permeation",
+              "omnipresence"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "llama-4-maverick": {
+            "proposed_counterpart": "intensity",
+            "alternate_candidates": [
+              "richness",
+              "saturation"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          }
+        }
+      },
+      "volume": {
+        "book_a0_partner": "Vibrance",
+        "s_syn_partner": "capacity",
+        "exact_a0_primary_matches": 0,
+        "exact_a0_any_candidate_matches": 0,
+        "exact_s_syn_primary_matches": 0,
+        "unique_primary_proposals_count": 3,
+        "modal_word": "scope",
+        "modal_tied_candidates": [
+          "scope",
+          "presence"
+        ],
+        "modal_count": 2,
+        "modal_share": 0.4,
+        "proposals": {
+          "claude-sonnet-4.6": {
+            "proposed_counterpart": "scope",
+            "alternate_candidates": [
+              "breadth",
+              "reach"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gpt-5.4-fast": {
+            "proposed_counterpart": "presence",
+            "alternate_candidates": [
+              "spaciousness",
+              "scope"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gemini-2.5-flash": {
+            "proposed_counterpart": "pervasiveness",
+            "alternate_candidates": [
+              "reach",
+              "scope"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "mistral-medium-3.5": {
+            "proposed_counterpart": "presence",
+            "alternate_candidates": [
+              "essence",
+              "wholeness"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "llama-4-maverick": {
+            "proposed_counterpart": "scope",
+            "alternate_candidates": [
+              "extent",
+              "breadth"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          }
+        }
+      },
+      "space": {
+        "book_a0_partner": "Vibration",
+        "s_syn_partner": "pitch",
+        "exact_a0_primary_matches": 0,
+        "exact_a0_any_candidate_matches": 0,
+        "exact_s_syn_primary_matches": 0,
+        "unique_primary_proposals_count": 4,
+        "modal_word": "unity",
+        "modal_tied_candidates": [
+          "unity"
+        ],
+        "modal_count": 2,
+        "modal_share": 0.4,
+        "proposals": {
+          "claude-sonnet-4.6": {
+            "proposed_counterpart": "awareness",
+            "alternate_candidates": [
+              "consciousness",
+              "presence"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gpt-5.4-fast": {
+            "proposed_counterpart": "unity",
+            "alternate_candidates": [
+              "oneness",
+              "wholeness"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gemini-2.5-flash": {
+            "proposed_counterpart": "consciousness",
+            "alternate_candidates": [
+              "unity",
+              "presence"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "mistral-medium-3.5": {
+            "proposed_counterpart": "mind",
+            "alternate_candidates": [
+              "thought",
+              "consciousness"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "llama-4-maverick": {
+            "proposed_counterpart": "unity",
+            "alternate_candidates": [
+              "oneness",
+              "field"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          }
+        }
+      },
+      "time": {
+        "book_a0_partner": "Expansion",
+        "s_syn_partner": "growth",
+        "exact_a0_primary_matches": 0,
+        "exact_a0_any_candidate_matches": 0,
+        "exact_s_syn_primary_matches": 0,
+        "unique_primary_proposals_count": 4,
+        "modal_word": "eternity",
+        "modal_tied_candidates": [
+          "eternity"
+        ],
+        "modal_count": 2,
+        "modal_share": 0.4,
+        "proposals": {
+          "claude-sonnet-4.6": {
+            "proposed_counterpart": "presence",
+            "alternate_candidates": [
+              "nowness",
+              "eternity"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gpt-5.4-fast": {
+            "proposed_counterpart": "timelessness",
+            "alternate_candidates": [
+              "the eternal present",
+              "simultaneity"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gemini-2.5-flash": {
+            "proposed_counterpart": "Simultaneity",
+            "alternate_candidates": [
+              "Eternity",
+              "Timelessness"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "mistral-medium-3.5": {
+            "proposed_counterpart": "eternity",
+            "alternate_candidates": [
+              "now",
+              "presence"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "llama-4-maverick": {
+            "proposed_counterpart": "eternity",
+            "alternate_candidates": [
+              "simultaneity",
+              "omnipresence"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          }
+        }
+      },
+      "velocity": {
+        "book_a0_partner": "rise per Expansion",
+        "s_syn_partner": "pace",
+        "exact_a0_primary_matches": 0,
+        "exact_a0_any_candidate_matches": 0,
+        "exact_s_syn_primary_matches": 0,
+        "unique_primary_proposals_count": 5,
+        "modal_word": "momentum of thought",
+        "modal_tied_candidates": [
+          "momentum of thought",
+          "immediacy",
+          "synchronicity",
+          "synchrony",
+          "rapidity"
+        ],
+        "modal_count": 1,
+        "modal_share": 0.2,
+        "proposals": {
+          "claude-sonnet-4.6": {
+            "proposed_counterpart": "momentum of thought",
+            "alternate_candidates": [
+              "flow of awareness",
+              "mental momentum"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gpt-5.4-fast": {
+            "proposed_counterpart": "immediacy",
+            "alternate_candidates": [
+              "instantaneity",
+              "effortless flow"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gemini-2.5-flash": {
+            "proposed_counterpart": "synchronicity",
+            "alternate_candidates": [
+              "resonance",
+              "attunement"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "mistral-medium-3.5": {
+            "proposed_counterpart": "synchrony",
+            "alternate_candidates": [
+              "instantaneity",
+              "ubiquity"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "llama-4-maverick": {
+            "proposed_counterpart": "rapidity",
+            "alternate_candidates": [
+              "swiftness",
+              "celerity"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          }
+        }
+      },
+      "acceleration": {
+        "book_a0_partner": "Appreciation",
+        "s_syn_partner": "gratitude",
+        "exact_a0_primary_matches": 0,
+        "exact_a0_any_candidate_matches": 0,
+        "exact_s_syn_primary_matches": 0,
+        "unique_primary_proposals_count": 5,
+        "modal_word": "insight",
+        "modal_tied_candidates": [
+          "insight",
+          "ease",
+          "instantaneous alignment",
+          "instant alignment",
+          "attunement"
+        ],
+        "modal_count": 1,
+        "modal_share": 0.2,
+        "proposals": {
+          "claude-sonnet-4.6": {
+            "proposed_counterpart": "insight",
+            "alternate_candidates": [
+              "awakening",
+              "realization"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gpt-5.4-fast": {
+            "proposed_counterpart": "ease",
+            "alternate_candidates": [
+              "effortlessness",
+              "flow"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gemini-2.5-flash": {
+            "proposed_counterpart": "Instantaneous Alignment",
+            "alternate_candidates": [
+              "Synchronous Unfolding",
+              "Effortless Coherence"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "mistral-medium-3.5": {
+            "proposed_counterpart": "instant alignment",
+            "alternate_candidates": [
+              "effortless synchronization",
+              "unresisted attunement"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "llama-4-maverick": {
+            "proposed_counterpart": "attunement",
+            "alternate_candidates": [
+              "alignment",
+              "synchronization"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          }
+        }
+      },
+      "force": {
+        "book_a0_partner": "Frequency",
+        "s_syn_partner": "urgency",
+        "exact_a0_primary_matches": 0,
+        "exact_a0_any_candidate_matches": 0,
+        "exact_s_syn_primary_matches": 0,
+        "unique_primary_proposals_count": 4,
+        "modal_word": "influence",
+        "modal_tied_candidates": [
+          "influence"
+        ],
+        "modal_count": 2,
+        "modal_share": 0.4,
+        "proposals": {
+          "claude-sonnet-4.6": {
+            "proposed_counterpart": "intention",
+            "alternate_candidates": [
+              "will",
+              "motivation"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gpt-5.4-fast": {
+            "proposed_counterpart": "flow",
+            "alternate_candidates": [
+              "ease",
+              "yielding"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gemini-2.5-flash": {
+            "proposed_counterpart": "influence",
+            "alternate_candidates": [
+              "attraction",
+              "resonance"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "mistral-medium-3.5": {
+            "proposed_counterpart": "will",
+            "alternate_candidates": [
+              "intention",
+              "harmony"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "llama-4-maverick": {
+            "proposed_counterpart": "influence",
+            "alternate_candidates": [
+              "impulse",
+              "motivation"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          }
+        }
+      },
+      "speed of light": {
+        "book_a0_partner": "Current",
+        "s_syn_partner": "stream",
+        "exact_a0_primary_matches": 0,
+        "exact_a0_any_candidate_matches": 0,
+        "exact_s_syn_primary_matches": 0,
+        "unique_primary_proposals_count": 4,
+        "modal_word": "instant knowing",
+        "modal_tied_candidates": [
+          "instant knowing"
+        ],
+        "modal_count": 2,
+        "modal_share": 0.4,
+        "proposals": {
+          "claude-sonnet-4.6": {
+            "proposed_counterpart": "instant knowing",
+            "alternate_candidates": [
+              "immediate awareness",
+              "simultaneous understanding"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gpt-5.4-fast": {
+            "proposed_counterpart": "instant presence",
+            "alternate_candidates": [
+              "immediacy",
+              "simultaneous presence"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gemini-2.5-flash": {
+            "proposed_counterpart": "instantaneous knowing",
+            "alternate_candidates": [
+              "immediate resonance",
+              "universal awareness"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "mistral-medium-3.5": {
+            "proposed_counterpart": "instant knowing",
+            "alternate_candidates": [
+              "simultaneous awareness",
+              "unbounded presence"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "llama-4-maverick": {
+            "proposed_counterpart": "unity of awareness",
+            "alternate_candidates": [
+              "instant insight",
+              "omniscience"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          }
+        }
+      },
+      "gravity": {
+        "book_a0_partner": "Attraction",
+        "s_syn_partner": "affinity",
+        "exact_a0_primary_matches": 1,
+        "exact_a0_any_candidate_matches": 1,
+        "exact_s_syn_primary_matches": 0,
+        "unique_primary_proposals_count": 4,
+        "modal_word": "levity",
+        "modal_tied_candidates": [
+          "levity"
+        ],
+        "modal_count": 2,
+        "modal_share": 0.4,
+        "proposals": {
+          "claude-sonnet-4.6": {
+            "proposed_counterpart": "attraction",
+            "alternate_candidates": [
+              "draw",
+              "affinity"
+            ],
+            "exact_a0_primary": true,
+            "exact_a0_in_alternates": false
+          },
+          "gpt-5.4-fast": {
+            "proposed_counterpart": "grace",
+            "alternate_candidates": [
+              "levity",
+              "buoyancy"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gemini-2.5-flash": {
+            "proposed_counterpart": "resonance",
+            "alternate_candidates": [
+              "coherence",
+              "affinity"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "mistral-medium-3.5": {
+            "proposed_counterpart": "levity",
+            "alternate_candidates": [
+              "lightness",
+              "effortless ascent"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "llama-4-maverick": {
+            "proposed_counterpart": "levity",
+            "alternate_candidates": [
+              "buoyancy",
+              "weightlessness"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          }
+        }
+      },
+      "friction": {
+        "book_a0_partner": "resonance",
+        "s_syn_partner": "harmony",
+        "exact_a0_primary_matches": 0,
+        "exact_a0_any_candidate_matches": 0,
+        "exact_s_syn_primary_matches": 2,
+        "unique_primary_proposals_count": 3,
+        "modal_word": "flow",
+        "modal_tied_candidates": [
+          "flow",
+          "harmony"
+        ],
+        "modal_count": 2,
+        "modal_share": 0.4,
+        "proposals": {
+          "claude-sonnet-4.6": {
+            "proposed_counterpart": "flow",
+            "alternate_candidates": [
+              "ease",
+              "harmony"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gpt-5.4-fast": {
+            "proposed_counterpart": "flow",
+            "alternate_candidates": [
+              "ease",
+              "effortlessness"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "gemini-2.5-flash": {
+            "proposed_counterpart": "alignment",
+            "alternate_candidates": [
+              "flow",
+              "harmony"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "mistral-medium-3.5": {
+            "proposed_counterpart": "harmony",
+            "alternate_candidates": [
+              "flow",
+              "synchrony"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          },
+          "llama-4-maverick": {
+            "proposed_counterpart": "harmony",
+            "alternate_candidates": [
+              "cooperation",
+              "alignment"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": false
+          }
+        }
+      },
+      "damping": {
+        "book_a0_partner": "resonance",
+        "s_syn_partner": "harmony",
+        "exact_a0_primary_matches": 3,
+        "exact_a0_any_candidate_matches": 5,
+        "exact_s_syn_primary_matches": 0,
+        "unique_primary_proposals_count": 2,
+        "modal_word": "resonance",
+        "modal_tied_candidates": [
+          "resonance"
+        ],
+        "modal_count": 3,
+        "modal_share": 0.6,
+        "proposals": {
+          "claude-sonnet-4.6": {
+            "proposed_counterpart": "amplification",
+            "alternate_candidates": [
+              "resonance",
+              "enhancement"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": true
+          },
+          "gpt-5.4-fast": {
+            "proposed_counterpart": "resonance",
+            "alternate_candidates": [
+              "free flow",
+              "attunement"
+            ],
+            "exact_a0_primary": true,
+            "exact_a0_in_alternates": false
+          },
+          "gemini-2.5-flash": {
+            "proposed_counterpart": "resonance",
+            "alternate_candidates": [
+              "amplification",
+              "energizing"
+            ],
+            "exact_a0_primary": true,
+            "exact_a0_in_alternates": false
+          },
+          "mistral-medium-3.5": {
+            "proposed_counterpart": "resonance",
+            "alternate_candidates": [
+              "harmony",
+              "synchrony"
+            ],
+            "exact_a0_primary": true,
+            "exact_a0_in_alternates": false
+          },
+          "llama-4-maverick": {
+            "proposed_counterpart": "amplification",
+            "alternate_candidates": [
+              "resonance",
+              "harmonization"
+            ],
+            "exact_a0_primary": false,
+            "exact_a0_in_alternates": true
+          }
+        }
+      }
+    }
+  },
+  "holm_bonferroni_family": [
+    {
+      "name": "M4_item_Core_T_A0_best_gt_0_25_binom",
+      "raw_p": 4.950111163915767e-11,
+      "holm_adjusted_p": 5.940133396698921e-10,
+      "rank": 1,
+      "rejected_0_05": true,
+      "rejected_0_01": true
+    },
+    {
+      "name": "M4_item_Core_T_A0_vs_T_A3_item_perm",
+      "raw_p": 3.0517578125e-05,
+      "holm_adjusted_p": 0.000335693359375,
+      "rank": 2,
+      "rejected_0_05": true,
+      "rejected_0_01": true
+    },
+    {
+      "name": "M4_item_Core_T_A0_vs_D_A0_item_perm",
+      "raw_p": 6.103515625e-05,
+      "holm_adjusted_p": 0.0006103515625,
+      "rank": 3,
+      "rejected_0_05": true,
+      "rejected_0_01": true
+    },
+    {
+      "name": "M2_Core_vs_Boundary_A0_fisher",
+      "raw_p": 0.0008987198282493709,
+      "holm_adjusted_p": 0.008088478454244338,
+      "rank": 4,
+      "rejected_0_05": true,
+      "rejected_0_01": true
+    },
+    {
+      "name": "M4_bundle_T_A0_vs_T_A3_call_perm",
+      "raw_p": 0.015625,
+      "holm_adjusted_p": 0.125,
+      "rank": 5,
+      "rejected_0_05": false,
+      "rejected_0_01": false
+    },
+    {
+      "name": "M4_item_Core_T_A0_vs_S_syn_item_perm",
+      "raw_p": 0.245269775390625,
+      "holm_adjusted_p": 1.0,
+      "rank": 6,
+      "rejected_0_05": false,
+      "rejected_0_01": false
+    },
+    {
+      "name": "M4_native_pair_A0_vs_A3_1_item_perm",
+      "raw_p": 0.826690673828125,
+      "holm_adjusted_p": 1.0,
+      "rank": 7,
+      "rejected_0_05": false,
+      "rejected_0_01": false
+    },
+    {
+      "name": "M1_A0_vs_A3_1_cal17_mcnemar",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1.0,
+      "rank": 8,
+      "rejected_0_05": false,
+      "rejected_0_01": false
+    },
+    {
+      "name": "M2_LayerA_A0_vs_A3_1_mcnemar",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1.0,
+      "rank": 9,
+      "rejected_0_05": false,
+      "rejected_0_01": false
+    },
+    {
+      "name": "M3b_Opponent_A0_vs_A3_1_mcnemar",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1.0,
+      "rank": 10,
+      "rejected_0_05": false,
+      "rejected_0_01": false
+    },
+    {
+      "name": "M3c_Vertical_A0_vs_A3_1_mcnemar",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1.0,
+      "rank": 11,
+      "rejected_0_05": false,
+      "rejected_0_01": false
+    },
+    {
+      "name": "M3c_Horizontal_A0_vs_A3_1_rule1_fisher",
+      "raw_p": 1.0,
+      "holm_adjusted_p": 1.0,
+      "rank": 12,
+      "rejected_0_05": false,
+      "rejected_0_01": false
+    }
+  ]
+}
