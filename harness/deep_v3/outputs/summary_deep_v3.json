@@ -1,0 +1,5972 @@
+{
+  "schema_version": "tsr_deep_v3_eval_summary",
+  "provenance": {
+    "parent_v2_eval_sha": "7ee697ce32e17dd5db329386cb3ce6b6df02b696",
+    "deep_v3_prereg_sha": "d6f70e2802cb7b55d1871486e83378aaa55d349d",
+    "deep_v3_pre_eval_sha": "502c27c21ea404a138017727d25b96372e5bf0c7",
+    "prereg_hashed_files_sha256": {
+      "arms_v3.py": "410b3d6f37d23828231a851fdb3d0f91ab5996e0ba9b08d61725b5bf237d7c21",
+      "layer_a_v3.py": "bab206f674b783f4f98df44fa11cc8cf644c8f0c39e4ac2d5d5397730a38eafb",
+      "crossing_battery_20.json": "6ad789cfd38b9e72c77df51caaf731e30e0cdc0230fbfa67cdda2ca2e52306f2",
+      "run_deep_v3.py": "6ff0b2edd3dde5e9a48dcd50789582c93110a96c8671de820fb4677627b83c0f",
+      "__init__.py": "5035f3ab27bffc637b6d4e9889077babca55a626533f636a1f5274ec73620900"
+    },
+    "raw_artifact_sha256": {
+      "harness/deep_v3/logs/live_calls_v3.jsonl": "f57bebcbe14a8fc7dffbfa7aecf1332bb5e97e0c134aa8dd673d706724d3b765",
+      "harness/deep_v3/outputs/raw_d1a_web_ratings.json": "5cc76dc6acfbfa6a57a3f1e09d715553101a41f50a3e305005876516cb9defd7",
+      "harness/deep_v3/outputs/raw_d1b_web_truthtable.json": "252ef60de08b075680febbe84f0d09793707164ba30be43f7827713a7a3800ed",
+      "harness/deep_v3/outputs/raw_d2a_crossing_cal17.json": "a97f5ec1f6dec4996c995f9d1ce745e80cfc5ed26c32035c9f063aca783f7b66",
+      "harness/deep_v3/outputs/raw_d2b_crossing_battery20.json": "f1ea4f33553e0232235a1182cd114a7605819ce1e89b4bcee4a731c5e391b845",
+      "harness/deep_v3/outputs/raw_d3a_narrative_cal17.json": "988d99e6ab5c9a1889f9bb6a00186562a87aaa966d3d19e8a98f2278736a171a",
+      "harness/deep_v3/outputs/raw_d3b_passage_ratings.json": "5cc5a47cd9fad812e854e2029390e9036f5140fb061adf221f7bfcf8a3eacd02",
+      "harness/deep_v3/outputs/raw_d4_layer_a_audit.json": "674ea2b19bc3d6112bf95b1cc475972ca41698716ffe50d7fb32089e3cc8f22b",
+      "harness/deep_v3/outputs/summary_deep_v3_raw.json": "f5cf58724f1ba405e89c50ba0ee9da2f95c071ec623842c0e6f70a556c9f4f13"
+    },
+    "live_calls_total": 657,
+    "unique_call_keys": 485,
+    "retry_calls_total": 172,
+    "calls_by_role": {
+      "d1a_web_rating": 106,
+      "d1b_web_truthtable": 70,
+      "d2a_crossing_cal17": 145,
+      "d2b_crossing_battery20": 146,
+      "d3a_narrative_cal17": 130,
+      "d3b_passage_rating": 60
+    },
+    "unique_calls_by_role": {
+      "d1a_web_rating": 85,
+      "d1b_web_truthtable": 70,
+      "d2a_crossing_cal17": 85,
+      "d2b_crossing_battery20": 100,
+      "d3a_narrative_cal17": 85,
+      "d3b_passage_rating": 60
+    },
+    "retry_calls_by_role": {
+      "d1a_web_rating": 21,
+      "d1b_web_truthtable": 0,
+      "d2a_crossing_cal17": 60,
+      "d2b_crossing_battery20": 46,
+      "d3a_narrative_cal17": 45,
+      "d3b_passage_rating": 0
+    },
+    "total_api_latency_ms": 4749831,
+    "total_api_latency_sec": 4749.831,
+    "latency_by_model": {
+      "claude-sonnet-4.6": {
+        "calls": 109,
+        "total_ms": 1314001,
+        "total_sec": 1314.001,
+        "mean_ms": 12055.06,
+        "median_ms": 10734.0,
+        "p95_ms": 24976.0,
+        "min_ms": 3917,
+        "max_ms": 30667
+      },
+      "gemini-2.5-flash": {
+        "calls": 166,
+        "total_ms": 2278327,
+        "total_sec": 2278.327,
+        "mean_ms": 13724.86,
+        "median_ms": 11048.0,
+        "p95_ms": 32437.0,
+        "min_ms": 2385,
+        "max_ms": 73416
+      },
+      "gpt-5.4-fast": {
+        "calls": 107,
+        "total_ms": 351519,
+        "total_sec": 351.519,
+        "mean_ms": 3285.22,
+        "median_ms": 3167.0,
+        "p95_ms": 4327.0,
+        "min_ms": 1995,
+        "max_ms": 8472
+      },
+      "llama-4-maverick": {
+        "calls": 143,
+        "total_ms": 436775,
+        "total_sec": 436.775,
+        "mean_ms": 3054.37,
+        "median_ms": 2174.0,
+        "p95_ms": 6793.0,
+        "min_ms": 1285,
+        "max_ms": 8095
+      },
+      "mistral-medium-3.5": {
+        "calls": 132,
+        "total_ms": 369209,
+        "total_sec": 369.209,
+        "mean_ms": 2797.04,
+        "median_ms": 2569.5,
+        "p95_ms": 4008.0,
+        "min_ms": 1810,
+        "max_ms": 10234
+      }
+    },
+    "schema_error_counts": {
+      "D1a": 0,
+      "D1b": 0,
+      "D2a": 4,
+      "D2b": 6,
+      "D3a": 1,
+      "D3b": 0
+    },
+    "total_schema_errors": 11
+  },
+  "confirmatory_hypotheses": {
+    "H1": {
+      "pillar": "D1a",
+      "comparison": "W_A0 vs W_Ssyn mean rater score per slot (W01..W14, N=14)",
+      "primary_test": "exact_paired_permutation_test (2^14=16384)",
+      "mean_a": 4.4,
+      "mean_b": 3.085714,
+      "mean_diff": 1.314286,
+      "sign_test": {
+        "wins": 13,
+        "losses": 1,
+        "ties": 0,
+        "n_non_tied": 14,
+        "p_value": 0.0018310546875
+      },
+      "paired_permutation_test": {
+        "n_items": 14,
+        "n_nonzero": 14,
+        "mean_diff": 1.3142857142857145,
+        "method": "exact_sign_flip",
+        "p_value": 0.000732421875
+      },
+      "holm_bonferroni": {
+        "name": "H1_D1a_W_A0_vs_W_Ssyn_slot_perm",
+        "raw_p": 0.000732421875,
+        "holm_adjusted_p": 0.0029296875,
+        "rank": 3,
+        "rejected_0_05": true,
+        "rejected_0_01": true
+      }
+    },
+    "H2": {
+      "pillar": "D1a",
+      "comparison": "W_A0 vs W_Chal mean rater score per slot (W01..W14, N=14)",
+      "primary_test": "exact_paired_permutation_test (2^14=16384)",
+      "mean_a": 4.4,
+      "mean_b": 2.171429,
+      "mean_diff": 2.228571,
+      "sign_test": {
+        "wins": 14,
+        "losses": 0,
+        "ties": 0,
+        "n_non_tied": 14,
+        "p_value": 0.0001220703125
+      },
+      "paired_permutation_test": {
+        "n_items": 14,
+        "n_nonzero": 14,
+        "mean_diff": 2.2285714285714286,
+        "method": "exact_sign_flip",
+        "p_value": 0.0001220703125
+      },
+      "holm_bonferroni": {
+        "name": "H2_D1a_W_A0_vs_W_Chal_slot_perm",
+        "raw_p": 0.0001220703125,
+        "holm_adjusted_p": 0.000732421875,
+        "rank": 1,
+        "rejected_0_05": true,
+        "rejected_0_01": true
+      }
+    },
+    "H3": {
+      "pillar": "D1b",
+      "comparison": "W_A0 vs mean(W_Ssyn, W_Chal, W_A3) all4 pass fraction (W01..W14, N=14)",
+      "primary_test": "exact_paired_permutation_test (2^14=16384)",
+      "mean_a": 0.671429,
+      "mean_b": 0.019048,
+      "mean_diff": 0.652381,
+      "sign_test": {
+        "wins": 13,
+        "losses": 1,
+        "ties": 0,
+        "n_non_tied": 14,
+        "p_value": 0.0018310546875
+      },
+      "paired_permutation_test": {
+        "n_items": 14,
+        "n_nonzero": 14,
+        "mean_diff": 0.6523809523809524,
+        "method": "exact_sign_flip",
+        "p_value": 0.000244140625
+      },
+      "holm_bonferroni": {
+        "name": "H3_D1b_W_A0_vs_others_all4_perm",
+        "raw_p": 0.000244140625,
+        "holm_adjusted_p": 0.001220703125,
+        "rank": 2,
+        "rejected_0_05": true,
+        "rejected_0_01": true
+      }
+    },
+    "H4": {
+      "pillar": "D2b",
+      "comparison": "Strict >=4/5 crossing_interface consensus: Mechanical_Crossing (7) vs Non_Crossing_Boundary (13)",
+      "primary_test": "exact_fisher_2x2",
+      "mechanical_crossing_pass": 5,
+      "mechanical_crossing_total": 7,
+      "mechanical_crossing_rate": 0.714286,
+      "non_crossing_boundary_pass": 0,
+      "non_crossing_boundary_total": 13,
+      "non_crossing_boundary_rate": 0.0,
+      "fisher_2x2_p": 0.0013544891640866873,
+      "holm_bonferroni": {
+        "name": "H4_D2b_Mechanical_vs_NonCrossing_strict_fisher",
+        "raw_p": 0.0013544891640866873,
+        "holm_adjusted_p": 0.004063467492260062,
+        "rank": 4,
+        "rejected_0_05": true,
+        "rejected_0_01": true
+      }
+    },
+    "H5": {
+      "pillar": "D3a",
+      "comparison": ">=4/5 consensus calibration accuracy on K01..K17: D3a vs Commit-2 M1 A0 (N=17)",
+      "primary_test": "exact_mcnemar_test",
+      "d3a_correct": 8,
+      "commit2_m1_a0_correct": 12,
+      "n_paired": 17,
+      "n11_both_true": 8,
+      "n10_first_only": 0,
+      "n01_second_only": 4,
+      "n00_both_false": 5,
+      "p_value": 0.125,
+      "holm_bonferroni": {
+        "name": "H5_D3a_cal17_vs_M1_A0_mcnemar",
+        "raw_p": 0.125,
+        "holm_adjusted_p": 0.125,
+        "rank": 6,
+        "rejected_0_05": false,
+        "rejected_0_01": false
+      }
+    },
+    "H6": {
+      "pillar": "D3b",
+      "comparison": "V_A0 vs V_Ssyn mean rater score per excerpt (P01..P12, N=12)",
+      "primary_test": "exact_paired_permutation_test (2^12=4096)",
+      "mean_a": 4.316667,
+      "mean_b": 3.0,
+      "mean_diff": 1.316667,
+      "sign_test": {
+        "wins": 11,
+        "losses": 1,
+        "ties": 0,
+        "n_non_tied": 12,
+        "p_value": 0.00634765625
+      },
+      "paired_permutation_test": {
+        "n_items": 12,
+        "n_nonzero": 12,
+        "mean_diff": 1.3166666666666667,
+        "method": "exact_sign_flip",
+        "p_value": 0.00146484375
+      },
+      "holm_bonferroni": {
+        "name": "H6_D3b_V_A0_vs_V_Ssyn_passage_perm",
+        "raw_p": 0.00146484375,
+        "holm_adjusted_p": 0.004063467492260062,
+        "rank": 5,
+        "rejected_0_05": true,
+        "rejected_0_01": true
+      }
+    }
+  },
+  "holm_bonferroni_family": [
+    {
+      "name": "H2_D1a_W_A0_vs_W_Chal_slot_perm",
+      "raw_p": 0.0001220703125,
+      "holm_adjusted_p": 0.000732421875,
+      "rank": 1,
+      "rejected_0_05": true,
+      "rejected_0_01": true
+    },
+    {
+      "name": "H3_D1b_W_A0_vs_others_all4_perm",
+      "raw_p": 0.000244140625,
+      "holm_adjusted_p": 0.001220703125,
+      "rank": 2,
+      "rejected_0_05": true,
+      "rejected_0_01": true
+    },
+    {
+      "name": "H1_D1a_W_A0_vs_W_Ssyn_slot_perm",
+      "raw_p": 0.000732421875,
+      "holm_adjusted_p": 0.0029296875,
+      "rank": 3,
+      "rejected_0_05": true,
+      "rejected_0_01": true
+    },
+    {
+      "name": "H4_D2b_Mechanical_vs_NonCrossing_strict_fisher",
+      "raw_p": 0.0013544891640866873,
+      "holm_adjusted_p": 0.004063467492260062,
+      "rank": 4,
+      "rejected_0_05": true,
+      "rejected_0_01": true
+    },
+    {
+      "name": "H6_D3b_V_A0_vs_V_Ssyn_passage_perm",
+      "raw_p": 0.00146484375,
+      "holm_adjusted_p": 0.004063467492260062,
+      "rank": 5,
+      "rejected_0_05": true,
+      "rejected_0_01": true
+    },
+    {
+      "name": "H5_D3a_cal17_vs_M1_A0_mcnemar",
+      "raw_p": 0.125,
+      "holm_adjusted_p": 0.125,
+      "rank": 6,
+      "rejected_0_05": false,
+      "rejected_0_01": false
+    }
+  ],
+  "pillar_d1a": {
+    "core_web": {
+      "n_slots": 14,
+      "n_raters": 5,
+      "n_ratings": 70,
+      "arms": {
+        "W_A0": {
+          "mean_score": 4.4,
+          "sd_score": 0.969087,
+          "median_score": 5.0,
+          "min_score": 1,
+          "max_score": 5,
+          "best_rank_1_count": 56,
+          "best_rank_1_share": 0.8,
+          "best_rank_1_binom_gt_0_25_p": 7.21815974821576e-22,
+          "worst_rank_4_count": 0,
+          "worst_rank_4_share": 0.0,
+          "per_rater": {
+            "claude-sonnet-4.6": {
+              "mean_score": 4.214286,
+              "best_count": 12,
+              "worst_count": 0
+            },
+            "gpt-5.4-fast": {
+              "mean_score": 4.357143,
+              "best_count": 11,
+              "worst_count": 0
+            },
+            "gemini-2.5-flash": {
+              "mean_score": 4.5,
+              "best_count": 13,
+              "worst_count": 0
+            },
+            "mistral-medium-3.5": {
+              "mean_score": 4.785714,
+              "best_count": 12,
+              "worst_count": 0
+            },
+            "llama-4-maverick": {
+              "mean_score": 4.142857,
+              "best_count": 8,
+              "worst_count": 0
+            }
+          }
+        },
+        "W_Ssyn": {
+          "mean_score": 3.085714,
+          "sd_score": 1.200759,
+          "median_score": 3.0,
+          "min_score": 1,
+          "max_score": 5,
+          "best_rank_1_count": 10,
+          "best_rank_1_share": 0.142857,
+          "best_rank_1_binom_gt_0_25_p": 0.9900607269905217,
+          "worst_rank_4_count": 6,
+          "worst_rank_4_share": 0.085714,
+          "per_rater": {
+            "claude-sonnet-4.6": {
+              "mean_score": 3.071429,
+              "best_count": 2,
+              "worst_count": 1
+            },
+            "gpt-5.4-fast": {
+              "mean_score": 3.071429,
+              "best_count": 3,
+              "worst_count": 0
+            },
+            "gemini-2.5-flash": {
+              "mean_score": 2.071429,
+              "best_count": 0,
+              "worst_count": 1
+            },
+            "mistral-medium-3.5": {
+              "mean_score": 3.571429,
+              "best_count": 2,
+              "worst_count": 2
+            },
+            "llama-4-maverick": {
+              "mean_score": 3.642857,
+              "best_count": 3,
+              "worst_count": 2
+            }
+          }
+        },
+        "W_Chal": {
+          "mean_score": 2.171429,
+          "sd_score": 1.227362,
+          "median_score": 2.0,
+          "min_score": 1,
+          "max_score": 5,
+          "best_rank_1_count": 3,
+          "best_rank_1_share": 0.042857,
+          "best_rank_1_binom_gt_0_25_p": 0.9999994743923245,
+          "worst_rank_4_count": 30,
+          "worst_rank_4_share": 0.428571,
+          "per_rater": {
+            "claude-sonnet-4.6": {
+              "mean_score": 2.142857,
+              "best_count": 0,
+              "worst_count": 7
+            },
+            "gpt-5.4-fast": {
+              "mean_score": 1.214286,
+              "best_count": 0,
+              "worst_count": 7
+            },
+            "gemini-2.5-flash": {
+              "mean_score": 1.142857,
+              "best_count": 0,
+              "worst_count": 8
+            },
+            "mistral-medium-3.5": {
+              "mean_score": 3.142857,
+              "best_count": 0,
+              "worst_count": 4
+            },
+            "llama-4-maverick": {
+              "mean_score": 3.214286,
+              "best_count": 3,
+              "worst_count": 4
+            }
+          }
+        },
+        "W_A3": {
+          "mean_score": 2.185714,
+          "sd_score": 1.133071,
+          "median_score": 2.0,
+          "min_score": 1,
+          "max_score": 5,
+          "best_rank_1_count": 1,
+          "best_rank_1_share": 0.014286,
+          "best_rank_1_binom_gt_0_25_p": 0.999999998204074,
+          "worst_rank_4_count": 34,
+          "worst_rank_4_share": 0.485714,
+          "per_rater": {
+            "claude-sonnet-4.6": {
+              "mean_score": 2.285714,
+              "best_count": 0,
+              "worst_count": 6
+            },
+            "gpt-5.4-fast": {
+              "mean_score": 1.571429,
+              "best_count": 0,
+              "worst_count": 7
+            },
+            "gemini-2.5-flash": {
+              "mean_score": 1.428571,
+              "best_count": 1,
+              "worst_count": 5
+            },
+            "mistral-medium-3.5": {
+              "mean_score": 2.642857,
+              "best_count": 0,
+              "worst_count": 8
+            },
+            "llama-4-maverick": {
+              "mean_score": 3.0,
+              "best_count": 0,
+              "worst_count": 8
+            }
+          }
+        }
+      },
+      "inter_rater_agreement": {
+        "fleiss_kappa_best_rank_1": 0.153567,
+        "fleiss_kappa_worst_rank_4": 0.202279,
+        "krippendorff_alpha_ordinal_all_56_slot_arms": 0.425099,
+        "krippendorff_alpha_ordinal_by_arm": {
+          "W_A0": 0.151143,
+          "W_Ssyn": 0.18821,
+          "W_Chal": -0.0716,
+          "W_A3": 0.051038
+        }
+      },
+      "paired_comparisons_slot_level_n14": {
+        "H1_W_A0_vs_W_Ssyn": {
+          "mean_a": 4.4,
+          "mean_b": 3.085714,
+          "mean_diff": 1.314286,
+          "sign_test": {
+            "wins": 13,
+            "losses": 1,
+            "ties": 0,
+            "n_non_tied": 14,
+            "p_value": 0.0018310546875
+          },
+          "paired_permutation_test": {
+            "n_items": 14,
+            "n_nonzero": 14,
+            "mean_diff": 1.3142857142857145,
+            "method": "exact_sign_flip",
+            "p_value": 0.000732421875
+          }
+        },
+        "H2_W_A0_vs_W_Chal": {
+          "mean_a": 4.4,
+          "mean_b": 2.171429,
+          "mean_diff": 2.228571,
+          "sign_test": {
+            "wins": 14,
+            "losses": 0,
+            "ties": 0,
+            "n_non_tied": 14,
+            "p_value": 0.0001220703125
+          },
+          "paired_permutation_test": {
+            "n_items": 14,
+            "n_nonzero": 14,
+            "mean_diff": 2.2285714285714286,
+            "method": "exact_sign_flip",
+            "p_value": 0.0001220703125
+          }
+        },
+        "secondary_W_A0_vs_W_A3": {
+          "mean_a": 4.4,
+          "mean_b": 2.185714,
+          "mean_diff": 2.214286,
+          "sign_test": {
+            "wins": 14,
+            "losses": 0,
+            "ties": 0,
+            "n_non_tied": 14,
+            "p_value": 0.0001220703125
+          },
+          "paired_permutation_test": {
+            "n_items": 14,
+            "n_nonzero": 14,
+            "mean_diff": 2.2142857142857144,
+            "method": "exact_sign_flip",
+            "p_value": 0.0001220703125
+          }
+        }
+      },
+      "per_slot_breakdown": [
+        {
+          "slot_id": "W01",
+          "candidates": {
+            "W_A0": "Movement",
+            "W_Ssyn": "responsiveness",
+            "W_Chal": "soul",
+            "W_A3": "Reflected"
+          },
+          "mean_scores": {
+            "W_A0": 3.4,
+            "W_Ssyn": 3.0,
+            "W_Chal": 1.6,
+            "W_A3": 1.8
+          },
+          "best_rank_1_counts": {
+            "W_A0": 3,
+            "W_Ssyn": 2,
+            "W_Chal": 0,
+            "W_A3": 0
+          },
+          "worst_rank_4_counts": {
+            "W_A0": 0,
+            "W_Ssyn": 0,
+            "W_Chal": 2,
+            "W_A3": 3
+          }
+        },
+        {
+          "slot_id": "W02",
+          "candidates": {
+            "W_A0": "Current",
+            "W_Ssyn": "stream",
+            "W_Chal": "source",
+            "W_A3": "Frequency"
+          },
+          "mean_scores": {
+            "W_A0": 4.8,
+            "W_Ssyn": 3.2,
+            "W_Chal": 1.6,
+            "W_A3": 2.0
+          },
+          "best_rank_1_counts": {
+            "W_A0": 5,
+            "W_Ssyn": 0,
+            "W_Chal": 0,
+            "W_A3": 0
+          },
+          "worst_rank_4_counts": {
+            "W_A0": 0,
+            "W_Ssyn": 1,
+            "W_Chal": 4,
+            "W_A3": 0
+          }
+        },
+        {
+          "slot_id": "W03",
+          "candidates": {
+            "W_A0": "Vibration",
+            "W_Ssyn": "pitch",
+            "W_Chal": "mind",
+            "W_A3": "Appreciation"
+          },
+          "mean_scores": {
+            "W_A0": 4.2,
+            "W_Ssyn": 3.8,
+            "W_Chal": 2.2,
+            "W_A3": 1.6
+          },
+          "best_rank_1_counts": {
+            "W_A0": 4,
+            "W_Ssyn": 1,
+            "W_Chal": 0,
+            "W_A3": 0
+          },
+          "worst_rank_4_counts": {
+            "W_A0": 0,
+            "W_Ssyn": 0,
+            "W_Chal": 0,
+            "W_A3": 5
+          }
+        },
+        {
+          "slot_id": "W04",
+          "candidates": {
+            "W_A0": "Expansion",
+            "W_Ssyn": "growth",
+            "W_Chal": "eternity",
+            "W_A3": "Vibrance"
+          },
+          "mean_scores": {
+            "W_A0": 4.0,
+            "W_Ssyn": 4.8,
+            "W_Chal": 2.2,
+            "W_A3": 2.8
+          },
+          "best_rank_1_counts": {
+            "W_A0": 1,
+            "W_Ssyn": 4,
+            "W_Chal": 0,
+            "W_A3": 0
+          },
+          "worst_rank_4_counts": {
+            "W_A0": 0,
+            "W_Ssyn": 0,
+            "W_Chal": 4,
+            "W_A3": 1
+          }
+        },
+        {
+          "slot_id": "W05",
+          "candidates": {
+            "W_A0": "Desire",
+            "W_Ssyn": "longing",
+            "W_Chal": "intensity",
+            "W_A3": "conscious energy"
+          },
+          "mean_scores": {
+            "W_A0": 4.2,
+            "W_Ssyn": 2.6,
+            "W_Chal": 3.0,
+            "W_A3": 2.4
+          },
+          "best_rank_1_counts": {
+            "W_A0": 4,
+            "W_Ssyn": 0,
+            "W_Chal": 1,
+            "W_A3": 0
+          },
+          "worst_rank_4_counts": {
+            "W_A0": 0,
+            "W_Ssyn": 1,
+            "W_Chal": 2,
+            "W_A3": 2
+          }
+        },
+        {
+          "slot_id": "W06",
+          "candidates": {
+            "W_A0": "Vibrance",
+            "W_Ssyn": "capacity",
+            "W_Chal": "openness",
+            "W_A3": "Desire"
+          },
+          "mean_scores": {
+            "W_A0": 4.4,
+            "W_Ssyn": 2.6,
+            "W_Chal": 2.8,
+            "W_A3": 1.8
+          },
+          "best_rank_1_counts": {
+            "W_A0": 4,
+            "W_Ssyn": 0,
+            "W_Chal": 1,
+            "W_A3": 0
+          },
+          "worst_rank_4_counts": {
+            "W_A0": 0,
+            "W_Ssyn": 1,
+            "W_Chal": 1,
+            "W_A3": 3
+          }
+        },
+        {
+          "slot_id": "W07",
+          "candidates": {
+            "W_A0": "Appreciation",
+            "W_Ssyn": "gratitude",
+            "W_Chal": "growth",
+            "W_A3": "imagination"
+          },
+          "mean_scores": {
+            "W_A0": 4.4,
+            "W_Ssyn": 2.2,
+            "W_Chal": 2.2,
+            "W_A3": 1.6
+          },
+          "best_rank_1_counts": {
+            "W_A0": 4,
+            "W_Ssyn": 0,
+            "W_Chal": 1,
+            "W_A3": 0
+          },
+          "worst_rank_4_counts": {
+            "W_A0": 0,
+            "W_Ssyn": 0,
+            "W_Chal": 1,
+            "W_A3": 4
+          }
+        },
+        {
+          "slot_id": "W08",
+          "candidates": {
+            "W_A0": "Frequency",
+            "W_Ssyn": "urgency",
+            "W_Chal": "will",
+            "W_A3": "Movement"
+          },
+          "mean_scores": {
+            "W_A0": 4.4,
+            "W_Ssyn": 2.6,
+            "W_Chal": 1.8,
+            "W_A3": 2.8
+          },
+          "best_rank_1_counts": {
+            "W_A0": 4,
+            "W_Ssyn": 1,
+            "W_Chal": 0,
+            "W_A3": 0
+          },
+          "worst_rank_4_counts": {
+            "W_A0": 0,
+            "W_Ssyn": 1,
+            "W_Chal": 3,
+            "W_A3": 1
+          }
+        },
+        {
+          "slot_id": "W09",
+          "candidates": {
+            "W_A0": "Tune",
+            "W_Ssyn": "focus",
+            "W_Chal": "surrender",
+            "W_A3": "resonance"
+          },
+          "mean_scores": {
+            "W_A0": 5.0,
+            "W_Ssyn": 3.4,
+            "W_Chal": 1.6,
+            "W_A3": 3.4
+          },
+          "best_rank_1_counts": {
+            "W_A0": 5,
+            "W_Ssyn": 0,
+            "W_Chal": 0,
+            "W_A3": 0
+          },
+          "worst_rank_4_counts": {
+            "W_A0": 0,
+            "W_Ssyn": 0,
+            "W_Chal": 5,
+            "W_A3": 0
+          }
+        },
+        {
+          "slot_id": "W10",
+          "candidates": {
+            "W_A0": "Idle",
+            "W_Ssyn": "stillness",
+            "W_Chal": "rest",
+            "W_A3": "rise per Expansion"
+          },
+          "mean_scores": {
+            "W_A0": 4.2,
+            "W_Ssyn": 3.4,
+            "W_Chal": 2.6,
+            "W_A3": 2.2
+          },
+          "best_rank_1_counts": {
+            "W_A0": 3,
+            "W_Ssyn": 2,
+            "W_Chal": 0,
+            "W_A3": 0
+          },
+          "worst_rank_4_counts": {
+            "W_A0": 0,
+            "W_Ssyn": 0,
+            "W_Chal": 1,
+            "W_A3": 4
+          }
+        },
+        {
+          "slot_id": "W11",
+          "candidates": {
+            "W_A0": "Reflected",
+            "W_Ssyn": "echo",
+            "W_Chal": "returning",
+            "W_A3": "Current"
+          },
+          "mean_scores": {
+            "W_A0": 3.6,
+            "W_Ssyn": 2.0,
+            "W_Chal": 2.2,
+            "W_A3": 2.0
+          },
+          "best_rank_1_counts": {
+            "W_A0": 4,
+            "W_Ssyn": 0,
+            "W_Chal": 0,
+            "W_A3": 1
+          },
+          "worst_rank_4_counts": {
+            "W_A0": 0,
+            "W_Ssyn": 2,
+            "W_Chal": 1,
+            "W_A3": 2
+          }
+        },
+        {
+          "slot_id": "W12",
+          "candidates": {
+            "W_A0": "Vortex",
+            "W_Ssyn": "whirlpool",
+            "W_Chal": "well",
+            "W_A3": "Attraction"
+          },
+          "mean_scores": {
+            "W_A0": 5.0,
+            "W_Ssyn": 3.6,
+            "W_Chal": 2.4,
+            "W_A3": 2.8
+          },
+          "best_rank_1_counts": {
+            "W_A0": 5,
+            "W_Ssyn": 0,
+            "W_Chal": 0,
+            "W_A3": 0
+          },
+          "worst_rank_4_counts": {
+            "W_A0": 0,
+            "W_Ssyn": 0,
+            "W_Chal": 3,
+            "W_A3": 2
+          }
+        },
+        {
+          "slot_id": "W13",
+          "candidates": {
+            "W_A0": "Convergence",
+            "W_Ssyn": "gathering",
+            "W_Chal": "lens",
+            "W_A3": "Intuition"
+          },
+          "mean_scores": {
+            "W_A0": 5.0,
+            "W_Ssyn": 3.4,
+            "W_Chal": 1.8,
+            "W_A3": 2.0
+          },
+          "best_rank_1_counts": {
+            "W_A0": 5,
+            "W_Ssyn": 0,
+            "W_Chal": 0,
+            "W_A3": 0
+          },
+          "worst_rank_4_counts": {
+            "W_A0": 0,
+            "W_Ssyn": 0,
+            "W_Chal": 3,
+            "W_A3": 2
+          }
+        },
+        {
+          "slot_id": "W14",
+          "candidates": {
+            "W_A0": "Intuition",
+            "W_Ssyn": "hunch",
+            "W_Chal": "expectation",
+            "W_A3": "Vortex"
+          },
+          "mean_scores": {
+            "W_A0": 5.0,
+            "W_Ssyn": 2.6,
+            "W_Chal": 2.4,
+            "W_A3": 1.4
+          },
+          "best_rank_1_counts": {
+            "W_A0": 5,
+            "W_Ssyn": 0,
+            "W_Chal": 0,
+            "W_A3": 0
+          },
+          "worst_rank_4_counts": {
+            "W_A0": 0,
+            "W_Ssyn": 0,
+            "W_Chal": 0,
+            "W_A3": 5
+          }
+        }
+      ]
+    },
+    "negative_controls": {
+      "n_items": 3,
+      "n_raters": 5,
+      "n_ratings": 15,
+      "correct_rank_1_count": 15,
+      "correct_rank_1_accuracy": 1.0,
+      "correct_rank_1_binom_gt_0_25_p": 9.313225746154785e-10,
+      "by_item": [
+        {
+          "item_id": "NC01",
+          "control_best": "inertia",
+          "correct_rank_1_count": 5,
+          "mean_scores": {
+            "correct": 5.0,
+            "wrong_condition": 1.6,
+            "spatial_error": 1.0,
+            "vague_generic": 1.8
+          }
+        },
+        {
+          "item_id": "NC02",
+          "control_best": "torque",
+          "correct_rank_1_count": 5,
+          "mean_scores": {
+            "correct": 5.0,
+            "wrong_condition": 1.4,
+            "spatial_error": 1.4,
+            "vague_generic": 1.0
+          }
+        },
+        {
+          "item_id": "NC03",
+          "control_best": "equilibrium",
+          "correct_rank_1_count": 5,
+          "mean_scores": {
+            "correct": 5.0,
+            "wrong_condition": 1.2,
+            "spatial_error": 1.6,
+            "vague_generic": 1.6
+          }
+        }
+      ]
+    }
+  },
+  "pillar_d1b": {
+    "n_slots": 14,
+    "n_raters": 5,
+    "n_ratings_per_arm": 70,
+    "total_boolean_cells": 224,
+    "arms": {
+      "W_A0": {
+        "all4_pass_count": 47,
+        "all4_pass_rate": 0.671429,
+        "per_criterion_pass_counts": {
+          "c1": 48,
+          "c2": 64,
+          "c3": 64,
+          "c4": 68
+        },
+        "per_criterion_pass_rates": {
+          "c1": 0.685714,
+          "c2": 0.914286,
+          "c3": 0.914286,
+          "c4": 0.971429
+        },
+        "slots_ge_4_of_5_all4": [
+          "W03",
+          "W04",
+          "W06",
+          "W08",
+          "W11",
+          "W12",
+          "W13",
+          "W14"
+        ],
+        "slots_ge_3_of_5_all4": [
+          "W03",
+          "W04",
+          "W05",
+          "W06",
+          "W08",
+          "W09",
+          "W11",
+          "W12",
+          "W13",
+          "W14"
+        ]
+      },
+      "W_Ssyn": {
+        "all4_pass_count": 3,
+        "all4_pass_rate": 0.042857,
+        "per_criterion_pass_counts": {
+          "c1": 25,
+          "c2": 27,
+          "c3": 20,
+          "c4": 21
+        },
+        "per_criterion_pass_rates": {
+          "c1": 0.357143,
+          "c2": 0.385714,
+          "c3": 0.285714,
+          "c4": 0.3
+        },
+        "slots_ge_4_of_5_all4": [],
+        "slots_ge_3_of_5_all4": []
+      },
+      "W_Chal": {
+        "all4_pass_count": 0,
+        "all4_pass_rate": 0.0,
+        "per_criterion_pass_counts": {
+          "c1": 7,
+          "c2": 9,
+          "c3": 13,
+          "c4": 1
+        },
+        "per_criterion_pass_rates": {
+          "c1": 0.1,
+          "c2": 0.128571,
+          "c3": 0.185714,
+          "c4": 0.014286
+        },
+        "slots_ge_4_of_5_all4": [],
+        "slots_ge_3_of_5_all4": []
+      },
+      "W_A3": {
+        "all4_pass_count": 1,
+        "all4_pass_rate": 0.014286,
+        "per_criterion_pass_counts": {
+          "c1": 2,
+          "c2": 33,
+          "c3": 8,
+          "c4": 5
+        },
+        "per_criterion_pass_rates": {
+          "c1": 0.028571,
+          "c2": 0.471429,
+          "c3": 0.114286,
+          "c4": 0.071429
+        },
+        "slots_ge_4_of_5_all4": [],
+        "slots_ge_3_of_5_all4": []
+      }
+    },
+    "h3_w_a0_vs_mean_others_all4_fraction": {
+      "mean_a": 0.671429,
+      "mean_b": 0.019048,
+      "mean_diff": 0.652381,
+      "sign_test": {
+        "wins": 13,
+        "losses": 1,
+        "ties": 0,
+        "n_non_tied": 14,
+        "p_value": 0.0018310546875
+      },
+      "paired_permutation_test": {
+        "n_items": 14,
+        "n_nonzero": 14,
+        "mean_diff": 0.6523809523809524,
+        "method": "exact_sign_flip",
+        "p_value": 0.000244140625
+      }
+    },
+    "secondary_w_a0_vs_w_ssyn_slot_ge_4_of_5_mcnemar": {
+      "n_paired": 14,
+      "n11_both_true": 0,
+      "n10_first_only": 8,
+      "n01_second_only": 0,
+      "n00_both_false": 6,
+      "p_value": 0.0078125
+    },
+    "inter_rater_agreement_fleiss_kappa_224_cells": 0.626762,
+    "csp_collision_free_assignments": {
+      "consensus_ge_4_of_5": {
+        "threshold": 4,
+        "eligible_by_slot": {
+          "W01": [],
+          "W02": [],
+          "W03": [
+            "Vibration"
+          ],
+          "W04": [
+            "Expansion"
+          ],
+          "W05": [],
+          "W06": [
+            "Vibrance"
+          ],
+          "W07": [],
+          "W08": [
+            "Frequency"
+          ],
+          "W09": [],
+          "W10": [],
+          "W11": [
+            "Reflected"
+          ],
+          "W12": [
+            "Vortex"
+          ],
+          "W13": [
+            "Convergence"
+          ],
+          "W14": [
+            "Intuition"
+          ]
+        },
+        "empty_slots": [
+          "W01",
+          "W02",
+          "W05",
+          "W07",
+          "W09",
+          "W10"
+        ],
+        "non_empty_slots": [
+          "W03",
+          "W04",
+          "W06",
+          "W08",
+          "W11",
+          "W12",
+          "W13",
+          "W14"
+        ],
+        "has_valid_assignment": false,
+        "total_count": 0,
+        "truncated": false,
+        "solutions": [],
+        "a0_expected": {
+          "W01": "Movement",
+          "W02": "Current",
+          "W03": "Vibration",
+          "W04": "Expansion",
+          "W05": "Desire",
+          "W06": "Vibrance",
+          "W07": "Appreciation",
+          "W08": "Frequency",
+          "W09": "Tune",
+          "W10": "Idle",
+          "W11": "Reflected",
+          "W12": "Vortex",
+          "W13": "Convergence",
+          "W14": "Intuition"
+        },
+        "a0_in_solutions": false,
+        "eligible_counts": {
+          "W01": 0,
+          "W02": 0,
+          "W03": 1,
+          "W04": 1,
+          "W05": 0,
+          "W06": 1,
+          "W07": 0,
+          "W08": 1,
+          "W09": 0,
+          "W10": 0,
+          "W11": 1,
+          "W12": 1,
+          "W13": 1,
+          "W14": 1
+        }
+      },
+      "majority_ge_3_of_5": {
+        "threshold": 3,
+        "eligible_by_slot": {
+          "W01": [],
+          "W02": [],
+          "W03": [
+            "Vibration"
+          ],
+          "W04": [
+            "Expansion"
+          ],
+          "W05": [
+            "Desire"
+          ],
+          "W06": [
+            "Vibrance"
+          ],
+          "W07": [],
+          "W08": [
+            "Frequency"
+          ],
+          "W09": [
+            "Tune"
+          ],
+          "W10": [],
+          "W11": [
+            "Reflected"
+          ],
+          "W12": [
+            "Vortex"
+          ],
+          "W13": [
+            "Convergence"
+          ],
+          "W14": [
+            "Intuition"
+          ]
+        },
+        "empty_slots": [
+          "W01",
+          "W02",
+          "W07",
+          "W10"
+        ],
+        "non_empty_slots": [
+          "W03",
+          "W04",
+          "W05",
+          "W06",
+          "W08",
+          "W09",
+          "W11",
+          "W12",
+          "W13",
+          "W14"
+        ],
+        "has_valid_assignment": false,
+        "total_count": 0,
+        "truncated": false,
+        "solutions": [],
+        "a0_expected": {
+          "W01": "Movement",
+          "W02": "Current",
+          "W03": "Vibration",
+          "W04": "Expansion",
+          "W05": "Desire",
+          "W06": "Vibrance",
+          "W07": "Appreciation",
+          "W08": "Frequency",
+          "W09": "Tune",
+          "W10": "Idle",
+          "W11": "Reflected",
+          "W12": "Vortex",
+          "W13": "Convergence",
+          "W14": "Intuition"
+        },
+        "a0_in_solutions": false,
+        "eligible_counts": {
+          "W01": 0,
+          "W02": 0,
+          "W03": 1,
+          "W04": 1,
+          "W05": 1,
+          "W06": 1,
+          "W07": 0,
+          "W08": 1,
+          "W09": 1,
+          "W10": 0,
+          "W11": 1,
+          "W12": 1,
+          "W13": 1,
+          "W14": 1
+        }
+      }
+    },
+    "per_slot_breakdown": [
+      {
+        "slot_id": "W01",
+        "candidates": {
+          "W_A0": "Movement",
+          "W_Ssyn": "responsiveness",
+          "W_Chal": "soul",
+          "W_A3": "Reflected"
+        },
+        "all4_counts_of_5": {
+          "W_A0": 0,
+          "W_Ssyn": 1,
+          "W_Chal": 0,
+          "W_A3": 0
+        },
+        "per_criterion_counts_of_5": {
+          "W_A0": {
+            "c1": 0,
+            "c2": 4,
+            "c3": 4,
+            "c4": 5
+          },
+          "W_Ssyn": {
+            "c1": 5,
+            "c2": 5,
+            "c3": 1,
+            "c4": 1
+          },
+          "W_Chal": {
+            "c1": 0,
+            "c2": 4,
+            "c3": 4,
+            "c4": 0
+          },
+          "W_A3": {
+            "c1": 0,
+            "c2": 1,
+            "c3": 0,
+            "c4": 0
+          }
+        }
+      },
+      {
+        "slot_id": "W02",
+        "candidates": {
+          "W_A0": "Current",
+          "W_Ssyn": "stream",
+          "W_Chal": "source",
+          "W_A3": "Frequency"
+        },
+        "all4_counts_of_5": {
+          "W_A0": 1,
+          "W_Ssyn": 0,
+          "W_Chal": 0,
+          "W_A3": 0
+        },
+        "per_criterion_counts_of_5": {
+          "W_A0": {
+            "c1": 1,
+            "c2": 5,
+            "c3": 5,
+            "c4": 5
+          },
+          "W_Ssyn": {
+            "c1": 2,
+            "c2": 5,
+            "c3": 0,
+            "c4": 4
+          },
+          "W_Chal": {
+            "c1": 0,
+            "c2": 0,
+            "c3": 0,
+            "c4": 0
+          },
+          "W_A3": {
+            "c1": 0,
+            "c2": 0,
+            "c3": 1,
+            "c4": 0
+          }
+        }
+      },
+      {
+        "slot_id": "W03",
+        "candidates": {
+          "W_A0": "Vibration",
+          "W_Ssyn": "pitch",
+          "W_Chal": "mind",
+          "W_A3": "Appreciation"
+        },
+        "all4_counts_of_5": {
+          "W_A0": 5,
+          "W_Ssyn": 0,
+          "W_Chal": 0,
+          "W_A3": 0
+        },
+        "per_criterion_counts_of_5": {
+          "W_A0": {
+            "c1": 5,
+            "c2": 5,
+            "c3": 5,
+            "c4": 5
+          },
+          "W_Ssyn": {
+            "c1": 2,
+            "c2": 5,
+            "c3": 0,
+            "c4": 1
+          },
+          "W_Chal": {
+            "c1": 0,
+            "c2": 0,
+            "c3": 0,
+            "c4": 0
+          },
+          "W_A3": {
+            "c1": 0,
+            "c2": 1,
+            "c3": 0,
+            "c4": 0
+          }
+        }
+      },
+      {
+        "slot_id": "W04",
+        "candidates": {
+          "W_A0": "Expansion",
+          "W_Ssyn": "growth",
+          "W_Chal": "eternity",
+          "W_A3": "Vibrance"
+        },
+        "all4_counts_of_5": {
+          "W_A0": 4,
+          "W_Ssyn": 1,
+          "W_Chal": 0,
+          "W_A3": 0
+        },
+        "per_criterion_counts_of_5": {
+          "W_A0": {
+            "c1": 4,
+            "c2": 5,
+            "c3": 5,
+            "c4": 5
+          },
+          "W_Ssyn": {
+            "c1": 3,
+            "c2": 5,
+            "c3": 3,
+            "c4": 5
+          },
+          "W_Chal": {
+            "c1": 0,
+            "c2": 0,
+            "c3": 2,
+            "c4": 0
+          },
+          "W_A3": {
+            "c1": 0,
+            "c2": 5,
+            "c3": 3,
+            "c4": 2
+          }
+        }
+      },
+      {
+        "slot_id": "W05",
+        "candidates": {
+          "W_A0": "Desire",
+          "W_Ssyn": "longing",
+          "W_Chal": "intensity",
+          "W_A3": "conscious energy"
+        },
+        "all4_counts_of_5": {
+          "W_A0": 3,
+          "W_Ssyn": 0,
+          "W_Chal": 0,
+          "W_A3": 0
+        },
+        "per_criterion_counts_of_5": {
+          "W_A0": {
+            "c1": 3,
+            "c2": 3,
+            "c3": 5,
+            "c4": 4
+          },
+          "W_Ssyn": {
+            "c1": 1,
+            "c2": 0,
+            "c3": 2,
+            "c4": 1
+          },
+          "W_Chal": {
+            "c1": 3,
+            "c2": 1,
+            "c3": 1,
+            "c4": 0
+          },
+          "W_A3": {
+            "c1": 0,
+            "c2": 2,
+            "c3": 3,
+            "c4": 0
+          }
+        }
+      },
+      {
+        "slot_id": "W06",
+        "candidates": {
+          "W_A0": "Vibrance",
+          "W_Ssyn": "capacity",
+          "W_Chal": "openness",
+          "W_A3": "Desire"
+        },
+        "all4_counts_of_5": {
+          "W_A0": 5,
+          "W_Ssyn": 0,
+          "W_Chal": 0,
+          "W_A3": 0
+        },
+        "per_criterion_counts_of_5": {
+          "W_A0": {
+            "c1": 5,
+            "c2": 5,
+            "c3": 5,
+            "c4": 5
+          },
+          "W_Ssyn": {
+            "c1": 0,
+            "c2": 0,
+            "c3": 2,
+            "c4": 0
+          },
+          "W_Chal": {
+            "c1": 0,
+            "c2": 3,
+            "c3": 3,
+            "c4": 1
+          },
+          "W_A3": {
+            "c1": 0,
+            "c2": 2,
+            "c3": 0,
+            "c4": 1
+          }
+        }
+      },
+      {
+        "slot_id": "W07",
+        "candidates": {
+          "W_A0": "Appreciation",
+          "W_Ssyn": "gratitude",
+          "W_Chal": "growth",
+          "W_A3": "imagination"
+        },
+        "all4_counts_of_5": {
+          "W_A0": 2,
+          "W_Ssyn": 0,
+          "W_Chal": 0,
+          "W_A3": 0
+        },
+        "per_criterion_counts_of_5": {
+          "W_A0": {
+            "c1": 2,
+            "c2": 5,
+            "c3": 2,
+            "c4": 5
+          },
+          "W_Ssyn": {
+            "c1": 0,
+            "c2": 4,
+            "c3": 1,
+            "c4": 3
+          },
+          "W_Chal": {
+            "c1": 0,
+            "c2": 1,
+            "c3": 0,
+            "c4": 0
+          },
+          "W_A3": {
+            "c1": 0,
+            "c2": 0,
+            "c3": 0,
+            "c4": 0
+          }
+        }
+      },
+      {
+        "slot_id": "W08",
+        "candidates": {
+          "W_A0": "Frequency",
+          "W_Ssyn": "urgency",
+          "W_Chal": "will",
+          "W_A3": "Movement"
+        },
+        "all4_counts_of_5": {
+          "W_A0": 4,
+          "W_Ssyn": 0,
+          "W_Chal": 0,
+          "W_A3": 0
+        },
+        "per_criterion_counts_of_5": {
+          "W_A0": {
+            "c1": 4,
+            "c2": 5,
+            "c3": 5,
+            "c4": 5
+          },
+          "W_Ssyn": {
+            "c1": 1,
+            "c2": 0,
+            "c3": 0,
+            "c4": 0
+          },
+          "W_Chal": {
+            "c1": 1,
+            "c2": 0,
+            "c3": 0,
+            "c4": 0
+          },
+          "W_A3": {
+            "c1": 0,
+            "c2": 3,
+            "c3": 0,
+            "c4": 0
+          }
+        }
+      },
+      {
+        "slot_id": "W09",
+        "candidates": {
+          "W_A0": "Tune",
+          "W_Ssyn": "focus",
+          "W_Chal": "surrender",
+          "W_A3": "resonance"
+        },
+        "all4_counts_of_5": {
+          "W_A0": 3,
+          "W_Ssyn": 0,
+          "W_Chal": 0,
+          "W_A3": 1
+        },
+        "per_criterion_counts_of_5": {
+          "W_A0": {
+            "c1": 3,
+            "c2": 5,
+            "c3": 5,
+            "c4": 5
+          },
+          "W_Ssyn": {
+            "c1": 0,
+            "c2": 0,
+            "c3": 3,
+            "c4": 0
+          },
+          "W_Chal": {
+            "c1": 0,
+            "c2": 0,
+            "c3": 0,
+            "c4": 0
+          },
+          "W_A3": {
+            "c1": 2,
+            "c2": 4,
+            "c3": 1,
+            "c4": 1
+          }
+        }
+      },
+      {
+        "slot_id": "W10",
+        "candidates": {
+          "W_A0": "Idle",
+          "W_Ssyn": "stillness",
+          "W_Chal": "rest",
+          "W_A3": "rise per Expansion"
+        },
+        "all4_counts_of_5": {
+          "W_A0": 2,
+          "W_Ssyn": 1,
+          "W_Chal": 0,
+          "W_A3": 0
+        },
+        "per_criterion_counts_of_5": {
+          "W_A0": {
+            "c1": 2,
+            "c2": 3,
+            "c3": 4,
+            "c4": 4
+          },
+          "W_Ssyn": {
+            "c1": 1,
+            "c2": 1,
+            "c3": 1,
+            "c4": 2
+          },
+          "W_Chal": {
+            "c1": 1,
+            "c2": 0,
+            "c3": 2,
+            "c4": 0
+          },
+          "W_A3": {
+            "c1": 0,
+            "c2": 3,
+            "c3": 0,
+            "c4": 0
+          }
+        }
+      },
+      {
+        "slot_id": "W11",
+        "candidates": {
+          "W_A0": "Reflected",
+          "W_Ssyn": "echo",
+          "W_Chal": "returning",
+          "W_A3": "Current"
+        },
+        "all4_counts_of_5": {
+          "W_A0": 4,
+          "W_Ssyn": 0,
+          "W_Chal": 0,
+          "W_A3": 0
+        },
+        "per_criterion_counts_of_5": {
+          "W_A0": {
+            "c1": 4,
+            "c2": 5,
+            "c3": 4,
+            "c4": 5
+          },
+          "W_Ssyn": {
+            "c1": 2,
+            "c2": 0,
+            "c3": 1,
+            "c4": 2
+          },
+          "W_Chal": {
+            "c1": 1,
+            "c2": 0,
+            "c3": 1,
+            "c4": 0
+          },
+          "W_A3": {
+            "c1": 0,
+            "c2": 2,
+            "c3": 0,
+            "c4": 0
+          }
+        }
+      },
+      {
+        "slot_id": "W12",
+        "candidates": {
+          "W_A0": "Vortex",
+          "W_Ssyn": "whirlpool",
+          "W_Chal": "well",
+          "W_A3": "Attraction"
+        },
+        "all4_counts_of_5": {
+          "W_A0": 4,
+          "W_Ssyn": 0,
+          "W_Chal": 0,
+          "W_A3": 0
+        },
+        "per_criterion_counts_of_5": {
+          "W_A0": {
+            "c1": 5,
+            "c2": 4,
+            "c3": 5,
+            "c4": 5
+          },
+          "W_Ssyn": {
+            "c1": 5,
+            "c2": 0,
+            "c3": 5,
+            "c4": 0
+          },
+          "W_Chal": {
+            "c1": 1,
+            "c2": 0,
+            "c3": 0,
+            "c4": 0
+          },
+          "W_A3": {
+            "c1": 0,
+            "c2": 5,
+            "c3": 0,
+            "c4": 0
+          }
+        }
+      },
+      {
+        "slot_id": "W13",
+        "candidates": {
+          "W_A0": "Convergence",
+          "W_Ssyn": "gathering",
+          "W_Chal": "lens",
+          "W_A3": "Intuition"
+        },
+        "all4_counts_of_5": {
+          "W_A0": 5,
+          "W_Ssyn": 0,
+          "W_Chal": 0,
+          "W_A3": 0
+        },
+        "per_criterion_counts_of_5": {
+          "W_A0": {
+            "c1": 5,
+            "c2": 5,
+            "c3": 5,
+            "c4": 5
+          },
+          "W_Ssyn": {
+            "c1": 0,
+            "c2": 1,
+            "c3": 0,
+            "c4": 1
+          },
+          "W_Chal": {
+            "c1": 0,
+            "c2": 0,
+            "c3": 0,
+            "c4": 0
+          },
+          "W_A3": {
+            "c1": 0,
+            "c2": 5,
+            "c3": 0,
+            "c4": 1
+          }
+        }
+      },
+      {
+        "slot_id": "W14",
+        "candidates": {
+          "W_A0": "Intuition",
+          "W_Ssyn": "hunch",
+          "W_Chal": "expectation",
+          "W_A3": "Vortex"
+        },
+        "all4_counts_of_5": {
+          "W_A0": 5,
+          "W_Ssyn": 0,
+          "W_Chal": 0,
+          "W_A3": 0
+        },
+        "per_criterion_counts_of_5": {
+          "W_A0": {
+            "c1": 5,
+            "c2": 5,
+            "c3": 5,
+            "c4": 5
+          },
+          "W_Ssyn": {
+            "c1": 3,
+            "c2": 1,
+            "c3": 1,
+            "c4": 1
+          },
+          "W_Chal": {
+            "c1": 0,
+            "c2": 0,
+            "c3": 0,
+            "c4": 0
+          },
+          "W_A3": {
+            "c1": 0,
+            "c2": 0,
+            "c3": 0,
+            "c4": 0
+          }
+        }
+      }
+    ]
+  },
+  "pillar_d2": {
+    "d2a_crossing_cal17": {
+      "total_items": 17,
+      "expected_calls": 85,
+      "valid_calls": 81,
+      "schema_error_count": 4,
+      "schema_errors": [
+        {
+          "item_id": "K07",
+          "model_id": "mistral-medium-3.5",
+          "errors": [
+            "Unwrapped translation_template mismatch vs translation_t: 'conscious energy = Movement × Current × Current' != 'conscious energy equals Movement times Current times Current'"
+          ]
+        },
+        {
+          "item_id": "K08",
+          "model_id": "llama-4-maverick",
+          "errors": [
+            "Invalid slot tokens for arm A0: ['Lorentz factor', 'Lorentz factor', 'one']"
+          ]
+        },
+        {
+          "item_id": "K10",
+          "model_id": "mistral-medium-3.5",
+          "errors": [
+            "Unwrapped translation_template mismatch vs translation_t: 'Vibration-Expansion squared = Current squared × Expansion squared - Vibration squared - Vibration squared - Vibration squared' != 'Vibration-Expansion squared equals Current squared times Expansion squared minus Vibration squared minus Vibration squared minus Vibration squared'"
+          ]
+        },
+        {
+          "item_id": "K14",
+          "model_id": "gemini-2.5-flash",
+          "errors": [
+            "Invalid slot tokens for arm A0: ['Frequency_AB', 'Frequency_BA']",
+            "Unresolved '{' or '}' braces in translation_t",
+            "Unresolved '{' or '}' braces in direction_flipped_d"
+          ]
+        }
+      ],
+      "consensus_4_of_5_correct_all_17": 8,
+      "consensus_4_of_5_accuracy_all_17": 0.470588,
+      "consensus_4_of_5_correct_k01_k16": 7,
+      "consensus_4_of_5_accuracy_k01_k16": 0.4375,
+      "pooled_correct_of_85": 56,
+      "pooled_accuracy_of_85": 0.658824,
+      "pooled_accuracy_of_valid": 0.691358,
+      "per_model_correct_all_17": {
+        "claude-sonnet-4.6": 11,
+        "gpt-5.4-fast": 14,
+        "gemini-2.5-flash": 13,
+        "mistral-medium-3.5": 8,
+        "llama-4-maverick": 10
+      },
+      "per_model_correct_k01_k16": {
+        "claude-sonnet-4.6": 10,
+        "gpt-5.4-fast": 13,
+        "gemini-2.5-flash": 12,
+        "mistral-medium-3.5": 8,
+        "llama-4-maverick": 9
+      },
+      "vs_commit2_m1_a0_all_17_mcnemar": {
+        "n_paired": 17,
+        "n11_both_true": 7,
+        "n10_first_only": 1,
+        "n01_second_only": 5,
+        "n00_both_false": 4,
+        "p_value": 0.21875
+      },
+      "vs_commit2_m1_a0_k01_k16_mcnemar": {
+        "n_paired": 16,
+        "n11_both_true": 7,
+        "n10_first_only": 0,
+        "n01_second_only": 5,
+        "n00_both_false": 4,
+        "p_value": 0.0625
+      },
+      "k17_boyle_law_shift": {
+        "d2a_scope_counts": {
+          "crossing_interface": 4,
+          "no_partner": 1
+        },
+        "d2a_ruling_counts": {
+          "keep": 4,
+          "no partner": 1
+        },
+        "d2a_consensus_correct": true,
+        "commit2_m1_a0_votes": {
+          "claude-sonnet-4.6": "no partner",
+          "gpt-5.4-fast": "no partner",
+          "gemini-2.5-flash": "no partner",
+          "mistral-medium-3.5": "no partner",
+          "llama-4-maverick": "no partner"
+        },
+        "commit2_m1_a0_consensus_correct": false
+      },
+      "items": [
+        {
+          "item_id": "K01",
+          "expected_book_ruling": "keep",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "keep": 5
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": true,
+          "majority_ruling": "keep",
+          "majority_ruling_count": 5,
+          "consensus_4_of_5_ruling": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 5,
+          "commit2_m1_a0_consensus_correct": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "llama-4-maverick": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            }
+          },
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K02",
+          "expected_book_ruling": "invert",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "invert": 2,
+            "keep": 3
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": true,
+          "majority_ruling": "keep",
+          "majority_ruling_count": 3,
+          "consensus_4_of_5_ruling": false,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "invert",
+          "commit2_m1_a0_majority_count": 5,
+          "commit2_m1_a0_consensus_correct": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "llama-4-maverick": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            }
+          },
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K03",
+          "expected_book_ruling": "keep",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 4,
+            "no_partner": 1
+          },
+          "ruling_counts": {
+            "keep": 4,
+            "no partner": 1
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": true,
+          "majority_ruling": "keep",
+          "majority_ruling_count": 4,
+          "consensus_4_of_5_ruling": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K04",
+          "expected_book_ruling": "keep",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 3,
+            "no_partner": 2
+          },
+          "ruling_counts": {
+            "invert": 1,
+            "keep": 2,
+            "no partner": 2
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": false,
+          "majority_ruling": "keep",
+          "majority_ruling_count": 2,
+          "consensus_4_of_5_ruling": false,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K05",
+          "expected_book_ruling": "keep",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 4,
+            "open_joint": 1
+          },
+          "ruling_counts": {
+            "invert": 2,
+            "keep": 2,
+            "indeterminate": 1
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": true,
+          "majority_ruling": "invert",
+          "majority_ruling_count": 2,
+          "consensus_4_of_5_ruling": false,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "invert",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": false,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "open_joint",
+              "ruling": "indeterminate"
+            },
+            "llama-4-maverick": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            }
+          },
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K06",
+          "expected_book_ruling": "keep",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "invert": 3,
+            "keep": 2
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": true,
+          "majority_ruling": "invert",
+          "majority_ruling_count": 3,
+          "consensus_4_of_5_ruling": false,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "invert",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": false,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "llama-4-maverick": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            }
+          },
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K07",
+          "expected_book_ruling": "keep",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 4,
+          "scope_counts": {
+            "in_scope": 4
+          },
+          "ruling_counts": {
+            "keep": 4
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": true,
+          "majority_ruling": "keep",
+          "majority_ruling_count": 4,
+          "consensus_4_of_5_ruling": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 5,
+          "commit2_m1_a0_consensus_correct": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "SCHEMA_ERROR",
+              "ruling": "SCHEMA_ERROR"
+            },
+            "llama-4-maverick": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            }
+          },
+          "schema_error_models": [
+            "mistral-medium-3.5"
+          ]
+        },
+        {
+          "item_id": "K08",
+          "expected_book_ruling": "invert",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 4,
+          "scope_counts": {
+            "in_scope": 3,
+            "no_partner": 1
+          },
+          "ruling_counts": {
+            "invert": 3,
+            "no partner": 1
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": false,
+          "majority_ruling": "invert",
+          "majority_ruling_count": 3,
+          "consensus_4_of_5_ruling": false,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "invert",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "SCHEMA_ERROR",
+              "ruling": "SCHEMA_ERROR"
+            }
+          },
+          "schema_error_models": [
+            "llama-4-maverick"
+          ]
+        },
+        {
+          "item_id": "K09",
+          "expected_book_ruling": "invert",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "invert": 3,
+            "keep": 2
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": true,
+          "majority_ruling": "invert",
+          "majority_ruling_count": 3,
+          "consensus_4_of_5_ruling": false,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "invert",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "llama-4-maverick": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            }
+          },
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K10",
+          "expected_book_ruling": "keep",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 4,
+          "scope_counts": {
+            "in_scope": 4
+          },
+          "ruling_counts": {
+            "keep": 4
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": true,
+          "majority_ruling": "keep",
+          "majority_ruling_count": 4,
+          "consensus_4_of_5_ruling": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "SCHEMA_ERROR",
+              "ruling": "SCHEMA_ERROR"
+            },
+            "llama-4-maverick": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            }
+          },
+          "schema_error_models": [
+            "mistral-medium-3.5"
+          ]
+        },
+        {
+          "item_id": "K11",
+          "expected_book_ruling": "keep",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 4,
+            "no_partner": 1
+          },
+          "ruling_counts": {
+            "invert": 1,
+            "keep": 3,
+            "no partner": 1
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": true,
+          "majority_ruling": "keep",
+          "majority_ruling_count": 3,
+          "consensus_4_of_5_ruling": false,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 5,
+          "commit2_m1_a0_consensus_correct": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K12",
+          "expected_book_ruling": "keep",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 3,
+            "no_partner": 2
+          },
+          "ruling_counts": {
+            "invert": 2,
+            "keep": 1,
+            "no partner": 2
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": false,
+          "majority_ruling": "invert",
+          "majority_ruling_count": 2,
+          "consensus_4_of_5_ruling": false,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 3,
+          "commit2_m1_a0_consensus_correct": false,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K13",
+          "expected_book_ruling": "keep",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "keep": 5
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": true,
+          "majority_ruling": "keep",
+          "majority_ruling_count": 5,
+          "consensus_4_of_5_ruling": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 5,
+          "commit2_m1_a0_consensus_correct": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "llama-4-maverick": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            }
+          },
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K14",
+          "expected_book_ruling": "keep",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 4,
+          "scope_counts": {
+            "in_scope": 4
+          },
+          "ruling_counts": {
+            "keep": 4
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": true,
+          "majority_ruling": "keep",
+          "majority_ruling_count": 4,
+          "consensus_4_of_5_ruling": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 5,
+          "commit2_m1_a0_consensus_correct": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "SCHEMA_ERROR",
+              "ruling": "SCHEMA_ERROR"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "llama-4-maverick": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            }
+          },
+          "schema_error_models": [
+            "gemini-2.5-flash"
+          ]
+        },
+        {
+          "item_id": "K15",
+          "expected_book_ruling": "keep",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "keep": 5
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": true,
+          "majority_ruling": "keep",
+          "majority_ruling_count": 5,
+          "consensus_4_of_5_ruling": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "llama-4-maverick": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            }
+          },
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K16",
+          "expected_book_ruling": "keep",
+          "expected_scope_status_v3": "in_scope",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "invert": 2,
+            "keep": 3
+          },
+          "majority_scope_status": "in_scope",
+          "consensus_4_of_5_scope": true,
+          "majority_ruling": "keep",
+          "majority_ruling_count": 3,
+          "consensus_4_of_5_ruling": false,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 3,
+          "commit2_m1_a0_consensus_correct": false,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "in_scope",
+              "ruling": "invert"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            },
+            "llama-4-maverick": {
+              "scope_status": "in_scope",
+              "ruling": "keep"
+            }
+          },
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K17",
+          "expected_book_ruling": "keep",
+          "expected_scope_status_v3": "crossing_interface",
+          "valid_calls": 5,
+          "scope_counts": {
+            "crossing_interface": 4,
+            "no_partner": 1
+          },
+          "ruling_counts": {
+            "keep": 4,
+            "no partner": 1
+          },
+          "majority_scope_status": "crossing_interface",
+          "consensus_4_of_5_scope": true,
+          "majority_ruling": "keep",
+          "majority_ruling_count": 4,
+          "consensus_4_of_5_ruling": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "no partner",
+          "commit2_m1_a0_majority_count": 5,
+          "commit2_m1_a0_consensus_correct": false,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            }
+          },
+          "schema_error_models": []
+        }
+      ]
+    },
+    "d2b_crossing_battery20": {
+      "total_items": 20,
+      "mechanical_crossing_count": 7,
+      "non_crossing_boundary_count": 13,
+      "expected_calls": 100,
+      "valid_calls": 94,
+      "schema_error_count": 6,
+      "h4_strict_ge_4_of_5_crossing_interface": {
+        "mechanical_crossing_pass": 5,
+        "mechanical_crossing_total": 7,
+        "mechanical_crossing_rate": 0.714286,
+        "non_crossing_boundary_pass": 0,
+        "non_crossing_boundary_total": 13,
+        "non_crossing_boundary_rate": 0.0,
+        "fisher_2x2_p": 0.0013544891640866873
+      },
+      "sensitivity_valid_voter_ge_0_80_crossing_interface": {
+        "mechanical_crossing_pass": 7,
+        "mechanical_crossing_total": 7,
+        "non_crossing_boundary_pass": 0,
+        "non_crossing_boundary_total": 13,
+        "fisher_2x2_p": 1.2899896800825593e-05
+      },
+      "sensitivity_raw_parsed_json_ge_4_of_5_crossing_interface": {
+        "mechanical_crossing_pass": 7,
+        "mechanical_crossing_total": 7,
+        "non_crossing_boundary_pass": 0,
+        "non_crossing_boundary_total": 13,
+        "fisher_2x2_p": 1.2899896800825593e-05
+      },
+      "non_crossing_boundary_5_of_5_no_partner_count": 13,
+      "schema_error_audit_template_lint": [
+        {
+          "item_id": "X001",
+          "stratum": "Mechanical_Crossing",
+          "model_id": "llama-4-maverick",
+          "errors": [
+            "Invalid slot tokens for D2 crossing arm: ['Vibration squared']",
+            "Unresolved '{' or '}' braces in translation_t",
+            "Unresolved '{' or '}' braces in direction_flipped_d"
+          ],
+          "raw_parsed_json_present": true,
+          "raw_parsed_scope_status": "crossing_interface",
+          "raw_parsed_ruling": "keep",
+          "raw_parsed_variable_map": {
+            "p": "felt gap",
+            "F": "Frequency",
+            "A": "Vibration²"
+          },
+          "raw_parsed_translation_template": "{felt_gap} equals {Frequency} per {Vibration²}."
+        },
+        {
+          "item_id": "X004",
+          "stratum": "Mechanical_Crossing",
+          "model_id": "gpt-5.4-fast",
+          "errors": [
+            "Invalid slot tokens for D2 crossing arm: ['area', 'area']"
+          ],
+          "raw_parsed_json_present": true,
+          "raw_parsed_scope_status": "crossing_interface",
+          "raw_parsed_ruling": "keep",
+          "raw_parsed_variable_map": {
+            "F_1": "Frequency",
+            "A_1": "area",
+            "F_2": "Frequency",
+            "A_2": "area",
+            "F/A": "felt gap"
+          },
+          "raw_parsed_translation_template": "The same {felt_gap} is carried when {Frequency} is distributed across one {area} and across another {area}."
+        },
+        {
+          "item_id": "X004",
+          "stratum": "Mechanical_Crossing",
+          "model_id": "gemini-2.5-flash",
+          "errors": [
+            "Non-stripped variable_map slot(s) missing from translation_template {...}: ['Frequency', 'Vibration']"
+          ],
+          "raw_parsed_json_present": true,
+          "raw_parsed_scope_status": "crossing_interface",
+          "raw_parsed_ruling": "keep",
+          "raw_parsed_variable_map": {
+            "F_1": "Frequency_1",
+            "A_1": "Vibration_1²",
+            "F_2": "Frequency_2",
+            "A_2": "Vibration_2²"
+          },
+          "raw_parsed_translation_template": "The {felt_gap} at point one keeps the same as the {felt_gap} at point two."
+        },
+        {
+          "item_id": "X004",
+          "stratum": "Mechanical_Crossing",
+          "model_id": "llama-4-maverick",
+          "errors": [
+            "Non-stripped variable_map slot(s) missing from translation_template {...}: ['Frequency', 'Vibration']"
+          ],
+          "raw_parsed_json_present": true,
+          "raw_parsed_scope_status": "crossing_interface",
+          "raw_parsed_ruling": "keep",
+          "raw_parsed_variable_map": {
+            "F_{1}": "Frequency",
+            "A_{1}": "Vibration²",
+            "F_{2}": "Frequency",
+            "A_{2}": "Vibration²",
+            "\\frac{F_{1}}{A_{1}}": "felt gap",
+            "\\frac{F_{2}}{A_{2}}": "felt gap"
+          },
+          "raw_parsed_translation_template": "{felt_gap} equals {felt_gap}"
+        },
+        {
+          "item_id": "X005",
+          "stratum": "Mechanical_Crossing",
+          "model_id": "mistral-medium-3.5",
+          "errors": [
+            "Unwrapped translation_template mismatch vs translation_t: 'felt gap + Desire rise per Expansion rise per Expansion + Desire Attraction Vibration = constant' != 'felt gap plus Desire times rise per Expansion times rise per Expansion plus Desire times Attraction times Vibration equals constant'"
+          ],
+          "raw_parsed_json_present": true,
+          "raw_parsed_scope_status": "crossing_interface",
+          "raw_parsed_ruling": "keep",
+          "raw_parsed_variable_map": {
+            "p": "felt gap",
+            "ρ": "Desire",
+            "v": "rise per Expansion",
+            "g": "Attraction",
+            "y": "Vibration"
+          },
+          "raw_parsed_translation_template": "{felt_gap} + {Desire} {rise_per_Expansion} {rise_per_Expansion} + {Desire} {Attraction} {Vibration} = constant"
+        },
+        {
+          "item_id": "X005",
+          "stratum": "Mechanical_Crossing",
+          "model_id": "llama-4-maverick",
+          "errors": [
+            "Invalid slot tokens for D2 crossing arm: ['constancy']"
+          ],
+          "raw_parsed_json_present": true,
+          "raw_parsed_scope_status": "crossing_interface",
+          "raw_parsed_ruling": "keep",
+          "raw_parsed_variable_map": {
+            "p": "{felt gap}",
+            "\\rho": "{Desire}",
+            "v": "{rise per Expansion}",
+            "y": "{Vibration}",
+            "g": "{Attraction}"
+          },
+          "raw_parsed_translation_template": "{felt gap} + {Desire} * {rise per Expansion}² + {Desire} * {Attraction} * {Vibration} = {constancy}"
+        }
+      ],
+      "x007_x008_inspection": [
+        {
+          "item_id": "X007",
+          "stratum": "Non_Crossing_Boundary",
+          "expected_scope_status": "no_partner",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "no_partner": 5
+          },
+          "raw_parsed_scope_counts": {
+            "no_partner": 5
+          },
+          "strict_ruling_counts": {
+            "no partner": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": false,
+          "raw_parsed_ge_4_of_5_crossing_interface": false,
+          "strict_majority_scope_status": "no_partner",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [
+              "T_1",
+              "T_2"
+            ],
+            "gpt-5.4-fast": [
+              "T_1",
+              "T_2"
+            ],
+            "gemini-2.5-flash": [
+              "temperature"
+            ],
+            "mistral-medium-3.5": [
+              "T_1",
+              "T_2",
+              "p_1",
+              "p_2",
+              "V_1",
+              "V_2"
+            ],
+            "llama-4-maverick": [
+              "T_1",
+              "T_2"
+            ]
+          }
+        },
+        {
+          "item_id": "X008",
+          "stratum": "Non_Crossing_Boundary",
+          "expected_scope_status": "no_partner",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "no_partner": 5
+          },
+          "raw_parsed_scope_counts": {
+            "no_partner": 5
+          },
+          "strict_ruling_counts": {
+            "no partner": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": false,
+          "raw_parsed_ge_4_of_5_crossing_interface": false,
+          "strict_majority_scope_status": "no_partner",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [
+              "volume flow rate Q",
+              "dynamic viscosity eta"
+            ],
+            "gpt-5.4-fast": [
+              "Q",
+              "eta"
+            ],
+            "gemini-2.5-flash": [
+              "Q (volume flow rate)",
+              "eta (dynamic viscosity)"
+            ],
+            "mistral-medium-3.5": [
+              "Q",
+              "eta"
+            ],
+            "llama-4-maverick": [
+              "Q",
+              "\\eta"
+            ]
+          }
+        }
+      ],
+      "items": [
+        {
+          "item_id": "E029",
+          "stratum": "Mechanical_Crossing",
+          "expected_scope_status": "crossing_interface",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "crossing_interface": 5
+          },
+          "raw_parsed_scope_counts": {
+            "crossing_interface": 5
+          },
+          "strict_ruling_counts": {
+            "invert": 4,
+            "keep": 1
+          },
+          "strict_ge_4_of_5_crossing_interface": true,
+          "valid_voter_ge_0_80_crossing_interface": true,
+          "raw_parsed_ge_4_of_5_crossing_interface": true,
+          "strict_majority_scope_status": "crossing_interface",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "crossing_interface",
+              "ruling": "invert"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "crossing_interface",
+              "ruling": "invert"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "crossing_interface",
+              "ruling": "invert"
+            },
+            "llama-4-maverick": {
+              "scope_status": "crossing_interface",
+              "ruling": "invert"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [],
+            "gpt-5.4-fast": [],
+            "gemini-2.5-flash": [],
+            "mistral-medium-3.5": [],
+            "llama-4-maverick": []
+          }
+        },
+        {
+          "item_id": "X001",
+          "stratum": "Mechanical_Crossing",
+          "expected_scope_status": "crossing_interface",
+          "valid_calls": 4,
+          "schema_error_count": 1,
+          "strict_scope_counts": {
+            "crossing_interface": 4
+          },
+          "raw_parsed_scope_counts": {
+            "crossing_interface": 5
+          },
+          "strict_ruling_counts": {
+            "invert": 1,
+            "keep": 3
+          },
+          "strict_ge_4_of_5_crossing_interface": true,
+          "valid_voter_ge_0_80_crossing_interface": true,
+          "raw_parsed_ge_4_of_5_crossing_interface": true,
+          "strict_majority_scope_status": "crossing_interface",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "crossing_interface",
+              "ruling": "invert"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "llama-4-maverick": {
+              "scope_status": "SCHEMA_ERROR",
+              "ruling": "SCHEMA_ERROR"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [],
+            "gpt-5.4-fast": [],
+            "gemini-2.5-flash": [],
+            "mistral-medium-3.5": []
+          }
+        },
+        {
+          "item_id": "X002",
+          "stratum": "Mechanical_Crossing",
+          "expected_scope_status": "crossing_interface",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "crossing_interface": 5
+          },
+          "raw_parsed_scope_counts": {
+            "crossing_interface": 5
+          },
+          "strict_ruling_counts": {
+            "invert": 2,
+            "keep": 3
+          },
+          "strict_ge_4_of_5_crossing_interface": true,
+          "valid_voter_ge_0_80_crossing_interface": true,
+          "raw_parsed_ge_4_of_5_crossing_interface": true,
+          "strict_majority_scope_status": "crossing_interface",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "crossing_interface",
+              "ruling": "invert"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "llama-4-maverick": {
+              "scope_status": "crossing_interface",
+              "ruling": "invert"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [],
+            "gpt-5.4-fast": [],
+            "gemini-2.5-flash": [],
+            "mistral-medium-3.5": [],
+            "llama-4-maverick": []
+          }
+        },
+        {
+          "item_id": "X003",
+          "stratum": "Mechanical_Crossing",
+          "expected_scope_status": "crossing_interface",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "crossing_interface": 5
+          },
+          "raw_parsed_scope_counts": {
+            "crossing_interface": 5
+          },
+          "strict_ruling_counts": {
+            "keep": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": true,
+          "valid_voter_ge_0_80_crossing_interface": true,
+          "raw_parsed_ge_4_of_5_crossing_interface": true,
+          "strict_majority_scope_status": "crossing_interface",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "llama-4-maverick": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [],
+            "gpt-5.4-fast": [],
+            "gemini-2.5-flash": [],
+            "mistral-medium-3.5": [],
+            "llama-4-maverick": []
+          }
+        },
+        {
+          "item_id": "X004",
+          "stratum": "Mechanical_Crossing",
+          "expected_scope_status": "crossing_interface",
+          "valid_calls": 2,
+          "schema_error_count": 3,
+          "strict_scope_counts": {
+            "crossing_interface": 2
+          },
+          "raw_parsed_scope_counts": {
+            "crossing_interface": 5
+          },
+          "strict_ruling_counts": {
+            "keep": 2
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": true,
+          "raw_parsed_ge_4_of_5_crossing_interface": true,
+          "strict_majority_scope_status": "crossing_interface",
+          "strict_consensus_4_of_5_scope": false,
+          "strict_consensus_matches_expected_scope": false,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "SCHEMA_ERROR",
+              "ruling": "SCHEMA_ERROR"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "SCHEMA_ERROR",
+              "ruling": "SCHEMA_ERROR"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "llama-4-maverick": {
+              "scope_status": "SCHEMA_ERROR",
+              "ruling": "SCHEMA_ERROR"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [],
+            "mistral-medium-3.5": []
+          }
+        },
+        {
+          "item_id": "X005",
+          "stratum": "Mechanical_Crossing",
+          "expected_scope_status": "crossing_interface",
+          "valid_calls": 3,
+          "schema_error_count": 2,
+          "strict_scope_counts": {
+            "crossing_interface": 3
+          },
+          "raw_parsed_scope_counts": {
+            "crossing_interface": 5
+          },
+          "strict_ruling_counts": {
+            "keep": 3
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": true,
+          "raw_parsed_ge_4_of_5_crossing_interface": true,
+          "strict_majority_scope_status": "crossing_interface",
+          "strict_consensus_4_of_5_scope": false,
+          "strict_consensus_matches_expected_scope": false,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "SCHEMA_ERROR",
+              "ruling": "SCHEMA_ERROR"
+            },
+            "llama-4-maverick": {
+              "scope_status": "SCHEMA_ERROR",
+              "ruling": "SCHEMA_ERROR"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [],
+            "gpt-5.4-fast": [],
+            "gemini-2.5-flash": []
+          }
+        },
+        {
+          "item_id": "X006",
+          "stratum": "Mechanical_Crossing",
+          "expected_scope_status": "crossing_interface",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "crossing_interface": 4,
+            "no_partner": 1
+          },
+          "raw_parsed_scope_counts": {
+            "crossing_interface": 4,
+            "no_partner": 1
+          },
+          "strict_ruling_counts": {
+            "invert": 3,
+            "keep": 1,
+            "no partner": 1
+          },
+          "strict_ge_4_of_5_crossing_interface": true,
+          "valid_voter_ge_0_80_crossing_interface": true,
+          "raw_parsed_ge_4_of_5_crossing_interface": true,
+          "strict_majority_scope_status": "crossing_interface",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "crossing_interface",
+              "ruling": "invert"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "crossing_interface",
+              "ruling": "keep"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "crossing_interface",
+              "ruling": "invert"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "crossing_interface",
+              "ruling": "invert"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [],
+            "gpt-5.4-fast": [],
+            "gemini-2.5-flash": [],
+            "mistral-medium-3.5": [
+              "p",
+              "V_1",
+              "V_2",
+              "dV",
+              "W"
+            ],
+            "llama-4-maverick": []
+          }
+        },
+        {
+          "item_id": "E003",
+          "stratum": "Non_Crossing_Boundary",
+          "expected_scope_status": "no_partner",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "no_partner": 5
+          },
+          "raw_parsed_scope_counts": {
+            "no_partner": 5
+          },
+          "strict_ruling_counts": {
+            "no partner": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": false,
+          "raw_parsed_ge_4_of_5_crossing_interface": false,
+          "strict_majority_scope_status": "no_partner",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [
+              "Q (heat)",
+              "L_v (latent heat of vaporization)"
+            ],
+            "gpt-5.4-fast": [
+              "Q",
+              "L_v"
+            ],
+            "gemini-2.5-flash": [
+              "Q (heat)",
+              "L_v (latent heat)"
+            ],
+            "mistral-medium-3.5": [
+              "Q",
+              "m",
+              "L_v"
+            ],
+            "llama-4-maverick": [
+              "Q",
+              "m",
+              "L_v"
+            ]
+          }
+        },
+        {
+          "item_id": "E004",
+          "stratum": "Non_Crossing_Boundary",
+          "expected_scope_status": "no_partner",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "no_partner": 5
+          },
+          "raw_parsed_scope_counts": {
+            "no_partner": 5
+          },
+          "strict_ruling_counts": {
+            "no partner": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": false,
+          "raw_parsed_ge_4_of_5_crossing_interface": false,
+          "strict_majority_scope_status": "no_partner",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [
+              "T (temperature)",
+              "R (ideal gas constant)",
+              "k_B (Boltzmann constant)",
+              "M (molar mass)"
+            ],
+            "gpt-5.4-fast": [
+              "R",
+              "T",
+              "M",
+              "k_B"
+            ],
+            "gemini-2.5-flash": [
+              "T",
+              "R",
+              "M",
+              "k_B",
+              "m"
+            ],
+            "mistral-medium-3.5": [
+              "R",
+              "T",
+              "k_B",
+              "m",
+              "M"
+            ],
+            "llama-4-maverick": [
+              "T",
+              "R",
+              "k_{\\text{B}}",
+              "M",
+              "m"
+            ]
+          }
+        },
+        {
+          "item_id": "E009",
+          "stratum": "Non_Crossing_Boundary",
+          "expected_scope_status": "no_partner",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "no_partner": 5
+          },
+          "raw_parsed_scope_counts": {
+            "no_partner": 5
+          },
+          "strict_ruling_counts": {
+            "no partner": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": false,
+          "raw_parsed_ge_4_of_5_crossing_interface": false,
+          "strict_majority_scope_status": "no_partner",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [
+              "volume flow rate Q = dV/dt"
+            ],
+            "gpt-5.4-fast": [
+              "Q",
+              "volume flow rate"
+            ],
+            "gemini-2.5-flash": [
+              "volume flow rate Q"
+            ],
+            "mistral-medium-3.5": [
+              "volume flow rate Q",
+              "volume V",
+              "time t"
+            ],
+            "llama-4-maverick": [
+              "Q"
+            ]
+          }
+        },
+        {
+          "item_id": "E012",
+          "stratum": "Non_Crossing_Boundary",
+          "expected_scope_status": "no_partner",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "no_partner": 5
+          },
+          "raw_parsed_scope_counts": {
+            "no_partner": 5
+          },
+          "strict_ruling_counts": {
+            "no partner": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": false,
+          "raw_parsed_ge_4_of_5_crossing_interface": false,
+          "strict_majority_scope_status": "no_partner",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [
+              "S (entropy)",
+              "Q (heat)",
+              "T (temperature)"
+            ],
+            "gpt-5.4-fast": [
+              "S",
+              "Q",
+              "T"
+            ],
+            "gemini-2.5-flash": [
+              "Entropy (S)",
+              "Heat (Q)",
+              "Temperature (T)"
+            ],
+            "mistral-medium-3.5": [
+              "entropy S",
+              "heat Q",
+              "absolute temperature T"
+            ],
+            "llama-4-maverick": [
+              "dQ",
+              "T",
+              "dS"
+            ]
+          }
+        },
+        {
+          "item_id": "E015",
+          "stratum": "Non_Crossing_Boundary",
+          "expected_scope_status": "no_partner",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "no_partner": 5
+          },
+          "raw_parsed_scope_counts": {
+            "no_partner": 5
+          },
+          "strict_ruling_counts": {
+            "no partner": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": false,
+          "raw_parsed_ge_4_of_5_crossing_interface": false,
+          "strict_majority_scope_status": "no_partner",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [
+              "C_p (molar heat capacity at constant pressure)",
+              "C_V (molar heat capacity at constant volume)",
+              "gamma (adiabatic index defined by these thermal quantities)"
+            ],
+            "gpt-5.4-fast": [
+              "C_p",
+              "C_V"
+            ],
+            "gemini-2.5-flash": [
+              "gamma",
+              "C_p",
+              "C_V"
+            ],
+            "mistral-medium-3.5": [
+              "gamma",
+              "C_p",
+              "C_V"
+            ],
+            "llama-4-maverick": [
+              "C_p",
+              "C_V",
+              "\\gamma"
+            ]
+          }
+        },
+        {
+          "item_id": "E019",
+          "stratum": "Non_Crossing_Boundary",
+          "expected_scope_status": "no_partner",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "no_partner": 5
+          },
+          "raw_parsed_scope_counts": {
+            "no_partner": 5
+          },
+          "strict_ruling_counts": {
+            "no partner": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": false,
+          "raw_parsed_ge_4_of_5_crossing_interface": false,
+          "strict_majority_scope_status": "no_partner",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [
+              "f_o (observed wave frequency in Hz)",
+              "f_s (source wave frequency in Hz)",
+              "v (wave speed of sound)",
+              "v_o (observer velocity in acoustic context)",
+              "v_s (source velocity in acoustic context)"
+            ],
+            "gpt-5.4-fast": [
+              "f_o",
+              "f_s"
+            ],
+            "gemini-2.5-flash": [
+              "f_o (observed frequency)",
+              "f_s (source frequency)",
+              "v (speed of sound)",
+              "v_o (observer speed)",
+              "v_s (source speed)"
+            ],
+            "mistral-medium-3.5": [
+              "f_o",
+              "f_s",
+              "v_o",
+              "v_s",
+              "v"
+            ],
+            "llama-4-maverick": [
+              "f_{\\text{o}}",
+              "f_{\\text{s}}",
+              "v",
+              "v_{\\text{o}}",
+              "v_{\\text{s}}"
+            ]
+          }
+        },
+        {
+          "item_id": "E025",
+          "stratum": "Non_Crossing_Boundary",
+          "expected_scope_status": "no_partner",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "no_partner": 5
+          },
+          "raw_parsed_scope_counts": {
+            "no_partner": 5
+          },
+          "strict_ruling_counts": {
+            "no partner": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": false,
+          "raw_parsed_ge_4_of_5_crossing_interface": false,
+          "strict_majority_scope_status": "no_partner",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [
+              "E_int",
+              "Q"
+            ],
+            "gpt-5.4-fast": [
+              "Delta E_int",
+              "Q"
+            ],
+            "gemini-2.5-flash": [
+              "internal energy",
+              "heat"
+            ],
+            "mistral-medium-3.5": [
+              "ΔE_int",
+              "Q",
+              "W"
+            ],
+            "llama-4-maverick": [
+              "Q",
+              "Delta E_int"
+            ]
+          }
+        },
+        {
+          "item_id": "E031",
+          "stratum": "Non_Crossing_Boundary",
+          "expected_scope_status": "no_partner",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "no_partner": 5
+          },
+          "raw_parsed_scope_counts": {
+            "no_partner": 5
+          },
+          "strict_ruling_counts": {
+            "no partner": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": false,
+          "raw_parsed_ge_4_of_5_crossing_interface": false,
+          "strict_majority_scope_status": "no_partner",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [
+              "ΔT",
+              "Delta T",
+              "temperature change"
+            ],
+            "gpt-5.4-fast": [
+              "Delta T"
+            ],
+            "gemini-2.5-flash": [
+              "Delta T",
+              "alpha"
+            ],
+            "mistral-medium-3.5": [
+              "Delta L",
+              "alpha",
+              "L",
+              "Delta T"
+            ],
+            "llama-4-maverick": [
+              "\\Delta T",
+              "\\Delta L",
+              "L"
+            ]
+          }
+        },
+        {
+          "item_id": "E032",
+          "stratum": "Non_Crossing_Boundary",
+          "expected_scope_status": "no_partner",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "no_partner": 5
+          },
+          "raw_parsed_scope_counts": {
+            "no_partner": 5
+          },
+          "strict_ruling_counts": {
+            "no partner": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": false,
+          "raw_parsed_ge_4_of_5_crossing_interface": false,
+          "strict_majority_scope_status": "no_partner",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [
+              "T",
+              "k_B",
+              "N"
+            ],
+            "gpt-5.4-fast": [
+              "pressure",
+              "N",
+              "k_B",
+              "T"
+            ],
+            "gemini-2.5-flash": [
+              "T",
+              "N",
+              "k_B"
+            ],
+            "mistral-medium-3.5": [
+              "N",
+              "k_B",
+              "T"
+            ],
+            "llama-4-maverick": [
+              "N",
+              "T"
+            ]
+          }
+        },
+        {
+          "item_id": "E033",
+          "stratum": "Non_Crossing_Boundary",
+          "expected_scope_status": "no_partner",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "no_partner": 5
+          },
+          "raw_parsed_scope_counts": {
+            "no_partner": 5
+          },
+          "strict_ruling_counts": {
+            "no partner": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": false,
+          "raw_parsed_ge_4_of_5_crossing_interface": false,
+          "strict_majority_scope_status": "no_partner",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [
+              "T_K (absolute temperature — active thermal variable)",
+              "T_C (Celsius temperature — active thermal variable)",
+              "v (speed of sound — acoustic wave speed quantity)"
+            ],
+            "gpt-5.4-fast": [
+              "speed of sound",
+              "temperature",
+              "T_K",
+              "T_C"
+            ],
+            "gemini-2.5-flash": [
+              "v",
+              "T_K",
+              "T_C"
+            ],
+            "mistral-medium-3.5": [
+              "T_K",
+              "T_C",
+              "speed of sound v"
+            ],
+            "llama-4-maverick": [
+              "v",
+              "T_K",
+              "T_C"
+            ]
+          }
+        },
+        {
+          "item_id": "E034",
+          "stratum": "Non_Crossing_Boundary",
+          "expected_scope_status": "no_partner",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "no_partner": 5
+          },
+          "raw_parsed_scope_counts": {
+            "no_partner": 5
+          },
+          "strict_ruling_counts": {
+            "no partner": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": false,
+          "raw_parsed_ge_4_of_5_crossing_interface": false,
+          "strict_majority_scope_status": "no_partner",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [
+              "T_c",
+              "T_h",
+              "T_h - T_c",
+              "K_R"
+            ],
+            "gpt-5.4-fast": [
+              "T_c",
+              "T_h",
+              "temperature",
+              "reversible refrigerator performance coefficient"
+            ],
+            "gemini-2.5-flash": [
+              "T_c",
+              "T_h",
+              "K_R"
+            ],
+            "mistral-medium-3.5": [
+              "T_c",
+              "T_h"
+            ],
+            "llama-4-maverick": [
+              "T_c",
+              "T_h"
+            ]
+          }
+        },
+        {
+          "item_id": "X007",
+          "stratum": "Non_Crossing_Boundary",
+          "expected_scope_status": "no_partner",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "no_partner": 5
+          },
+          "raw_parsed_scope_counts": {
+            "no_partner": 5
+          },
+          "strict_ruling_counts": {
+            "no partner": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": false,
+          "raw_parsed_ge_4_of_5_crossing_interface": false,
+          "strict_majority_scope_status": "no_partner",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [
+              "T_1",
+              "T_2"
+            ],
+            "gpt-5.4-fast": [
+              "T_1",
+              "T_2"
+            ],
+            "gemini-2.5-flash": [
+              "temperature"
+            ],
+            "mistral-medium-3.5": [
+              "T_1",
+              "T_2",
+              "p_1",
+              "p_2",
+              "V_1",
+              "V_2"
+            ],
+            "llama-4-maverick": [
+              "T_1",
+              "T_2"
+            ]
+          }
+        },
+        {
+          "item_id": "X008",
+          "stratum": "Non_Crossing_Boundary",
+          "expected_scope_status": "no_partner",
+          "valid_calls": 5,
+          "schema_error_count": 0,
+          "strict_scope_counts": {
+            "no_partner": 5
+          },
+          "raw_parsed_scope_counts": {
+            "no_partner": 5
+          },
+          "strict_ruling_counts": {
+            "no partner": 5
+          },
+          "strict_ge_4_of_5_crossing_interface": false,
+          "valid_voter_ge_0_80_crossing_interface": false,
+          "raw_parsed_ge_4_of_5_crossing_interface": false,
+          "strict_majority_scope_status": "no_partner",
+          "strict_consensus_4_of_5_scope": true,
+          "strict_consensus_matches_expected_scope": true,
+          "per_model_votes": {
+            "claude-sonnet-4.6": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gpt-5.4-fast": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "gemini-2.5-flash": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "mistral-medium-3.5": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            },
+            "llama-4-maverick": {
+              "scope_status": "no_partner",
+              "ruling": "no partner"
+            }
+          },
+          "unmapped_terms_by_model": {
+            "claude-sonnet-4.6": [
+              "volume flow rate Q",
+              "dynamic viscosity eta"
+            ],
+            "gpt-5.4-fast": [
+              "Q",
+              "eta"
+            ],
+            "gemini-2.5-flash": [
+              "Q (volume flow rate)",
+              "eta (dynamic viscosity)"
+            ],
+            "mistral-medium-3.5": [
+              "Q",
+              "eta"
+            ],
+            "llama-4-maverick": [
+              "Q",
+              "\\eta"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "pillar_d3": {
+    "d3a_narrative_cal17": {
+      "total_items": 17,
+      "expected_calls": 85,
+      "valid_calls": 84,
+      "schema_error_count": 1,
+      "d3a_consensus_4_of_5_correct": 8,
+      "d3a_consensus_4_of_5_accuracy": 0.470588,
+      "commit2_m1_a0_consensus_4_of_5_correct": 12,
+      "commit2_m1_a0_consensus_4_of_5_accuracy": 0.705882,
+      "h5_consensus_vs_commit2_m1_a0_mcnemar": {
+        "n_paired": 17,
+        "n11_both_true": 8,
+        "n10_first_only": 0,
+        "n01_second_only": 4,
+        "n00_both_false": 5,
+        "p_value": 0.125
+      },
+      "pooled_85_calls_comparison": {
+        "d3a_correct_of_85": 48,
+        "d3a_valid_calls": 84,
+        "d3a_accuracy_of_85": 0.564706,
+        "d3a_accuracy_of_valid": 0.571429,
+        "commit2_m1_a0_correct_of_85": 62,
+        "commit2_m1_a0_valid_calls": 83,
+        "commit2_m1_a0_accuracy_of_85": 0.729412,
+        "commit2_m1_a0_accuracy_of_valid": 0.746988,
+        "paired_mcnemar_85": {
+          "n_paired": 85,
+          "n11_both_true": 42,
+          "n10_first_only": 6,
+          "n01_second_only": 20,
+          "n00_both_false": 17,
+          "p_value": 0.009355306625366211
+        },
+        "fisher_2x2_85_p": 0.03651591632842193
+      },
+      "applied_later_13_subset": {
+        "item_ids": [
+          "K01",
+          "K02",
+          "K03",
+          "K04",
+          "K05",
+          "K06",
+          "K08",
+          "K09",
+          "K10",
+          "K11",
+          "K12",
+          "K13",
+          "K17"
+        ],
+        "d3a_consensus_correct": 6,
+        "d3a_accuracy": 0.461538,
+        "commit2_m1_a0_consensus_correct": 9,
+        "commit2_m1_a0_accuracy": 0.692308,
+        "mcnemar": {
+          "n_paired": 13,
+          "n11_both_true": 6,
+          "n10_first_only": 0,
+          "n01_second_only": 3,
+          "n00_both_false": 4,
+          "p_value": 0.25
+        }
+      },
+      "construction_4_subset": {
+        "item_ids": [
+          "K07",
+          "K14",
+          "K15",
+          "K16"
+        ],
+        "d3a_consensus_correct": 2,
+        "commit2_m1_a0_consensus_correct": 3,
+        "mcnemar": {
+          "n_paired": 4,
+          "n11_both_true": 2,
+          "n10_first_only": 0,
+          "n01_second_only": 1,
+          "n00_both_false": 1,
+          "p_value": 1.0
+        }
+      },
+      "per_model_correct_of_17": {
+        "claude-sonnet-4.6": {
+          "d3a": 11,
+          "commit2_m1_a0": 13
+        },
+        "gpt-5.4-fast": {
+          "d3a": 11,
+          "commit2_m1_a0": 11
+        },
+        "gemini-2.5-flash": {
+          "d3a": 10,
+          "commit2_m1_a0": 14
+        },
+        "mistral-medium-3.5": {
+          "d3a": 8,
+          "commit2_m1_a0": 15
+        },
+        "llama-4-maverick": {
+          "d3a": 8,
+          "commit2_m1_a0": 9
+        }
+      },
+      "items": [
+        {
+          "item_id": "K01",
+          "provenance": "applied_later",
+          "description": "First postulate of special relativity (the laws of physics are the same for every inertial observer)",
+          "expected_book_ruling": "keep",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 4,
+            "no_partner": 1
+          },
+          "ruling_counts": {
+            "keep": 4,
+            "no partner": 1
+          },
+          "majority_ruling": "keep",
+          "majority_count": 4,
+          "consensus_4_of_5": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 5,
+          "commit2_m1_a0_consensus_correct": true,
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K02",
+          "provenance": "applied_later",
+          "description": "Relativity of simultaneity (two observers in relative motion do not share a simultaneous now because of spatial separation)",
+          "expected_book_ruling": "invert",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "invert": 4,
+            "keep": 1
+          },
+          "majority_ruling": "invert",
+          "majority_count": 4,
+          "consensus_4_of_5": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "invert",
+          "commit2_m1_a0_majority_count": 5,
+          "commit2_m1_a0_consensus_correct": true,
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K03",
+          "provenance": "applied_later",
+          "description": "Principle of relativity (there is no preferred fixed inertial rest frame)",
+          "expected_book_ruling": "keep",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 4,
+            "open_joint": 1
+          },
+          "ruling_counts": {
+            "keep": 4,
+            "indeterminate": 1
+          },
+          "majority_ruling": "keep",
+          "majority_count": 4,
+          "consensus_4_of_5": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": true,
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K04",
+          "provenance": "applied_later",
+          "description": "Special versus general relativity (equivalence of inertial frames versus accelerating or gravitating frames)",
+          "expected_book_ruling": "keep",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 3,
+            "no_partner": 2
+          },
+          "ruling_counts": {
+            "keep": 3,
+            "no partner": 2
+          },
+          "majority_ruling": "keep",
+          "majority_count": 3,
+          "consensus_4_of_5": false,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": true,
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K05",
+          "provenance": "applied_later",
+          "description": "Relativistic time dilation between proper time and moving-frame coordinate time",
+          "expected_book_ruling": "keep",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "keep": 1,
+            "invert": 4
+          },
+          "majority_ruling": "invert",
+          "majority_count": 4,
+          "consensus_4_of_5": true,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "invert",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": false,
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K06",
+          "provenance": "applied_later",
+          "description": "Relativistic length contraction along the direction of relative motion",
+          "expected_book_ruling": "keep",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "invert": 5
+          },
+          "majority_ruling": "invert",
+          "majority_count": 5,
+          "consensus_4_of_5": true,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "invert",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": false,
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K07",
+          "provenance": "construction",
+          "description": "Mass-energy equivalence",
+          "expected_book_ruling": "keep",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 4,
+            "no_partner": 1
+          },
+          "ruling_counts": {
+            "keep": 3,
+            "invert": 1,
+            "no partner": 1
+          },
+          "majority_ruling": "keep",
+          "majority_count": 3,
+          "consensus_4_of_5": false,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 5,
+          "commit2_m1_a0_consensus_correct": true,
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K08",
+          "provenance": "applied_later",
+          "description": "Relativistic kinetic energy and the rising energy cost of increasing speed for mass",
+          "expected_book_ruling": "invert",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 3,
+            "no_partner": 2
+          },
+          "ruling_counts": {
+            "keep": 2,
+            "no partner": 2,
+            "invert": 1
+          },
+          "majority_ruling": "keep",
+          "majority_count": 2,
+          "consensus_4_of_5": false,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "invert",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": true,
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K09",
+          "provenance": "applied_later",
+          "description": "Speed-of-light limit for massive particles (nothing with mass can reach the speed of light c)",
+          "expected_book_ruling": "invert",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "invert": 5
+          },
+          "majority_ruling": "invert",
+          "majority_count": 5,
+          "consensus_4_of_5": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "invert",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": true,
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K10",
+          "provenance": "applied_later",
+          "description": "Spacetime as one unified four-dimensional continuum (invariant spacetime interval)",
+          "expected_book_ruling": "keep",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "keep": 5
+          },
+          "majority_ruling": "keep",
+          "majority_count": 5,
+          "consensus_4_of_5": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": true,
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K11",
+          "provenance": "applied_later",
+          "description": "Mass-energy warps spacetime geometry",
+          "expected_book_ruling": "keep",
+          "valid_calls": 4,
+          "scope_counts": {
+            "in_scope": 4
+          },
+          "ruling_counts": {
+            "invert": 2,
+            "keep": 2
+          },
+          "majority_ruling": "invert",
+          "majority_count": 2,
+          "consensus_4_of_5": false,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 5,
+          "commit2_m1_a0_consensus_correct": true,
+          "schema_error_models": [
+            "mistral-medium-3.5"
+          ]
+        },
+        {
+          "item_id": "K12",
+          "provenance": "applied_later",
+          "description": "Gravitational wells and gravitational lensing of light around massive bodies",
+          "expected_book_ruling": "keep",
+          "valid_calls": 5,
+          "scope_counts": {
+            "open_joint": 1,
+            "no_partner": 1,
+            "in_scope": 3
+          },
+          "ruling_counts": {
+            "indeterminate": 1,
+            "no partner": 1,
+            "invert": 1,
+            "keep": 2
+          },
+          "majority_ruling": "keep",
+          "majority_count": 2,
+          "consensus_4_of_5": false,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 3,
+          "commit2_m1_a0_consensus_correct": false,
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K13",
+          "provenance": "applied_later",
+          "description": "Conservation of total energy in an isolated physical system",
+          "expected_book_ruling": "keep",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "keep": 5
+          },
+          "majority_ruling": "keep",
+          "majority_count": 5,
+          "consensus_4_of_5": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 5,
+          "commit2_m1_a0_consensus_correct": true,
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K14",
+          "provenance": "construction",
+          "description": "Newton's third law of motion (reciprocal action-reaction force pair)",
+          "expected_book_ruling": "keep",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "keep": 4,
+            "invert": 1
+          },
+          "majority_ruling": "keep",
+          "majority_count": 4,
+          "consensus_4_of_5": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 5,
+          "commit2_m1_a0_consensus_correct": true,
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K15",
+          "provenance": "construction",
+          "description": "Mass as the product of mass density and volume",
+          "expected_book_ruling": "keep",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "keep": 5
+          },
+          "majority_ruling": "keep",
+          "majority_count": 5,
+          "consensus_4_of_5": true,
+          "consensus_correct": true,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 4,
+          "commit2_m1_a0_consensus_correct": true,
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K16",
+          "provenance": "construction",
+          "description": "Newton's second law of motion (net force equals mass times acceleration)",
+          "expected_book_ruling": "keep",
+          "valid_calls": 5,
+          "scope_counts": {
+            "in_scope": 5
+          },
+          "ruling_counts": {
+            "invert": 5
+          },
+          "majority_ruling": "invert",
+          "majority_count": 5,
+          "consensus_4_of_5": true,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "keep",
+          "commit2_m1_a0_majority_count": 3,
+          "commit2_m1_a0_consensus_correct": false,
+          "schema_error_models": []
+        },
+        {
+          "item_id": "K17",
+          "provenance": "applied_later",
+          "description": "Boyle's law for an ideal gas (at constant temperature and fixed amount of gas, squeezing the volume raises the pressure)",
+          "expected_book_ruling": "keep",
+          "valid_calls": 5,
+          "scope_counts": {
+            "no_partner": 5
+          },
+          "ruling_counts": {
+            "no partner": 5
+          },
+          "majority_ruling": "no partner",
+          "majority_count": 5,
+          "consensus_4_of_5": true,
+          "consensus_correct": false,
+          "commit2_m1_a0_majority_ruling": "no partner",
+          "commit2_m1_a0_majority_count": 5,
+          "commit2_m1_a0_consensus_correct": false,
+          "schema_error_models": []
+        }
+      ]
+    },
+    "d3b_passage_ratings": {
+      "n_passages": 12,
+      "n_raters": 5,
+      "n_ratings": 60,
+      "variants": {
+        "V_A0": {
+          "mean_score": 4.316667,
+          "sd_score": 0.812856,
+          "median_score": 5.0,
+          "min_score": 2,
+          "max_score": 5,
+          "best_rank_1_count": 45,
+          "best_rank_1_share": 0.75,
+          "best_rank_1_binom_gt_1_3_p": 4.897495732088353e-11,
+          "worst_rank_3_count": 0,
+          "worst_rank_3_share": 0.0,
+          "per_rater": {
+            "claude-sonnet-4.6": {
+              "mean_score": 3.833333,
+              "best_count": 9,
+              "worst_count": 0
+            },
+            "gpt-5.4-fast": {
+              "mean_score": 4.416667,
+              "best_count": 11,
+              "worst_count": 0
+            },
+            "gemini-2.5-flash": {
+              "mean_score": 4.833333,
+              "best_count": 12,
+              "worst_count": 0
+            },
+            "mistral-medium-3.5": {
+              "mean_score": 4.083333,
+              "best_count": 5,
+              "worst_count": 0
+            },
+            "llama-4-maverick": {
+              "mean_score": 4.416667,
+              "best_count": 8,
+              "worst_count": 0
+            }
+          }
+        },
+        "V_Ssyn": {
+          "mean_score": 3.0,
+          "sd_score": 1.207322,
+          "median_score": 3.0,
+          "min_score": 1,
+          "max_score": 5,
+          "best_rank_1_count": 12,
+          "best_rank_1_share": 0.2,
+          "best_rank_1_binom_gt_1_3_p": 0.9922804956664725,
+          "worst_rank_3_count": 17,
+          "worst_rank_3_share": 0.283333,
+          "per_rater": {
+            "claude-sonnet-4.6": {
+              "mean_score": 3.0,
+              "best_count": 3,
+              "worst_count": 2
+            },
+            "gpt-5.4-fast": {
+              "mean_score": 2.5,
+              "best_count": 1,
+              "worst_count": 2
+            },
+            "gemini-2.5-flash": {
+              "mean_score": 2.416667,
+              "best_count": 0,
+              "worst_count": 2
+            },
+            "mistral-medium-3.5": {
+              "mean_score": 3.666667,
+              "best_count": 6,
+              "worst_count": 4
+            },
+            "llama-4-maverick": {
+              "mean_score": 3.416667,
+              "best_count": 2,
+              "worst_count": 7
+            }
+          }
+        },
+        "V_A3": {
+          "mean_score": 2.083333,
+          "sd_score": 1.046247,
+          "median_score": 2.0,
+          "min_score": 1,
+          "max_score": 4,
+          "best_rank_1_count": 3,
+          "best_rank_1_share": 0.05,
+          "best_rank_1_binom_gt_1_3_p": 0.9999999871221215,
+          "worst_rank_3_count": 43,
+          "worst_rank_3_share": 0.716667,
+          "per_rater": {
+            "claude-sonnet-4.6": {
+              "mean_score": 1.666667,
+              "best_count": 0,
+              "worst_count": 10
+            },
+            "gpt-5.4-fast": {
+              "mean_score": 1.333333,
+              "best_count": 0,
+              "worst_count": 10
+            },
+            "gemini-2.5-flash": {
+              "mean_score": 1.583333,
+              "best_count": 0,
+              "worst_count": 10
+            },
+            "mistral-medium-3.5": {
+              "mean_score": 2.5,
+              "best_count": 1,
+              "worst_count": 8
+            },
+            "llama-4-maverick": {
+              "mean_score": 3.333333,
+              "best_count": 2,
+              "worst_count": 5
+            }
+          }
+        }
+      },
+      "inter_rater_agreement": {
+        "fleiss_kappa_best_rank_1": 0.092827,
+        "fleiss_kappa_worst_rank_3": 0.015048,
+        "krippendorff_alpha_ordinal_all_36_passage_variants": 0.512697,
+        "krippendorff_alpha_ordinal_by_variant": {
+          "V_A0": 0.08907,
+          "V_Ssyn": 0.322919,
+          "V_A3": -0.076792
+        }
+      },
+      "paired_comparisons_all_12": {
+        "H6_V_A0_vs_V_Ssyn": {
+          "mean_a": 4.316667,
+          "mean_b": 3.0,
+          "mean_diff": 1.316667,
+          "sign_test": {
+            "wins": 11,
+            "losses": 1,
+            "ties": 0,
+            "n_non_tied": 12,
+            "p_value": 0.00634765625
+          },
+          "paired_permutation_test": {
+            "n_items": 12,
+            "n_nonzero": 12,
+            "mean_diff": 1.3166666666666667,
+            "method": "exact_sign_flip",
+            "p_value": 0.00146484375
+          }
+        },
+        "secondary_V_A0_vs_V_A3": {
+          "mean_a": 4.316667,
+          "mean_b": 2.083333,
+          "mean_diff": 2.233333,
+          "sign_test": {
+            "wins": 12,
+            "losses": 0,
+            "ties": 0,
+            "n_non_tied": 12,
+            "p_value": 0.00048828125
+          },
+          "paired_permutation_test": {
+            "n_items": 12,
+            "n_nonzero": 12,
+            "mean_diff": 2.2333333333333334,
+            "method": "exact_sign_flip",
+            "p_value": 0.00048828125
+          }
+        }
+      },
+      "stratified_comparisons": {
+        "structural_paragraphs": {
+          "n_passages": 6,
+          "mean_V_A0": 4.133333,
+          "mean_V_Ssyn": 3.2,
+          "mean_V_A3": 2.0,
+          "V_A0_vs_V_Ssyn": {
+            "mean_a": 4.133333,
+            "mean_b": 3.2,
+            "mean_diff": 0.933333,
+            "sign_test": {
+              "wins": 5,
+              "losses": 1,
+              "ties": 0,
+              "n_non_tied": 6,
+              "p_value": 0.21875
+            },
+            "paired_permutation_test": {
+              "n_items": 6,
+              "n_nonzero": 6,
+              "mean_diff": 0.9333333333333332,
+              "method": "exact_sign_flip",
+              "p_value": 0.09375
+            }
+          },
+          "V_A0_vs_V_A3": {
+            "mean_a": 4.133333,
+            "mean_b": 2.0,
+            "mean_diff": 2.133333,
+            "sign_test": {
+              "wins": 6,
+              "losses": 0,
+              "ties": 0,
+              "n_non_tied": 6,
+              "p_value": 0.03125
+            },
+            "paired_permutation_test": {
+              "n_items": 6,
+              "n_nonzero": 6,
+              "mean_diff": 2.1333333333333333,
+              "method": "exact_sign_flip",
+              "p_value": 0.03125
+            }
+          }
+        },
+        "polysemy_bridge_paragraphs": {
+          "n_passages": 6,
+          "mean_V_A0": 4.5,
+          "mean_V_Ssyn": 2.8,
+          "mean_V_A3": 2.166667,
+          "V_A0_vs_V_Ssyn": {
+            "mean_a": 4.5,
+            "mean_b": 2.8,
+            "mean_diff": 1.7,
+            "sign_test": {
+              "wins": 6,
+              "losses": 0,
+              "ties": 0,
+              "n_non_tied": 6,
+              "p_value": 0.03125
+            },
+            "paired_permutation_test": {
+              "n_items": 6,
+              "n_nonzero": 6,
+              "mean_diff": 1.7000000000000002,
+              "method": "exact_sign_flip",
+              "p_value": 0.03125
+            }
+          },
+          "V_A0_vs_V_A3": {
+            "mean_a": 4.5,
+            "mean_b": 2.166667,
+            "mean_diff": 2.333333,
+            "sign_test": {
+              "wins": 6,
+              "losses": 0,
+              "ties": 0,
+              "n_non_tied": 6,
+              "p_value": 0.03125
+            },
+            "paired_permutation_test": {
+              "n_items": 6,
+              "n_nonzero": 6,
+              "mean_diff": 2.3333333333333335,
+              "method": "exact_sign_flip",
+              "p_value": 0.03125
+            }
+          }
+        }
+      },
+      "per_passage_breakdown": [
+        {
+          "passage_id": "P01",
+          "stratum": "structural_paragraphs",
+          "source_ref": "Ch. 2, idx=20 (pdf_page 21)",
+          "mean_scores": {
+            "V_A0": 4.0,
+            "V_Ssyn": 3.0,
+            "V_A3": 1.6
+          },
+          "best_rank_1_counts": {
+            "V_A0": 3,
+            "V_Ssyn": 2,
+            "V_A3": 0
+          },
+          "worst_rank_3_counts": {
+            "V_A0": 0,
+            "V_Ssyn": 1,
+            "V_A3": 4
+          }
+        },
+        {
+          "passage_id": "P02",
+          "stratum": "structural_paragraphs",
+          "source_ref": "Ch. 2, idx=20 (pdf_page 21)",
+          "mean_scores": {
+            "V_A0": 4.4,
+            "V_Ssyn": 4.0,
+            "V_A3": 2.2
+          },
+          "best_rank_1_counts": {
+            "V_A0": 3,
+            "V_Ssyn": 2,
+            "V_A3": 0
+          },
+          "worst_rank_3_counts": {
+            "V_A0": 0,
+            "V_Ssyn": 1,
+            "V_A3": 4
+          }
+        },
+        {
+          "passage_id": "P03",
+          "stratum": "structural_paragraphs",
+          "source_ref": "Ch. 2, idx=21 & idx=24 (pdf_page 22/25)",
+          "mean_scores": {
+            "V_A0": 4.0,
+            "V_Ssyn": 3.0,
+            "V_A3": 1.8
+          },
+          "best_rank_1_counts": {
+            "V_A0": 4,
+            "V_Ssyn": 1,
+            "V_A3": 0
+          },
+          "worst_rank_3_counts": {
+            "V_A0": 0,
+            "V_Ssyn": 1,
+            "V_A3": 4
+          }
+        },
+        {
+          "passage_id": "P04",
+          "stratum": "structural_paragraphs",
+          "source_ref": "Ch. 2, idx=22 (pdf_page 23)",
+          "mean_scores": {
+            "V_A0": 4.0,
+            "V_Ssyn": 3.0,
+            "V_A3": 1.8
+          },
+          "best_rank_1_counts": {
+            "V_A0": 4,
+            "V_Ssyn": 1,
+            "V_A3": 0
+          },
+          "worst_rank_3_counts": {
+            "V_A0": 0,
+            "V_Ssyn": 1,
+            "V_A3": 4
+          }
+        },
+        {
+          "passage_id": "P05",
+          "stratum": "structural_paragraphs",
+          "source_ref": "Ch. 2, idx=23 (pdf_page 24)",
+          "mean_scores": {
+            "V_A0": 4.8,
+            "V_Ssyn": 1.8,
+            "V_A3": 2.6
+          },
+          "best_rank_1_counts": {
+            "V_A0": 5,
+            "V_Ssyn": 0,
+            "V_A3": 0
+          },
+          "worst_rank_3_counts": {
+            "V_A0": 0,
+            "V_Ssyn": 4,
+            "V_A3": 1
+          }
+        },
+        {
+          "passage_id": "P06",
+          "stratum": "structural_paragraphs",
+          "source_ref": "Ch. 16, idx=119-120 (pdf_page 120-121)",
+          "mean_scores": {
+            "V_A0": 3.6,
+            "V_Ssyn": 4.4,
+            "V_A3": 2.0
+          },
+          "best_rank_1_counts": {
+            "V_A0": 1,
+            "V_Ssyn": 4,
+            "V_A3": 0
+          },
+          "worst_rank_3_counts": {
+            "V_A0": 0,
+            "V_Ssyn": 0,
+            "V_A3": 5
+          }
+        },
+        {
+          "passage_id": "P07",
+          "stratum": "polysemy_bridge_paragraphs",
+          "source_ref": "Ch. 2 idx=20, 23 & Ch. 16 idx=121 (pdf_page 21, 24, 121)",
+          "mean_scores": {
+            "V_A0": 4.0,
+            "V_Ssyn": 1.6,
+            "V_A3": 2.2
+          },
+          "best_rank_1_counts": {
+            "V_A0": 4,
+            "V_Ssyn": 0,
+            "V_A3": 1
+          },
+          "worst_rank_3_counts": {
+            "V_A0": 0,
+            "V_Ssyn": 2,
+            "V_A3": 3
+          }
+        },
+        {
+          "passage_id": "P08",
+          "stratum": "polysemy_bridge_paragraphs",
+          "source_ref": "Ch. 16, idx=121 (pdf_page 122)",
+          "mean_scores": {
+            "V_A0": 4.4,
+            "V_Ssyn": 2.8,
+            "V_A3": 2.0
+          },
+          "best_rank_1_counts": {
+            "V_A0": 4,
+            "V_Ssyn": 1,
+            "V_A3": 0
+          },
+          "worst_rank_3_counts": {
+            "V_A0": 0,
+            "V_Ssyn": 2,
+            "V_A3": 3
+          }
+        },
+        {
+          "passage_id": "P09",
+          "stratum": "polysemy_bridge_paragraphs",
+          "source_ref": "Ch. 16, idx=121 (pdf_page 122)",
+          "mean_scores": {
+            "V_A0": 4.8,
+            "V_Ssyn": 3.4,
+            "V_A3": 2.6
+          },
+          "best_rank_1_counts": {
+            "V_A0": 4,
+            "V_Ssyn": 0,
+            "V_A3": 1
+          },
+          "worst_rank_3_counts": {
+            "V_A0": 0,
+            "V_Ssyn": 1,
+            "V_A3": 4
+          }
+        },
+        {
+          "passage_id": "P10",
+          "stratum": "polysemy_bridge_paragraphs",
+          "source_ref": "Ch. 16, idx=120-121 (pdf_page 121-122)",
+          "mean_scores": {
+            "V_A0": 4.6,
+            "V_Ssyn": 2.4,
+            "V_A3": 2.0
+          },
+          "best_rank_1_counts": {
+            "V_A0": 5,
+            "V_Ssyn": 0,
+            "V_A3": 0
+          },
+          "worst_rank_3_counts": {
+            "V_A0": 0,
+            "V_Ssyn": 2,
+            "V_A3": 3
+          }
+        },
+        {
+          "passage_id": "P11",
+          "stratum": "polysemy_bridge_paragraphs",
+          "source_ref": "Ch. 16, idx=122 (pdf_page 123)",
+          "mean_scores": {
+            "V_A0": 4.2,
+            "V_Ssyn": 2.8,
+            "V_A3": 2.6
+          },
+          "best_rank_1_counts": {
+            "V_A0": 3,
+            "V_Ssyn": 1,
+            "V_A3": 1
+          },
+          "worst_rank_3_counts": {
+            "V_A0": 0,
+            "V_Ssyn": 2,
+            "V_A3": 3
+          }
+        },
+        {
+          "passage_id": "P12",
+          "stratum": "polysemy_bridge_paragraphs",
+          "source_ref": "Ch. 2 idx=24 & Ch. 16 idx=119 (pdf_page 25, 120)",
+          "mean_scores": {
+            "V_A0": 5.0,
+            "V_Ssyn": 3.8,
+            "V_A3": 1.6
+          },
+          "best_rank_1_counts": {
+            "V_A0": 5,
+            "V_Ssyn": 0,
+            "V_A3": 0
+          },
+          "worst_rank_3_counts": {
+            "V_A0": 0,
+            "V_Ssyn": 0,
+            "V_A3": 5
+          }
+        }
+      ]
+    }
+  },
+  "pillar_d4_layer_a_v2_vs_v3": {
+    "A0": {
+      "layer_a_v2": {
+        "evaluated_items": 16,
+        "per_item_passed": 12,
+        "joint_collisions_count": 4,
+        "passes_all": false,
+        "collisions": [
+          {
+            "item_id": "E001",
+            "layer": "A3_exponent_or_quotient_flip",
+            "physical_vars": [
+              "R"
+            ],
+            "target_slot": "Vibration",
+            "equation_quot_signs": [
+              1
+            ],
+            "reflected_quot_signs": [
+              -1,
+              1
+            ],
+            "equation_overall_signs": [
+              1
+            ],
+            "reflected_overall_signs": [
+              -1,
+              1
+            ],
+            "equation_latex": "a_{\\text{CM}} = R \\alpha",
+            "reflected_formula": "Appreciation = Vibration * (Appreciation / Vibration)"
+          },
+          {
+            "item_id": "E002",
+            "layer": "A3_exponent_or_quotient_flip",
+            "physical_vars": [
+              "r"
+            ],
+            "target_slot": "Vibration",
+            "equation_quot_signs": [
+              1
+            ],
+            "reflected_quot_signs": [
+              -1,
+              1
+            ],
+            "equation_overall_signs": [
+              1
+            ],
+            "reflected_overall_signs": [
+              -1,
+              1
+            ],
+            "equation_latex": "a_{\\text{t}} = r \\alpha",
+            "reflected_formula": "Appreciation_tangential = Vibration * (Appreciation / Vibration)"
+          },
+          {
+            "item_id": "E023",
+            "layer": "A2_formula_unknown_tokens",
+            "reflected_formula": "conscious energy = integral over path of Frequency · d(Vibration)",
+            "unknowns": [
+              "integral",
+              "over",
+              "path",
+              "of"
+            ]
+          },
+          {
+            "item_id": "E027",
+            "layer": "A2_formula_unknown_tokens",
+            "reflected_formula": "Appreciation_PS = Appreciation_PS' + Appreciation_S'S",
+            "unknowns": [
+              "AppreciationS"
+            ]
+          }
+        ]
+      },
+      "layer_a_v3": {
+        "evaluated_items": 16,
+        "per_item_passed": 16,
+        "joint_collisions_count": 0,
+        "passes_all": true,
+        "collisions": []
+      },
+      "items": [
+        {
+          "item_id": "E001",
+          "stratum": "Core",
+          "canonical_model": "gpt-5.4-fast",
+          "ruling": "keep",
+          "v2_per_item_passed": false,
+          "v2_collisions": [
+            "A3_exponent_or_quotient_flip"
+          ],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "FIXED_BY_V3"
+        },
+        {
+          "item_id": "E002",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": false,
+          "v2_collisions": [
+            "A3_exponent_or_quotient_flip"
+          ],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "FIXED_BY_V3"
+        },
+        {
+          "item_id": "E007",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E011",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E014",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E016",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E018",
+          "stratum": "Core",
+          "canonical_model": "gpt-5.4-fast",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E021",
+          "stratum": "Core",
+          "canonical_model": "mistral-medium-3.5",
+          "ruling": "invert",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E022",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E023",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "invert",
+          "v2_per_item_passed": false,
+          "v2_collisions": [
+            "A2_formula_unknown_tokens"
+          ],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "FIXED_BY_V3"
+        },
+        {
+          "item_id": "E027",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": false,
+          "v2_collisions": [
+            "A2_formula_unknown_tokens"
+          ],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "FIXED_BY_V3"
+        },
+        {
+          "item_id": "E028",
+          "stratum": "Core",
+          "canonical_model": "gemini-2.5-flash",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E030",
+          "stratum": "Core",
+          "canonical_model": "gpt-5.4-fast",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E037",
+          "stratum": "Core",
+          "canonical_model": "gpt-5.4-fast",
+          "ruling": "invert",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E038",
+          "stratum": "Core",
+          "canonical_model": "gpt-5.4-fast",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E039",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        }
+      ]
+    },
+    "A3-1": {
+      "layer_a_v2": {
+        "evaluated_items": 16,
+        "per_item_passed": 13,
+        "joint_collisions_count": 5,
+        "passes_all": false,
+        "collisions": [
+          {
+            "item_id": "E001",
+            "layer": "A1_invalid_target_token",
+            "physical": "alpha",
+            "target": "imagination (angular) = imagination / Appreciation",
+            "unknowns": [
+              "angular"
+            ]
+          },
+          {
+            "item_id": "E001",
+            "layer": "A3_exponent_or_quotient_flip",
+            "physical_vars": [
+              "R"
+            ],
+            "target_slot": "Appreciation",
+            "equation_quot_signs": [
+              1
+            ],
+            "reflected_quot_signs": [
+              -1,
+              1
+            ],
+            "equation_overall_signs": [
+              1
+            ],
+            "reflected_overall_signs": [
+              -1,
+              1
+            ],
+            "equation_latex": "a_{\\text{CM}} = R \\alpha",
+            "reflected_formula": "imagination = Appreciation * (imagination / Appreciation)"
+          },
+          {
+            "item_id": "E023",
+            "layer": "A2_formula_unknown_tokens",
+            "reflected_formula": "Movement_AB = integral over path of Movement · d(Appreciation)",
+            "unknowns": [
+              "integral",
+              "over",
+              "path",
+              "of"
+            ]
+          },
+          {
+            "item_id": "E027",
+            "layer": "A2_formula_unknown_tokens",
+            "reflected_formula": "imagination_PS = imagination_PS' + imagination_S'S",
+            "unknowns": [
+              "imaginationS"
+            ]
+          },
+          {
+            "layer": "A1_cross_item_one_to_many",
+            "physical": "alpha",
+            "variants": {
+              "imagination (angular) = imagination / Appreciation": [
+                "E001"
+              ],
+              "imagination": [
+                "E002"
+              ]
+            }
+          }
+        ]
+      },
+      "layer_a_v3": {
+        "evaluated_items": 16,
+        "per_item_passed": 15,
+        "joint_collisions_count": 3,
+        "passes_all": false,
+        "collisions": [
+          {
+            "item_id": "E001",
+            "layer": "A1_invalid_target_token",
+            "physical": "alpha",
+            "target": "imagination (angular) = imagination / Appreciation",
+            "unknowns": [
+              "angular"
+            ]
+          },
+          {
+            "item_id": "E001",
+            "layer": "A3_monomial_exponent_mismatch",
+            "equation_latex": "a_{\\text{CM}} = R \\alpha",
+            "reflected_formula": "imagination = Appreciation * (imagination / Appreciation)",
+            "expected_terms": [
+              {
+                "sign": 1,
+                "exponents": {
+                  "Appreciation": "1"
+                }
+              }
+            ],
+            "got_terms": [
+              {
+                "sign": 1,
+                "exponents": {
+                  "imagination": "1"
+                }
+              }
+            ]
+          },
+          {
+            "layer": "A1_cross_item_one_to_many",
+            "physical": "alpha",
+            "variants": {
+              "imagination (angular) = imagination / Appreciation": [
+                "E001"
+              ],
+              "imagination": [
+                "E002"
+              ]
+            }
+          }
+        ]
+      },
+      "items": [
+        {
+          "item_id": "E001",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": false,
+          "v2_collisions": [
+            "A1_invalid_target_token",
+            "A3_exponent_or_quotient_flip"
+          ],
+          "v3_per_item_passed": false,
+          "v3_collisions": [
+            "A1_invalid_target_token",
+            "A3_monomial_exponent_mismatch"
+          ],
+          "cross_item_v2": [
+            "A1_cross_item_one_to_many(alpha)"
+          ],
+          "cross_item_v3": [
+            "A1_cross_item_one_to_many(alpha)"
+          ],
+          "delta": "STILL_FAILS"
+        },
+        {
+          "item_id": "E002",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [
+            "A1_cross_item_one_to_many(alpha)"
+          ],
+          "cross_item_v3": [
+            "A1_cross_item_one_to_many(alpha)"
+          ],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E007",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E011",
+          "stratum": "Core",
+          "canonical_model": "gpt-5.4-fast",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E014",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E016",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E018",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E021",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "invert",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E022",
+          "stratum": "Core",
+          "canonical_model": "gpt-5.4-fast",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E023",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "invert",
+          "v2_per_item_passed": false,
+          "v2_collisions": [
+            "A2_formula_unknown_tokens"
+          ],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "FIXED_BY_V3"
+        },
+        {
+          "item_id": "E027",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": false,
+          "v2_collisions": [
+            "A2_formula_unknown_tokens"
+          ],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "FIXED_BY_V3"
+        },
+        {
+          "item_id": "E028",
+          "stratum": "Core",
+          "canonical_model": "gemini-2.5-flash",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E030",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E037",
+          "stratum": "Core",
+          "canonical_model": "gpt-5.4-fast",
+          "ruling": "invert",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E038",
+          "stratum": "Core",
+          "canonical_model": "gemini-2.5-flash",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        },
+        {
+          "item_id": "E039",
+          "stratum": "Core",
+          "canonical_model": "claude-sonnet-4.6",
+          "ruling": "keep",
+          "v2_per_item_passed": true,
+          "v2_collisions": [],
+          "v3_per_item_passed": true,
+          "v3_collisions": [],
+          "cross_item_v2": [],
+          "cross_item_v3": [],
+          "delta": "PASSED_BOTH"
+        }
+      ]
+    }
+  }
+}
