@@ -265,12 +265,45 @@ Reported purely as **descriptive ledger ratios**:
 
 ---
 
-## 4. Single-Command Reproduction
+## 4. Part IV — Cross-Platform CI & 15-Mutation Verification Audit
+
+### 4.1 Automated GitHub Actions Workflow ([verify-proofs.yml](../.github/workflows/verify-proofs.yml))
+
+Continuous integration runs on `ubuntu-latest` with Python `3.12`, `z3-solver==5.4.1`, and Lean `v4.35.0` (exact toolchain versions parity-checked against [run_all_proofs.py](run_all_proofs.py)), executes `PYTHONDONTWRITEBYTECODE=1 python -B proof/run_all_proofs.py` (baseline verified on Linux `aarch64`, Python `3.12.15`, producing [verification_certificate.json](verification_certificate.json)), verifies that the freshly generated [verification_certificate.json](verification_certificate.json) matches the committed certificate on all source hashes and proof checks — permitting differences only on the `5` declared runtime/environment fields (`execution_os`, `execution_arch`, `python_version`, `lean_version`, `verification_runtime_seconds`) — and runs `PYTHONDONTWRITEBYTECODE=1 python -B proof/mutation/run_mutation_suite.py --verify-offline`.
+
+### 4.2 Independent 15-Mutation Suite ([run_mutation_suite.py](mutation/run_mutation_suite.py) → [mutation_results.json](mutation/mutation_results.json))
+
+In addition to positive theorem/solver runs, [run_mutation_suite.py](mutation/run_mutation_suite.py) applies `15` targeted single-point adversarial mutations (`10` Lean `lake build` checks and `5` full-suite `python3 -B proof/run_all_proofs.py` checks) in fresh isolated temporary repository copies (executed on Linux `aarch64`, Python `3.12.15`) to confirm each proof gate rejects broken definitions, dropped assumptions, weakened Z3 graphs, or altered combinatorial counts. **All `15/15` mutations were caught (`0` surviving, `all_caught = true`)**:
+
+| ID | Target File | Mutated Symbol / Construct | Observed Failing Verifier Check | Outcome |
+| :--- | :--- | :--- | :--- | :--- |
+| `M01` | `proof/lean/TSR/Condition.lean` | `barrier` (Lean definition) | `lake build` fails at `TSR/Condition.lean:183` (`undivided_locus_triad` rewrite fails) | Caught (`exit 1`, `0.547s`) |
+| `M02` | `proof/lean/TSR/Condition.lean` | `condition_triad_equivalence` assumption | `lake build` fails at `TSR/Condition.lean:120,165` (unknown `hPart` / type mismatch) | Caught (`exit 1`, `0.510s`) |
+| `M03` | `proof/lean/TSR/Condition.lean` | `damped_ripple_strict_decay` assumption | `lake build` fails at `TSR/Condition.lean:234` (`M.alpha_bounds_of_pos hRes` type mismatch) | Caught (`exit 1`, `0.516s`) |
+| `M04` | `proof/lean/TSR/MirrorFunctor.lean` | `mirrorAtom` (Lean definition) | `lake build` fails at `TSR/MirrorFunctor.lean:417` (`R_form physTemporalMomentum = nonphysCurrentMomentum` false) | Caught (`exit 1`, `0.920s`) |
+| `M05` | `proof/lean/TSR/MirrorFunctor.lean` | `regionResistant` (Lean definition) | `lake build` fails at `TSR/MirrorFunctor.lean:637` (`two_level_reading_theorem` `decide` false) | Caught (`exit 1`, `0.824s`) |
+| `M06` | `proof/lean/TSR/MirrorFunctor.lean` | `benchmarkRows17` Row 2 | `lake build` fails `decide` on `benchmarkRows17` (`MirrorFunctor.lean` benchmark theorems) | Caught (`exit 1`, `0.844s`) |
+| `M07` | `proof/lean/TSR/MirrorFunctor.lean` | `benchmarkRows17` Row 7 | `lake build` fails `decide` on `benchmarkRows17` (`MirrorFunctor.lean` benchmark theorems) | Caught (`exit 1`, `0.809s`) |
+| `M08` | `proof/lean/TSR/MirrorFunctor.lean` | `isSharedEnergyWork` (Lean definition) | `lake build` fails `decide` on `R_read_v57_ch16` (`MirrorFunctor.lean` benchmark theorems) | Caught (`exit 1`, `0.938s`) |
+| `M09` | `proof/lean/TSR/Crossing.lean` | `canStep` (Lean definition) | `lake build` fails at `TSR/Crossing.lean:337` (`step_from_intuition_false` `rfl` failed) | Caught (`exit 1`, `0.532s`) |
+| `M10` | `proof/lean/TSR/EntityAndMeta.lean` | `sovereignEntityDyn` (Lean definition) | `lake build` fails at `TSR/EntityAndMeta.lean:334,439` (`four_way_entity_separation` type mismatch) | Caught (`exit 1`, `0.631s`) |
+| `M11` | `proof/z3/structural_rigidity.py` | `_build_stage_relations` (Stage 2) | `run_structural_rigidity()` raises `AssertionError: Expected 2 at Stage 2, got 4` | Caught (`exit 1`, `1.133s`) |
+| `M12` | `proof/z3/structural_rigidity.py` | `_build_stage_relations` (Stage 3) | `run_structural_rigidity()` raises `AssertionError: Expected 1 at Stage 3, got 2` | Caught (`exit 1`, `1.121s`) |
+| `M13` | `proof/z3/lexical_rigidity.py` | `SLOT_REQUIREMENTS["Expansion"]` | `verify_tsr_sat_and_uniqueness()` raises `AssertionError: Canonical TSR assignment must be globally unique!` | Caught (`exit 1`, `1.067s`) |
+| `M14` | `proof/etymology/combinatorial_proofs.py` | `shares_4char_substring` | `_build_primary_test_block()` fails `assert primary_alignment["etymology_edge_count"] == 16` | Caught (`exit 1`, `6.195s`) |
+| `M15` | `proof/etymology/combinatorial_proofs.py` | `exact_hypergeometric_upper_tail` | `_build_primary_test_block()` raises `AssertionError: Unexpected primary p-value: 0.04290450804688024` | Caught (`exit 1`, `6.076s`) |
+
+---
+
+## 5. Single-Command Reproduction
 
 From the repository root on either macOS or Linux (requiring Lean `v4.35.0` via `elan` and Python `3.12` + `z3-solver`):
 
 ```bash
-python proof/run_all_proofs.py
+PYTHONDONTWRITEBYTECODE=1 python3 -B proof/run_all_proofs.py
+PYTHONDONTWRITEBYTECODE=1 python3 -B proof/mutation/run_mutation_suite.py --verify-offline
 ```
 
-This single command compiles the Lean 4 suite (`0 sorry`, `0 warnings`, negative nominal-type check, 35-item `#print axioms` audit), runs Z3's $S_{29}$ automorphism solver, 21 1-minimal MUC extractors, and 14-slot WordNet 3.0 + live Oxford / Linux fallback dictionary checks, runs all exact rational 80-word combinatorial audits and self-tests, and writes [verification_certificate.json](verification_certificate.json) with runtime OS/architecture metadata and SHA-256 hashes of all verified source files.
+The first command compiles the Lean 4 suite (`0 sorry`, `0 warnings`, negative nominal-type check, 35-item `#print axioms` audit), runs Z3's $S_{29}$ automorphism solver, 21 1-minimal MUC extractors, and 14-slot WordNet 3.0 + live Oxford / Linux fallback dictionary checks, runs all exact rational 80-word combinatorial audits and self-tests, and writes [verification_certificate.json](verification_certificate.json) with runtime OS/architecture metadata and SHA-256 hashes of all verified source files.
+
+The second command runs the offline mutation audit (`--verify-offline`), verifying repository hygiene, live presence of all `15` mutation target snippets, SHA-256 parity with [verification_certificate.json](verification_certificate.json), and `15/15` caught results in [mutation_results.json](mutation/mutation_results.json) without modifying the working tree. To re-execute all `15` isolated temporary-copy mutations from scratch (requiring Lean `v4.35.0`, Python `3.12`, and `z3-solver`), run `PYTHONDONTWRITEBYTECODE=1 python3 -B proof/mutation/run_mutation_suite.py`.
