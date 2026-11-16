@@ -1,0 +1,3116 @@
+{
+  "stage": "D2b",
+  "role": "d2b_crossing_battery20",
+  "arm_id": "D2_CROSSING",
+  "expected_calls": 100,
+  "valid_calls": 94,
+  "schema_error_count": 6,
+  "tasks": [
+    {
+      "task_id": "E029",
+      "metadata": {
+        "item_id": "E029",
+        "stratum": "Mechanical_Crossing",
+        "expected_scope_status": "crossing_interface",
+        "heldout_item_id": "E029",
+        "volume": 1,
+        "chapter": 14,
+        "row_idx": 4
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "8c5884f776794ea68d5e05327dd375ee",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E029",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "The negative sign encodes gravitational resistance: felt gap diminishes as Vibration rises, reflecting the cost of ascending against Attraction through the fluid column.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "felt gap",
+              "y": "Vibration"
+            },
+            "reflected_formula": "d(felt gap) / d(Vibration) = −[Attraction through constant Desire]",
+            "translation_t": "The rate at which felt gap shifts across rising Vibration falls away under Attraction — each increment of Vibration upward costs the Current a steeper release of felt gap.",
+            "translation_template": "The rate at which {felt_gap} shifts across rising {Vibration} falls away under {Attraction} — each increment of {Vibration} upward costs the {Current} a steeper release of {felt_gap}.",
+            "direction_flipped_d": "Felt gap deepens as Vibration descends, with Attraction pressing the Current inward so that every drop in Vibration tightens the felt gap rather than releasing it.",
+            "rationale": "Active dynamical quantities after stripping the fixed constant-density qualifier (rho, held constant per the parenthetical side condition) and the gravitational constant (g) are mechanical pressure p and spatial height y. Pressure maps to felt gap at the crossing interface; height maps to Vibration. No Step-1b blocklisted variables remain. The equation is classified crossing_interface. The negative gradient encodes gravitational resistance — felt gap decreases as Vibration increases — so ruling is invert. two_level is false because this is a differential gradient identity, not a simultaneously productive operational definition. The variable_map contains only the two active dynamical quantities; rho and g are stripped constants and do not appear as slots."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "e6c3dd5e597d45ffbbdf5d4c7d989193",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E029",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Mechanical pressure reflects only at the crossing boundary as felt gap; height maps to Vibration, density maps to Desire, and gravity maps to Attraction.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "felt gap",
+              "y": "Vibration",
+              "rho": "Desire",
+              "g": "Attraction"
+            },
+            "reflected_formula": "The change of felt gap with respect to Vibration equals negative Desire times Attraction.",
+            "translation_t": "felt gap changes across Vibration according to Desire with Attraction.",
+            "translation_template": "{felt_gap} changes across {Vibration} according to {Desire} with {Attraction}.",
+            "direction_flipped_d": "Across Vibration, felt gap shifts by Desire under Attraction.",
+            "rationale": "The law contains mechanical pressure and only non-blocklisted active variables: height, density, and gravitational acceleration. Under Step 3, mechanical pressure forces classification as crossing_interface. The differential relation is preserved algebraically, with no inversion or resistance-cost structure, so ruling is keep and two_level is false."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "13f5093101ba41d38adcf9856d4d81c6",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E029",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "The negative sign indicates that the {felt_gap} decreases as {Vibration} increases, signifying reduced resistance with greater {Vibration}.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "felt gap",
+              "y": "Vibration",
+              "rho": "Desire",
+              "g": "Attraction"
+            },
+            "reflected_formula": "d{felt_gap}/d{Vibration} = -{Desire} {Attraction}",
+            "translation_t": "The rate of change of felt gap with respect to Vibration is the negative product of Desire and Attraction.",
+            "translation_template": "The rate of change of {felt_gap} with respect to {Vibration} is the negative product of {Desire} and {Attraction}.",
+            "direction_flipped_d": "The rate of change of felt gap with respect to Vibration is the positive product of Desire and Attraction.",
+            "rationale": "The equation describes the hydrostatic pressure gradient, which involves mechanical pressure (`p`) and no blocklisted thermal, molar, viscous, electrical, acoustic, optical, or elastic quantities. Thus, it is classified as `crossing_interface`. Pressure maps to `felt gap`, height to `Vibration`, density to `Desire`, and gravitational acceleration to `Attraction`. The law describes exertion against the weight of the fluid column (pressure increasing with depth), leading to `ruling = 'invert'` and `two_level = true`."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "8fff4c69ed4b4434bec818fc6c3b0ddc",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E029",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "pressure gradient opposes height increase, indicating exertion against physical resistance",
+            "unmapped_terms": [],
+            "variable_map": {
+              "d p": "felt gap",
+              "d y": "Vibration",
+              "ρ": "Desire",
+              "g": "Attraction"
+            },
+            "reflected_formula": "felt gap per Vibration = Desire × Attraction",
+            "translation_t": "felt gap per Vibration equals Desire times Attraction",
+            "translation_template": "{felt gap} per {Vibration} equals {Desire} times {Attraction}",
+            "direction_flipped_d": "Desire times Attraction equals felt gap per Vibration",
+            "rationale": "The equation involves mechanical pressure (p) and its gradient with height (y), with density (ρ) and gravitational acceleration (g). No Step-1b blocklisted variables are present. Pressure maps to 'felt gap' (crossing boundary), while height, density, and gravitational acceleration map to 'Vibration', 'Desire', and 'Attraction' respectively. The negative sign indicates exertion against resistance, so ruling is 'invert' and two_level is true."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "4656a1264d30491b8f2da006350b8caf",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E029",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Vibration is aligned with the gravitational axis",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "{felt gap}",
+              "\\rho": "{Desire}",
+              "g": "{Attraction}",
+              "y": "{Vibration}"
+            },
+            "reflected_formula": "\\frac{d {felt gap}}{d {Vibration}} = - {Desire} {Attraction}",
+            "translation_t": "felt gap change per Vibration equals -Desire times Attraction",
+            "translation_template": "{felt gap} change per {Vibration} equals -{Desire} times {Attraction}",
+            "direction_flipped_d": "-Attraction times Desire equals felt gap change per Vibration",
+            "rationale": "Mapped pressure to felt gap, density to Desire, gravitational acceleration to Attraction, and height/position to Vibration. The equation reflects a balance involving physical resistance (gravity)."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "X001",
+      "metadata": {
+        "item_id": "X001",
+        "stratum": "Mechanical_Crossing",
+        "expected_scope_status": "crossing_interface",
+        "heldout_item_id": null,
+        "volume": 1,
+        "chapter": 14,
+        "row_idx": 2
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "8a67a41f6f1f446eb3121b4a737e8227",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X001",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Mechanical pressure (force per area) maps to felt gap at the Crossing interface; force maps to Frequency; area maps to Vibration². The law requires exertion of force against a bounding surface—a resistive boundary cost—so ruling is invert. Two-level is true because the definition simultaneously serves as a productive operational measure of that costly exertion.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "felt gap",
+              "F": "Frequency",
+              "A": "Vibration²"
+            },
+            "reflected_formula": "felt gap = Frequency / Vibration²",
+            "translation_t": "The felt gap equals Frequency divided by Vibration squared.",
+            "translation_template": "The {felt_gap} equals {Frequency} divided by {Vibration} squared.",
+            "direction_flipped_d": "Vibration squared multiplied by the felt gap yields Frequency.",
+            "rationale": "Step 1b scan: no thermal, molar/gas, viscous, circuit, or acoustic/optical/elastic active dynamical variables appear. The equation p = F/A is a pure mechanical pressure definition—force exerted per unit area against a bounding surface. Per Step 3, mechanical pressure has no standalone inner counterpart and reflects only at the Crossing interface as felt gap. Force F maps to Frequency; area A maps to Vibration². No blocklisted quantities are present, so the item clears the Strict Boundary Guard. Because the law encodes exertion against a physical resistive boundary (a surface that bounds against expansion), ruling is invert. Two-level is true because the formula is simultaneously a productive operational definition whose application tracks that costly resistive exertion. formula_shape is keeps; no quotients are inverted in reflected_formula."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "27cac6f479db44649e2432d15cf94b40",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X001",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Mechanical pressure reflects only at the crossing boundary as felt gap.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "felt gap",
+              "F": "Frequency",
+              "A": "Vibration"
+            },
+            "reflected_formula": "felt gap equals Frequency divided by Vibration",
+            "translation_t": "felt gap equals Frequency divided by Vibration",
+            "translation_template": "{felt_gap} equals {Frequency} divided by {Vibration}",
+            "direction_flipped_d": "Frequency over Vibration yields felt gap",
+            "rationale": "The item is a pure mechanical pressure definition with only pressure, force, and area active. No thermal, gas, viscous flow-rate, circuit, or acoustic, optical, or elastic blocklisted variables appear, so it remains within the crossing interface. Pressure maps to felt gap, force maps to Frequency, and the expression is preserved in keep form with a slot-valid target set."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "adbf02170ec14f19819004084cb4b691",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X001",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The felt gap quantifies the intensity of Frequency distributed across Vibration² at the interface.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "felt gap",
+              "F": "Frequency",
+              "A": "Vibration²"
+            },
+            "reflected_formula": "{felt_gap} = {Frequency} / {Vibration}²",
+            "translation_t": "The felt gap is the Frequency divided by the square of Vibration.",
+            "translation_template": "The {felt_gap} is the {Frequency} divided by the square of {Vibration}.",
+            "direction_flipped_d": "The felt gap is the Frequency distributed over the square of Vibration.",
+            "rationale": "Step 1a: No dimensionless prefactors or static constants to strip. Step 1b: The equation `p = F/A` contains `p` (pressure), `F` (force), and `A` (area). None of these are blocklisted thermal, molar, viscous, electric, acoustic, optical, or elastic quantities. Therefore, the Strict Boundary Guard does not classify this as 'no_partner'. Step 2: The equation is not one of the specific 'open_joint' cases. Step 3: The equation involves mechanical `pressure` (`p`) and no blocklisted quantities. According to Rule R v3, this classifies the item as 'crossing_interface'. Pressure (`p`) maps to `felt gap`, Force (`F`) maps to `Frequency`, and Area (`A`) maps to `Vibration²`. Step 4: The formula `p = F/A` is a structural definition of pressure. It defines how force is distributed over an area, representing a measure of resistance. This falls under 'structural definitions' for `ruling = \"keep\"`. Since `ruling = \"keep\"`, `two_level` is `false`. The `formula_shape` is 'keeps' as algebraic structure is preserved."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "e3eb885d3c214f0e9339031a27ec5e8f",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X001",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Pressure as felt gap marks the boundary between physical resistance and receptive expansion",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "felt gap",
+              "F": "Frequency",
+              "A": "Vibration²"
+            },
+            "reflected_formula": "felt gap = Frequency / Vibration²",
+            "translation_t": "felt gap equals Frequency divided by Vibration squared",
+            "translation_template": "{felt_gap} equals {Frequency} divided by {Vibration} squared",
+            "direction_flipped_d": "Frequency divided by Vibration squared equals felt gap",
+            "rationale": "The equation involves mechanical pressure (p) and no Step-1b blocklisted quantities. Pressure maps to 'felt gap' at the crossing interface, while force (F) and area (A) map to 'Frequency' and 'Vibration²' respectively. The formula is a structural definition, so ruling is 'keep' with two_level=false."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "schema_error",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "eaa82d62133c4ff6b75ba3ce1fa968e5",
+          "call_meta": {},
+          "parsed": null,
+          "errors": [
+            "Invalid slot tokens for D2 crossing arm: ['Vibration squared']",
+            "Unresolved '{' or '}' braces in translation_t",
+            "Unresolved '{' or '}' braces in direction_flipped_d"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "X002",
+      "metadata": {
+        "item_id": "X002",
+        "stratum": "Mechanical_Crossing",
+        "expected_scope_status": "crossing_interface",
+        "heldout_item_id": null,
+        "volume": 1,
+        "chapter": 14,
+        "row_idx": 3
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "98fb45f9867d4f63ba896a033a04365c",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X002",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Mechanical pressure at depth accumulates resistive load against the fluid column; both pressure terms cross as felt gap, while depth maps to Vibration and gravitational pull maps to Attraction. Inversion marks the costly deepening of felt gap with increasing Vibration against Attraction.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "felt gap",
+              "p_0": "felt gap",
+              "h": "Vibration",
+              "g": "Attraction",
+              "rho": "[stripped — declared constant density, background parameter]"
+            },
+            "reflected_formula": "felt gap = felt gap + Attraction × Vibration",
+            "translation_t": "The total felt gap equals the surface felt gap added to the product of Attraction and Vibration, growing as one descends deeper into resistance.",
+            "translation_template": "The total {felt_gap} equals the surface {felt_gap} added to the product of {Attraction} and {Vibration}, growing as one descends deeper into resistance.",
+            "direction_flipped_d": "Vibration scaled by Attraction accumulates beyond the surface felt gap, so that the compounding felt gap rises with every increment of depth surrendered to Attraction.",
+            "rationale": "p and p₀ are mechanical pressure quantities mapping to felt gap at the Crossing interface. h (height/depth) maps to Vibration. g (gravitational acceleration) maps to Attraction. ρ is declared constant in the description and stripped per Rule 1a as a fixed background parameter. No Step-1b blocklisted quantities remain, confirming crossing_interface. The hydrostatic law exerts resistive accumulation against gravitational load, so ruling = invert and two_level = true. Formula shape keeps the additive structure intact."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "aaa12dbbb71b4e12894cf2ce12bc6b0b",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X002",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Mechanical pressure reflects only at the crossing boundary as felt gap; the added depth term preserves the same direction of increase.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "felt gap",
+              "p_0": "felt gap",
+              "\\rho": "Desire",
+              "g": "Attraction",
+              "h": "Vibration"
+            },
+            "reflected_formula": "felt gap equals baseline felt gap plus Desire times Attraction times Vibration.",
+            "translation_t": "felt gap is baseline felt gap plus Desire moving through Attraction across Vibration.",
+            "translation_template": "{felt_gap} is baseline {felt_gap} plus {Desire} moving through {Attraction} across {Vibration}.",
+            "direction_flipped_d": "baseline felt gap expands into felt gap as Desire passes with Attraction through Vibration.",
+            "rationale": "The law contains mechanical pressure and hydrostatic depth with density, gravity, and height only. No active thermal, gas, viscous flow-rate, circuit, acoustic, optical, or elastic blocklisted variable appears dynamically, so it is not excluded by Step 1. Because pressure is present, Rule R v3 assigns crossing_interface rather than in_scope. The equation is an additive state identity for hydrostatic pressure, so the algebraic shape is kept and the ruling is keep."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "709a919d4ec74539ac026aa2027aec64",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X002",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Increased physical pressure (depth) corresponds to an increased felt gap.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "felt gap",
+              "p_0": "felt gap",
+              "rho": "Desire",
+              "g": "Attraction",
+              "h": "Vibration"
+            },
+            "reflected_formula": "{felt_gap} = {felt_gap} + {Desire} * {Attraction} * {Vibration}",
+            "translation_t": "The felt gap is equal to the felt gap plus the product of Desire, Attraction, and Vibration.",
+            "translation_template": "The {felt_gap} is equal to the {felt_gap} plus the product of {Desire}, {Attraction}, and {Vibration}.",
+            "direction_flipped_d": "The felt gap is reduced by the product of Desire, Attraction, and Vibration, resulting in a baseline felt gap.",
+            "rationale": "Step 1b: No blocklisted thermal, molar, viscous, electric, or acoustic/optical/elastic variables are present. Step 3: The equation involves mechanical pressure (`p`, `p_0`) and no blocklisted quantities, thus classified as 'crossing_interface'. `p` and `p_0` map to `felt gap`. `rho` maps to `Desire`, `g` maps to `Attraction`, and `h` maps to `Vibration`. The formula is a structural definition of hydrostatic pressure, indicating a 'keep' ruling and 'false' for two_level. The `axis_polarity_note` is added to describe the direct correlation between physical pressure and felt gap."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "b45ab6b80a224c54a9d8a6a8082e6078",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X002",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Pressure (felt gap) increases with depth (Vibration) under constant Attraction and Desire",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "felt gap",
+              "p_0": "felt gap",
+              "ρ": "Desire",
+              "g": "Attraction",
+              "h": "Vibration"
+            },
+            "reflected_formula": "felt gap = felt gap + Desire × Attraction × Vibration",
+            "translation_t": "felt gap equals felt gap plus Desire times Attraction times Vibration",
+            "translation_template": "{felt_gap} equals {felt_gap} plus {Desire} times {Attraction} times {Vibration}",
+            "direction_flipped_d": "felt gap equals felt gap plus Vibration times Attraction times Desire",
+            "rationale": "The equation involves only mechanical pressure (p, p_0) and purely mechanical variables (density ρ, gravitational acceleration g, height h). No Step-1b blocklisted thermal, molar, viscous, electric, or acoustic/optical quantities are present. Pressure maps to 'felt gap' at the crossing interface, while other variables map via the Partner Lookup Table. The law is a structural additive identity (hydrostatic pressure variation), so ruling is 'keep' with two_level=false."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "e29352b848b44e4b807c546d39cd30de",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X002",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Pressure is felt as a gap at the boundary.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "{felt gap}",
+              "p_{0}": "{felt gap}",
+              "\\rho": "{Desire}",
+              "g": "{Attraction}",
+              "h": "{Vibration}"
+            },
+            "reflected_formula": "{felt gap} = {felt gap} + {Desire} × {Attraction} × {Vibration}",
+            "translation_t": "felt gap equals felt gap plus Desire times Attraction times Vibration",
+            "translation_template": "{felt gap} equals {felt gap} plus {Desire} times {Attraction} times {Vibration}",
+            "direction_flipped_d": "The Vibration of Attraction in Desire creates a felt gap from a felt gap.",
+            "rationale": "Classified as 'crossing_interface' because it involves mechanical pressure. Variables mapped according to the Partner Lookup Table."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "X003",
+      "metadata": {
+        "item_id": "X003",
+        "stratum": "Mechanical_Crossing",
+        "expected_scope_status": "crossing_interface",
+        "heldout_item_id": null,
+        "volume": 1,
+        "chapter": 14,
+        "row_idx": 5
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d3d0cefee3464d75a27c9af063f0cfda",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X003",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "All three pressure terms (absolute, gauge, atmospheric) map to felt gap at the Crossing interface. The equation is a pure additive decomposition of mechanical pressure with no dissipative resistance cost, no blocklisted thermal/circuit/acoustic/viscous variable, and no spatial separation to invert — it is a structural identity partitioning total felt gap into its constituent components.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p_abs": "felt gap (total)",
+              "p_g": "felt gap (inner)",
+              "p_atm": "felt gap (ambient)"
+            },
+            "reflected_formula": "felt gap (total) = felt gap (inner) + felt gap (ambient)",
+            "translation_t": "Total felt gap equals inner felt gap plus ambient felt gap.",
+            "translation_template": "Total {felt_gap} equals inner {felt_gap} plus ambient {felt_gap}.",
+            "direction_flipped_d": "Ambient felt gap and inner felt gap together compose the whole of total felt gap.",
+            "rationale": "Step 1b check: the equation p_abs = p_g + p_atm contains only mechanical pressure quantities (absolute, gauge, atmospheric). No thermal variable, no molar/gas constant, no viscosity, no circuit quantity, no acoustic/optical/elastic quantity appears dynamically. Step 1a: no dimensionless prefactors or fixed background constants are present beyond the pressure terms themselves. Step 3: because mechanical pressure is present and no blocklisted quantity is present, the item is classified as crossing_interface, with all three pressure variables mapping to felt gap. The equation is a pure additive structural decomposition — absolute pressure is definitionally the sum of gauge and atmospheric pressure — carrying no dissipative resistance cost or exertion against a barrier, so ruling = keep and two_level = false. formula_shape = keeps; the additive structure is preserved exactly in the reflected formula."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "3bd9f8a22f0b442cb5feddb04b020abf",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X003",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Mechanical pressure terms reflect only at the crossing boundary as felt gap.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p_abs": "felt gap",
+              "p_g": "felt gap",
+              "p_atm": "felt gap"
+            },
+            "reflected_formula": "absolute felt gap equals gauge felt gap plus atmospheric felt gap",
+            "translation_t": "felt gap is the whole sensed boundary, made from the added felt gap and felt gap.",
+            "translation_template": "{felt_gap} is the whole sensed boundary, made from the added {felt_gap} and {felt_gap}.",
+            "direction_flipped_d": "The full felt gap comes from joining felt gap with felt gap.",
+            "rationale": "The equation contains only mechanical pressure quantities: absolute pressure, gauge pressure, and atmospheric pressure. Under Rule R v3 Step 3, pure mechanical pressure laws are classified as crossing_interface and each pressure term maps to felt gap. The relation is an additive state identity, so the algebraic shape is kept and the ruling is keep with two_level false."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "a9b3652b08934dd696e54250d9ec0fd9",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X003",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The interface represents the felt resistance at the boundary of physical experience.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p_abs": "felt gap",
+              "p_g": "felt gap",
+              "p_atm": "felt gap"
+            },
+            "reflected_formula": "{felt_gap}_abs = {felt_gap}_g + {felt_gap}_atm",
+            "translation_t": "felt gap absolute is the sum of felt gap gauge and felt gap atmospheric.",
+            "translation_template": "{felt_gap} absolute is the sum of {felt_gap} gauge and {felt_gap} atmospheric.",
+            "direction_flipped_d": "Gauge felt gap is the difference between absolute felt gap and atmospheric felt gap.",
+            "rationale": "The equation defines absolute pressure as the sum of gauge and atmospheric pressure. All active dynamical variables (`p_abs`, `p_g`, `p_atm`) are types of mechanical pressure, which maps to `felt gap` at the crossing interface. No blocklisted thermal, molar, viscous, electric, acoustic, optical, or elastic quantities are present, thus avoiding `no_partner`. This is an additive identity defining a state, so the `ruling` is `keep` and `two_level` is `false`."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "a42ffba1448742219e2b1e7f895ec271",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X003",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "pressure as boundary resistance maps to felt gap at the interface",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p_abs": "felt gap",
+              "p_g": "felt gap",
+              "p_atm": "felt gap"
+            },
+            "reflected_formula": "felt gap = felt gap + felt gap",
+            "translation_t": "felt gap equals felt gap plus felt gap",
+            "translation_template": "{felt_gap} equals {felt_gap} plus {felt_gap}",
+            "direction_flipped_d": "felt gap plus felt gap equals felt gap",
+            "rationale": "The equation involves only mechanical pressure terms (absolute, gauge, atmospheric) with no active thermal, molar, viscous, electric, acoustic, or optical variables. Per Step 3, this classifies as crossing_interface with pressure mapped to felt gap. The additive identity structure (Step 4) yields ruling=keep and two_level=false."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "a651e73b21fb4b598f387994031ca1ec",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X003",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Pressure variables reflect the felt gap at the boundary.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p_{\\text{abs}}": "{felt gap}",
+              "p_{\\text{g}}": "{felt gap}",
+              "p_{\\text{atm}}": "{felt gap}"
+            },
+            "reflected_formula": "{felt gap} = {felt gap} + {felt gap}",
+            "translation_t": "felt gap equals felt gap plus felt gap",
+            "translation_template": "{felt gap} equals {felt gap} plus {felt gap}",
+            "direction_flipped_d": "The sum of felt gap and felt gap equals felt gap.",
+            "rationale": "The equation involves mechanical pressure, so it's classified as 'crossing_interface'. All pressure variables are mapped to '{felt gap}'."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "X004",
+      "metadata": {
+        "item_id": "X004",
+        "stratum": "Mechanical_Crossing",
+        "expected_scope_status": "crossing_interface",
+        "heldout_item_id": null,
+        "volume": 1,
+        "chapter": 14,
+        "row_idx": 6
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "26b8f2f293ed4672b0c733e5703e1773",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X004",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Mechanical pressure on both sides of the equation maps to felt gap at the Crossing interface; the equality of transmitted felt gap across two surfaces is preserved without inversion, mirroring Pascal's lossless hydraulic transmission as an equilibrium identity.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "F_1": "Frequency_1",
+              "F_2": "Frequency_2",
+              "A_1": "Vibration²_1",
+              "A_2": "Vibration²_2",
+              "F_1/A_1": "felt gap (side 1)",
+              "F_2/A_2": "felt gap (side 2)"
+            },
+            "reflected_formula": "Frequency_1 ÷ Vibration²_1 = Frequency_2 ÷ Vibration²_2",
+            "translation_t": "The felt gap on one side equals the felt gap on the other side: whatever Frequency presses through a given span of Vibration is received in full across the second span of Vibration, unchanged.",
+            "translation_template": "The {felt_gap} on one side equals the {felt_gap} on the other side: whatever {Frequency} presses through a given span of {Vibration} is received in full across the second span of {Vibration}, unchanged.",
+            "direction_flipped_d": "Whatever Frequency meets a given span of Vibration and registers as felt gap is transmitted whole to the second span of Vibration, so the felt gap arriving there is identical to the felt gap that departed.",
+            "rationale": "Pascal's principle F₁/A₁ = F₂/A₂ is a pure mechanical pressure-transmission law with no thermal, electrical, acoustic, or viscous quantities, so Step 1b is clear. Each force-per-area ratio is mechanical pressure, which maps exclusively to felt gap at the Crossing interface, giving scope_status = crossing_interface. Forces map to Frequency and areas map to Vibration² via the Partner Lookup Table; Vibration² is rendered as a span of Vibration in prose to avoid digit characters. The law is a lossless equilibrium identity — pressure is transmitted without dissipation or resistance cost — so ruling = keep, two_level = false, and formula_shape = keeps. The reflected formula preserves the equality of felt gap on both sides."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "schema_error",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "c528ecf5b36e4d6ca0bf26015d85d14f",
+          "call_meta": {},
+          "parsed": null,
+          "errors": [
+            "Invalid slot tokens for D2 crossing arm: ['area', 'area']"
+          ]
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "schema_error",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "f24312c2cfa343be81327b3bd925e315",
+          "call_meta": {},
+          "parsed": null,
+          "errors": [
+            "Non-stripped variable_map slot(s) missing from translation_template {...}: ['Frequency', 'Vibration']"
+          ]
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "9c47e1ca006840d3959e13abb7d74f1a",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X004",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Pressure as felt gap at crossing boundary",
+            "unmapped_terms": [],
+            "variable_map": {
+              "F_1": "Frequency",
+              "A_1": "Vibration²",
+              "F_2": "Frequency",
+              "A_2": "Vibration²",
+              "pressure": "felt gap"
+            },
+            "reflected_formula": "{Frequency} / {Vibration}² = {Frequency} / {Vibration}²",
+            "translation_t": "Frequency over Vibration squared equals Frequency over Vibration squared with felt gap",
+            "translation_template": "{Frequency} over {Vibration} squared equals {Frequency} over {Vibration} squared with {felt_gap}",
+            "direction_flipped_d": "Vibration squared over Frequency equals Vibration squared over Frequency with felt gap",
+            "rationale": "Pascal's principle involves purely mechanical pressure (force per area) with no active thermal, molar, viscous, electric, or acoustic/optical variables. Pressure is mapped to felt gap, while force and area map to Frequency and Vibration² respectively. The equation is a structural identity (no exertion against resistance), so ruling is 'keep' and two_level is false."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "schema_error",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "80f2718c7ed640a98bae60391ddf5612",
+          "call_meta": {},
+          "parsed": null,
+          "errors": [
+            "Non-stripped variable_map slot(s) missing from translation_template {...}: ['Frequency', 'Vibration']"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "X005",
+      "metadata": {
+        "item_id": "X005",
+        "stratum": "Mechanical_Crossing",
+        "expected_scope_status": "crossing_interface",
+        "heldout_item_id": null,
+        "volume": 1,
+        "chapter": 14,
+        "row_idx": 10
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "44b3d148d31841259b3b4e74a9a203e2",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X005",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Mechanical pressure maps to felt gap at the Crossing interface; density maps to Desire, speed maps to rise per Expansion, and height maps to Vibration. The conservation sum is preserved without inversion, reflecting an equilibrium identity along the inner streamline.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "felt gap",
+              "rho": "Desire",
+              "v": "rise per Expansion",
+              "y": "Vibration"
+            },
+            "reflected_formula": "felt gap + Desire × (rise per Expansion)² + Desire × Attraction × Vibration = constant",
+            "translation_t": "The felt gap plus Desire carried by rise per Expansion plus Desire drawn through Attraction across Vibration holds as one unbroken constant along the inner stream.",
+            "translation_template": "The {felt_gap} plus {Desire} carried by {rise per Expansion} plus {Desire} drawn through {Attraction} across {Vibration} holds as one unbroken constant along the inner stream.",
+            "direction_flipped_d": "Along the inner stream, one unbroken constant is held by Vibration stretched through Attraction and Desire, joined with Desire borne on rise per Expansion and the felt gap together.",
+            "rationale": "Bernoulli's equation is an inviscid, steady-flow energy-conservation identity containing mechanical pressure p, density ρ, speed v, and height y. No Step-1b blocklisted quantity appears. Mechanical pressure triggers crossing_interface classification, mapping p to felt gap. Density maps to Desire, speed to rise per Expansion, and height to Vibration. Gravitational acceleration g is a static background constant stripped under Step 1a. The equation is a conservation sum (constant along a streamline) with no dissipative resistance, yielding ruling = keep and two_level = false. The algebraic structure is preserved exactly under formula_shape = keeps."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b45158194176423cbd04f4ba9fd6b621",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X005",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Mechanical pressure crosses only at the interface and maps to felt gap; density, speed, gravity, and height map through the primary table without inversion.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "felt gap",
+              "\\rho": "Desire",
+              "v": "rise per Expansion",
+              "g": "Attraction",
+              "y": "Vibration"
+            },
+            "reflected_formula": "felt gap + 1/2 × Desire × (rise per Expansion)^2 + Desire × Attraction × Vibration = constant",
+            "translation_t": "felt gap together with Desire moving as rise per Expansion and Desire meeting Attraction across Vibration stays in balance.",
+            "translation_template": "{felt_gap} together with {Desire} moving as {rise per Expansion} and {Desire} meeting {Attraction} across {Vibration} stays in balance.",
+            "direction_flipped_d": "felt gap remains balanced with Desire in rise per Expansion, while Desire with Attraction across Vibration also remains balanced.",
+            "rationale": "After stripping the numeric prefactor, the active dynamical quantities are pressure, density, speed, gravity, and height. No thermal, gas, viscous flow-rate, electric circuit, or acoustic-optical-elastic blocklisted variables appear dynamically. Because the equation includes mechanical pressure, Rule R v3 assigns crossing_interface rather than in_scope. Bernoulli's equation here is a state-balance identity, so the algebraic structure is kept and the ruling is keep."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "298b94d4b2fb4344963d0fbffbab9daa",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X005",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Pressure maps to felt gap, indicating resistance at the interface.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "p": "felt gap",
+              "rho": "Desire",
+              "v": "rise per Expansion",
+              "g": "Attraction",
+              "y": "Vibration"
+            },
+            "reflected_formula": "felt gap + Desire (rise per Expansion)² + Desire Attraction Vibration = constant",
+            "translation_t": "The felt gap plus the Desire times the square of the rise per Expansion plus the Desire times the Attraction times the Vibration is constant.",
+            "translation_template": "The {felt_gap} plus the {Desire} times the square of the {rise per Expansion} plus the {Desire} times the {Attraction} times the {Vibration} is constant.",
+            "direction_flipped_d": "A constant value is achieved by summing the felt gap, the product of Desire and the square of rise per Expansion, and the product of Desire, Attraction, and Vibration.",
+            "rationale": "Step 1a stripped the dimensionless numeric prefactor '1/2'. Step 1b confirmed that no blocklisted thermal, molar, viscous, electrical, acoustic, optical, or elastic quantities are present in the equation. Step 3 identified 'p' (pressure) as a mechanical pressure term, which, in the absence of blocklisted quantities, triggers a `scope_status` of 'crossing_interface'. The remaining active variables were mapped using the Partner Lookup Table: 'p' to 'felt gap', 'rho' (density) to 'Desire', 'v' (velocity) to 'rise per Expansion', 'g' (gravitational acceleration) to 'Attraction', and 'y' (height) to 'Vibration'. Bernoulli's equation represents a conservation law for fluid energy in an inviscid flow, thus `ruling` is 'keep' and `two_level` is 'false'."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "schema_error",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "ad61e72cfd7e4c6ebc9862a433898490",
+          "call_meta": {},
+          "parsed": null,
+          "errors": [
+            "Unwrapped translation_template mismatch vs translation_t: 'felt gap + Desire rise per Expansion rise per Expansion + Desire Attraction Vibration = constant' != 'felt gap plus Desire times rise per Expansion times rise per Expansion plus Desire times Attraction times Vibration equals constant'"
+          ]
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "schema_error",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "f3d3f12d1d0142ce83f1e58ebbc00cb9",
+          "call_meta": {},
+          "parsed": null,
+          "errors": [
+            "Invalid slot tokens for D2 crossing arm: ['constancy']"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "X006",
+      "metadata": {
+        "item_id": "X006",
+        "stratum": "Mechanical_Crossing",
+        "expected_scope_status": "crossing_interface",
+        "heldout_item_id": null,
+        "volume": 2,
+        "chapter": 3,
+        "row_idx": 2
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "e96ba07e5cea410faf6ad700daa7e191",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X006",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Mechanical pressure maps to felt gap at the Crossing interface; volume maps to Vibrance; work maps to conscious energy. The integral of felt gap over expanding Vibrance yields conscious energy through resistive exertion, inverting the direction of effort into realized expansion.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "W": "conscious energy",
+              "p": "felt gap",
+              "V": "Vibrance",
+              "V_1": "Vibrance (initial)",
+              "V_2": "Vibrance (final)"
+            },
+            "reflected_formula": "conscious energy = ∫[Vibrance_initial to Vibrance_final] felt_gap d(Vibrance)",
+            "translation_t": "conscious energy arises as felt gap is integrated across the rise in Vibrance from its initial state to its final state.",
+            "translation_template": "{conscious energy} arises as {felt gap} is integrated across the rise in {Vibrance} from its initial state to its final state.",
+            "direction_flipped_d": "The widening of Vibrance pressed against felt gap accumulates into conscious energy as the boundary moves from its final state back through its initial state.",
+            "rationale": "The equation W = ∫p dV is purely mechanical boundary work: pressure acting on a moving volume boundary with no active thermal, gas-constant, viscous, circuit, or acoustic variables appearing dynamically inside the formula. Pressure maps to felt gap at the Crossing interface; volume maps to Vibrance; work maps to conscious energy. Because the law describes exertion against physical resistance (the system must push against the felt gap to expand Vibrance), the ruling is invert with two_level true, as the integral is simultaneously a productive operational definition of the conscious energy gained through that resistive exertion."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "0e9d56d817684af2a62615cd2fe46aa8",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X006",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Mechanical pressure reflects only at the crossing boundary as felt gap; volume maps to Vibrance. The expression is boundary work with no blocklisted active thermal variable appearing in the equation itself.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "W": "conscious energy",
+              "p": "felt gap",
+              "V": "Vibrance",
+              "dV": "change in Vibrance"
+            },
+            "reflected_formula": "conscious energy equals the accumulation of felt gap across change in Vibrance from the starting Vibrance to the ending Vibrance.",
+            "translation_t": "conscious energy equals the accumulation of felt gap through change in Vibrance.",
+            "translation_template": "{conscious energy} equals the accumulation of {felt_gap} through change in {Vibrance}.",
+            "direction_flipped_d": "through change in Vibrance, the accumulation of felt gap yields conscious energy.",
+            "rationale": "The formula contains mechanical pressure and volume only. Under Step 3, pure mechanical pressure laws are classified as crossing_interface when no Step-1b blocklisted dynamical thermal, gas, circuit, viscous-flow, acoustic, optical, or elastic quantity appears actively in the formula. Here p is mechanical pressure and V is volume, so pressure maps to felt gap at the crossing interface and volume maps to Vibrance. The relation is an additive accumulative work identity, so the algebraic shape is kept and the ruling is keep with two_level false."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "9324293056814b998b0ac671bca838e2",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X006",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "A positive {Frequency} times {Vibration} (work) indicates exertion by the system against the {felt_gap} as {Vibrance} expands. A negative {Frequency} times {Vibration} indicates exertion on the system to compress {Vibrance} against the {felt_gap}.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "W": "Frequency * Vibration",
+              "p": "felt_gap",
+              "V": "Vibrance"
+            },
+            "reflected_formula": "Frequency * Vibration = integral from Vibrance_1 to Vibrance_2 of felt_gap d Vibrance",
+            "translation_t": "Frequency times Vibration equals the integral of felt gap with respect to Vibrance.",
+            "translation_template": "{Frequency} times {Vibration} equals the integral of {felt_gap} with respect to {Vibrance}.",
+            "direction_flipped_d": "The felt gap is the rate of change of Frequency times Vibration with respect to Vibrance.",
+            "rationale": "Step 1a: No dimensionless prefactors or static constants to strip.\nStep 1b: Inspecting active dynamical quantities: `W` (Work), `p` (Pressure), `V` (Volume). The equation contains mechanical `pressure` (`p`). No other blocklisted thermal, molar, viscous, electric, acoustic/optical/elastic quantities are present. Therefore, Step 1b's critical boundary guard for `no_partner` is not triggered.\nStep 2: The item is not one of the specific `open_joint` cases (escape velocity, gravitational time dilation, etc.).\nStep 3: Since no Step-1b blocklisted quantities (other than mechanical pressure) are present, and the equation involves mechanical `pressure`, the `scope_status` is classified as `\"crossing_interface\"`. Mechanical `pressure` (`p`) maps to `felt_gap`. `W` (Work) maps to `Frequency * Vibration`. `V` (Volume) maps to `Vibrance`.\nStep 4: `formula_shape` is `\"keeps\"` for `\"crossing_interface\"`. The equation describes work done by or against pressure during a volume change, which represents exertion against physical resistance. Thus, the `ruling` is `\"invert\"`. This formula is also a productive operational definition for calculating work, tracking the costly exertion of changing volume against pressure, so `two_level` is `true`."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "7bdffadf16f4478fb9fab81eded8fecb",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X006",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "p",
+              "V_1",
+              "V_2",
+              "dV",
+              "W"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation involves work (W) and volume (V_1, V_2, dV), which are thermodynamic quantities. Additionally, pressure (p) appears dynamically in the formula. According to Step 1b, the presence of any active thermal variable (here, work and volume in a thermodynamic context) or mechanical pressure in a thermodynamic equation triggers the 'no_partner' classification. Thus, the item is classified as 'no_partner' with all translation fields empty."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "b56e128cda7d447fac54e18a61c8736f",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X006",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Pressure felt as gap",
+            "unmapped_terms": [],
+            "variable_map": {
+              "W": "{conscious energy}",
+              "p": "{felt_gap}",
+              "V": "{Vibrance}"
+            },
+            "reflected_formula": "Conscious energy equals the integral from initial Vibrance to final Vibrance of felt gap with respect to Vibrance.",
+            "translation_t": "conscious energy is integral of felt gap over change in Vibrance",
+            "translation_template": "{conscious energy} is integral of {felt_gap} over change in {Vibrance}",
+            "direction_flipped_d": "The integral of felt gap over change in Vibrance gives conscious energy.",
+            "rationale": "The equation represents work done through volume change against external pressure, classified as crossing_interface due to the involvement of mechanical pressure."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "E003",
+      "metadata": {
+        "item_id": "E003",
+        "stratum": "Non_Crossing_Boundary",
+        "expected_scope_status": "no_partner",
+        "heldout_item_id": "E003",
+        "volume": 2,
+        "chapter": 1,
+        "row_idx": 7
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1ae108d1e5cd4346bf0f1668c7099403",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E003",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Active thermal variables Q (heat) and L_v (latent heat of vaporization) appear dynamically in the formula; both are blocklisted under Step 1b. Mass m maps to Movement but cannot rescue the item from the boundary guard.",
+            "unmapped_terms": [
+              "Q (heat)",
+              "L_v (latent heat of vaporization)"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Step 1b boundary guard triggers immediately. The equation Q = m L_v contains two active thermal variables: Q (heat transferred during phase change) and L_v (latent heat of vaporization). Both are explicitly blocklisted thermal quantities under Step 1b ('heat Q', 'latent heat L_v'). Although mass m maps cleanly to Movement in the Partner Lookup Table, the presence of ANY blocklisted thermal variable mandates an immediate STOP and classification as no_partner. No crossing-interface or in_scope pathway is available. formula_shape is set to none, ruling to no partner, two_level to false, and all formula and translation fields are left empty."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "55a3992db39f4fd29827ae25b4a16e34",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E003",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Active thermal quantity triggers strict boundary exclusion.",
+            "unmapped_terms": [
+              "Q",
+              "L_v"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "After stripping no relevant prefactors/constants, the active dynamical quantities include heat Q and latent heat L_v, both explicitly blocklisted thermal variables under Step 1b. Therefore the item must be classified as no_partner immediately."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "612edd8d64e44f71906817f232e9ff8e",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E003",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "Q (heat)",
+              "L_v (latent heat)"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Step 1b (Strict Boundary Guard) identifies 'Q' (heat) and 'L_v' (latent heat) as active thermal variables. The presence of ANY active thermal variable in the formula immediately triggers a 'no_partner' classification, as per Rule R v3, Step 1b."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "38d62f5c65cc438f892fb8ccab053782",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E003",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "Q",
+              "m",
+              "L_v"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation involves heat (Q) and latent heat (L_v), which are active thermal variables explicitly blocklisted in Step 1b. This triggers the Strict Boundary Guard, classifying the item as 'no_partner'."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "5341962636e94277adf8c7142b3b8160",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E003",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "Q",
+              "m",
+              "L_v"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Contains active thermal variables (Q, L_v) which are blocklisted."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "E004",
+      "metadata": {
+        "item_id": "E004",
+        "stratum": "Non_Crossing_Boundary",
+        "expected_scope_status": "no_partner",
+        "heldout_item_id": "E004",
+        "volume": 2,
+        "chapter": 2,
+        "row_idx": 6
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "4bd4853d28504c44bfa5cd13415dbaca",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E004",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Thermal kinetic theory formula blocked by active thermal variable T, ideal gas constant R, Boltzmann constant k_B, and molar mass M — all blocklisted under Step 1b.",
+            "unmapped_terms": [
+              "T (temperature)",
+              "R (ideal gas constant)",
+              "k_B (Boltzmann constant)",
+              "M (molar mass)"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The root-mean-square speed formula v_rms = sqrt(3RT/M) = sqrt(3k_B T/m) contains multiple active dynamical quantities that are explicitly blocklisted under Step 1b: the absolute temperature T (thermal variable), the ideal gas constant R (molar/gas constant), the Boltzmann constant k_B (molar/gas constant), and the molar mass M (molar/gas variable). Per the CRITICAL BOUNDARY GUARD in Step 1b, the presence of ANY of these requires an immediate stop and classification as no_partner. All four appear dynamically inside the equation itself, not as stripped static background constants. The numeric prefactor 3 and the square root structure are stripped per Step 1a but do not affect the outcome. No mirror translation is possible."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "4f9df34c1c7b4ed1bef81bd5eed11bb9",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E004",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Blocked by active thermal and molar/gas variables under Step 1b.",
+            "unmapped_terms": [
+              "R",
+              "T",
+              "M",
+              "k_B"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "After stripping the dimensionless prefactor 3, the active dynamical quantities include temperature T, gas constant R, molar mass M, and Boltzmann constant k_B. Rule R v3 Step 1b requires immediate no_partner classification when any active thermal variable or active molar/gas constant or variable appears dynamically in the formula."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "166cfc55467545689e0f1250948c3716",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E004",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "T",
+              "R",
+              "M",
+              "k_B",
+              "m"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Step 1b of the Strict Boundary Guard mandates immediate classification as 'no_partner' if any active thermal variable (T), molar/gas constant (R, k_B), or molar/gas variable (M, m) appears dynamically in the formula. This equation contains all of these blocklisted quantities (T, R, M, k_B, m), thus triggering the 'no_partner' classification."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d1cb6daa2e9a46c6bee6e5fb4f22217c",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E004",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "R",
+              "T",
+              "k_B",
+              "m",
+              "M"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation contains active thermal variables (T) and molar/gas constants (R, k_B), which are explicitly blocklisted in Step 1b. This triggers the Strict Boundary Guard, resulting in scope_status = no_partner."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "87061ad430bb4012aced8eb79ae34789",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E004",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "T",
+              "R",
+              "k_{\\text{B}}",
+              "M",
+              "m"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Contains blocklisted variables (T, R, k_{\\text{B}})"
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "E009",
+      "metadata": {
+        "item_id": "E009",
+        "stratum": "Non_Crossing_Boundary",
+        "expected_scope_status": "no_partner",
+        "heldout_item_id": "E009",
+        "volume": 1,
+        "chapter": 14,
+        "row_idx": 7
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "2d0ce10cb81e4013bdaaa198c4c7bae4",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E009",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Volume flow rate Q = dV/dt is explicitly named in the Step 1b viscous/pipe-flow blocklist; classification halts immediately regardless of the presence of volume and time, which individually have partners.",
+            "unmapped_terms": [
+              "volume flow rate Q = dV/dt"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Step 1b mandates an immediate STOP and no_partner classification whenever any active dynamical blocklisted quantity appears in the formula. The equation Q = dV/dt is the definitional expression for volume flow rate, which is explicitly enumerated in the blocklist as 'volume flow rate Q = dV/dt'. Although volume maps to Vibrance and time maps to Expansion individually, the composite quantity Q as a pipe-flow rate variable is blocklisted in its own right. No crossing-interface or in_scope path is available; all prose and formula output fields are left empty."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "3ae5686ff38745a9aab1b5ced228160e",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E009",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Blocked by Step 1b: active viscous or pipe-flow rate variable present.",
+            "unmapped_terms": [
+              "Q",
+              "volume flow rate"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation is the definition of volume flow rate, Q = dV/dt. Under Rule R v3 Step 1b, any active viscous or pipe-flow rate variable, including volume flow rate Q = dV/dt, forces immediate classification as no_partner. After ignoring the generic derivative form, the active blocked quantity remains Q as volume flow rate, so the item cannot be translated."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "44c279d54e3b44339b8b3682c4e5362e",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E009",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "volume flow rate Q"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Step 1b of the Strict Boundary Guard explicitly blocklists 'ANY viscous or pipe-flow rate variable (dynamic viscosity eta, volume flow rate Q = dV/dt, Reynolds number)'. The equation `Q = dV/dt` directly involves 'volume flow rate Q', triggering an immediate classification as 'no_partner'."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "39c6d34b789f4cae9b7049aae26870f3",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E009",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "volume flow rate Q",
+              "volume V",
+              "time t"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation involves volume flow rate (Q = dV/dt), which is explicitly listed as a blocklisted viscous/pipe-flow rate variable in Step 1b. This triggers the Strict Boundary Guard, classifying the item as no_partner."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "22c2b18cdf794aee88b79e182cc34b79",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E009",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "Q"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Blocklisted quantity 'Q' (volume flow rate) is present."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "E012",
+      "metadata": {
+        "item_id": "E012",
+        "stratum": "Non_Crossing_Boundary",
+        "expected_scope_status": "no_partner",
+        "heldout_item_id": "E012",
+        "volume": 2,
+        "chapter": 4,
+        "row_idx": 10
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "bef4509f64854cd0b1c65a2f3bab63a1",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E012",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Entropy S, heat Q, and temperature T are all active thermal variables explicitly blocklisted under Step 1b; classification halts before any mapping attempt.",
+            "unmapped_terms": [
+              "S (entropy)",
+              "Q (heat)",
+              "T (temperature)"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "E012 encodes the Clausius theorem for a reversible cyclic process: the closed-path integral of dQ/T equals zero, defining entropy S as a state function. Every active dynamical quantity in the equation — entropy S, heat Q, and absolute temperature T — falls squarely within the thermal-variable blocklist enumerated in Step 1b. No stripping of prefactors or constants can remove these variables from the formula; they are the formula's entire dynamical content. The Boundary Guard therefore fires unconditionally, ruling 'no partner' and requiring formula_shape = 'none' with all prose translation fields left empty."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "46c6f56eb0194f21956fcfa5a159a766",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E012",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Contains active thermodynamic variables in the law itself, which are blocklisted by the strict boundary guard.",
+            "unmapped_terms": [
+              "S",
+              "Q",
+              "T"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "After ignoring the numeric zero, the active dynamical quantities are entropy S, heat Q, and temperature T. Rule R v3 Step 1b requires immediate no_partner classification when any active thermal variable appears dynamically in the formula."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "15832ecfc6f24db3bba0830eb2063186",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E012",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "Entropy (S)",
+              "Heat (Q)",
+              "Temperature (T)"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation involves active thermal variables: Entropy (S), Heat (Q), and Temperature (T). According to Rule R v3, Step 1b, the presence of ANY active thermal variable dynamically in the formula immediately triggers a 'no_partner' classification. Therefore, the processing stops at Step 1c."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "05e3e87d12ec40b690d1d682224a2097",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E012",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "entropy S",
+              "heat Q",
+              "absolute temperature T"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation contains active thermal variables (entropy S, heat Q, absolute temperature T), which are explicitly blocklisted in Step 1b. Therefore, the item is classified as 'no_partner' with all associated fields set to default values per Step 1c."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "3650f5fc448340ce9afa8ca243f1831c",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E012",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "dQ",
+              "T",
+              "dS"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Contains thermal variables (T, dQ, dS) which are blocklisted."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "E015",
+      "metadata": {
+        "item_id": "E015",
+        "stratum": "Non_Crossing_Boundary",
+        "expected_scope_status": "no_partner",
+        "heldout_item_id": "E015",
+        "volume": 2,
+        "chapter": 3,
+        "row_idx": 7
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "9fdf0b0eee3147deb13712ec00092bcc",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E015",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Molar heat capacities C_p and C_V are active thermal variables explicitly blocklisted under Step 1b; the equation cannot cross into the mirror domain.",
+            "unmapped_terms": [
+              "C_p (molar heat capacity at constant pressure)",
+              "C_V (molar heat capacity at constant volume)",
+              "gamma (adiabatic index defined by these thermal quantities)"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Item E015 defines the adiabatic index gamma as the ratio C_p / C_V. Both C_p and C_V are molar heat capacities, which are explicitly named in the Step 1b thermal blocklist ('specific/molar heat capacities C_p, C_V'). Upon encountering these active thermal variables, the Boundary Guard requires an immediate STOP and a no_partner ruling. No mechanical pressure is present to trigger crossing_interface, and the item does not match any of the four open_joint special cases. All three quantities are therefore listed as unmapped_terms, and all formula and translation fields are left empty."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "de75f223e266400980882091d1365e84",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E015",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Contains active thermal variables in a thermodynamic relation.",
+            "unmapped_terms": [
+              "C_p",
+              "C_V"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "After stripping the dimensionless prefactor-like constant gamma, the remaining active dynamical quantities are the molar heat capacities C_p and C_V. Rule R v3 Step 1b blocklists active thermal variables, including specific or molar heat capacities, so the item must be classified as no_partner."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "13a3873723914ff6899be0c59da792b6",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E015",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "gamma",
+              "C_p",
+              "C_V"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation defines `gamma` as the ratio of molar heat capacities `C_p` and `C_V`. According to Step 1b of the Strict Boundary Guard, 'ANY active thermal variable ... specific/molar heat capacities `C_p`, `C_V` ... appearing dynamically in the formula itself' immediately triggers a `no_partner` classification. Both `C_p` and `C_V` are present and active."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "c50692c2f2c64d4a8b3f8fb70cc84a6b",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E015",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "gamma",
+              "C_p",
+              "C_V"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation involves active thermal variables (molar heat capacities C_p and C_V) and the heat capacity ratio gamma, which are explicitly blocklisted in Step 1b. This triggers the Strict Boundary Guard, resulting in scope_status = no_partner."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "7bc3cf1f4529422d9169e088325dac54",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E015",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "C_p",
+              "C_V",
+              "\\gamma"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Contains thermal variables (C_p, C_V) which are blocklisted."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "E019",
+      "metadata": {
+        "item_id": "E019",
+        "stratum": "Non_Crossing_Boundary",
+        "expected_scope_status": "no_partner",
+        "heldout_item_id": "E019",
+        "volume": 1,
+        "chapter": 17,
+        "row_idx": 19
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "509562e416624063a028ddae1c1f9614",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E019",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Wave frequencies f_o and f_s are acoustic quantities explicitly blocklisted under Step 1b; the Doppler shift formula is an acoustic law and cannot be mapped.",
+            "unmapped_terms": [
+              "f_o (observed wave frequency in Hz)",
+              "f_s (source wave frequency in Hz)",
+              "v (wave speed of sound)",
+              "v_o (observer velocity in acoustic context)",
+              "v_s (source velocity in acoustic context)"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Step 1b triggers immediately: f_o and f_s are wave frequencies measured in Hz, which are explicitly named as blocklisted acoustic quantities ('wave frequency f in Hz'). The Doppler shift formula is an acoustic law governing how relative motion between source and observer shifts the perceived sound frequency. Because active dynamical acoustic frequency variables appear inside the equation itself, the protocol mandates an immediate STOP and no_partner classification. All variables — observed frequency, source frequency, wave propagation speed, observer speed, and source speed — are embedded in an acoustic context and cannot be translated. No mirror partner exists."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1a5462bc6175454687af85d0c771aa82",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E019",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Blocked by active acoustic frequency variables in the law.",
+            "unmapped_terms": [
+              "f_o",
+              "f_s"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "After stripping no relevant prefactors/constants, the active dynamical variables include observed and source frequency terms. Rule R v3 Step 1b requires immediate no_partner classification whenever any acoustic quantity such as wave frequency appears dynamically in the formula."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "71726f776b4d4ff58cb1263a0e623262",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E019",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "f_o (observed frequency)",
+              "f_s (source frequency)",
+              "v (speed of sound)",
+              "v_o (observer speed)",
+              "v_s (source speed)"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation describes the Doppler shift for observed frequency, involving active dynamical quantities such as wave frequencies (f_o, f_s) and wave speed (v). According to Rule R v3, Step 1b, the presence of ANY active acoustic/optical/elastic quantity, specifically 'wave frequency (f in Hz)' or 'wave speed', immediately triggers a 'no_partner' classification. Therefore, the processing stops at Step 1c."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "bd9148669d8c4e84bd1502a585e9a61c",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E019",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "f_o",
+              "f_s",
+              "v_o",
+              "v_s",
+              "v"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation involves acoustic/optical quantities (wave frequency f in Hz) dynamically, which triggers Step 1b blocklist. All variables (f_o, f_s, v_o, v_s, v) are unmapped due to the presence of frequency, a blocklisted acoustic quantity."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "c44a070327d94c3db6753d7a2e2e3881",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E019",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "f_{\\text{o}}",
+              "f_{\\text{s}}",
+              "v",
+              "v_{\\text{o}}",
+              "v_{\\text{s}}"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation involves acoustic quantities (frequencies) which are blocklisted."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "E025",
+      "metadata": {
+        "item_id": "E025",
+        "stratum": "Non_Crossing_Boundary",
+        "expected_scope_status": "no_partner",
+        "heldout_item_id": "E025",
+        "volume": 2,
+        "chapter": 3,
+        "row_idx": 5
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "a45bb7e44d48426e9285456a6be41398",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E025",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Active thermal variables E_int (internal energy) and Q (heat) are explicitly blocklisted under Step 1b; classification halts immediately regardless of the presence of mechanical work W.",
+            "unmapped_terms": [
+              "E_int",
+              "Q"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The First Law of Thermodynamics ΔE_int = Q − W contains two active thermal variables: internal energy E_int and heat Q, both explicitly named in the Step 1b blocklist. Per the CRITICAL BOUNDARY GUARD, the presence of either one alone is sufficient to mandate an immediate no_partner ruling. The mechanical work term W, which would otherwise map to Frequency × Vibration, cannot rescue the equation from disqualification. No mirror translation is possible."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "04282de17c42437fa9b7c38a73410649",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E025",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Blocked at the boundary because active thermodynamic quantities appear in the law.",
+            "unmapped_terms": [
+              "Delta E_int",
+              "Q"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "After stripping noneffective prefactors/constants, the active dynamical quantities include internal energy change and heat. Rule R v3 Step 1b requires immediate no_partner classification when any active thermal variable appears dynamically in the formula. Although W could otherwise map as work, the presence of thermal terms blocks translation for the whole item."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "88c9b89088684246acb03099cd70724f",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E025",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "internal energy",
+              "heat"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Step 1b (Strict Boundary Guard) is triggered. The equation contains active thermal variables: `ΔE_int` (internal energy) and `Q` (heat). The presence of ANY active thermal variable immediately classifies the item as `no_partner`."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "9f2405b3ed864041b436bac2a7c880ae",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E025",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "ΔE_int",
+              "Q",
+              "W"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation contains active thermal variables (ΔE_int, Q) which are explicitly blocklisted in Step 1b, triggering immediate classification as 'no_partner'."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "90ef0e850fed40fe97bd0e782037ddb7",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E025",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "Q",
+              "Delta E_int"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Contains thermal variables (Q, Delta E_int) that are blocklisted."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "E031",
+      "metadata": {
+        "item_id": "E031",
+        "stratum": "Non_Crossing_Boundary",
+        "expected_scope_status": "no_partner",
+        "heldout_item_id": "E031",
+        "volume": 2,
+        "chapter": 1,
+        "row_idx": 1
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "55a4a8832744414ebc0ef7b81ab21aae",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E031",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "ΔT is an active thermal variable dynamically present in the formula; the thermal blocklist is triggered regardless of the geometric quantities also present.",
+            "unmapped_terms": [
+              "ΔT",
+              "Delta T",
+              "temperature change"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Linear thermal expansion ΔL = αLΔT contains ΔT (change in temperature) as an active dynamical variable inside the equation itself. Under Step 1b, ANY active thermal variable appearing dynamically in the formula triggers an immediate no_partner classification. Although ΔL and L map cleanly to Vibration, and α is a static material constant stripped under Step 1a, the presence of ΔT alone is sufficient to halt processing. No mirror formula, translation, or template can be produced."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "0ef22acde0114c68973a63876ee401f7",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E031",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Active thermal variable triggers strict boundary guard.",
+            "unmapped_terms": [
+              "Delta T"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "After stripping the coefficient alpha as a fixed material constant under Step 1a, the remaining active dynamical quantities are Delta L, L, and Delta T. Step 1b requires immediate no_partner classification when any active thermal variable appears dynamically in the formula. Delta T is an active thermal variable, so the item is out of scope."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "4c8d3bcc41a044c1866df557a7c3a864",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E031",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "Delta T",
+              "alpha"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation `\\Delta L = \\alpha L \\Delta T` describes linear thermal expansion. Step 1b of the Strict Boundary Guard explicitly blocklists 'ANY active thermal variable', including `Delta T` (change in temperature) and `alpha` (coefficient of thermal expansion, which is intrinsically a thermal property). The presence of these terms immediately stops processing and classifies the item as 'no_partner'."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "251a9cc409114dbba22d43cd82e679c8",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E031",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "Delta L",
+              "alpha",
+              "L",
+              "Delta T"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation contains active thermal variables (Delta T) which are explicitly blocklisted in Step 1b, triggering immediate classification as no_partner."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "9b58d4539e0b4f93a1b84c6f74f5afcb",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E031",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "\\Delta T",
+              "\\Delta L",
+              "L"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Contains active thermal variable \\Delta T, triggering 'no_partner' classification."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "E032",
+      "metadata": {
+        "item_id": "E032",
+        "stratum": "Non_Crossing_Boundary",
+        "expected_scope_status": "no_partner",
+        "heldout_item_id": "E032",
+        "volume": 2,
+        "chapter": 2,
+        "row_idx": 1
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "15fc9cb6cfff4ec4af6603c4a9f063c0",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E032",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Step 1b blocklist triggered: active thermal variable T (temperature) and active molar/gas constant k_B (Boltzmann constant) and active particle number N all appear dynamically inside the equation pV = Nk_BT. Additionally, mechanical pressure p is present, but the Step 1b guard requires an immediate stop regardless of any crossing-interface candidate. Classification is no_partner.",
+            "unmapped_terms": [
+              "T",
+              "k_B",
+              "N"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Equation pV = Nk_BT is the ideal gas law expressed in terms of molecules. Stripping dimensionless prefactors leaves active dynamical quantities: p (mechanical pressure), V (volume), N (particle number — active molar/gas variable), k_B (Boltzmann constant — active molar/gas constant), and T (absolute temperature — active thermal variable). Step 1b mandates an immediate stop and no_partner classification whenever ANY active thermal variable (T), ANY active molar/gas constant (k_B), or ANY active particle/molecule number (N) appears dynamically in the formula — even though mechanical pressure p is also present and would otherwise qualify for crossing_interface treatment. All three blocklisted categories are simultaneously triggered here, so the item cannot be mapped under any scope and must be classified no_partner."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "3e959c97d24741e98a01387f0d6bd350",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E032",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Blocked by active thermal and molar/gas variables at the formula level.",
+            "unmapped_terms": [
+              "pressure",
+              "N",
+              "k_B",
+              "T"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "After stripping no relevant numeric prefactors, the active dynamical quantities include pressure p, molecule number N, Boltzmann constant k_B, and temperature T. Rule R v3 Step 1b requires immediate no_partner classification if any active thermal variable or active molar/gas constant or variable appears dynamically in the formula, even when pressure is also present."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "8b28fb1a4edc40d08816893e82a1c67a",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E032",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "T",
+              "N",
+              "k_B"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation `p V = N k_B T` is the Ideal Gas Law. According to Rule R v3, Step 1b, if any active thermal variable (T), any active molar/gas constant (k_B), or any active molar/gas variable (N) appears dynamically in the formula, the item MUST STOP immediately and be classified as `no_partner`. All three of these blocklisted quantities (T, N, k_B) are present in this equation, thus triggering the `no_partner` classification."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "42c0c291395e41ad8e39e90837b3bad0",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E032",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "N",
+              "k_B",
+              "T"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation contains active thermal variables (T) and molar/gas constants (N, k_B), which are explicitly blocklisted in Step 1b. This triggers the Strict Boundary Guard, resulting in scope_status = no_partner."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b94771a7fd68431cbcfbcf61d533a4e8",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E032",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "N",
+              "T"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Contains blocklisted variables N and T."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "E033",
+      "metadata": {
+        "item_id": "E033",
+        "stratum": "Non_Crossing_Boundary",
+        "expected_scope_status": "no_partner",
+        "heldout_item_id": "E033",
+        "volume": 1,
+        "chapter": 17,
+        "row_idx": 7
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "3273c716fab64b92ac409095517f79ee",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E033",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Blocked at Step 1b: active thermal variables T_K and T_C appear dynamically in the formula, and v is an acoustic wave speed — both thermal and acoustic blocklist categories are triggered simultaneously.",
+            "unmapped_terms": [
+              "T_K (absolute temperature — active thermal variable)",
+              "T_C (Celsius temperature — active thermal variable)",
+              "v (speed of sound — acoustic wave speed quantity)"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "E033 expresses the speed of sound in air as a function of temperature. Step 1b triggers an immediate no_partner ruling on two independent grounds: (1) T_K and T_C are active thermal variables varying dynamically inside the equation, which are explicitly blocklisted; and (2) v is the speed of sound, an acoustic wave speed quantity, also explicitly blocklisted. Because at least one blocklisted category is present, classification must stop at Step 1b and the item receives no_partner status with no reflected formula or translation."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "9476ac3d3c74400bbfc429d1f12da009",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E033",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Contains active thermal variable in a sound/acoustic law, which is blocklisted by the strict boundary guard.",
+            "unmapped_terms": [
+              "speed of sound",
+              "temperature",
+              "T_K",
+              "T_C"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "After stripping numeric prefactors and units, the active dynamical quantities include temperature and an acoustic quantity. Rule R v3 Step 1b requires immediate no_partner classification when any active thermal variable or acoustic quantity appears dynamically in the formula."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "983763487eef4b63ae3a810e1215ca4d",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E033",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "v",
+              "T_K",
+              "T_C"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Step 1b of the Strict Boundary Guard is triggered. The equation contains active thermal variables (temperature `T_K` and `T_C`) and an active acoustic quantity (wave speed `v`, representing the speed of sound). The presence of any such blocklisted variables immediately classifies the item as 'no_partner'."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "3f7352e9883f4959bd7bc2946ef96405",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E033",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "T_K",
+              "T_C",
+              "speed of sound v"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation involves active thermal variables (T_K, T_C) and an acoustic quantity (speed of sound v), which are explicitly blocklisted in Step 1b. Thus, the item is classified as 'no_partner' with all translation fields empty and unmapped_terms populated."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "9d642f3597b54ba8a52bbf7c6e21a0fd",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E033",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "v",
+              "T_K",
+              "T_C"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation involves an acoustic quantity (speed of sound) and thermal variables, triggering the 'no_partner' classification due to the presence of blocklisted terms."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "E034",
+      "metadata": {
+        "item_id": "E034",
+        "stratum": "Non_Crossing_Boundary",
+        "expected_scope_status": "no_partner",
+        "heldout_item_id": "E034",
+        "volume": 2,
+        "chapter": 4,
+        "row_idx": 6
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "3a40e8df64574f7fb68a5e1f93edcdec",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E034",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Thermal COP formula blocked at Step 1b: active absolute temperature variables T_c and T_h appear dynamically in the equation; the temperature difference T_h minus T_c also constitutes an active thermal quantity. All thermal variables are on the Step 1b blocklist regardless of any mechanical framing.",
+            "unmapped_terms": [
+              "T_c",
+              "T_h",
+              "T_h - T_c",
+              "K_R"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "E034 expresses the Carnot COP of a reversible refrigerator as the ratio of the cold-reservoir absolute temperature T_c to the temperature difference T_h minus T_c. Both T_c and T_h are active thermal temperature variables varying inside the formula. Step 1b mandates an immediate stop and no_partner classification whenever ANY active thermal variable — including absolute temperatures T, T_1, T_2, or Delta T — appears dynamically in the equation. The performance coefficient K_R is itself a derived thermodynamic ratio with no mirror partner. No crossing-interface or in_scope path is available."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "bb39587497a9430db0794e2137f3d036",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E034",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Active thermal variables appear in the law, which triggers the strict boundary guard before any mirror mapping.",
+            "unmapped_terms": [
+              "T_c",
+              "T_h",
+              "temperature",
+              "reversible refrigerator performance coefficient"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "After stripping no relevant prefactors, the equation still contains active thermal variables T_c and T_h. Under Step 1b, any active temperature variable makes the item immediately no_partner."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "d93355b2811b4946a0b839fcc3292803",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E034",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "T_c",
+              "T_h",
+              "K_R"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation contains active thermal variables (cold temperature `T_c` and hot temperature `T_h`), which are explicitly blocklisted in Step 1b of the protocol. According to the Strict Boundary Guard, the presence of any active thermal variable immediately classifies the item as 'no_partner'."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "a684a711627e46b19bbe2ce66a75c145",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E034",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "T_c",
+              "T_h"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation involves active thermal variables (T_c, T_h) which are explicitly blocklisted in Step 1b. Therefore, the item is classified as no_partner with all translation fields empty and unmapped_terms listing the thermal variables."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "cebc54b99202419f813fbb38decaae62",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "E034",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "T_c",
+              "T_h"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Contains thermal variables (T_c, T_h) which are blocklisted in Step 1b."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "X007",
+      "metadata": {
+        "item_id": "X007",
+        "stratum": "Non_Crossing_Boundary",
+        "expected_scope_status": "no_partner",
+        "heldout_item_id": null,
+        "volume": 2,
+        "chapter": 2,
+        "row_idx": 2
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d633cc42216d4c6d8875bcf36caa0140",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X007",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Thermal variables T_1 and T_2 appear as active dynamical quantities in the formula; the blocklist is triggered regardless of the co-presence of mechanical pressure p and volume V.",
+            "unmapped_terms": [
+              "T_1",
+              "T_2"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation p_1 V_1 / T_1 = p_2 V_2 / T_2 is the combined ideal gas law for constant molar amount. After stripping dimensionless prefactors and fixed constants, the active dynamical variables are p (mechanical pressure), V (volume), T_1, and T_2 (absolute temperatures). Rule 1b mandates an immediate STOP and no_partner classification whenever ANY active thermal variable — including T, T_1, T_2, or Delta T — appears dynamically inside the formula itself. Both T_1 and T_2 are live varying quantities in this equation, satisfying that condition. The co-presence of mechanical pressure (a crossing_interface candidate) and volume (an in_scope candidate) is irrelevant once the thermal blocklist is triggered. Therefore scope_status is no_partner, formula_shape is none, and all formula and translation fields are empty."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "12495f6ce5354d048be00be898546c6b",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X007",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Active thermal variables appear in the law, so the boundary guard blocks translation even though mechanical pressure is present.",
+            "unmapped_terms": [
+              "T_1",
+              "T_2"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "After stripping numeric prefactors and fixed constants, the active dynamical quantities are p_1, V_1, T_1, p_2, V_2, and T_2. Rule R v3 Step 1b requires immediate no_partner classification if any active thermal variable appears dynamically in the formula. Here T_1 and T_2 are active temperatures, so the item is blocklisted. Pressure does not rescue the item because the thermal boundary guard takes priority over the crossing interface rule."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b19d803bdb6d42a0af2aceaf22249354",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X007",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "temperature"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation `(p_1 V_1) / T_1 = (p_2 V_2) / T_2` contains active thermal variables (`T_1`, `T_2`). According to Rule R v3, Step 1b (Strict Boundary Guard), the presence of ANY active thermal variable (like temperature) dynamically in the formula immediately classifies the item as `no_partner`."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "af4abb4a8edc468cad3bb527fa77b370",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X007",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "T_1",
+              "T_2",
+              "p_1",
+              "p_2",
+              "V_1",
+              "V_2"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation contains active thermal variables (T_1, T_2) and involves pressure (p_1, p_2) and volume (V_1, V_2) in a gas law context. Per Step 1b, the presence of temperature (T) as a dynamical variable triggers the 'no_partner' classification, as thermal variables are explicitly blocklisted. All variables are listed in unmapped_terms, and all formula/translation fields are emptied as required."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "6a3369206ccf4091a5a1a28f8da09793",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X007",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "T_1",
+              "T_2"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Contains active thermal variable T, which is blocklisted."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "X008",
+      "metadata": {
+        "item_id": "X008",
+        "stratum": "Non_Crossing_Boundary",
+        "expected_scope_status": "no_partner",
+        "heldout_item_id": null,
+        "volume": 1,
+        "chapter": 14,
+        "row_idx": 13
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "975c03e332da4536b279fbea51c15a45",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X008",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Poiseuille's law contains volume flow rate Q and dynamic viscosity eta, both explicitly blocklisted as viscous/pipe-flow rate variables under Step 1b. The presence of mechanical pressure difference does not override the block; the stop condition triggers immediately on detection of any blocklisted quantity.",
+            "unmapped_terms": [
+              "volume flow rate Q",
+              "dynamic viscosity eta"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Poiseuille's law Q = (p₂ - p₁)πr⁴ / (8ηl) contains two independently blocklisted viscous/pipe-flow quantities: volume flow rate Q (= dV/dt) and dynamic viscosity eta. Step 1b mandates an immediate stop and no_partner classification whenever any such variable appears dynamically in the formula, regardless of the co-presence of mechanical pressure. Because neither Q nor eta has any partner in the Lookup Table, and the block is unconditional, the item cannot be translated and must be classified no_partner."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "836c63668ce24eb78ee5f7dba15c2ebe",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X008",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "Active viscous and flow-rate quantities cross the strict boundary guard, so the item cannot enter the crossing-pressure interface translation.",
+            "unmapped_terms": [
+              "Q",
+              "eta"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "After stripping numeric prefactors and constants, the active dynamical quantities include volume flow rate Q and dynamic viscosity eta. Rule R v3 Step 1b requires immediate no_partner classification whenever any active viscous or pipe-flow rate variable appears dynamically, even if pressure is also present."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "7b928bdbd39c46c09ac61c12b0475840",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X008",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "Q (volume flow rate)",
+              "eta (dynamic viscosity)"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Step 1b of the Strict Boundary Guard mandates classifying the item as 'no_partner' if any active thermal, molar/gas, viscous/pipe-flow rate, electric circuit, or acoustic/optical/elastic quantity appears dynamically in the formula. Poiseuille's law contains both 'Q' (volume flow rate) and 'eta' (dynamic viscosity), which are explicitly listed as blocklisted viscous/pipe-flow rate variables. Therefore, the processing stops immediately, and the item is classified as 'no_partner'."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "c542d45a00504dc8abd62d39b6836b0f",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X008",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "Q",
+              "eta"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation contains active viscous/pipe-flow rate variables (volume flow rate Q and dynamic viscosity eta), which are explicitly blocklisted in Step 1b. This triggers the Strict Boundary Guard, resulting in scope_status = no_partner."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "31c054c918fc449e8473d8af0baf2a94",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "X008",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "Q",
+              "\\eta"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Blocklisted variables Q (volume flow rate) and \\eta (dynamic viscosity) are present."
+          },
+          "errors": []
+        }
+      }
+    }
+  ]
+}

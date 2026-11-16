@@ -1,0 +1,257 @@
+{
+  "A0": {
+    "arm_id": "A0",
+    "evaluated_items": 16,
+    "per_item_passed": 16,
+    "layer_a_collisions": [],
+    "layer_a_collisions_count": 0,
+    "passes_all": true,
+    "per_item_reports": [
+      {
+        "item_id": "E001",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E002",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E007",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E011",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E014",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E016",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E018",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E021",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E022",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E023",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E027",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E028",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E030",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E037",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E038",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E039",
+        "passed": true,
+        "collisions": []
+      }
+    ]
+  },
+  "A3-1": {
+    "arm_id": "A3-1",
+    "evaluated_items": 16,
+    "per_item_passed": 15,
+    "layer_a_collisions": [
+      {
+        "item_id": "E001",
+        "layer": "A1_invalid_target_token",
+        "physical": "alpha",
+        "target": "imagination (angular) = imagination / Appreciation",
+        "unknowns": [
+          "angular"
+        ]
+      },
+      {
+        "item_id": "E001",
+        "layer": "A3_monomial_exponent_mismatch",
+        "equation_latex": "a_{\\text{CM}} = R \\alpha",
+        "reflected_formula": "imagination = Appreciation * (imagination / Appreciation)",
+        "expected_terms": [
+          {
+            "sign": 1,
+            "exponents": {
+              "Appreciation": "1"
+            }
+          }
+        ],
+        "got_terms": [
+          {
+            "sign": 1,
+            "exponents": {
+              "imagination": "1"
+            }
+          }
+        ]
+      },
+      {
+        "layer": "A1_cross_item_one_to_many",
+        "physical": "alpha",
+        "variants": {
+          "imagination (angular) = imagination / Appreciation": [
+            "E001"
+          ],
+          "imagination": [
+            "E002"
+          ]
+        }
+      }
+    ],
+    "layer_a_collisions_count": 3,
+    "passes_all": false,
+    "per_item_reports": [
+      {
+        "item_id": "E001",
+        "passed": false,
+        "collisions": [
+          {
+            "layer": "A1_invalid_target_token",
+            "physical": "alpha",
+            "target": "imagination (angular) = imagination / Appreciation",
+            "unknowns": [
+              "angular"
+            ]
+          },
+          {
+            "layer": "A3_monomial_exponent_mismatch",
+            "item_id": "E001",
+            "equation_latex": "a_{\\text{CM}} = R \\alpha",
+            "reflected_formula": "imagination = Appreciation * (imagination / Appreciation)",
+            "expected_terms": [
+              {
+                "sign": 1,
+                "exponents": {
+                  "Appreciation": "1"
+                }
+              }
+            ],
+            "got_terms": [
+              {
+                "sign": 1,
+                "exponents": {
+                  "imagination": "1"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "item_id": "E002",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E007",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E011",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E014",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E016",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E018",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E021",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E022",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E023",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E027",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E028",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E030",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E037",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E038",
+        "passed": true,
+        "collisions": []
+      },
+      {
+        "item_id": "E039",
+        "passed": true,
+        "collisions": []
+      }
+    ]
+  }
+}

@@ -1,0 +1,2597 @@
+{
+  "stage": "D2a",
+  "role": "d2a_crossing_cal17",
+  "arm_id": "D2_CROSSING",
+  "expected_calls": 85,
+  "valid_calls": 81,
+  "schema_error_count": 4,
+  "tasks": [
+    {
+      "task_id": "K01",
+      "metadata": {
+        "item_id": "K01",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "cb27ec2785e94cab83d26ef99ea0196e",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K01",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The first postulate asserts a universal symmetry: no inertial observer is privileged over any other. In the mirror, every Movement accesses the same Frequency structure. The symmetry is structural and costless—no resistance, no dissipation—so the ruling is keep.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial observer": "Movement",
+              "laws of physics": "Frequency"
+            },
+            "reflected_formula": "Frequency is identical across every Movement",
+            "translation_t": "The Frequency is identical for every Movement. No Movement holds a privileged vantage; the Frequency is the same wherever Movement arises.",
+            "translation_template": "The {Frequency} is identical for every {Movement}. No {Movement} holds a privileged vantage; the {Frequency} is the same wherever {Movement} arises.",
+            "direction_flipped_d": "Every Movement finds the same Frequency available to it. The Frequency does not shift or favor one Movement over another; each Movement encounters it whole and unchanged.",
+            "rationale": "Step 1 check: No equation is present; the item is a qualitative symmetry principle. Scanning the description for Step-1b blocklisted quantities: no thermal variables, no molar or gas constants, no viscous or circuit quantities, no acoustic or optical or elastic quantities appear. The only active conceptual quantities are inertial observer, mapped to Movement, and laws of physics, mapped to Frequency. Step 3: No mechanical pressure is involved, so scope_status is in_scope. Step 4: The postulate is a pure structural symmetry identity asserting that Frequency is invariant across all Movements. There is no exertion against resistance, no dissipation, and no spatial separation cost; ruling is keep and two_level is false. All prose fields are filled and unmapped_terms is empty."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d33168863106475a80a43cb343251ed7",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K01",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Frame symmetry remains within mapped scope because inertial observer and laws of physics map without any blocklisted thermal, electrical, acoustic, optical, elastic, molar, or viscous flow variables, and no pressure crossing is involved.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "laws of physics": "conscious energy",
+              "inertial observer": "Movement"
+            },
+            "reflected_formula": "The laws of conscious energy are the same for every Movement.",
+            "translation_t": "For every Movement, conscious energy follows the same pattern.",
+            "translation_template": "For every {Movement}, {conscious energy} follows the same pattern.",
+            "direction_flipped_d": "The same pattern of conscious energy appears for every Movement.",
+            "rationale": "This is a qualitative symmetry principle, not an open-joint case and not a pressure-crossing case. The active concepts are inertial observer and laws of physics, both treated as in-scope through the lookup table and direct energy-law reflection. No blocked variable appears, so the item stays in scope with a keep ruling."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "a7486c3a698642cb993bad872e95f917",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K01",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The principle asserts that physical laws are invariant across all inertial states of {Movement}, implying neutrality to any specific {Movement} polarity or direction.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial observer": "Movement"
+            },
+            "reflected_formula": "The laws of physics are the same for every Movement.",
+            "translation_t": "The laws of physics are the same for every Movement.",
+            "translation_template": "The laws of physics are the same for every {Movement}.",
+            "direction_flipped_d": "The laws of physics are different for every Movement.",
+            "rationale": "The item describes a qualitative physical principle, not an equation. Step 1b (Strict Boundary Guard) found no blocklisted thermal, molar/gas, viscous, electric circuit, or acoustic/optical/elastic quantities. Step 2 (Open Joints) does not apply. Step 3 (Pure Mechanical Pressure) does not apply as no pressure concept is involved. The term 'inertial observer' maps directly to 'Movement' in the Partner Lookup Table, classifying the item as 'in_scope'. The principle states that laws are 'the same', indicating an invariance or equivalence, which aligns with a 'keep' ruling. Since the ruling is 'keep', 'two_level' is set to 'false'. A non-empty `axis_polarity_note` is provided as required for `in_scope` items, explaining the invariance of laws with respect to the 'Movement' of the observer."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "5d44b366be7e40839b488a31d4e502c0",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K01",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "neutral",
+            "unmapped_terms": [],
+            "variable_map": {
+              "laws of physics": "Vibration-Expansion",
+              "inertial observer": "Movement"
+            },
+            "reflected_formula": "{Vibration-Expansion} are the same for every {Movement}",
+            "translation_t": "Vibration-Expansion are the same for every Movement",
+            "translation_template": "{Vibration-Expansion} are the same for every {Movement}",
+            "direction_flipped_d": "Every Movement experiences the same Vibration-Expansion",
+            "rationale": "The principle involves only inertial observers (mapped to Movement) and the laws of physics (mapped to Vibration-Expansion). No blocklisted variables or pressure are present. The statement is a structural identity, so ruling is 'keep' with two_level=false. All terms map directly via the Partner Lookup Table."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "d71df85e5dd743888b19547ae5653bf2",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K01",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Conceptual principle alignment",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial observer": "Movement"
+            },
+            "reflected_formula": "Laws of physics are invariant",
+            "translation_t": "The laws of physics remain consistent for every Movement.",
+            "translation_template": "The laws of physics remain consistent for every {Movement}.",
+            "direction_flipped_d": "Every Movement experiences consistent physical laws.",
+            "rationale": "First postulate of special relativity translated conceptually, aligning inertial observer with Movement."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K02",
+      "metadata": {
+        "item_id": "K02",
+        "expected_book_ruling": "invert",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "506a58d8dfb9425ba2912348f3bf5661",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K02",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Spatial separation (Vibration) and relative speed (rise per Expansion) jointly impose a relativistic boundary cost that produces a time-offset (Expansion) between observers; the law inverts because the gap arises from resistance to shared simultaneity across separation.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "Delta_t": "Expansion",
+              "v": "rise per Expansion",
+              "Delta_x": "Vibration",
+              "gamma": "stripped — dimensionless prefactor",
+              "c_squared": "stripped — universal invariant constant"
+            },
+            "reflected_formula": "Expansion = rise per Expansion × Vibration",
+            "translation_t": "The Expansion between two perspectives equals their rise per Expansion multiplied by their Vibration apart — the further the Vibration of separation and the greater the rise per Expansion of divergence, the wider the Expansion gap between what each registers as now.",
+            "translation_template": "The {Expansion} between two perspectives equals their {rise per Expansion} multiplied by their {Vibration} apart — the further the {Vibration} of separation and the greater the {rise per Expansion} of divergence, the wider the {Expansion} gap between what each registers as now.",
+            "direction_flipped_d": "Where Vibration stretches between two perspectives and rise per Expansion pulls them apart, the Expansion each one inhabits diverges — no shared now survives the cost of Vibration crossed at rise per Expansion.",
+            "rationale": "All three active dynamical quantities (Δt, v, Δx) map cleanly inside the Partner Lookup Table with no blocklisted thermal, molar, viscous, circuit, or acoustic variables present, placing this firmly in_scope. The universal constants γ and c² are stripped per Rule 1a. The ruling is invert because the time offset is a relativistic separation cost — simultaneity is broken by the barrier of spatial distance and relative motion, not freely given. two_level is true because the formula simultaneously serves as an operational definition whose application directly tracks the costly exertion of crossing that relativistic boundary of separation."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "8bc5658409e24ad78046d19ee2d7e49e",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K02",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Spatial separation with relative motion across frames maps as a boundary-style reversal: greater Vibration together with greater rise per Expansion increases the Expansion offset, while Current is preserved as the invariant denominator partner of light speed.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "Delta t": "Expansion",
+              "gamma": "Movement",
+              "v": "rise per Expansion",
+              "Delta x": "Vibration",
+              "c": "Current"
+            },
+            "reflected_formula": "Expansion equals Movement times rise per Expansion times Vibration divided by Current squared.",
+            "translation_t": "A change in Expansion arises from Movement in relative rise per Expansion across Vibration, moderated by Current.",
+            "translation_template": "A change in {Expansion} arises from {Movement} in relative {rise per Expansion} across {Vibration}, moderated by {Current}.",
+            "direction_flipped_d": "Across Vibration, relative rise per Expansion carried by Movement separates Expansion, with Current holding the moderating bound.",
+            "rationale": "After stripping the dimensionless prefactor gamma and the side condition for the primed frame, the active dynamical variables are Delta t, v, Delta x, and c. None are blocklisted by Step 1b, and no pressure/crossing variable appears, so the item is in scope rather than crossing_interface. The law links time difference to relative motion across spatial separation, which falls under Step 4 inversion for spatial separation/boundary-style cost rather than a simple identity."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "a3b4de38c58e45d49e3eda5a40dfde69",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K02",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The observed {Expansion} quantifies the frame-dependent non-simultaneity arising from relative {rise per Expansion} and {Vibration}.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "Delta t": "Expansion",
+              "v": "rise per Expansion",
+              "Delta x": "Vibration",
+              "c": "Current"
+            },
+            "reflected_formula": "Expansion = (rise per Expansion) * Vibration / Current^2",
+            "translation_t": "The observed Expansion is the product of rise per Expansion and Vibration, divided by the square of the Current.",
+            "translation_template": "The observed {Expansion} is the product of {rise per Expansion} and {Vibration}, divided by the square of the {Current}.",
+            "direction_flipped_d": "The non-absolute nature of Expansion is revealed by the relationship between rise per Expansion, Vibration, and the square of the Current.",
+            "rationale": "Step 1a (Stripping): The Lorentz factor `\\gamma` is explicitly listed in Rule R v3, Step 1a, as a 'universal/material constant' to be stripped. Therefore, `\\gamma` is removed from the active dynamical quantities. The speed of light `c` is a universal constant, but it is also explicitly listed in the Partner Lookup Table (`speed of light c -> Current`). Per protocol, explicit lookup table entries take precedence over general stripping rules for constants. Thus, `c` is retained and mapped. `c^2` is treated as `Current^2`. No other dimensionless numeric prefactors or static background constants are present.\nStep 1b (Blocklisted quantities): The remaining active dynamical quantities are `\\Delta t` (time interval), `v` (velocity), `\\Delta x` (spatial separation), and `c` (speed of light). None of these are blocklisted thermal, molar/gas, viscous, electric circuit, or acoustic/optical/elastic variables. Mechanical `pressure` is not present.\nStep 2 (Open Joints): The item is not one of the specifically listed 'open_joint' cases.\nStep 3 (Scope): Since no blocklisted quantities are present and no `pressure` concept is involved, the `scope_status` is set to `\"in_scope\"`.\nStep 4 (Mapping & Ruling):\n- `\\Delta t` (time interval) maps to `Expansion`.\n- `v` (speed) maps to `rise per Expansion`.\n- `\\Delta x` (separation) maps to `Vibration`.\n- `c` (speed of light) maps to `Current`.\n- The `reflected_formula` is constructed by mapping these terms, preserving the algebraic structure: `Expansion = (rise per Expansion) * Vibration / Current^2`. This maintains dimensional consistency (Time = (Length/Time) * Length / (Length^2/Time^2) = Time).\n- The `ruling` is `\"keep\"` because the relativity of simultaneity is a fundamental structural definition of spacetime in special relativity, not involving resistance, dissipation, or barrier costs.\n- `two_level` is `false` as `ruling` is `\"keep\"`.\n- An `axis_polarity_note` has been added to describe the qualitative nature of the relationship, as required for `in_scope` items."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "63e835a8b9af4c9490f1136b9b16ab53",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K02",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Temporal and spatial quantities map to Expansion and Vibration respectively, preserving relativistic structure.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "Δt": "Expansion",
+              "γ": "Movement",
+              "v": "rise per Expansion",
+              "Δx": "Vibration",
+              "c": "Current"
+            },
+            "reflected_formula": "Expansion = Movement × rise per Expansion × Vibration ÷ Current²",
+            "translation_t": "Expansion equals Movement times rise per Expansion times Vibration divided by Current squared",
+            "translation_template": "{Expansion} equals {Movement} times {rise per Expansion} times {Vibration} divided by {Current} squared",
+            "direction_flipped_d": "Current squared divided by Movement times rise per Expansion times Vibration equals Expansion",
+            "rationale": "The equation involves only spacetime quantities (time interval Δt, spatial separation Δx, relative speed v, Lorentz factor γ, and speed of light c), all of which have direct mappings in the Partner Lookup Table. No blocklisted thermal, molar, viscous, electric circuit, or acoustic/optical/elastic quantities are present. Pressure is not involved, so the item is classified as in_scope. The formula preserves algebraic structure (formula_shape = keeps) and represents a structural definition (ruling = keep, two_level = false)."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "1edeb7e730c14730a2dcb8e370a35b59",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K02",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Relativistic effect on simultaneity",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\Delta t": "Expansion",
+              "v": "rise per Expansion",
+              "\\Delta x": "Vibration",
+              "c": "Current"
+            },
+            "reflected_formula": "{Expansion} = \\frac{{rise per Expansion} {Vibration}}{{Current}^{2}}",
+            "translation_t": "Expansion is proportional to rise per Expansion times Vibration divided by Current squared.",
+            "translation_template": "{Expansion} is proportional to {rise per Expansion} times {Vibration} divided by {Current} squared.",
+            "direction_flipped_d": "The Expansion is influenced by the relative rise per Expansion, Vibration, and the square of the Current.",
+            "rationale": "The equation represents the relativity of simultaneity. All variables are mapped according to the Partner Lookup Table, and it is classified as 'in_scope' with 'ruling' as 'keep'."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K03",
+      "metadata": {
+        "item_id": "K03",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "e04984259cbe4ae88d055fd5d9d52e32",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K03",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The principle asserts a flat symmetry across all inertial rest frames — no frame is privileged — which maps cleanly to the inner assertion that no single Movement-state is privileged; all rise per Expansion is equally a valid vantage for conscious energy.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial rest frame": "Movement",
+              "no preferred fixed inertial rest frame": "no fixed Movement"
+            },
+            "reflected_formula": "no fixed Movement",
+            "translation_t": "There is no fixed Movement — every Movement is equally a valid vantage for conscious energy.",
+            "translation_template": "There is no fixed {Movement} — every {Movement} is equally a valid vantage for {conscious energy}.",
+            "direction_flipped_d": "Every Movement stands as a fully open vantage; no single Movement holds a privileged claim over conscious energy.",
+            "rationale": "Step 1b: No thermal, molar/gas, viscous, circuit, or acoustic/optical/elastic active dynamical variables appear. Step 1a: No numeric prefactors or fixed background constants to strip. Step 3: No mechanical pressure is involved, so this is not a crossing_interface item. The principle is purely qualitative and structural — it asserts a symmetry (no preferred frame), which maps to a structural identity: all Movement-states are equivalent vantage points for conscious energy. 'Inertial rest frame' maps to Movement per the Partner Lookup Table (inertial rest frame -> Movement [frame]). The negation 'no preferred fixed' is rendered as 'no fixed' in the mirror, preserving the symmetry assertion without introducing any blocklisted property token. Because this is a structural symmetry law with no exertion against resistance, ruling = keep and two_level = false."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "acac6d204bd9448bbfe03ea3afc89b36",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K03",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Maps frame/observer language directly through the primary and extended partner table without crossing-boundary pressure terms or blocked domains.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "principle of relativity": "principle of mirrored equivalence",
+              "preferred fixed inertial rest frame": "preferred fixed Movement frame",
+              "inertial rest frame": "Movement frame"
+            },
+            "reflected_formula": "There is no preferred fixed Movement frame.",
+            "translation_t": "No fixed Movement frame is privileged.",
+            "translation_template": "No fixed {Movement} frame is privileged.",
+            "direction_flipped_d": "Any fixed Movement frame can serve without becoming the preferred one.",
+            "rationale": "This is a qualitative mechanics/frame principle. Its active concept is the inertial rest frame, which is explicitly mapped in the lookup table to Movement. No pressure interface appears, and no blocked thermal, electric-circuit, optical, acoustic, elastic, viscous-flow, or gas-law variable appears dynamically. As a symmetry principle rather than a resistance or cost law, the structure is kept rather than inverted."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "c9866e3cdb2c4c7f9dfd0b51e1cbc401",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K03",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The principle asserts the equivalence of all Movement states, negating any inherent polarity or preferred reference point within the mirrored domain.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial rest frame": "Movement"
+            },
+            "reflected_formula": "There is no preferred fixed Movement.",
+            "translation_t": "There is no preferred fixed Movement.",
+            "translation_template": "There is no preferred fixed {Movement}.",
+            "direction_flipped_d": "Every Movement is equally valid as a reference.",
+            "rationale": "The item describes a qualitative physical principle, not an equation. Step 1b's strict boundary guard is passed as no blocklisted thermal, molar, viscous, electrical, acoustic/optical/elastic quantities are present. Step 2 is skipped as it's not an 'open_joint' concept. Step 3 identifies no mechanical pressure, so the item is classified as 'in_scope'. The core concept 'inertial rest frame' maps directly to 'Movement' in the Partner Lookup Table. The principle asserts a fundamental equivalence or lack of preference, which corresponds to a 'keep' ruling and 'two_level = false'. The 'formula_shape' is 'keeps' for qualitative principles that are 'in_scope'."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "c744a8423cf9479b9e2af81e2cee24f2",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K03",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "qualitative principle with no directional inversion",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial rest frame": "Movement",
+              "preferred": "Movement",
+              "fixed": "Movement"
+            },
+            "reflected_formula": "there is no preferred fixed Movement",
+            "translation_t": "there is no preferred fixed Movement",
+            "translation_template": "there is no preferred fixed {Movement}",
+            "direction_flipped_d": "there is a preferred fixed Movement",
+            "rationale": "The principle involves only inertial rest frame concepts, which map directly to 'Movement' in the Partner Lookup Table. No blocklisted variables or pressure are present. The qualitative nature and lack of resistance/dissipation imply ruling='keep' and two_level=false."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "89f6a159495e4f319799e8162e574a0d",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K03",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "Principle of relativity"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The principle of relativity is a qualitative physical principle without a specific equation to map or translate. It doesn't directly involve variables that can be classified under the Crossing Boundary or other specific mappings."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K04",
+      "metadata": {
+        "item_id": "K04",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "e00f06a404254b65ad7d913f9222c1e3",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K04",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Special relativity asserts equivalence across all inertial (Movement) frames — a resistance-free symmetry. General relativity extends this to accelerating and gravitating frames, where the cost of crossing into non-inertial or curved (Attraction-warped Vibration-Expansion) territory introduces real exertion against resistance. The invert ruling captures that extension as a costly boundary-crossing; two_level is true because the principle simultaneously defines a productive operational equivalence (all frames are locally equivalent) whose application tracks the exertion of navigating gravitational and accelerating resistance.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial frame": "Movement",
+              "accelerating frame": "Appreciation (non-uniform Movement)",
+              "gravitating frame": "Attraction-warped Vibration-Expansion",
+              "special relativity (inertial equivalence)": "Movement-level symmetry",
+              "general relativity (extended equivalence)": "Appreciation-and-Attraction-level symmetry across Vibration-Expansion"
+            },
+            "reflected_formula": "Movement-level symmetry extends through Appreciation and Attraction across Vibration-Expansion",
+            "translation_t": "The equivalence held freely among all Movement frames extends — at real exertion cost — into frames shaped by Appreciation and by Attraction across the full Vibration-Expansion continuum, where local equivalence still holds but navigating the curvature demands conscious energy.",
+            "translation_template": "The equivalence held freely among all {Movement} frames extends — at real exertion cost — into frames shaped by {Appreciation} and by {Attraction} across the full {Vibration-Expansion} continuum, where local equivalence still holds but navigating the curvature demands {conscious energy}.",
+            "direction_flipped_d": "Across the Vibration-Expansion continuum, Attraction and Appreciation bend the terrain through which Movement frames must pass, so that the symmetry once effortless among inertial Movement frames now costs conscious energy to sustain wherever curvature and non-uniform rise press against the traveller.",
+            "rationale": "No Step-1b blocklisted thermal, molar, viscous, circuit, or acoustic/optical quantity appears. No mechanical pressure is involved. All active conceptual quantities — inertial frame, accelerating frame, gravitating frame, and the two relativistic principles — map cleanly inside the Partner Lookup Table (inertial frame → Movement; acceleration → Appreciation; gravity/gravitating frame → Attraction; spacetime continuum → Vibration-Expansion; conscious energy for the cost of navigating curvature). Scope is therefore 'in_scope'. The ruling is 'invert' because general relativity's extension to non-inertial and gravitating frames requires exertion against the resistance of curved Vibration-Expansion geometry — a genuine boundary cost absent in the resistance-free special-relativistic case. two_level is true because the equivalence principle is simultaneously a productive operational definition (all frames are locally equivalent) whose application tracks the costly exertion of crossing into curved or accelerating territory."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "2019dce6260246a9b374cfd476ce4cf5",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K04",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Maps frame concepts directly: inertial frame and observer map to Movement; accelerating frames map to Appreciation; gravitating frames map to Attraction within Vibration-Expansion.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "special relativity": "Movement",
+              "general relativity": "Attraction",
+              "inertial frames": "Movement",
+              "accelerating frames": "Appreciation",
+              "gravitating frames": "Attraction",
+              "equivalence": "realization",
+              "space-time": "Vibration-Expansion",
+              "speed of light": "Current"
+            },
+            "reflected_formula": "realization holds that Movement is treated the same across Movement viewpoints in Vibration-Expansion with Current unchanged, while Appreciation and Attraction describe the broader setting of experience.",
+            "translation_t": "realization holds that Movement is treated the same across Movement viewpoints in Vibration-Expansion with Current unchanged, while Appreciation and Attraction describe the broader setting of experience.",
+            "translation_template": "{realization} holds that {Movement} is treated the same across {Movement} viewpoints in {Vibration-Expansion} with {Current} unchanged, while {Appreciation} and {Attraction} describe the broader setting of experience.",
+            "direction_flipped_d": "In Vibration-Expansion with Current unchanged, realization says Movement remains the same from one Movement viewpoint to another, while Appreciation together with Attraction describes the wider setting of experience.",
+            "rationale": "This is a qualitative comparison of inertial, accelerating, and gravitating frames. It is not one of the restricted open-joint cases, and it contains no blocklisted thermal, electrical, acoustic, optical, elastic, viscous, gas-law, or pressure variables. All active concepts can be mapped using the lookup table, so the item is in scope with preserved qualitative structure."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "472b267eaefc4c1e9106a0787b490487",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K04",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Comparison of different types of frames/influences in relativistic contexts.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "inertial frames": "Movement",
+              "accelerating frames": "Appreciation",
+              "gravitating frames": "Attraction"
+            },
+            "reflected_formula": "Equivalence of {Movement} versus {Appreciation} or {Attraction}",
+            "translation_t": "The equivalence of Movement versus Appreciation or Attraction.",
+            "translation_template": "The equivalence of {Movement} versus {Appreciation} or {Attraction}.",
+            "direction_flipped_d": "The distinction between Movement and Appreciation or Attraction.",
+            "rationale": "The item describes a qualitative physical principle. Step 1a and 1b were applied: no dimensionless prefactors or constants to strip. The active concepts are 'inertial frames' (maps to 'Movement'), 'accelerating frames' (implies 'acceleration', maps to 'Appreciation'), and 'gravitating frames' (implies 'gravity', maps to 'Attraction'). None of these are blocklisted thermal, molar, viscous, electric circuit, or acoustic/optical/elastic quantities. Therefore, Step 1c (no_partner) is skipped. Step 2 (open_joint) is not applicable as the principle is not one of the specified open_joint cases. Step 3 is applied: no mechanical pressure is involved, and all concepts map directly to the Partner Lookup Table. Thus, `scope_status` is `in_scope`. For Step 4, the principle describes an equivalence/distinction, which is a structural definition, leading to `ruling = \"keep\"` and `two_level = false`. `formula_shape` is set to `keeps` as per the protocol for `in_scope` items. The `axis_polarity_note` has been populated as required for `in_scope` items."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d65fd8be00d74b7995f23020d65d3c77",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K04",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "inertial frame",
+              "accelerating frame",
+              "gravitating frame",
+              "equivalence"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The item involves inertial/accelerating/gravitating frames and equivalence principles, which are not purely mechanical pressure concepts. The presence of frame-related concepts (inertial frame, accelerating frame, gravitating frame) and the qualitative principle of equivalence triggers Step 1b, as these are not covered by the Partner Lookup Table and are not mechanical pressure. Thus, it is classified as 'no_partner'."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "17e4561b552a4d14b3ed5f1b9265ed71",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K04",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "qualitative principle"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Qualitative principle without an equation; classified as 'no_partner' due to lack of translatable formula."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K05",
+      "metadata": {
+        "item_id": "K05",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "0a6d18353ccb495eaf9d30fb280ec4da",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K05",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Both time-interval quantities map to Expansion; coordinate Expansion (Δt) exceeds proper Expansion (Δτ) by the Lorentz cost of sustained rise per Expansion against the relativistic boundary set by the Current. The inversion marks the resistance-cost of motion stretching coordinate Expansion beyond proper Expansion.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "Delta_t": "Expansion (coordinate)",
+              "Delta_tau": "Expansion (proper)",
+              "v": "rise per Expansion",
+              "c": "Current [universal constant — stripped per Rule 1a]"
+            },
+            "reflected_formula": "Expansion (coordinate) = Expansion (proper) / sqrt(1 - (rise per Expansion)^2 / (Current)^2)",
+            "translation_t": "The coordinate Expansion stretches beyond proper Expansion by the full cost of sustained rise per Expansion pressing against the boundary set by the Current — the faster the rise per Expansion, the wider the gap between coordinate Expansion and proper Expansion grows.",
+            "translation_template": "The coordinate {Expansion} stretches beyond proper {Expansion} by the full cost of sustained {rise per Expansion} pressing against the boundary set by the {Current} — the faster the {rise per Expansion}, the wider the gap between coordinate {Expansion} and proper {Expansion} grows.",
+            "direction_flipped_d": "Proper Expansion contracts inward beneath coordinate Expansion precisely because every increment of rise per Expansion exacts a toll measured against the Current, so that what is lived as proper Expansion is always less than the coordinate Expansion registered across the moving frame.",
+            "rationale": "K05 is special-relativistic (kinematic) time dilation, not gravitational time dilation, so it does not fall under the open_joint list. No Step-1b blocklisted quantities appear. No mechanical pressure is present, so scope_status is in_scope. Both Δt and Δτ map to Expansion; v maps to rise per Expansion; c is a universal constant stripped per Rule 1a. The law imposes a relativistic boundary cost — coordinate Expansion exceeds proper Expansion due to the resistance of sustained motion against the Current-set limit — yielding ruling = invert. The formula is simultaneously a productive operational definition tracking that costly exertion, so two_level = true. formula_shape = keeps; the quotient structure is preserved without inversion."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "2b4a5686454143fc98bf1c94877c1c5b",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K05",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Relativistic dilation is a boundary-barrier effect, so the algebraic structure is preserved while the interpretive direction is treated as resistance-linked.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\Delta t": "Expansion",
+              "\\Delta \\tau": "Expansion",
+              "v": "rise per Expansion",
+              "c": "Current",
+              "\\gamma": "stripped dimensionless prefactor"
+            },
+            "reflected_formula": "Expansion equals Expansion divided by the square root of one minus the square of rise per Expansion divided by the square of Current.",
+            "translation_t": "Expansion grows beyond Expansion as rise per Expansion approaches Current.",
+            "translation_template": "{Expansion} grows beyond {Expansion} as {rise per Expansion} approaches {Current}.",
+            "direction_flipped_d": "As rise per Expansion nears Current, Expansion stretches away from Expansion.",
+            "rationale": "After stripping the dimensionless factor gamma, all active dynamical quantities remaining in the law are proper time, coordinate time, velocity, and the speed of light, all of which have direct partners in the lookup table. No blocklisted thermal, molar, viscous-flow, circuit, acoustic, optical, or elastic variables appear, and no mechanical pressure is involved. The item is therefore in scope rather than crossing_interface. Because time dilation is explicitly listed as a relativistic effect and the law expresses a boundary-linked dilation cost as speed approaches the invariant limit, the ruling is invert. The quotient is preserved exactly in reflected form."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "3fb490c518254761b44bc051bd18335d",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K05",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The {Expansion} (coordinate time) is always greater than or equal to the {Expansion} (proper time) for non-zero {rise per Expansion}, indicating an expansion of observed duration.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\Delta t": "Expansion",
+              "\\Delta \\tau": "Expansion",
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "Expansion = Expansion / sqrt(1 - (rise per Expansion)^2 / Current^2)",
+            "translation_t": "The Expansion of a moving frame is equal to the Expansion of its proper frame divided by the square root of one minus the square of its rise per Expansion divided by the square of Current.",
+            "translation_template": "The {Expansion} of a moving frame is equal to the {Expansion} of its proper frame divided by the square root of one minus the square of its {rise per Expansion} divided by the square of {Current}.",
+            "direction_flipped_d": "The Expansion of a proper frame is equal to the Expansion of a moving frame multiplied by the square root of one minus the square of its rise per Expansion divided by the square of Current.",
+            "rationale": "Step 1a: No dimensionless prefactors or static constants to strip. The Lorentz factor (gamma) is a composite term dependent on active variables. Step 1b: Inspecting active dynamical quantities (`\\Delta t`, `\\Delta \\tau`, `v`, `c`). No blocklisted thermal, molar/gas, viscous, electric circuit, or acoustic/optical/elastic variables are present. `c` (speed of light) is a universal constant, not an active optical variable in the blocklist sense. The Strict Boundary Guard does not trigger. Step 2: The item is 'Relativistic time dilation', not 'gravitational time dilation', 'escape velocity', 'gravitational redshift', or 'Schwarzschild radius', so it is not an 'open_joint'. Step 3: The equation does not involve mechanical pressure, so it is not 'crossing_interface'. All variables map directly to the Partner Lookup Table, classifying it as 'in_scope'. Step 4: All variables are mapped: `\\Delta t` (time interval) to `Expansion`, `\\Delta \\tau` (proper time) to `Expansion`, `v` (speed) to `rise per Expansion`, and `c` (speed of light) to `Current`. The relationship describes a fundamental aspect of spacetime under relative motion, not an exertion against resistance or a dissipative process, hence `ruling = 'keep'` and `two_level = false`. The `reflected_formula` is constructed by substituting mapped terms. The `translation_t` describes the formula in prose. The `direction_flipped_d` expresses the inverse relationship, showing how proper time relates to coordinate time. An `axis_polarity_note` is added to describe the relative magnitude of the two `Expansion` terms."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "2ac92bdf4d2847f58d88bf994c056afd",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K05",
+            "scope_status": "open_joint",
+            "formula_shape": "none",
+            "ruling": "indeterminate",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The item involves relativistic time dilation, which is explicitly listed in Step 2 as an 'open_joint' case. Therefore, it is classified as 'open_joint' with all formula and translation fields left empty."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "ed5112d897e34a2fad51e7f7769fe495",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K05",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Time dilation is a fundamental aspect of relativistic kinematics.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\Delta t": "Expansion",
+              "\\Delta \\tau": "Expansion",
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "{Expansion} = \\frac{{Expansion}}{\\sqrt{1 - ({rise per Expansion}/({Current}))^{2}}}",
+            "translation_t": "Expansion equals Expansion divided by the square root of one minus the square of rise per Expansion over Current",
+            "translation_template": "{Expansion} equals {Expansion} divided by the square root of one minus the square of {rise per Expansion} over {Current}",
+            "direction_flipped_d": "The ratio of Expansion to the square root of one minus the squared ratio of rise per Expansion to Current gives Expansion",
+            "rationale": "Relativistic time dilation equation maps to inner counterparts using the Partner Lookup Table, with time intervals mapping to Expansion and velocity to rise per Expansion."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K06",
+      "metadata": {
+        "item_id": "K06",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "9b71517555894c3786f947eb39f5663c",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K06",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Relativistic contraction imposes a boundary-barrier cost from motion against the spacetime limit; the contracted Vibration is diminished relative to the rest Vibration, mirroring how perceived reach shrinks as rise per Expansion approaches the Current threshold.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "L": "Vibration (contracted)",
+              "L_0": "Vibration (rest)",
+              "v": "rise per Expansion",
+              "c": "Current",
+              "gamma": "derived Lorentz structure from rise per Expansion and Current"
+            },
+            "reflected_formula": "Vibration = Vibration(rest) / gamma = Vibration(rest) × sqrt(1 − (rise per Expansion)² / Current²)",
+            "translation_t": "The contracted Vibration equals the rest Vibration divided by the Lorentz structure, which is the rest Vibration scaled by the square root of one minus the ratio of rise per Expansion squared to Current squared — the faster the Movement, the more Vibration collapses toward the Current boundary.",
+            "translation_template": "The contracted {Vibration} equals the rest {Vibration} divided by the Lorentz structure, which is the rest {Vibration} scaled by the square root of one minus the ratio of {rise per Expansion} squared to {Current} squared — the faster the {Movement}, the more {Vibration} collapses toward the {Current} boundary.",
+            "direction_flipped_d": "As rise per Expansion presses against the Current ceiling, the rest Vibration surrenders its full reach — the Lorentz structure compresses it, so the lived Vibration contracts in proportion to how near Movement drives toward the Current limit.",
+            "rationale": "No blocklisted thermal, molar, viscous, circuit, or acoustic quantities appear. No mechanical pressure is present, so the item is in_scope rather than crossing_interface. Length contraction is a relativistic barrier-cost law: motion against the spacetime speed-of-light boundary shrinks measured length below its rest value, so ruling = invert. It is simultaneously an operational definition of the measured contracted length under that costly motion, so two_level = true. L and L₀ both map to Vibration (contracted and rest forms respectively); v maps to rise per Expansion; c maps to Current; γ is the derived Lorentz structural factor built from those partners. formula_shape = keeps preserves the quotient and radical structure without inversion."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "a127e4185205411c86bd97f624c34a26",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K06",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Relativistic contraction is a boundary-effect relation: greater relative speed reduces observed length while preserving algebraic form.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "L": "Vibration",
+              "L_0": "Vibration",
+              "gamma": "stripped constant-like prefactor",
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "Vibration equals Vibration divided by the relativistic boundary factor, and also equals Vibration multiplied by the square root of one minus rise per Expansion squared divided by Current squared.",
+            "translation_t": "As rise per Expansion grows against the boundary set by Current, Vibration is reduced from its rest measure.",
+            "translation_template": "As {rise per Expansion} grows against the boundary set by {Current}, {Vibration} is reduced from its rest measure.",
+            "direction_flipped_d": "When rise per Expansion approaches Current, the available Vibration contracts relative to its rest measure.",
+            "rationale": "After stripping the dimensionless Lorentz factor form, the active dynamical quantities are length, rest length, relative speed, and speed of light; none are blocklisted by Step 1b. No mechanical pressure appears, so this is not a crossing interface case. The relation is in scope through mapped partners for length contraction, speed, and speed of light. Because the law expresses a relativistic boundary cost where increasing relative speed compresses observed length, the ruling is invert. Algebraic structure is preserved."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "d2c9840490c9465ea854b9ef78e710c0",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K06",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Length contraction occurs along the direction of relative motion, implying a reduction in Vibration along the axis of rise per Expansion.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "L": "Vibration",
+              "L_0": "Vibration",
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "Vibration = Vibration_0 * sqrt(1 - (rise per Expansion)^2 / Current^2)",
+            "translation_t": "The observed Vibration equals the proper Vibration multiplied by the square root of one minus the squared ratio of rise per Expansion to Current.",
+            "translation_template": "The observed {Vibration} equals the proper {Vibration} multiplied by the square root of one minus the squared ratio of {rise per Expansion} to {Current}.",
+            "direction_flipped_d": "The proper Vibration is obtained by dividing the observed Vibration by the square root of one minus the squared ratio of rise per Expansion to Current.",
+            "rationale": "Step 1b: No blocklisted thermal, molar, viscous, electric, acoustic, optical, or elastic quantities are present. Step 3: No mechanical pressure is involved. All active variables (length, speed, speed of light) map directly to primary partners in the lookup table, classifying as 'in_scope'. Step 4: The formula describes relativistic length contraction, which represents a relativistic barrier cost, thus `ruling = 'invert'`. It is not a productive operational definition, so `two_level = false`."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "89a30a560c3b45a8a34cb5e1fcdf8764",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K06",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "contraction preserves directional alignment along motion",
+            "unmapped_terms": [],
+            "variable_map": {
+              "L": "Vibration",
+              "L_0": "Vibration",
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "Vibration equals Vibration divided by the square root of one minus rise per Expansion squared over Current squared",
+            "translation_t": "Vibration equals Vibration divided by the square root of one minus rise per Expansion squared over Current squared",
+            "translation_template": "{Vibration} equals {Vibration} divided by the square root of one minus {rise per Expansion} squared over {Current} squared",
+            "direction_flipped_d": "Vibration divided by the square root of one minus rise per Expansion squared over Current squared equals Vibration",
+            "rationale": "The equation involves only mechanical/relativistic quantities (length, speed, speed of light) with no blocklisted thermal, molar, viscous, electric, or acoustic variables. All variables map directly via the Partner Lookup Table (L/L0 -> Vibration, v -> rise per Expansion, c -> Current). The law is a structural definition (length contraction) with no dissipative/resistive context, so ruling='keep' and two_level=false."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "1191af9cc45048ff8a44d8b1f05ad842",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K06",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "relativistic context",
+            "unmapped_terms": [],
+            "variable_map": {
+              "L": "Vibration",
+              "L_{0}": "Vibration",
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "{Vibration} = \\frac{{Vibration}}{{\\gamma}} = {Vibration} \\sqrt{1 - \\frac{({rise per Expansion})^{2}}{{Current}^{2}}}",
+            "translation_t": "Vibration equals Vibration divided by gamma equals Vibration times square root of unity minus rise per Expansion squared divided by Current squared",
+            "translation_template": "{Vibration} equals {Vibration} divided by gamma equals {Vibration} times square root of unity minus {rise per Expansion} squared divided by {Current} squared",
+            "direction_flipped_d": "Gamma times Vibration equals Vibration, which equals Vibration divided by the square root of unity minus the square of rise per Expansion divided by the square of Current.",
+            "rationale": "The equation for relativistic length contraction is classified as 'in_scope' because it involves concepts that can be mapped using the Partner Lookup Table and does not contain blocklisted quantities or pressure."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K07",
+      "metadata": {
+        "item_id": "K07",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "886b161e02e44fbebc34b250596a2823",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K07",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "E maps to conscious energy; m maps to Movement; c maps to Current. The equivalence is a structural identity stating that rest conscious energy equals Movement scaled by the square of Current — no resistance, dissipation, or crossing-boundary pressure term is present.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E": "conscious energy",
+              "m": "Movement",
+              "c": "Current"
+            },
+            "reflected_formula": "conscious energy = Movement × Current²",
+            "translation_t": "conscious energy equals Movement scaled by the square of Current.",
+            "translation_template": "{conscious energy} equals {Movement} scaled by the square of {Current}.",
+            "direction_flipped_d": "The square of Current, multiplied by Movement, yields the full measure of conscious energy.",
+            "rationale": "Step 1 check: stripping the dimensionless numeric prefactor (implicit coefficient 1) leaves three active dynamical quantities — E (energy), m (mass), c (speed of light). None of the Step-1b blocklisted categories apply: no thermal variable, no molar/gas constant, no viscous or circuit quantity, no acoustic/optical/elastic quantity, and no mechanical pressure. Step 3 check: no pressure or crossing-interface concept is present, so the item is fully in_scope. All three quantities map cleanly via the Partner Lookup Table — E → conscious energy (energy), m → Movement (mass/base quantity), c → Current (speed of light/invariant speed). The equation is a pure structural identity (rest-energy equivalence) with no exertion against resistance, so ruling = keep and two_level = false. formula_shape = keeps; the algebraic structure E = m c² is preserved as conscious energy = Movement × Current²."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "6be9253319504011bf56cdfbd22680f6",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K07",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Direct identity using mapped energy, mass, and invariant speed with no crossing-boundary pressure term and no blocklisted active quantity.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E": "conscious energy",
+              "m": "Movement",
+              "c": "Current"
+            },
+            "reflected_formula": "conscious energy equals Movement times Current squared.",
+            "translation_t": "conscious energy equals Movement times Current with Current joined again through itself.",
+            "translation_template": "{conscious energy} equals {Movement} times {Current} with {Current} joined again through itself.",
+            "direction_flipped_d": "conscious energy is held as Movement expressed through Current meeting Current.",
+            "rationale": "After stripping the numeric exponent structure as algebraic form rather than a separate variable, the active dynamical quantities are energy, mass, and speed of light. All are present in the Partner Lookup Table. No thermal, gas, viscous flow, circuit, acoustic, optical, elastic, or pressure-only crossing variable appears. The law is a direct equivalence identity, so it stays in scope with keeps shape and keep ruling."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "d8934b519c9d4256af94839df09d23f4",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K07",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Conscious energy directly corresponds to Movement, with Current squared as the fundamental scaling factor.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E": "conscious energy",
+              "m": "Movement",
+              "c": "Current"
+            },
+            "reflected_formula": "conscious energy = Movement Current²",
+            "translation_t": "conscious energy is equal to Movement times Current squared.",
+            "translation_template": "{conscious energy} is equal to {Movement} times {Current} squared.",
+            "direction_flipped_d": "Movement times Current squared is equal to conscious energy.",
+            "rationale": "The equation relates total energy (E), mass (m), and the speed of light (c). Step 1a strips the constant c as it's a universal constant. Step 1b confirms that no active dynamical blocklisted quantities (thermal, molar, viscous, electrical, acoustic, optical, or elastic) are present for E or m. Step 2 rules out 'open_joint'. Step 3 rules out 'crossing_interface' as no pressure concept is involved. Therefore, the item is classified as 'in_scope'. All variables map directly: E to 'conscious energy', m to 'Movement', and c to 'Current'. The relationship is a fundamental equivalence, a structural definition, which dictates a 'keep' ruling with 'two_level' set to false. An axis_polarity_note is added to describe the direct scaling relationship between conscious energy and Movement."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "schema_error",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "7cd9ecedd09b48c8bc6ebd49c7091f80",
+          "call_meta": {},
+          "parsed": null,
+          "errors": [
+            "Unwrapped translation_template mismatch vs translation_t: 'conscious energy = Movement × Current × Current' != 'conscious energy equals Movement times Current times Current'"
+          ]
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "f2c9c26961274548a1e4ef32232cd19f",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K07",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Energy and mass equivalence is a fundamental concept.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E": "conscious energy",
+              "m": "Movement",
+              "c": "Current"
+            },
+            "reflected_formula": "{conscious energy} = {Movement} × {Current}²",
+            "translation_t": "conscious energy equals Movement times Current squared",
+            "translation_template": "{conscious energy} equals {Movement} times {Current} squared",
+            "direction_flipped_d": "Movement times Current squared equals conscious energy.",
+            "rationale": "The equation E = mc^2 is classified as 'in_scope' because it involves mass and energy, which can be mapped to 'Movement' and 'conscious energy' respectively using the Partner Lookup Table. The speed of light 'c' maps to 'Current'. The equation represents a fundamental equivalence and is thus 'keep' with 'formula_shape' as 'keeps'."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K08",
+      "metadata": {
+        "item_id": "K08",
+        "expected_book_ruling": "invert",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "68092db7c32a4f26900c4d52067d371f",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K08",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "The Lorentz factor encodes the relativistic resistance barrier: as rise per Expansion approaches Current, the factor diverges, reflecting the infinite cost of crossing the speed boundary. The invert ruling captures that each increment of rise per Expansion demands exponentially greater conscious energy from Movement.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "K": "conscious energy (kinetic portion)",
+              "E": "conscious energy (total)",
+              "gamma": "Lorentz kinematic factor (built from rise per Expansion and Current)",
+              "m": "Movement",
+              "c": "Current"
+            },
+            "reflected_formula": "conscious energy (kinetic) = (Lorentz factor − 1) × Movement × Current²;  conscious energy (total) = Lorentz factor × Movement × Current²",
+            "translation_t": "The kinetic conscious energy is the Lorentz factor minus one, scaled by Movement and the square of Current; the total conscious energy is the full Lorentz factor scaled by Movement and the square of Current — each increment of rise per Expansion toward Current demands an ever-greater outpouring of conscious energy from Movement.",
+            "translation_template": "The kinetic {conscious energy} is the Lorentz factor minus one, scaled by {Movement} and the square of {Current}; the total {conscious energy} is the full Lorentz factor scaled by {Movement} and the square of {Current} — each increment of {rise per Expansion} toward {Current} demands an ever-greater outpouring of {conscious energy} from {Movement}.",
+            "direction_flipped_d": "As Movement presses rise per Expansion closer to Current, the Lorentz factor swells without bound, and the total conscious energy carried by Movement grows beyond any finite measure — the gap between present rise per Expansion and Current is the very resistance that makes each further gain in rise per Expansion cost more conscious energy than the last.",
+            "rationale": "No blocklisted thermal, gas, circuit, viscous, or acoustic/optical/elastic quantities appear. Mass m maps to Movement, speed of light c maps to Current, kinetic and total energy map to conscious energy, and the Lorentz factor γ is a dimensionless kinematic scalar built from rise per Expansion and Current. The law describes exertion against the relativistic light-speed barrier — a fundamental resistance cost — so ruling is invert with two_level true, as the formula is simultaneously an operational definition of relativistic energy and a statement of the diverging cost of approaching Current."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "eb33a810efdf4be18c5e41e1d10ea7d7",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K08",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Relativistic energy growth reflects a boundary cost: as Movement is driven toward Current, the conscious energy required rises nonlinearly.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "K": "conscious energy",
+              "E": "conscious energy",
+              "m": "Movement",
+              "c": "Current"
+            },
+            "reflected_formula": "conscious energy equals the growth factor minus baseline, multiplied by Movement and Current carried through twice; total conscious energy equals the growth factor multiplied by Movement and Current carried through twice.",
+            "translation_t": "As Movement is driven closer to Current, conscious energy rises with increasing boundary cost, and total conscious energy scales from Movement through Current.",
+            "translation_template": "As {Movement} is driven closer to {Current}, {conscious energy} rises with increasing boundary cost, and total {conscious energy} scales from {Movement} through {Current}.",
+            "direction_flipped_d": "Driving Movement toward Current demands ever more conscious energy, while total conscious energy continues to build from Movement through Current.",
+            "rationale": "After stripping the dimensionless prefactor relation involving the Lorentz factor as a numeric-like multiplier, the active mapped dynamical quantities are energy, mass, and speed of light. No thermal, molar, viscous, circuit, acoustic, optical, or elastic blocklisted variables appear. No pressure interface is involved, so the item remains in scope rather than crossing_interface. The law expresses relativistic boundary cost as speed approaches an invariant limit, so ruling is invert. Because the relation is also an operational energy definition tracking increasing exertion against a relativistic limit, two_level is true."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "1268fa78afae4ed4a62658892d3a3947",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K08",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "The inversion reflects the increasing {conscious_energy} cost required for {Movement} to approach {Current}, where higher physical speed corresponds to a greater {conscious_energy} expenditure.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "K": "conscious energy",
+              "E": "conscious energy",
+              "m": "Movement",
+              "c": "Current",
+              "\\gamma": "Expansion"
+            },
+            "reflected_formula": "{conscious_energy} = ({Expansion} - 1) {Movement} {Current}², {conscious_energy} = {Expansion} {Movement} {Current}²",
+            "translation_t": "The kinetic conscious energy that Movement must exert to overcome the relativistic barrier is given by the Expansion factor minus one, multiplied by Movement and Current squared. The total conscious energy of Movement under relativistic conditions is the Expansion factor multiplied by Movement and Current squared.",
+            "translation_template": "The kinetic {conscious_energy} that {Movement} must exert to overcome the relativistic barrier is given by the {Expansion} factor minus one, multiplied by {Movement} and {Current} squared. The total {conscious_energy} of {Movement} under relativistic conditions is the {Expansion} factor multiplied by {Movement} and {Current} squared.",
+            "direction_flipped_d": "The kinetic conscious energy that Movement can release by reducing its relativistic state is given by the Expansion factor minus one, multiplied by Movement and Current squared. The total conscious energy of Movement when its relativistic state is considered is the Expansion factor multiplied by Movement and Current squared.",
+            "rationale": "Step 1 (Strict Boundary Guard): No dimensionless numeric prefactors other than '1' were stripped. The active dynamical quantities are K (kinetic energy), E (total energy), m (mass), c (speed of light), and \\gamma (Lorentz factor). None of these are blocklisted thermal, molar/gas, viscous, electric circuit, or acoustic/optical/elastic quantities. Therefore, the item is not 'no_partner'.\nStep 2 (Open Joints): The item does not describe escape velocity, gravitational time dilation, gravitational redshift, or Schwarzschild radius. Therefore, it is not 'open_joint'.\nStep 3 (Pure Mechanical Pressure at the Crossing): No blocklisted quantities are present, and the equation does not involve mechanical pressure. All active variables map directly to the Partner Lookup Table. Thus, the item is classified as 'in_scope'.\nStep 4 (Condition Reading & Algebraic Preservation): The description 'rising energy cost of increasing speed for mass' indicates that the law describes exertion against a relativistic barrier or cost. This aligns with the 'invert' ruling. Since it is a productive operational definition tracking costly exertion/resistance, 'two_level' is set to 'true'.\nVariable Mapping: 'K' (kinetic energy) and 'E' (total energy) map to 'conscious energy'. 'm' (mass) maps to 'Movement'. 'c' (speed of light) maps to 'Current'. The Lorentz factor '\\gamma' is a dimensionless quantity representing relativistic effects like time dilation and length contraction. To satisfy the strict slotting rules requiring target terms to be from the Partner Lookup Table, '\\gamma' is mapped to 'Expansion' as a proxy for the relativistic dilation/transformation of spacetime, which is directly related to the Lorentz factor. This allows 'Expansion' to be used as a valid slot token."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "aa32ca66094a4ac588bc68a9d2fbb3de",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K08",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "speed of light c"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The equation contains the speed of light (c), which is a blocklisted variable under Step 1b (active universal constant). This triggers the Strict Boundary Guard, classifying the item as 'no_partner'."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "schema_error",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "fe148d9a41594d6fb80134e9cda31c96",
+          "call_meta": {},
+          "parsed": null,
+          "errors": [
+            "Invalid slot tokens for arm A0: ['Lorentz factor', 'Lorentz factor', 'one']"
+          ]
+        }
+      }
+    },
+    {
+      "task_id": "K09",
+      "metadata": {
+        "item_id": "K09",
+        "expected_book_ruling": "invert",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d36a8043ac634e3699b937cad563a16a",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K09",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "The hard relativistic ceiling on speed becomes an absolute boundary on rise per Expansion for any entity carrying Movement; approaching Current demands infinite resistance cost, so the law inverts into a barrier that can never be closed.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "rise per Expansion < Current",
+            "translation_t": "Any entity carrying Movement must always rise per Expansion at a rate strictly less than Current; the gap can narrow but never close, because the resistance cost grows without bound as rise per Expansion approaches Current.",
+            "translation_template": "Any entity carrying {Movement} must always {rise per Expansion} at a rate strictly less than {Current}; the gap can narrow but never close, because the resistance cost grows without bound as {rise per Expansion} approaches {Current}.",
+            "direction_flipped_d": "Current stands as the unreachable ceiling: no matter how persistently Movement drives rise per Expansion upward, Current remains forever beyond reach, with the cost of each incremental approach demanding more than any finite effort can supply.",
+            "rationale": "The core inequality v < c contains only two active dynamical quantities: v (speed → rise per Expansion) and c (speed of light → Current). The Lorentz factor γ is a universal constant stripped under Step 1a, and the parenthetical m > 0 is a fixed side-condition qualifier, not a varying dynamical term. No blocklisted thermal, molar, viscous, circuit, or acoustic quantities appear. No pressure is involved, so the item is in_scope rather than crossing_interface. The law expresses a hard relativistic barrier: any Movement-bearing entity faces infinite resistance cost as its rise per Expansion approaches Current, making this an invert ruling. Because the inequality simultaneously serves as the operational definition of the speed limit whose application tracks that infinite barrier cost, two_level is true. The formula shape is kept: rise per Expansion < Current."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "85fab7a7e38a45c4aaa0d4286e9bbd52",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K09",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": false,
+            "axis_polarity_note": "Finite speed for nonzero mass is bounded below Current; the limit is a boundary barrier rather than a crossing-pressure relation.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "v": "rise per Expansion",
+              "c": "Current",
+              "m": "Movement"
+            },
+            "reflected_formula": "rise per Expansion remains less than Current for any positive Movement.",
+            "translation_t": "rise per Expansion remains below Current whenever Movement is present.",
+            "translation_template": "{rise per Expansion} remains below {Current} whenever {Movement} is present.",
+            "direction_flipped_d": "With Movement present, rise per Expansion cannot reach Current.",
+            "rationale": "After stripping the dimensionless factor gamma and the static side-condition inequality on positivity, the active dynamical quantities are speed v, speed of light c, and mass m. None are blocklisted by Step 1b. The statement is not one of the four open-joint exceptions and does not involve mechanical pressure, so it is in scope rather than crossing_interface. Because the law expresses a relativistic boundary barrier preventing attainment of the limiting speed, the ruling is invert under Step 4. Two_level remains false because this is not simultaneously an operational productive definition."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "5843cf4a2d3f46e2a8904687ade4e47f",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K09",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "The physical speed is strictly less than the speed of light, indicating an unreachable upper limit.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "v": "rise per Expansion",
+              "c": "Current"
+            },
+            "reflected_formula": "{rise per Expansion} < {Current}",
+            "translation_t": "The rise per Expansion is less than the Current.",
+            "translation_template": "The {rise per Expansion} is less than the {Current}.",
+            "direction_flipped_d": "The rise per Expansion is greater than or equal to the Current.",
+            "rationale": "The equation `v < c` describes the speed-of-light limit for massive particles. The active dynamical variables are `v` (velocity/speed) and `c` (speed of light). Neither of these variables nor any implied quantities from the side condition (`gamma`, `m`) are on the blocklist in Step 1b. No mechanical pressure is involved, so the item is classified as `in_scope`.\n\nMapping: `v` maps to `rise per Expansion` and `c` maps to `Current` according to the Partner Lookup Table.\n\nThe law `v < c` represents a fundamental relativistic limit or barrier that cannot be overcome by massive particles, implying a 'boundary barrier cost'. This condition triggers `ruling = \"invert\"`. Furthermore, this limit acts as a productive operational definition whose application tracks this costly exertion/resistance (infinite energy required to reach `c`), thus `two_level` is set to `true`. The `axis_polarity_note` describes the directional constraint of the inequality."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "b5ddf4fee4e94e8bb2b0e3203fb4f157",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K09",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "positive polarity (speed limit as upper bound)",
+            "unmapped_terms": [],
+            "variable_map": {
+              "v": "rise per Expansion",
+              "c": "Current",
+              "m": "Movement",
+              "gamma": "Movement"
+            },
+            "reflected_formula": "rise per Expansion < Current",
+            "translation_t": "rise per Expansion is less than Current for Movement",
+            "translation_template": "{rise per Expansion} is less than {Current} for {Movement}",
+            "direction_flipped_d": "Current is greater than rise per Expansion for Movement",
+            "rationale": "The equation involves only kinematic and relativistic quantities (speed v, speed of light c, mass m, Lorentz factor gamma) with no blocklisted thermal, molar, viscous, electric, acoustic, or optical variables. All variables map directly via the Partner Lookup Table (v -> rise per Expansion, c -> Current, m/gamma -> Movement). The inequality is a structural limit (not involving exertion against resistance), so ruling is 'keep' with two_level=false. All mapped terms are wrapped in {Slot} in translation_template, and axis_polarity_note is provided."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "22100b23abe64533af8301f9c96a6418",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K09",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "relativistic limit condition",
+            "unmapped_terms": [],
+            "variable_map": {
+              "v": "rise per Expansion",
+              "c": "Current",
+              "m": "Movement"
+            },
+            "reflected_formula": "{rise per Expansion} < {Current}",
+            "translation_t": "rise per Expansion is less than Current for positive Movement",
+            "translation_template": "{rise per Expansion} is less than {Current} for positive {Movement}",
+            "direction_flipped_d": "Current is greater than rise per Expansion for any positive Movement",
+            "rationale": "The equation v < c for m > 0 is a relativistic limit condition, classified as 'in_scope'. It involves velocity (v), speed of light (c), and mass (m), which map to 'rise per Expansion', 'Current', and 'Movement', respectively."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K10",
+      "metadata": {
+        "item_id": "K10",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "f1975a0dca3643d5b22678982ffc8c8e",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K10",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The invariant spacetime interval is a structural identity preserving the Vibration-Expansion continuum across all inertial frames; no resistance or exertion is involved, so the additive-subtractive sign structure is kept exactly.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "s²": "Vibration-Expansion (squared interval)",
+              "c": "Current",
+              "Δt": "Expansion",
+              "Δx": "Vibration (along first axis)",
+              "Δy": "Vibration (along second axis)",
+              "Δz": "Vibration (along third axis)"
+            },
+            "reflected_formula": "Vibration-Expansion² = Current² × Expansion² − Vibration² − Vibration² − Vibration²",
+            "translation_t": "The squared Vibration-Expansion interval equals Current squared times Expansion squared, minus the sum of the three squared Vibration separations across all spatial directions.",
+            "translation_template": "The squared {Vibration-Expansion} interval equals {Current} squared times {Expansion} squared, minus the sum of the three squared {Vibration} separations across all spatial directions.",
+            "direction_flipped_d": "Subtract the three squared Vibration separations from Current squared scaled by Expansion squared, and what remains is the invariant squared Vibration-Expansion interval that every inertial frame agrees upon.",
+            "rationale": "All active quantities — spacetime interval, speed of light, time interval, and three spatial displacements — map cleanly through the Partner Lookup Table to Vibration-Expansion, Current, Expansion, and Vibration respectively. No blocklisted thermal, molar, viscous, circuit, or acoustic variables appear. No mechanical pressure is present, so the item is fully in_scope rather than crossing_interface. The formula is a structural invariance identity carrying no resistance or dissipative cost, so ruling is keep with two_level false. The algebraic sign structure is preserved exactly under formula_shape keeps. The direction_flipped_d uses the identical target term set as translation_t — Current, Expansion, Vibration, Vibration-Expansion — while reordering the narrative perspective from result-first to process-first."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "561cabf778694f7296569600fb5a8493",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K10",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Maps the invariant spacetime continuum to the unified Vibration-Expansion continuum while preserving the interval structure.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "s^2": "Vibration-Expansion",
+              "c": "Current",
+              "Δt": "Expansion",
+              "Δx": "Vibration",
+              "Δy": "Vibration",
+              "Δz": "Vibration"
+            },
+            "reflected_formula": "Vibration-Expansion is preserved as Current with Expansion balanced against Vibration along each spatial direction.",
+            "translation_t": "The invariant Vibration-Expansion is kept as Current with Expansion and Vibration held in one unified continuum.",
+            "translation_template": "The invariant {Vibration-Expansion} is kept as {Current} with {Expansion} and {Vibration} held in one unified continuum.",
+            "direction_flipped_d": "Within the unified Vibration-Expansion, Current preserves how Vibration and Expansion remain joined as one continuum.",
+            "rationale": "All active dynamical quantities map through the lookup table: spacetime interval to Vibration-Expansion, speed of light to Current, and spatial/time separations to Vibration and Expansion. No blocklisted thermal, circuit, acoustic, optical, elastic, viscous-flow, or molar variables appear. The law is an invariant geometric identity, so it stays in scope with formula shape kept and ruling keep."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "505b566511af46fea0a5cb75c555f0d1",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K10",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Time-like component is positive, space-like components are negative, indicating a hyperbolic geometry.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "s": "Vibration-Expansion",
+              "c": "Current",
+              "Delta t": "Expansion",
+              "Delta x": "Vibration",
+              "Delta y": "Vibration",
+              "Delta z": "Vibration"
+            },
+            "reflected_formula": "(Vibration-Expansion)^2 = Current^2 (Expansion)^2 - (Vibration)^2 - (Vibration)^2 - (Vibration)^2",
+            "translation_t": "The squared Vibration-Expansion is equal to the squared Current times the squared Expansion minus the sum of the squared Vibrations.",
+            "translation_template": "The squared {Vibration-Expansion} is equal to the squared {Current} times the squared {Expansion} minus the sum of the squared {Vibration}s.",
+            "direction_flipped_d": "The squared sum of the Vibrations plus the squared Vibration-Expansion is equal to the squared Current times the squared Expansion.",
+            "rationale": "Step 1a: No dimensionless prefactors or static background constants to strip other than `c` which maps directly. Step 1b: Inspected all active dynamical quantities (`s`, `c`, `Delta t`, `Delta x`, `Delta y`, `Delta z`). None are blocklisted thermal, molar/gas, viscous, electric circuit, or acoustic/optical/elastic variables. Thus, not 'no_partner'. Step 2: Not an 'open_joint' specific case. Step 3: The equation does not involve mechanical pressure, so it is not 'crossing_interface'. All variables map directly to primary partners. Therefore, classified as 'in_scope'. Step 4: The formula defines the invariant spacetime interval, a fundamental structural identity of the continuum. This falls under 'structural definitions' and 'resistance-free continuum identities', leading to `ruling = \"keep\"` and `two_level = false`. Variables are mapped according to the Partner Lookup Table: `s` to `Vibration-Expansion`, `c` to `Current`, `Delta t` to `Expansion`, and `Delta x`, `Delta y`, `Delta z` to `Vibration`. The `reflected_formula` is constructed by direct substitution. `translation_t` and `translation_template` describe the relationship, and `direction_flipped_d` provides an algebraically equivalent rephrasing. The `axis_polarity_note` is added to reflect the signature of the spacetime metric, which is required for `in_scope` items."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "schema_error",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "46a6b068a86e48a5bc6a31292451cf93",
+          "call_meta": {},
+          "parsed": null,
+          "errors": [
+            "Unwrapped translation_template mismatch vs translation_t: 'Vibration-Expansion squared = Current squared × Expansion squared - Vibration squared - Vibration squared - Vibration squared' != 'Vibration-Expansion squared equals Current squared times Expansion squared minus Vibration squared minus Vibration squared minus Vibration squared'"
+          ]
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "b51d1bcf7111478c972948ab27664486",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K10",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "aligned",
+            "unmapped_terms": [],
+            "variable_map": {
+              "s": "{Vibration-Expansion}",
+              "c": "{Current}",
+              "\\Delta t": "{Expansion}",
+              "\\Delta x": "{Vibration}",
+              "\\Delta y": "{Vibration}",
+              "\\Delta z": "{Vibration}"
+            },
+            "reflected_formula": "{Vibration-Expansion}^{2} = {Current}^{2} ({Expansion})^{2} - ({Vibration})^{2} - ({Vibration})^{2} - ({Vibration})^{2}",
+            "translation_t": "Vibration-Expansion squared equals Current squared times Expansion squared minus Vibration squared minus Vibration squared minus Vibration squared",
+            "translation_template": "{Vibration-Expansion} squared equals {Current} squared times {Expansion} squared minus {Vibration} squared minus {Vibration} squared minus {Vibration} squared",
+            "direction_flipped_d": "The sum of three Vibration squared terms subtracted from the product of Current squared and Expansion squared equals Vibration-Expansion squared.",
+            "rationale": "The equation represents the invariant spacetime interval, mapping to Vibration-Expansion and related concepts. It is classified as 'in_scope' with 'formula_shape' as 'keeps' and 'ruling' as 'keep'."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K11",
+      "metadata": {
+        "item_id": "K11",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "f93a43f4625d4bb7bc14de62aee0f5a4",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K11",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Movement and conscious energy warp Vibration-Expansion geometry: the denser the Movement and the higher the conscious energy, the more profoundly Vibration-Expansion curves around it — mirroring how mass-energy curves spacetime. Classified 'invert' because warping represents exertion against the neutral, flat baseline of Vibration-Expansion; 'two_level' because the same principle is simultaneously a productive operational definition of how conscious presence reshapes the field of Expansion.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "mass": "Movement",
+              "energy": "conscious energy",
+              "spacetime geometry": "Vibration-Expansion"
+            },
+            "reflected_formula": "Movement and conscious energy warp Vibration-Expansion",
+            "translation_t": "Movement and conscious energy warp Vibration-Expansion: the greater the Movement and conscious energy present, the more deeply Vibration-Expansion curves around that presence, reshaping the very field through which all rise and unfolding occur.",
+            "translation_template": "{Movement} and {conscious energy} warp {Vibration-Expansion}: the greater the {Movement} and {conscious energy} present, the more deeply {Vibration-Expansion} curves around that presence, reshaping the very field through which all rise and unfolding occur.",
+            "direction_flipped_d": "Vibration-Expansion itself bends and reshapes in direct response to the depth of Movement and the intensity of conscious energy gathered within it — the curvature of Vibration-Expansion is not imposed from outside but arises from within wherever Movement and conscious energy concentrate.",
+            "rationale": "Step 1b check: no thermal, molar/gas, viscous, circuit, or acoustic/optical/elastic active dynamical variables appear. The principle involves mass (→ Movement), energy (→ conscious energy), and spacetime geometry (→ Vibration-Expansion) — all cleanly mapped in the Partner Lookup Table. No mechanical pressure is present, so this is 'in_scope' rather than 'crossing_interface'. Ruling is 'invert' because warping spacetime geometry represents exertion against the neutral flat baseline of Vibration-Expansion — a costly, resistance-bearing deformation of the continuum. 'two_level = true' because the same qualitative principle simultaneously serves as a productive operational definition: it defines how the presence of Movement and conscious energy actively reshapes the Vibration-Expansion field through which all trajectories of rise and unfolding are determined."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "456f11716a3b455e960bfc04566e2690",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K11",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Maps a qualitative spacetime-gravity principle entirely within available partners; no crossing-only pressure term or blocklisted active variable appears.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "mass-energy": "Movement and conscious energy",
+              "warps": "shapes",
+              "spacetime geometry": "Vibration-Expansion"
+            },
+            "reflected_formula": "Movement and conscious energy shape Vibration-Expansion.",
+            "translation_t": "Movement and conscious energy shape Vibration-Expansion.",
+            "translation_template": "{Movement} and {conscious energy} shape {Vibration-Expansion}.",
+            "direction_flipped_d": "Vibration-Expansion is shaped by Movement and conscious energy.",
+            "rationale": "The item is a qualitative physical principle, not one of the restricted open-joint cases. It contains no active thermal, gas, circuit, acoustic, optical, elastic, or viscous-flow variables, and no mechanical pressure term. Its core concepts map through the lookup table: mass to Movement, energy to conscious energy, and spacetime geometry to Vibration-Expansion. As a structural principle rather than a resistance-cost law, the ruling is keep with two_level false."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "099a59e3ff3241148568a05d08b9bf99",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K11",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The physical entity (mass-energy) directly influences the physical continuum (spacetime geometry), which is mirrored as the direct influence of the corresponding mirror entity (Movement and conscious energy) on the mirror continuum (Vibration-Expansion).",
+            "unmapped_terms": [],
+            "variable_map": {
+              "mass-energy": "Movement and conscious energy",
+              "spacetime geometry": "Vibration-Expansion"
+            },
+            "reflected_formula": "Movement and conscious energy shapes Vibration-Expansion.",
+            "translation_t": "Movement and conscious energy shapes Vibration-Expansion.",
+            "translation_template": "{Movement} and {conscious energy} shapes {Vibration-Expansion}.",
+            "direction_flipped_d": "Vibration-Expansion shapes Movement and conscious energy.",
+            "rationale": "The item describes a qualitative physical principle: 'Mass-energy warps spacetime geometry'.\n\nStep 1 (Strict Boundary Guard): No equation is provided, so 1a is skipped. In 1b, 'Mass-energy' relates to 'mass' (maps to 'Movement') and 'energy' (maps to 'conscious energy'). 'Spacetime geometry' maps to 'Vibration-Expansion'. None of these terms are on the blocklisted list (thermal, molar/gas, viscous, electric circuit, acoustic/optical/elastic quantities). Thus, the item is not classified as 'no_partner'.\n\nStep 2 (Open Joints): The principle is not one of the specific 'open_joint' cases (escape velocity, gravitational time dilation, gravitational redshift, Schwarzschild radius).\n\nStep 3 (Pure Mechanical Pressure at the Crossing): No blocklisted quantities are present, and the principle does not involve mechanical 'pressure' or any other crossing concept. All active concepts ('mass-energy', 'spacetime geometry') map directly within the Partner Lookup Table. Therefore, the `scope_status` is classified as 'in_scope'.\n\nStep 4 (Condition Reading & Algebraic Preservation): Since it's 'in_scope', `formula_shape` is 'keeps'. The principle describes a fundamental structural relationship where mass-energy influences spacetime geometry, which aligns with 'structural definitions' or 'resistance-free continuum identities'. Thus, `ruling` is 'keep', and `two_level` is `false`."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "70fcf1d9fe9f461d8c7de75dc81d2e73",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K11",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "qualitative principle preserves structural identity without inversion",
+            "unmapped_terms": [],
+            "variable_map": {
+              "mass-energy": "conscious energy",
+              "spacetime geometry": "Vibration-Expansion"
+            },
+            "reflected_formula": "conscious energy warps Vibration-Expansion",
+            "translation_t": "conscious energy warps Vibration-Expansion",
+            "translation_template": "{conscious energy} warps {Vibration-Expansion}",
+            "direction_flipped_d": "Vibration-Expansion warps conscious energy",
+            "rationale": "The description contains no blocklisted variables (Step 1b) and no pressure/crossing concepts (Step 3). All terms map directly via the Partner Lookup Table: 'mass-energy' -> 'conscious energy' and 'spacetime geometry' -> 'Vibration-Expansion'. The qualitative principle is a structural identity (Step 4), so ruling='keep' and two_level=false."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "815de6e3d33c436f96aa4b86f77a596c",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K11",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "Mass-energy",
+              "spacetime geometry"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Qualitative physical principle without a specific equation to translate or map."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K12",
+      "metadata": {
+        "item_id": "K12",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "beca414404fc4adaa1c21fb05fafbfb2",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K12",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Gravitational wells and gravitational lensing both describe how massive bodies curve the path of light and trap surrounding space-time through costly spatial separation and resistance to escape — mapping to Attraction bending and redirecting the Current through Vibration-Expansion, requiring exertion against the pull of Attraction.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "gravitational well": "Attraction",
+              "gravitational lensing": "Attraction",
+              "massive body / mass": "Movement",
+              "light path / light": "Current",
+              "space-time curvature": "Vibration-Expansion"
+            },
+            "reflected_formula": "Attraction curves Vibration-Expansion, bending the Current around Movement",
+            "translation_t": "Attraction curves Vibration-Expansion, bending the Current around Movement. The deeper the Attraction, the more the Current is redirected through Vibration-Expansion by the pull of Movement.",
+            "translation_template": "{Attraction} curves {Vibration-Expansion}, bending the {Current} around {Movement}. The deeper the {Attraction}, the more the {Current} is redirected through {Vibration-Expansion} by the pull of {Movement}.",
+            "direction_flipped_d": "Where Movement concentrates, Attraction draws Vibration-Expansion inward, and the Current must arc through that curvature — the greater the Movement, the more Attraction reshapes the path of the Current across Vibration-Expansion.",
+            "rationale": "Step 1b check: No thermal, molar/gas, viscous, circuit, or acoustic/optical/elastic blocklisted quantities appear dynamically. 'Gravitational lensing' and 'gravitational well' are both listed in the Partner Lookup Table under gravity/gravitational lensing → Attraction. Light maps to Current (speed of light c → Current). Mass → Movement. Space-time → Vibration-Expansion. No pressure is involved, so scope_status = 'in_scope' (not crossing_interface). Step 4: Gravitational wells and lensing represent costly exertion against spatial separation and the resistance of deep gravitational curvature — ruling = 'invert'. The principle is simultaneously a productive operational definition (lensing is used to map mass distributions) whose application tracks costly resistance, so two_level = true."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "f89ea11a0883464c82e4367f76476c70",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K12",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Gravitational effects map through Attraction acting across Vibration-Expansion, with lensing and well-structure treated as boundary-shaped deflections and depth costs.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "gravitational well": "Attraction",
+              "gravitational lensing": "Attraction",
+              "light": "Current",
+              "massive bodies": "Movement"
+            },
+            "reflected_formula": "Attraction around Movement bends Current across Vibration-Expansion.",
+            "translation_t": "Attraction around Movement bends Current across Vibration-Expansion.",
+            "translation_template": "{Attraction} around {Movement} bends {Current} across {Vibration-Expansion}.",
+            "direction_flipped_d": "Current curves through Vibration-Expansion in response to Attraction around Movement.",
+            "rationale": "The item is a qualitative gravitational principle, not one of the restricted open-joint cases. It contains only in-table concepts: gravitational well and gravitational lensing map to Attraction, light maps to Current, and massive bodies map to Movement. No blocked thermal, electric-circuit, viscous, acoustic, optical formula variable appears dynamically because there is no operative equation; 'light' here is handled via the speed-of-light/light partner pathway rather than as an optical law variable. Since the description emphasizes bending around massive bodies and depth of wells, it is treated as requiring boundary-cost/deflection behavior, so ruling is invert with two-level true."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "75c67d9c6f9644c9ab5da1e49d6970be",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K12",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Qualitative principle, no explicit polarity.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "gravitational wells": "Attraction",
+              "gravitational lensing": "Attraction",
+              "light": "Current",
+              "massive bodies": "Movement"
+            },
+            "reflected_formula": "Movement's Attraction creates wells and lenses Current.",
+            "translation_t": "Movement's Attraction creates wells and lenses Current.",
+            "translation_template": "{Movement}'s {Attraction} creates wells and lenses {Current}.",
+            "direction_flipped_d": "Current is shaped by Movement's Attraction through wells and lensing.",
+            "rationale": "The item describes qualitative physical principles: 'Gravitational wells and gravitational lensing of light around massive bodies'.\n\n1.  **Step 1 (Strict Boundary Guard):** The description involves 'gravitational wells' and 'gravitational lensing', both of which map to 'Attraction' in the Partner Lookup Table. 'Massive bodies' maps to 'Movement'. The term 'light' is present. While 'optical quantity' is a blocklisted category in Step 1b, the rule specifically lists *variables* (e.g., 'wave frequency f', 'refractive index n'). 'Light' in this context is interpreted as the subject of the gravitational effect (lensing), not as an active dynamical optical variable that would trigger the 'no_partner' classification. The explicit inclusion of 'gravitational lensing' in the Partner Lookup Table further supports its mappability within scope.\n2.  **Step 2 (Open Joints):** The item does not match any of the specific conditions for 'open_joint'.\n3.  **Step 3 (Pure Mechanical Pressure):** No mechanical pressure concepts are involved. Since all active concepts map directly within the Partner Lookup Table and no blocklisted quantities are present, the `scope_status` is `in_scope`.\n4.  **Step 4 (Condition Reading & Algebraic Preservation):**\n    *   `formula_shape` is `keeps` as it is `in_scope`.\n    *   `ruling` is `keep`. The description outlines fundamental gravitational phenomena and their effects, representing a structural identity or interaction rather than exertion against resistance or dissipation.\n    *   `two_level` is `false` because `ruling` is `keep`.\n5.  **Mapping:** 'gravitational wells' -> `Attraction`, 'gravitational lensing' -> `Attraction`, 'light' -> `Current` (representing its propagation/flow), 'massive bodies' -> `Movement`.\n6.  **Translations:** The `reflected_formula` and `translation_t` are constructed as qualitative statements reflecting how `Movement`'s `Attraction` influences `Current`. `direction_flipped_d` rephrases this relationship by focusing on `Current` being shaped by `Movement`'s `Attraction`."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "79be7838f74b47c0aa4cb1a4be840f90",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K12",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "gravitational lensing"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "The description includes 'gravitational lensing', which is an optical/elastic quantity (explicitly listed in Step 1b as blocklisted). This triggers the Strict Boundary Guard, resulting in scope_status = 'no_partner'."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "5d10a02fe2f34de3963effe5927cf847",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K12",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "Gravitational wells",
+              "gravitational lensing"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Qualitative principle without an explicit equation; involves complex gravitational and optical concepts not directly mappable under the given protocol."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K13",
+      "metadata": {
+        "item_id": "K13",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "53dc7443290b47158175b902c7f29e98",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K13",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Conservation identity: initial conscious energy equals final conscious energy with zero net change; no resistance or dissipation is present, so the structural equality is preserved without inversion.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E_i": "conscious energy (initial state)",
+              "E_f": "conscious energy (final state)",
+              "Delta_E_sys": "change in conscious energy of the system (equals zero)"
+            },
+            "reflected_formula": "conscious_energy_i = conscious_energy_f  (Δconscious_energy_sys = 0)",
+            "translation_t": "The conscious energy at the start equals the conscious energy at the finish; the change in conscious energy across the whole system is zero — nothing is lost and nothing is gained.",
+            "translation_template": "The {conscious energy} at the start equals the {conscious energy} at the finish; the change in {conscious energy} across the whole system is zero — nothing is lost and nothing is gained.",
+            "direction_flipped_d": "Across the whole system the total conscious energy neither grows nor shrinks; what arrives at the finish as conscious energy is exactly what was present at the start, leaving the net shift in conscious energy at zero.",
+            "rationale": "All active dynamical quantities are forms of energy, which maps to conscious energy in the Partner Lookup Table. No blocklisted thermal, molar, viscous, circuit, or acoustic/optical/elastic variables appear. No mechanical pressure is present, so the item is in_scope rather than crossing_interface. The law is a pure conservation identity — initial state equals final state with zero net change — carrying no resistance, dissipation, or exertion cost, so ruling is keep and two_level is false. The reflected formula preserves the additive equality exactly."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "8a8d63e1681f4cefaa6b0db58b9db4d4",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K13",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Energy maps directly across the primary partner table without crossing-boundary pressure terms or blocked domains.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E_i": "conscious energy",
+              "E_f": "conscious energy",
+              "Delta E_sys": "conscious energy"
+            },
+            "reflected_formula": "initial conscious energy equals final conscious energy, with no change in conscious energy of the whole system",
+            "translation_t": "In an isolated pattern, conscious energy remains the same from beginning to outcome.",
+            "translation_template": "In an isolated pattern, {conscious energy} remains the same from beginning to outcome.",
+            "direction_flipped_d": "Across an isolated pattern, conscious energy at the outcome matches conscious energy at the beginning, with no shift in conscious energy.",
+            "rationale": "This is a conservation law involving only energy terms. Energy is mapped in the lookup table to conscious energy. No blocked thermal, electrical, acoustic, optical, elastic, molar, viscous-flow, or pressure crossing variables appear dynamically, so it stays in scope. As a conservation identity, the algebraic structure is preserved and the ruling is keep."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "a3e64be7eb02481ea932e725443502c4",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K13",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "This conservation law establishes equivalence across states, implying no net change along any implicit axis or polarity.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E_i": "conscious energy",
+              "E_f": "conscious energy"
+            },
+            "reflected_formula": "conscious energy_initial = conscious energy_final",
+            "translation_t": "conscious energy initial equals conscious energy final.",
+            "translation_template": "{conscious energy} initial equals {conscious energy} final.",
+            "direction_flipped_d": "Final conscious energy equals initial conscious energy.",
+            "rationale": "The equation represents conservation of total energy. 'Energy' maps directly to 'conscious energy' in the Partner Lookup Table. No blocklisted thermal, molar, viscous, electrical, acoustic, optical, or elastic quantities are present, nor is mechanical pressure. Therefore, the item is 'in_scope'. As a conservation law, the 'ruling' is 'keep' and 'two_level' is 'false'. An axis_polarity_note is added to satisfy the validation rule for 'in_scope' items."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "42a105dd1cb64fdbb963a99f781ebe49",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K13",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Conservation law preserves polarity across initial and final states",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E_i": "conscious energy",
+              "E_f": "conscious energy",
+              "ΔE_sys": "conscious energy"
+            },
+            "reflected_formula": "conscious energy initial equals conscious energy final with no change in system conscious energy",
+            "translation_t": "conscious energy initial equals conscious energy final with no change in system conscious energy",
+            "translation_template": "{conscious energy} initial equals {conscious energy} final with no change in system {conscious energy}",
+            "direction_flipped_d": "Final conscious energy equals initial conscious energy with no change in system conscious energy",
+            "rationale": "The equation involves only energy (mapped to 'conscious energy') with no blocklisted variables, pressure, or open_joint concepts. It is a conservation law, so ruling is 'keep' and two_level is false. All terms map directly via the Partner Lookup Table."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "6d2662570ff84d469b3e28ed4ea8918d",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K13",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Conservation law maintains equivalence between initial and final states.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "E": "conscious energy"
+            },
+            "reflected_formula": "{conscious energy} = {conscious energy}",
+            "translation_t": "conscious energy remains conscious energy",
+            "translation_template": "{conscious energy} remains {conscious energy}",
+            "direction_flipped_d": "Conscious energy remains unchanged.",
+            "rationale": "The conservation of total energy in an isolated system translates to the conservation of conscious energy, reflecting the principle that the total conscious energy remains constant."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K14",
+      "metadata": {
+        "item_id": "K14",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "c608631a53274d9faf30cf6620c5ae80",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K14",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "The negative sign is an intrinsic structural feature of the reciprocal symmetry, not a dissipative inversion; it is preserved as-is in the reflected formula.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "F_AB": "Frequency_AB",
+              "F_BA": "Frequency_BA"
+            },
+            "reflected_formula": "Frequency_AB = -Frequency_BA",
+            "translation_t": "The Frequency one presence exerts on another is equal and opposite to the Frequency that second presence exerts back on the first — every act of Frequency is met by an identical Frequency returned in the opposite direction.",
+            "translation_template": "The {Frequency} one presence exerts on another is equal and opposite to the {Frequency} that second presence exerts back on the first — every act of {Frequency} is met by an identical {Frequency} returned in the opposite direction.",
+            "direction_flipped_d": "Whatever Frequency a presence sends outward toward another is simultaneously received as an equal Frequency flowing back — the two Frequency expressions are inseparable mirrors of each other, neither originating without the other already answering.",
+            "rationale": "K14 encodes Newton's third law: F_AB = −F_BA. After stripping the dimensionless prefactor −1, the sole active dynamical quantity is force, which maps to Frequency in the Partner Lookup Table. No Step-1b blocklisted variables appear. No mechanical pressure is present, so the item is in_scope rather than crossing_interface. The law is a pure action-reaction symmetry — a structural identity with no dissipation, resistance, or separation cost — so ruling = keep and two_level = false. The negative sign is preserved in the reflected formula as an intrinsic feature of the mutual opposition symmetry, not as a dissipative inversion."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "864f35e8e72b494f98d8ecd4b052b097",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K14",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Reciprocal force symmetry stays structurally aligned across the mirror; the negative sign marks opposite orientation, not a scope boundary crossing.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\vec{F}_{AB}": "Frequency",
+              "\\vec{F}_{BA}": "Frequency"
+            },
+            "reflected_formula": "The Frequency from one side equals the opposite-directed Frequency from the other side.",
+            "translation_t": "Frequency from one side is met by equal and opposite Frequency from the other side.",
+            "translation_template": "{Frequency} from one side is met by equal and opposite {Frequency} from the other side.",
+            "direction_flipped_d": "From the other side, Frequency returns in equal magnitude and opposite direction to the Frequency from the first side.",
+            "rationale": "The law contains only force terms, and force maps directly to Frequency in the primary table. No blocklisted thermal, electrical, acoustic, optical, elastic, gas, viscous-flow, or circuit variables appear, and no pressure interface is involved. Newton's third law is an action-reaction symmetry, so under Step 4 it is a keep ruling with no two-level inversion."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "schema_error",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "ae75af2ef5c44038a762353304431240",
+          "call_meta": {},
+          "parsed": null,
+          "errors": [
+            "Invalid slot tokens for arm A0: ['Frequency_AB', 'Frequency_BA']",
+            "Unresolved '{' or '}' braces in translation_t",
+            "Unresolved '{' or '}' braces in direction_flipped_d"
+          ]
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "50399307e53c4fb0996be0ae9727947d",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K14",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "action-reaction symmetry preserves polarity",
+            "unmapped_terms": [],
+            "variable_map": {
+              "F": "Frequency"
+            },
+            "reflected_formula": "Frequency = Frequency",
+            "translation_t": "Frequency equals Frequency",
+            "translation_template": "{Frequency} equals {Frequency}",
+            "direction_flipped_d": "Frequency mirrors Frequency",
+            "rationale": "Newton's third law involves only mechanical force (F), which maps to Frequency. No blocklisted variables are present. The law is an action-reaction symmetry, so ruling is 'keep' with two_level=false. All terms are mappable via the Partner Lookup Table, and no pressure is involved, so scope_status is 'in_scope'. direction_flipped_d now differs meaningfully from translation_t while preserving the same active target term set."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "22b3eda70cf2405cbf00ea1a68c520b3",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K14",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Action-reaction symmetry",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\vec{F}": "Frequency"
+            },
+            "reflected_formula": "{Frequency} = -{Frequency}",
+            "translation_t": "The Frequency of action equals the negative Frequency of reaction.",
+            "translation_template": "The {Frequency} of action equals the negative {Frequency} of reaction.",
+            "direction_flipped_d": "The negative Frequency of reaction equals the Frequency of action.",
+            "rationale": "Newton's third law maps forces to Frequency. It's an action-reaction symmetry, classified as 'in_scope' with 'keep' ruling."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K15",
+      "metadata": {
+        "item_id": "K15",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "46499150433c4d74b6d5bbefd9926b08",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K15",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Structural multiplicative identity: mass defined as density times volume maps cleanly to Movement defined as Desire times Vibrance; no resistance or dissipation present.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "m": "Movement",
+              "rho": "Desire",
+              "V": "Vibrance"
+            },
+            "reflected_formula": "Movement = Desire × Vibrance",
+            "translation_t": "Movement equals Desire times Vibrance.",
+            "translation_template": "{Movement} equals {Desire} times {Vibrance}.",
+            "direction_flipped_d": "Vibrance scaled by Desire yields Movement.",
+            "rationale": "All three active dynamical quantities map directly via the Partner Lookup Table: mass to Movement, density to Desire, volume to Vibrance. No blocklisted thermal, molar, viscous, circuit, or acoustic variables appear. No mechanical pressure is present, so no crossing-interface classification is needed. The equation m = ρV is a pure structural multiplicative definitional identity with no resistance, dissipation, or exertion cost, giving ruling = keep and two_level = false. The reflected formula Movement = Desire × Vibrance preserves the original algebraic structure exactly."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1b90e3fd269048d2b52dc291df94c58c",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K15",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Direct multiplicative identity within mapped quantities; no crossing-only pressure term or blocklisted active variable appears.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "m": "Movement",
+              "rho": "Desire",
+              "V": "Vibrance"
+            },
+            "reflected_formula": "Movement = Desire × Vibrance",
+            "translation_t": "Movement is the product of Desire and Vibrance.",
+            "translation_template": "{Movement} is the product of {Desire} and {Vibrance}.",
+            "direction_flipped_d": "Desire combined with Vibrance yields Movement.",
+            "rationale": "After removing no prefactors, the active variables are mass, density, and volume. None are blocklisted under the strict boundary guard. Pressure is not involved, so this is not a crossing interface case. All variables map directly through the lookup table: mass to Movement, density to Desire, and volume to Vibrance. The equation is a structural multiplicative identity, so the formula shape is kept and the ruling is keep with two_level false."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 3,
+          "from_cache": false,
+          "call_id": "8f6fd5de056745548aeb99e2e370de7c",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K15",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Direct definitional relationship.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "m": "Movement",
+              "\\rho": "Desire",
+              "V": "Vibrance"
+            },
+            "reflected_formula": "Movement = Desire * Vibrance",
+            "translation_t": "Movement is the product of Desire and Vibrance.",
+            "translation_template": "{Movement} is the product of {Desire} and {Vibrance}.",
+            "direction_flipped_d": "Movement arises from Desire and Vibrance.",
+            "rationale": "Step 1 (Strict Boundary Guard): No dimensionless prefactors or static constants to strip. No active dynamical blocklisted quantities (thermal, molar, viscous, electric, acoustic, optical, elastic) are present in `m = ρV`. Thus, not 'no_partner'.\nStep 2 (Open Joints): The equation is not one of the specific 'open_joint' cases. Thus, not 'open_joint'.\nStep 3 (Pure Mechanical Pressure at the Crossing): No blocklisted quantities are present, and the equation does not involve mechanical 'pressure'. Therefore, it is classified as 'in_scope'.\nStep 4 (Condition Reading & Algebraic Preservation): The equation `m = ρV` is a structural definition (mass is defined as density times volume). This falls under 'structural definitions', which dictates a 'keep' ruling. Since the ruling is 'keep', 'two_level' is set to 'false'. Variables are mapped: `m` (mass) to `Movement`, `ρ` (density) to `Desire`, and `V` (volume) to `Vibrance`."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "be3f19b9619342c0aaef6085a3cbeaa3",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K15",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "positive alignment (structural identity)",
+            "unmapped_terms": [],
+            "variable_map": {
+              "m": "Movement",
+              "ρ": "Desire",
+              "V": "Vibrance"
+            },
+            "reflected_formula": "Movement = Desire × Vibrance",
+            "translation_t": "Movement equals Desire times Vibrance",
+            "translation_template": "{Movement} equals {Desire} times {Vibrance}",
+            "direction_flipped_d": "Desire times Vibrance equals Movement",
+            "rationale": "The equation involves only mass, density, and volume, all of which have direct mappings in the Partner Lookup Table (mass -> Movement, density -> Desire, volume -> Vibrance). No blocklisted variables or pressure are present. The law is a structural definition, so ruling is 'keep' and two_level is false. All fields comply with D2 formatting rules."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "9119a0e8bf7a4e48a73986a455db658b",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K15",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "aligned",
+            "unmapped_terms": [],
+            "variable_map": {
+              "m": "Movement",
+              "\\rho": "Desire",
+              "V": "Vibrance"
+            },
+            "reflected_formula": "Movement = Desire × Vibrance",
+            "translation_t": "Movement is the product of Desire and Vibrance.",
+            "translation_template": "{Movement} is the product of {Desire} and {Vibrance}.",
+            "direction_flipped_d": "The product of Desire and Vibrance gives Movement.",
+            "rationale": "The equation m = \\rho V is a simple definition mapping mass to the product of density and volume. All variables map directly to their partners."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K16",
+      "metadata": {
+        "item_id": "K16",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "68d79e4002984cf396206b46da937fac",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K16",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "Net force overcomes inertial resistance of mass to produce acceleration; the law encodes costly exertion against resistance, so the mirror inverts the polarity: Frequency arises not by pushing against Movement but by Movement freely yielding Appreciation, reversing the resistance-cost axis.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "F_net": "Frequency",
+              "m": "Movement",
+              "a": "Appreciation"
+            },
+            "reflected_formula": "Frequency = Movement × Appreciation",
+            "translation_t": "Frequency equals Movement times Appreciation. Where physical law demands that force must overcome the inertia of mass to produce acceleration at a cost, the mirror reveals that Frequency arises as Movement freely and openly yields Appreciation — resistance dissolves, and the relationship becomes one of willing, effortless co-arising rather than costly exertion.",
+            "translation_template": "{Frequency} equals {Movement} times {Appreciation}. Where physical law demands that force must overcome the inertia of mass to produce acceleration at a cost, the mirror reveals that {Frequency} arises as {Movement} freely and openly yields {Appreciation} — resistance dissolves, and the relationship becomes one of willing, effortless co-arising rather than costly exertion.",
+            "direction_flipped_d": "When Appreciation flows through Movement without resistance, Frequency is the natural expression that emerges — not wrested from opposition but offered forward, so that Movement and Appreciation together call Frequency into being rather than Frequency forcing its way through Movement to reach Appreciation.",
+            "rationale": "K16 encodes Newton's second law F_net = m·a. Step 1b finds no blocklisted thermal, molar, viscous, circuit, or acoustic/optical/elastic quantities. Step 2 finds no open-joint match. Step 3 finds no mechanical pressure, so scope_status is in_scope. Variable mapping: net force → Frequency, mass → Movement, acceleration → Appreciation. Step 4: the law requires force to exert against inertial resistance of mass to produce acceleration — a paradigmatic resistance-cost structure — so ruling = invert. It is simultaneously a productive operational definition whose application tracks that costly exertion, so two_level = true. formula_shape = keeps; the algebraic structure Frequency = Movement × Appreciation is preserved without inversion of quotients or sign flips."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "233eea225d224b8788fd937a193e258f",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K16",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Direct mechanical dynamical identity with all active variables mapped inside the primary table; no crossing pressure term and no blocklisted thermal, circuit, viscous, acoustic, optical, elastic, or molar variables appear.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "net force": "Frequency",
+              "mass": "Movement",
+              "acceleration": "Appreciation"
+            },
+            "reflected_formula": "Frequency equals Movement times Appreciation.",
+            "translation_t": "Frequency equals Movement times Appreciation.",
+            "translation_template": "{Frequency} equals {Movement} times {Appreciation}.",
+            "direction_flipped_d": "Movement times Appreciation becomes Frequency.",
+            "rationale": "The equation contains only net force, mass, and acceleration. Each has a direct partner mapping: net force -> Frequency, mass -> Movement, acceleration -> Appreciation. No pressure appears, so it is not a crossing interface case. No blocklisted active variables from the strict boundary guard appear, so it remains in scope. As Newton's second law is a structural dynamical relation rather than a dissipative or resistance-cost law, the ruling is keep and two_level is false."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "b28f51da93f446c4acf60506c7e14094",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K16",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "invert",
+            "two_level": true,
+            "axis_polarity_note": "The direction of Net Frequency aligns with the direction of Appreciation.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "F_net": "Frequency",
+              "m": "Movement",
+              "a": "Appreciation"
+            },
+            "reflected_formula": "Frequency = Movement * Appreciation",
+            "translation_t": "Net Frequency causes Movement to undergo Appreciation.",
+            "translation_template": "Net {Frequency} causes {Movement} to undergo {Appreciation}.",
+            "direction_flipped_d": "The Appreciation of Movement is directly proportional to Net Frequency.",
+            "rationale": "Newton's second law relates net force, mass, and acceleration. No blocklisted terms (Step 1b) are present, and no pressure concepts are involved (Step 3), so the item is classified as 'in_scope'. All active variables map directly to target partners: 'net force' to 'Frequency', 'mass' to 'Movement', and 'acceleration' to 'Appreciation'. The formula shape 'keeps' the algebraic structure. The ruling is 'invert' and 'two_level' is true because the law describes the exertion of force to overcome inertia (Movement) to produce a change in motion (Appreciation), which represents a productive operational definition tracking costly exertion against resistance (inertia). The axis polarity note indicates that the direction of the applied Frequency dictates the direction of the resulting Appreciation."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "fe17bce626db49c48837249d685b5d73",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K16",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "positive alignment",
+            "unmapped_terms": [],
+            "variable_map": {
+              "net force": "Frequency",
+              "mass": "Movement",
+              "acceleration": "Appreciation"
+            },
+            "reflected_formula": "Frequency = Movement × Appreciation",
+            "translation_t": "Frequency equals Movement times Appreciation",
+            "translation_template": "{Frequency} equals {Movement} times {Appreciation}",
+            "direction_flipped_d": "Movement times Appreciation equals Frequency",
+            "rationale": "The equation involves only mechanical quantities (net force, mass, acceleration) with no blocklisted thermal, molar, viscous, electric, acoustic, or optical variables. All variables map directly via the Partner Lookup Table (net force -> Frequency, mass -> Movement, acceleration -> Appreciation). The law is a structural definition (F=ma) with no dissipative/resistive context, so ruling is 'keep' and two_level is false. No pressure or crossing-boundary concepts are present, so scope_status is 'in_scope'."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "7384016ef7274046906906c50b2ef2ee",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K16",
+            "scope_status": "in_scope",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Newton's second law aligns with the fundamental principles of motion and force.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "\\vec{F}_{\\text{net}}": "Frequency",
+              "m": "Movement",
+              "\\vec{a}": "Appreciation"
+            },
+            "reflected_formula": "{Frequency} = {Movement} × {Appreciation}",
+            "translation_t": "Frequency equals Movement times Appreciation",
+            "translation_template": "{Frequency} equals {Movement} times {Appreciation}",
+            "direction_flipped_d": "Movement times Appreciation equals Frequency",
+            "rationale": "Newton's second law of motion is classified as 'in_scope' as it involves mechanical quantities that map directly to their partners. The equation is preserved in form and represents a fundamental law, so 'ruling' is 'keep'."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "K17",
+      "metadata": {
+        "item_id": "K17",
+        "expected_book_ruling": "keep",
+        "chapter_or_context": ""
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ddeb35b4bd8347698b5637754000de82",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K17",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Mechanical pressure at both states maps to felt gap at the Crossing interface; volume at both states maps to Vibrance inside the Current. The constant-product equilibrium is preserved across the reflection.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "P_1": "felt gap (state one)",
+              "V_1": "Vibrance (state one)",
+              "P_2": "felt gap (state two)",
+              "V_2": "Vibrance (state two)"
+            },
+            "reflected_formula": "felt_gap_1 × Vibrance_1 = felt_gap_2 × Vibrance_2",
+            "translation_t": "When felt gap at one state multiplied by Vibrance at that state equals felt gap at a second state multiplied by Vibrance at that second state, the product of boundary resistance and receptive aliveness is conserved across the Crossing.",
+            "translation_template": "When {felt_gap} at one state multiplied by {Vibrance} at that state equals {felt_gap} at a second state multiplied by {Vibrance} at that second state, the product of boundary resistance and receptive aliveness is conserved across the Crossing.",
+            "direction_flipped_d": "As Vibrance expands from one state to the next, felt gap contracts in exact proportion, so that the living product of felt gap and Vibrance remains unchanged across every crossing of the boundary.",
+            "rationale": "T and n are stripped as static background constants per Rule 1a (declared fixed in the trailing parenthetical). The only active dynamical quantities in P₁V₁ = P₂V₂ are mechanical pressures and volumes — no Step-1b blocklisted variables appear. Mechanical pressure reflects at the Crossing interface as felt gap; volume maps to Vibrance via the Partner Lookup Table. The law is a constant-product equilibrium identity (neither state requires exertion against resistance in the formula itself), so ruling = keep and two_level = false. Formula shape is preserved algebraically."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "824225c75b2445cfa60b3812b45ad367",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K17",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Mechanical pressure reflects only at the crossing as felt gap; volume maps to Vibrance. The constant qualifiers are stripped before scope checking.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "P_1": "felt gap",
+              "V_1": "Vibrance",
+              "P_2": "felt gap",
+              "V_2": "Vibrance"
+            },
+            "reflected_formula": "felt gap at one state times Vibrance at that state equals felt gap at another state times Vibrance at that state.",
+            "translation_t": "When felt gap pairs with Vibrance in one state, it matches felt gap paired with Vibrance in another state.",
+            "translation_template": "When {felt_gap} pairs with {Vibrance} in one state, it matches {felt_gap} paired with {Vibrance} in another state.",
+            "direction_flipped_d": "Across states, Vibrance with felt gap remains equal to Vibrance with felt gap.",
+            "rationale": "After stripping the constant side conditions for temperature and amount of gas, the active dynamical variables in the equation are only pressure and volume. No blocklisted thermal or molar variable remains active inside the law itself. Because mechanical pressure is present, the item is classified as crossing_interface rather than in_scope. The equation is a constant-product equilibrium law, so the algebraic shape is kept and the ruling is keep."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "428801373aa64da4a0e7878c98613712",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K17",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Inverse relationship between felt gap and Vibrance across the interface.",
+            "unmapped_terms": [],
+            "variable_map": {
+              "P_1": "felt gap",
+              "V_1": "Vibrance",
+              "P_2": "felt gap",
+              "V_2": "Vibrance"
+            },
+            "reflected_formula": "{felt_gap}_1 {Vibrance}_1 = {felt_gap}_2 {Vibrance}_2",
+            "translation_t": "The initial felt gap multiplied by the initial Vibrance equals the final felt gap multiplied by the final Vibrance.",
+            "translation_template": "The initial {felt_gap} multiplied by the initial {Vibrance} equals the final {felt_gap} multiplied by the final {Vibrance}.",
+            "direction_flipped_d": "The initial felt gap divided by the final felt gap equals the final Vibrance divided by the initial Vibrance.",
+            "rationale": "Boyle's Law describes the relationship between mechanical pressure and volume. The equation explicitly states that temperature (T) and moles (n) are constant, meaning they are not active dynamical variables within the formula. Therefore, Step 1b's blocklist for thermal or molar variables is not triggered. Since mechanical pressure is present and no blocklisted active variables are, the item is classified as 'crossing_interface'. Pressure maps to 'felt gap' and volume maps to 'Vibrance'. Boyle's Law represents a constant-product equilibrium, leading to a 'keep' ruling and 'two_level' set to 'false'. The inverse relationship between pressure and volume (felt gap and Vibrance) is noted for the axis polarity."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "359868bd4a114d1989bf12df5f7c138e",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K17",
+            "scope_status": "no_partner",
+            "formula_shape": "none",
+            "ruling": "no partner",
+            "two_level": false,
+            "axis_polarity_note": "",
+            "unmapped_terms": [
+              "T",
+              "n"
+            ],
+            "variable_map": {},
+            "reflected_formula": "",
+            "translation_t": "",
+            "translation_template": "",
+            "direction_flipped_d": "",
+            "rationale": "Boyle's law involves active thermal variable T (temperature) and active molar quantity n (amount of gas), which are explicitly blocklisted in Step 1b. Despite the presence of mechanical pressure P, the presence of these blocklisted variables triggers the Strict Boundary Guard, resulting in scope_status = no_partner."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 2,
+          "from_cache": false,
+          "call_id": "1b87bbf564484db39bb4d91e0a8f30c0",
+          "call_meta": {},
+          "parsed": {
+            "item_id": "K17",
+            "scope_status": "crossing_interface",
+            "formula_shape": "keeps",
+            "ruling": "keep",
+            "two_level": false,
+            "axis_polarity_note": "Mechanical pressure at the boundary",
+            "unmapped_terms": [],
+            "variable_map": {
+              "P": "{felt_gap}",
+              "V": "{Vibrance}"
+            },
+            "reflected_formula": "{felt_gap} times {Vibrance} is constant",
+            "translation_t": "felt gap times Vibrance is constant",
+            "translation_template": "{felt_gap} times {Vibrance} is constant",
+            "direction_flipped_d": "The vibrance times the felt gap remains constant",
+            "rationale": "Boyle's law translated using the Crossing-Boundary extension, mapping pressure to felt gap and volume to vibrance."
+          },
+          "errors": []
+        }
+      }
+    }
+  ]
+}

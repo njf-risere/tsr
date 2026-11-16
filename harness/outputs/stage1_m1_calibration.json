@@ -1,0 +1,612 @@
+{
+  "A0": {
+    "total_items": 17,
+    "consensus_4_of_5_count": 15,
+    "consensus_exact_match_count": 12,
+    "schema_error_count": 2,
+    "per_model_schema_errors": {
+      "claude-sonnet-4.6": 0,
+      "gpt-5.4-fast": 0,
+      "gemini-2.5-flash": 0,
+      "mistral-medium-3.5": 0,
+      "llama-4-maverick": 2
+    },
+    "per_model_accuracy": {
+      "claude-sonnet-4.6": 0.7647,
+      "gpt-5.4-fast": 0.6471,
+      "gemini-2.5-flash": 0.8235,
+      "mistral-medium-3.5": 0.8824,
+      "llama-4-maverick": 0.5294
+    },
+    "items": [
+      {
+        "item_id": "K01",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "keep"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 5,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K02",
+        "expected_book_ruling": "invert",
+        "votes": {
+          "claude-sonnet-4.6": "invert",
+          "gpt-5.4-fast": "invert",
+          "gemini-2.5-flash": "invert",
+          "mistral-medium-3.5": "invert",
+          "llama-4-maverick": "invert"
+        },
+        "majority_ruling": "invert",
+        "majority_count": 5,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K03",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "invert",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "keep"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 4,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K04",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "no partner"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 4,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K05",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "invert",
+          "gpt-5.4-fast": "invert",
+          "gemini-2.5-flash": "invert",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "invert"
+        },
+        "majority_ruling": "invert",
+        "majority_count": 4,
+        "consensus_4_of_5": true,
+        "consensus_correct": false,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K06",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "invert",
+          "gpt-5.4-fast": "invert",
+          "gemini-2.5-flash": "invert",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "invert"
+        },
+        "majority_ruling": "invert",
+        "majority_count": 4,
+        "consensus_4_of_5": true,
+        "consensus_correct": false,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K07",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "keep"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 5,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K08",
+        "expected_book_ruling": "invert",
+        "votes": {
+          "claude-sonnet-4.6": "invert",
+          "gpt-5.4-fast": "invert",
+          "gemini-2.5-flash": "invert",
+          "mistral-medium-3.5": "invert",
+          "llama-4-maverick": "SCHEMA_ERROR"
+        },
+        "majority_ruling": "invert",
+        "majority_count": 4,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {
+          "llama-4-maverick": [
+            "Invalid slot tokens for arm A0: ['Current squared', 'Current squared']",
+            "Digits/superscript digits forbidden in translation_template"
+          ]
+        }
+      },
+      {
+        "item_id": "K09",
+        "expected_book_ruling": "invert",
+        "votes": {
+          "claude-sonnet-4.6": "invert",
+          "gpt-5.4-fast": "invert",
+          "gemini-2.5-flash": "invert",
+          "mistral-medium-3.5": "invert",
+          "llama-4-maverick": "SCHEMA_ERROR"
+        },
+        "majority_ruling": "invert",
+        "majority_count": 4,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {
+          "llama-4-maverick": [
+            "Unwrapped translation_template mismatch vs translation_t: 'rise per Expansion is less than Current (for Movement greater than)' != 'rise per Expansion is less than Current for nonzero Movement'"
+          ]
+        }
+      },
+      {
+        "item_id": "K10",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "invert",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "keep"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 4,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K11",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "keep"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 5,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K12",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "invert",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "no partner"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 3,
+        "consensus_4_of_5": false,
+        "consensus_correct": false,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K13",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "keep"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 5,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K14",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "keep"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 5,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K15",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "no partner",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "keep"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 4,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K16",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "invert",
+          "llama-4-maverick": "invert"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 3,
+        "consensus_4_of_5": false,
+        "consensus_correct": false,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K17",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "no partner",
+          "gpt-5.4-fast": "no partner",
+          "gemini-2.5-flash": "no partner",
+          "mistral-medium-3.5": "no partner",
+          "llama-4-maverick": "no partner"
+        },
+        "majority_ruling": "no partner",
+        "majority_count": 5,
+        "consensus_4_of_5": true,
+        "consensus_correct": false,
+        "schema_errors": {}
+      }
+    ]
+  },
+  "A3-1": {
+    "total_items": 17,
+    "consensus_4_of_5_count": 14,
+    "consensus_exact_match_count": 12,
+    "schema_error_count": 3,
+    "per_model_schema_errors": {
+      "claude-sonnet-4.6": 0,
+      "gpt-5.4-fast": 0,
+      "gemini-2.5-flash": 0,
+      "mistral-medium-3.5": 0,
+      "llama-4-maverick": 3
+    },
+    "per_model_accuracy": {
+      "claude-sonnet-4.6": 0.7059,
+      "gpt-5.4-fast": 0.7647,
+      "gemini-2.5-flash": 0.8235,
+      "mistral-medium-3.5": 0.8824,
+      "llama-4-maverick": 0.5294
+    },
+    "items": [
+      {
+        "item_id": "K01",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "keep"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 5,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K02",
+        "expected_book_ruling": "invert",
+        "votes": {
+          "claude-sonnet-4.6": "invert",
+          "gpt-5.4-fast": "invert",
+          "gemini-2.5-flash": "invert",
+          "mistral-medium-3.5": "invert",
+          "llama-4-maverick": "invert"
+        },
+        "majority_ruling": "invert",
+        "majority_count": 5,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K03",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "invert",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "keep"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 4,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K04",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "invert",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "no partner"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 3,
+        "consensus_4_of_5": false,
+        "consensus_correct": false,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K05",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "invert",
+          "gpt-5.4-fast": "invert",
+          "gemini-2.5-flash": "invert",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "invert"
+        },
+        "majority_ruling": "invert",
+        "majority_count": 4,
+        "consensus_4_of_5": true,
+        "consensus_correct": false,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K06",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "invert",
+          "gpt-5.4-fast": "invert",
+          "gemini-2.5-flash": "invert",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "SCHEMA_ERROR"
+        },
+        "majority_ruling": "invert",
+        "majority_count": 3,
+        "consensus_4_of_5": false,
+        "consensus_correct": false,
+        "schema_errors": {
+          "llama-4-maverick": [
+            "variable_map must be a dict mapping non-empty strings to non-empty strings"
+          ]
+        }
+      },
+      {
+        "item_id": "K07",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "SCHEMA_ERROR"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 4,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {
+          "llama-4-maverick": [
+            "Unwrapped translation_template mismatch vs translation_t: 'Vibration = Reflected FrequencyFrequency' != 'Vibration equals Reflected times Frequency times Frequency'"
+          ]
+        }
+      },
+      {
+        "item_id": "K08",
+        "expected_book_ruling": "invert",
+        "votes": {
+          "claude-sonnet-4.6": "invert",
+          "gpt-5.4-fast": "invert",
+          "gemini-2.5-flash": "invert",
+          "mistral-medium-3.5": "invert",
+          "llama-4-maverick": "SCHEMA_ERROR"
+        },
+        "majority_ruling": "invert",
+        "majority_count": 4,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {
+          "llama-4-maverick": [
+            "Unwrapped translation_template mismatch vs translation_t: 'Vibration = (gamma - ) Reflected, \\\\quad Vibration = gamma Reflected' != 'Vibration and Vibration'",
+            "direction_flipped_d is identical to translation_t (no polarity flip)"
+          ]
+        }
+      },
+      {
+        "item_id": "K09",
+        "expected_book_ruling": "invert",
+        "votes": {
+          "claude-sonnet-4.6": "invert",
+          "gpt-5.4-fast": "invert",
+          "gemini-2.5-flash": "invert",
+          "mistral-medium-3.5": "invert",
+          "llama-4-maverick": "invert"
+        },
+        "majority_ruling": "invert",
+        "majority_count": 5,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K10",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "invert",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "keep"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 4,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K11",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "no partner"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 4,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K12",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "keep"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 5,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K13",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "keep"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 5,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K14",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "keep"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 5,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K15",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "keep",
+          "llama-4-maverick": "keep"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 5,
+        "consensus_4_of_5": true,
+        "consensus_correct": true,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K16",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "keep",
+          "gpt-5.4-fast": "keep",
+          "gemini-2.5-flash": "keep",
+          "mistral-medium-3.5": "invert",
+          "llama-4-maverick": "invert"
+        },
+        "majority_ruling": "keep",
+        "majority_count": 3,
+        "consensus_4_of_5": false,
+        "consensus_correct": false,
+        "schema_errors": {}
+      },
+      {
+        "item_id": "K17",
+        "expected_book_ruling": "keep",
+        "votes": {
+          "claude-sonnet-4.6": "no partner",
+          "gpt-5.4-fast": "no partner",
+          "gemini-2.5-flash": "no partner",
+          "mistral-medium-3.5": "no partner",
+          "llama-4-maverick": "no partner"
+        },
+        "majority_ruling": "no partner",
+        "majority_count": 5,
+        "consensus_4_of_5": true,
+        "consensus_correct": false,
+        "schema_errors": {}
+      }
+    ]
+  }
+}

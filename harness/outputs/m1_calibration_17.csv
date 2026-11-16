@@ -1,0 +1,35 @@
+arm_id,item_id,row_num,provenance,expected_book_ruling,has_mass_flag,definition_flag,costs_count,claude_sonnet_4_6,gpt_5_4_fast,gemini_2_5_flash,mistral_medium_3_5,llama_4_maverick,majority_ruling,majority_count,consensus_4_of_5,consensus_correct,schema_error_models
+A0,K01,1,applied_later,keep,False,True,0,keep,keep,keep,keep,keep,keep,5,True,True,
+A0,K02,2,applied_later,invert,False,False,1,invert,invert,invert,invert,invert,invert,5,True,True,
+A0,K03,3,applied_later,keep,False,True,0,invert,keep,keep,keep,keep,keep,4,True,True,
+A0,K04,4,applied_later,keep,False,True,0,keep,keep,keep,keep,no partner,keep,4,True,True,
+A0,K05,5,applied_later,keep,False,False,0,invert,invert,invert,keep,invert,invert,4,True,False,
+A0,K06,6,applied_later,keep,False,False,0,invert,invert,invert,keep,invert,invert,4,True,False,
+A0,K07,7,construction,keep,True,True,0,keep,keep,keep,keep,keep,keep,5,True,True,
+A0,K08,8,applied_later,invert,True,False,1,invert,invert,invert,invert,SCHEMA_ERROR,invert,4,True,True,llama-4-maverick
+A0,K09,9,applied_later,invert,True,False,1,invert,invert,invert,invert,SCHEMA_ERROR,invert,4,True,True,llama-4-maverick
+A0,K10,10,applied_later,keep,False,True,0,keep,invert,keep,keep,keep,keep,4,True,True,
+A0,K11,11,applied_later,keep,True,False,0,keep,keep,keep,keep,keep,keep,5,True,True,
+A0,K12,12,applied_later,keep,True,False,0,keep,invert,keep,keep,no partner,keep,3,False,False,
+A0,K13,13,applied_later,keep,False,True,0,keep,keep,keep,keep,keep,keep,5,True,True,
+A0,K14,14,construction,keep,False,True,0,keep,keep,keep,keep,keep,keep,5,True,True,
+A0,K15,15,construction,keep,True,True,0,keep,no partner,keep,keep,keep,keep,4,True,True,
+A0,K16,16,construction,keep,True,True,0,keep,keep,keep,invert,invert,keep,3,False,False,
+A0,K17,17,applied_later,keep,True,False,0,no partner,no partner,no partner,no partner,no partner,no partner,5,True,False,
+A3-1,K01,1,applied_later,keep,False,True,0,keep,keep,keep,keep,keep,keep,5,True,True,
+A3-1,K02,2,applied_later,invert,False,False,1,invert,invert,invert,invert,invert,invert,5,True,True,
+A3-1,K03,3,applied_later,keep,False,True,0,invert,keep,keep,keep,keep,keep,4,True,True,
+A3-1,K04,4,applied_later,keep,False,True,0,invert,keep,keep,keep,no partner,keep,3,False,False,
+A3-1,K05,5,applied_later,keep,False,False,0,invert,invert,invert,keep,invert,invert,4,True,False,
+A3-1,K06,6,applied_later,keep,False,False,0,invert,invert,invert,keep,SCHEMA_ERROR,invert,3,False,False,llama-4-maverick
+A3-1,K07,7,construction,keep,True,True,0,keep,keep,keep,keep,SCHEMA_ERROR,keep,4,True,True,llama-4-maverick
+A3-1,K08,8,applied_later,invert,True,False,1,invert,invert,invert,invert,SCHEMA_ERROR,invert,4,True,True,llama-4-maverick
+A3-1,K09,9,applied_later,invert,True,False,1,invert,invert,invert,invert,invert,invert,5,True,True,
+A3-1,K10,10,applied_later,keep,False,True,0,keep,invert,keep,keep,keep,keep,4,True,True,
+A3-1,K11,11,applied_later,keep,True,False,0,keep,keep,keep,keep,no partner,keep,4,True,True,
+A3-1,K12,12,applied_later,keep,True,False,0,keep,keep,keep,keep,keep,keep,5,True,True,
+A3-1,K13,13,applied_later,keep,False,True,0,keep,keep,keep,keep,keep,keep,5,True,True,
+A3-1,K14,14,construction,keep,False,True,0,keep,keep,keep,keep,keep,keep,5,True,True,
+A3-1,K15,15,construction,keep,True,True,0,keep,keep,keep,keep,keep,keep,5,True,True,
+A3-1,K16,16,construction,keep,True,True,0,keep,keep,keep,invert,invert,keep,3,False,False,
+A3-1,K17,17,applied_later,keep,True,False,0,no partner,no partner,no partner,no partner,no partner,no partner,5,True,False,

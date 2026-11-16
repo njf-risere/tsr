@@ -1,0 +1,146 @@
+substage,item_id,stratum,model_id,status,expected_book_ruling,d3a_scope_status,d3a_ruling,d3a_matches_expected,commit2_m1_a0_ruling,commit2_m1_a0_matches_expected,d3a_consensus_4_of_5_correct,commit2_m1_a0_consensus_4_of_5_correct,source_ref,score_V_A0,score_V_Ssyn,score_V_A3,rank_V_A0,rank_V_Ssyn,rank_V_A3,best_variant,worst_variant
+D3a_narrative_cal17,K01,applied_later,claude-sonnet-4.6,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K01,applied_later,gpt-5.4-fast,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K01,applied_later,gemini-2.5-flash,ok,keep,no_partner,no partner,False,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K01,applied_later,mistral-medium-3.5,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K01,applied_later,llama-4-maverick,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K02,applied_later,claude-sonnet-4.6,ok,invert,in_scope,invert,True,invert,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K02,applied_later,gpt-5.4-fast,ok,invert,in_scope,invert,True,invert,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K02,applied_later,gemini-2.5-flash,ok,invert,in_scope,invert,True,invert,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K02,applied_later,mistral-medium-3.5,ok,invert,in_scope,invert,True,invert,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K02,applied_later,llama-4-maverick,ok,invert,in_scope,keep,False,invert,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K03,applied_later,claude-sonnet-4.6,ok,keep,in_scope,keep,True,invert,False,True,True,,,,,,,,,
+D3a_narrative_cal17,K03,applied_later,gpt-5.4-fast,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K03,applied_later,gemini-2.5-flash,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K03,applied_later,mistral-medium-3.5,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K03,applied_later,llama-4-maverick,ok,keep,open_joint,indeterminate,False,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K04,applied_later,claude-sonnet-4.6,ok,keep,in_scope,keep,True,keep,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K04,applied_later,gpt-5.4-fast,ok,keep,in_scope,keep,True,keep,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K04,applied_later,gemini-2.5-flash,ok,keep,in_scope,keep,True,keep,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K04,applied_later,mistral-medium-3.5,ok,keep,no_partner,no partner,False,keep,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K04,applied_later,llama-4-maverick,ok,keep,no_partner,no partner,False,no partner,False,False,True,,,,,,,,,
+D3a_narrative_cal17,K05,applied_later,claude-sonnet-4.6,ok,keep,in_scope,keep,True,invert,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K05,applied_later,gpt-5.4-fast,ok,keep,in_scope,invert,False,invert,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K05,applied_later,gemini-2.5-flash,ok,keep,in_scope,invert,False,invert,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K05,applied_later,mistral-medium-3.5,ok,keep,in_scope,invert,False,keep,True,False,False,,,,,,,,,
+D3a_narrative_cal17,K05,applied_later,llama-4-maverick,ok,keep,in_scope,invert,False,invert,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K06,applied_later,claude-sonnet-4.6,ok,keep,in_scope,invert,False,invert,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K06,applied_later,gpt-5.4-fast,ok,keep,in_scope,invert,False,invert,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K06,applied_later,gemini-2.5-flash,ok,keep,in_scope,invert,False,invert,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K06,applied_later,mistral-medium-3.5,ok,keep,in_scope,invert,False,keep,True,False,False,,,,,,,,,
+D3a_narrative_cal17,K06,applied_later,llama-4-maverick,ok,keep,in_scope,invert,False,invert,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K07,construction,claude-sonnet-4.6,ok,keep,in_scope,keep,True,keep,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K07,construction,gpt-5.4-fast,ok,keep,in_scope,keep,True,keep,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K07,construction,gemini-2.5-flash,ok,keep,in_scope,keep,True,keep,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K07,construction,mistral-medium-3.5,ok,keep,in_scope,invert,False,keep,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K07,construction,llama-4-maverick,ok,keep,no_partner,no partner,False,keep,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K08,applied_later,claude-sonnet-4.6,ok,invert,in_scope,keep,False,invert,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K08,applied_later,gpt-5.4-fast,ok,invert,no_partner,no partner,False,invert,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K08,applied_later,gemini-2.5-flash,ok,invert,in_scope,invert,True,invert,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K08,applied_later,mistral-medium-3.5,ok,invert,no_partner,no partner,False,invert,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K08,applied_later,llama-4-maverick,ok,invert,in_scope,keep,False,SCHEMA_ERROR,False,False,True,,,,,,,,,
+D3a_narrative_cal17,K09,applied_later,claude-sonnet-4.6,ok,invert,in_scope,invert,True,invert,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K09,applied_later,gpt-5.4-fast,ok,invert,in_scope,invert,True,invert,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K09,applied_later,gemini-2.5-flash,ok,invert,in_scope,invert,True,invert,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K09,applied_later,mistral-medium-3.5,ok,invert,in_scope,invert,True,invert,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K09,applied_later,llama-4-maverick,ok,invert,in_scope,invert,True,SCHEMA_ERROR,False,True,True,,,,,,,,,
+D3a_narrative_cal17,K10,applied_later,claude-sonnet-4.6,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K10,applied_later,gpt-5.4-fast,ok,keep,in_scope,keep,True,invert,False,True,True,,,,,,,,,
+D3a_narrative_cal17,K10,applied_later,gemini-2.5-flash,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K10,applied_later,mistral-medium-3.5,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K10,applied_later,llama-4-maverick,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K11,applied_later,claude-sonnet-4.6,ok,keep,in_scope,invert,False,keep,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K11,applied_later,gpt-5.4-fast,ok,keep,in_scope,keep,True,keep,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K11,applied_later,gemini-2.5-flash,ok,keep,in_scope,invert,False,keep,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K11,applied_later,mistral-medium-3.5,schema_error,keep,SCHEMA_ERROR,SCHEMA_ERROR,False,keep,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K11,applied_later,llama-4-maverick,ok,keep,in_scope,keep,True,keep,True,False,True,,,,,,,,,
+D3a_narrative_cal17,K12,applied_later,claude-sonnet-4.6,ok,keep,open_joint,indeterminate,False,keep,True,False,False,,,,,,,,,
+D3a_narrative_cal17,K12,applied_later,gpt-5.4-fast,ok,keep,no_partner,no partner,False,invert,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K12,applied_later,gemini-2.5-flash,ok,keep,in_scope,invert,False,keep,True,False,False,,,,,,,,,
+D3a_narrative_cal17,K12,applied_later,mistral-medium-3.5,ok,keep,in_scope,keep,True,keep,True,False,False,,,,,,,,,
+D3a_narrative_cal17,K12,applied_later,llama-4-maverick,ok,keep,in_scope,keep,True,no partner,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K13,applied_later,claude-sonnet-4.6,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K13,applied_later,gpt-5.4-fast,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K13,applied_later,gemini-2.5-flash,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K13,applied_later,mistral-medium-3.5,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K13,applied_later,llama-4-maverick,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K14,construction,claude-sonnet-4.6,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K14,construction,gpt-5.4-fast,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K14,construction,gemini-2.5-flash,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K14,construction,mistral-medium-3.5,ok,keep,in_scope,invert,False,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K14,construction,llama-4-maverick,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K15,construction,claude-sonnet-4.6,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K15,construction,gpt-5.4-fast,ok,keep,in_scope,keep,True,no partner,False,True,True,,,,,,,,,
+D3a_narrative_cal17,K15,construction,gemini-2.5-flash,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K15,construction,mistral-medium-3.5,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K15,construction,llama-4-maverick,ok,keep,in_scope,keep,True,keep,True,True,True,,,,,,,,,
+D3a_narrative_cal17,K16,construction,claude-sonnet-4.6,ok,keep,in_scope,invert,False,keep,True,False,False,,,,,,,,,
+D3a_narrative_cal17,K16,construction,gpt-5.4-fast,ok,keep,in_scope,invert,False,keep,True,False,False,,,,,,,,,
+D3a_narrative_cal17,K16,construction,gemini-2.5-flash,ok,keep,in_scope,invert,False,keep,True,False,False,,,,,,,,,
+D3a_narrative_cal17,K16,construction,mistral-medium-3.5,ok,keep,in_scope,invert,False,invert,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K16,construction,llama-4-maverick,ok,keep,in_scope,invert,False,invert,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K17,applied_later,claude-sonnet-4.6,ok,keep,no_partner,no partner,False,no partner,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K17,applied_later,gpt-5.4-fast,ok,keep,no_partner,no partner,False,no partner,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K17,applied_later,gemini-2.5-flash,ok,keep,no_partner,no partner,False,no partner,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K17,applied_later,mistral-medium-3.5,ok,keep,no_partner,no partner,False,no partner,False,False,False,,,,,,,,,
+D3a_narrative_cal17,K17,applied_later,llama-4-maverick,ok,keep,no_partner,no partner,False,no partner,False,False,False,,,,,,,,,
+D3b_passage_ratings,P01,structural_paragraphs,claude-sonnet-4.6,ok,,,,,,,,,"Ch. 2, idx=20 (pdf_page 21)",5,2,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P01,structural_paragraphs,gpt-5.4-fast,ok,,,,,,,,,"Ch. 2, idx=20 (pdf_page 21)",5,2,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P01,structural_paragraphs,gemini-2.5-flash,ok,,,,,,,,,"Ch. 2, idx=20 (pdf_page 21)",5,2,3,1,3,2,V_A0,V_Ssyn
+D3b_passage_ratings,P01,structural_paragraphs,mistral-medium-3.5,ok,,,,,,,,,"Ch. 2, idx=20 (pdf_page 21)",3,5,2,2,1,3,V_Ssyn,V_A3
+D3b_passage_ratings,P01,structural_paragraphs,llama-4-maverick,ok,,,,,,,,,"Ch. 2, idx=20 (pdf_page 21)",2,4,1,2,1,3,V_Ssyn,V_A3
+D3b_passage_ratings,P02,structural_paragraphs,claude-sonnet-4.6,ok,,,,,,,,,"Ch. 2, idx=20 (pdf_page 21)",3,5,1,2,1,3,V_Ssyn,V_A3
+D3b_passage_ratings,P02,structural_paragraphs,gpt-5.4-fast,ok,,,,,,,,,"Ch. 2, idx=20 (pdf_page 21)",5,3,2,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P02,structural_paragraphs,gemini-2.5-flash,ok,,,,,,,,,"Ch. 2, idx=20 (pdf_page 21)",5,4,3,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P02,structural_paragraphs,mistral-medium-3.5,ok,,,,,,,,,"Ch. 2, idx=20 (pdf_page 21)",4,5,1,2,1,3,V_Ssyn,V_A3
+D3b_passage_ratings,P02,structural_paragraphs,llama-4-maverick,ok,,,,,,,,,"Ch. 2, idx=20 (pdf_page 21)",5,3,4,1,3,2,V_A0,V_Ssyn
+D3b_passage_ratings,P03,structural_paragraphs,claude-sonnet-4.6,ok,,,,,,,,,"Ch. 2, idx=21 & idx=24 (pdf_page 22/25)",3,3,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P03,structural_paragraphs,gpt-5.4-fast,ok,,,,,,,,,"Ch. 2, idx=21 & idx=24 (pdf_page 22/25)",4,1,2,1,3,2,V_A0,V_Ssyn
+D3b_passage_ratings,P03,structural_paragraphs,gemini-2.5-flash,ok,,,,,,,,,"Ch. 2, idx=21 & idx=24 (pdf_page 22/25)",4,2,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P03,structural_paragraphs,mistral-medium-3.5,ok,,,,,,,,,"Ch. 2, idx=21 & idx=24 (pdf_page 22/25)",4,5,2,2,1,3,V_Ssyn,V_A3
+D3b_passage_ratings,P03,structural_paragraphs,llama-4-maverick,ok,,,,,,,,,"Ch. 2, idx=21 & idx=24 (pdf_page 22/25)",5,4,3,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P04,structural_paragraphs,claude-sonnet-4.6,ok,,,,,,,,,"Ch. 2, idx=22 (pdf_page 23)",3,2,2,1,3,2,V_A0,V_Ssyn
+D3b_passage_ratings,P04,structural_paragraphs,gpt-5.4-fast,ok,,,,,,,,,"Ch. 2, idx=22 (pdf_page 23)",5,3,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P04,structural_paragraphs,gemini-2.5-flash,ok,,,,,,,,,"Ch. 2, idx=22 (pdf_page 23)",4,2,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P04,structural_paragraphs,mistral-medium-3.5,ok,,,,,,,,,"Ch. 2, idx=22 (pdf_page 23)",3,4,2,2,1,3,V_Ssyn,V_A3
+D3b_passage_ratings,P04,structural_paragraphs,llama-4-maverick,ok,,,,,,,,,"Ch. 2, idx=22 (pdf_page 23)",5,4,3,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P05,structural_paragraphs,claude-sonnet-4.6,ok,,,,,,,,,"Ch. 2, idx=23 (pdf_page 24)",4,3,2,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P05,structural_paragraphs,gpt-5.4-fast,ok,,,,,,,,,"Ch. 2, idx=23 (pdf_page 24)",5,1,2,1,3,2,V_A0,V_Ssyn
+D3b_passage_ratings,P05,structural_paragraphs,gemini-2.5-flash,ok,,,,,,,,,"Ch. 2, idx=23 (pdf_page 24)",5,1,2,1,3,2,V_A0,V_Ssyn
+D3b_passage_ratings,P05,structural_paragraphs,mistral-medium-3.5,ok,,,,,,,,,"Ch. 2, idx=23 (pdf_page 24)",5,2,4,1,3,2,V_A0,V_Ssyn
+D3b_passage_ratings,P05,structural_paragraphs,llama-4-maverick,ok,,,,,,,,,"Ch. 2, idx=23 (pdf_page 24)",5,2,3,1,3,2,V_A0,V_Ssyn
+D3b_passage_ratings,P06,structural_paragraphs,claude-sonnet-4.6,ok,,,,,,,,,"Ch. 16, idx=119-120 (pdf_page 120-121)",3,4,2,2,1,3,V_Ssyn,V_A3
+D3b_passage_ratings,P06,structural_paragraphs,gpt-5.4-fast,ok,,,,,,,,,"Ch. 16, idx=119-120 (pdf_page 120-121)",3,5,1,2,1,3,V_Ssyn,V_A3
+D3b_passage_ratings,P06,structural_paragraphs,gemini-2.5-flash,ok,,,,,,,,,"Ch. 16, idx=119-120 (pdf_page 120-121)",5,3,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P06,structural_paragraphs,mistral-medium-3.5,ok,,,,,,,,,"Ch. 16, idx=119-120 (pdf_page 120-121)",3,5,2,2,1,3,V_Ssyn,V_A3
+D3b_passage_ratings,P06,structural_paragraphs,llama-4-maverick,ok,,,,,,,,,"Ch. 16, idx=119-120 (pdf_page 120-121)",4,5,4,2,1,3,V_Ssyn,V_A3
+D3b_passage_ratings,P07,polysemy_bridge_paragraphs,claude-sonnet-4.6,ok,,,,,,,,,"Ch. 2 idx=20, 23 & Ch. 16 idx=121 (pdf_page 21, 24, 121)",4,2,2,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P07,polysemy_bridge_paragraphs,gpt-5.4-fast,ok,,,,,,,,,"Ch. 2 idx=20, 23 & Ch. 16 idx=121 (pdf_page 21, 24, 121)",4,1,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P07,polysemy_bridge_paragraphs,gemini-2.5-flash,ok,,,,,,,,,"Ch. 2 idx=20, 23 & Ch. 16 idx=121 (pdf_page 21, 24, 121)",5,1,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P07,polysemy_bridge_paragraphs,mistral-medium-3.5,ok,,,,,,,,,"Ch. 2 idx=20, 23 & Ch. 16 idx=121 (pdf_page 21, 24, 121)",3,2,4,2,3,1,V_A3,V_Ssyn
+D3b_passage_ratings,P07,polysemy_bridge_paragraphs,llama-4-maverick,ok,,,,,,,,,"Ch. 2 idx=20, 23 & Ch. 16 idx=121 (pdf_page 21, 24, 121)",4,2,3,1,3,2,V_A0,V_Ssyn
+D3b_passage_ratings,P08,polysemy_bridge_paragraphs,claude-sonnet-4.6,ok,,,,,,,,,"Ch. 16, idx=121 (pdf_page 122)",4,2,2,1,3,2,V_A0,V_Ssyn
+D3b_passage_ratings,P08,polysemy_bridge_paragraphs,gpt-5.4-fast,ok,,,,,,,,,"Ch. 16, idx=121 (pdf_page 122)",4,2,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P08,polysemy_bridge_paragraphs,gemini-2.5-flash,ok,,,,,,,,,"Ch. 16, idx=121 (pdf_page 122)",5,2,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P08,polysemy_bridge_paragraphs,mistral-medium-3.5,ok,,,,,,,,,"Ch. 16, idx=121 (pdf_page 122)",4,5,2,2,1,3,V_Ssyn,V_A3
+D3b_passage_ratings,P08,polysemy_bridge_paragraphs,llama-4-maverick,ok,,,,,,,,,"Ch. 16, idx=121 (pdf_page 122)",5,3,4,1,3,2,V_A0,V_Ssyn
+D3b_passage_ratings,P09,polysemy_bridge_paragraphs,claude-sonnet-4.6,ok,,,,,,,,,"Ch. 16, idx=121 (pdf_page 122)",5,3,2,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P09,polysemy_bridge_paragraphs,gpt-5.4-fast,ok,,,,,,,,,"Ch. 16, idx=121 (pdf_page 122)",5,3,2,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P09,polysemy_bridge_paragraphs,gemini-2.5-flash,ok,,,,,,,,,"Ch. 16, idx=121 (pdf_page 122)",5,3,2,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P09,polysemy_bridge_paragraphs,mistral-medium-3.5,ok,,,,,,,,,"Ch. 16, idx=121 (pdf_page 122)",5,4,3,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P09,polysemy_bridge_paragraphs,llama-4-maverick,ok,,,,,,,,,"Ch. 16, idx=121 (pdf_page 122)",4,4,4,2,3,1,V_A3,V_Ssyn
+D3b_passage_ratings,P10,polysemy_bridge_paragraphs,claude-sonnet-4.6,ok,,,,,,,,,"Ch. 16, idx=120-121 (pdf_page 121-122)",4,3,2,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P10,polysemy_bridge_paragraphs,gpt-5.4-fast,ok,,,,,,,,,"Ch. 16, idx=120-121 (pdf_page 121-122)",4,3,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P10,polysemy_bridge_paragraphs,gemini-2.5-flash,ok,,,,,,,,,"Ch. 16, idx=120-121 (pdf_page 121-122)",5,2,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P10,polysemy_bridge_paragraphs,mistral-medium-3.5,ok,,,,,,,,,"Ch. 16, idx=120-121 (pdf_page 121-122)",5,1,2,1,3,2,V_A0,V_Ssyn
+D3b_passage_ratings,P10,polysemy_bridge_paragraphs,llama-4-maverick,ok,,,,,,,,,"Ch. 16, idx=120-121 (pdf_page 121-122)",5,3,4,1,3,2,V_A0,V_Ssyn
+D3b_passage_ratings,P11,polysemy_bridge_paragraphs,claude-sonnet-4.6,ok,,,,,,,,,"Ch. 16, idx=122 (pdf_page 123)",3,4,2,2,1,3,V_Ssyn,V_A3
+D3b_passage_ratings,P11,polysemy_bridge_paragraphs,gpt-5.4-fast,ok,,,,,,,,,"Ch. 16, idx=122 (pdf_page 123)",4,2,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P11,polysemy_bridge_paragraphs,gemini-2.5-flash,ok,,,,,,,,,"Ch. 16, idx=122 (pdf_page 123)",5,3,2,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P11,polysemy_bridge_paragraphs,mistral-medium-3.5,ok,,,,,,,,,"Ch. 16, idx=122 (pdf_page 123)",5,2,4,1,3,2,V_A0,V_Ssyn
+D3b_passage_ratings,P11,polysemy_bridge_paragraphs,llama-4-maverick,ok,,,,,,,,,"Ch. 16, idx=122 (pdf_page 123)",4,3,4,2,3,1,V_A3,V_Ssyn
+D3b_passage_ratings,P12,polysemy_bridge_paragraphs,claude-sonnet-4.6,ok,,,,,,,,,"Ch. 2 idx=24 & Ch. 16 idx=119 (pdf_page 25, 120)",5,3,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P12,polysemy_bridge_paragraphs,gpt-5.4-fast,ok,,,,,,,,,"Ch. 2 idx=24 & Ch. 16 idx=119 (pdf_page 25, 120)",5,4,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P12,polysemy_bridge_paragraphs,gemini-2.5-flash,ok,,,,,,,,,"Ch. 2 idx=24 & Ch. 16 idx=119 (pdf_page 25, 120)",5,4,1,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P12,polysemy_bridge_paragraphs,mistral-medium-3.5,ok,,,,,,,,,"Ch. 2 idx=24 & Ch. 16 idx=119 (pdf_page 25, 120)",5,4,2,1,2,3,V_A0,V_A3
+D3b_passage_ratings,P12,polysemy_bridge_paragraphs,llama-4-maverick,ok,,,,,,,,,"Ch. 2 idx=24 & Ch. 16 idx=119 (pdf_page 25, 120)",5,4,3,1,2,3,V_A0,V_A3

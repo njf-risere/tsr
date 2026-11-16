@@ -1,0 +1,86 @@
+item_id,stratum,rater_id,word_W_A0,word_W_Ssyn,word_W_Chal,word_W_A3,score_W_A0,score_W_Ssyn,score_W_Chal,score_W_A3,rank_W_A0,rank_W_Ssyn,rank_W_Chal,rank_W_A3,score_nc_correct,score_nc_wrong_condition,score_nc_spatial_error,score_nc_vague_generic,best_label,worst_label,best_word,worst_word
+W01,Core_Web,claude-sonnet-4.6,Movement,responsiveness,soul,Reflected,4,2,1,1,1,2,3,4,,,,,W_A0,W_A3,Movement,Reflected
+W01,Core_Web,gpt-5.4-fast,Movement,responsiveness,soul,Reflected,1,4,1,1,2,1,4,3,,,,,W_Ssyn,W_Chal,responsiveness,soul
+W01,Core_Web,gemini-2.5-flash,Movement,responsiveness,soul,Reflected,4,1,1,1,1,2,3,4,,,,,W_A0,W_A3,Movement,Reflected
+W01,Core_Web,mistral-medium-3.5,Movement,responsiveness,soul,Reflected,5,4,3,2,1,2,3,4,,,,,W_A0,W_A3,Movement,Reflected
+W01,Core_Web,llama-4-maverick,Movement,responsiveness,soul,Reflected,3,4,2,4,3,1,4,2,,,,,W_Ssyn,W_Chal,responsiveness,soul
+W02,Core_Web,claude-sonnet-4.6,Current,stream,source,Frequency,5,3,1,1,1,2,4,3,,,,,W_A0,W_Chal,Current,source
+W02,Core_Web,gpt-5.4-fast,Current,stream,source,Frequency,5,4,1,2,1,2,4,3,,,,,W_A0,W_Chal,Current,source
+W02,Core_Web,gemini-2.5-flash,Current,stream,source,Frequency,4,2,1,1,1,2,4,3,,,,,W_A0,W_Chal,Current,source
+W02,Core_Web,mistral-medium-3.5,Current,stream,source,Frequency,5,4,1,2,1,2,4,3,,,,,W_A0,W_Chal,Current,source
+W02,Core_Web,llama-4-maverick,Current,stream,source,Frequency,5,3,4,4,1,4,3,2,,,,,W_A0,W_Ssyn,Current,stream
+W03,Core_Web,claude-sonnet-4.6,Vibration,pitch,mind,Appreciation,4,3,2,1,1,2,3,4,,,,,W_A0,W_A3,Vibration,Appreciation
+W03,Core_Web,gpt-5.4-fast,Vibration,pitch,mind,Appreciation,2,5,1,1,2,1,3,4,,,,,W_Ssyn,W_A3,pitch,Appreciation
+W03,Core_Web,gemini-2.5-flash,Vibration,pitch,mind,Appreciation,5,4,1,1,1,2,3,4,,,,,W_A0,W_A3,Vibration,Appreciation
+W03,Core_Web,mistral-medium-3.5,Vibration,pitch,mind,Appreciation,5,4,5,3,1,3,2,4,,,,,W_A0,W_A3,Vibration,Appreciation
+W03,Core_Web,llama-4-maverick,Vibration,pitch,mind,Appreciation,5,3,2,2,1,2,3,4,,,,,W_A0,W_A3,Vibration,Appreciation
+W04,Core_Web,claude-sonnet-4.6,Expansion,growth,eternity,Vibrance,3,5,2,3,2,1,4,3,,,,,W_Ssyn,W_Chal,growth,eternity
+W04,Core_Web,gpt-5.4-fast,Expansion,growth,eternity,Vibrance,4,5,1,2,2,1,4,3,,,,,W_Ssyn,W_Chal,growth,eternity
+W04,Core_Web,gemini-2.5-flash,Expansion,growth,eternity,Vibrance,5,4,1,1,1,2,4,3,,,,,W_A0,W_Chal,Expansion,eternity
+W04,Core_Web,mistral-medium-3.5,Expansion,growth,eternity,Vibrance,4,5,3,5,3,1,4,2,,,,,W_Ssyn,W_Chal,growth,eternity
+W04,Core_Web,llama-4-maverick,Expansion,growth,eternity,Vibrance,4,5,4,3,2,1,3,4,,,,,W_Ssyn,W_A3,growth,Vibrance
+W05,Core_Web,claude-sonnet-4.6,Desire,longing,intensity,conscious energy,3,3,2,2,1,2,4,3,,,,,W_A0,W_Chal,Desire,intensity
+W05,Core_Web,gpt-5.4-fast,Desire,longing,intensity,conscious energy,5,3,2,1,1,2,3,4,,,,,W_A0,W_A3,Desire,conscious energy
+W05,Core_Web,gemini-2.5-flash,Desire,longing,intensity,conscious energy,5,1,1,2,1,3,4,2,,,,,W_A0,W_Chal,Desire,intensity
+W05,Core_Web,mistral-medium-3.5,Desire,longing,intensity,conscious energy,5,4,5,3,1,3,2,4,,,,,W_A0,W_A3,Desire,conscious energy
+W05,Core_Web,llama-4-maverick,Desire,longing,intensity,conscious energy,3,2,5,4,3,4,1,2,,,,,W_Chal,W_Ssyn,intensity,longing
+W06,Core_Web,claude-sonnet-4.6,Vibrance,capacity,openness,Desire,4,3,3,2,1,2,3,4,,,,,W_A0,W_A3,Vibrance,Desire
+W06,Core_Web,gpt-5.4-fast,Vibrance,capacity,openness,Desire,5,1,1,2,1,3,4,2,,,,,W_A0,W_Chal,Vibrance,openness
+W06,Core_Web,gemini-2.5-flash,Vibrance,capacity,openness,Desire,5,1,2,1,1,4,2,3,,,,,W_A0,W_Ssyn,Vibrance,capacity
+W06,Core_Web,mistral-medium-3.5,Vibrance,capacity,openness,Desire,5,4,3,2,1,2,3,4,,,,,W_A0,W_A3,Vibrance,Desire
+W06,Core_Web,llama-4-maverick,Vibrance,capacity,openness,Desire,3,4,5,2,3,2,1,4,,,,,W_Chal,W_A3,openness,Desire
+W07,Core_Web,claude-sonnet-4.6,Appreciation,gratitude,growth,imagination,5,2,3,2,1,3,2,4,,,,,W_A0,W_A3,Appreciation,imagination
+W07,Core_Web,gpt-5.4-fast,Appreciation,gratitude,growth,imagination,5,3,1,2,1,2,4,3,,,,,W_A0,W_Chal,Appreciation,growth
+W07,Core_Web,gemini-2.5-flash,Appreciation,gratitude,growth,imagination,4,1,1,1,1,3,2,4,,,,,W_A0,W_A3,Appreciation,imagination
+W07,Core_Web,mistral-medium-3.5,Appreciation,gratitude,growth,imagination,5,1,2,1,1,3,2,4,,,,,W_A0,W_A3,Appreciation,imagination
+W07,Core_Web,llama-4-maverick,Appreciation,gratitude,growth,imagination,3,4,4,2,3,2,1,4,,,,,W_Chal,W_A3,growth,imagination
+W08,Core_Web,claude-sonnet-4.6,Frequency,urgency,will,Movement,3,5,2,2,2,1,4,3,,,,,W_Ssyn,W_Chal,urgency,will
+W08,Core_Web,gpt-5.4-fast,Frequency,urgency,will,Movement,5,2,1,1,1,2,3,4,,,,,W_A0,W_A3,Frequency,Movement
+W08,Core_Web,gemini-2.5-flash,Frequency,urgency,will,Movement,5,2,1,4,1,3,4,2,,,,,W_A0,W_Chal,Frequency,will
+W08,Core_Web,mistral-medium-3.5,Frequency,urgency,will,Movement,5,2,4,3,1,4,2,3,,,,,W_A0,W_Ssyn,Frequency,urgency
+W08,Core_Web,llama-4-maverick,Frequency,urgency,will,Movement,4,2,1,4,1,3,4,2,,,,,W_A0,W_Chal,Frequency,will
+W09,Core_Web,claude-sonnet-4.6,Tune,focus,surrender,resonance,5,4,2,3,1,2,4,3,,,,,W_A0,W_Chal,Tune,surrender
+W09,Core_Web,gpt-5.4-fast,Tune,focus,surrender,resonance,5,3,1,4,1,3,4,2,,,,,W_A0,W_Chal,Tune,surrender
+W09,Core_Web,gemini-2.5-flash,Tune,focus,surrender,resonance,5,3,1,2,1,2,4,3,,,,,W_A0,W_Chal,Tune,surrender
+W09,Core_Web,mistral-medium-3.5,Tune,focus,surrender,resonance,5,3,2,4,1,3,4,2,,,,,W_A0,W_Chal,Tune,surrender
+W09,Core_Web,llama-4-maverick,Tune,focus,surrender,resonance,5,4,2,4,1,3,4,2,,,,,W_A0,W_Chal,Tune,surrender
+W10,Core_Web,claude-sonnet-4.6,Idle,stillness,rest,rise per Expansion,5,2,3,2,1,3,2,4,,,,,W_A0,W_A3,Idle,rise per Expansion
+W10,Core_Web,gpt-5.4-fast,Idle,stillness,rest,rise per Expansion,4,3,2,1,1,2,3,4,,,,,W_A0,W_A3,Idle,rise per Expansion
+W10,Core_Web,gemini-2.5-flash,Idle,stillness,rest,rise per Expansion,5,2,2,1,1,2,3,4,,,,,W_A0,W_A3,Idle,rise per Expansion
+W10,Core_Web,mistral-medium-3.5,Idle,stillness,rest,rise per Expansion,3,5,2,4,3,1,4,2,,,,,W_Ssyn,W_Chal,stillness,rest
+W10,Core_Web,llama-4-maverick,Idle,stillness,rest,rise per Expansion,4,5,4,3,3,1,2,4,,,,,W_Ssyn,W_A3,stillness,rise per Expansion
+W11,Core_Web,claude-sonnet-4.6,Reflected,echo,returning,Current,3,2,2,3,1,4,3,2,,,,,W_A0,W_Ssyn,Reflected,echo
+W11,Core_Web,gpt-5.4-fast,Reflected,echo,returning,Current,5,2,1,1,1,2,3,4,,,,,W_A0,W_A3,Reflected,Current
+W11,Core_Web,gemini-2.5-flash,Reflected,echo,returning,Current,1,1,1,1,2,3,4,1,,,,,W_A3,W_Chal,Current,returning
+W11,Core_Web,mistral-medium-3.5,Reflected,echo,returning,Current,5,2,4,3,1,4,2,3,,,,,W_A0,W_Ssyn,Reflected,echo
+W11,Core_Web,llama-4-maverick,Reflected,echo,returning,Current,4,3,3,2,1,2,3,4,,,,,W_A0,W_A3,Reflected,Current
+W12,Core_Web,claude-sonnet-4.6,Vortex,whirlpool,well,Attraction,5,3,2,4,1,3,4,2,,,,,W_A0,W_Chal,Vortex,well
+W12,Core_Web,gpt-5.4-fast,Vortex,whirlpool,well,Attraction,5,3,2,1,1,2,3,4,,,,,W_A0,W_A3,Vortex,Attraction
+W12,Core_Web,gemini-2.5-flash,Vortex,whirlpool,well,Attraction,5,2,1,2,1,2,4,3,,,,,W_A0,W_Chal,Vortex,well
+W12,Core_Web,mistral-medium-3.5,Vortex,whirlpool,well,Attraction,5,5,4,3,1,2,3,4,,,,,W_A0,W_A3,Vortex,Attraction
+W12,Core_Web,llama-4-maverick,Vortex,whirlpool,well,Attraction,5,5,3,4,1,2,4,3,,,,,W_A0,W_Chal,Vortex,well
+W13,Core_Web,claude-sonnet-4.6,Convergence,gathering,lens,Intuition,5,3,2,4,1,3,4,2,,,,,W_A0,W_Chal,Convergence,lens
+W13,Core_Web,gpt-5.4-fast,Convergence,gathering,lens,Intuition,5,3,1,2,1,2,4,3,,,,,W_A0,W_Chal,Convergence,lens
+W13,Core_Web,gemini-2.5-flash,Convergence,gathering,lens,Intuition,5,3,1,1,1,2,4,3,,,,,W_A0,W_Chal,Convergence,lens
+W13,Core_Web,mistral-medium-3.5,Convergence,gathering,lens,Intuition,5,4,2,1,1,2,3,4,,,,,W_A0,W_A3,Convergence,Intuition
+W13,Core_Web,llama-4-maverick,Convergence,gathering,lens,Intuition,5,4,3,2,1,2,3,4,,,,,W_A0,W_A3,Convergence,Intuition
+W14,Core_Web,claude-sonnet-4.6,Intuition,hunch,expectation,Vortex,5,3,3,2,1,2,3,4,,,,,W_A0,W_A3,Intuition,Vortex
+W14,Core_Web,gpt-5.4-fast,Intuition,hunch,expectation,Vortex,5,2,1,1,1,2,3,4,,,,,W_A0,W_A3,Intuition,Vortex
+W14,Core_Web,gemini-2.5-flash,Intuition,hunch,expectation,Vortex,5,2,1,1,1,2,3,4,,,,,W_A0,W_A3,Intuition,Vortex
+W14,Core_Web,mistral-medium-3.5,Intuition,hunch,expectation,Vortex,5,3,4,1,1,3,2,4,,,,,W_A0,W_A3,Intuition,Vortex
+W14,Core_Web,llama-4-maverick,Intuition,hunch,expectation,Vortex,5,3,3,2,1,2,3,4,,,,,W_A0,W_A3,Intuition,Vortex
+NC01,Negative_Control,claude-sonnet-4.6,,,,,,,,,,,,,5,2,1,1,correct,spatial_error,inertia,elasticity
+NC01,Negative_Control,gpt-5.4-fast,,,,,,,,,,,,,5,1,1,1,correct,vague_generic,inertia,friction
+NC01,Negative_Control,gemini-2.5-flash,,,,,,,,,,,,,5,1,1,1,correct,spatial_error,inertia,elasticity
+NC01,Negative_Control,mistral-medium-3.5,,,,,,,,,,,,,5,2,1,1,correct,vague_generic,inertia,friction
+NC01,Negative_Control,llama-4-maverick,,,,,,,,,,,,,5,2,1,5,correct,spatial_error,inertia,elasticity
+NC02,Negative_Control,claude-sonnet-4.6,,,,,,,,,,,,,5,2,3,1,correct,vague_generic,torque,entropy
+NC02,Negative_Control,gpt-5.4-fast,,,,,,,,,,,,,5,1,1,1,correct,vague_generic,torque,entropy
+NC02,Negative_Control,gemini-2.5-flash,,,,,,,,,,,,,5,1,1,1,correct,spatial_error,torque,power
+NC02,Negative_Control,mistral-medium-3.5,,,,,,,,,,,,,5,1,1,1,correct,wrong_condition,torque,pressure
+NC02,Negative_Control,llama-4-maverick,,,,,,,,,,,,,5,2,1,1,correct,vague_generic,torque,entropy
+NC03,Negative_Control,claude-sonnet-4.6,,,,,,,,,,,,,5,1,3,2,correct,wrong_condition,equilibrium,viscosity
+NC03,Negative_Control,gpt-5.4-fast,,,,,,,,,,,,,5,1,1,1,correct,spatial_error,equilibrium,acceleration
+NC03,Negative_Control,gemini-2.5-flash,,,,,,,,,,,,,5,1,1,1,correct,wrong_condition,equilibrium,viscosity
+NC03,Negative_Control,mistral-medium-3.5,,,,,,,,,,,,,5,1,1,2,correct,wrong_condition,equilibrium,viscosity
+NC03,Negative_Control,llama-4-maverick,,,,,,,,,,,,,5,2,2,2,correct,wrong_condition,equilibrium,viscosity

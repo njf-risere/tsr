@@ -1,0 +1,2471 @@
+{
+  "m4_item": [
+    {
+      "item_id": "E001",
+      "candidates": {
+        "1": "imagination equals Appreciation multiplied by rotational imagination per Appreciation.",
+        "2": "Appreciation decreases whenever Vibration and rotational Appreciation per Vibration increase together.",
+        "3": "Appreciation equals Vibration multiplied by rotational Appreciation per Vibration.",
+        "4": "gratitude equals pitch multiplied by rotational gratitude per pitch."
+      },
+      "hidden_key": {
+        "1": "T_A3",
+        "2": "D_A0",
+        "3": "T_A0",
+        "4": "S_syn"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E001",
+          "scores": {
+            "1": 2,
+            "2": 2,
+            "3": 5,
+            "4": 4
+          },
+          "best_candidate": 3,
+          "worst_candidate": 1,
+          "ranking": [
+            3,
+            4,
+            2,
+            1
+          ],
+          "reason": "Candidate 3 is the clearest and most natural English expression of a proportional relationship with consistent terminology. Candidate 4 uses synonymous but coherent terms. Candidate 2 inverts the relationship, contradicting the nonphysical polarity of yielding alignment. Candidate 1 is circular and awkward, using 'imagination' on both sides of the equation."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E001",
+          "scores": {
+            "1": 4,
+            "2": 2,
+            "3": 5,
+            "4": 5
+          },
+          "best_candidate": 3,
+          "worst_candidate": 2,
+          "ranking": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "reason": "Candidates 3 and 4 are clear, well-formed multiplicative statements and read naturally as coherent ordinary English. Candidate 1 is also structurally clear but is slightly less natural because 'rotational imagination per Appreciation' feels more awkwardly mixed. Candidate 2 is weaker because the decrease relation conflicts with the otherwise direct proportional structure and reads less consistently."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E001",
+          "scores": {
+            "1": 3,
+            "2": 5,
+            "3": 3,
+            "4": 3
+          },
+          "best_candidate": 2,
+          "worst_candidate": 1,
+          "ranking": [
+            2,
+            1,
+            3,
+            4
+          ],
+          "reason": "Candidate 2 clearly expresses a directional polarity flip ('decreases whenever... increase together'), which is a specific characteristic of the nonphysical side when physical costs or barriers are implied. Candidates 1, 3, and 4 are direct algebraic translations, which are consistent with the nonphysical side's ability to maintain structural proportions without obstruction, but their phrasing ('rotational X per Y') is less natural and they don't highlight the distinctive 'flip' aspect."
+        },
+        "llama-4-maverick": {
+          "item_id": "E001",
+          "scores": {
+            "1": 2,
+            "2": 2,
+            "3": 4,
+            "4": 3
+          },
+          "best_candidate": 3,
+          "worst_candidate": 1,
+          "ranking": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "reason": "Candidate 3 is the most coherent and natural, as it follows a clear and consistent structure similar to a physical law, while Candidate 1 is the least coherent due to repetitive and unclear terms."
+        }
+      }
+    },
+    {
+      "item_id": "E002",
+      "candidates": {
+        "1": "Tangential Appreciation equals Vibration multiplied by angular Appreciation per Vibration.",
+        "2": "Tangential imagination equals Appreciation multiplied by angular imagination per Appreciation.",
+        "3": "Tangential gratitude equals pitch multiplied by angular gratitude per pitch.",
+        "4": "Tangential Appreciation diminishes whenever Vibration and angular Appreciation per Vibration increase together."
+      },
+      "hidden_key": {
+        "1": "T_A0",
+        "2": "T_A3",
+        "3": "S_syn",
+        "4": "D_A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E002",
+          "scores": {
+            "1": 5,
+            "2": 3,
+            "3": 4,
+            "4": 2
+          },
+          "best_candidate": 1,
+          "worst_candidate": 4,
+          "ranking": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "reason": "Candidate 1 reads most naturally and coherently with consistent terminology expressing a direct proportional relationship. Candidate 3 uses synonymous terms and reads well. Candidate 2 is coherent but slightly less natural. Candidate 4 inverts the relationship, contradicting the nonphysical polarity of effortless alignment."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E002",
+          "scores": {
+            "1": 5,
+            "2": 5,
+            "3": 5,
+            "4": 2
+          },
+          "best_candidate": 1,
+          "worst_candidate": 4,
+          "ranking": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "reason": "Candidates 1, 2, and 3 all read as natural, parallel, and internally coherent expressions of a tangential quantity equaling a base quantity times an angular per-unit form. Candidate 4 is less fitting because 'diminishes whenever ... increase together' introduces a contradictory directional relation and is less coherent with the mirrored nonphysical pattern."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E002",
+          "scores": {
+            "1": 3,
+            "2": 3,
+            "3": 3,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 1,
+          "ranking": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "reason": "Candidate 4 clearly expresses a directional polarity flip ('diminishes whenever... increase together'), which is a specific characteristic of the nonphysical side when physical costs or barriers are implied. Candidates 1, 2, and 3 are direct algebraic translations, which are consistent with the nonphysical side's ability to maintain structural proportions without obstruction, but their phrasing ('angular X per Y') is less natural and they don't highlight the distinctive 'flip' aspect."
+        },
+        "llama-4-maverick": {
+          "item_id": "E002",
+          "scores": {
+            "1": 4,
+            "2": 3,
+            "3": 4,
+            "4": 2
+          },
+          "best_candidate": 1,
+          "worst_candidate": 4,
+          "ranking": [
+            1,
+            3,
+            2,
+            4
+          ],
+          "reason": "Candidates 1 and 3 are the most coherent, using terms like 'Tangential' and 'angular' in a manner consistent with physical or rotational concepts, while Candidate 4 is the least coherent due to its statement of diminishment without clear relation to the nonphysical polarity."
+        }
+      }
+    },
+    {
+      "item_id": "E007",
+      "candidates": {
+        "1": "Total Appreciation equals the difference between final Appreciation and initial Appreciation.",
+        "2": "Total Vibration equals the difference between final Vibration and initial Vibration.",
+        "3": "Total Vibration collapses whenever final Vibration and initial Vibration converge without difference.",
+        "4": "Total pitch equals the difference between final pitch and initial pitch."
+      },
+      "hidden_key": {
+        "1": "T_A3",
+        "2": "T_A0",
+        "3": "D_A0",
+        "4": "S_syn"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E007",
+          "scores": {
+            "1": 4,
+            "2": 5,
+            "3": 2,
+            "4": 4
+          },
+          "best_candidate": 2,
+          "worst_candidate": 3,
+          "ranking": [
+            2,
+            1,
+            4,
+            3
+          ],
+          "reason": "Candidate 2 reads most cleanly and naturally with consistent terminology. Candidates 1 and 4 are also coherent with their respective term sets. Candidate 3 introduces a collapse/convergence framing that contradicts the straightforward difference relationship and the nonphysical polarity of unified coherence."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E007",
+          "scores": {
+            "1": 5,
+            "2": 5,
+            "3": 3,
+            "4": 5
+          },
+          "best_candidate": 2,
+          "worst_candidate": 3,
+          "ranking": [
+            2,
+            1,
+            4,
+            3
+          ],
+          "reason": "Candidates 1, 2, and 4 are all straightforward and natural English statements expressing a total as a difference between final and initial states. Candidate 3 is grammatical and understandable, but 'collapses whenever ... converge without difference' is more dramatic and less cleanly stated than the direct difference formulations."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E007",
+          "scores": {
+            "1": 5,
+            "2": 5,
+            "3": 2,
+            "4": 5
+          },
+          "best_candidate": 1,
+          "worst_candidate": 3,
+          "ranking": [
+            1,
+            2,
+            4,
+            3
+          ],
+          "reason": "Candidates 1, 2, and 4 are clear, natural, and direct algebraic translations of a definitional relationship (difference), consistent with the nonphysical side's ability to maintain structural proportions without obstruction. Candidate 3 introduces the term 'collapses' when values converge, which, while implying a zero difference, carries a negative connotation that may contradict the nonphysical polarity's emphasis on 'unified, holistic coherence' and 'effortless alignment' in such a state."
+        },
+        "llama-4-maverick": {
+          "item_id": "E007",
+          "scores": {
+            "1": 4,
+            "2": 4,
+            "3": 3,
+            "4": 4
+          },
+          "best_candidate": 1,
+          "worst_candidate": 3,
+          "ranking": [
+            1,
+            2,
+            4,
+            3
+          ],
+          "reason": "Candidates 1, 2, and 4 are equally coherent and natural in expressing a difference or change, while Candidate 3 is less coherent due to its use of 'collapses' which implies a different kind of change than the others."
+        }
+      }
+    },
+    {
+      "item_id": "E011",
+      "candidates": {
+        "1": "The collective imagination of the center of Reflected equals the Reflected-weighted sum of each part's imagination across every Appreciation divided by total Reflected.",
+        "2": "The collective gratitude of the center of responsiveness equals the responsiveness-weighted sum of each part's gratitude across every pitch divided by total responsiveness.",
+        "3": "The collective Appreciation of the center of Movement diverges away from the Movement-weighted sum of each part's Appreciation across every Vibration divided by total Movement.",
+        "4": "The collective Appreciation of the center of Movement equals the Movement-weighted sum of each part's Appreciation across every Vibration divided by total Movement."
+      },
+      "hidden_key": {
+        "1": "T_A3",
+        "2": "S_syn",
+        "3": "D_A0",
+        "4": "T_A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E011",
+          "scores": {
+            "1": 3,
+            "2": 4,
+            "3": 2,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 3,
+          "ranking": [
+            4,
+            2,
+            1,
+            3
+          ],
+          "reason": "Candidate 4 expresses the weighted-sum relationship most clearly and naturally with consistent terminology aligned to the nonphysical polarity. Candidate 2 is coherent with synonymous terms. Candidate 1 is readable but uses mixed terminology. Candidate 3 explicitly inverts the relationship with 'diverges away from,' contradicting the holistic coherence of the nonphysical polarity."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E011",
+          "scores": {
+            "1": 4,
+            "2": 5,
+            "3": 1,
+            "4": 5
+          },
+          "best_candidate": 2,
+          "worst_candidate": 3,
+          "ranking": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "reason": "Candidates 2 and 4 are clear, natural weighted-average statements with strong internal coherence. Candidate 1 is also coherent but reads less naturally because 'center of Reflected' and 'across every Appreciation' are more awkward phrasings. Candidate 3 is the weakest because 'diverges away from' disrupts the otherwise stable definitional structure and makes the sentence less coherent."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E011",
+          "scores": {
+            "1": 5,
+            "2": 5,
+            "3": 1,
+            "4": 5
+          },
+          "best_candidate": 1,
+          "worst_candidate": 3,
+          "ranking": [
+            1,
+            2,
+            4,
+            3
+          ],
+          "reason": "Candidates 1, 2, and 4 are clear, natural, and direct algebraic translations of a weighted average or center, which aligns with the nonphysical polarity's emphasis on 'unified, holistic coherence' and 'effortless alignment' by maintaining structural proportions. Candidate 3, by stating that the collective 'diverges away from' the center, describes a lack of coherence and alignment, which is contrary to the nonphysical polarity and more akin to physical fragmentation."
+        },
+        "llama-4-maverick": {
+          "item_id": "E011",
+          "scores": {
+            "1": 3,
+            "2": 3,
+            "3": 2,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 3,
+          "ranking": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "reason": "Candidate 4 is the most coherent and natural, as it clearly states a collective property in terms of a weighted sum, while Candidate 3 is the least coherent due to its statement of divergence."
+        }
+      }
+    },
+    {
+      "item_id": "E014",
+      "candidates": {
+        "1": "Total responsiveness times affinity arises directly as responsiveness aligns with affinity.",
+        "2": "Total Movement times Attraction arises directly as Movement aligns with Attraction.",
+        "3": "Total Reflected times Tune arises directly as Reflected aligns with Tune.",
+        "4": "Total Movement times Attraction diminishes whenever Movement and Attraction increase together."
+      },
+      "hidden_key": {
+        "1": "S_syn",
+        "2": "T_A0",
+        "3": "T_A3",
+        "4": "D_A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E014",
+          "scores": {
+            "1": 4,
+            "2": 5,
+            "3": 4,
+            "4": 2
+          },
+          "best_candidate": 2,
+          "worst_candidate": 4,
+          "ranking": [
+            2,
+            1,
+            3,
+            4
+          ],
+          "reason": "Candidate 2 reads most naturally and coherently, expressing effortless alignment consistent with the nonphysical polarity. Candidates 1 and 3 are also coherent with synonymous terms. Candidate 4 inverts the relationship with 'diminishes,' directly contradicting the nonphysical polarity of effortless, unresisting alignment."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E014",
+          "scores": {
+            "1": 4,
+            "2": 5,
+            "3": 3,
+            "4": 1
+          },
+          "best_candidate": 2,
+          "worst_candidate": 4,
+          "ranking": [
+            2,
+            1,
+            3,
+            4
+          ],
+          "reason": "Candidate 2 is the clearest and most natural statement, with a direct positive relation and consistent wording. Candidate 1 is similar and coherent, though slightly less natural lexically. Candidate 3 is understandable but 'Reflected' and 'Tune' make the phrasing less idiomatic. Candidate 4 is least coherent because it asserts diminishment despite both terms increasing together, which conflicts with the nonphysical polarity's alignment theme."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E014",
+          "scores": {
+            "1": 5,
+            "2": 5,
+            "3": 5,
+            "4": 4
+          },
+          "best_candidate": 1,
+          "worst_candidate": 4,
+          "ranking": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "reason": "Candidates 1, 2, and 3 are clear, natural, and directly express the nonphysical polarity's emphasis on 'effortless alignment' and 'immediate, simultaneous unfolding' through the phrases 'arises directly as' and 'aligns with.' Candidate 4 describes a directional polarity flip, which is a valid nonphysical characteristic under specific conditions, but the explicit mention of 'alignment' in the other candidates makes them a more direct and universally positive representation of the nonphysical side."
+        },
+        "llama-4-maverick": {
+          "item_id": "E014",
+          "scores": {
+            "1": 4,
+            "2": 5,
+            "3": 4,
+            "4": 2
+          },
+          "best_candidate": 2,
+          "worst_candidate": 4,
+          "ranking": [
+            2,
+            1,
+            3,
+            4
+          ],
+          "reason": "Candidate 2 is the most coherent and natural, as it clearly expresses a direct relationship between total Movement, Attraction, and their alignment, while Candidate 4 is the least coherent due to its statement of diminishment."
+        }
+      }
+    },
+    {
+      "item_id": "E016",
+      "candidates": {
+        "1": "Transformed Appreciation equals the difference of Appreciation and Expansion times Vibrance, scaled by the perspective factor drawn from Frequency.",
+        "2": "Transformed Vibration departs from the difference of Vibration and rise per Expansion times Expansion whenever the perspective factor drawn from Current collapses.",
+        "3": "Transformed pitch equals the difference of pitch and pace times growth, scaled by the perspective factor drawn from stream.",
+        "4": "Transformed Vibration equals the difference of Vibration and rise per Expansion times Expansion, scaled by the perspective factor drawn from Current."
+      },
+      "hidden_key": {
+        "1": "T_A3",
+        "2": "D_A0",
+        "3": "S_syn",
+        "4": "T_A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E016",
+          "scores": {
+            "1": 4,
+            "2": 2,
+            "3": 3,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 2,
+          "ranking": [
+            4,
+            1,
+            3,
+            2
+          ],
+          "reason": "Candidate 4 is the clearest and most internally consistent, expressing a clean algebraic transformation with coherent nonphysical vocabulary. Candidate 1 is similar but uses 'Appreciation' and 'Frequency' in slightly less fitting roles. Candidate 3 uses lowercase terms that feel less precise. Candidate 2 introduces 'departs from' and 'collapses' which break the structural coherence and introduce physical-polarity resistance language."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E016",
+          "scores": {
+            "1": 3,
+            "2": 2,
+            "3": 4,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 2,
+          "ranking": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "reason": "Candidate 4 is the clearest and most internally consistent: it cleanly states a transformed quantity, a difference term, and a scaling factor. Candidate 3 is also natural ordinary English, though its vocabulary is less consistent with the more formal register. Candidate 1 is readable but semantically less coherent because the paired terms feel mismatched. Candidate 2 is the weakest because 'departs from' and 'whenever ... collapses' make the relation feel awkward and internally unstable rather than a clear nonphysical statement."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E016",
+          "scores": {
+            "1": 5,
+            "2": 1,
+            "3": 5,
+            "4": 4
+          },
+          "best_candidate": 1,
+          "worst_candidate": 2,
+          "ranking": [
+            1,
+            3,
+            4,
+            2
+          ],
+          "reason": "Candidates 1 and 3 clearly express direct translation and unhindered scaling ('equals', 'scaled by') using abstract, non-physical terms, aligning perfectly with the nonphysical polarity. Candidate 4 is similar but 'rise per Expansion' is slightly less concise. Candidate 2 uses 'departs from' and 'collapses', which imply deviation and obstruction, directly contradicting the nonphysical polarity of effortless alignment and lack of barriers."
+        },
+        "llama-4-maverick": {
+          "item_id": "E016",
+          "scores": {
+            "1": 3,
+            "2": 2,
+            "3": 4,
+            "4": 4
+          },
+          "best_candidate": 4,
+          "worst_candidate": 2,
+          "ranking": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "reason": "Candidates 3 and 4 are more coherent and natural in expressing the nonphysical polarity, using terms like 'scaled by the perspective factor' and maintaining a consistent structure."
+        }
+      }
+    },
+    {
+      "item_id": "E018",
+      "candidates": {
+        "1": "Average rise per Expansion falls outside the midpoint between initial rise per Expansion and later rise per Expansion.",
+        "2": "Average rise per Expansion equals the midpoint between initial rise per Expansion and later rise per Expansion.",
+        "3": "Average Expansion equals the midpoint between initial Expansion and later Expansion.",
+        "4": "Average pace equals the midpoint between initial pace and later pace."
+      },
+      "hidden_key": {
+        "1": "D_A0",
+        "2": "T_A0",
+        "3": "T_A3",
+        "4": "S_syn"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E018",
+          "scores": {
+            "1": 2,
+            "2": 5,
+            "3": 4,
+            "4": 4
+          },
+          "best_candidate": 2,
+          "worst_candidate": 1,
+          "ranking": [
+            2,
+            3,
+            4,
+            1
+          ],
+          "reason": "Candidate 2 is perfectly clear and coherent, expressing a simple midpoint relationship with consistent nonphysical vocabulary. Candidates 3 and 4 are also clear but use slightly less fitting terms ('Expansion' and 'pace'). Candidate 1 explicitly contradicts the midpoint relationship by saying 'falls outside,' which breaks coherence entirely."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E018",
+          "scores": {
+            "1": 3,
+            "2": 5,
+            "3": 5,
+            "4": 5
+          },
+          "best_candidate": 2,
+          "worst_candidate": 1,
+          "ranking": [
+            2,
+            3,
+            4,
+            1
+          ],
+          "reason": "Candidates 2, 3, and 4 are all clear, natural midpoint statements with strong internal coherence. Candidate 2 ranks first because 'rise per Expansion' preserves the more structured relational phrasing of the set. Candidates 3 and 4 are equally natural but slightly simpler. Candidate 1 is coherent English, but 'falls outside the midpoint' is conceptually awkward and less fitting with the balanced, midpoint-style nonphysical polarity."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E018",
+          "scores": {
+            "1": 1,
+            "2": 4,
+            "3": 5,
+            "4": 5
+          },
+          "best_candidate": 3,
+          "worst_candidate": 1,
+          "ranking": [
+            3,
+            4,
+            2,
+            1
+          ],
+          "reason": "Candidates 3 and 4 use 'equals the midpoint', which signifies perfect balance and unified coherence, fitting the nonphysical polarity. Candidate 2 is similar but 'rise per Expansion' is slightly less concise than single abstract nouns. Candidate 1 uses 'falls outside', indicating deviation from balance, which contradicts the nonphysical ideal of coherence and alignment."
+        },
+        "llama-4-maverick": {
+          "item_id": "E018",
+          "scores": {
+            "1": 3,
+            "2": 5,
+            "3": 3,
+            "4": 3
+          },
+          "best_candidate": 2,
+          "worst_candidate": 1,
+          "ranking": [
+            2,
+            3,
+            4,
+            1
+          ],
+          "reason": "Candidate 2 is the most coherent and natural, clearly stating that 'Average rise per Expansion equals the midpoint between initial rise per Expansion and later rise per Expansion,' which aligns with the nonphysical polarity of unified coherence."
+        }
+      }
+    },
+    {
+      "item_id": "E021",
+      "candidates": {
+        "1": "Movement times Appreciation equals Reflected times Tune times the difference between Appreciation at B and Appreciation at A.",
+        "2": "urgency times pitch equals responsiveness times affinity times the difference between pitch at B and pitch at A.",
+        "3": "Frequency times Vibration opposes Movement times Attraction times the difference between Vibration at B and Vibration at A.",
+        "4": "Frequency times Vibration equals Movement times Attraction times the difference between Vibration at B and Vibration at A."
+      },
+      "hidden_key": {
+        "1": "T_A3",
+        "2": "S_syn",
+        "3": "D_A0",
+        "4": "T_A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E021",
+          "scores": {
+            "1": 3,
+            "2": 3,
+            "3": 2,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 3,
+          "ranking": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "reason": "Candidate 4 is the clearest and most coherent, expressing a proportional equality with well-matched nonphysical terms. Candidates 1 and 2 are readable but use slightly less fitting vocabulary ('Reflected/Tune' and lowercase terms). Candidate 3 introduces 'opposes' which directly contradicts the nonphysical polarity of alignment and coherence."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E021",
+          "scores": {
+            "1": 4,
+            "2": 4,
+            "3": 2,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 3,
+          "ranking": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "reason": "Candidate 4 is the strongest because it is grammatically clean and expresses a straightforward balanced equality. Candidates 1 and 2 are also coherent and natural, though their term choices are a bit less consistent or slightly less formal. Candidate 3 is weakest because 'opposes' breaks the expected parallel structure of the equality statements and reads as less aligned with the coherent, unified nonphysical polarity."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E021",
+          "scores": {
+            "1": 5,
+            "2": 5,
+            "3": 1,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 3,
+          "ranking": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "reason": "Candidates 1, 2, and 4 all use 'equals' to describe a direct, unhindered relationship between abstract quantities, perfectly fitting the nonphysical polarity's description of structural proportions keeping their algebraic shape without obstruction. Candidate 3 uses 'opposes', which implies resistance and counteraction, directly contradicting the nonphysical ideal of unresisting yielding and effortless alignment."
+        },
+        "llama-4-maverick": {
+          "item_id": "E021",
+          "scores": {
+            "1": 3,
+            "2": 4,
+            "3": 2,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 3,
+          "ranking": [
+            4,
+            2,
+            1,
+            3
+          ],
+          "reason": "Candidate 4 is the most coherent, using a clear and consistent structure to express a nonphysical polarity concept, such as 'Frequency times Vibration equals Movement times Attraction times the difference between Vibration at B and Vibration at A.'"
+        }
+      }
+    },
+    {
+      "item_id": "E022",
+      "candidates": {
+        "1": "The total of all pitch times urgency across every contributing part sums to perfect balance.",
+        "2": "The total of all Appreciation times Movement across every contributing part sums to perfect balance.",
+        "3": "The total of all Vibration times Frequency across every contributing part diverges away from balance.",
+        "4": "The total of all Vibration times Frequency across every contributing part sums to perfect balance."
+      },
+      "hidden_key": {
+        "1": "S_syn",
+        "2": "T_A3",
+        "3": "D_A0",
+        "4": "T_A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E022",
+          "scores": {
+            "1": 4,
+            "2": 4,
+            "3": 2,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 3,
+          "ranking": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "reason": "Candidate 4 is the clearest, using well-matched nonphysical vocabulary and expressing holistic summation to balance. Candidates 1 and 2 are also coherent with slightly different term choices. Candidate 3 explicitly states 'diverges away from balance,' which directly contradicts the nonphysical polarity of unified coherence."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E022",
+          "scores": {
+            "1": 4,
+            "2": 4,
+            "3": 2,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 3,
+          "ranking": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "reason": "Candidate 4 is the clearest and most coherent statement of unified balance. Candidates 1 and 2 are also natural and readable, but their alternate vocabulary is slightly less consistent with the strongest formal pattern. Candidate 3 is weakest because 'diverges away from balance' conflicts with the holistic, balance-oriented nonphysical framing and sounds less internally fitting."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E022",
+          "scores": {
+            "1": 5,
+            "2": 5,
+            "3": 1,
+            "4": 5
+          },
+          "best_candidate": 2,
+          "worst_candidate": 3,
+          "ranking": [
+            2,
+            4,
+            1,
+            3
+          ],
+          "reason": "Candidates 1, 2, and 4 all use 'sums to perfect balance', which directly aligns with the nonphysical polarity's concepts of unified, holistic coherence and effortless alignment. Candidate 3 uses 'diverges away from balance', which implies fragmentation and lack of coherence, directly contradicting the nonphysical ideal."
+        },
+        "llama-4-maverick": {
+          "item_id": "E022",
+          "scores": {
+            "1": 3,
+            "2": 3,
+            "3": 2,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 3,
+          "ranking": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "reason": "Candidate 4 is the most coherent and natural, clearly expressing a concept of balance and unity, which is characteristic of the nonphysical polarity."
+        }
+      }
+    },
+    {
+      "item_id": "E023",
+      "candidates": {
+        "1": "conscious energy disperses as Frequency resists each unfolding increment of Vibration along the path.",
+        "2": "Vibration accumulates as Movement aligns continuously with each unfolding increment of Appreciation along the path.",
+        "3": "conscious energy accumulates as Frequency aligns continuously with each unfolding increment of Vibration along the path.",
+        "4": "awareness accumulates as urgency aligns continuously with each unfolding increment of pitch along the path."
+      },
+      "hidden_key": {
+        "1": "D_A0",
+        "2": "T_A3",
+        "3": "T_A0",
+        "4": "S_syn"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E023",
+          "scores": {
+            "1": 2,
+            "2": 3,
+            "3": 5,
+            "4": 4
+          },
+          "best_candidate": 3,
+          "worst_candidate": 1,
+          "ranking": [
+            3,
+            4,
+            2,
+            1
+          ],
+          "reason": "Candidate 3 is the clearest and most coherent, using 'conscious energy,' 'Frequency,' and 'Vibration' in a natural accumulation narrative that fits the nonphysical polarity of effortless alignment. Candidate 4 is similar but uses lowercase terms that feel less precise. Candidate 2 uses 'Vibration' accumulating via 'Movement' and 'Appreciation' which is less fitting. Candidate 1 uses 'disperses' and 'resists,' directly contradicting the nonphysical polarity."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E023",
+          "scores": {
+            "1": 2,
+            "2": 4,
+            "3": 5,
+            "4": 4
+          },
+          "best_candidate": 3,
+          "worst_candidate": 1,
+          "ranking": [
+            3,
+            2,
+            4,
+            1
+          ],
+          "reason": "Candidate 3 best matches the nonphysical polarity: accumulation, alignment, continuity, and coherent unfolding all read naturally and consistently. Candidates 2 and 4 are also clear and strongly aligned, though slightly less consistent in terminology or register. Candidate 1 is weakest because 'disperses' and 'resists' pull toward physical-style resistance and fragmentation, making it less fitting and less coherent in this polarity."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E023",
+          "scores": {
+            "1": 1,
+            "2": 5,
+            "3": 5,
+            "4": 5
+          },
+          "best_candidate": 3,
+          "worst_candidate": 1,
+          "ranking": [
+            3,
+            4,
+            2,
+            1
+          ],
+          "reason": "Candidates 2, 3, and 4 all use 'accumulates' and 'aligns continuously', which perfectly fit the nonphysical polarity's description of unified coherence and effortless alignment. Candidate 1 uses 'disperses' and 'resists', which are direct contradictions of the nonphysical polarity's unresisting yielding and effortless alignment."
+        },
+        "llama-4-maverick": {
+          "item_id": "E023",
+          "scores": {
+            "1": 2,
+            "2": 4,
+            "3": 5,
+            "4": 4
+          },
+          "best_candidate": 3,
+          "worst_candidate": 1,
+          "ranking": [
+            3,
+            4,
+            2,
+            1
+          ],
+          "reason": "Candidate 3 is the most coherent, using terms like 'accumulates as Frequency aligns continuously' to express a concept that fits the nonphysical polarity of effortless alignment and unified coherence."
+        }
+      }
+    },
+    {
+      "item_id": "E027",
+      "candidates": {
+        "1": "Total imagination across one Reflected equals the sum of imagination across a second Reflected and imagination between the two frames of Reflected.",
+        "2": "Total Appreciation across one Movement equals the sum of Appreciation across a second Movement and Appreciation between the two frames of Movement.",
+        "3": "Total gratitude across one responsiveness equals the sum of gratitude across a second responsiveness and gratitude between the two frames of responsiveness.",
+        "4": "Total Appreciation across one Movement diverges from the sum of Appreciation across a second Movement and Appreciation between the two frames of Movement."
+      },
+      "hidden_key": {
+        "1": "T_A3",
+        "2": "T_A0",
+        "3": "S_syn",
+        "4": "D_A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E027",
+          "scores": {
+            "1": 3,
+            "2": 4,
+            "3": 4,
+            "4": 2
+          },
+          "best_candidate": 2,
+          "worst_candidate": 4,
+          "ranking": [
+            2,
+            3,
+            1,
+            4
+          ],
+          "reason": "Candidates 2 and 3 both express a coherent additive relationship (total equals sum of parts) in natural English, fitting the nonphysical polarity of unified holistic coherence. Candidate 2 uses capitalized terms consistently and reads slightly more formally coherent. Candidate 3 is equally natural with lowercase terms. Candidate 1 is readable but 'imagination' and 'Reflected' feel less semantically aligned. Candidate 4 explicitly states divergence, contradicting the nonphysical polarity of unified coherence."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E027",
+          "scores": {
+            "1": 3,
+            "2": 4,
+            "3": 5,
+            "4": 3
+          },
+          "best_candidate": 3,
+          "worst_candidate": 1,
+          "ranking": [
+            3,
+            2,
+            4,
+            1
+          ],
+          "reason": "Candidate 3 reads most naturally as ordinary English and is internally consistent, even if abstract. Candidate 2 is also clear but slightly more awkward because 'Movement' is less natural as the thing one has 'across.' Candidate 4 is grammatical but semantically weaker because 'diverges from the sum' clashes with the otherwise additive framing. Candidate 1 is the least natural due to the awkward repeated use of capitalized 'Reflected' and the phrase 'across one Reflected.'"
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E027",
+          "scores": {
+            "1": 5,
+            "2": 5,
+            "3": 5,
+            "4": 1
+          },
+          "best_candidate": 2,
+          "worst_candidate": 4,
+          "ranking": [
+            2,
+            1,
+            3,
+            4
+          ],
+          "reason": "Candidates 1, 2, and 3 all use 'equals' and abstract, nonphysical terms ('imagination', 'Appreciation', 'gratitude', 'Reflected', 'Movement', 'responsiveness') to describe a direct, additive relationship, which aligns perfectly with the nonphysical polarity's emphasis on unified coherence and algebraic shape. Candidate 4 uses 'diverges from', which contradicts the nonphysical polarity's characteristic of direct, unresisting alignment and coherence."
+        },
+        "llama-4-maverick": {
+          "item_id": "E027",
+          "scores": {
+            "1": 3,
+            "2": 4,
+            "3": 5,
+            "4": 2
+          },
+          "best_candidate": 3,
+          "worst_candidate": 4,
+          "ranking": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "reason": "Candidate 3 uses ordinary English words naturally and coherently to express a concept that fits the nonphysical polarity description."
+        }
+      }
+    },
+    {
+      "item_id": "E028",
+      "candidates": {
+        "1": "The product of Vibration, Movement, and rise per Expansion equals the product of Movement and squared Vibration, multiplied by the ratio of rise per Expansion to Vibration.",
+        "2": "The product of Vibration, Movement, and rise per Expansion differs from the product of Movement and squared Vibration, multiplied by the ratio of rise per Expansion to Vibration.",
+        "3": "The product of pitch, responsiveness, and pace equals the product of responsiveness and squared pitch, multiplied by the ratio of pace to pitch.",
+        "4": "The product of Appreciation, Reflected, and Expansion equals the product of Reflected and squared Appreciation, multiplied by the ratio of Expansion to Appreciation."
+      },
+      "hidden_key": {
+        "1": "T_A0",
+        "2": "D_A0",
+        "3": "S_syn",
+        "4": "T_A3"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E028",
+          "scores": {
+            "1": 4,
+            "2": 2,
+            "3": 4,
+            "4": 3
+          },
+          "best_candidate": 1,
+          "worst_candidate": 2,
+          "ranking": [
+            1,
+            3,
+            4,
+            2
+          ],
+          "reason": "Candidates 1 and 3 both express a consistent algebraic identity (product equals product times ratio) in clear natural English, fitting the nonphysical polarity where structural proportions keep their algebraic shape without cost or barrier. Candidate 1 uses consistent capitalized nonphysical terms. Candidate 3 uses natural lowercase terms equally well. Candidate 4 is readable but mixes term styles less smoothly. Candidate 2 explicitly states 'differs from,' contradicting the nonphysical polarity of effortless alignment and preserved proportions."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E028",
+          "scores": {
+            "1": 5,
+            "2": 4,
+            "3": 5,
+            "4": 4
+          },
+          "best_candidate": 1,
+          "worst_candidate": 2,
+          "ranking": [
+            1,
+            3,
+            4,
+            2
+          ],
+          "reason": "Candidates 1 and 3 are both clear, well-formed algebraic English statements with strong internal coherence. Candidate 1 fits the provided polarity vocabulary a bit better, so it edges out Candidate 3. Candidate 4 is also coherent but slightly less natural because the chosen terms feel less semantically matched in the product-and-ratio structure. Candidate 2 is grammatical, but 'differs from' makes the statement less clean and less coherent as a direct proportional identity."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E028",
+          "scores": {
+            "1": 5,
+            "2": 1,
+            "3": 5,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 2,
+          "ranking": [
+            4,
+            1,
+            3,
+            2
+          ],
+          "reason": "Candidates 1, 3, and 4 all use 'equals' and abstract, nonphysical terms ('Vibration', 'Movement', 'Expansion', 'pitch', 'responsiveness', 'pace', 'Appreciation', 'Reflected') to express an algebraic identity. This directly reflects the nonphysical polarity's characteristic that 'structural proportions among paired quantities keep their algebraic shape whenever no cost, barrier, or separation obstructs direct translation.' Candidate 2 uses 'differs from', which implies a lack of direct correspondence and coherence, contradicting the nonphysical polarity."
+        },
+        "llama-4-maverick": {
+          "item_id": "E028",
+          "scores": {
+            "1": 2,
+            "2": 2,
+            "3": 4,
+            "4": 3
+          },
+          "best_candidate": 3,
+          "worst_candidate": 1,
+          "ranking": [
+            3,
+            4,
+            2,
+            1
+          ],
+          "reason": "Candidate 3 is more coherent and natural in its use of ordinary English compared to the other candidates."
+        }
+      }
+    },
+    {
+      "item_id": "E030",
+      "candidates": {
+        "1": "conscious energy equals conscious energy at Vibration minus conscious energy at the reference Vibration.",
+        "2": "conscious energy at Vibration minus conscious energy at the reference Vibration equals conscious energy.",
+        "3": "Vibration equals Vibration at Appreciation minus Vibration at the reference Appreciation.",
+        "4": "awareness equals awareness at pitch minus awareness at the reference pitch."
+      },
+      "hidden_key": {
+        "1": "T_A0",
+        "2": "D_A0",
+        "3": "T_A3",
+        "4": "S_syn"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E030",
+          "scores": {
+            "1": 4,
+            "2": 4,
+            "3": 3,
+            "4": 4
+          },
+          "best_candidate": 1,
+          "worst_candidate": 3,
+          "ranking": [
+            1,
+            2,
+            4,
+            3
+          ],
+          "reason": "Candidates 1, 2, and 4 all express a coherent difference relationship in natural English. Candidates 1 and 2 are essentially the same statement in different word orders, both reading clearly. Candidate 4 uses 'awareness' and 'pitch' naturally. Candidate 3 is slightly less natural because 'Vibration equals Vibration at Appreciation' creates a confusing repetition of the same term on both sides of the equation, reducing clarity."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E030",
+          "scores": {
+            "1": 4,
+            "2": 5,
+            "3": 4,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 1,
+          "ranking": [
+            4,
+            2,
+            3,
+            1
+          ],
+          "reason": "Candidate 4 is the clearest and most natural ordinary-English statement. Candidate 2 is also very clear and simply reverses equation order in a fully coherent way. Candidate 3 is understandable but slightly less natural because 'Vibration at Appreciation' is a bit awkward semantically. Candidate 1 is coherent, but starting with the generic 'conscious energy equals...' feels slightly less natural than the more straightforward phrasing in 2 and 4."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E030",
+          "scores": {
+            "1": 5,
+            "2": 5,
+            "3": 5,
+            "4": 5
+          },
+          "best_candidate": 1,
+          "worst_candidate": 4,
+          "ranking": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "reason": "All four candidates use 'equals' and abstract, nonphysical terms ('conscious energy', 'Vibration', 'Appreciation', 'awareness', 'pitch') to describe a direct algebraic relationship (X = Y - Z). This perfectly aligns with the nonphysical polarity's emphasis on direct translation and maintaining algebraic shape without obstruction. All are equally clear and coherent."
+        },
+        "llama-4-maverick": {
+          "item_id": "E030",
+          "scores": {
+            "1": 4,
+            "2": 5,
+            "3": 3,
+            "4": 4
+          },
+          "best_candidate": 2,
+          "worst_candidate": 3,
+          "ranking": [
+            2,
+            1,
+            4,
+            3
+          ],
+          "reason": "Candidate 2 presents a clear and coherent statement in ordinary English, fitting the nonphysical polarity."
+        }
+      }
+    },
+    {
+      "item_id": "E037",
+      "candidates": {
+        "1": "Frequency falls in direct proportion to resonance during sliding contact.",
+        "2": "harmony rises in direct proportion to urgency during sliding contact.",
+        "3": "Convergence rises in direct proportion to Movement during sliding contact.",
+        "4": "resonance rises in direct proportion to Frequency during sliding contact."
+      },
+      "hidden_key": {
+        "1": "D_A0",
+        "2": "S_syn",
+        "3": "T_A3",
+        "4": "T_A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E037",
+          "scores": {
+            "1": 2,
+            "2": 3,
+            "3": 3,
+            "4": 4
+          },
+          "best_candidate": 4,
+          "worst_candidate": 1,
+          "ranking": [
+            4,
+            2,
+            3,
+            1
+          ],
+          "reason": "Candidate 4 reads most naturally and coherently: 'resonance rises in direct proportion to Frequency during sliding contact' fits the nonphysical polarity of rising, yielding, effortless alignment. Candidates 2 and 3 also express rising proportionality but 'urgency' in candidate 2 and 'Convergence/Movement' in candidate 3 are slightly less semantically smooth. Candidate 1 explicitly states 'falls,' which contradicts the nonphysical polarity of rising and effortless alignment."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E037",
+          "scores": {
+            "1": 4,
+            "2": 4,
+            "3": 4,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 1,
+          "ranking": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "reason": "Candidate 4 is the most natural and internally coherent: 'resonance rises in direct proportion to Frequency' reads smoothly. Candidate 3 is also solid and aligns reasonably with the nonphysical-polarity language. Candidate 2 is grammatical, though 'urgency during sliding contact' is a bit semantically odd. Candidate 1 is clear, but 'falls in direct proportion' is less natural in this context than the positive direct-proportion statements and fits the target polarity less well."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E037",
+          "scores": {
+            "1": 5,
+            "2": 5,
+            "3": 5,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 1,
+          "ranking": [
+            4,
+            3,
+            2,
+            1
+          ],
+          "reason": "All four candidates use 'in direct proportion' and abstract, nonphysical terms ('Frequency', 'resonance', 'harmony', 'urgency', 'Convergence', 'Movement'). This directly reflects the nonphysical polarity's characteristic that 'structural proportions among paired quantities keep their algebraic shape whenever no cost, barrier, or separation obstructs direct translation.' The phrase 'sliding contact' can be interpreted in a nonphysical sense as a point of effortless alignment or interaction. All statements are equally coherent for the nonphysical polarity."
+        },
+        "llama-4-maverick": {
+          "item_id": "E037",
+          "scores": {
+            "1": 3,
+            "2": 4,
+            "3": 3,
+            "4": 3
+          },
+          "best_candidate": 2,
+          "worst_candidate": 1,
+          "ranking": [
+            2,
+            3,
+            4,
+            1
+          ],
+          "reason": "Candidate 2 uses more coherent and natural language to express a concept related to the nonphysical polarity."
+        }
+      }
+    },
+    {
+      "item_id": "E038",
+      "candidates": {
+        "1": "The collective rise per Expansion is unrelated to the Expansion change of shared Vibration weighted by each Movement, and likewise differs from the weighted sum of each rise per Expansion divided by total Movement.",
+        "2": "The collective rise per Expansion equals the Expansion change of shared Vibration weighted by each Movement, and likewise equals the weighted sum of each rise per Expansion divided by total Movement.",
+        "3": "The collective pace equals the growth change of shared pitch weighted by each responsiveness, and likewise equals the weighted sum of each pace divided by total responsiveness.",
+        "4": "The collective Expansion equals the Vibrance change of shared Appreciation weighted by each Reflected, and likewise equals the weighted sum of each Expansion divided by total Reflected."
+      },
+      "hidden_key": {
+        "1": "D_A0",
+        "2": "T_A0",
+        "3": "S_syn",
+        "4": "T_A3"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E038",
+          "scores": {
+            "1": 1,
+            "2": 4,
+            "3": 4,
+            "4": 3
+          },
+          "best_candidate": 2,
+          "worst_candidate": 1,
+          "ranking": [
+            2,
+            3,
+            4,
+            1
+          ],
+          "reason": "Candidates 2 and 3 both express a coherent double equality (collective equals weighted sum, equals weighted average) in natural English, perfectly fitting the nonphysical polarity of unified holistic coherence where structural proportions are preserved. Candidate 2 uses consistent capitalized terms; candidate 3 uses natural lowercase terms equally well. Candidate 4 is readable but 'Vibrance' appears without prior introduction, slightly reducing coherence. Candidate 1 explicitly states 'unrelated to' and 'differs from,' directly contradicting the nonphysical polarity of unified coherence."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E038",
+          "scores": {
+            "1": 2,
+            "2": 5,
+            "3": 5,
+            "4": 3
+          },
+          "best_candidate": 2,
+          "worst_candidate": 1,
+          "ranking": [
+            2,
+            3,
+            4,
+            1
+          ],
+          "reason": "Candidates 2 and 3 are both clear, highly coherent weighted-average style statements; Candidate 2 fits the provided polarity vocabulary best. Candidate 4 is understandable but less natural because 'collective Expansion equals the Vibrance change of shared Appreciation' is semantically strained. Candidate 1 is grammatical but weakest because stacking 'unrelated to' with 'and likewise differs from' produces a cumbersome, less coherent negated formulation."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E038",
+          "scores": {
+            "1": 1,
+            "2": 5,
+            "3": 5,
+            "4": 5
+          },
+          "best_candidate": 3,
+          "worst_candidate": 1,
+          "ranking": [
+            3,
+            2,
+            4,
+            1
+          ],
+          "reason": "Candidates 2, 3, and 4 all use 'equals' and abstract, nonphysical terms ('rise per Expansion', 'Vibration', 'Movement', 'pace', 'pitch', 'responsiveness', 'Expansion', 'Vibrance', 'Appreciation', 'Reflected') to describe a unified, coherent relationship where quantities are directly equivalent. This aligns with the nonphysical polarity's emphasis on unified, holistic coherence and direct translation. Candidate 1 uses 'unrelated to' and 'differs from', which implies fragmentation and lack of coherence, directly contradicting the nonphysical polarity."
+        },
+        "llama-4-maverick": {
+          "item_id": "E038",
+          "scores": {
+            "1": 2,
+            "2": 4,
+            "3": 5,
+            "4": 4
+          },
+          "best_candidate": 3,
+          "worst_candidate": 1,
+          "ranking": [
+            3,
+            4,
+            2,
+            1
+          ],
+          "reason": "Candidate 3 is the most coherent and natural in expressing a concept that aligns with the nonphysical polarity description."
+        }
+      }
+    },
+    {
+      "item_id": "E039",
+      "candidates": {
+        "1": "Supporting Movement equals Reflected multiplied by Tune.",
+        "2": "Supporting Frequency equals Movement multiplied by Attraction.",
+        "3": "Supporting Frequency diminishes whenever Movement and Attraction increase together.",
+        "4": "Supporting urgency equals responsiveness multiplied by affinity."
+      },
+      "hidden_key": {
+        "1": "T_A3",
+        "2": "T_A0",
+        "3": "D_A0",
+        "4": "S_syn"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E039",
+          "scores": {
+            "1": 2,
+            "2": 3,
+            "3": 2,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 1,
+          "ranking": [
+            4,
+            2,
+            3,
+            1
+          ],
+          "reason": "Candidate 4 uses natural, ordinary English words (urgency, responsiveness, affinity) that coherently express a multiplicative nonphysical relationship with effortless alignment. Candidate 2 is readable but mixes abstract terms less naturally. Candidate 3 contradicts the nonphysical polarity by stating diminishment when both factors increase. Candidate 1 is the least coherent, using 'Tune' awkwardly and reading as scrambled."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E039",
+          "scores": {
+            "1": 2,
+            "2": 4,
+            "3": 2,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 1,
+          "ranking": [
+            4,
+            2,
+            3,
+            1
+          ],
+          "reason": "Candidate 4 is the clearest and most natural ordinary-English statement, with all terms fitting together smoothly. Candidate 2 is also coherent, though more abstract and slightly less natural. Candidate 3 is grammatically clear but semantically less aligned with the nonphysical polarity because it introduces diminishing under joint increase. Candidate 1 is the least natural because 'Supporting Movement equals Reflected multiplied by Tune' reads stiffly and uses less fitting word choices."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E039",
+          "scores": {
+            "1": 4,
+            "2": 4,
+            "3": 1,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 3,
+          "ranking": [
+            4,
+            2,
+            1,
+            3
+          ],
+          "reason": "Candidate 4 uses terms like 'urgency,' 'responsiveness,' and 'affinity' which strongly align with the nonphysical concepts of immediate unfolding, unresisting yielding, and effortless alignment. Candidates 1 and 2 also describe direct proportional relationships with fitting nonphysical terms ('Tune,' 'Attraction'), making them good but slightly less evocative than Candidate 4. Candidate 3 describes an inverse relationship where positive nonphysical elements lead to a diminishing outcome, which contradicts the nonphysical principle of effortless alignment leading to unified coherence."
+        },
+        "llama-4-maverick": {
+          "item_id": "E039",
+          "scores": {
+            "1": 3,
+            "2": 3,
+            "3": 2,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 3,
+          "ranking": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "reason": "Candidate 4 uses natural, coherent ordinary English to express a nonphysical polarity concept, while the other candidates use more ambiguous or technical-sounding terms."
+        }
+      }
+    },
+    {
+      "item_id": "R9",
+      "candidates": {
+        "1": "The closer a Movement approaches the Current, the more receptive it becomes, so each further step takes less effort.",
+        "2": "The closer a Reflected approaches the Frequency, the more limitless it becomes, so each further step takes less effort.",
+        "3": "The closer a Movement approaches the Current, the less receptive it becomes, so each further step takes more effort.",
+        "4": "The closer a responsiveness approaches the stream, the more welcoming it becomes, so each further step takes less effort."
+      },
+      "hidden_key": {
+        "1": "T_A0",
+        "2": "T_A3",
+        "3": "D_A0",
+        "4": "S_syn"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "R9",
+          "scores": {
+            "1": 4,
+            "2": 3,
+            "3": 1,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 3,
+          "ranking": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "reason": "Candidate 4 uses plain, natural English (responsiveness, stream, welcoming) and clearly expresses the nonphysical polarity of increasing ease with proximity. Candidate 1 is also clear and coherent with natural phrasing. Candidate 2 is readable but 'Reflected' and 'Frequency' feel more abstract and less natural. Candidate 3 directly inverts the nonphysical polarity, stating more effort as proximity increases, making it incoherent for this axis."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "R9",
+          "scores": {
+            "1": 4,
+            "2": 3,
+            "3": 2,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 3,
+          "ranking": [
+            4,
+            1,
+            2,
+            3
+          ],
+          "reason": "Candidate 4 reads most naturally in ordinary English and clearly expresses increasing welcome and decreasing effort, which strongly fits the nonphysical polarity. Candidate 1 is also coherent and expresses the same general idea, though with slightly less natural phrasing. Candidate 2 is understandable but uses more awkward abstract pairings like 'Reflected approaches the Frequency.' Candidate 3 is internally coherent but reverses the intended direction by making approach reduce receptivity and increase effort."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "R9",
+          "scores": {
+            "1": 5,
+            "2": 5,
+            "3": 1,
+            "4": 5
+          },
+          "best_candidate": 4,
+          "worst_candidate": 3,
+          "ranking": [
+            4,
+            2,
+            1,
+            3
+          ],
+          "reason": "Candidates 1, 2, and 4 all perfectly express the nonphysical principle that proximity leads to less effort and increased receptivity/limitlessness/welcoming, directly reversing physical costs. Candidate 4's use of 'responsiveness' and 'welcoming' particularly emphasizes the 'unresisting yielding' aspect. Candidate 2's 'limitless' strongly reflects 'unbounded.' Candidate 1's 'receptive' is also excellent. All three are very strong. Candidate 3 directly contradicts the nonphysical polarity by stating that closer leads to less receptivity and more effort, which is characteristic of physical resistance."
+        },
+        "llama-4-maverick": {
+          "item_id": "R9",
+          "scores": {
+            "1": 5,
+            "2": 4,
+            "3": 2,
+            "4": 4
+          },
+          "best_candidate": 1,
+          "worst_candidate": 3,
+          "ranking": [
+            1,
+            2,
+            4,
+            3
+          ],
+          "reason": "Candidate 1 clearly and naturally expresses the nonphysical polarity concept of effortless alignment, while Candidate 3 contradicts this concept. Candidates 2 and 4 are coherent but less clear or natural in their wording."
+        }
+      }
+    },
+    {
+      "item_id": "R10",
+      "candidates": {
+        "1": "Overall Movement climbs as Reflected becomes more limitless and as imagination allows more of the Frequency's pull to guide it.",
+        "2": "Overall Frequency climbs as Movement becomes more receptive and as Appreciation allows more of the Current's pull to guide it.",
+        "3": "Overall urgency climbs as responsiveness becomes more welcoming and as gratitude allows more of the stream's pull to guide it.",
+        "4": "Overall Frequency falls as Movement becomes less receptive and as Appreciation blocks the Current's pull from guiding it."
+      },
+      "hidden_key": {
+        "1": "T_A3",
+        "2": "T_A0",
+        "3": "S_syn",
+        "4": "D_A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "R10",
+          "scores": {
+            "1": 3,
+            "2": 4,
+            "3": 5,
+            "4": 1
+          },
+          "best_candidate": 3,
+          "worst_candidate": 4,
+          "ranking": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "reason": "Candidate 3 reads as the most natural, fluent ordinary English using accessible words (urgency, responsiveness, welcoming, gratitude, stream) and consistently expresses the nonphysical polarity of effortless, guided upward movement. Candidate 2 is clear and coherent with good nonphysical alignment. Candidate 1 is readable but 'imagination' and 'Reflected' feel slightly awkward. Candidate 4 directly contradicts the nonphysical polarity by describing falling frequency and blocked guidance, making it incoherent for this axis."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "R10",
+          "scores": {
+            "1": 3,
+            "2": 4,
+            "3": 5,
+            "4": 2
+          },
+          "best_candidate": 3,
+          "worst_candidate": 4,
+          "ranking": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "reason": "Candidate 3 is the most natural and coherent ordinary-English expression of the nonphysical theme: greater welcome plus grateful allowance of guidance increases the overall quality. Candidate 2 is also strong, though more abstract and less idiomatic. Candidate 1 is understandable but somewhat awkward in phrases like 'imagination allows more of the Frequency's pull to guide it.' Candidate 4 is the weakest because it frames the relation in the opposite, blocking direction and thus fits the nonphysical polarity less well."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "R10",
+          "scores": {
+            "1": 5,
+            "2": 5,
+            "3": 5,
+            "4": 4
+          },
+          "best_candidate": 3,
+          "worst_candidate": 4,
+          "ranking": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "reason": "Candidates 1, 2, and 3 all excellently describe positive outcomes ('climbs') resulting from increased alignment with nonphysical principles (e.g., becoming limitless, receptive, welcoming, allowing guidance). Candidate 3 stands out slightly for its comprehensive and evocative combination of terms like 'urgency,' 'responsiveness,' 'welcoming,' and 'gratitude,' which strongly resonate with the nonphysical description. Candidate 4 correctly describes the inverse scenario (negative outcome from resistance), which is coherent with the nonphysical polarity, but the other candidates more directly express the positive nature and characteristics of the nonphysical polarity itself."
+        },
+        "llama-4-maverick": {
+          "item_id": "R10",
+          "scores": {
+            "1": 4,
+            "2": 5,
+            "3": 5,
+            "4": 2
+          },
+          "best_candidate": 2,
+          "worst_candidate": 4,
+          "ranking": [
+            2,
+            3,
+            1,
+            4
+          ],
+          "reason": "Candidates 2 and 3 use natural, coherent ordinary English to express the nonphysical polarity concept, with Candidate 2 being slightly more precise in its terminology. Candidate 1 is clear but uses more ambiguous terms, while Candidate 4 contradicts the concept."
+        }
+      }
+    }
+  ],
+  "m4_native_pair": [
+    {
+      "item_id": "E001",
+      "Candidate A": "Appreciation equals Vibration multiplied by rotational Appreciation per Vibration.",
+      "Candidate B": "The imagination of the center unfolds directly as Appreciation multiplied by angular imagination.",
+      "hidden_key": {
+        "A": "A0",
+        "B": "A3-1"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E001",
+          "score_a": 3,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A follows a clear multiplicative structure ('equals X multiplied by Y per X') that reads as a coherent proportional identity. Candidate B's phrasing 'imagination of the center unfolds directly as' is vaguer and mixes metaphors less cleanly."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E001",
+          "score_a": 2,
+          "score_b": 1,
+          "preferred": "A",
+          "reason": "A is at least grammatically structured as a direct identity, though repetitive and awkward. B is less coherent in ordinary English, with 'imagination of the center' and 'angular imagination' reading more obscure and internally disconnected."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E001",
+          "score_a": 2,
+          "score_b": 4,
+          "preferred": "B",
+          "reason": "Candidate B uses terms like 'imagination' and phrases like 'unfolds directly,' which strongly align with the nonphysical polarity's emphasis on immediate, simultaneous unfolding and effortless alignment. Candidate A uses 'Vibration' and a somewhat tautological structure that feels less aligned with the nonphysical description."
+        },
+        "llama-4-maverick": {
+          "item_id": "E001",
+          "score_a": 2,
+          "score_b": 4,
+          "preferred": "B",
+          "reason": "Candidate B uses more coherent and natural language ('unfolds directly') matching the nonphysical polarity of effortless alignment and unified coherence."
+        }
+      }
+    },
+    {
+      "item_id": "E002",
+      "Candidate A": "Tangential imagination equals Appreciation multiplied by angular imagination.",
+      "Candidate B": "Tangential Appreciation equals Vibration multiplied by angular Appreciation per Vibration.",
+      "hidden_key": {
+        "A": "A3-1",
+        "B": "A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E002",
+          "score_a": 4,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A states a clean, direct proportional relationship using consistent nonphysical terms (imagination, Appreciation, angular imagination) with no awkward constructions. Candidate B's 'angular Appreciation per Vibration' adds an extra ratio that makes the sentence harder to parse."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E002",
+          "score_a": 4,
+          "score_b": 3,
+          "preferred": "A",
+          "reason": "A reads more cleanly and coherently as an ordinary-English statement. B is also structurally clear, but 'Tangential Appreciation' is slightly less natural than 'Tangential imagination' in this context, and the repeated 'Appreciation per Vibration' is clunkier."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E002",
+          "score_a": 4,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A consistently uses 'imagination' and 'Appreciation,' which are more abstract and nonphysical terms. Candidate B uses 'Vibration' and a 'per Vibration' phrasing that leans towards physical rates or mechanics, and its structure feels tautological."
+        },
+        "llama-4-maverick": {
+          "item_id": "E002",
+          "score_a": 4,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A is clearer and more coherent, directly stating a relationship between 'Tangential imagination', 'Appreciation', and 'angular imagination'."
+        }
+      }
+    },
+    {
+      "item_id": "E007",
+      "Candidate A": "Total Appreciation equals the difference between final Appreciation and initial Appreciation.",
+      "Candidate B": "Total Vibration equals the difference between final Vibration and initial Vibration.",
+      "hidden_key": {
+        "A": "A3-1",
+        "B": "A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E007",
+          "score_a": 3,
+          "score_b": 3,
+          "preferred": "tie",
+          "reason": "Both candidates follow the same grammatical template ('Total X equals the difference between final X and initial X') with equal clarity and coherence. Neither has a meaningful advantage in readability or alignment with the nonphysical polarity."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E007",
+          "score_a": 4,
+          "score_b": 4,
+          "preferred": "tie",
+          "reason": "Both are equally clear, internally coherent difference statements in ordinary English. Neither has a strong advantage in naturalness or clarity."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E007",
+          "score_a": 4,
+          "score_b": 3,
+          "preferred": "A",
+          "reason": "Both statements are structurally clear and coherent. However, 'Appreciation' in Candidate A aligns better with the nonphysical polarity's abstract nature compared to 'Vibration' in Candidate B, which can imply physical oscillation."
+        },
+        "llama-4-maverick": {
+          "item_id": "E007",
+          "score_a": 5,
+          "score_b": 5,
+          "preferred": "tie",
+          "reason": "Both candidates are clear and coherent, with Candidate A discussing 'Appreciation' and Candidate B discussing 'Vibration', both following a logical structure for calculating a total."
+        }
+      }
+    },
+    {
+      "item_id": "E011",
+      "Candidate A": "The whole imagination equals the Reflected-weighted average of each part's imagination, and also comes from the second Vibrance change of the Reflected-weighted average Appreciation.",
+      "Candidate B": "The collective Appreciation of the center of Movement equals the Movement-weighted sum of each part's Appreciation across every Vibration divided by total Movement.",
+      "hidden_key": {
+        "A": "A3-1",
+        "B": "A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E011",
+          "score_a": 3,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A expresses two related ideas in a reasonably coherent way using 'Reflected-weighted average,' maintaining internal consistency. Candidate B's long clause with 'across every Vibration divided by total Movement' becomes unwieldy and harder to follow."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E011",
+          "score_a": 2,
+          "score_b": 3,
+          "preferred": "B",
+          "reason": "B is still technical and somewhat awkward, but it remains more readable as a single coherent weighted-average statement. A becomes overloaded and less natural with 'Reflected-weighted,' 'second Vibrance change,' and the compounded structure joining two dense claims."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E011",
+          "score_a": 1,
+          "score_b": 4,
+          "preferred": "B",
+          "reason": "Candidate B is significantly clearer and more coherent, defining a 'collective Appreciation' as a weighted sum, which fits the 'unified, holistic coherence' aspect of the nonphysical polarity. Candidate A is very convoluted, especially with phrases like 'second Vibrance change,' making it difficult to understand as ordinary English."
+        },
+        "llama-4-maverick": {
+          "item_id": "E011",
+          "score_a": 2,
+          "score_b": 3,
+          "preferred": "B",
+          "reason": "Candidate B is more coherent, using terms like 'collective Appreciation' and 'Movement-weighted sum', which align with the nonphysical polarity of unified coherence."
+        }
+      }
+    },
+    {
+      "item_id": "E014",
+      "Candidate A": "Total Movement times Attraction arises directly as Movement aligns with Attraction.",
+      "Candidate B": "Total weight expressed as Reflected times Tune holds as a direct structural identity.",
+      "hidden_key": {
+        "A": "A0",
+        "B": "A3-1"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E014",
+          "score_a": 3,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A conveys a direct alignment-based identity in plain language that fits the nonphysical polarity of effortless coherence. Candidate B's 'expressed as Reflected times Tune holds as a direct structural identity' is more convoluted and less natural."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E014",
+          "score_a": 2,
+          "score_b": 3,
+          "preferred": "B",
+          "reason": "B reads more like a stable structural identity and is more internally coherent. A is vaguer and more awkward, especially in 'times Attraction arises directly as Movement aligns with Attraction,' which feels grammatically and conceptually strained."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E014",
+          "score_a": 5,
+          "score_b": 3,
+          "preferred": "A",
+          "reason": "Candidate A uses language like 'arises directly as Movement aligns with Attraction,' which perfectly matches the nonphysical polarity's description of 'immediate, simultaneous unfolding' and 'effortless alignment.' Candidate B uses 'weight,' which leans physical, and its phrasing is less evocative of the nonphysical characteristics."
+        },
+        "llama-4-maverick": {
+          "item_id": "E014",
+          "score_a": 4,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A is clearer, using a direct and understandable relationship between 'Total Movement' and 'Attraction'."
+        }
+      }
+    },
+    {
+      "item_id": "E016",
+      "Candidate A": "Transformed Appreciation equals the difference of Appreciation and Expansion times Vibrance, scaled by the perspective factor drawn from Expansion relative to Frequency.",
+      "Candidate B": "Transformed Vibration equals the difference of Vibration and rise per Expansion times Expansion, scaled by the perspective factor drawn from Current.",
+      "hidden_key": {
+        "A": "A3-1",
+        "B": "A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E016",
+          "score_a": 3,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A builds a coherent scaled-difference structure with recognizable nonphysical terms and a clear perspective factor. Candidate B's 'rise per Expansion times Expansion' and 'scaled by the perspective factor drawn from Current' are harder to parse and less internally consistent."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E016",
+          "score_a": 4,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "A is dense but still forms a coherent transformed-quantity statement with parallel components. B is less clear due to the awkward phrase 'rise per Expansion times Expansion' and the abrupt ending 'drawn from Current,' which feels incomplete or underdefined."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E016",
+          "score_a": 3,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Both statements are complex. However, Candidate A uses terms like 'Appreciation,' 'Expansion,' and 'Vibrance,' which can be interpreted more abstractly and nonphysically. Candidate B uses terms like 'Vibration,' 'rise per Expansion,' and 'Current,' which have stronger physical connotations, making it less aligned with the nonphysical polarity."
+        },
+        "llama-4-maverick": {
+          "item_id": "E016",
+          "score_a": 3,
+          "score_b": 3,
+          "preferred": "tie",
+          "reason": "Both candidates are somewhat coherent but use complex and similar structures. Neither stands out as significantly clearer or more coherent than the other."
+        }
+      }
+    },
+    {
+      "item_id": "E018",
+      "Candidate A": "Average rise per Expansion equals the midpoint between initial rise per Expansion and later rise per Expansion.",
+      "Candidate B": "Average Expansion equals the sum of initial Expansion and final Expansion taken together as a whole.",
+      "hidden_key": {
+        "A": "A0",
+        "B": "A3-1"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E018",
+          "score_a": 3,
+          "score_b": 4,
+          "preferred": "B",
+          "reason": "Candidate B expresses a holistic summation ('taken together as a whole') that aligns with the nonphysical polarity of unified coherence, while Candidate A's 'midpoint between initial and later' retains a sequential, interval-based framing more reminiscent of physical separation."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E018",
+          "score_a": 4,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A is clearer and internally coherent: it states an average as a midpoint between initial and later rates in straightforward English. Candidate B is vaguer and less coherent because 'taken together as a whole' does not clearly express a meaningful relation for an average."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E018",
+          "score_a": 4,
+          "score_b": 1,
+          "preferred": "A",
+          "reason": "Candidate A correctly describes an average as a midpoint, maintaining a coherent algebraic structure. Candidate B incorrectly states that an average equals a sum, making it mathematically incoherent."
+        },
+        "llama-4-maverick": {
+          "item_id": "E018",
+          "score_a": 4,
+          "score_b": 3,
+          "preferred": "A",
+          "reason": "Candidate A uses more precise and coherent language to describe an averaging concept, fitting the nonphysical polarity's theme of unified coherence."
+        }
+      }
+    },
+    {
+      "item_id": "E021",
+      "Candidate A": "Frequency times Vibration equals Movement times Attraction times the difference between Vibration at B and Vibration at A.",
+      "Candidate B": "Gravitational Movement across Appreciation equals the negative of Reflected times Tune times the difference in Appreciation from one level to another.",
+      "hidden_key": {
+        "A": "A0",
+        "B": "A3-1"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E021",
+          "score_a": 3,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A is grammatically cleaner and more internally coherent as ordinary English, presenting a straightforward proportional relationship. Candidate B introduces 'negative of Reflected' and 'Gravitational Movement,' which creates awkward phrasing and mixed conceptual signals that reduce clarity."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E021",
+          "score_a": 3,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A reads more plainly as an ordinary-English proportional statement, even if abstract. Candidate B is harder to follow because 'across Appreciation' and 'difference in Appreciation from one level to another' feel more awkward and overloaded."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E021",
+          "score_a": 4,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A uses abstract terms ('Frequency', 'Vibration', 'Movement', 'Attraction') that align well with a nonphysical context. Candidate B uses 'Gravitational Movement', which strongly evokes a physical force, creating incoherence with the nonphysical polarity."
+        },
+        "llama-4-maverick": {
+          "item_id": "E021",
+          "score_a": 2,
+          "score_b": 3,
+          "preferred": "B",
+          "reason": "Candidate B, despite using abstract terms, presents a more coherent and structured relationship among its components, aligning with the nonphysical polarity's characteristics."
+        }
+      }
+    },
+    {
+      "item_id": "E022",
+      "Candidate A": "The total Appreciation with Movement across all contributions balances to zero.",
+      "Candidate B": "The total of all Vibration times Frequency across every contributing part sums to perfect balance.",
+      "hidden_key": {
+        "A": "A3-1",
+        "B": "A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E022",
+          "score_a": 4,
+          "score_b": 4,
+          "preferred": "tie",
+          "reason": "Both candidates express the same idea of perfect balance across all contributions with comparable clarity. Candidate A uses 'Appreciation with Movement' and Candidate B uses 'Vibration times Frequency,' both coherently conveying holistic summation to zero without one being clearly superior."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E022",
+          "score_a": 4,
+          "score_b": 5,
+          "preferred": "B",
+          "reason": "Candidate B is more natural and complete in ordinary English: 'the total ... across every contributing part sums to perfect balance' reads smoothly and matches holistic nonphysical balance well. Candidate A is understandable but 'Appreciation with Movement' is less natural than the cleaner multiplicative phrasing in B."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E022",
+          "score_a": 4,
+          "score_b": 5,
+          "preferred": "B",
+          "reason": "Both candidates express a conservation or balance principle. Candidate B's phrase 'sums to perfect balance' more strongly evokes the nonphysical concepts of 'effortless alignment' and 'unified, holistic coherence' than Candidate A's 'balances to zero'."
+        },
+        "llama-4-maverick": {
+          "item_id": "E022",
+          "score_a": 4,
+          "score_b": 5,
+          "preferred": "B",
+          "reason": "Candidate B clearly conveys a concept of balance and unity, characteristic of the nonphysical polarity, with a more natural and coherent expression."
+        }
+      }
+    },
+    {
+      "item_id": "E023",
+      "Candidate A": "conscious energy accumulates as Frequency aligns continuously with each unfolding increment of Vibration along the path.",
+      "Candidate B": "Total Movement across a path from one point to another accumulates as Movement aligns continuously with each step of Appreciation.",
+      "hidden_key": {
+        "A": "A0",
+        "B": "A3-1"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E023",
+          "score_a": 4,
+          "score_b": 3,
+          "preferred": "A",
+          "reason": "Candidate A's use of 'conscious energy accumulates as Frequency aligns continuously' evokes effortless, unresisting alignment well-suited to the nonphysical polarity. Candidate B's 'Total Movement across a path' retains spatial-traversal language that leans toward the physical polarity of sequential intervals."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E023",
+          "score_a": 4,
+          "score_b": 3,
+          "preferred": "A",
+          "reason": "Candidate A is more coherent and better matches the nonphysical theme of continuous alignment and unfolding. Candidate B is grammatically serviceable, but 'Movement accumulates as Movement aligns' is repetitive and less clear."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E023",
+          "score_a": 5,
+          "score_b": 3,
+          "preferred": "A",
+          "reason": "Candidate A describes a continuous process of accumulation through 'unfolding increment' and 'aligns continuously', fitting the nonphysical idea of 'immediate, simultaneous unfolding' and 'effortless alignment'. Candidate B's phrases 'from one point to another' and 'each step' imply sequential traversal and discrete intervals, which lean towards the physical polarity."
+        },
+        "llama-4-maverick": {
+          "item_id": "E023",
+          "score_a": 3,
+          "score_b": 4,
+          "preferred": "B",
+          "reason": "Candidate B presents a clearer and more coherent accumulation concept, aligning with the nonphysical polarity's theme of effortless alignment and unified coherence."
+        }
+      }
+    },
+    {
+      "item_id": "E027",
+      "Candidate A": "Total imagination across one Reflected composes directly as the sum of imagination across a second Reflected and imagination between the two Reflected.",
+      "Candidate B": "Total Appreciation across one Movement equals the sum of Appreciation across a second Movement and Appreciation between the two frames of Movement.",
+      "hidden_key": {
+        "A": "A3-1",
+        "B": "A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E027",
+          "score_a": 4,
+          "score_b": 4,
+          "preferred": "tie",
+          "reason": "Both candidates express the same additive composition structure with similar clarity. Candidate A uses 'imagination' and 'Reflected,' Candidate B uses 'Appreciation' and 'Movement'; neither is clearly more coherent or better aligned with the nonphysical polarity than the other."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E027",
+          "score_a": 3,
+          "score_b": 4,
+          "preferred": "B",
+          "reason": "Candidate B is clearer because it maintains the same core term structure throughout and ends with the more natural phrase 'between the two frames of Movement.' Candidate A is understandable but 'one Reflected' and 'a second Reflected' sound less natural and more awkward."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E027",
+          "score_a": 5,
+          "score_b": 5,
+          "preferred": "tie",
+          "reason": "Both candidates are equally clear and coherent, describing a whole composed directly as the sum of its parts. This aligns perfectly with 'unified, holistic coherence' and 'structural proportions keep their algebraic shape' in the nonphysical polarity."
+        },
+        "llama-4-maverick": {
+          "item_id": "E027",
+          "score_a": 3,
+          "score_b": 4,
+          "preferred": "B",
+          "reason": "Candidate B uses more coherent and understandable language to describe a compositional concept, fitting the nonphysical polarity's theme of holistic coherence."
+        }
+      }
+    },
+    {
+      "item_id": "E028",
+      "Candidate A": "The product of Vibration, Movement, and rise per Expansion equals the product of Movement and squared Vibration, multiplied by the ratio of rise per Expansion to Vibration.",
+      "Candidate B": "The rotational combination of Appreciation, Reflected, and Expansion is given by the product of Reflected and squared Appreciation scaled by Expansion per Appreciation.",
+      "hidden_key": {
+        "A": "A0",
+        "B": "A3-1"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E028",
+          "score_a": 3,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A, while complex, maintains a readable proportional structure in ordinary English. Candidate B's 'rotational combination' is an awkward phrase that obscures meaning, and 'Expansion per Appreciation' as a ratio feels less naturally expressed, reducing overall coherence."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E028",
+          "score_a": 4,
+          "score_b": 3,
+          "preferred": "A",
+          "reason": "Candidate A is more explicit and internally consistent, with a clear equality between two product forms. Candidate B is somewhat coherent but 'rotational combination' is vague and less natural, making the sentence harder to parse."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E028",
+          "score_a": 5,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A presents a coherent algebraic identity using abstract, nonphysical terms, perfectly illustrating how 'structural proportions keep their algebraic shape'. Candidate B uses the term 'rotational combination', which strongly suggests a physical phenomenon, creating incoherence with the nonphysical context."
+        },
+        "llama-4-maverick": {
+          "item_id": "E028",
+          "score_a": 2,
+          "score_b": 4,
+          "preferred": "B",
+          "reason": "Candidate B, despite its abstractness, presents a more coherent and structured relational concept, aligning with the nonphysical polarity's characteristics of unified and holistic coherence."
+        }
+      }
+    },
+    {
+      "item_id": "E030",
+      "Candidate A": "conscious energy equals conscious energy at Vibration minus conscious energy at the reference Vibration.",
+      "Candidate B": "The shift in Vibration equals Vibration at a given Appreciation minus Vibration at the reference Appreciation.",
+      "hidden_key": {
+        "A": "A0",
+        "B": "A3-1"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E030",
+          "score_a": 3,
+          "score_b": 4,
+          "preferred": "B",
+          "reason": "Candidate B expresses a clear shift or difference between two states using consistent terminology (Vibration, Appreciation), aligning well with the nonphysical polarity of immediate, unbounded unfolding. Candidate A is repetitive ('conscious energy equals conscious energy') and less coherent."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E030",
+          "score_a": 2,
+          "score_b": 4,
+          "preferred": "B",
+          "reason": "Candidate B is clearer ordinary English and has a coherent comparative structure: a shift equals a value at one reference point minus a reference value. Candidate A is confusing because it says 'conscious energy equals conscious energy minus conscious energy,' which reads internally circular and unclear."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E030",
+          "score_a": 3,
+          "score_b": 5,
+          "preferred": "B",
+          "reason": "Candidate B is significantly clearer and more coherent. Its opening 'The shift in Vibration equals...' precisely defines what is being calculated. Candidate A's 'conscious energy equals conscious energy at Vibration...' is awkward and less precise about the subject of the equation. Candidate B's phrasing 'Vibration at a given Appreciation' also feels more natural than 'conscious energy at Vibration'."
+        },
+        "llama-4-maverick": {
+          "item_id": "E030",
+          "score_a": 4,
+          "score_b": 3,
+          "preferred": "A",
+          "reason": "Candidate A uses more straightforward language and directly conveys the concept of a difference in 'conscious energy' or 'Vibration', whereas Candidate B introduces 'Appreciation', which is less clear in this context."
+        }
+      }
+    },
+    {
+      "item_id": "E037",
+      "Candidate A": "Convergence rises in direct proportion to Movement.",
+      "Candidate B": "resonance rises in direct proportion to Frequency during sliding contact.",
+      "hidden_key": {
+        "A": "A3-1",
+        "B": "A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E037",
+          "score_a": 4,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A is clean and direct, expressing effortless proportional alignment (Convergence rising with Movement) consistent with nonphysical polarity. Candidate B introduces 'sliding contact,' which implies physical friction and resistance, undermining the nonphysical framing."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E037",
+          "score_a": 4,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A is simple, direct, and internally coherent. Candidate B adds 'during sliding contact,' which introduces a physical-friction image that clashes with the nonphysical polarity and makes the sentence feel less conceptually aligned and less clean."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E037",
+          "score_a": 5,
+          "score_b": 1,
+          "preferred": "A",
+          "reason": "Candidate A clearly describes a direct, unhindered proportional relationship, which aligns well with the 'effortless alignment' and 'no cost, barrier, or separation' aspects of the nonphysical polarity. Candidate B, however, introduces 'during sliding contact,' which implies physical friction, resistance, and effort, directly contradicting the principles of the nonphysical polarity."
+        },
+        "llama-4-maverick": {
+          "item_id": "E037",
+          "score_a": 5,
+          "score_b": 3,
+          "preferred": "A",
+          "reason": "Candidate A is more coherent and clear with 'Convergence rises in direct proportion to Movement', as it directly states a proportional relationship between two concepts. Candidate B introduces 'resonance', 'Frequency', and 'sliding contact', making it less clear and more specific to a particular context."
+        }
+      }
+    },
+    {
+      "item_id": "E038",
+      "Candidate A": "The collective rise per Expansion equals the Expansion change of shared Vibration weighted by each Movement, and likewise equals the weighted sum of each rise per Expansion divided by total Movement.",
+      "Candidate B": "The collective Expansion of the whole is derived from the change in the weighted sum of individual Reflected's Appreciation over Vibrance, and equals the sum of each individual Reflected's Expansion divided by the total Reflected.",
+      "hidden_key": {
+        "A": "A0",
+        "B": "A3-1"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E038",
+          "score_a": 3,
+          "score_b": 3,
+          "preferred": "tie",
+          "reason": "Both candidates are complex and somewhat difficult to parse. Candidate A uses 'weighted' sums coherently but mixes physical-sounding terms. Candidate B introduces 'Reflected' as a quantity which is unusual but fits nonphysical polarity; however, 'derived from' is vaguer than A's direct equality. Neither is clearly superior."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E038",
+          "score_a": 4,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Candidate A is dense but remains grammatically structured and internally consistent, describing a collective rise in terms of weighted changes and totals. Candidate B is less natural English, especially with 'individual Reflected's Appreciation over Vibrance' and 'total Reflected,' which sound awkward and harder to interpret coherently."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E038",
+          "score_a": 4,
+          "score_b": 3,
+          "preferred": "A",
+          "reason": "Both candidates are complex and use abstract terms. Candidate A is slightly more coherent in its phrasing and the connection between its two parts. 'Expansion change of shared Vibration weighted by each Movement' is a bit clearer than Candidate B's 'change in the weighted sum of individual Reflected's Appreciation over Vibrance,' where 'over Vibrance' is somewhat ambiguous. Candidate A's 'likewise equals' also provides a clearer link between the two expressions."
+        },
+        "llama-4-maverick": {
+          "item_id": "E038",
+          "score_a": 3,
+          "score_b": 2,
+          "preferred": "A",
+          "reason": "Both candidates are complex, but Candidate A is slightly clearer in its description of a collective rise and its relation to 'Expansion' and 'Vibration'. Candidate B is more confusing due to the introduction of 'Reflected's Appreciation over Vibrance'."
+        }
+      }
+    },
+    {
+      "item_id": "E039",
+      "Candidate A": "Supporting Frequency equals Movement multiplied by Attraction.",
+      "Candidate B": "Supportive Movement equals Reflected multiplied by Tune.",
+      "hidden_key": {
+        "A": "A0",
+        "B": "A3-1"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "item_id": "E039",
+          "score_a": 3,
+          "score_b": 3,
+          "preferred": "tie",
+          "reason": "Both are short and grammatically clear, expressing a simple proportional relationship. Candidate A uses 'Supporting Frequency' and 'Attraction,' while Candidate B uses 'Supportive Movement,' 'Reflected,' and 'Tune.' Neither is notably more coherent or better aligned with nonphysical polarity than the other."
+        },
+        "gpt-5.4-fast": {
+          "item_id": "E039",
+          "score_a": 4,
+          "score_b": 3,
+          "preferred": "A",
+          "reason": "Candidate A is clearer and more natural in wording, with a straightforward proportional relation. Candidate B is somewhat interpretable, but 'Reflected multiplied by Tune' is less natural and less internally clear as ordinary English."
+        },
+        "gemini-2.5-flash": {
+          "item_id": "E039",
+          "score_a": 5,
+          "score_b": 5,
+          "preferred": "tie",
+          "reason": "Both candidates are equally clear and coherent. They both describe a direct algebraic relationship ('equals... multiplied by...') using abstract, nonphysical-sounding terms. Neither introduces any physical constraints or contradictions to the nonphysical polarity, making them equally valid in this context."
+        },
+        "llama-4-maverick": {
+          "item_id": "E039",
+          "score_a": 4,
+          "score_b": 3,
+          "preferred": "A",
+          "reason": "Candidate A is clearer with 'Supporting Frequency equals Movement multiplied by Attraction', as it directly relates three concepts. Candidate B uses 'Supportive Movement', 'Reflected', and 'Tune', which are less clear in relation to each other."
+        }
+      }
+    }
+  ],
+  "m4_bundle": [
+    {
+      "perm_idx": 0,
+      "hidden_key": {
+        "1": "T_A3",
+        "2": "T_A0",
+        "3": "S_syn",
+        "4": "D_A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "scores": {
+            "1": 2,
+            "2": 4,
+            "3": 5,
+            "4": 3
+          },
+          "best_system": 3,
+          "worst_system": 1,
+          "ranking": [
+            3,
+            2,
+            4,
+            1
+          ],
+          "reason": "System 3 uses the most consistent and ordinary English vocabulary throughout all 18 statements. Terms like gratitude, pitch, responsiveness, affinity, pace, growth, stream, urgency, harmony, and awareness each carry stable, compatible meanings across every statement, and the nonphysical polarity (effortless alignment, welcoming receptivity, accumulating awareness, harmonic proportionality) is applied uniformly without contradiction. System 2 is nearly as coherent, using Appreciation, Vibration, Movement, Attraction, Current, Frequency, and conscious energy in a stable and mutually compatible way across all statements, with only minor awkwardness in phrases like 'rise per Expansion' appearing repeatedly as a compound noun. System 4 uses the same vocabulary as System 2 but systematically inverts or contradicts the relational logic in nearly every statement (decreases when both increase, diverges from, opposes, disperses, falls outside, unrelated to), creating a internally consistent pattern of negation that is intelligible as a whole but represents a deliberate polarity-flip system rather than a unified coherent description; it scores mid-range because the negations are at least grammatically consistent with each other even if they contradict the nonphysical polarity framework. System 1 is the weakest: it uses 'imagination' as both a quantity and a process interchangeably, mixes 'Reflected' as both a noun entity and an adjective modifier inconsistently, and terms like 'Tune,' 'Vibrance,' 'Frequency,' and 'Convergence' shift roles across statements in ways that produce word-salad rather than stable meaning, making the system as a whole the least intelligible."
+        },
+        "gpt-5.4-fast": {
+          "scores": {
+            "1": 3,
+            "2": 5,
+            "3": 4,
+            "4": 2
+          },
+          "best_system": 2,
+          "worst_system": 4,
+          "ranking": [
+            2,
+            3,
+            1,
+            4
+          ],
+          "reason": "System 2 is the most holistically stable: its terms recur in consistent roles, and the whole set reads as one coherent ordinary-English mirror-framework of alignment, accumulation, balance, receptivity, and reduced effort. System 3 is also strongly coherent, with the same stable structure translated into different vocabulary; it is slightly less natural because some pairings like 'gratitude,' 'pitch,' and 'urgency' feel more metaphorically stretched, but they still remain internally compatible. System 1 is moderately coherent but less stable: several terms such as 'Reflected,' 'Tune,' 'Frequency,' and 'imagination' interact in ways that are harder to sustain in ordinary English, and phrases like 'center of Reflected' or 'one Reflected' are grammatically and conceptually awkward, though the overall direction remains intelligible. System 4 is the weakest because it is built as a chain of negations, reversals, divergence, collapse, opposition, and unrelatedness; while not pure word salad, it systematically breaks the constructive relations that would stabilize the meanings, so the whole reads more like a set of anti-claims than a unified intelligible framework."
+        },
+        "gemini-2.5-flash": {
+          "scores": {
+            "1": 2,
+            "2": 2,
+            "3": 2,
+            "4": 3
+          },
+          "best_system": 4,
+          "worst_system": 1,
+          "ranking": [
+            4,
+            2,
+            3,
+            1
+          ],
+          "reason": "Systems 1, 2, and 3 are structurally identical, consistently implying a nonphysical polarity (e.g., 'aligns,' 'perfect balance,' 'less effort'). However, a significant number of their statements (e.g., 'imagination equals Appreciation multiplied by rotational imagination per Appreciation') use abstract nouns in mathematical-like operations that do not hold stable, compatible ordinary-English meanings without a specialized glossary or interpreting them as formulas, which is disallowed. These statements function as 'word-salads,' making these systems largely unintelligible in ordinary English. System 4, in contrast, consistently implies a physical polarity (e.g., 'decreases,' 'diminishes,' 'diverges from,' 'resists,' 'more effort,' 'blocks'). Most of its statements are intelligible as ordinary English, clearly describing negative relationships or opposing forces. However, statement 13 ('conscious energy at Vibration minus conscious energy at the reference Vibration equals conscious energy') presents a logical contradiction or nonsensical equality in ordinary English, qualifying as a 'swapped contradiction' or 'word-salad.' Despite this single significant flaw, the majority of System 4's statements are more intelligible and coherent in ordinary English compared to the numerous word-salads found in Systems 1, 2, and 3. Therefore, System 4 is the most unified and intelligible, while Systems 1, 2, and 3 are equally the least."
+        },
+        "llama-4-maverick": {
+          "scores": {
+            "1": 2,
+            "2": 2,
+            "3": 2,
+            "4": 1
+          },
+          "best_system": 1,
+          "worst_system": 4,
+          "ranking": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "reason": "Systems 1, 2, and 3 exhibit similar structural patterns and terminological consistency within their respective statements, though their meanings remain obscure and lack clear, coherent, ordinary English interpretations. System 4 presents contradictions and negations that disrupt its internal coherence, making it less intelligible than the others."
+        }
+      }
+    },
+    {
+      "perm_idx": 1,
+      "hidden_key": {
+        "1": "S_syn",
+        "2": "T_A0",
+        "3": "D_A0",
+        "4": "T_A3"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "scores": {
+            "1": 3,
+            "2": 4,
+            "3": 2,
+            "4": 3
+          },
+          "best_system": 2,
+          "worst_system": 3,
+          "ranking": [
+            2,
+            1,
+            4,
+            3
+          ],
+          "reason": "System 2 is the most internally consistent: it uses a stable set of substituted terms (Vibration, Movement, Attraction, Frequency, Appreciation, Current, Expansion) and applies them uniformly across all 18 statements in a coherent nonphysical-polarity direction — effortless alignment, accumulation, receptivity, and proportional relationships all point the same way without contradiction. System 1 is similarly structured but uses slightly more awkward substitutions (pitch, gratitude, urgency, responsiveness, affinity, pace, stream) that occasionally create odd collocations (e.g., 'urgency times pitch,' 'harmony rises during sliding contact'), mildly reducing coherence, placing it second. System 4 introduces an extra layer of substitution (imagination, Reflected, Tune, Vibrance, Convergence, Frequency) on top of terms already used differently in other systems, and the term 'Reflected' as a mass noun is semantically strained throughout, but the directional polarity remains consistent, placing it third. System 3 is the worst: it systematically inverts every relationship — products decrease when factors increase, sums diverge, averages fall outside midpoints, energy disperses, receptivity decreases as proximity increases — producing a set of statements that are individually contradictory to standard proportional logic and mutually inconsistent as a system, making it the least coherent overall."
+        },
+        "gpt-5.4-fast": {
+          "scores": {
+            "1": 4,
+            "2": 5,
+            "3": 3,
+            "4": 2
+          },
+          "best_system": 2,
+          "worst_system": 4,
+          "ranking": [
+            2,
+            1,
+            3,
+            4
+          ],
+          "reason": "System 2 is the most internally stable: its terms recur consistently and the statements hang together as one coherent metaphorical scheme of vibration, movement, attraction, current, receptivity, and accumulated conscious energy. System 1 is also fairly coherent, but several word choices are less natural in ordinary English and more strained, especially repeated use of 'gratitude' and 'pitch' in quasi-mechanical roles. System 3 is not mere nonsense, but it is largely built as systematic negation or opposition to the relations expressed within its own vocabulary; that makes it intelligible yet less unified, since many statements emphasize divergence, resistance, and collapse rather than preserving one stable descriptive framework. System 4 is the weakest because it mixes semantic fields more erratically: imagination, appreciation, reflected, tune, frequency, movement, vibration, convergence, expansion, and vibrance do not settle into one clear ordinary-English meaning system, so the whole reads as more arbitrary and cross-swapped than the others."
+        },
+        "gemini-2.5-flash": {
+          "scores": {
+            "1": 1,
+            "2": 2,
+            "3": 5,
+            "4": 1
+          },
+          "best_system": 3,
+          "worst_system": 4,
+          "ranking": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "reason": "System 3 is the most coherent because it consistently uses negative and oppositional language (e.g., 'decreases', 'diminishes', 'collapses', 'resists', 'more effort', 'blocks') to describe relationships, which aligns with the 'Physical polarity' of effortful resistance, separation, and dissipation. The words maintain stable and compatible ordinary-English meanings within this consistent framework of resistance and non-alignment. In contrast, Systems 1, 2, and 4 are largely incoherent. They attempt to apply quantitative, physical-like mathematical operations (e.g., 'multiplied by', 'rotational', 'tangential') to inherently abstract, non-quantifiable concepts (e.g., 'gratitude', 'imagination', 'Appreciation', 'conscious energy'). This results in extensive 'word-salad' where the terms lose their ordinary English meaning and create significant conceptual dissonance, making them unintelligible. System 2 is marginally less incoherent than 1 and 4 due to its terms like 'Vibration' and 'Movement' having a slightly more tenuous, yet still nonsensical, connection to physical concepts, placing it just above 1 and 4 in coherence."
+        },
+        "llama-4-maverick": {
+          "scores": {
+            "1": 2,
+            "2": 2,
+            "3": 1,
+            "4": 2
+          },
+          "best_system": 1,
+          "worst_system": 3,
+          "ranking": [
+            1,
+            2,
+            4,
+            3
+          ],
+          "reason": "Systems 1, 2, and 4 exhibit similar structural patterns and terminology, suggesting a coherent, albeit nonsensical, framework. System 3 presents a mirrored or opposite version of the statements found in Systems 1 and 2, indicating a possible intentional inversion or negation of the original concepts, but it disrupts coherence. System 1 is marginally preferred due to its consistent use of terms like 'pitch' and 'responsiveness', which could imply a specific, albeit obscure, conceptual model."
+        }
+      }
+    },
+    {
+      "perm_idx": 2,
+      "hidden_key": {
+        "1": "T_A0",
+        "2": "T_A3",
+        "3": "S_syn",
+        "4": "D_A0"
+      },
+      "ratings": {
+        "claude-sonnet-4.6": {
+          "scores": {
+            "1": 3,
+            "2": 3,
+            "3": 4,
+            "4": 2
+          },
+          "best_system": 3,
+          "worst_system": 4,
+          "ranking": [
+            3,
+            2,
+            1,
+            4
+          ],
+          "reason": "System 3 uses the most grounded and internally consistent vocabulary throughout all 18 statements. Terms like pitch, gratitude, responsiveness, affinity, pace, growth, stream, urgency, harmony, and awareness carry stable ordinary-English meanings that remain compatible across every statement. The proportional and additive relationships described are coherent, and the qualitative statements (17, 18) align naturally with the nonphysical polarity of effortless alignment and welcoming receptivity without contradicting the structural statements. Systems 1 and 2 are roughly equivalent in coherence: both use abstract substituted terms (Vibration, Appreciation, Movement, Attraction, Current, Frequency, Reflected, Tune, Vibrance) that are internally consistent within each system but carry less stable ordinary-English meaning, making the systems harder to read as unified English prose. System 2 edges slightly ahead of System 1 because its term choices (imagination, Reflected, Tune, Convergence, Vibrance) are marginally more consistently applied. System 4 is the worst because it systematically inverts the relational logic of its own statements: quantities that increase together are said to produce decreases, sums diverge from their own components, proportional relationships are replaced with opposition, and the qualitative statements (17, 18) directly contradict the nonphysical polarity by asserting increasing resistance and decreasing receptivity as proximity increases. This creates pervasive internal contradiction across all 18 statements, making the system as a whole incoherent."
+        },
+        "gpt-5.4-fast": {
+          "scores": {
+            "1": 4,
+            "2": 3,
+            "3": 5,
+            "4": 2
+          },
+          "best_system": 3,
+          "worst_system": 4,
+          "ranking": [
+            3,
+            1,
+            2,
+            4
+          ],
+          "reason": "System 3 is the most stable in ordinary English: its vocabulary is consistently reused, the statements cohere around one shared picture, and its later claims about welcoming approach, guidance, and reduced effort match the same polarity throughout. System 1 is also largely coherent, but it mixes physical-seeming terms like sliding contact and movement with more inward terms like conscious energy and appreciation in a slightly less seamless way. System 2 remains intelligible, yet its wording is less natural overall: terms like 'center of Reflected,' 'approaches the Frequency,' and 'Vibrance change' feel more grammatically strained and less semantically settled across the set. System 4 is the weakest because it is built mostly as systematic negation of the others; while many individual sentences are understandable, the whole set leans on repeated divergence, opposition, collapse, and blocking in ways that make the meanings feel less stable and more like polarity flipping than a unified positive description."
+        },
+        "gemini-2.5-flash": {
+          "scores": {
+            "1": 5,
+            "2": 4,
+            "3": 4,
+            "4": 1
+          },
+          "best_system": 1,
+          "worst_system": 4,
+          "ranking": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "reason": "Systems 1, 2, and 3 are largely coherent and intelligible. They consistently establish abstract relationships using ordinary English words, avoiding word-salads, internal contradictions, or arbitrary polarity reversals. They describe phenomena in a manner consistent with the 'nonphysical' polarity (e.g., direct alignments, effortless processes, positive accumulations). System 1 is marginally superior due to its slightly more cohesive and generally applicable choice of abstract nouns compared to System 2 ('Reflected' as a primary entity) and System 3 ('pitch' as a general quantity). \n\nSystem 4, however, is systemically incoherent. While it attempts to consistently describe relationships that are the inverse or opposite of System 1 (aligning with the 'physical' polarity), statement 12 presents a direct logical contradiction. Statement 12 in System 4 asserts that 'The product of Vibration, Movement, and rise per Expansion differs from the product of Movement and squared Vibration, multiplied by the ratio of rise per Expansion to Vibration.' Algebraically, this means V*M*R != M*V^2*(R/V), which simplifies to V*M*R != V*M*R (assuming Vibration is not zero). This is a direct negation of an algebraic identity, rendering the statement, and thus the system, logically contradictory and incoherent."
+        },
+        "llama-4-maverick": {
+          "scores": {
+            "1": 4,
+            "2": 4,
+            "3": 4,
+            "4": 1
+          },
+          "best_system": 1,
+          "worst_system": 4,
+          "ranking": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "reason": "Systems 1, 2, and 3 exhibit consistent terminology and conceptual patterns, suggesting a coherent and unified structure. System 4, however, displays contradictions and reversals in its statements compared to the others, indicating systemic incoherence."
+        }
+      }
+    }
+  ]
+}

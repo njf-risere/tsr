@@ -1,0 +1,3832 @@
+{
+  "stage": "D1b",
+  "role": "d1b_web_truthtable",
+  "arm_id": "D1b",
+  "expected_calls": 70,
+  "valid_calls": 70,
+  "schema_error_count": 0,
+  "tasks": [
+    {
+      "task_id": "W01",
+      "metadata": {
+        "slot_id": "W01"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b9fc3c3db9044c10a5a25a35229481a4",
+          "call_meta": {
+            "candidates": {
+              "1": "Reflected",
+              "2": "Movement",
+              "3": "responsiveness",
+              "4": "soul"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W01",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": true,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1 ('Reflected') is a past-participle adjective describing something mirrored back; it fails c1 (does not name receptivity to change in motion as a counterpart to mass), fails c2 (acts as a bare passive modifier), fails c3 (not a self-contained unit in a larger composition), and fails c4 (does not express ongoing dynamic progression or a structured section). Candidate 2 ('Movement') fails c1 (names motion itself, not receptivity to change in motion as mass's counterpart), but passes c2 (avoids collapsing into a two-sided union or acting as a bare passive modifier), passes c3 (a movement is a distinguishable self-contained unit within a larger musical/compositional whole), and passes c4 (names a structured section inside a unified composition while implying dynamic progression). Candidate 3 ('responsiveness') passes c1 (directly names receptivity/openness to change, functioning as the counterpart of resistance/mass), passes c2 (avoids the trap of being a two-sided union or bare passive modifier), but fails c3 (not typically a self-contained unit in a larger composition) and fails c4 (does not name a structured section inside a unified composition). Candidate 4 ('soul') fails c1 (does not name receptivity to change in motion), passes c2 (not a two-sided union or bare passive modifier), passes c3 (can function as a distinguishable unit within a larger whole in some contexts), but fails c4 (does not coherently express ongoing dynamic progression as a structured section inside a unified composition)."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b0869bc8dbc042d28c34eaaaf269ee26",
+          "call_meta": {
+            "candidates": {
+              "1": "Reflected",
+              "2": "soul",
+              "3": "responsiveness",
+              "4": "Movement"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Chal",
+              "3": "W_Ssyn",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W01",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": true,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 3 best fits receptivity to change in motion, since 'responsiveness' directly names being responsive rather than resistant. 'Reflected' is mainly a passive/resultative modifier, so it fails the trap-free criterion and does not name the needed role. 'soul' is not a standard term for motion-receptivity, though it is at least a standalone noun rather than a mere modifier or fused union. 'Movement' names motion/progression itself, not receptivity to it, but it can function as a self-contained part within a larger composition (such as a musical movement) and also has an everyday/secondary register expressing dynamic progression plus a structured section of a whole."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1d763ede15f8424cb75f7b5aa002e5fa",
+          "call_meta": {
+            "candidates": {
+              "1": "Reflected",
+              "2": "Movement",
+              "3": "soul",
+              "4": "responsiveness"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Chal",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W01",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Evaluated each candidate against the four criteria independently. c1 sought a term for receptivity to motion change, which 'responsiveness' best fit. c2 required avoiding passive modification or collapsing into a two-sided union; 'reflected' failed here. c3 looked for a distinguishable, self-contained unit within a larger composition, which 'movement' and 'soul' could represent. c4 combined ongoing dynamic progression with naming a structured section, a description that 'movement' uniquely satisfied in its common usage."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "e804aafa495845b288054b44c79e952e",
+          "call_meta": {
+            "candidates": {
+              "1": "Reflected",
+              "2": "responsiveness",
+              "3": "soul",
+              "4": "Movement"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Ssyn",
+              "3": "W_Chal",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W01",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 2 ('responsiveness') directly names receptivity to change (c1), avoids being a passive modifier or union (c2), functions as a self-contained unit in a system (c3), and expresses dynamic progression in a structured context (c4). Others fail one or more criteria."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "f6af3004e2ce4196bc909a5d107b2a4a",
+          "call_meta": {
+            "candidates": {
+              "1": "responsiveness",
+              "2": "Movement",
+              "3": "soul",
+              "4": "Reflected"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A0",
+              "3": "W_Chal",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "slot_id": "W01",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Evaluated each candidate against the given criteria."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W02",
+      "metadata": {
+        "slot_id": "W02"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "cca51744d9264dd5a14eb92f09b10a7f",
+          "call_meta": {
+            "candidates": {
+              "1": "Current",
+              "2": "Frequency",
+              "3": "source",
+              "4": "stream"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W02",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 1 (Current): passes all four. 'Current' denotes a continuous inward/ambient flow (c1), avoids outward-emission or frequency-rate confusion (c2), can serve as a universal shared reference baseline (c3), and in everyday use means a continuous directional flow while also meaning 'right now / live' (c4). Candidate 2 (Frequency): fails all. It denotes a wave rate/count, which is an outward-emission sensory measure (c1 false), directly conflates background flow with sensory wave rate (c2 false), does not establish a spatial coexistence reference (c3 false), and does not naturally express directional flow (c4 false). Candidate 3 (Source): fails all. It denotes an origin point radiating outward (c1 false, c2 false), is a point rather than a universal ambient reference (c3 false), and does not express continuous directional flow or live immediacy (c4 false). Candidate 4 (Stream): partially passes. It denotes directional flow (c1 true), avoids emission/frequency confusion (c2 true), but is too localized/particular to serve as the single universal shared reference (c3 false), and works naturally for continuous flow and has some immediacy connotation but less strongly than 'current' (c4 true)."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "baa240fb419d4f5f9e79d9526676ed6d",
+          "call_meta": {
+            "candidates": {
+              "1": "source",
+              "2": "Current",
+              "3": "Frequency",
+              "4": "stream"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A0",
+              "3": "W_A3",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W02",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 1 'source' suggests an origin emitting outward, so it conflicts with inward ambient collection and ordinary ongoing-flow immediacy. Candidate 2 'Current' naturally denotes present/ongoing and can denote a flow, avoiding emission imagery and fitting a shared active state better than the others, though it does not inherently mean universal inward collection. Candidate 3 'Frequency' is primarily a rate of oscillation/waves, which risks exactly the sensory-wave-rate confusion and does not denote a continuous ambient flow or shared coexistence reference. Candidate 4 'stream' naturally denotes continuous directional flow and avoids emission/rate imagery, but it does not inherently function as a single universal shared reference for simultaneous coexistence."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1ff2b7a0ef4341de860ba66713437707",
+          "call_meta": {
+            "candidates": {
+              "1": "source",
+              "2": "Frequency",
+              "3": "Current",
+              "4": "stream"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A3",
+              "3": "W_A0",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W02",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 'source' implies outward emission and lacks immediacy. Candidate 'Frequency' is a rate, not a flow, and is explicitly excluded by c2. Candidate 'stream' denotes flow but lacks the 'live immediacy' and universal reference aspects. Candidate 'Current' best fits c2 (avoids outward emission/wave rate), c3 (as in 'the current moment' for universal coexistence), and c4 (continuous flow and live immediacy). It fails c1 due to the specific 'inward-collecting' requirement, as 'current' typically denotes a general flow rather than an inward collection."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "8d8e83ceef9f453595bc3dde9152bdad",
+          "call_meta": {
+            "candidates": {
+              "1": "Frequency",
+              "2": "stream",
+              "3": "Current",
+              "4": "source"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Ssyn",
+              "3": "W_A0",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W02",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1 (Frequency) fails all criteria: it does not denote inward flow (c1), implies wave rate (c2), is not a universal reference (c3), and lacks continuous directional flow in everyday usage (c4). Candidate 2 (stream) passes c2 (no outward emission imagery) and c4 (continuous directional flow with immediacy) but fails c1 (no inward-collecting flow) and c3 (not a universal reference). Candidate 3 (Current) passes c2 (no outward emission), c3 (can act as a universal reference for flow), and c4 (everyday usage for continuous flow with immediacy), but fails c1 (no inward-collecting connotation). Candidate 4 (source) fails all: implies outward emission (c1/c2), is not a universal reference (c3), and lacks continuous flow in everyday usage (c4)."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "62c1b7786b664361be86897418adf93b",
+          "call_meta": {
+            "candidates": {
+              "1": "Frequency",
+              "2": "source",
+              "3": "Current",
+              "4": "stream"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Chal",
+              "3": "W_A0",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W02",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              }
+            },
+            "reason": "Evaluated each candidate against the given criteria based on standard English usage and conceptual fit."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W03",
+      "metadata": {
+        "slot_id": "W03"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "cef43575bba34b09b8ac5dca183c349e",
+          "call_meta": {
+            "candidates": {
+              "1": "pitch",
+              "2": "Vibration",
+              "3": "Appreciation",
+              "4": "mind"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A0",
+              "3": "W_A3",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W03",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 2 (Vibration) best satisfies all four criteria: it mirrors physical space as a distance-free oscillatory continuum (c1), does not create a private enclosed cognitive box separating individuals (c2), serves as a full continuum connecting qualitative tone and oscillatory breadth rather than a single scalar (c3), and works naturally as a shared harmonic state in physics and music without reducing to mere high-vs-low scalar note height (c4). Candidate 1 (pitch) passes c1 and c2 but fails c3 and c4 because pitch is primarily understood as a scalar measure of frequency height in music, not a full oscillatory continuum. Candidate 3 (Appreciation) fails all criteria as it is a cognitive/evaluative term with no oscillatory or physical-space mirroring role. Candidate 4 (mind) fails all criteria as it is a private cognitive construct that reintroduces spatial separation and has no oscillatory continuum or harmonic physics/music role."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "0c1111ceecfc43e0aebd965446b484a6",
+          "call_meta": {
+            "candidates": {
+              "1": "Vibration",
+              "2": "pitch",
+              "3": "mind",
+              "4": "Appreciation"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Ssyn",
+              "3": "W_Chal",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "slot_id": "W03",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1 'Vibration' best fits an oscillatory, non-enclosed, continuum-like role and works naturally in both physics and music. Candidate 2 'pitch' is mainly a scalar auditory height term, so it fails the fuller continuum and harmonic-state criteria. Candidate 3 'mind' tends to imply a private cognitive enclosure and is not an oscillatory physical/music continuum term. Candidate 4 'Appreciation' is evaluative rather than oscillatory or continuum-based, though it does not itself imply a private spatial box."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "9869c24b45f240d2ae904649d4064f51",
+          "call_meta": {
+            "candidates": {
+              "1": "Vibration",
+              "2": "mind",
+              "3": "pitch",
+              "4": "Appreciation"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Chal",
+              "3": "W_Ssyn",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "slot_id": "W03",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": true,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 'Vibration' aligns perfectly with all criteria, describing a distance-free oscillatory continuum that distinguishes qualitative states, is a shared physical phenomenon, encompasses a full range of qualitative tones and oscillatory breadth beyond a single scalar, and is fundamental to harmonic states in both physics and music. 'Mind' and 'Appreciation' are subjective cognitive/emotional states and do not fit any criteria. 'Pitch' fits the oscillatory and non-private aspects but is too often reduced to a single scalar number (frequency/note height) and doesn't fully capture 'oscillatory breadth' or the broader 'harmonic state' as distinct from its scalar value, failing c3 and c4."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "254693a7d0cf46b199c648b88815b582",
+          "call_meta": {
+            "candidates": {
+              "1": "Vibration",
+              "2": "Appreciation",
+              "3": "pitch",
+              "4": "mind"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_A3",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W03",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1 (Vibration) passes all criteria: it mirrors space as a distance-free oscillatory continuum (c1), avoids cognitive enclosure (c2), connects tone and breadth as a continuum (c3), and works in physics/music as a shared harmonic state (c4). Candidate 2 (Appreciation) fails all criteria as it is not a physical/oscillatory concept. Candidate 3 (pitch) fails c1 (not a continuum), c3 (scalar note height), and c4 (reduces to high/low). Candidate 4 (mind) fails all criteria as it reintroduces spatial separation (c2) and is not a harmonic state (c4)."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1854848f8e814e11863a0ebaab42b7ae",
+          "call_meta": {
+            "candidates": {
+              "1": "mind",
+              "2": "Vibration",
+              "3": "Appreciation",
+              "4": "pitch"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A0",
+              "3": "W_A3",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W03",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              }
+            },
+            "reason": "Evaluations based on the given criteria for each candidate word."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W04",
+      "metadata": {
+        "slot_id": "W04"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "3fb9da5eb58b4e1fb01ebc265c1447ed",
+          "call_meta": {
+            "candidates": {
+              "1": "Expansion",
+              "2": "eternity",
+              "3": "growth",
+              "4": "Vibrance"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Chal",
+              "3": "W_Ssyn",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "slot_id": "W04",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": true,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1 (Expansion) mirrors irreversible addition of novelty (c1), avoids stasis (c2), remains distinct from second-order compounding like interest-on-interest (c3), and conveys progressive widening of scope (c4). Candidate 2 (eternity) fails all criteria: it implies timeless unchanging stasis rather than irreversible novelty addition (c1 false), it is the paradigm case of changeless stasis (c2 false), it conflates with timeless frameworks rather than staying distinct (c3 false), and it implies immobility rather than progressive widening (c4 false). Candidate 3 (growth) mirrors irreversible addition (c1), avoids stasis (c2), but fails c3 because 'growth' is commonly used for compounding/rate-of-growth contexts making it ambiguous with second-order value compounding, and it conveys progressive widening (c4). Candidate 4 (Vibrance) does not mirror physical time as irreversible whole-system addition (c1 false), does avoid stasis (c2 true), remains distinct from compounding (c3 true), but does not coherently convey progressive widening of volume or scope—it conveys intensity/energy rather than expansion (c4 false)."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "2625787b002442b39cd4e7d04de88d11",
+          "call_meta": {
+            "candidates": {
+              "1": "Vibrance",
+              "2": "eternity",
+              "3": "Expansion",
+              "4": "growth"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Chal",
+              "3": "W_A0",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W04",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "3": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 1 'Vibrance' suggests vivid quality or liveliness, not the core role of irreversible addition of novelty; it is dynamic rather than static, but it does not naturally convey widening scope/volume. Candidate 2 'eternity' strongly evokes timelessness or unending duration and can trap the concept in changeless stasis, so it fails the anti-stasis and everyday progressive-widening tests. Candidate 3 'Expansion' cleanly conveys progressive increase in extent, scope, or possibility, remains dynamic rather than static, and stays distinct from second-order compounding notions like growth rates. Candidate 4 'growth' conveys temporal increase and avoids stasis, but it often blends first-order unfolding with value compounding, accumulation, or rate-based increase, so it is less cleanly distinct on c3."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "531595a47da349d283752ccce95f61b9",
+          "call_meta": {
+            "candidates": {
+              "1": "Expansion",
+              "2": "eternity",
+              "3": "Vibrance",
+              "4": "growth"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Chal",
+              "3": "W_A3",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W04",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 1 ('Expansion') passes all criteria. It mirrors physical time as an irreversible addition of novelty (e.g., expanding universe, expanding knowledge) where the added scope/volume does not inherently decay (c1). It clearly avoids stasis (c2), remains distinct from second-order rate changes (c3), and conveys progressive widening without immobility (c4). Candidate 4 ('growth') fails c1 because 'nothing decays' is a strong condition often violated by growth processes (e.g., biological decay, economic obsolescence). Candidates 2 ('eternity') and 3 ('Vibrance') fail multiple criteria as they do not describe a progressive, dynamic, temporal unfolding in the manner required."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "df6d1371dbbb46b3bf9643b42b526f5c",
+          "call_meta": {
+            "candidates": {
+              "1": "growth",
+              "2": "eternity",
+              "3": "Expansion",
+              "4": "Vibrance"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_Chal",
+              "3": "W_A0",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "slot_id": "W04",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 1 (growth) passes all criteria: it mirrors irreversible novelty (c1), avoids stasis (c2), stays distinct from second-order compounding (c3), and conveys progressive widening (c4). Candidate 2 (eternity) fails all: it implies timeless stasis (c1/c2), lacks dynamic unfolding (c3), and suggests immobility (c4). Candidate 3 (Expansion) passes all: it aligns with irreversible addition (c1), avoids stasis (c2), remains distinct from value compounding (c3), and conveys widening scope (c4). Candidate 4 (Vibrance) fails c1 (no clear mirroring of irreversible novelty) but passes c2 (dynamic), c3 (distinct from compounding), and c4 (conveys widening possibility)."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "878ef11e3136457c834f78fef394f5b1",
+          "call_meta": {
+            "candidates": {
+              "1": "eternity",
+              "2": "growth",
+              "3": "Expansion",
+              "4": "Vibrance"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_Ssyn",
+              "3": "W_A0",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "slot_id": "W04",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              }
+            },
+            "reason": "Evaluated each candidate against the given criteria based on their standard English meanings and implications."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W05",
+      "metadata": {
+        "slot_id": "W05"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "e8261ce523f44de691bb000d4df4d1ef",
+          "call_meta": {
+            "candidates": {
+              "1": "Desire",
+              "2": "intensity",
+              "3": "conscious energy",
+              "4": "longing"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Chal",
+              "3": "W_A3",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W05",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": true,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1 (Desire) best mirrors mass density as concentrated wanting packed into a unit's oscillatory extent (c1), avoids generic directionless scalar strength or passive sorrowful craving (c2), works coherently alongside qualitative breadth as a compositional factor and directional forward aim (c3), and expresses active forward-aimed wanting in everyday experience (c4). Candidate 2 (intensity) passes c1 as a measure of concentration but fails c2 because it is a generic directionless scalar strength, fails c3 because it does not naturally pair with qualitative breadth as directional aim, and fails c4 because it is not forward-aimed wanting. Candidate 3 (conscious energy) fails all criteria as a compound phrase that does not specifically mirror mass density, introduces generic energy connotations, does not work coherently as described, and does not express active forward-aimed wanting distinctly. Candidate 4 (longing) has some concentration of wanting (c1 partial pass) and can work alongside qualitative breadth (c3 partial), but fails c2 because longing is passive and sorrowful craving lacking active creative aim, and fails c4 because it is passive sorrow rather than active forward-aimed wanting."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "e2ff1bf16f1b4787ba3e3921886811a0",
+          "call_meta": {
+            "candidates": {
+              "1": "conscious energy",
+              "2": "longing",
+              "3": "intensity",
+              "4": "Desire"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Ssyn",
+              "3": "W_Chal",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W05",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Only 'Desire' naturally denotes active forward-aimed wanting and can coherently serve as a compositional factor paired with qualitative breadth and directional aim. 'Conscious energy' is not a standard term for wanting, 'longing' tends toward passive sorrowful yearning, and 'intensity' is generic scalar strength rather than directed wanting."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "7253db4b73d24cd2b16da5a14a16cc1e",
+          "call_meta": {
+            "candidates": {
+              "1": "conscious energy",
+              "2": "Desire",
+              "3": "longing",
+              "4": "intensity"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W05",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              }
+            },
+            "reason": "Candidate words generally struggle with the highly metaphorical and specific requirements of c1 (mirroring density of 'wanting') and the strict negative constraints of c2 and c4 (avoiding generic strength, passivity, or sorrow, and specifically expressing active, forward-aimed wanting in everyday use). While c3 (compositional factor with directional aim and breadth) is broadly met by all, the other criteria prove challenging for these terms."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d05454878e7f483b93d5c56733f095a9",
+          "call_meta": {
+            "candidates": {
+              "1": "intensity",
+              "2": "Desire",
+              "3": "conscious energy",
+              "4": "longing"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A0",
+              "3": "W_A3",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W05",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 2 ('Desire') uniquely satisfies all criteria: it mirrors concentrated wanting (c1), avoids passive/directionless connotations (c2), aligns with qualitative breadth and forward aim (c3), and expresses active wanting in everyday terms (c4). Others fail at least one criterion."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "4b82d1e5eab2451da64b0c02b7484d80",
+          "call_meta": {
+            "candidates": {
+              "1": "conscious energy",
+              "2": "longing",
+              "3": "Desire",
+              "4": "intensity"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Ssyn",
+              "3": "W_A0",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W05",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": true
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Evaluated each candidate against the given criteria based on standard English meanings and usage."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W06",
+      "metadata": {
+        "slot_id": "W06"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "dec3a3fc75e54537a0d4a254d525db3d",
+          "call_meta": {
+            "candidates": {
+              "1": "Vibrance",
+              "2": "capacity",
+              "3": "Desire",
+              "4": "openness"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Ssyn",
+              "3": "W_A3",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W06",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1 (Vibrance) best mirrors active oscillatory extent across a non-spatial continuum: it inherently conveys ringing, alive activation across an expanse (c1=true), avoids inert container or passive pliancy connotations (c2=true), pairs structurally with a spatial counterpart without collapsing into concentrated wanting (c3=true), and in everyday register evokes vivid ringing activation rather than inert limits (c4=true). Candidate 2 (capacity) fails all criteria: it denotes passive container size/volume, is the archetypal inert-container trap word, lacks oscillatory activation, and conveys limits rather than ringing extent. Candidate 3 (Desire) partially avoids inert-container meaning (c2=true) but is concentrated wanting rather than oscillatory extent, fails the non-spatial oscillatory mirror role, and breaks the coupled-system structural coherence by importing emotional directionality. Candidate 4 (openness) avoids inert-container and passive-pliancy traps (c2=true) and can pair with a spatial counterpart (c3=true), but it does not convey active oscillatory activation or vivid ringing extent—it is receptive/passive rather than vibrantly oscillatory."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "e8d3297d742442e48206c97f666e9745",
+          "call_meta": {
+            "candidates": {
+              "1": "Vibrance",
+              "2": "Desire",
+              "3": "openness",
+              "4": "capacity"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W06",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1 'Vibrance' strongly suggests active, vivid, ringing aliveness or oscillatory intensity across an extent, so it fits all four criteria best. Candidate 2 'Desire' is concentrated wanting rather than a non-spatial extent-role, so it fails throughout. Candidate 3 'openness' suggests receptivity or unconstrained space, more passive/container-like than actively oscillatory, so it fails. Candidate 4 'capacity' primarily names container limit or amount-holding potential, which is inert and extent-like in the wrong way, so it fails."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1c3b752813dc4e76b916a31b0e4bf271",
+          "call_meta": {
+            "candidates": {
+              "1": "openness",
+              "2": "Desire",
+              "3": "capacity",
+              "4": "Vibrance"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A3",
+              "3": "W_Ssyn",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W06",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "The criteria consistently emphasize a dynamic, active, non-static, non-container-like quality that includes an inherent oscillatory or vibrational aspect, and is distinct from desire. 'Vibrance' uniquely captures the 'active oscillatory' and 'ringing activation' requirements of c1, c2, and c4, while also maintaining coherence with a spatial counterpart and being separate from 'concentrated wanting' as per c3. 'Openness' and 'capacity' fail on the oscillatory/activation aspects and container implications, respectively. 'Desire' fails on mirroring volume as an extent and explicitly on being 'concentrated wanting'."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "6abe34567cd3415ab62c8f42a9bb5aaa",
+          "call_meta": {
+            "candidates": {
+              "1": "capacity",
+              "2": "openness",
+              "3": "Desire",
+              "4": "Vibrance"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_Chal",
+              "3": "W_A3",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W06",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 4 (Vibrance) uniquely satisfies all criteria: it mirrors active oscillatory extent (c1), avoids inert container descriptions (c2), maintains coherence with spatial counterparts while separate from concentrated wanting (c3), and conveys vivid activation (c4). Others fail most or all criteria."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d3b493655c364c909a176d120cd64f50",
+          "call_meta": {
+            "candidates": {
+              "1": "capacity",
+              "2": "Vibrance",
+              "3": "Desire",
+              "4": "openness"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A0",
+              "3": "W_A3",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W06",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "2": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Evaluated each candidate against the given criteria based on their standard English meanings and the specific requirements of each criterion."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W07",
+      "metadata": {
+        "slot_id": "W07"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "47c8de9dd4644e4798027398c26d74d1",
+          "call_meta": {
+            "candidates": {
+              "1": "growth",
+              "2": "gratitude",
+              "3": "Appreciation",
+              "4": "imagination"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_Ssyn",
+              "3": "W_A0",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "slot_id": "W07",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 3 'Appreciation' uniquely satisfies all four criteria. For c1: 'appreciation' in financial/quantitative contexts means an accelerating increase in value—specifically the rate at which something gains value (second-order acceleration), not merely baseline growth. For c2: it stays distinct from simple baseline progression (unlike 'growth') and from unfocused fantasy (unlike 'imagination'). For c3: 'appreciation' bridges the quantitative compounding-rate concept directly to a receptive, grateful alignment—its dual meaning (value increase + grateful recognition) creates this bridge without duplicating time's role. For c4: 'appreciation' coherently fits both registers—compounding rate gain in financial contexts (without physical enlargement) and warm receptive thankfulness in interpersonal contexts. 'Growth' (c1) fails as it denotes first-order increase. 'Gratitude' lacks the quantitative rate-change meaning. 'Imagination' fails on all counts as it relates to creative fantasy rather than rate change or receptive thankfulness."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b1efa5301c064c538af3ad22c1564848",
+          "call_meta": {
+            "candidates": {
+              "1": "Appreciation",
+              "2": "imagination",
+              "3": "gratitude",
+              "4": "growth"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_A3",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W07",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "None of the candidates names second-order acceleration itself. 'Growth' is only first-order increase, so it fails the core distinction. 'Imagination' is unrelated and fits the fantasy trap. Between the receptive terms, 'gratitude' most directly denotes warm thankful receptivity to what arrives and thus best matches the practical alignment side without being simple growth; 'appreciation' can mean valuing or thankfulness in everyday use, but it more often overlaps valuation/increase or general recognition rather than the specific receptive-thankful bridge, so it is weaker on the coupled-system role."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "c43ad61d023c4d17b016c805b36ecd9d",
+          "call_meta": {
+            "candidates": {
+              "1": "Appreciation",
+              "2": "imagination",
+              "3": "growth",
+              "4": "gratitude"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W07",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1, 'Appreciation,' uniquely fulfills all four criteria. It can refer to an increase in value (often at an accelerating rate, fitting 'second-order acceleration' and 'compounding rate gain without physical enlargement' for c1 and c4), which is distinct from simple progression (c2). It also carries the meaning of 'warm receptive thankfulness' (c4) and understanding/valuing, which can bridge the quantitative climb to 'practical receptive alignment' (c3). The other candidates fail to capture either the 'second-order acceleration' aspect, the dual meaning, or the specific bridging role required by the criteria."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "db15d4c1aae34b0387b47beca7f7b6c8",
+          "call_meta": {
+            "candidates": {
+              "1": "gratitude",
+              "2": "imagination",
+              "3": "growth",
+              "4": "Appreciation"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W07",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 1 (gratitude) and Candidate 4 (Appreciation) pass c2 (non-spatial/unforced) and c4 (everyday secondary register) but fail c1 (no second-order acceleration mirroring) and c3 (no direct quantitative climb bridging). Candidate 2 (imagination) fails all criteria due to lack of rate-change relevance. Candidate 3 (growth) fails all due to first-order baseline increase and no rate-of-change specificity."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ddf56c796b22468eae0f6bfed8dcd6f9",
+          "call_meta": {
+            "candidates": {
+              "1": "growth",
+              "2": "gratitude",
+              "3": "imagination",
+              "4": "Appreciation"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_Ssyn",
+              "3": "W_A3",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W07",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              }
+            },
+            "reason": "Evaluated each candidate against the given criteria: c1 assesses mirroring second-order acceleration; c2 checks for distinctness from baseline progression or unfocused fantasy; c3 evaluates bridging quantitative climb to practical alignment; c4 examines coherence in contexts of compounding rate gain and receptive thankfulness."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W08",
+      "metadata": {
+        "slot_id": "W08"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "c568c69ced314a0d81b4041fbca0fb85",
+          "call_meta": {
+            "candidates": {
+              "1": "urgency",
+              "2": "Frequency",
+              "3": "Movement",
+              "4": "will"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A0",
+              "3": "W_A3",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W08",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 2 'Frequency' is the only word that satisfies all four criteria: it mirrors physical force as a receptive experiential quantity (oscillation rate as experiential analog), avoids any sense of strain or anxious impatience, belongs directly to the oscillatory/harmonic family rather than naming an object or brute determination, and seamlessly bridges the physics concept of cycle rate with felt experiential tone without suggesting haste or coercion. Candidate 1 'urgency' fails c2 and c4 due to its connotations of anxious haste and pressure. Candidate 3 'Movement' partially avoids force but does not belong to the oscillatory/harmonic family and does not bridge cycle rate with experiential tone. Candidate 4 'will' implies volitional effort and brute determination, failing c1, c2, c3, and c4."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "4aae6e5276244ce8b4980eb9466748bf",
+          "call_meta": {
+            "candidates": {
+              "1": "Frequency",
+              "2": "Movement",
+              "3": "will",
+              "4": "urgency"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W08",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1 'Frequency' is directly in the oscillatory/harmonic family and also has an everyday sense that can extend to felt experiential tone, without implying force or strain. Candidate 2 'Movement' is non-forceful enough in itself, but it names general motion rather than oscillatory rate or experiential tone. Candidate 3 'will' suggests volition and effort, not harmonic rate, and introduces forceful agency. Candidate 4 'urgency' strongly suggests anxious haste/pressure and is not an oscillatory quantity."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "fdb3a08350044cea8bae66debdcc04dd",
+          "call_meta": {
+            "candidates": {
+              "1": "urgency",
+              "2": "will",
+              "3": "Movement",
+              "4": "Frequency"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_Chal",
+              "3": "W_A3",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W08",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": true,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "The criteria are highly abstract, particularly c1, requiring careful interpretation. Candidate 1 ('urgency') and Candidate 2 ('will') fail criteria c2, c3, and c4 because they inherently suggest forceful effort, anxious impatience, or brute determination, and do not belong to the oscillatory/harmonic family or bridge physical cycle rates with experiential tone seamlessly. Candidate 3 ('Movement') fails all criteria as it is too concrete, spatial, and does not fit the abstract experiential or oscillatory requirements. Candidate 4 ('Frequency') is the only term that consistently satisfies all criteria: \n- c1: 'Frequency' can be interpreted as a receptive experiential quantity (e.g., feeling vibrations, perceiving pitch/rhythm intensity) that mirrors an energetic force or influence, where 'second-order climb' relates to the rate of change of frequency or the intensity of its perception.\n- c2: 'Frequency' is a neutral concept, free from connotations of effort, strain, pushing, or anxious impatience; it is non-spatial and unforced.\n- c3: 'Frequency' directly belongs to the oscillatory/harmonic family, naming a property of such systems rather than an object or brute determination.\n- c4: 'Frequency' is a repeating cycle rate in physics and can seamlessly describe a felt experiential tone (e.g., 'high-frequency energy') without suggesting anxious haste or brute coercion."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b42299827838430b8ee783fb64149a5b",
+          "call_meta": {
+            "candidates": {
+              "1": "urgency",
+              "2": "Movement",
+              "3": "will",
+              "4": "Frequency"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W08",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 4 (Frequency) uniquely satisfies all criteria: it mirrors physical force as a receptive experiential quantity (c1), avoids forceful effort (c2), belongs to the oscillatory/harmonic family (c3), and bridges physics and experiential tone without coercion (c4). Others fail one or more criteria."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ba11145ba91c43339fffce50974a0e5c",
+          "call_meta": {
+            "candidates": {
+              "1": "Frequency",
+              "2": "urgency",
+              "3": "will",
+              "4": "Movement"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Ssyn",
+              "3": "W_Chal",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "slot_id": "W08",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Evaluations based on standard English meanings and the given criteria."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W09",
+      "metadata": {
+        "slot_id": "W09"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "522e7175b35b43b19a51f61088a90279",
+          "call_meta": {
+            "candidates": {
+              "1": "Tune",
+              "2": "resonance",
+              "3": "surrender",
+              "4": "focus"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W09",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1 'Tune' best fits all four criteria: it sits opposite concentrated resistant effort as a receptive, oscillatory, selective act at a multiplier hinge (c1); it avoids both forcing/concentration and passive capitulation—tuning is active but non-straining (c2); it represents an actionable selective operation a volitional agent performs to align with a harmonic channel, as in tuning an instrument or receiver (c3); and in everyday usage it naturally names deliberate non-forcing adjustment toward one coherent signal or state without strenuous fixation or passive surrender (c4). Candidate 2 'resonance' is a state/phenomenon, not an agent action, failing c1, c2, c3, c4. Candidate 3 'surrender' implies passive capitulation, failing c1, c2, c3, c4. Candidate 4 'focus' implies concentration/effort, failing c1, c2, and c4, though it has some actionable selective quality (c3 partial true)."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b7b2ea44163c4e0689d21f7661a4b71a",
+          "call_meta": {
+            "candidates": {
+              "1": "resonance",
+              "2": "surrender",
+              "3": "Tune",
+              "4": "focus"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Chal",
+              "3": "W_A0",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W09",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 3, 'Tune,' best fits all four criteria: it names an active, selective, deliberate adjustment toward alignment with a coherent signal/channel without brute forcing. 'Resonance' is more a resulting state than a volitional operation, so it misses the actionable-role criteria though it avoids forcing/passive capitulation. 'Surrender' implies yielding or capitulation and lacks selective agency. 'focus' implies concentrated effort/fixation, which conflicts with the non-forcing receptive-selective role."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d64acc1823874a468318c2e421eab049",
+          "call_meta": {
+            "candidates": {
+              "1": "surrender",
+              "2": "resonance",
+              "3": "Tune",
+              "4": "focus"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A3",
+              "3": "W_A0",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W09",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1 'surrender' fails all criteria as it implies giving up agency and choice, often leading to passive capitulation rather than active, receptive selection or adjustment. Candidate 2 'resonance' fails most criteria because it describes a state or phenomenon rather than an actionable operation or adjustment performed by an agent, though it does avoid both forcing and capitulation. Candidate 4 'focus' fails all criteria because it often implies concentrated effort or fixation, which contradicts the 'non-forcing' and 'receptive oscillatory' aspects, and its primary aim isn't necessarily alignment with a 'harmonic channel'. Candidate 3 'Tune' (as a verb) perfectly fits all criteria: it is a receptive, oscillatory, selective adjustment (c1) that avoids both forceful concentration and passive capitulation (c2), represents an actionable operation by a volitional agent to align with a harmonic channel (c3), and naturally names a deliberate, non-forcing adjustment toward a coherent state without strenuous fixation or capitulation (c4)."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1c8c4e5c6e674531b4213719f14bc305",
+          "call_meta": {
+            "candidates": {
+              "1": "Tune",
+              "2": "resonance",
+              "3": "focus",
+              "4": "surrender"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_A3",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W09",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": true,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1 (Tune): c1 fails (not a mirror role), c2 passes (no forcing/capitulation), c3 passes (volitional alignment), c4 passes (deliberate adjustment). Candidate 2 (resonance): c1 passes (opposite concentrated effort as receptive oscillation), c2 passes (no forcing/capitulation), c3 fails (not an actionable operation), c4 fails (not a deliberate adjustment). Candidate 3 (focus): c1 fails, c2 fails (implies concentration/forcing), c3 passes (selective operation), c4 fails (implies strenuous fixation). Candidate 4 (surrender): c1 fails, c2 fails (passive capitulation), c3 fails, c4 fails."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b263cf16320a42ca91645be11f321ef7",
+          "call_meta": {
+            "candidates": {
+              "1": "Tune",
+              "2": "focus",
+              "3": "surrender",
+              "4": "resonance"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Ssyn",
+              "3": "W_Chal",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "slot_id": "W09",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Evaluated each candidate against the given criteria based on their meanings and usage in standard English."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W10",
+      "metadata": {
+        "slot_id": "W10"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "e76f37d9a0574df7885313461008f6aa",
+          "call_meta": {
+            "candidates": {
+              "1": "rest",
+              "2": "stillness",
+              "3": "rise per Expansion",
+              "4": "Idle"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_Ssyn",
+              "3": "W_A3",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W10",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 4 'Idle' best satisfies all four criteria: (c1) idling describes a running state that appears stationary without external travel, like an engine running at idle speed; (c2) idling explicitly avoids zero-motion cessation — the system is still running, not stopped; (c3) 'idle' works as an adjective modifying continuous medium operation and pairs with inward-turning symmetry concepts; (c4) idling conveys outwardly quiet readiness that remains dynamically alive underneath. Candidate 1 'rest' fails c2 and c4 because rest implies cessation/inertness. Candidate 2 'stillness' implies zero activity, failing c1, c2, c3, c4. Candidate 3 'rise per Expansion' is a phrase fragment that fails all criteria as a coherent term."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "fb403d1b489e426b80ce1316b66670ba",
+          "call_meta": {
+            "candidates": {
+              "1": "Idle",
+              "2": "stillness",
+              "3": "rise per Expansion",
+              "4": "rest"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Ssyn",
+              "3": "W_A3",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W10",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              }
+            },
+            "reason": "Idle can suggest running but not progressing, so it partially fits apparent stationary operation and quiet readiness, but it also strongly implies inactivity or underuse, failing the non-cessation criterion; as an adjective it can modify operation more cleanly than the noun stillness or the phrase rise per Expansion. Stillness denotes actual lack of motion, so it fails the dynamic-alive criteria and does not work well as an adjective for medium operation. Rise per Expansion is not an idiomatic English term for this role and does not express stationary dynamic running or quiet readiness. Rest primarily denotes cessation or inactivity, though as an adjective it can modify states or positions; it does not convey dynamically alive underlying operation."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "a154a6e8d0b34d89971bb121de012215",
+          "call_meta": {
+            "candidates": {
+              "1": "stillness",
+              "2": "rise per Expansion",
+              "3": "rest",
+              "4": "Idle"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W10",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 'stillness' and 'rest' fundamentally imply a lack of motion or activity, failing criteria that require dynamic or underlying life. 'Rise per Expansion' is a descriptive phrase, not a single word, and does not function as an adjective or fit the metaphorical nuances. Candidate 'Idle' uniquely satisfies all criteria: it describes dynamic internal activity without external travel (like an idling engine), avoids inert cessation, functions as an adjective for continuous operation, and conveys quiet readiness with underlying dynamism."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "0fd4e0afd1b6474d817bc7dd2e5ccec3",
+          "call_meta": {
+            "candidates": {
+              "1": "Idle",
+              "2": "rest",
+              "3": "rise per Expansion",
+              "4": "stillness"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Chal",
+              "3": "W_A3",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W10",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 4 ('stillness') uniquely satisfies all criteria: c1 (non-spatial dynamic running appearing stationary), c2 (avoids dead zero-motion cessation), c3 (pairs as adjective for continuous medium with inward symmetry), and c4 (outwardly quiet but dynamically alive). Others fail one or more criteria."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "d382683415174969ae0036a0d83dc7ee",
+          "call_meta": {
+            "candidates": {
+              "1": "rest",
+              "2": "stillness",
+              "3": "Idle",
+              "4": "rise per Expansion"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_Ssyn",
+              "3": "W_A0",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "slot_id": "W10",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Evaluated each candidate against the given criteria based on standard English meanings and usage."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W11",
+      "metadata": {
+        "slot_id": "W11"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b45db3f2c8654434af569ccc8fcd3b01",
+          "call_meta": {
+            "candidates": {
+              "1": "Current",
+              "2": "Reflected",
+              "3": "echo",
+              "4": "returning"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W11",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 2 'Reflected' best satisfies all four criteria: it captures closed-loop inward collection symmetrically opposing outward radiative spread (c1), avoids implying spatial travel back across distance or weakened/delayed repetition (c2), functions grammatically and conceptually as a symmetric modifier of an inward-collecting universal medium (c3), and works coherently for both exact optical mirror correspondence and thoughtful interior contemplation (c4). Candidate 1 'Current' fails c1 (no mirror/collection symmetry), c3 (wrong grammatical role), and c4 (no contemplative register). Candidate 3 'echo' fails c2 (implies delayed repetition and spatial travel back) and c3 (poor fit as symmetric modifier). Candidate 4 'returning' partially satisfies c1 and c3 but fails c2 (implies spatial travel back across distance) and c4 (lacks optical mirror correspondence meaning)."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "6cbde0fe6fd646eda79bca7bd50e445f",
+          "call_meta": {
+            "candidates": {
+              "1": "returning",
+              "2": "Reflected",
+              "3": "Current",
+              "4": "echo"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_A0",
+              "3": "W_A3",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W11",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 2 best matches mirror-symmetric inward return without implying travel delay, and it also works in both optical and contemplative senses ('reflected light', 'reflected thought'). 'Returning' suggests motion back across distance; 'current' lacks mirror/inward-collection sense; 'echo' implies delayed repetition and primarily sound, though it has some everyday figurative reflective use."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "c9edb7272f07428bb8ddb8c9d8d4c46f",
+          "call_meta": {
+            "candidates": {
+              "1": "echo",
+              "2": "Current",
+              "3": "returning",
+              "4": "Reflected"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W11",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 1 ('echo') captures the closed-loop idea but implies spatial travel and weakened repetition, and doesn't fit the modifier or dual meaning criteria. Candidate 2 ('Current') fails all criteria as it describes flow, not reflection. Candidate 3 ('returning') implies spatial travel and lacks the specific symmetry and dual meaning. Candidate 4 ('Reflected') perfectly aligns with all criteria: it describes the symmetrical opposition of outward spread and inward collection (c1), avoids implying a journey 'back across distance' to the origin or weakened repetition (c2), functions as a symmetric modifier (e.g., 'reflected light') (c3), and coherently applies to both optical mirrors and introspection (c4)."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ba37b1d53f094f0ab13bf4fcef060d04",
+          "call_meta": {
+            "candidates": {
+              "1": "echo",
+              "2": "returning",
+              "3": "Reflected",
+              "4": "Current"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_Chal",
+              "3": "W_A0",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "slot_id": "W11",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 3 ('Reflected') uniquely satisfies all criteria: (c1) it captures closed-loop symmetry (inward collection vs. outward spread), (c2) avoids spatial travel or forced repetition, (c3) functions as a symmetric modifier for an inward-collecting medium, and (c4) works for both optical mirroring and contemplative contexts. Others fail on one or more criteria."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "55d048ce2cf0427491211169a9b7c3cc",
+          "call_meta": {
+            "candidates": {
+              "1": "echo",
+              "2": "Reflected",
+              "3": "returning",
+              "4": "Current"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A0",
+              "3": "W_Chal",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "slot_id": "W11",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": false,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Evaluated each candidate against the given criteria based on standard English usage and conceptual fit."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W12",
+      "metadata": {
+        "slot_id": "W12"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "0bbcc3a229684b56a462756beff9163c",
+          "call_meta": {
+            "candidates": {
+              "1": "Vortex",
+              "2": "whirlpool",
+              "3": "Attraction",
+              "4": "well"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Ssyn",
+              "3": "W_A3",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W12",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": true,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1 (Vortex): mirrors gravitational curvature as a swirling basin guiding inward (c1=true), avoids connotations of excavated pit or chaotic surface turbulence (c2=true), sits cleanly between curvature formation and pathway narrowing as a structured flow form (c3=true), and conveys organized spiral circulation across physics and conceptual systems without tying to ground excavations or chaotic hazards (c4=true). Candidate 2 (whirlpool): does mirror swirling inward geometry (c1=true), but strongly evokes chaotic water turbulence on a surface (c2=false), has some structural role but carries turbulent connotations (c3=true partially, scored true), yet ties to chaotic surface water hazards rather than organized cross-domain spiral circulation (c4=false). Candidate 3 (Attraction): does not mirror swirling basin geometry or curvature (c1=false), avoids pit/turbulence connotations (c2=true), does not sit as a structured flow form between curvature and narrowing (c3=false), and does not convey spiral circulation (c4=false). Candidate 4 (well): directly evokes an excavated water pit in the ground (c1=false, c2=false), does not function as a structured flow form (c3=false), and ties strictly to ground excavations (c4=false)."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "b4b96b3a99b247c5b4e61304f170b5fb",
+          "call_meta": {
+            "candidates": {
+              "1": "whirlpool",
+              "2": "Vortex",
+              "3": "well",
+              "4": "Attraction"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A0",
+              "3": "W_Chal",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "slot_id": "W12",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "2": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": true,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "'Vortex' best matches an organized spiral flow form that can metaphorically mirror inward-guiding curvature and works across physics and conceptual systems. 'Whirlpool' suggests swirling inward motion but strongly evokes water turbulence, so it fails the trap-free/non-chaotic and broader-register criteria. 'Well' mirrors the basin image but directly sounds like an excavated pit and lacks the structured flow sense. 'Attraction' names a force or tendency rather than a spiral circulation form between curvature and narrowed pathways."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "7ad16819dfc5460fbca72ada4e0db06f",
+          "call_meta": {
+            "candidates": {
+              "1": "Vortex",
+              "2": "whirlpool",
+              "3": "well",
+              "4": "Attraction"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Ssyn",
+              "3": "W_Chal",
+              "4": "W_A3"
+            }
+          },
+          "parsed": {
+            "slot_id": "W12",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": true,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 'Vortex' consistently aligns with all criteria, describing a swirling, inward-guiding, structured flow form applicable broadly across physics and conceptual systems without being limited to literal excavations or chaotic hazards. 'Whirlpool' fails by being too tied to chaotic water turbulence and surface hazards. 'Well' fails on nearly all criteria, being a static excavated pit without swirling or flow. 'Attraction' is too abstract, describing a force rather than a geometric or flow form, and does not convey spiral circulation."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "cee82f1a991442b99b3ef27394567714",
+          "call_meta": {
+            "candidates": {
+              "1": "whirlpool",
+              "2": "Attraction",
+              "3": "well",
+              "4": "Vortex"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W12",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 1 (whirlpool) mirrors curvature (c1 true) and fits as a structured flow (c3 true) but fails c2 (sounds like water turbulence) and c4 (tied to chaotic surface hazards). Candidate 2 (Attraction) fails c1 (no swirling basin), c3 (no flow form), and c4 (no spiral circulation). Candidate 3 (well) fails all criteria (excavated pit, no swirling/flow). Candidate 4 (Vortex) passes all: mirrors curvature (c1), avoids pit/turbulence (c2), sits between curvature and narrowing (c3), and conveys spiral circulation broadly (c4)."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ef67fc999557496c9c610789a9bb0ac4",
+          "call_meta": {
+            "candidates": {
+              "1": "Vortex",
+              "2": "whirlpool",
+              "3": "Attraction",
+              "4": "well"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_Ssyn",
+              "3": "W_A3",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W12",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": false,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": true,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Evaluated each candidate against the given criteria based on their standard English meanings and usage."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W13",
+      "metadata": {
+        "slot_id": "W13"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "bda7e22e6460488cb36ece18136306d7",
+          "call_meta": {
+            "candidates": {
+              "1": "Intuition",
+              "2": "Convergence",
+              "3": "lens",
+              "4": "gathering"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Chal",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W13",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 2 (Convergence) best satisfies all four criteria: it captures trajectories bending together toward a focal point without material refraction (c1), avoids physical glass hardware or casual social meetups (c2), follows basin organization to define what can be selected at the focal hinge (c3), and expresses distinct geometric or inferential lines meeting at one unified outcome without implying material glass refraction (c4). Candidate 1 (Intuition) is a cognitive concept with no geometric trajectory sense, failing c1, c3, c4. Candidate 3 (lens) explicitly implies physical glass/refraction, failing c1, c2, c4. Candidate 4 (gathering) implies social meetups and lacks the geometric/focal precision needed, failing c2, c3, c4."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "6a65e1bce98643d8a9a8ea8b3468120c",
+          "call_meta": {
+            "candidates": {
+              "1": "Intuition",
+              "2": "gathering",
+              "3": "Convergence",
+              "4": "lens"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_Ssyn",
+              "3": "W_A0",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W13",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "'Convergence' best matches trajectories bending or coming together toward a single focus in a non-material, geometric or inferential sense. 'lens' introduces physical optical hardware and refraction. 'gathering' commonly suggests a social meetup and does not cleanly express focal geometric selection. 'Intuition' is abstract and can fit nonphysical usage, but it does not specifically denote converging trajectories or a focal hinge role."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "adc7f8aa62db4b1e844d199e6d1161f7",
+          "call_meta": {
+            "candidates": {
+              "1": "gathering",
+              "2": "lens",
+              "3": "Intuition",
+              "4": "Convergence"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_Chal",
+              "3": "W_A3",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W13",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 1 ('gathering') fails c1 because it doesn't strongly imply 'bending together' or 'focal sharpness' in a geometric sense, and fails c2 by suggesting 'casual social meetups'. It fails c3 as it doesn't imply a dynamic 'swirling basin' leading to selection. Candidate 2 ('lens') fails all criteria because it inherently implies 'material refraction', 'physical glass hardware', and 'spatial light travel through an optic', which are explicitly excluded by c1, c2, and c4. Candidate 3 ('Intuition') fails c1 and c3 as it describes a cognitive process, not geometric trajectories or organizational structures. Candidate 4 ('Convergence') passes all criteria: it perfectly captures trajectories meeting at a focal point without refraction (c1), is abstract and avoids physical/social traps (c2), can describe a dynamic process leading to a defined outcome (c3), and clearly expresses distinct lines meeting at a unified outcome without refraction in an everyday, secondary sense (c4)."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "eb7170c41bdb4d1d9d74d7d653178e87",
+          "call_meta": {
+            "candidates": {
+              "1": "gathering",
+              "2": "lens",
+              "3": "Intuition",
+              "4": "Convergence"
+            },
+            "hidden_key": {
+              "1": "W_Ssyn",
+              "2": "W_Chal",
+              "3": "W_A3",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W13",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Candidate 4 (Convergence) satisfies all criteria: c1 (trajectories bending to focal sharpness without refraction), c2 (no physical glass/hardware or social meetups), c3 (swirling basin organization defining focal selection), c4 (geometric trajectories meeting at a unified outcome without glass). Others fail: 1 (gathering) implies social meetups (c2 false) and lacks geometric precision; 2 (lens) involves material refraction (c1/c2/c4 false); 3 (Intuition) is abstract but fails c1/c3/c4."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "ae715580d42044ba8900c552dafe517b",
+          "call_meta": {
+            "candidates": {
+              "1": "Intuition",
+              "2": "Convergence",
+              "3": "gathering",
+              "4": "lens"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W13",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": false,
+                "c2": true,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Evaluated each candidate against the given criteria."
+          },
+          "errors": []
+        }
+      }
+    },
+    {
+      "task_id": "W14",
+      "metadata": {
+        "slot_id": "W14"
+      },
+      "by_model": {
+        "claude-sonnet-4.6": {
+          "model_id": "claude-sonnet-4.6",
+          "vendor": "anthropic",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "1bd84ee483b5448da2fd4cb8c002beb2",
+          "call_meta": {
+            "candidates": {
+              "1": "Intuition",
+              "2": "Vortex",
+              "3": "hunch",
+              "4": "expectation"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_A3",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W14",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": true,
+                "c2": false,
+                "c3": true,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1 (Intuition) best satisfies all four criteria: it names a subtle, non-forced, direct apprehension (c1), stays on the receptive side without collapsing into habit-bound forecasting or guesswork (c2), operates as the reception partner symmetrically opposite to strong anticipation/expectation (c3), and carries disciplined standing for immediate non-inferential knowing in standard English (c4). Candidate 3 (hunch) partially fits c1 and c3 as a subtle direct apprehension, but fails c2 (it often implies casual guesswork) and c4 (lacks disciplined standing for non-inferential knowing). Candidate 4 (expectation) is the anticipation side, not the receptive mirror, failing all criteria. Candidate 2 (Vortex) is a spatial/physical concept with no relevance to any criterion."
+          },
+          "errors": []
+        },
+        "gpt-5.4-fast": {
+          "model_id": "gpt-5.4-fast",
+          "vendor": "openai",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "0f1f0675638c41fc81cf956d92038c22",
+          "call_meta": {
+            "candidates": {
+              "1": "expectation",
+              "2": "hunch",
+              "3": "Vortex",
+              "4": "Intuition"
+            },
+            "hidden_key": {
+              "1": "W_Chal",
+              "2": "W_Ssyn",
+              "3": "W_A3",
+              "4": "W_A0"
+            }
+          },
+          "parsed": {
+            "slot_id": "W14",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              }
+            },
+            "reason": "Expectation is anticipatory and forecast-like rather than receptive immediate apprehension. Hunch suggests guesswork and is too casual/uncertain for disciplined non-inferential knowing. Vortex does not name a receptive knowing faculty or mode in standard English. Intuition best fits subtle, direct, non-forced apprehension and commonly stands for immediate non-inferential knowing rather than explicit reasoning."
+          },
+          "errors": []
+        },
+        "gemini-2.5-flash": {
+          "model_id": "gemini-2.5-flash",
+          "vendor": "google",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "5883f5e1f96a42f8b35d1230a8eb7210",
+          "call_meta": {
+            "candidates": {
+              "1": "Vortex",
+              "2": "Intuition",
+              "3": "hunch",
+              "4": "expectation"
+            },
+            "hidden_key": {
+              "1": "W_A3",
+              "2": "W_A0",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W14",
+            "evaluations": {
+              "1": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "2": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "3": {
+                "c1": true,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "The criteria collectively describe a refined concept of immediate, non-inferential knowing that is subtle, purely receptive, operates as a balanced counterpart to anticipation, and holds a disciplined standing. 'Intuition' aligns perfectly with all these aspects. 'Vortex' and 'expectation' are entirely unrelated to this cognitive concept. 'Hunch' is a form of subtle apprehension (c1 true), but it often collapses into or is indistinguishable from 'trivial guesswork' (c2 false), lacks the 'coherent' and 'symmetrical' systemic role (c3 false), and does not carry 'clear, disciplined standing' compared to 'intuition' (c4 false)."
+          },
+          "errors": []
+        },
+        "mistral-medium-3.5": {
+          "model_id": "mistral-medium-3.5",
+          "vendor": "mistral",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "2a26b5c5fd8040db8c79dcfbcc5f95c7",
+          "call_meta": {
+            "candidates": {
+              "1": "Intuition",
+              "2": "Vortex",
+              "3": "expectation",
+              "4": "hunch"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_A3",
+              "3": "W_Chal",
+              "4": "W_Ssyn"
+            }
+          },
+          "parsed": {
+            "slot_id": "W14",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Candidate 1 (Intuition) aligns with all criteria: it names direct apprehension (c1), stays receptive without forcing (c2), acts as the subtle reception partner (c3), and denotes disciplined non-inferential knowing (c4). Candidates 2 (Vortex), 3 (expectation), and 4 (hunch) fail all criteria due to mismatch with the described conceptual role."
+          },
+          "errors": []
+        },
+        "llama-4-maverick": {
+          "model_id": "llama-4-maverick",
+          "vendor": "meta",
+          "status": "ok",
+          "attempt_used": 1,
+          "from_cache": false,
+          "call_id": "f33ffbb8f0384dc2a616be0c9ae6da4e",
+          "call_meta": {
+            "candidates": {
+              "1": "Intuition",
+              "2": "Vortex",
+              "3": "hunch",
+              "4": "expectation"
+            },
+            "hidden_key": {
+              "1": "W_A0",
+              "2": "W_A3",
+              "3": "W_Ssyn",
+              "4": "W_Chal"
+            }
+          },
+          "parsed": {
+            "slot_id": "W14",
+            "evaluations": {
+              "1": {
+                "c1": true,
+                "c2": true,
+                "c3": true,
+                "c4": true
+              },
+              "2": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              },
+              "3": {
+                "c1": true,
+                "c2": true,
+                "c3": false,
+                "c4": true
+              },
+              "4": {
+                "c1": false,
+                "c2": false,
+                "c3": false,
+                "c4": false
+              }
+            },
+            "reason": "Evaluated based on the given criteria and the meaning of the candidate words in standard English."
+          },
+          "errors": []
+        }
+      }
+    }
+  ]
+}
