@@ -8,6 +8,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python 3.12
         uses: actions/setup-python@v5
@@ -108,3 +110,10 @@ jobs:
 
       - name: Verify 15-mutation audit offline
         run: PYTHONDONTWRITEBYTECODE=1 python -B proof/mutation/run_mutation_suite.py --verify-offline
+
+      - name: Verify TSR v2 and Deep-v3 harness artifacts offline
+        run: |
+          PYTHONDONTWRITEBYTECODE=1 python -B harness/run_tsr_harness.py --verify-offline
+          PYTHONDONTWRITEBYTECODE=1 python -B harness/evaluate_tsr_harness.py --verify-offline
+          PYTHONDONTWRITEBYTECODE=1 python -B harness/deep_v3/run_deep_v3.py --verify-offline
+          PYTHONDONTWRITEBYTECODE=1 python -B harness/deep_v3/evaluate_deep_v3.py --verify-offline

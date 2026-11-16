@@ -39,15 +39,25 @@ These are the ideas the book builds, in its own words.
 - **Einstein, reflected.** The book mirrors relativity: E = mc² on the physical side and its reflection on the nonphysical side, with the Current in place of the speed of light. I'm not a physicist; I use the shape of his thinking to look at the other side of it.
 - **A practice, not a creed.** Tune before you focus, notice what you feel, and test it against your own life.
 
+## 🧪 Testing TSR the hard way
+
+I don't think a reflection table only counts because its author likes how it sounds. This repository carries two independent test suites—neither proves anything about the physical world (as *The Sovereign Mirror* says upfront, the table borrows the shape of physics, not its authority), and both report what pushed back right alongside what held:
+
+- **[Machine-checked proofs](proof/PROOF.md) (`proof/`):** Formalizes TSR's structure in `Lean 4` (`35` verified items, `0 sorry`), tests slot and graph uniqueness in `Z3` (`S_29` automorphism cascade `12 -> 2 -> 1` and `21` minimal `UNSAT` cores on hand-encoded rules), audits the 80-word etymology ledger from *What the Words Knew* in exact rational arithmetic (where the single pre-declared primary test is a null result: `1/16` overlap, `p = 0.2878`), and verifies a `15/15` mutation audit in Linux CI.
+- **[Preregistered multi-AI evaluations](harness/RESULTS.md) ([`harness/`](harness/RESULTS.md) & [`deep_v3`](harness/deep_v3/RESULTS_DEEP_V3.md)):** Tested across 6 AI model families in `v2` (5 generators/raters + DeepSeek opponent; 5 in `deep_v3`) on 40 unseen OpenStax physics equations, the 14-slot multi-job web, the Crossing regime, and verbatim Chapter 2 prose without leaking answers:
+  - **What held:** Core mechanics, waves, and relativity laws separated cleanly from thermodynamic, fluid, and sound boundaries (`16/28` Core vs. `0/12` Boundary), and multi-job web constraints favored TSR's words `13/14` over Chapter 16 synonyms and `14/14` over challengers and shuffled controls (plus `11/12` on masked book excerpts). Adding the Crossing rule (`pressure -> felt gap`) separated mechanical Crossing laws (`5/7` strict, `7/7` valid-voter) from `0/13` non-Crossing boundaries, and Layer-A v3 cleared `16/16` equations cleanly on TSR's terms while shuffled `A3-1` still collided.
+  - **What pushed back honestly:** Cold vocabulary-free guessing hit exact Book words only `6.7%` of the time (`4/60`), single-equation zero-glossary judging rarely verified law structure without a partner key (`3/16`), in `D1b`'s joint 4-criteria boolean truth tables (`all4`) zero rival terms qualified on any single slot (`0/14`) while literal isolated readings of criterion `c1` (plus `c3` on `W07`) held back `4` Book slots (`W01, W02, W07, W10`) so the joint `all4` solver returned `0` complete 14-slot assignments without surrounding context, and supplying verbatim Chapter 2 prose without Chapter 16's boundary clarifications lowered calibration consensus from `12/17` to `8/17` (pooled `62/85 -> 48/85`), driving `F = ma` (`K16`) from `2/5` to `5/5` `invert` alongside `K06` (`4/5 -> 5/5` `invert`) and `K05` (`4/5 -> 4/5` `invert`) and losing quorum on `K04, K07, K08, K11`.
+
 ## 📚 What's in this repository
 
 | Path | What it is |
 |---|---|
-| [`tsr.md`](tsr.md) | Free sample of *The Sovereign Mirror* (2026) |
-| [`reflection-game.md`](reflection-game.md) | The Reflection Game: try to build a table that holds together like TSR's, with any AI |
-| [`deep-read.md`](deep-read.md) | The Deep Read: a prompt that walks an AI through TSR in ten passes |
-| [`tests/`](tests/) | Tests of the one rule: a formal model, an extension test run with five AIs, and a blind round, with results and open questions |
-| [`proof/`](proof/PROOF.md) | Machine-checked formalization and consistency suite: Lean 4 deductive checks, Z3 graph & slot-uniqueness checks, and exact rational etymology combinatorics |
+| [`tsr.md`](tsr.md) | Free sample of *The Sovereign Mirror* (2026): opening note, prelude, and Chapter 1 |
+| [`reflection-game.md`](reflection-game.md) | The Reflection Game: prompt for testing TSR's table or reflecting new physics with any AI |
+| [`deep-read.md`](deep-read.md) | The Deep Read: ten-pass prompt walking an AI through the physics and the mirror |
+| [`proof/`](proof/PROOF.md) | Machine-checked formalization: Lean 4 theorems, Z3 uniqueness, exact etymology math, and `15/15` mutation audit |
+| [`harness/`](harness/RESULTS.md) | Preregistered evaluation across 6 AI model families on 40 unseen OpenStax equations (`v2`: 5 generators/raters + DeepSeek opponent) and 5-AI web/Crossing/prose diagnostics ([`deep_v3`](harness/deep_v3/RESULTS_DEEP_V3.md)) |
+| [`tests/`](tests/) | Earlier tests of the one rule: a formal model, a 5-AI extension test, and masked round-2 ratings, with results and open questions |
 | `10-02 The universe as reflection..mp3` | Audio recording: *The universe as reflection* |
 | [`the-sovereign-mirror/`](the-sovereign-mirror/) | Cover art for the book |
 
