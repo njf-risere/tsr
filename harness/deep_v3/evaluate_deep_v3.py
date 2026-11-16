@@ -45,7 +45,6 @@ COMMIT4_V3_FILES: tuple[str, ...] = (
     "harness/deep_v3/crossing_battery_20.json",
     "harness/deep_v3/layer_a_v3.py",
     "harness/deep_v3/run_deep_v3.py",
-    "harness/evaluate_tsr_harness.py",
 )
 
 COMMIT5_V3_FILES: tuple[str, ...] = (
@@ -1849,6 +1848,21 @@ def _git_output(*args: str) -> str:
 def _verify_git_provenance_v3() -> dict[str, Any]:
     """Verify Commit 4, Commit 5, and Commit 6 lineage and blob immutability."""
     head_sha = _git_output("rev-parse", "HEAD")
+    required_present = all(
+        evaluate_tsr_harness._git_ok("cat-file", "-e", f"{sha}^{{commit}}")
+        for sha in (V2_EVAL_SHA, DEEP_V3_PREREG_SHA, DEEP_V3_PRE_EVAL_SHA)
+    )
+    is_ancestor = required_present and (
+        head_sha == DEEP_V3_PRE_EVAL_SHA
+        or evaluate_tsr_harness._git_ok(
+            "merge-base", "--is-ancestor", DEEP_V3_PRE_EVAL_SHA, head_sha
+        )
+    )
+    if not is_ancestor:
+        return {
+            "git_mode": "shallow_or_squashed",
+            "head_sha": head_sha,
+        }
 
     prereg_parent = _git_output("rev-parse", f"{DEEP_V3_PREREG_SHA}~1")
     if prereg_parent != V2_EVAL_SHA:

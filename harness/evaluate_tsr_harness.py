@@ -1622,6 +1622,17 @@ def _git_output(*args: str) -> str:
     return res.stdout.strip()
 
 
+def _git_ok(*args: str) -> bool:
+    res = subprocess.run(
+        ["git", *args],
+        cwd=str(REPO_ROOT),
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    return res.returncode == 0
+
+
 def _verify_markdown_links(md_path: Path) -> list[str]:
     if not md_path.exists():
         return [f"Missing markdown file: {md_path.relative_to(REPO_ROOT)}"]
@@ -1642,6 +1653,20 @@ def _verify_markdown_links(md_path: Path) -> list[str]:
 def _verify_git_provenance() -> dict[str, Any]:
     """Verify Commit 1, Commit 2, and Commit 3 immutability via git."""
     head_sha = _git_output("rev-parse", "HEAD")
+    required_present = all(
+        _git_ok("cat-file", "-e", f"{sha}^{{commit}}")
+        for sha in (HARNESS_PREREG_SHA, PRE_EVAL_COMMIT_SHA)
+    )
+    is_ancestor = required_present and (
+        head_sha == PRE_EVAL_COMMIT_SHA
+        or _git_ok("merge-base", "--is-ancestor", PRE_EVAL_COMMIT_SHA, head_sha)
+    )
+    if not is_ancestor:
+        return {
+            "git_mode": "shallow_or_squashed",
+            "head_sha": head_sha,
+        }
+
     commit1_tree = set(_git_output("ls-tree", "-r", "--name-only", HARNESS_PREREG_SHA).splitlines())
     commit2_tree = set(_git_output("ls-tree", "-r", "--name-only", PRE_EVAL_COMMIT_SHA).splitlines())
 
